@@ -1,5 +1,6 @@
+import {groupCompatibleConnections} from './compatible-layout.js';
 import {groupExpansionBuses,allocateBusLanes,busBranchPoints} from './bus-layout.js';
-const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships;let kind='all';let visible=[];let drawFrame=0;
+const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible;let kind='all';let visible=[];let drawFrame=0;
 const element=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 const link=(text,url)=>{const a=element('a','',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
 async function read(url){const r=await fetch(url);if(!r.ok)throw Error(url+' returned HTTP '+r.status);return r.json();}
@@ -68,9 +69,13 @@ function splitRoute(points){
 }
 function openBus(bus){
  const dialog=$('bus-dialog'),entries=new Map(catalog.entries.map(entry=>[entry.id,entry]));
- $('bus-title').textContent=bus.label+' bus · '+entries.get(bus.system).title;
+ const isCPU=bus.kind==='compatible';
+ $('bus-title').textContent=bus.label+(isCPU?' choices · ':' bus · ')+entries.get(bus.system).title;
+ $('bus-dialog').querySelector('p').textContent=isCPU?bus.spec.note+' '+bus.spec.qualification:'Choose where to go. Planned options still require card, slot and software compatibility checks.';
+ const references=$('connection-evidence');references.replaceChildren();
+ if(isCPU)for(const evidence of bus.spec.evidence)references.append(link(evidence.note+' ↗',evidence.url));
  const list=$('bus-members');list.replaceChildren();
- for(const [id,qualification]of [[bus.system,'Computer'],...bus.links.map(link=>[link.source,link.type==='optional'?'Planned option':'Required card'])]){
+ for(const [id,qualification]of [[bus.system,'Computer'],...bus.links.map(link=>[link.source,isCPU?(link.source===bus.primary?'Original CPU profile':'Compatible alternative'):link.type==='optional'?'Planned option':'Required card'])]){
   const item=element('li'),anchor=element('a','',entries.get(id).title);anchor.href='#hardware-'+id;
   anchor.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();dialog.close();jumpToHardware(id);});
   item.append(anchor,element('small','',qualification));list.append(item);
@@ -92,7 +97,9 @@ function drawConnections(){
   }
  }
  const computerLinks=wires&&$('show-systems').checked?relationships.links:[];
- for(const link of computerLinks)if(nodes.has(link.source)&&nodes.has(link.target)&&entryById.get(link.source).kind!=='card')edges.push({...link,side:'left',color:catalog.companies[entryById.get(link.source).company].color});
+ const sockets=groupCompatibleConnections(computerLinks,new Set(nodes.keys()),compatible);
+ for(const net of sockets){net.sourceTaps=net.links.map(link=>({...link,side:'left',net,endpoint:'source'}));net.targetTap={source:net.links[0].source,target:net.system,side:'left',net,endpoint:'target'};}
+ for(const link of computerLinks)if(nodes.has(link.source)&&nodes.has(link.target)&&entryById.get(link.source).kind!=='card'&&!link.compatibilityGroup)edges.push({...link,side:'left',color:catalog.companies[entryById.get(link.source).company].color});
  const buses=groupExpansionBuses(computerLinks,entryById,new Set(nodes.keys()),catalog.buses);
  const branches=buses.flatMap(bus=>[{bus,id:bus.system,type:'system'},...bus.links.map(link=>({bus,id:link.source,type:link.type,link}))]);
  const tapsById=new Map([...nodes.keys()].map(id=>[id,branches.filter(branch=>branch.id===id).sort((a,b)=>ranks.get(a.bus.system)-ranks.get(b.bus.system)||a.bus.id.localeCompare(b.bus.id))]));
@@ -100,6 +107,7 @@ function drawConnections(){
  const incoming=new Map(),outgoing=new Map();
  for(const id of nodes.keys()){incoming.set(id,[]);outgoing.set(id,[]);}
  for(const edge of edges){outgoing.get(edge.source).push(edge);incoming.get(edge.target).push(edge);}
+ for(const net of sockets){for(const tap of net.sourceTaps)outgoing.get(tap.source).push(tap);incoming.get(net.system).push(net.targetTap);}
  for(const id of nodes.keys()){
   for(const [direction,map]of [['in',incoming],['out',outgoing]]){
    const ports=map.get(id).filter(edge=>edge.side==='left').sort((a,b)=>ranks.get(direction==='in'?a.source:a.target)-ranks.get(direction==='in'?b.source:b.target));
@@ -129,7 +137,7 @@ function drawConnections(){
    for(const node of row.cards){node.style.marginTop=top+'px';node.style.marginBottom=bottom+'px';}
   }
  }
- const busLanes=allocateBusLanes(buses,rowById);
+ const busLanes=allocateBusLanes(buses,rowById),socketLanes=allocateBusLanes(sockets,rowById);
  const allocateLanes=side=>{
   const laneEnds=[];
   const sorted=edges.filter(edge=>edge.side===side).map(edge=>{
@@ -141,7 +149,7 @@ function drawConnections(){
   return laneEnds.length;
  };
  const leftLanes=allocateLanes('left'),rightLanes=allocateLanes('right');
- const leftPitch=4,rightPitch=7,busPitch=30,leftGutter=leftLanes?24+leftLanes*leftPitch:0,makerGutter=rightLanes?24+rightLanes*rightPitch:0,busGutter=busLanes?28+busLanes*busPitch:0;
+ const leftPitch=4,rightPitch=7,busPitch=30,socketGutter=socketLanes?24+socketLanes*28:0,leftGutter=socketGutter+(leftLanes?24+leftLanes*leftPitch:0),makerGutter=rightLanes?24+rightLanes*rightPitch:0,busGutter=busLanes?28+busLanes*busPitch:0;
  const rightGutter=makerGutter+busGutter;
  timeline.style.setProperty('--left-gutter',leftGutter+'px');timeline.style.setProperty('--right-gutter',rightGutter+'px');
  const bounds=timeline.getBoundingClientRect(),ns='http://www.w3.org/2000/svg';
@@ -189,6 +197,27 @@ function drawConnections(){
   control.addEventListener('click',event=>{event.preventDefault();openBus(bus);});control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openBus(bus);}});
   return control;
  };
+ const socketPaths=document.createDocumentFragment(),socketPads=document.createDocumentFragment();
+ for(const net of sockets){
+  const lane=12+net.lane*28,joins=[],group=shape('g',{class:'compatible-net','data-group':net.spec.id,'data-system':net.system,'data-lane':net.lane,'data-side':'left'});
+  for(const tap of [...net.sourceTaps,net.targetTap]){
+   const source=tap.endpoint==='source',p=port(tap,source?'out':'in'),id=source?tap.source:net.system;
+   const row=rows[rowById.get(id)],rowBottom=Math.max(...row.cards.map(card=>card.getBoundingClientRect().bottom))-bounds.top;
+   const y=source?rowBottom+safe+(tap.outTrack+1)*pitch:p.y-safe-(tap.inTrack+1)*pitch;
+   const points=source?[[p.x,p.y],[p.x,y-6],[p.x-6,y],[lane,y]]:[[lane,y],[p.x-6,y],[p.x,y+6],[p.x,p.y]],d=pathData(points);
+   const branch=shape('g',{class:'compatible-branch','data-entry':id,'data-role':source?'chip':'computer'}),color=source?catalog.companies[entryById.get(id).company].color:net.color;
+   branch.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire',stroke:color,'aria-hidden':true}));
+   const ordered=[id,net.system].sort((a,b)=>ranks.get(a)-ranks.get(b)),control=source?makeJump(net.system,id,ordered,true,' via '+net.label):busControl(net,'Choose a compatible processor for '+entryById.get(net.system).title);
+   control.append(shape('path',{d,class:'trace-hit','stroke-width':5}));branch.append(control);group.append(branch);
+   const pad=source?makeJump(net.system,id,ordered,false,' via '+net.label):busControl(net,'Choose a compatible processor for '+entryById.get(net.system).title);pad.setAttribute('tabindex','-1');
+   pad.append(shape('circle',{cx:coordinate(p.x),cy:coordinate(p.y),r:4.5,class:'trace-pad bus-pad','data-entry':id,stroke:color}));socketPads.append(pad);
+   socketPads.append(shape('circle',{cx:coordinate(lane),cy:coordinate(y),r:3,class:'bus-junction',fill:net.color,'aria-hidden':true}));joins.push(y);
+  }
+  const min=Math.min(...joins),max=Math.max(...joins),d=pathData([[lane,min-8],[lane,max+8]]),rail=busControl(net,net.label+' alternatives for '+entryById.get(net.system).title);
+  rail.setAttribute('class','bus-control compatible-rail');
+  rail.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire compatible-trunk',stroke:net.color,'aria-hidden':true}),shape('rect',{x:coordinate(lane-5),y:coordinate(min-8),width:10,height:coordinate(max-min+16),class:'bus-rail-hit'}));group.append(rail);
+  const label=shape('text',{x:coordinate(lane),y:coordinate(min-14),class:'bus-label','text-anchor':'middle',fill:net.color,'aria-hidden':true});label.textContent=net.spec.wireLabel;group.append(label);socketPaths.append(group);
+ }
  for(const bus of buses){
   const lane=bounds.width-busGutter+12+bus.lane*busPitch,local=branches.filter(branch=>branch.bus===bus),joins=[];
   const host=entryById.get(bus.system),group=shape('g',{class:'expansion-bus','data-bus':bus.id,'data-family':bus.family,'data-system':bus.system,'data-side':'far-right','data-lane':bus.lane});
@@ -216,12 +245,12 @@ function drawConnections(){
   rail.setAttribute('class','bus-control bus-rail');rail.id='bus-'+bus.id;rail.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire bus-trunk',stroke:bus.color,'aria-hidden':true}),shape('rect',{x:coordinate(lane-5),y:coordinate(min-8),width:10,height:coordinate(max-min+16),class:'bus-rail-hit'}));group.append(rail);
   const label=shape('text',{x:coordinate(lane),y:coordinate(min-14),class:'bus-label','text-anchor':'middle',fill:bus.color,'aria-hidden':true});label.textContent=bus.label;group.append(label);busPaths.append(group);
  }
- $('wire-help').hidden=!wires||(!edges.length&&!buses.length);
- svg.setAttribute('viewBox',`0 0 ${bounds.width} ${bounds.height}`);svg.style.height=bounds.height+'px';svg.replaceChildren(paths,busPaths,pads,busPads);
- $('trace-summary').textContent=wires?edges.filter(edge=>edge.type==='maker').length+' maker links · '+edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length+' chip links · '+edges.filter(edge=>edge.basis==='reconstruction').length+' reconstruction links · '+buses.length+' shared expansion buses ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections)':'Wires hidden';
+ $('wire-help').hidden=!wires||(!edges.length&&!buses.length&&!sockets.length);
+ svg.setAttribute('viewBox',`0 0 ${bounds.width} ${bounds.height}`);svg.style.height=bounds.height+'px';svg.replaceChildren(paths,socketPaths,busPaths,pads,socketPads,busPads);
+ $('trace-summary').textContent=wires?edges.filter(edge=>edge.type==='maker').length+' maker links · '+edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length+' chip links · '+edges.filter(edge=>edge.basis==='reconstruction').length+' reconstruction links · '+buses.length+' shared expansion buses ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections) · '+sockets.length+' shared CPU roles':'Wires hidden';
 }
 
 function updateYear(){let selected=null;for(const group of document.querySelectorAll('.year-block[data-year]')){if(group.getBoundingClientRect().top<220)selected=group.dataset.year;else if(selected===null)selected=group.dataset.year;else break;}if(selected&&selected!=='undated'){$('current-year').textContent=selected;$('year-scrubber').value=selected;}else if(selected==='undated')$('current-year').textContent='—';}
 function goYear(year){const groups=[...document.querySelectorAll('.year-block')].filter(g=>g.dataset.year!=='undated');let group=groups.find(g=>Number(g.dataset.year)>=year)||groups.at(-1);group?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
 function setup(){for(const entry of catalog.entries.filter(e=>e.kind==='system')){const option=element('option','',entry.title);option.value=entry.id;$('computer').append(option);}$('computer').addEventListener('change',event=>focusComputer(event.target.value));for(const id of ['show-wires','show-makers','show-systems'])$(id).addEventListener('change',scheduleDraw);for(const [id,company]of Object.entries(catalog.companies)){if(!catalog.entries.some(e=>e.company===id))continue;const option=element('option','',company.name);option.value=id;$('company').append(option);const button=element('button','maker-button');button.dataset.company=id;button.style.setProperty('--company',company.color);button.append(element('i'),document.createTextNode(company.name));button.addEventListener('click',()=>{$('company').value=$('company').value===id?'all':id;render();});$('maker-key').append(button);}const years=catalog.entries.map(e=>e.year).filter(Number.isFinite),min=Math.min(...years),max=Math.max(...years);$('year-scrubber').min=min;$('year-scrubber').max=max;for(let year=Math.ceil(min/5)*5;year<=max;year+=5){const button=element('button','year-marker',String(year));button.style.top=((year-min)/(max-min)*100)+'%';button.addEventListener('click',()=>goYear(year));$('year-markers').append(button);}$('year-scrubber').addEventListener('input',e=>goYear(Number(e.target.value)));for(const button of document.querySelectorAll('[data-kind]')){if(button.tagName!=='BUTTON')continue;button.addEventListener('click',()=>{kind=button.dataset.kind;document.querySelectorAll('.view-tabs button').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});render();});}for(const id of ['company','stage'])$(id).addEventListener('change',render);$('search').addEventListener('input',render);$('reset').addEventListener('click',()=>{$('company').value='all';$('stage').value='all';$('search').value='';$('computer').value='all';kind='all';document.querySelector('[data-kind="all"]').click();});$('entry-count').textContent=catalog.entries.length;$('company-count').textContent=new Set(catalog.entries.map(e=>e.company)).size;const stamp=new Date(snapshot.syncedAt);$('sync-label').textContent='GITHUB SNAPSHOT · '+(Number.isNaN(stamp.valueOf())?'not synced':stamp.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'}));const toggle=open=>{$('legend').hidden=!open;$('legend-toggle').setAttribute('aria-expanded',String(open));};$('legend-toggle').addEventListener('click',()=>toggle($('legend').hidden));$('legend-close').addEventListener('click',()=>{toggle(false);$('legend-toggle').focus();});$('bus-close').addEventListener('click',()=>$('bus-dialog').close());$('bus-dialog').addEventListener('click',event=>{if(event.target===$('bus-dialog'))$('bus-dialog').close();});$('photo-close').addEventListener('click',()=>$('photo-dialog').close());$('photo-dialog').addEventListener('click',e=>{if(e.target===$('photo-dialog'))$('photo-dialog').close();});addEventListener('scroll',updateYear,{passive:true});addEventListener('resize',scheduleDraw);new ResizeObserver(scheduleDraw).observe($('eras'));}
-try{[catalog,snapshot,vocabulary,credits,relationships]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('images/credits.json'),read('data/connections.json')]);legend();setup();render();}catch(error){$('error').hidden=false;$('error').textContent='The archive could not be loaded. Serve this folder over HTTP and check the JSON files. '+error.message;$('eras').replaceChildren();$('sync-label').textContent='Archive unavailable';console.error(error);}
+try{[catalog,snapshot,vocabulary,credits,relationships,compatible]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('images/credits.json'),read('data/connections.json'),read('data/compatible-chips.json')]);legend();setup();render();}catch(error){$('error').hidden=false;$('error').textContent='The archive could not be loaded. Serve this folder over HTTP and check the JSON files. '+error.message;$('eras').replaceChildren();$('sync-label').textContent='Archive unavailable';console.error(error);}

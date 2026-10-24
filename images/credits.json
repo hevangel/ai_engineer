@@ -1366,5 +1366,14 @@
     "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/d3/IBM_PS2E.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "changes": "Thumbnail resized by Wikimedia; displayed with contain sizing, no recoloring.",
     "representative": true
+  },
+  "intel_8088": {
+    "title": "Intel 8088 chip, top.jpg",
+    "creator": "Jud McCranie",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Intel_8088_chip,_top.jpg",
+    "changes": "Resized to 960 pixels wide and JPEG optimized; no other changes.",
+    "representative": false
   }
 }

@@ -59,3 +59,8 @@ When reconciling issues or project items, fetch all pages or raise the CLI limit
 Read [pdp1_am29xx.md](pdp1_am29xx.md) and [ibm_386_amd_scope.md](ibm_386_amd_scope.md) for the owner’s additions. Keep AMD Am29xx in #7 and the original Intel DX/SX family in #116; separate history photographs/device profiles do not require duplicate canonical family issues. Keep IBM 386SLC distinct from Intel 386SL and later 486 variants. The Model 25 SX selection supersedes Compaq 386s SX in #148/#149/#150, while Model 35 SX, Model 70 and Model 56 SLC have separate system/software/FPGA tracks.
 
 The PDP-1’s Am29xx gate is a new implementation dependency, explicitly qualified in `data/component-profiles.json`; it is not an assertion about DEC’s original 1959 BOM. A shared chip issue can map to multiple public variants: curate exact target selection and preserve the native gate. AMD histories do not create unsourced AMD-to-IBM factory-component links. ISA and MCA options must remain separate; board/ROM and physical card-fit qualification precede sign-off.
+
+
+## Compatible processor alternatives
+
+Use [compatible_chips.md](compatible_chips.md) for qualified Intel/AMD choices. Native blocked-by edges remain the selected original CPU gate. Compatible choices exported for the website are OR alternatives, not additional AMD completion blockers or factory-installation claims. One shared CPU-role trunk per computer selects the matching package/pinout; the canonical #22 family keeps separate 8086 and 8088 external-bus profiles. Never merge based solely on a shared ISA or execution-unit implementation.

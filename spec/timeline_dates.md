@@ -70,3 +70,6 @@ The pictured package or board can be a later representative revision. Its photog
 ## PDP-1, IBM and AMD additions
 
 See [PDP-1](pdp1_am29xx.md) for the 1959 original-machine date and explicit later-Am29xx reconstruction exception. See [IBM/AMD profiles](ibm_386_amd_scope.md) for the 1988 Intel SX and Model 70, 1991 IBM 386SLC/Model 35 SX/Am386, 1992 Model 25 SX/Model 56 SLC, and qualified AMD 1983 catalog bounds/previews. The former Compaq 386s SX selection is replaced by IBM Model 25 SX; keep its stable catalog and issue IDs. The historical Compaq flyer is not evidence for the IBM replacement.
+
+
+The distinct Intel 8088 timeline profile is anchored to 1979 by [Intel's historical reference](https://www.intel.com/pressroom/kits/quickrefyr.htm). PC/XT use 8088; the original PS/2 Model 30 uses 8086. Source-qualified later AMD substitution options may postdate their original host and share a CPU-role wire; they do not change the original date/BOM. See [compatible processor profiles](compatible_chips.md).

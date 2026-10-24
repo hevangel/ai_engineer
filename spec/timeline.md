@@ -121,3 +121,8 @@ Bus colors and short labels are separate from manufacturer lineage. Required car
 Click a card's bus tap to jump to its computer. Click the bus trunk or the system tap to open the accessible connected-member chooser; each entry names the computer, required card or planned option and jumps to that card. Existing chip/maker wire navigation remains bidirectional. The bus chooser supports keyboard activation, Escape/close and destination focus. Layout and membership are recomputed after filters and viewport changes.
 
 Pure grouping, row-interval lane allocation and under-row geometry live in `assets/bus-layout.js`; run `node --test scripts/bus-layout.test.mjs` alongside the existing checks when changing bus routing.
+
+
+## Compatible CPU alternatives
+
+Read [compatible_chips.md](compatible_chips.md). `data/compatible-chips.json` defines source-qualified pin/function-compatible choices. The connection sync derives `type: compatible` links from each existing native primary-CPU gate without adding extra AMD blockers. Group members share one left-side CPU-role trunk and one host pad; colors on member taps still identify their makers. The chooser distinguishes the original CPU from a qualified alternative and exposes package/clock/source notes. Original dates and factory-BOM claims do not change. Filters and wire visibility apply to all choices.

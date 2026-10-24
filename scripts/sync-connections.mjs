@@ -1,3 +1,4 @@
+import {expandCompatibleConnections} from '../assets/compatible-layout.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -7,6 +8,7 @@ const read=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8')
 const catalog=await read('data/catalog.json');
 const options=await read('data/system-options.json');
 const profiles=await read('data/component-profiles.json');
+const compatible=await read('data/compatible-chips.json');
 const entries=new Map(catalog.entries.map(e=>[e.id,e]));
 const issueEntries=new Map();
 for(const entry of catalog.entries){const key=entry.issue.repo+'#'+entry.issue.number;const members=issueEntries.get(key)||[];members.push(entry);issueEntries.set(key,members);}
@@ -32,7 +34,10 @@ for(const option of options.links){
  if(source?.kind!=='card'||target?.kind!=='system'||!option.evidence?.startsWith('https://'))throw Error('Invalid planned option '+JSON.stringify(option));
  if(!links.some(link=>link.source===option.source&&link.target===option.target))links.push({...option,type:'optional'});
 }
-const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:'Native GitHub system completion dependencies plus separately curated planned card options',links};
+const expanded=expandCompatibleConnections(links,compatible,entries);
+const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:'Native GitHub system completion dependencies, planned card options and source-qualified compatible CPU alternatives',links:expanded};
 const dest=path.join(root,'data/connections.json'),temp=dest+'.tmp';
 try{await fs.writeFile(temp,JSON.stringify(result,null,2)+'\n');await fs.rename(temp,dest);}catch(error){await fs.rm(temp,{force:true});throw error;}
 console.log(`Synced ${links.filter(l=>l.type==='required').length} recorded component dependencies and ${links.filter(l=>l.type==='optional').length} planned card options.`);
+
+console.log(`Added ${expanded.filter(link=>link.type==='compatible').length} compatible CPU alternatives; native blocked-by gates unchanged.`);
