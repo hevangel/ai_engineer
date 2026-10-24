@@ -1197,7 +1197,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Super-Nintendo-1Chip-Motherboard-Top-Flat.jpg",
     "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Super-Nintendo-1Chip-Motherboard-Top-Flat.jpg/960px-Super-Nintendo-1Chip-Motherboard-Top-Flat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "changes": "Thumbnail resized by Wikimedia; displayed with contain sizing, no recoloring.",
-    "representative": false
+    "representative": true
   },
   "vga_chip": {
     "curated": true,
