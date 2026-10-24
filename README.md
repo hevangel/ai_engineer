@@ -41,3 +41,5 @@ Read [AGENTS.md](AGENTS.md) before changing this repository. For work inside a p
 The [AI Engineer GitHub Project](https://github.com/users/hevangel/projects/1) coordinates chip families, complete systems, bus-organized expansion cards, Rust/LLVM targets, software reconstruction and future FPGA implementations. Access to the board follows its GitHub visibility settings.
 
 See the [initial project plan](spec/initial_project_plan.md) for the canonical issue inventory and dependencies, and the [project manager instructions](spec/project_manager.md) for how that roadmap is maintained. The planned `ai_fpga_engineer` repository has not been created yet.
+
+The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench integration with Xezim simulation and Surfer waveform viewing, plus dependency and upgrade qualification.

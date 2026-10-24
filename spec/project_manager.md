@@ -43,3 +43,7 @@ Do not assume every machine has an OS or that every software title is legally re
 ## Workstream field and canonical family scope
 
 Use the Workstream field to group Chips, Systems, Cards, Toolchains, Software, FPGA, Tooling and Website. Keep Status independent of workstream. Series issues represent the full sourced family catalog, not only the folders already implemented. Extend their member checklists as catalog research identifies missing parts and variants. Native dependency calls require the prerequisite issue numeric REST id, not its number or GraphQL node id.
+
+## EDA tools
+
+Manage the [EDA tools track](eda_tools.md) in the Tooling Workstream, separately from Rust/LLVM Toolchains. HDL Workbench is working and depends on Xezim for SV execution and Surfer for waveform viewing. Record its working baseline and future maintenance/upgrade gates separately. Qualify dependency changes before integrating public historical-system demos.

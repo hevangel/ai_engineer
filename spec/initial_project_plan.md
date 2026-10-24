@@ -74,7 +74,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | card_cga | [[Card] IBM CGA ISA display adapter](https://github.com/hevangel/ai_engineer/issues/107) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#108](https://github.com/hevangel/ai_engineer/issues/108) |
 | card_xtdisk | [[Card] IBM/Xebec XT fixed-disk controller](https://github.com/hevangel/ai_engineer/issues/106) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51) |
 | card_diskii | [[Card] Apple Disk II controller](https://github.com/hevangel/ai_engineer/issues/109) | cards | [#54](https://github.com/hevangel/ai_engineer/issues/54) |
-| workbench | [[Tooling] Integrate HDL Workbench with public system demonstrations](https://github.com/hevangel/ai_engineer/issues/55) | tooling | — |
+| workbench | [[Tooling] Integrate HDL Workbench with public system demonstrations](https://github.com/hevangel/ai_engineer/issues/55) | tooling | [#112](https://github.com/hevangel/ai_engineer/issues/112) |
 | backend_i4004 | [[Toolchain] Rust/LLVM target i4004](https://github.com/hevangel/ai_engineer/issues/3) | toolchain | — |
 | backend_i8008 | [[Toolchain] Rust/LLVM target i8008](https://github.com/hevangel/ai_engineer/issues/57) | toolchain | — |
 | backend_i8080 | [[Toolchain] Rust/LLVM target i8080](https://github.com/hevangel/ai_engineer/issues/56) | toolchain | — |
@@ -125,6 +125,9 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | software_snes | [[Software] Super Nintendo — Rust firmware, OS and application reconstruction](https://github.com/hevangel/ai_engineer/issues/102) | software | [#59](https://github.com/hevangel/ai_engineer/issues/59), [#101](https://github.com/hevangel/ai_engineer/issues/101) |
 | fpga_snes | [[FPGA System] Super Nintendo — board selection and physical reconstruction](https://github.com/hevangel/ai_engineer/issues/103) | fpga | [#53](https://github.com/hevangel/ai_engineer/issues/53), [#101](https://github.com/hevangel/ai_engineer/issues/101) |
 | publication | [[Site] Publish the integrated reconstruction catalog and evidence](https://github.com/hevangel/ai_engineer/issues/104) | site | [#55](https://github.com/hevangel/ai_engineer/issues/55) |
+| eda_xezim | [[EDA] Xezim — maintain working simulator integration and qualify upgrades](https://github.com/hevangel/ai_engineer/issues/110) | tooling | — |
+| eda_surfer | [[EDA] Surfer — maintain working waveform integration and qualify upgrades](https://github.com/hevangel/ai_engineer/issues/111) | tooling | — |
+| eda_workbench | [[EDA] HDL Workbench — sustain the working Xezim and Surfer integration](https://github.com/hevangel/ai_engineer/issues/112) | tooling | [#110](https://github.com/hevangel/ai_engineer/issues/110), [#111](https://github.com/hevangel/ai_engineer/issues/111) |
 
 ## Existing board items
 
@@ -150,3 +153,7 @@ flowchart LR
 ```
 
 The table and native GitHub blocked-by links are the detailed graph. This diagram summarizes acceptance flow; it does not require unrelated chips or cards to block every system.
+
+## EDA tools track
+
+[EDA tool specifications](eda_tools.md) record the working HDL Workbench baseline, Xezim and Surfer source pins, qualification scope, and native dependencies into public-system integration.
