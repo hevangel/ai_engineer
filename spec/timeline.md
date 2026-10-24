@@ -16,6 +16,8 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 
 Run `node scripts/serve.mjs`, then open `http://127.0.0.1:4173`. A static HTTP server is required because browsers restrict JSON fetches from `file:` URLs. Deployment consists of `index.html`, `assets/`, `data/`, and `images/`; do not copy submodule checkouts, `.git`, scripts, scratch files or credentials into a public deployment directory.
 
+Card `description` is optional. Omit repeated project-wide boilerplate; render a description paragraph only when the catalog supplies useful entry-specific text.
+
 ## Status synchronization
 
 Run `node scripts/sync-timeline.mjs --project 1 --owner hevangel` with an authenticated GitHub CLI. The optional project flag maps `In progress` to Building only when no explicit stage is supplied. Omitting it uses public issue metadata alone and does not require private-project access. The repository issue list is paginated; pull requests are ignored. Errors leave the previous status snapshot intact. Commit and review the resulting JSON when publishing an updated snapshot.
