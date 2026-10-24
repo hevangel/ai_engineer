@@ -1,70 +1,83 @@
 # AI Engineer
 
-AI Engineer is the public-facing static website and the integrated home for the AI engineering projects. It brings the hardware, software, and HDL workbench work together as one public project, with a shared story, project guides, demonstrations, and engineering results.
+**[Explore the hardware history timeline →](https://hevangel.github.io/ai_engineer/)**
 
-This repository is the superset at the presentation level. The projects remain independent repositories, included here as pinned Git submodules. The site should present their work as parts of one AI engineering effort while preserving each project's history, ownership, and instructions.
+Rebuild classic computers from the chips up. AI Engineer brings together a long-term effort to recreate historical chips in SystemVerilog, complete computers with web front panels and simulation backends, physical FPGA builds, and their firmware, operating systems and applications in Rust.
 
-## Projects
+The timeline is the public window into that work. Browse the machines, follow their components, open the source material, and see what has actually been built and verified. A roadmap entry describes a goal; its badges and linked evidence describe its progress.
 
-| Project | What it covers | Source |
-| --- | --- | --- |
-| AI Hardware Engineer | Historical chips, RTL, simulation, formal verification, and virtual systems | [GitHub repository](https://github.com/hevangel/ai_hw_engineer) · [`ai_hw_engineer/`](ai_hw_engineer/) |
-| AI Software Engineer | Historical software reimplementations, Rust, LLVM backends, and target systems | [GitHub repository](https://github.com/hevangel/ai_sw_engineer) · [`ai_sw_engineer/`](ai_sw_engineer/) |
-| HDL Workbench | Browser-based HDL editing, simulation, and waveform workflows | [GitHub repository](https://github.com/hevangel/hdl-workbench) · [`hdl-workbench/`](hdl-workbench/) |
+## Explore the timeline
 
-The public site belongs to this root repository. Its pages and navigation provide the shared entry point; the submodules remain the source of truth for each project's code, detailed documentation, and engineering reports. The root records the exact project revisions used by the site.
+Scroll from the PDP-1 and early microprocessors through the 386 and 68030 generation, or use the year rail to jump through time. Search for a chip or machine, filter by maker or build stage, and choose a computer to see its recorded components.
 
-## Get the source
+The connections show different relationships:
 
-Clone the website and initialize its three project repositories:
+- **Company lines on the right** follow chip families from the same maker. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.
+- **Chip links on the left** show recorded prerequisites for a computer build. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
+- **Shared expansion buses on the far right** connect cards to a computer through its bus. Card taps distinguish required hardware from planned options. A bus belongs to one computer; it does not electrically join different machines.
+
+Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑ and ↓. Turn off **Show wires** for a simpler view.
+
+Click a hardware title to open its GitHub issue. The photo information button opens its source and license. Representative photos, later revisions and uncertain historical dates are labeled.
+
+## What we are rebuilding
+
+The current roadmap covers classic chip families and systems through **Intel 386DX/SX, IBM 386SLC, AMD Am386 and Motorola 68030 Macintosh** machines. It includes the earlier Intel and MOS generations, Apple II and Macintosh systems, IBM PCs and PS/2s, selected arcade and console hardware, and a planned **18-bit PDP-1 reconstruction using Am29xx**.
+
+Expansion hardware matters too: storage, displays, serial interfaces and sound are part of a usable machine. The roadmap includes S-100, Apple II slots, ISA, Micro Channel and NuBus work, with **AdLib, Sound Blaster and Roland LAPC-I** audio among the planned profiles. Exact card revisions, slot fit, firmware, drivers and software still need qualification.
+
+Each complete system has several connected goals: documented behavior and source material, chip implementations, authentic-software regressions, a web interface driven by an SV simulator, Rust software and any missing compiler support, and a separately qualified FPGA realization. Working on one part does not establish that the whole machine is finished.
+
+## Read the progress badges
+
+The status guide on the website explains every icon:
+
+| Stage | Meaning |
+| --- | --- |
+| Planned | Scope is on the roadmap |
+| Researching | Requirements and source material are being assembled |
+| Sources ready | The defined source set is collected and cleaned |
+| Building | Implementation is in progress |
+| AI verified | Linked evidence records an AI verification result |
+| Human verified | A named human approval links supporting evidence |
+
+Source coverage measures cleaned items against an explicitly defined source inventory. An em dash means coverage has not been reported. Build health is shown separately. Closing an issue does not establish verification.
+
+The website reads a checked-in snapshot of GitHub issue/project metadata. It does not query GitHub from your browser, and a source refresh is separate from publishing the site. Follow an item's issue for its latest evidence and discussion.
+
+## The projects behind the site
+
+| Project | Responsibility |
+| --- | --- |
+| [AI Hardware Engineer](https://github.com/hevangel/ai_hw_engineer) | Chip RTL, verification, complete machines and simulation backends |
+| [AI Software Engineer](https://github.com/hevangel/ai_sw_engineer) | Rust reconstructions, target software and compiler/toolchain work |
+| [HDL Workbench](https://github.com/hevangel/hdl-workbench) | The working HDL development environment, integrating Xezim simulation and Surfer waveforms |
+| AI FPGA Engineer — planned | Future board selection, FPGA integration and physical verification; repository not yet created |
+
+AI Engineer is the umbrella website and shared roadmap. The existing projects keep their own repositories and histories and are included here as pinned Git submodules. The timeline presents the work; it does not run the chip simulators itself.
+
+See the [initial project plan](spec/initial_project_plan.md), [386/68030 scope](spec/era_386_scope.md), [IBM/AMD profiles](spec/ibm_386_amd_scope.md) and [PDP-1 plan](spec/pdp1_am29xx.md) for the detailed inventory. The [GitHub Project](https://github.com/users/hevangel/projects/1) coordinates dependencies across the projects; board access follows its existing visibility settings.
+
+## Run the website locally
+
+You need Node.js 22 or newer. There is no package installation or build step:
 
 ```sh
 git clone https://github.com/hevangel/ai_engineer.git
 cd ai_engineer
-git submodule update --init
-```
-
-For project development that needs nested dependencies such as UVM libraries, emulators, or LLVM sources, initialize those as well:
-
-```sh
-git submodule update --init --recursive
-```
-
-Nested dependencies can be large. The root submodule pointers pin the revisions presented by the site; update them deliberately and review the resulting changes.
-
-## For contributors
-
-This repository is AI-authored: humans do not edit files by hand; they direct AI agents and review pull requests. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the pull request procedure. Agents start from [AGENTS.md](AGENTS.md) and the [specifications](spec/README.md). For work inside a project submodule, follow that project's own guidelines. Each project has its own license; check it before reusing code, images, or other assets in the public site.
-
-## Roadmap
-
-The [AI Engineer GitHub Project](https://github.com/users/hevangel/projects/1) coordinates chip families, complete systems, bus-organized expansion cards, Rust/LLVM targets, software reconstruction and future FPGA implementations. Access to the board follows its GitHub visibility settings.
-
-See the [initial project plan](spec/initial_project_plan.md) for the canonical issue inventory and dependencies, and the [project manager instructions](spec/project_manager.md) for how that roadmap is maintained. The planned `ai_fpga_engineer` repository has not been created yet.
-
-The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench integration with Xezim simulation and Surfer waveform viewing, plus dependency and upgrade qualification.
-
-The reconstruction scope extends through Intel 386DX/SX PCs and Motorola 68030 Macintosh systems, including the 68020 transition, AdLib and Sound Blaster. See the [386-era scope and roadmap](spec/era_386_scope.md).
-
-## Timeline website
-
-Visit the public history at **[hevangel.github.io/ai_engineer](https://hevangel.github.io/ai_engineer/)**.
-
-The root [index.html](index.html) presents the chip families, computers and expansion cards as a scrolling photographic timeline. Maker connections, architecture-era bands and a year rail show their historical relationships. Search and filters narrow the archive; the status guide explains the photo badges.
-
-Preview locally:
-
-```sh
 node scripts/serve.mjs
 ```
 
-Open [the local preview](http://127.0.0.1:4173). Refresh the JSON status snapshot with:
+Open **http://127.0.0.1:4173/**. Serve the page over HTTP so its JSON files load correctly.
 
-```sh
-node scripts/sync-timeline.mjs --project 1 --owner hevangel
-node scripts/sync-connections.mjs
-```
+To explore the hardware/software projects as well, run `git submodule update --init`. Initialize nested dependencies only when you need them; some are large.
 
-Statuses come from GitHub issue metadata and the selected project. Computer links come from recorded chip/card dependencies and clearly labeled planned card options; choose a computer to trace its components. Verification badges require evidence; unknown source coverage stays unknown. Representative photographs and uncertain dates are labeled. Each image has its own attribution and license.
+Maintainers can find status-refresh commands, checks and release instructions in [scripts/README.md](scripts/README.md) and the [website maintenance guide](spec/website.md). GitHub Pages serves a static snapshot from the generated `gh-pages` branch.
 
-See [the timeline specification](spec/timeline.md) for the metadata format and publishing file list, and [scripts/README.md](scripts/README.md) for commands. GitHub Pages serves an allowlisted static snapshot from `gh-pages`; publishing is an explicit release step. See [website maintenance](spec/website.md#github-pages-publication) for the command and deployment checks.
+## Help improve the project
+
+Report a historical error, suggest a system or card profile, contribute source references, or review implementation and verification evidence through GitHub issues and pull requests.
+
+Changes in these repositories are authored by AI agents at human direction. Humans define requirements and review, approve or reject the resulting work. See [CONTRIBUTING.md](CONTRIBUTING.md) for the process; agents start with [AGENTS.md](AGENTS.md).
+
+Photographs retain their individual licenses and credits in [images/credits.json](images/credits.json). Each project also has its own licensing terms; check the relevant repository before reusing its content.

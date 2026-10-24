@@ -12,6 +12,7 @@ for(const entry of catalog.entries){
  assert(catalog.companies[entry.company],'Missing company '+entry.id);
  assert(eras.has(entry.era),'Missing era '+entry.id);
  assert(['chip','system','card'].includes(entry.kind),'Invalid type '+entry.id);
+ if(entry.kind==='card'){const bus=catalog.buses?.[entry.bus];assert(bus?.label&&/^#[0-9a-f]{6}$/i.test(bus.color),'Missing bus profile '+entry.id);}
  if(entry.year!==null){assert(Number.isInteger(entry.year)&&entry.year>1900,'Invalid year '+entry.id);assert(new URL(entry.dateSource).protocol==='https:','Missing historical source '+entry.id);}
  const status=snapshot.statuses[entry.id];assert(status&&stages.has(status.stage),'Missing stage '+entry.id);
  assert.equal(new URL(entry.issue.url).hostname,'github.com');
