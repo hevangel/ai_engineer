@@ -612,7 +612,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Altairinside.JPG"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "s100"
     },
     {
       "id": "system_altair_8800",
@@ -1033,7 +1034,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Disk_II_Floppy_Disk_Subsystem.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "apple_ii"
     },
     {
       "id": "system_space_invaders",
@@ -1243,7 +1245,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_Color_Graphics_Adapter.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "system_ibm_pc",
@@ -1646,7 +1649,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "system_apple_iie",
@@ -1941,7 +1945,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:EGA_card.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "system_ibm_at_5170",
@@ -2287,7 +2292,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Adlib_sound_card_version_1.5.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "card_vga",
@@ -2310,7 +2316,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_VGA_graphics_card.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "card_nubus_video",
@@ -2335,7 +2342,8 @@
       },
       "description": "Expansion card · bus, components & software",
       "dateBasis": "documented",
-      "dateNote": "Apple’s Macintosh II Video Card and Expansion Kit product sheet is dated March 1987. Later NuBus video adapters are separate card profiles."
+      "dateNote": "Apple’s Macintosh II Video Card and Expansion Kit product sheet is dated March 1987. Later NuBus video adapters are separate card profiles.",
+      "bus": "nubus"
     },
     {
       "id": "system_ibm_ps2_model30",
@@ -2543,7 +2551,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
       },
-      "description": "Expansion card · bus, components & software"
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
     },
     {
       "id": "system_mac_iici",
@@ -2837,5 +2846,23 @@
         "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
       }
     }
-  ]
+  ],
+  "buses": {
+    "s100": {
+      "label": "S-100",
+      "color": "#557948"
+    },
+    "apple_ii": {
+      "label": "Apple II",
+      "color": "#4C7174"
+    },
+    "isa": {
+      "label": "ISA",
+      "color": "#756145"
+    },
+    "nubus": {
+      "label": "NuBus",
+      "color": "#725D85"
+    }
+  }
 }
