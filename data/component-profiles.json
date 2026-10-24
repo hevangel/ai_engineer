@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "description": "Explicit device variants for shared canonical issues and later reconstruction components; all links must also exist as native GitHub completion dependencies.",
+  "links": [
+    {
+      "source": "intel_80386",
+      "target": "system_deskpro_386",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles."
+    },
+    {
+      "source": "intel_80386",
+      "target": "system_ps2_model80",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/151",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles."
+    },
+    {
+      "source": "intel_80386",
+      "target": "system_ps2_model70",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles."
+    },
+    {
+      "source": "intel_80386sx",
+      "target": "system_pc_386sx",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles."
+    },
+    {
+      "source": "intel_80386sx",
+      "target": "system_ps2_model35sx",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles."
+    },
+    {
+      "source": "amd_am29xx",
+      "target": "system_pdp1",
+      "basis": "reconstruction",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/184",
+      "note": "Owner-selected Am29xx implementation of the older PDP-1 architecture. These later chips were not present in DEC’s original 1959 machine."
+    }
+  ]
+}

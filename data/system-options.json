@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "description": "Curated planned expansion configurations, kept separate from native required completion dependencies.",
+  "links": [
+    {
+      "source": "card_ega",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_ega",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_vga",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_vga",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_sb",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_sb",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite."
+    },
+    {
+      "source": "card_diskii",
+      "target": "system_apple_ii",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/109",
+      "note": "Planned Disk II storage/controller option tracked by the machine software roadmap; qualify the selected drive, controller and firmware revision."
+    },
+    {
+      "source": "card_diskii",
+      "target": "system_apple_iie",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/109",
+      "note": "Planned Disk II storage/controller option tracked by the machine software roadmap; qualify the selected drive, controller and firmware revision."
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite."
+    },
+    {
+      "source": "card_sb",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite."
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite."
+    },
+    {
+      "source": "card_sb",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite."
+    }
+  ]
+}

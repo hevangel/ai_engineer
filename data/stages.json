@@ -1,0 +1,65 @@
+{
+  "stages": [
+    {
+      "id": "planned",
+      "label": "Planned",
+      "icon": "○",
+      "color": "#78828c",
+      "description": "Scope is on the roadmap."
+    },
+    {
+      "id": "researching",
+      "label": "Researching",
+      "icon": "◔",
+      "color": "#b77819",
+      "description": "Requirements and source material are being assembled."
+    },
+    {
+      "id": "sources_ready",
+      "label": "Sources ready",
+      "icon": "▤",
+      "color": "#996823",
+      "description": "The defined source set is collected and cleaned."
+    },
+    {
+      "id": "building",
+      "label": "Building",
+      "icon": "⌘",
+      "color": "#0071c5",
+      "description": "Implementation is in progress."
+    },
+    {
+      "id": "ai_verified",
+      "label": "AI verified",
+      "icon": "◇",
+      "color": "#713eae",
+      "description": "An explicit AI verification record links supporting evidence."
+    },
+    {
+      "id": "human_verified",
+      "label": "Human verified",
+      "icon": "✦",
+      "color": "#237647",
+      "description": "A named human approval links supporting evidence."
+    }
+  ],
+  "builds": [
+    {
+      "id": "unknown",
+      "label": "Build unreported",
+      "icon": "−"
+    },
+    {
+      "id": "passing",
+      "label": "Build passing",
+      "icon": "✓"
+    },
+    {
+      "id": "failing",
+      "label": "Build failing",
+      "icon": "!"
+    }
+  ],
+  "coverageLabel": "Source coverage",
+  "coverageDescription": "Cleaned source items / explicitly defined source items. Unknown is shown as —; issue checklist completion is not a source-data percentage."
+}
