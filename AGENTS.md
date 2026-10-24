@@ -53,3 +53,5 @@ The website and its shared presentation belong at this repository root. The thre
 Read [spec/project_manager.md](spec/project_manager.md) before creating, triaging, scheduling or updating roadmap issues and dependencies. The initial inventory and canonical issue links are in [spec/initial_project_plan.md](spec/initial_project_plan.md). Manage the AI Engineer GitHub Project across chips, systems, bus-organized cards, Rust toolchains/software, HDL Workbench and the planned ai_fpga_engineer repository.
 
 The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench baseline and its Xezim/Surfer dependencies. Treat its maintenance and upgrade qualification separately from creating new tools.
+
+The [386/68030 scope](spec/era_386_scope.md) sets the classic PC and Macintosh coverage endpoints and explicitly includes AdLib and Sound Blaster. Use its complete-stack inventory before declaring a machine or program complete.

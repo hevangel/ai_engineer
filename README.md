@@ -43,3 +43,5 @@ The [AI Engineer GitHub Project](https://github.com/users/hevangel/projects/1) c
 See the [initial project plan](spec/initial_project_plan.md) for the canonical issue inventory and dependencies, and the [project manager instructions](spec/project_manager.md) for how that roadmap is maintained. The planned `ai_fpga_engineer` repository has not been created yet.
 
 The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench integration with Xezim simulation and Surfer waveform viewing, plus dependency and upgrade qualification.
+
+The reconstruction scope extends through Intel 386DX/SX PCs and Motorola 68030 Macintosh systems, including the 68020 transition, AdLib and Sound Blaster. See the [386-era scope and roadmap](spec/era_386_scope.md).

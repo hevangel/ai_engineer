@@ -47,3 +47,9 @@ Use the Workstream field to group Chips, Systems, Cards, Toolchains, Software, F
 ## EDA tools
 
 Manage the [EDA tools track](eda_tools.md) in the Tooling Workstream, separately from Rust/LLVM Toolchains. HDL Workbench is working and depends on Xezim for SV execution and Surfer for waveform viewing. Record its working baseline and future maintenance/upgrade gates separately. Qualify dependency changes before integrating public historical-system demos.
+
+## 386 and Macintosh coverage
+
+The owner set the PC endpoint to 386DX/SX and the corresponding classic Macintosh endpoint to 68030, including the 68020 transition. Follow [era_386_scope.md](era_386_scope.md). Include AdLib and Sound Blaster as explicit card/software deliverables. Keep a complete BOM and firmware/OS/application coverage ledger per selected machine, expanding issues as sources reveal missing parts. The CPU-generation endpoint does not forbid later ISA peripheral profiles useful on these hosts.
+
+When reconciling issues or project items, fetch all pages or raise the CLI limit to cover the inventory. GitHub dependency GET responses default to 30 entries; request per_page=100 and paginate when required before declaring a blocker missing.
