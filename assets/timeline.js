@@ -5,7 +5,7 @@ async function read(url){const r=await fetch(url);if(!r.ok)throw Error(url+' ret
 function legend(){for(const stage of vocabulary.stages){const item=element('div','legend-item');const icon=element('span','stage-symbol',stage.icon);icon.style.setProperty('--stage',stage.color);const copy=element('div');copy.append(element('strong','',stage.label),element('p','',stage.description));item.append(icon,copy);$('stage-legend').append(item);const option=element('option','',stage.label);option.value=stage.id;$('stage').append(option);}for(const build of vocabulary.builds)$('build-legend').append(element('span','',build.icon+' '+build.label));$('coverage-explanation').textContent=vocabulary.coverageLabel+': '+vocabulary.coverageDescription;}
 function credit(entry){const data=credits[entry.id];$('photo-credit').replaceChildren();const image=element('img');image.src=entry.image.src;image.alt=entry.image.alt;$('photo-credit').append(image);if(data){$('photo-credit').append(element('p','',data.title),element('p','',data.creator||'Creator listed at original source'),element('p','',data.license+' · '+data.changes),link('Original photograph and license ↗',data.source));if(data.credit&&data.credit!==data.creator)$('photo-credit').append(element('p','',data.credit));if(entry.image?.caption)$('photo-credit').append(element('p','',entry.image.caption));if(data.licenseUrl)$('photo-credit').append(element('p',''),link('License terms ↗',data.licenseUrl));}if(entry.image.representative)$('photo-credit').append(element('p','representative','Representative family photograph; not a confirmed image of this exact device or revision.'));$('photo-dialog').showModal();}
 function badge(symbol,label,className=''){const b=element('span','badge '+className,symbol);b.tabIndex=0;b.setAttribute('role','img');b.setAttribute('aria-label',label);b.title=label;return b;}
-function card(entry){const status=snapshot.statuses[entry.id];const stage=vocabulary.stages.find(s=>s.id===status?.stage);const company=catalog.companies[entry.company];const article=element('article','hardware');article.dataset.id=entry.id;article.dataset.company=entry.company;article.dataset.kind=entry.kind;article.style.setProperty('--company',company.color);const photo=element('div','photo-wrap');const image=element('img');image.loading='lazy';image.decoding='async';image.width=640;image.height=440;image.src=entry.image?.src||'';image.alt=entry.image?.alt||entry.title;photo.append(image);const creditButton=element('button','photo-credit','i');creditButton.setAttribute('aria-label','Photo attribution for '+entry.title);creditButton.addEventListener('click',()=>credit(entry));photo.append(creditButton);const badges=element('div','status-badges');const percent=status?.coverage?.percent??null;badges.append(badge(percent===null?'—':percent+'%',percent===null?'Source coverage not reported':`${percent}% source coverage: ${status.coverage.cleaned} cleaned of ${status.coverage.total} defined items`,'coverage-badge'));const build=vocabulary.builds.find(b=>b.id===status?.build?.status)||vocabulary.builds[0];badges.append(badge(build.icon,build.label,'build-badge build-'+build.id));const stageBadge=badge(stage?.icon||'?',stage?.label||'Status unavailable');stageBadge.style.setProperty('--stage',stage?.color||'#78828c');badges.append(stageBadge);photo.append(badges);const meta=element('div','entry-meta');meta.append(element('span','maker',company.name),element('span','',entry.kind==='system'?'COMPUTER SYSTEM':entry.kind==='card'?'EXPANSION CARD':'CHIP FAMILY'));const title=element('h3');title.append(link(entry.title,entry.issue.url));const footer=element('div','entry-footer');const date=entry.dateSource?link(entry.dateLabel+' ↗',entry.dateSource):element('span','',entry.dateLabel);date.title='Historical placement; follow the source for date qualifications';footer.append(date,link('#'+entry.issue.number+' ↗',entry.issue.url));article.append(photo,meta,title);if(entry.description)article.append(element('p','',entry.description));if(entry.image?.representative)article.append(element('p','representative',entry.image.caption||'Representative family photograph'));else if(entry.image?.caption)article.append(element('p','photo-caption',entry.image.caption));if(entry.dateNote){const evidence=element('details','date-note');evidence.append(element('summary','','Date evidence'),element('p','',entry.dateNote));for(const [index,source]of (entry.historySources||[]).entries()){if(source.url)evidence.append(link((source.note||'Supporting source '+(index+1))+' ↗',source.url));}article.append(evidence);}article.append(footer);if(entry.kind==='system'){const count=relationships.links.filter(link=>link.target===entry.id).length;const trace=element('button','trace-computer','Trace '+count+' components');trace.setAttribute('aria-label','Trace components for '+entry.title);trace.addEventListener('click',()=>focusComputer(entry.id));article.append(trace);}return article;}
+function card(entry){const status=snapshot.statuses[entry.id];const stage=vocabulary.stages.find(s=>s.id===status?.stage);const company=catalog.companies[entry.company];const article=element('article','hardware');article.id='hardware-'+entry.id;article.tabIndex=-1;article.dataset.id=entry.id;article.dataset.company=entry.company;article.dataset.kind=entry.kind;article.style.setProperty('--company',company.color);const photo=element('div','photo-wrap');const image=element('img');image.loading='lazy';image.decoding='async';image.width=640;image.height=440;image.src=entry.image?.src||'';image.alt=entry.image?.alt||entry.title;photo.append(image);const creditButton=element('button','photo-credit','i');creditButton.setAttribute('aria-label','Photo attribution for '+entry.title);creditButton.addEventListener('click',()=>credit(entry));photo.append(creditButton);const badges=element('div','status-badges');const percent=status?.coverage?.percent??null;badges.append(badge(percent===null?'—':percent+'%',percent===null?'Source coverage not reported':`${percent}% source coverage: ${status.coverage.cleaned} cleaned of ${status.coverage.total} defined items`,'coverage-badge'));const build=vocabulary.builds.find(b=>b.id===status?.build?.status)||vocabulary.builds[0];badges.append(badge(build.icon,build.label,'build-badge build-'+build.id));const stageBadge=badge(stage?.icon||'?',stage?.label||'Status unavailable');stageBadge.style.setProperty('--stage',stage?.color||'#78828c');badges.append(stageBadge);photo.append(badges);const meta=element('div','entry-meta');meta.append(element('span','maker',company.name),element('span','',entry.kind==='system'?'COMPUTER SYSTEM':entry.kind==='card'?'EXPANSION CARD':'CHIP FAMILY'));const title=element('h3');title.append(link(entry.title,entry.issue.url));const footer=element('div','entry-footer');const date=entry.dateSource?link(entry.dateLabel+' ↗',entry.dateSource):element('span','',entry.dateLabel);date.title='Historical placement; follow the source for date qualifications';footer.append(date,link('#'+entry.issue.number+' ↗',entry.issue.url));article.append(photo,meta,title);if(entry.description)article.append(element('p','',entry.description));if(entry.image?.representative)article.append(element('p','representative',entry.image.caption||'Representative family photograph'));else if(entry.image?.caption)article.append(element('p','photo-caption',entry.image.caption));if(entry.dateNote){const evidence=element('details','date-note');evidence.append(element('summary','','Date evidence'),element('p','',entry.dateNote));for(const [index,source]of (entry.historySources||[]).entries()){if(source.url)evidence.append(link((source.note||'Supporting source '+(index+1))+' ↗',source.url));}article.append(evidence);}article.append(footer);if(entry.kind==='system'){const count=relationships.links.filter(link=>link.target===entry.id).length;const trace=element('button','trace-computer','Trace '+count+' components');trace.setAttribute('aria-label','Trace components for '+entry.title);trace.addEventListener('click',()=>focusComputer(entry.id));article.append(trace);}return article;}
 function render(){
  const search=$('search').value.toLowerCase().trim(),company=$('company').value,stage=$('stage').value;
  const computer=$('computer').value;
@@ -45,6 +45,25 @@ function focusComputer(id){
  $('company').value='all';$('stage').value='all';$('search').value='';
  document.querySelector('[data-kind="all"]').click();
  if(id!=='all')requestAnimationFrame(()=>requestAnimationFrame(()=>document.querySelector('.hardware[data-id="'+id+'"]')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'})));
+}
+function jumpToHardware(id){
+ const node=document.getElementById('hardware-'+id);if(!node)return;
+ const hash='#'+node.id;if(location.hash!==hash)history.pushState(null,'',hash);
+ node.focus({preventScroll:true});
+ node.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start',inline:'nearest'});
+}
+// Split a polyline by distance so each half follows the wire to its opposite end.
+function splitRoute(points){
+ const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
+ let remaining=lengths.reduce((a,b)=>a+b,0)/2;
+ for(let i=0;i<lengths.length;i++){
+  if(remaining<=lengths[i]&&lengths[i]>0){
+   const ratio=remaining/lengths[i],a=points[i],b=points[i+1],middle=[a[0]+(b[0]-a[0])*ratio,a[1]+(b[1]-a[1])*ratio];
+   return [[...points.slice(0,i+1),middle],[middle,...points.slice(i+1)]];
+  }
+  remaining-=lengths[i];
+ }
+ return [points,points];
 }
 function drawConnections(){
  const timeline=$('timeline'),svg=$('connections');
@@ -124,12 +143,36 @@ function drawConnections(){
    [lane,inY-vertical*bend],[lane-sign*bend,inY],
    [to.x+sign*6,inY],[to.x,inY+6],[to.x,to.y]
   ];
-  const d=points.map(([x,y],index)=>(index?'L':'M')+' '+coordinate(x)+' '+coordinate(y)).join(' ');
+  const pathData=route=>route.map(([x,y],index)=>(index?'L':'M')+' '+coordinate(x)+' '+coordinate(y)).join(' ');
+  const d=pathData(points);
   const group=shape('g',{class:'connection connection-'+edge.type+(edge.basis==='reconstruction'?' connection-reconstruction':''),'data-source':edge.source,'data-target':edge.target,'data-type':edge.type,'data-side':edge.side,'data-lane':edge.lane});
   const title=shape('title',{});title.textContent=entryById.get(edge.source).title+' → '+entryById.get(edge.target).title+' · '+(edge.type==='maker'?'maker lineage':edge.basis==='reconstruction'?'later reconstruction component · not original hardware':edge.type==='required'?'recorded prerequisite':'planned optional configuration');
-  group.append(title,shape('path',{d,class:'trace-clearance'}),shape('path',{d,class:'trace-wire',stroke:edge.color}));paths.append(group);
-  for(const [direction,p]of [['out',from],['in',to]])pads.append(shape('circle',{cx:coordinate(p.x),cy:coordinate(p.y),r:4.5,class:'trace-pad '+edge.type+'-pad','data-entry':direction==='out'?edge.source:edge.target,'data-direction':direction,stroke:edge.color}));
+  const jump=(destination,origin,tabbable=true)=>{
+   const entry=entryById.get(destination),direction=ranks.get(destination)<ranks.get(origin)?'Previous':'Next';
+   const label=direction+' '+(entry.kind==='system'?'computer':entry.kind)+': '+entry.title;
+   const anchor=shape('a',{href:'#hardware-'+destination,class:'trace-jump','data-destination':destination,'aria-label':label,tabindex:tabbable?0:-1});
+   const hint=shape('title',{});hint.textContent=label+' · Enter to jump; ↑ previous / ↓ next';anchor.append(hint);
+   anchor.addEventListener('click',event=>{if(event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();jumpToHardware(destination);});
+   anchor.addEventListener('keydown',event=>{
+    if(event.key!=='ArrowUp'&&event.key!=='ArrowDown')return;
+    event.preventDefault();
+    const ordered=[edge.source,edge.target].sort((a,b)=>ranks.get(a)-ranks.get(b));
+    jumpToHardware(ordered[event.key==='ArrowUp'?0:1]);
+   });
+   return anchor;
+  };
+  group.append(title,shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire',stroke:edge.color,'aria-hidden':true}));
+  const halves=splitRoute(points);
+  for(const [route,destination,origin]of [[halves[0],edge.target,edge.source],[halves[1],edge.source,edge.target]]){
+   const anchor=jump(destination,origin);anchor.append(shape('path',{d:pathData(route),class:'trace-hit','stroke-width':edge.side==='left'?4:6}));group.append(anchor);
+  }
+  paths.append(group);
+  for(const [direction,p,destination,origin]of [['out',from,edge.target,edge.source],['in',to,edge.source,edge.target]]){
+   const anchor=jump(destination,origin,false);
+   anchor.append(shape('circle',{cx:coordinate(p.x),cy:coordinate(p.y),r:4.5,class:'trace-pad '+edge.type+'-pad','data-entry':origin,'data-direction':direction,stroke:edge.color}));pads.append(anchor);
+  }
  }
+ $('wire-help').hidden=!wires||!edges.length;
  svg.setAttribute('viewBox',`0 0 ${bounds.width} ${bounds.height}`);svg.style.height=bounds.height+'px';svg.replaceChildren(paths,pads);
  $('trace-summary').textContent=wires?edges.filter(edge=>edge.type==='maker').length+' maker links on the right · '+edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length+' component links · '+edges.filter(edge=>edge.basis==='reconstruction').length+' reconstruction links · '+edges.filter(edge=>edge.type==='optional').length+' planned options on the left':'Wires hidden';
 }

@@ -109,3 +109,10 @@ Without `--publish`, the script only inspects the committed snapshot. It exports
 For initial setup, create `gh-pages` with the publisher, then configure the repository Pages source to that branch/root. GitHub automatically performs the Pages deployment on publishing-branch pushes. Inspect `gh api repos/hevangel/ai_engineer/pages` and the latest Pages build/Actions run. Confirm the build commit matches the publishing commit, then verify the public HTML, JSON and representative photographs load below the project URL. A pushed commit or queued build alone does not confirm a live release.
 
 Official references: [publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [Pages REST API](https://docs.github.com/en/rest/pages/pages).
+
+
+## Following wires
+
+Every displayed maker, required-component, planned-option and reconstruction wire supports navigation in both directions. Clicking the half nearest one card, or that card's hollow pad, follows the wire to the opposite card. The tooltip names the destination. Previous/next follows displayed card order, including same-year chips and the older PDP-1 reconstruction exception. Filters stay unchanged, so only visible connected entries are destinations.
+
+Wire links are real fragment anchors to stable `hardware-<catalog-id>` card IDs. Tab reaches each wire half, Enter follows its named destination, and Arrow Up / Arrow Down jumps to the earlier / later endpoint in displayed order. Jumps focus and outline the destination card, keep it clear of the sticky toolbar and reveal it horizontally when necessary. Reduced-motion preferences disable smooth scrolling. Decorative SVG paths do not receive pointer input; narrow transparent stroke hit areas and hollow pads do, leaving card links and controls usable. Hiding wires removes the wire links, pads and help text from interaction.
