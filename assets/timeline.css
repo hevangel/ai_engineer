@@ -88,3 +88,5 @@
 #bus-dialog::backdrop{background:rgba(32,42,49,.35)}#bus-close{float:right;background:none;border:0;font-size:25px}#bus-title{font:25px/1.2 Georgia,serif;margin:6px 26px 12px 0}#bus-dialog>p{font-size:12px;line-height:1.6;color:var(--muted)}#bus-members{list-style:none;padding:0;margin:18px 0 0}#bus-members li{border-top:1px solid var(--line);padding:12px 0}#bus-members a{display:block;text-decoration:underline;text-underline-offset:3px;font-size:14px}#bus-members small{display:block;margin-top:5px;color:var(--muted);font-size:10px}
 
 .bus-direct-hit,.bus-rail-hit{fill:transparent;pointer-events:all;cursor:pointer}
+
+.compatible-net .trace-wire{stroke-dasharray:8 3 2 3;stroke-width:2.2px}.compatible-trunk{stroke-width:2.8px!important}.connection-key .compatible-key{border-top-style:double;border-top-width:3px}#connection-evidence a{display:block;font-size:11px;line-height:1.5;margin-top:12px;text-decoration:underline;text-underline-offset:3px}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "description": "Source-qualified alternate processor roles. Members are mutually exclusive alternatives, never simultaneous CPU requirements. Applied only to existing native primary-CPU gates.",
+  "groups": [
+    {
+      "id": "8086_dip40",
+      "label": "8086 compatible CPU",
+      "primary": "intel_8086",
+      "members": [
+        "intel_8086",
+        "amd_8086"
+      ],
+      "color": "#526777",
+      "qualification": "Matching 40-pin 8086 DIP pinout, supply, minimum/maximum bus mode and system clock grade. The selected PS/2 Model 30 uses an 8 MHz 8086-2-class profile.",
+      "evidence": [
+        {
+          "url": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+          "note": "AMD manufacturer data book, printed 2-104 onward: AMD 8086 ordering, pinout and electrical/bus specifications; compare Intel 8086 family manual."
+        }
+      ],
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date.",
+      "wireLabel": "8086"
+    },
+    {
+      "id": "8088_dip40",
+      "label": "8088 compatible CPU",
+      "primary": "intel_8088",
+      "members": [
+        "intel_8088",
+        "amd_8088"
+      ],
+      "color": "#526777",
+      "qualification": "Matching 40-pin 8088 DIP pinout, 8-bit external data bus, supply, bus mode and host clock grade. An 8086 is not a physical substitute.",
+      "evidence": [
+        {
+          "url": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+          "note": "AMD manufacturer data book, printed 2-136 onward: AMD 8088 ordering, connection diagram and bus specifications."
+        }
+      ],
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date.",
+      "wireLabel": "8088"
+    },
+    {
+      "id": "80286_68pin",
+      "label": "80286 compatible CPU",
+      "primary": "intel_80286",
+      "members": [
+        "intel_80286",
+        "amd_80286"
+      ],
+      "color": "#526777",
+      "qualification": "Match the specific 68-pin package/socket, board voltage and clock/timing grade; PGA and leadless-carrier packages are separate physical choices.",
+      "evidence": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/x86/_dataSheets/1985_80286.pdf",
+          "note": "AMD 1985 manufacturer sheet: package choices, connection diagrams and 6/8/10 MHz speed options."
+        }
+      ],
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date.",
+      "wireLabel": "286"
+    },
+    {
+      "id": "386dx_132pin",
+      "label": "386DX compatible CPU",
+      "primary": "intel_80386",
+      "members": [
+        "intel_80386",
+        "amd_am386dx"
+      ],
+      "color": "#526777",
+      "qualification": "Use the matching 132-pin DX package and 5 V board timing profile. Match socket/package, clock, chipset, cache and BIOS; DX and SX are different pinouts.",
+      "evidence": [
+        {
+          "url": "https://pccomponents.com/datasheets/AMD-A80386.PDF",
+          "note": "AMD Am386DX manufacturer sheet: compatible implementation of Intel i386DX; original 132-pin package/connection and electrical specifications."
+        }
+      ],
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date.",
+      "wireLabel": "386DX"
+    },
+    {
+      "id": "386sx_100pin",
+      "label": "386SX compatible CPU",
+      "primary": "intel_80386sx",
+      "members": [
+        "intel_80386sx",
+        "amd_am386sx"
+      ],
+      "color": "#526777",
+      "qualification": "Use the original 5 V Am386SX in the matching 100-lead PQFP profile and qualify the host clock/timing. Do not infer compatibility for every SXL/SXLV/low-voltage member or IBM 386SLC.",
+      "evidence": [
+        {
+          "url": "https://www.ardent-tool.com/CPU/docs/AMD/386/386SX/15022a.pdf",
+          "note": "AMD March 1991 Rev A, page 1 explicitly identifies Am386SX as a pin-for-pin Intel i386SX replacement."
+        }
+      ],
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date.",
+      "wireLabel": "386SX"
+    }
+  ]
+}

@@ -1106,6 +1106,31 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "intel_8088",
+      "title": "Intel 8088",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1979,
+      "dateLabel": "1979 · 8088 introduction",
+      "dateSource": "https://www.intel.com/pressroom/kits/quickrefyr.htm",
+      "era": "16",
+      "query": "Intel 8088",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 22,
+        "url": "https://github.com/hevangel/ai_engineer/issues/22"
+      },
+      "image": {
+        "src": "images/intel_8088.jpg",
+        "alt": "Intel P8088-6 processor in a 40-pin DIP package photographed by Jud McCranie",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_8088_chip,_top.jpg",
+        "caption": "Intel P8088-6; a later speed grade illustrating the 8088 family."
+      },
+      "dateBasis": "introduced",
+      "dateNote": "The 8088 has an 8-bit external data bus and a different pinout from the 16-bit-bus 8086. IBM PC and XT use this variant; the original PS/2 Model 30 uses 8086. The photographed P8088-6 is a later speed-grade package, not a dated launch specimen."
+    },
+    {
       "id": "intel_8087",
       "title": "Intel 8087",
       "kind": "chip",

@@ -43,6 +43,27 @@
       "basis": "reconstruction",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/184",
       "note": "Owner-selected Am29xx implementation of the older PDP-1 architecture. These later chips were not present in DEC’s original 1959 machine."
+    },
+    {
+      "source": "intel_8088",
+      "target": "system_ibm_pc",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable."
+    },
+    {
+      "source": "intel_8088",
+      "target": "system_ibm_pc_xt_5160",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/83",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable."
+    },
+    {
+      "source": "intel_8086",
+      "target": "system_ibm_ps2_model30",
+      "basis": "original",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable."
     }
   ]
 }
