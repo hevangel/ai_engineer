@@ -81,6 +81,10 @@
     "roland": {
       "name": "Roland",
       "color": "#E85B25"
+    },
+    "chips": {
+      "name": "CHIPS & Technologies",
+      "color": "#355DA4"
     }
   },
   "eras": [
@@ -2465,6 +2469,51 @@
       }
     },
     {
+      "id": "neat_cs8221",
+      "title": "CHIPS NEAT CS8221 chipset",
+      "kind": "chip",
+      "company": "chips",
+      "year": 1987,
+      "era": "32",
+      "dateLabel": "Documented by 1987",
+      "dateBasis": "documented",
+      "dateSource": "https://www.ardent-tool.com/datasheets/CHIPs_CS8221_Chipset.pdf",
+      "dateNote": "CHIPS CS8221 NEAT Data Book, 10/87 Rev 0, pages 1–2. Documentation bound; not a shipping-date assertion. This is a non-CPU support chipset. The same set can be used by different motherboards; exact board/ROM selection precedes any computer connection.",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 204,
+        "url": "https://github.com/hevangel/ai_engineer/issues/204"
+      },
+      "image": {
+        "src": "images/neat_cs8221.jpg",
+        "alt": "CHIPS P82C206 integrated peripheral controller, one member of the four-chip NEAT CS8221 set.",
+        "representative": true,
+        "caption": "Representative member: CHIPS P82C206 on a motherboard; the other three CS8221 members are not pictured.",
+        "source": "https://commons.wikimedia.org/wiki/File:Chips%26technologies_82C206_IMGP0216_smial_wp.JPG"
+      },
+      "chipset": {
+        "evidence": "https://www.ardent-tool.com/datasheets/CHIPs_CS8221_Chipset.pdf",
+        "members": [
+          {
+            "part": "82C211",
+            "role": "CPU/bus controller"
+          },
+          {
+            "part": "82C212",
+            "role": "Page/interleave and EMS memory controller"
+          },
+          {
+            "part": "82C215",
+            "role": "Data/address buffer and parity logic"
+          },
+          {
+            "part": "82C206",
+            "role": "Integrated peripherals controller"
+          }
+        ]
+      }
+    },
+    {
       "id": "intel_80386sx",
       "title": "Intel 80386SX",
       "kind": "chip",
@@ -2559,6 +2608,43 @@
         "alt": "MacII.jpg",
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
+      }
+    },
+    {
+      "id": "intel_at_chipset",
+      "title": "Intel 82230 / 82231 chipset",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1988,
+      "era": "32",
+      "dateLabel": "Documented by 1988",
+      "dateBasis": "documented",
+      "dateSource": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=1185",
+      "dateNote": "Intel 240017-002, August 1988, printed 4-667 / PDF page 1185. Documentation bound; not a shipping-date assertion. This is a non-CPU support chipset. The same set can be used by different motherboards; exact board/ROM selection precedes any computer connection.",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 203,
+        "url": "https://github.com/hevangel/ai_engineer/issues/203"
+      },
+      "image": {
+        "src": "images/intel_at_chipset.jpg",
+        "alt": "Intel N82230-2 support IC, one member of the 82230/82231 two-chip set.",
+        "representative": true,
+        "caption": "Representative member: Intel N82230-2 from the two-chip 82230/82231 set.",
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--ZyMOS--N82230-2--Z949208.JPG"
+      },
+      "chipset": {
+        "evidence": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=1185",
+        "members": [
+          {
+            "part": "82230",
+            "role": "Clock/ready, bus control, RTC, dual interrupt controllers and coprocessor/control logic"
+          },
+          {
+            "part": "82231",
+            "role": "Timer, clock, memory mapper, dual DMA and refresh/arbitration logic"
+          }
+        ]
       }
     },
     {

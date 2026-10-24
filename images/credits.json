@@ -1399,5 +1399,29 @@
     "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/11/Lapc-1.jpg",
     "changes": "JPEG optimized locally; no crop or recoloring. Displayed with contain sizing.",
     "representative": false
+  },
+  "intel_at_chipset": {
+    "curated": true,
+    "title": "File:Ic-photo-Intel--ZyMOS--N82230-2--Z949208.JPG",
+    "creator": "ZyMOS",
+    "credit": "CPU Grave Yard / ZyMOS CPU collection",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--ZyMOS--N82230-2--Z949208.JPG",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ic-photo-Intel--ZyMOS--N82230-2--Z949208.JPG",
+    "changes": "JPEG resized and optimized locally; no crop or recoloring. Displayed with contain sizing.",
+    "representative": true
+  },
+  "neat_cs8221": {
+    "curated": true,
+    "title": "File:Chips&technologies 82C206 IMGP0216 smial wp.JPG",
+    "creator": "Smial (Rainer Knäpper)",
+    "credit": "Photograph by Rainer Knäpper (Smial)",
+    "license": "Free Art License (FAL)",
+    "licenseUrl": "http://artlibre.org/licence/lal/en",
+    "source": "https://commons.wikimedia.org/wiki/File:Chips%26technologies_82C206_IMGP0216_smial_wp.JPG",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Chips%26technologies_82C206_IMGP0216_smial_wp.JPG",
+    "changes": "JPEG resized and optimized locally; no crop or recoloring. Displayed with contain sizing.",
+    "representative": true
   }
 }
