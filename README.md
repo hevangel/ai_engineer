@@ -45,3 +45,23 @@ See the [initial project plan](spec/initial_project_plan.md) for the canonical i
 The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench integration with Xezim simulation and Surfer waveform viewing, plus dependency and upgrade qualification.
 
 The reconstruction scope extends through Intel 386DX/SX PCs and Motorola 68030 Macintosh systems, including the 68020 transition, AdLib and Sound Blaster. See the [386-era scope and roadmap](spec/era_386_scope.md).
+
+## Timeline website
+
+The root [index.html](index.html) presents the chip families, computers and expansion cards as a scrolling photographic timeline. Maker connections, architecture-era bands and a year rail show their historical relationships. Search and filters narrow the archive; the status guide explains the photo badges.
+
+Preview locally:
+
+```sh
+node scripts/serve.mjs
+```
+
+Open [the local preview](http://127.0.0.1:4173). Refresh the JSON status snapshot with:
+
+```sh
+node scripts/sync-timeline.mjs --project 1 --owner hevangel
+```
+
+Statuses come from GitHub issue metadata and the selected project. Verification badges require evidence; unknown source coverage stays unknown. Representative photographs and uncertain dates are labeled. Each image has its own attribution and license.
+
+See [the timeline specification](spec/timeline.md) for the metadata format and publishing file list, and [scripts/README.md](scripts/README.md) for commands. This implementation supplies static files; publishing remains a separate step.

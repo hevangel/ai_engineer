@@ -8,3 +8,5 @@
 - [EDA tools track](eda_tools.md): working HDL Workbench baseline, Xezim and Surfer dependencies, and upgrade qualification.
 
 - [386 and 68030 Macintosh scope](era_386_scope.md): complete-stack expansion, AdLib/Sound Blaster, and source-backed CPU comparison.
+
+- [Public timeline](timeline.md): website data, issue-status schema, source coverage and photograph curation.

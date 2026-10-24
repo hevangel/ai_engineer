@@ -55,3 +55,5 @@ Read [spec/project_manager.md](spec/project_manager.md) before creating, triagin
 The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench baseline and its Xezim/Surfer dependencies. Treat its maintenance and upgrade qualification separately from creating new tools.
 
 The [386/68030 scope](spec/era_386_scope.md) sets the classic PC and Macintosh coverage endpoints and explicitly includes AdLib and Sound Blaster. Use its complete-stack inventory before declaring a machine or program complete.
+
+Read [spec/timeline.md](spec/timeline.md) before changing the public timeline, status synchronization or photo catalog. Statuses belong in JSON; verification requires explicit linked evidence. Inspect photographs for model identity and retain their own license attribution.
