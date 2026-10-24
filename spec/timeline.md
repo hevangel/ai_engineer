@@ -130,3 +130,7 @@ Read [compatible_chips.md](compatible_chips.md). `data/compatible-chips.json` de
 ## Optional coprocessors
 
 See [the 287/387 profiles](coprocessors_287_387.md) for canonical issues, sourced DX/SX history, machine options and dotted left-side chip links. Optional chip links do not enter expansion-card buses or add native completion blockers.
+
+## Grouped support chipsets
+
+See [chipset cards](chipsets.md) for one-card member lists, canonical family issues, date/photo qualifications and exact-board dependency selection. The member list is data-driven and searchable; each chipset retains one status and one set of wire endpoints.

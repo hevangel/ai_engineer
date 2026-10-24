@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T22:26:42.286Z",
+  "syncedAt": "2026-10-24T22:48:50.957Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -1449,7 +1449,7 @@
       },
       "issueState": "open",
       "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T13:27:36Z",
+      "updatedAt": "2026-10-24T22:47:38Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/122"
     },
     "ega_chip": {
@@ -2061,6 +2061,27 @@
       "updatedAt": "2026-10-24T01:40:15Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/163"
     },
+    "neat_cs8221": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T22:47:31Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/204"
+    },
     "intel_80386sx": {
       "stage": "planned",
       "coverage": {
@@ -2144,6 +2165,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:40:29Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/169"
+    },
+    "intel_at_chipset": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T22:47:25Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/203"
     },
     "sb_dsp": {
       "stage": "planned",

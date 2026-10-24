@@ -18,6 +18,8 @@ The connections show different relationships:
 
 Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑ and ↓. Turn off **Show wires** for a simpler view.
 
+Motherboard chipsets appear as one card listing their cooperating member chips. Searching a member’s part number finds its chipset card.
+
 Click a hardware title to open its GitHub issue. The photo information button opens its source and license. Representative photos, later revisions and uncertain historical dates are labeled.
 
 ## What we are rebuilding

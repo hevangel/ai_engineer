@@ -269,3 +269,10 @@ The IBM/AMD table includes the retained Model 25 SX issue identities and all new
 ## Intel numeric coprocessors
 
 [287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.
+
+## Coherent motherboard chipset families
+
+- [[Chipset] Intel 82230 / 82231 AT-compatible support chipset](https://github.com/hevangel/ai_engineer/issues/203): 82230, 82231; Todo / Chips, one public card.
+- [[Chipset] CHIPS NEAT CS8221 — 82C211 / 82C212 / 82C215 / 82C206](https://github.com/hevangel/ai_engineer/issues/204): 82C211, 82C212, 82C215, 82C206; Todo / Chips, one public card.
+
+See [chipsets.md](chipsets.md). No factory-board links are inferred from AT compatibility.

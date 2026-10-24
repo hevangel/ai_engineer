@@ -68,3 +68,7 @@ Use [compatible_chips.md](compatible_chips.md) for qualified Intel/AMD choices. 
 ## Intel numeric coprocessors
 
 [287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.
+
+## Grouped support chipsets
+
+See [chipset cards](chipsets.md) for one-card member lists, canonical family issues, date/photo qualifications and exact-board dependency selection. The member list is data-driven and searchable; each chipset retains one status and one set of wire endpoints.

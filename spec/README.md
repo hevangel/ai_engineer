@@ -16,3 +16,7 @@
 - [Compatible processor profiles](compatible_chips.md): shared CPU-role wires, second-source qualifications and distinct 8086/8088 host profiles.
 
 See [Roland LAPC-I ISA profiles](roland_isa.md) for the 1989 manufacturer-document bound, licensed photo, four planned host buses and physical-fit qualifications.
+
+## Grouped support chipsets
+
+See [chipset cards](chipsets.md) for one-card member lists, canonical family issues, date/photo qualifications and exact-board dependency selection. The member list is data-driven and searchable; each chipset retains one status and one set of wire endpoints.

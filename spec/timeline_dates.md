@@ -81,3 +81,7 @@ The distinct Intel 8088 timeline profile is anchored to 1979 by [Intel's histori
 ## Roland LAPC-I
 
 `card_roland_lapc_i`: **Documented by 1989**, from the copyright on PDF page 2 of [Roland’s original manual](https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=2). This is a documentation bound. [The 1995 support supplement](https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf) describes setup, not introduction. See [the card profiles](roland_isa.md).
+
+## Support chipsets
+
+Intel 82230/82231: **Documented by 1988**, Intel 240017-002, August 1988, printed 4-667 / PDF 1185. CHIPS NEAT CS8221: **Documented by 1987**, data-book opening pages, 10/87 Rev 0. [Sources and scope](chipsets.md). Photos show representative members and do not establish first shipments or exact board fit.
