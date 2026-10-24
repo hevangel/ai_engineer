@@ -71,3 +71,11 @@
 
 /* Later implementation parts are distinguished from original machine components. */
 .connection-reconstruction .trace-wire{stroke-dasharray:10 3 2 3;stroke-width:2.5px}.connection-key .reconstruction-key{border-top-style:dashed;border-top-color:#ed1c24}.photo-caption{font-size:9px!important;margin-top:6px!important;color:#596b62!important}.era[data-era="18"]{background:linear-gradient(90deg,rgba(220,227,234,.4),transparent 70%)}
+
+/* Only the wire strokes and hollow pads receive pointer input. */
+.trace-hit{fill:none;stroke:transparent;pointer-events:stroke;cursor:pointer;vector-effect:non-scaling-stroke}
+.trace-jump{cursor:pointer}.trace-jump .trace-pad{pointer-events:all}
+.trace-jump:focus-visible{outline:none}.connection:hover .trace-wire,.connection:focus-within .trace-wire{stroke-width:3px;stroke-opacity:1}
+.connection:focus-within .trace-clearance{stroke-width:6px}
+.hardware:focus{outline:2px solid var(--company);outline-offset:6px}
+.wire-help{font-size:10px;color:var(--muted);margin:0 0 14px;line-height:1.6}
