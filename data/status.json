@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T04:15:48.204Z",
+  "syncedAt": "2026-10-24T05:19:12.064Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "ttl_74_series": {
@@ -1599,6 +1599,27 @@
       "updatedAt": "2026-10-24T01:40:29Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/169"
     },
+    "system_pc_386sx": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T05:14:53Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/148"
+    },
     "card_sb": {
       "stage": "planned",
       "coverage": {
@@ -1724,27 +1745,6 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:38:44Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/123"
-    },
-    "system_pc_386sx": {
-      "stage": "planned",
-      "coverage": {
-        "collected": null,
-        "cleaned": null,
-        "total": null,
-        "percent": null
-      },
-      "build": {
-        "status": "unknown",
-        "evidence": null
-      },
-      "verification": {
-        "ai": null,
-        "human": null
-      },
-      "issueState": "open",
-      "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:39:37Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/148"
     },
     "intel_8042": {
       "stage": "planned",

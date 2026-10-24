@@ -12,15 +12,15 @@
     },
     "motorola": {
       "name": "Motorola",
-      "color": "#d71920"
+      "color": "#4B3F8F"
     },
     "mos": {
       "name": "MOS / Commodore",
-      "color": "#1767ae"
+      "color": "#2E8B57"
     },
     "apple": {
       "name": "Apple",
-      "color": "#656970"
+      "color": "#111111"
     },
     "ibm": {
       "name": "IBM",
@@ -28,15 +28,15 @@
     },
     "ti": {
       "name": "Texas Instruments",
-      "color": "#cc0000"
+      "color": "#CC0000"
     },
     "nintendo": {
       "name": "Nintendo",
-      "color": "#e60012"
+      "color": "#E60012"
     },
     "atari": {
       "name": "Atari",
-      "color": "#c32431"
+      "color": "#E41B23"
     },
     "yamaha": {
       "name": "Yamaha",
@@ -224,29 +224,6 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "system_busicom_141pf",
-      "title": "Busicom 141-PF",
-      "kind": "system",
-      "company": "other",
-      "year": 1971,
-      "dateLabel": "1971",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
-      "era": "4",
-      "query": "Busicom 141 PF",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 65,
-        "url": "https://github.com/hevangel/ai_engineer/issues/65"
-      },
-      "image": {
-        "src": "images/system_busicom_141pf.jpg",
-        "alt": "Busicom 141 PF 1.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Busicom_141_PF_1.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
-    },
-    {
       "id": "intel_mcs4",
       "title": "MCS-4 family",
       "kind": "chip",
@@ -268,6 +245,29 @@
         "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_open.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_busicom_141pf",
+      "title": "Busicom 141-PF",
+      "kind": "system",
+      "company": "other",
+      "year": 1971,
+      "dateLabel": "1971",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "4",
+      "query": "Busicom 141 PF",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 65,
+        "url": "https://github.com/hevangel/ai_engineer/issues/65"
+      },
+      "image": {
+        "src": "images/system_busicom_141pf.jpg",
+        "alt": "Busicom 141 PF 1.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Busicom_141_PF_1.jpg"
+      },
+      "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
       "id": "intel_mcs8",
@@ -408,29 +408,6 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "card_sio",
-      "title": "Altair 88-SIO serial interface",
-      "kind": "card",
-      "company": "mits",
-      "year": 1975,
-      "dateLabel": "1975",
-      "dateSource": "https://en.wikipedia.org/wiki/Altair_88_SIO",
-      "era": "8",
-      "query": "Altair 88 SIO",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 105,
-        "url": "https://github.com/hevangel/ai_engineer/issues/105"
-      },
-      "image": {
-        "src": "images/card_sio.jpg",
-        "alt": "Altairinside.JPG",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Altairinside.JPG"
-      },
-      "description": "Expansion card · bus, components & software"
-    },
-    {
       "id": "amd_am29xx",
       "title": "Am29xx bit-slice family",
       "kind": "chip",
@@ -546,6 +523,29 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "card_sio",
+      "title": "Altair 88-SIO serial interface",
+      "kind": "card",
+      "company": "mits",
+      "year": 1975,
+      "dateLabel": "1975",
+      "dateSource": "https://en.wikipedia.org/wiki/Altair_88_SIO",
+      "era": "8",
+      "query": "Altair 88 SIO",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 105,
+        "url": "https://github.com/hevangel/ai_engineer/issues/105"
+      },
+      "image": {
+        "src": "images/card_sio.jpg",
+        "alt": "Altairinside.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Altairinside.JPG"
+      },
+      "description": "Expansion card · bus, components & software"
+    },
+    {
       "id": "system_altair_8800",
       "title": "MITS Altair 8800",
       "kind": "system",
@@ -615,29 +615,6 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "system_apple_ii",
-      "title": "Apple II revision 0",
-      "kind": "system",
-      "company": "apple",
-      "year": 1977,
-      "dateLabel": "1977",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
-      "era": "8",
-      "query": "Apple II revision 0",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 74,
-        "url": "https://github.com/hevangel/ai_engineer/issues/74"
-      },
-      "image": {
-        "src": "images/system_apple_ii.jpg",
-        "alt": "Apple II, 1977, Computer History Museum.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Apple_II,_1977,_Computer_History_Museum.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
-    },
-    {
       "id": "apple_ii_chips",
       "title": "Apple II support chips",
       "kind": "chip",
@@ -659,29 +636,6 @@
         "source": "https://commons.wikimedia.org/wiki/File:Interface_Cards_Motherboard_and_Power_Supply_Apple2.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "system_atari_2600",
-      "title": "Atari 2600",
-      "kind": "system",
-      "company": "atari",
-      "year": 1977,
-      "dateLabel": "1977",
-      "dateSource": "https://en.wikipedia.org/wiki/Atari_2600",
-      "era": "8",
-      "query": "Atari 2600",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 92,
-        "url": "https://github.com/hevangel/ai_engineer/issues/92"
-      },
-      "image": {
-        "src": "images/system_atari_2600.jpg",
-        "alt": "Atari-2600-Wood-4Sw-Set.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
       "id": "intel_8273",
@@ -753,6 +707,52 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "system_apple_ii",
+      "title": "Apple II revision 0",
+      "kind": "system",
+      "company": "apple",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "8",
+      "query": "Apple II revision 0",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 74,
+        "url": "https://github.com/hevangel/ai_engineer/issues/74"
+      },
+      "image": {
+        "src": "images/system_apple_ii.jpg",
+        "alt": "Apple II, 1977, Computer History Museum.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_II,_1977,_Computer_History_Museum.jpg"
+      },
+      "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
+      "id": "system_atari_2600",
+      "title": "Atari 2600",
+      "kind": "system",
+      "company": "atari",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_2600",
+      "era": "8",
+      "query": "Atari 2600",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 92,
+        "url": "https://github.com/hevangel/ai_engineer/issues/92"
+      },
+      "image": {
+        "src": "images/system_atari_2600.jpg",
+        "alt": "Atari-2600-Wood-4Sw-Set.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
+      },
+      "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
       "id": "amd_am9517",
       "title": "AMD Am9517",
       "kind": "chip",
@@ -774,29 +774,6 @@
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "card_diskii",
-      "title": "Apple Disk II controller",
-      "kind": "card",
-      "company": "apple",
-      "year": 1978,
-      "dateLabel": "1978",
-      "dateSource": "https://en.wikipedia.org/wiki/Disk_II",
-      "era": "16",
-      "query": "Disk II",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 109,
-        "url": "https://github.com/hevangel/ai_engineer/issues/109"
-      },
-      "image": {
-        "src": "images/card_diskii.jpg",
-        "alt": "Disk II Floppy Disk Subsystem.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Disk_II_Floppy_Disk_Subsystem.jpg"
-      },
-      "description": "Expansion card · bus, components & software"
     },
     {
       "id": "intel_8086",
@@ -843,6 +820,29 @@
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_6809_die.JPG"
       },
       "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "card_diskii",
+      "title": "Apple Disk II controller",
+      "kind": "card",
+      "company": "apple",
+      "year": 1978,
+      "dateLabel": "1978",
+      "dateSource": "https://en.wikipedia.org/wiki/Disk_II",
+      "era": "16",
+      "query": "Disk II",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 109,
+        "url": "https://github.com/hevangel/ai_engineer/issues/109"
+      },
+      "image": {
+        "src": "images/card_diskii.jpg",
+        "alt": "Disk II Floppy Disk Subsystem.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Disk_II_Floppy_Disk_Subsystem.jpg"
+      },
+      "description": "Expansion card · bus, components & software"
     },
     {
       "id": "system_space_invaders",
@@ -960,6 +960,29 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "mos_6526",
+      "title": "MOS 6526",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1981,
+      "dateLabel": "Documented by 1981",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "MOS 6526",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 35,
+        "url": "https://github.com/hevangel/ai_engineer/issues/35"
+      },
+      "image": {
+        "src": "images/mos_6526.jpg",
+        "alt": "MOS 6526 2983 top.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_6526_2983_top.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
       "id": "card_cga",
       "title": "IBM CGA ISA display adapter",
       "kind": "card",
@@ -1002,52 +1025,6 @@
         "alt": "IBM PC 5150.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
-    },
-    {
-      "id": "mos_6526",
-      "title": "MOS 6526",
-      "kind": "chip",
-      "company": "mos",
-      "year": 1981,
-      "dateLabel": "Documented by 1981",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
-      "era": "16",
-      "query": "MOS 6526",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 35,
-        "url": "https://github.com/hevangel/ai_engineer/issues/35"
-      },
-      "image": {
-        "src": "images/mos_6526.jpg",
-        "alt": "MOS 6526 2983 top.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:MOS_6526_2983_top.jpg"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "system_c64",
-      "title": "Commodore 64",
-      "kind": "system",
-      "company": "mos",
-      "year": 1982,
-      "dateLabel": "1982",
-      "dateSource": "https://en.wikipedia.org/wiki/Commodore_64",
-      "era": "16",
-      "query": "Commodore 64",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 95,
-        "url": "https://github.com/hevangel/ai_engineer/issues/95"
-      },
-      "image": {
-        "src": "images/system_c64.jpg",
-        "alt": "Commodore-64-Computer-FL.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg"
       },
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
@@ -1121,25 +1098,25 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "system_apple_iie",
-      "title": "Apple IIe",
+      "id": "system_c64",
+      "title": "Commodore 64",
       "kind": "system",
-      "company": "apple",
-      "year": 1983,
-      "dateLabel": "1983",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "company": "mos",
+      "year": 1982,
+      "dateLabel": "1982",
+      "dateSource": "https://en.wikipedia.org/wiki/Commodore_64",
       "era": "16",
-      "query": "Apple IIe",
+      "query": "Commodore 64",
       "issue": {
         "repo": "hevangel/ai_engineer",
-        "number": 77,
-        "url": "https://github.com/hevangel/ai_engineer/issues/77"
+        "number": 95,
+        "url": "https://github.com/hevangel/ai_engineer/issues/95"
       },
       "image": {
-        "src": "images/system_apple_iie.jpg",
-        "alt": "Apple IIe.jpg",
+        "src": "images/system_c64.jpg",
+        "alt": "Commodore-64-Computer-FL.jpg",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg"
       },
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
@@ -1213,52 +1190,6 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "system_ibm_pc_xt_5160",
-      "title": "IBM PC XT 5160",
-      "kind": "system",
-      "company": "ibm",
-      "year": 1983,
-      "dateLabel": "1983",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
-      "era": "16",
-      "query": "IBM PC XT",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 83,
-        "url": "https://github.com/hevangel/ai_engineer/issues/83"
-      },
-      "image": {
-        "src": "images/system_ibm_pc_xt_5160.jpg",
-        "alt": "IBM PC XT color.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
-    },
-    {
-      "id": "card_xtdisk",
-      "title": "IBM/Xebec XT fixed-disk controller",
-      "kind": "card",
-      "company": "ibm",
-      "year": 1983,
-      "dateLabel": "1983",
-      "dateSource": "https://en.wikipedia.org/wiki/IBM_Xebec_hard_disk_controller",
-      "era": "16",
-      "query": "IBM Xebec hard disk controller",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 106,
-        "url": "https://github.com/hevangel/ai_engineer/issues/106"
-      },
-      "image": {
-        "src": "images/card_xtdisk.jpg",
-        "alt": "IBM PC XT color.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
-      },
-      "description": "Expansion card · bus, components & software"
-    },
-    {
       "id": "mos_6560",
       "title": "MOS 6560",
       "kind": "chip",
@@ -1328,6 +1259,75 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "card_xtdisk",
+      "title": "IBM/Xebec XT fixed-disk controller",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://en.wikipedia.org/wiki/IBM_Xebec_hard_disk_controller",
+      "era": "16",
+      "query": "IBM Xebec hard disk controller",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 106,
+        "url": "https://github.com/hevangel/ai_engineer/issues/106"
+      },
+      "image": {
+        "src": "images/card_xtdisk.jpg",
+        "alt": "IBM PC XT color.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
+      },
+      "description": "Expansion card · bus, components & software"
+    },
+    {
+      "id": "system_apple_iie",
+      "title": "Apple IIe",
+      "kind": "system",
+      "company": "apple",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "Apple IIe",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 77,
+        "url": "https://github.com/hevangel/ai_engineer/issues/77"
+      },
+      "image": {
+        "src": "images/system_apple_iie.jpg",
+        "alt": "Apple IIe.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe.jpg"
+      },
+      "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
+      "id": "system_ibm_pc_xt_5160",
+      "title": "IBM PC XT 5160",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "IBM PC XT",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 83,
+        "url": "https://github.com/hevangel/ai_engineer/issues/83"
+      },
+      "image": {
+        "src": "images/system_ibm_pc_xt_5160.jpg",
+        "alt": "IBM PC XT color.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
+      },
+      "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
       "id": "system_nes",
       "title": "Nintendo NES/Famicom",
       "kind": "system",
@@ -1349,6 +1349,52 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nintendo_Entertainment_System_-_Mattel_Version_(42532353740).jpg"
       },
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
+      "id": "motorola_68020",
+      "title": "Motorola MC68020",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68020",
+      "era": "16",
+      "query": "Motorola 68020",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 114,
+        "url": "https://github.com/hevangel/ai_engineer/issues/114"
+      },
+      "image": {
+        "src": "images/motorola_68020.jpg",
+        "alt": "Motorola 68020 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68020_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "motorola_6888x",
+      "title": "Motorola MC68881 and MC68882 FPU family",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68881",
+      "era": "16",
+      "query": "Motorola 68881",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 119,
+        "url": "https://github.com/hevangel/ai_engineer/issues/119"
+      },
+      "image": {
+        "src": "images/motorola_6888x.jpg",
+        "alt": "Motorola 68881 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68881_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
     },
     {
       "id": "card_ega",
@@ -1443,52 +1489,6 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
-      "id": "motorola_68020",
-      "title": "Motorola MC68020",
-      "kind": "chip",
-      "company": "motorola",
-      "year": 1984,
-      "dateLabel": "1984",
-      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68020",
-      "era": "16",
-      "query": "Motorola 68020",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 114,
-        "url": "https://github.com/hevangel/ai_engineer/issues/114"
-      },
-      "image": {
-        "src": "images/motorola_68020.jpg",
-        "alt": "Motorola 68020 die.JPG",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68020_die.JPG"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "motorola_6888x",
-      "title": "Motorola MC68881 and MC68882 FPU family",
-      "kind": "chip",
-      "company": "motorola",
-      "year": 1984,
-      "dateLabel": "1984",
-      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68881",
-      "era": "16",
-      "query": "Motorola 68881",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 119,
-        "url": "https://github.com/hevangel/ai_engineer/issues/119"
-      },
-      "image": {
-        "src": "images/motorola_6888x.jpg",
-        "alt": "Motorola 68881 die.JPG",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68881_die.JPG"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
       "id": "intel_80386",
       "title": "Intel 80386 family",
       "kind": "chip",
@@ -1581,6 +1581,29 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
+      "id": "mos_8520",
+      "title": "MOS 8520",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1986,
+      "dateLabel": "Documented by 1986",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "32",
+      "query": "MOS 8520",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 40,
+        "url": "https://github.com/hevangel/ai_engineer/issues/40"
+      },
+      "image": {
+        "src": "images/mos_8520.jpg",
+        "alt": "Mos 8520 mcmaster mz mit20x.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Mos_8520_mcmaster_mz_mit20x.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
       "id": "system_deskpro_386",
       "title": "Compaq Deskpro 386",
       "kind": "system",
@@ -1627,25 +1650,48 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
-      "id": "mos_8520",
-      "title": "MOS 8520",
+      "id": "intel_80387",
+      "title": "Intel 80387 family",
       "kind": "chip",
-      "company": "mos",
-      "year": 1986,
-      "dateLabel": "Documented by 1986",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "company": "intel",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Intel_80387",
       "era": "32",
-      "query": "MOS 8520",
+      "query": "Intel 80387",
       "issue": {
         "repo": "hevangel/ai_engineer",
-        "number": 40,
-        "url": "https://github.com/hevangel/ai_engineer/issues/40"
+        "number": 115,
+        "url": "https://github.com/hevangel/ai_engineer/issues/115"
       },
       "image": {
-        "src": "images/mos_8520.jpg",
-        "alt": "Mos 8520 mcmaster mz mit20x.jpg",
+        "src": "images/intel_80387.jpg",
+        "alt": "KL Intel 80387.jpg",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Mos_8520_mcmaster_mz_mit20x.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80387.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "motorola_68030",
+      "title": "Motorola MC68030",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68030",
+      "era": "32",
+      "query": "Motorola 68030",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 118,
+        "url": "https://github.com/hevangel/ai_engineer/issues/118"
+      },
+      "image": {
+        "src": "images/motorola_68030.jpg",
+        "alt": "Motorola 68030 32-bit microprocessor.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68030_32-bit_microprocessor.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
     },
@@ -1669,6 +1715,29 @@
         "alt": "Adlib sound card version 1.5.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Adlib_sound_card_version_1.5.jpg"
+      },
+      "description": "Expansion card · bus, components & software"
+    },
+    {
+      "id": "card_vga",
+      "title": "IBM VGA ISA display adapter",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Video_Graphics_Array",
+      "era": "32",
+      "query": "IBM Video Graphics Array",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 136,
+        "url": "https://github.com/hevangel/ai_engineer/issues/136"
+      },
+      "image": {
+        "src": "images/card_vga.jpg",
+        "alt": "IBM VGA graphics card.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_VGA_graphics_card.jpg"
       },
       "description": "Expansion card · bus, components & software"
     },
@@ -1719,52 +1788,6 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
-      "id": "card_vga",
-      "title": "IBM VGA ISA display adapter",
-      "kind": "card",
-      "company": "ibm",
-      "year": 1987,
-      "dateLabel": "1987",
-      "dateSource": "https://en.wikipedia.org/wiki/Video_Graphics_Array",
-      "era": "32",
-      "query": "IBM Video Graphics Array",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 136,
-        "url": "https://github.com/hevangel/ai_engineer/issues/136"
-      },
-      "image": {
-        "src": "images/card_vga.jpg",
-        "alt": "IBM VGA graphics card.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:IBM_VGA_graphics_card.jpg"
-      },
-      "description": "Expansion card · bus, components & software"
-    },
-    {
-      "id": "intel_80387",
-      "title": "Intel 80387 family",
-      "kind": "chip",
-      "company": "intel",
-      "year": 1987,
-      "dateLabel": "1987",
-      "dateSource": "https://en.wikipedia.org/wiki/Intel_80387",
-      "era": "32",
-      "query": "Intel 80387",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 115,
-        "url": "https://github.com/hevangel/ai_engineer/issues/115"
-      },
-      "image": {
-        "src": "images/intel_80387.jpg",
-        "alt": "KL Intel 80387.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80387.jpg"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
       "id": "system_mac_ii",
       "title": "Macintosh II",
       "kind": "system",
@@ -1811,29 +1834,6 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
-      "id": "motorola_68030",
-      "title": "Motorola MC68030",
-      "kind": "chip",
-      "company": "motorola",
-      "year": 1987,
-      "dateLabel": "1987",
-      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68030",
-      "era": "32",
-      "query": "Motorola 68030",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 118,
-        "url": "https://github.com/hevangel/ai_engineer/issues/118"
-      },
-      "image": {
-        "src": "images/motorola_68030.jpg",
-        "alt": "Motorola 68030 32-bit microprocessor.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68030_32-bit_microprocessor.jpg"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
       "id": "system_mac_iix",
       "title": "Macintosh IIx",
       "kind": "system",
@@ -1855,6 +1855,39 @@
         "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
       },
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
+    },
+    {
+      "id": "system_pc_386sx",
+      "title": "Compaq Deskpro 386s (386SX)",
+      "kind": "system",
+      "company": "compaq",
+      "year": 1988,
+      "dateLabel": "1988 · 386SX / ISA",
+      "dateSource": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-1988-sales-flyer.pdf",
+      "era": "32",
+      "query": "Compaq Deskpro 386s",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 148,
+        "url": "https://github.com/hevangel/ai_engineer/issues/148"
+      },
+      "image": {
+        "src": "images/system_pc_386sx.jpg",
+        "alt": "Compaq Deskpro 386s on display at the Living Computer Museum, Seattle",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:DeskPro_386S.jpg"
+      },
+      "description": "16 MHz 80386SX · 8/16-bit ISA · sourced 1988 Compaq profile",
+      "historySources": [
+        {
+          "url": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-1988-sales-flyer.pdf",
+          "note": "Original Compaq sales flyer, document 043A/0688: 80386SX, 8/16-bit expansion bus and 1988 copyright."
+        },
+        {
+          "url": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-16-spec-sheet.pdf",
+          "note": "IBM technical-service sheet: 16 MHz 80386SX and ISA bus. This 1996 sheet is hardware evidence, not the introduction date."
+        }
+      ]
     },
     {
       "id": "card_sb",
@@ -1993,29 +2026,6 @@
         "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YMF262-M.png"
       },
       "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "system_pc_386sx",
-      "title": "386SX ISA reference computer",
-      "kind": "system",
-      "company": "ibm",
-      "year": null,
-      "dateLabel": "Date under review",
-      "dateSource": null,
-      "era": "undated",
-      "query": "386SX ISA reference computer",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 148,
-        "url": "https://github.com/hevangel/ai_engineer/issues/148"
-      },
-      "image": {
-        "src": "images/system_pc_386sx.jpg",
-        "alt": "SINCLAIR APC 386SX.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:SINCLAIR_APC_386SX.jpg"
-      },
-      "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
       "id": "intel_8042",
@@ -2177,29 +2187,6 @@
         "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
-      "id": "card_nubus_video",
-      "title": "Macintosh II-family NuBus video adapter",
-      "kind": "card",
-      "company": "apple",
-      "year": null,
-      "dateLabel": "Date under review",
-      "dateSource": null,
-      "era": "undated",
-      "query": "Macintosh II- NuBus video adapter",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 139,
-        "url": "https://github.com/hevangel/ai_engineer/issues/139"
-      },
-      "image": {
-        "src": "images/card_nubus_video.jpg",
-        "alt": "Apple-macintosh-ii-video-card-v80019946.jpg",
-        "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Apple-macintosh-ii-video-card-v80019946.jpg"
-      },
-      "description": "Expansion card · bus, components & software"
     },
     {
       "id": "rtc146818",
@@ -2453,6 +2440,29 @@
         "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "card_nubus_video",
+      "title": "Macintosh II-family NuBus video adapter",
+      "kind": "card",
+      "company": "apple",
+      "year": null,
+      "dateLabel": "Date under review",
+      "dateSource": null,
+      "era": "undated",
+      "query": "Macintosh II- NuBus video adapter",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 139,
+        "url": "https://github.com/hevangel/ai_engineer/issues/139"
+      },
+      "image": {
+        "src": "images/card_nubus_video.jpg",
+        "alt": "Apple-macintosh-ii-video-card-v80019946.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple-macintosh-ii-video-card-v80019946.jpg"
+      },
+      "description": "Expansion card · bus, components & software"
     }
   ]
 }

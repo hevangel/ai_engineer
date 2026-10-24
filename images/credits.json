@@ -996,16 +996,16 @@
     "representative": true
   },
   "system_pc_386sx": {
-    "curated": true,
-    "title": "File:SINCLAIR APC 386SX.jpg",
-    "creator": "4throck",
-    "credit": "Own work",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:SINCLAIR_APC_386SX.jpg",
-    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/SINCLAIR_APC_386SX.jpg/960px-SINCLAIR_APC_386SX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "changes": "Thumbnail resized by Wikimedia; displayed with contain sizing, no recoloring.",
-    "representative": true
+    "title": "File:DeskPro 386S.jpg",
+    "creator": "MBlairMartin",
+    "credit": "Own work, Living Computer Museum display",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:DeskPro_386S.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/DeskPro_386S.jpg/960px-DeskPro_386S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Wikimedia thumbnail when available; displayed with contain sizing, no recoloring.",
+    "representative": false,
+    "curated": true
   },
   "mac_adb": {
     "curated": true,

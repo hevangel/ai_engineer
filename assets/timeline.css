@@ -21,3 +21,46 @@
 .trace-pad{fill:var(--paper);stroke-width:2.8px;vector-effect:non-scaling-stroke}
 @media(max-width:1100px){#timeline{--trace-gutter:78px}.year-grid{row-gap:72px}}
 @media(max-width:650px){#timeline{--trace-gutter:54px}.trace-wire{stroke-width:2.3px}.trace-pad{stroke-width:2.3px}.year-grid{row-gap:72px}.era{padding-right:8px}}
+
+/* Components feed computers through the same right-side PCB routing gutter. */
+#timeline{--trace-gutter:156px}
+.connection-required .trace-wire{stroke-width:2.2px;stroke-dasharray:7 4;stroke-opacity:.85}
+.connection-optional .trace-wire{stroke-width:2.2px;stroke-dasharray:2 5;stroke-linecap:round;stroke-opacity:.85}
+.connection-required .trace-clearance,.connection-optional .trace-clearance{stroke-width:3.5px}
+.connection-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:10px;color:#56665f}
+.connection-controls label{display:flex;align-items:center;gap:6px}
+.connection-controls input{accent-color:#41685f}
+.connection-controls select{font:inherit;padding:7px;border:1px solid var(--line);background:var(--paper);max-width:260px}
+.connection-key{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:9px;color:var(--muted);padding:10px 0}
+.connection-key span{display:flex;align-items:center;gap:6px}
+.connection-key i{width:21px;border-top:2px solid #41685f}
+.connection-key .required-key{border-top-style:dashed}
+.connection-key .optional-key{border-top-style:dotted}
+#trace-summary{font-size:9px;color:var(--muted);margin:0 0 12px}
+.trace-computer{margin-top:12px;padding:6px 9px;background:transparent;border:1px solid #b9c8bd;color:#41685f;font-size:10px;text-align:left}
+.trace-computer:hover{background:#e8eee6}
+@media(max-width:1100px){#timeline{--trace-gutter:128px}}
+@media(max-width:650px){#timeline{--trace-gutter:64px}.connection-controls{gap:9px;font-size:10px}.computer-picker{flex-basis:100%;flex-wrap:wrap}.connection-controls select{width:100%;max-width:none}.connection-key{font-size:8px;gap:9px}.connection-required .trace-wire,.connection-optional .trace-wire{stroke-width:1.7px}.connection-required .trace-clearance,.connection-optional .trace-clearance{stroke-width:2.5px}.hardware h3{font-size:21px}}
+
+/* Independent tracks: hardware dependencies left, maker lineage right. */
+.timeline-scroll{overflow-x:auto;overscroll-behavior-x:contain;padding-bottom:12px}
+#timeline{--left-gutter:0px;--right-gutter:0px;--board-width:710px;min-width:calc(var(--board-width) + var(--left-gutter) + var(--right-gutter))}
+#eras{padding-left:var(--left-gutter);padding-right:var(--right-gutter)}
+.year-grid{grid-template-columns:repeat(3,minmax(200px,1fr));row-gap:18px}
+.hardware-kind-group{margin-bottom:20px}
+.kind-heading{font-size:8px;letter-spacing:1.4px;color:var(--muted);margin:8px 0 12px}
+.trace-wire{stroke-width:2.5px;stroke-opacity:1}
+.trace-clearance{stroke-width:5px}
+.trace-pad{stroke-width:2.5px}
+.connection-required .trace-wire,.connection-optional .trace-wire{stroke-width:2px;stroke-opacity:.95}
+.connection-required .trace-clearance,.connection-optional .trace-clearance{stroke-width:4px}
+.wire-toggle{font-weight:700;color:var(--ink)}
+.connection-controls label:has(input:disabled){opacity:.5}
+@media(max-width:1100px){#timeline{--board-width:470px}.year-grid{grid-template-columns:repeat(2,minmax(190px,1fr))}}
+@media(max-width:650px){#timeline{--board-width:224px}.year-grid{grid-template-columns:minmax(190px,1fr)}.kind-heading{font-size:8px}.trace-wire{stroke-width:2.3px}.connection-required .trace-wire,.connection-optional .trace-wire{stroke-width:2px}}
+
+#timeline{--board-width:470px}.year-grid{grid-template-columns:repeat(2,minmax(190px,1fr))}@media(min-width:1600px){#timeline{--board-width:710px}.year-grid{grid-template-columns:repeat(3,minmax(200px,1fr))}}@media(max-width:650px){#timeline{--board-width:224px}.year-grid{grid-template-columns:minmax(190px,1fr)}}
+
+.search-controls .wire-toggle{font-size:10px;white-space:nowrap;gap:5px;display:flex;align-items:center;padding-left:5px}.search-controls .wire-toggle input{accent-color:#41685f}@media(max-width:650px){.search-controls .wire-toggle{flex:0 0 auto;padding:3px 0}}
+
+.hardware{scroll-margin-top:225px}

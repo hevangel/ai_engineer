@@ -60,8 +60,9 @@ Open [the local preview](http://127.0.0.1:4173). Refresh the JSON status snapsho
 
 ```sh
 node scripts/sync-timeline.mjs --project 1 --owner hevangel
+node scripts/sync-connections.mjs
 ```
 
-Statuses come from GitHub issue metadata and the selected project. Verification badges require evidence; unknown source coverage stays unknown. Representative photographs and uncertain dates are labeled. Each image has its own attribution and license.
+Statuses come from GitHub issue metadata and the selected project. Computer links come from recorded chip/card dependencies and clearly labeled planned card options; choose a computer to trace its components. Verification badges require evidence; unknown source coverage stays unknown. Representative photographs and uncertain dates are labeled. Each image has its own attribution and license.
 
 See [the timeline specification](spec/timeline.md) for the metadata format and publishing file list, and [scripts/README.md](scripts/README.md) for commands. This implementation supplies static files; publishing remains a separate step.

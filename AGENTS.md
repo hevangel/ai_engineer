@@ -52,6 +52,8 @@ The site is plain HTML, CSS and browser JavaScript, with no package installation
 | --- | --- |
 | `data/catalog.json` | Curated chip families, systems and cards; stable entry IDs, canonical issue references, company colors, dated sources, era chapters and local image paths |
 | `data/status.json` | Generated snapshot of public issue metadata and optionally selected GitHub Project states |
+| `data/connections.json` | Generated chip/card-to-computer links from native GitHub prerequisites and curated options |
+| `data/system-options.json` | Curated planned expansion-card configurations, separate from required hardware |
 | `data/stages.json` | Stage/build labels, icons, colors and legend explanations |
 | `images/credits.json` | Attribution, source, license and representative-image information keyed by catalog entry ID |
 
@@ -61,10 +63,11 @@ This page presents the roadmap and evidence snapshot. Actual SV simulation, HDL 
 
 ### Rendering and navigation
 
-- Group entries into the catalog's 4-bit, 8-bit, 16-bit and 32-bit era chapters, then by year. Maintain chronological order in the catalog. Eras overlap historically and do not assert the word width of every pictured component.
+- Group entries into the catalog's 4-bit, 8-bit, 16-bit and 32-bit era chapters, then by year. Maintain chronological order in the catalog; within a year render separate chip, expansion-card and computer sections in that order, so chips are physically above computers. Eras overlap historically and do not assert the word width of every pictured component.
 - Keep uncertain dates qualified with their sources. Use `year: null` and the `undated` era when a date has not been established.
 - The left year rail scrolls to visible year groups and follows the page position. Preserve keyboard operation and sufficient scroll clearance beneath sticky controls on narrow screens.
-- Search, category, company and stage filters operate on the loaded JSON. SVG lines connect visible chip-family entries from the same company and redraw after filters or layout changes. Route these traces through the reserved right gutter with straight horizontal/vertical segments and 45-degree chamfered bends. Each connection exits a hollow bottom pad and enters the next card through a hollow top pad; keep traces clear of photographs and text. Preserve the gutter and pad alignment across responsive layouts. Intel is blue and AMD red; maintain other brand-inspired colors in the catalog.
+- Search, category, company and stage filters operate on the loaded JSON. SVG lines connect visible chip-family entries from the same company and connect chips/cards to computers using `data/connections.json`; redraw after filters or layout changes. Route maker lineage through the right gutter and chip/card-to-computer dependencies through the left gutter, using straight horizontal/vertical segments and 45-degree chamfered bends. Each connection exits a hollow bottom pad and enters the next card through a hollow top pad; keep traces clear of photographs and text. Allocate distinct horizontal tracks per row and reuse a vertical lane only when its spans do not overlap. Give separate fan-out/fan-in wires separate pads; never merge independent paths into a shared segment. Preserve gutters and pad alignment across responsive layouts. Wide all-system circuits may scroll horizontally within the diagram; selecting one computer reduces the wiring. Intel is blue and AMD red; maintain other brand-inspired colors in the catalog.
+- The Show wires master toggle hides all traces and pads and collapses their routing space. The connection controls also independently toggle maker and computer links. Solid traces mean maker lineage, dashed traces mean recorded required components and dotted traces mean planned card options. The computer selector and per-computer trace button isolate a machine and its linked hardware. Draw a link only when both endpoints are visible. Never treat a planned card option as a factory-installed part or a POST prerequisite.
 - Render the stage, source-coverage and build-health badges at the lower right of each photograph. Populate the status guide from `data/stages.json`; never hard-code per-device statuses or percentages into HTML or presentation code.
 - Preserve per-photo attribution dialogs, descriptive alt text, reduced-motion behavior, visible keyboard focus, empty results, loading/error messages and the no-JavaScript links to the JSON files. Use text DOM APIs for external content rather than inserting untrusted HTML.
 
@@ -82,9 +85,10 @@ Open `http://127.0.0.1:4173`. The loopback server is a development utility; the 
 
 ```sh
 node scripts/sync-timeline.mjs --project 1 --owner hevangel
+node scripts/sync-connections.mjs
 ```
 
-Use authenticated `gh` with repository issue access and the `project` scope for the selected project. Omit the project arguments to read public issues alone. Review the generated `data/status.json` before committing it; a failed refresh preserves the previous snapshot. Keep the project itself private according to its existing settings.
+Use authenticated `gh` with repository issue access and the `project` scope for the selected project. Omit the project arguments to read public issues alone. Review the generated `data/status.json` before committing it; a failed refresh preserves the previous snapshot. Keep the project itself private according to its existing settings. `sync-connections.mjs` paginates native blocked-by lists for catalog computers and exports only catalog chip/card endpoints, then merges `data/system-options.json`. A failed refresh preserves the previous connection snapshot. Curate optional profiles with evidence and clear qualifications; they do not create GitHub blockers.
 
 - Read an issue's single fenced `timeline-status` JSON block and/or its matching `timeline:<stage>` label. Follow the schema and examples in `spec/timeline.md`.
 - An explicit issue stage takes precedence; otherwise project `In progress` maps to Building and the default is Planned. Todo is pending acceptance review, not proof that no implementation exists. Closed/Done never establishes verification.
@@ -97,7 +101,7 @@ Use authenticated `gh` with repository issue access and the `project` scope for 
 1. Follow the project manager instructions to identify or create the canonical issue and its dependencies. Creating an issue does not automatically add a timeline entry.
 2. Curate its `data/catalog.json` entry with a unique, stable ID, correct kind/company, historical source, qualified year/era and canonical issue reference. Keep the ID aligned across catalog, status snapshot and photo credits.
 3. Put the licensed photograph in `images/` and record its individual attribution in `images/credits.json`. The photo importer is a curation aid: inspect the actual model/revision and source license. Explicitly flag representative photos and describe what is actually pictured; do not substitute unrelated hardware.
-4. Refresh the status snapshot so the new ID receives a record. Do not invent verification or source percentages to make badges look complete.
+4. Refresh the status and connection snapshots so the new ID receives a status record and recorded relationships. Do not invent verification or source percentages to make badges look complete.
 5. Keep this guide, the timeline specification and script documentation aligned when file contracts or commands change. Changing the stage vocabulary also requires updating the synchronization rules and their verification fixtures.
 
 ### Checks and publication
@@ -136,3 +140,7 @@ The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench basel
 The [386/68030 scope](spec/era_386_scope.md) sets the classic PC and Macintosh coverage endpoints and explicitly includes AdLib, Sound Blaster and the Roland LAPC-I audio profile. Use its complete-stack inventory before declaring a machine or program complete.
 
 Read [spec/timeline.md](spec/timeline.md) before changing the public timeline, status synchronization or photo catalog. Statuses belong in JSON; verification requires explicit linked evidence. Inspect photographs for model identity and retain their own license attribution.
+
+## Company colors
+
+Keep company colors in `data/catalog.json`. User-selected colors are Intel blue, AMD red, Motorola indigo (`#4B3F8F`), Apple black (`#111111`, for contrast on the off-white page), MOS/Commodore green (`#2E8B57`), TI `#CC0000`, Nintendo `#E60012` and Atari `#E41B23`. Labels, card strokes and wires must use the same catalog values.
