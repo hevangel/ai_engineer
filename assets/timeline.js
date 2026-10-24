@@ -178,7 +178,7 @@ function drawConnections(){
   const vertical=Math.sign(inY-outY)||1,bend=Math.min(6,Math.abs(inY-outY)/2);
   const points=[[from.x,from.y],[from.x,outY-6],[from.x+sign*6,outY],[lane-sign*bend,outY],[lane,outY+vertical*bend],[lane,inY-vertical*bend],[lane-sign*bend,inY],[to.x+sign*6,inY],[to.x,inY+6],[to.x,to.y]];
   const d=pathData(points),group=shape('g',{class:'connection connection-'+edge.type+(edge.basis==='reconstruction'?' connection-reconstruction':''),'data-source':edge.source,'data-target':edge.target,'data-type':edge.type,'data-side':edge.side,'data-lane':edge.lane});
-  const title=shape('title',{});title.textContent=entryById.get(edge.source).title+' → '+entryById.get(edge.target).title+' · '+(edge.type==='maker'?'maker lineage':edge.basis==='reconstruction'?'later reconstruction component · not original hardware':'recorded prerequisite');
+  const title=shape('title',{});title.textContent=entryById.get(edge.source).title+' → '+entryById.get(edge.target).title+' · '+(edge.type==='maker'?'maker lineage':edge.basis==='reconstruction'?'later reconstruction component · not original hardware':edge.type==='optional'?'planned optional component · '+edge.note:'recorded prerequisite');
   const ordered=[edge.source,edge.target].sort((a,b)=>ranks.get(a)-ranks.get(b));
   group.append(title,shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire',stroke:edge.color,'aria-hidden':true}));
   const halves=splitRoute(points);
@@ -247,7 +247,7 @@ function drawConnections(){
  }
  $('wire-help').hidden=!wires||(!edges.length&&!buses.length&&!sockets.length);
  svg.setAttribute('viewBox',`0 0 ${bounds.width} ${bounds.height}`);svg.style.height=bounds.height+'px';svg.replaceChildren(paths,socketPaths,busPaths,pads,socketPads,busPads);
- $('trace-summary').textContent=wires?edges.filter(edge=>edge.type==='maker').length+' maker links · '+edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length+' chip links · '+edges.filter(edge=>edge.basis==='reconstruction').length+' reconstruction links · '+buses.length+' shared expansion buses ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections) · '+sockets.length+' shared CPU roles':'Wires hidden';
+ $('trace-summary').textContent=wires?edges.filter(edge=>edge.type==='maker').length+' maker links · '+edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length+' chip links · '+edges.filter(edge=>edge.type==='optional').length+' optional chip links · '+edges.filter(edge=>edge.basis==='reconstruction').length+' reconstruction links · '+buses.length+' shared expansion buses ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections) · '+sockets.length+' shared CPU roles':'Wires hidden';
 }
 
 function updateYear(){let selected=null;for(const group of document.querySelectorAll('.year-block[data-year]')){if(group.getBoundingClientRect().top<220)selected=group.dataset.year;else if(selected===null)selected=group.dataset.year;else break;}if(selected&&selected!=='undated'){$('current-year').textContent=selected;$('year-scrubber').value=selected;}else if(selected==='undated')$('current-year').textContent='—';}

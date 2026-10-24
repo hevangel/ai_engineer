@@ -1375,5 +1375,17 @@
     "source": "https://commons.wikimedia.org/wiki/File:Intel_8088_chip,_top.jpg",
     "changes": "Resized to 960 pixels wide and JPEG optimized; no other changes.",
     "representative": false
+  },
+  "intel_80387sx": {
+    "curated": true,
+    "title": "File:KL Intel i387SX.jpg",
+    "creator": "Konstantin Lanzet (with permission)",
+    "credit": "CPU collection Konstantin Lanzet",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_i387SX.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/1d/KL_Intel_i387SX.jpg",
+    "changes": "JPEG optimized locally; no crop or recoloring. Displayed with contain sizing.",
+    "representative": false
   }
 }

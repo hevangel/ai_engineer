@@ -29,7 +29,7 @@ Catalog exact BIOS, DOS/Windows/OS2 and early Unix-like OS versions, diagnostics
 | Key | Issue | Workstream | Completion prerequisites |
 | --- | --- | --- | --- |
 | intel_80386 | [[Chip] Intel 80386 family — DX and SX](https://github.com/hevangel/ai_engineer/issues/116) | Chips | — |
-| intel_80287 | [[Chip] Intel 80287 numeric coprocessor](https://github.com/hevangel/ai_engineer/issues/113) | Chips | — |
+| intel_80287 | [[Chip] Intel 80287 family — numeric coprocessors](https://github.com/hevangel/ai_engineer/issues/113) | Chips | — |
 | intel_80387 | [[Chip] Intel 80387 family — DX and SX coprocessors](https://github.com/hevangel/ai_engineer/issues/115) | Chips | — |
 | motorola_68020 | [[Chip] Motorola MC68020](https://github.com/hevangel/ai_engineer/issues/114) | Chips | — |
 | motorola_68030 | [[Chip] Motorola MC68030](https://github.com/hevangel/ai_engineer/issues/118) | Chips | — |
@@ -124,3 +124,7 @@ The [Roland LAPC-I card](https://github.com/hevangel/ai_engineer/issues/183) add
 The owner replaced the Compaq Deskpro 386s SX target with **IBM PS/2 Model 25 SX** (#148/#149/#150) and a separate **Model 35 SX** track. Add **Model 70 386** for DX/MCA and **Model 56 SLC** for IBM 386SLC/16-bit MCA. The distinct 1986 Compaq 386DX and earlier Model 80 stay separate. Read [the sourced IBM/AMD scope](ibm_386_amd_scope.md) for years, exact machine profiles, canonical issues, photo limitations and CPU-to-machine selection.
 
 AMD 8086/8088, 80186/80188, 80286/Am286 and Am386DX/SX have explicit history entries and coherent family issues. Early dates distinguish documented bounds and catalog advance information from shipping claims. These vendor additions do not imply AMD CPUs were factory-installed in the selected IBM systems.
+
+## Intel numeric coprocessors
+
+[287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.

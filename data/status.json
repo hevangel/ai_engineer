@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T17:41:10.786Z",
+  "syncedAt": "2026-10-24T20:26:28.575Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -297,27 +297,6 @@
       "updatedAt": "2026-10-24T01:26:24Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/33"
     },
-    "amd_am9080": {
-      "stage": "planned",
-      "coverage": {
-        "collected": null,
-        "cleaned": null,
-        "total": null,
-        "percent": null
-      },
-      "build": {
-        "status": "unknown",
-        "evidence": null
-      },
-      "verification": {
-        "ai": null,
-        "human": null
-      },
-      "issueState": "open",
-      "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:26:14Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/9"
-    },
     "amd_am29xx": {
       "stage": "planned",
       "coverage": {
@@ -338,6 +317,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T05:57:32Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/7"
+    },
+    "amd_am9080": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T01:26:14Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/9"
     },
     "intel_8251": {
       "stage": "planned",
@@ -843,27 +843,6 @@
       "updatedAt": "2026-10-24T01:27:05Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/89"
     },
-    "intel_8088": {
-      "stage": "planned",
-      "coverage": {
-        "collected": null,
-        "cleaned": null,
-        "total": null,
-        "percent": null
-      },
-      "build": {
-        "status": "unknown",
-        "evidence": null
-      },
-      "verification": {
-        "ai": null,
-        "human": null
-      },
-      "issueState": "open",
-      "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T17:39:09Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/22"
-    },
     "intel_8237": {
       "stage": "planned",
       "coverage": {
@@ -905,6 +884,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:26:29Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/45"
+    },
+    "intel_8088": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T17:39:09Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/22"
     },
     "intel_8087": {
       "stage": "planned",
@@ -1113,7 +1113,7 @@
       },
       "issueState": "open",
       "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:38:31Z",
+      "updatedAt": "2026-10-24T20:26:20Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/113"
     },
     "mos_6567": {
@@ -1494,27 +1494,6 @@
       "updatedAt": "2026-10-24T01:38:55Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/131"
     },
-    "mos_7360": {
-      "stage": "planned",
-      "coverage": {
-        "collected": null,
-        "cleaned": null,
-        "total": null,
-        "percent": null
-      },
-      "build": {
-        "status": "unknown",
-        "evidence": null
-      },
-      "verification": {
-        "ai": null,
-        "human": null
-      },
-      "issueState": "open",
-      "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:26:28Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/41"
-    },
     "mac_glue": {
       "stage": "planned",
       "coverage": {
@@ -1535,6 +1514,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:43:55Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/132"
+    },
+    "mos_7360": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T01:26:28Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/41"
     },
     "motorola_68020": {
       "stage": "planned",
@@ -1869,7 +1869,7 @@
       },
       "issueState": "open",
       "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:38:31Z",
+      "updatedAt": "2026-10-24T20:26:22Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/115"
     },
     "motorola_68030": {
@@ -2081,6 +2081,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T13:27:34Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/116"
+    },
+    "intel_80387sx": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T20:26:22Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/115"
     },
     "system_ps2_model70": {
       "stage": "planned",

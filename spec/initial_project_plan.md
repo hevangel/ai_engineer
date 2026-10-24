@@ -129,7 +129,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | eda_surfer | [[EDA] Surfer — maintain working waveform integration and qualify upgrades](https://github.com/hevangel/ai_engineer/issues/111) | tooling | — |
 | eda_workbench | [[EDA] HDL Workbench — sustain the working Xezim and Surfer integration](https://github.com/hevangel/ai_engineer/issues/112) | tooling | [#110](https://github.com/hevangel/ai_engineer/issues/110), [#111](https://github.com/hevangel/ai_engineer/issues/111) |
 | intel_80386 | [[Chip] Intel 80386 family — DX and SX](https://github.com/hevangel/ai_engineer/issues/116) | chip | — |
-| intel_80287 | [[Chip] Intel 80287 numeric coprocessor](https://github.com/hevangel/ai_engineer/issues/113) | chip | — |
+| intel_80287 | [[Chip] Intel 80287 family — numeric coprocessors](https://github.com/hevangel/ai_engineer/issues/113) | chip | — |
 | intel_80387 | [[Chip] Intel 80387 family — DX and SX coprocessors](https://github.com/hevangel/ai_engineer/issues/115) | chip | — |
 | motorola_68020 | [[Chip] Motorola MC68020](https://github.com/hevangel/ai_engineer/issues/114) | chip | — |
 | motorola_68030 | [[Chip] Motorola MC68030](https://github.com/hevangel/ai_engineer/issues/118) | chip | — |
@@ -265,3 +265,7 @@ The IBM/AMD table includes the retained Model 25 SX issue identities and all new
 | `system_ps2_model56slc` | [[System] IBM PS/2 Model 56 SLC — SV simulation, web frontend and FPGA handoff](https://github.com/hevangel/ai_engineer/issues/199) | Systems | [#188](https://github.com/hevangel/ai_engineer/issues/188), [#122](https://github.com/hevangel/ai_engineer/issues/122), [#52](https://github.com/hevangel/ai_engineer/issues/52), [#127](https://github.com/hevangel/ai_engineer/issues/127), [#121](https://github.com/hevangel/ai_engineer/issues/121) |
 | `software_ps2_model56slc` | [[Software] IBM PS/2 Model 56 SLC — Rust firmware, OS, drivers and applications](https://github.com/hevangel/ai_engineer/issues/200) | Software | [#199](https://github.com/hevangel/ai_engineer/issues/199), [#140](https://github.com/hevangel/ai_engineer/issues/140) |
 | `fpga_ps2_model56slc` | [[FPGA System] IBM PS/2 Model 56 SLC — board selection and physical reconstruction](https://github.com/hevangel/ai_engineer/issues/201) | FPGA | [#53](https://github.com/hevangel/ai_engineer/issues/53), [#199](https://github.com/hevangel/ai_engineer/issues/199) |
+
+## Intel numeric coprocessors
+
+[287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.

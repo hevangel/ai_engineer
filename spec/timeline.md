@@ -8,7 +8,7 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 - `data/catalog.json`: hardware, issue references, company colors, historical dates/sources, era chapters, and image paths. Add new roadmap items here after curating their history and photo. A future-board placeholder without a named model has no fabricated introduction date.
 - `data/status.json`: generated GitHub snapshot. Never hand-code build stages into HTML.
 - `data/connections.json`: generated required chip/card prerequisites and separately labeled planned expansion configurations.
-- `data/system-options.json`: curated optional card-to-computer profiles, evidence and qualifications.
+- `data/system-options.json`: curated optional chip/card-to-computer profiles, evidence and qualifications.
 - `data/component-profiles.json`: explicit CPU variants for shared canonical issues and qualified later reconstruction components; each must match a native completion dependency.
 - `data/stages.json`: public legend, labels, symbols and colors. Labels are rendered from this file.
 - `images/`: local photographs and per-image Commons attribution in `credits.json`.
@@ -86,7 +86,7 @@ Run `node scripts/sync-connections.mjs` with authenticated GitHub CLI access to 
 
 Each link has `source` and `target` catalog IDs, `type` (`required` or `optional`), an `evidence` URL and a qualifying `note`. A native completion prerequisite is a recorded project gate, not a complete physical BOM or a claim that every member of a chip family is fitted. Planned options are candidate expansion configurations, not factory-installed parts, mutually simultaneous requirements, verified compatibility or base-machine POST gates. Add actual revision/firmware/driver evidence before qualification.
 
-The page renders maker lineage on the right and chip-to-computer relationships on the left and shared card buses on the far right, using straight runs and 45-degree chamfers. Chip/maker wires use separate bottom/top pads; expansion buses use right-edge taps. It allocates individual row tracks and vertical lanes whose occupied spans cannot overlap. Each year groups chips first, expansion cards next and computer systems last, with computers always starting below the chip/card rows. Solid lines show maker lineage; dashed lines show recorded required components; dotted lines show planned card options. The Show wires master toggle hides all connection layers and collapses their routing space; the layer controls can toggle either layer separately. The computer selector and each machine's trace button filter the archive to that computer and its linked parts. Other filters still apply, and connections disappear when either endpoint is hidden. All relationships stay in JSON, not hard-coded device wiring in HTML or browser code.
+The page renders maker lineage on the right and chip-to-computer relationships on the left and shared card buses on the far right, using straight runs and 45-degree chamfers. Chip/maker wires use separate bottom/top pads; expansion buses use right-edge taps. It allocates individual row tracks and vertical lanes whose occupied spans cannot overlap. Each year groups chips first, expansion cards next and computer systems last, with computers always starting below the chip/card rows. Solid lines show maker lineage; dashed lines show recorded required components; dotted lines show planned chip/card options. The Show wires master toggle hides all connection layers and collapses their routing space; the layer controls can toggle either layer separately. The computer selector and each machine's trace button filter the archive to that computer and its linked parts. Other filters still apply, and connections disappear when either endpoint is hidden. All relationships stay in JSON, not hard-coded device wiring in HTML or browser code.
 
 The stable catalog ID `system_pc_386sx` and #148 now select IBM PS/2 Model 25 SX, replacing the Compaq 386s SX target at the owner’s request. Model 35 SX, Model 70 386 and Model 56 SLC are separate sourced profiles. See [the IBM/AMD scope](ibm_386_amd_scope.md).
 
@@ -126,3 +126,7 @@ Pure grouping, row-interval lane allocation and under-row geometry live in `asse
 ## Compatible CPU alternatives
 
 Read [compatible_chips.md](compatible_chips.md). `data/compatible-chips.json` defines source-qualified pin/function-compatible choices. The connection sync derives `type: compatible` links from each existing native primary-CPU gate without adding extra AMD blockers. Group members share one left-side CPU-role trunk and one host pad; colors on member taps still identify their makers. The chooser distinguishes the original CPU from a qualified alternative and exposes package/clock/source notes. Original dates and factory-BOM claims do not change. Filters and wire visibility apply to all choices.
+
+## Optional coprocessors
+
+See [the 287/387 profiles](coprocessors_287_387.md) for canonical issues, sourced DX/SX history, machine options and dotted left-side chip links. Optional chip links do not enter expansion-card buses or add native completion blockers.

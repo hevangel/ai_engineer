@@ -13,7 +13,7 @@ Scroll from the PDP-1 and early microprocessors through the 386 and 68030 genera
 The connections show different relationships:
 
 - **Company lines on the right** follow chip families from the same maker. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.
-- **Chip links on the left** show recorded prerequisites for a computer build. Pin/function-compatible processors share one CPU-role wire; choose the original part or a qualified substitute from that wire. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
+- **Chip links on the left** show recorded prerequisites for a computer build. Pin/function-compatible processors share one CPU-role wire; choose the original part or a qualified substitute from that wire. Dotted left wires show planned optional coprocessors such as 287 and 387DX/SX. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
 - **Shared expansion buses on the far right** connect cards to a computer through its bus. Card taps distinguish required hardware from planned options. A bus belongs to one computer; it does not electrically join different machines.
 
 Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑ and ↓. Turn off **Show wires** for a simpler view.
@@ -23,6 +23,8 @@ Click a hardware title to open its GitHub issue. The photo information button op
 ## What we are rebuilding
 
 The current roadmap covers classic chip families and systems through **Intel 386DX/SX, IBM 386SLC, AMD Am386 and Motorola 68030 Macintosh** machines. It includes the earlier Intel and MOS generations, Apple II and Macintosh systems, IBM PCs and PS/2s, selected arcade and console hardware, and a planned **18-bit PDP-1 reconstruction using Am29xx**.
+
+The numeric-coprocessor roadmap includes **Intel 80287 and distinct 80387DX/SX profiles**, with optional host configurations recorded separately from the base machine. See the [coprocessor plan](spec/coprocessors_287_387.md).
 
 Expansion hardware matters too: storage, displays, serial interfaces and sound are part of a usable machine. The roadmap includes S-100, Apple II slots, ISA, Micro Channel and NuBus work, with **AdLib, Sound Blaster and Roland LAPC-I** audio among the planned profiles. Exact card revisions, slot fit, firmware, drivers and software still need qualification.
 

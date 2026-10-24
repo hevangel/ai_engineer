@@ -64,3 +64,7 @@ The PDP-1’s Am29xx gate is a new implementation dependency, explicitly qualifi
 ## Compatible processor alternatives
 
 Use [compatible_chips.md](compatible_chips.md) for qualified Intel/AMD choices. Native blocked-by edges remain the selected original CPU gate. Compatible choices exported for the website are OR alternatives, not additional AMD completion blockers or factory-installation claims. One shared CPU-role trunk per computer selects the matching package/pinout; the canonical #22 family keeps separate 8086 and 8088 external-bus profiles. Never merge based solely on a shared ISA or execution-unit implementation.
+
+## Intel numeric coprocessors
+
+[287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.

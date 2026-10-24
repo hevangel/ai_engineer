@@ -73,3 +73,7 @@ See [PDP-1](pdp1_am29xx.md) for the 1959 original-machine date and explicit late
 
 
 The distinct Intel 8088 timeline profile is anchored to 1979 by [Intel's historical reference](https://www.intel.com/pressroom/kits/quickrefyr.htm). PC/XT use 8088; the original PS/2 Model 30 uses 8086. Source-qualified later AMD substitution options may postdate their original host and share a CPU-role wire; they do not change the original date/BOM. See [compatible processor profiles](compatible_chips.md).
+
+## Intel numeric coprocessors
+
+[287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.

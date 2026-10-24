@@ -31,13 +31,13 @@ for(const target of catalog.entries.filter(e=>e.kind==='system')){
 for(const key of selected.keys())if(!used.has(key))throw Error('Component profile has no matching native dependency: '+key);
 for(const option of options.links){
  const source=entries.get(option.source),target=entries.get(option.target);
- if(source?.kind!=='card'||target?.kind!=='system'||!option.evidence?.startsWith('https://'))throw Error('Invalid planned option '+JSON.stringify(option));
+ if(!['chip','card'].includes(source?.kind)||target?.kind!=='system'||!option.note?.trim()||!option.evidence?.startsWith('https://'))throw Error('Invalid planned option '+JSON.stringify(option));
  if(!links.some(link=>link.source===option.source&&link.target===option.target))links.push({...option,type:'optional'});
 }
 const expanded=expandCompatibleConnections(links,compatible,entries);
-const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:'Native GitHub system completion dependencies, planned card options and source-qualified compatible CPU alternatives',links:expanded};
+const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:'Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives',links:expanded};
 const dest=path.join(root,'data/connections.json'),temp=dest+'.tmp';
 try{await fs.writeFile(temp,JSON.stringify(result,null,2)+'\n');await fs.rename(temp,dest);}catch(error){await fs.rm(temp,{force:true});throw error;}
-console.log(`Synced ${links.filter(l=>l.type==='required').length} recorded component dependencies and ${links.filter(l=>l.type==='optional').length} planned card options.`);
+console.log(`Synced ${links.filter(l=>l.type==='required').length} recorded component dependencies and ${links.filter(l=>l.type==='optional').length} planned chip/card options.`);
 
 console.log(`Added ${expanded.filter(link=>link.type==='compatible').length} compatible CPU alternatives; native blocked-by gates unchanged.`);
