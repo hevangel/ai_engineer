@@ -34,7 +34,7 @@ Nested dependencies can be large. The root submodule pointers pin the revisions 
 
 ## For contributors
 
-Read [AGENTS.md](AGENTS.md) before changing this repository. For work inside a project submodule, read and follow that project's own `AGENTS.md`. Each project has its own license; check it before reusing code, images, or other assets in the public site.
+This repository is AI-authored: humans do not edit files by hand; they direct AI agents and review pull requests. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the pull request procedure. Agents start from [AGENTS.md](AGENTS.md) and the [specifications](spec/README.md). For work inside a project submodule, follow that project's own guidelines. Each project has its own license; check it before reusing code, images, or other assets in the public site.
 
 ## Roadmap
 
@@ -47,6 +47,8 @@ The [EDA tools track](spec/eda_tools.md) records the working HDL Workbench integ
 The reconstruction scope extends through Intel 386DX/SX PCs and Motorola 68030 Macintosh systems, including the 68020 transition, AdLib and Sound Blaster. See the [386-era scope and roadmap](spec/era_386_scope.md).
 
 ## Timeline website
+
+Visit the public history at **[hevangel.github.io/ai_engineer](https://hevangel.github.io/ai_engineer/)**.
 
 The root [index.html](index.html) presents the chip families, computers and expansion cards as a scrolling photographic timeline. Maker connections, architecture-era bands and a year rail show their historical relationships. Search and filters narrow the archive; the status guide explains the photo badges.
 
@@ -65,4 +67,4 @@ node scripts/sync-connections.mjs
 
 Statuses come from GitHub issue metadata and the selected project. Computer links come from recorded chip/card dependencies and clearly labeled planned card options; choose a computer to trace its components. Verification badges require evidence; unknown source coverage stays unknown. Representative photographs and uncertain dates are labeled. Each image has its own attribution and license.
 
-See [the timeline specification](spec/timeline.md) for the metadata format and publishing file list, and [scripts/README.md](scripts/README.md) for commands. This implementation supplies static files; publishing remains a separate step.
+See [the timeline specification](spec/timeline.md) for the metadata format and publishing file list, and [scripts/README.md](scripts/README.md) for commands. GitHub Pages serves an allowlisted static snapshot from `gh-pages`; publishing is an explicit release step. See [website maintenance](spec/website.md#github-pages-publication) for the command and deployment checks.

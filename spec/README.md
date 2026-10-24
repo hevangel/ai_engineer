@@ -1,5 +1,7 @@
 # Specifications
 
+- [Repository scope and governance](repository.md): mission, AI-only authorship, repository map, submodule ownership, public-content accuracy and workflow.
+- [Static website maintenance](website.md): architecture, rendering and navigation rules, company colors, status refresh, adding timeline content, checks and publication.
 - [Project manager instructions](project_manager.md): scope, ownership, issue granularity, dependencies, board operations and evidence gates.
 - [Initial project plan](initial_project_plan.md): source inventory, first delivery sequence and canonical issue/dependency table.
 
