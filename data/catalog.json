@@ -2227,7 +2227,7 @@
     },
     {
       "id": "intel_80387",
-      "title": "Intel 80387 family",
+      "title": "Intel 80387DX",
       "kind": "chip",
       "company": "intel",
       "year": 1987,
@@ -2242,11 +2242,13 @@
       },
       "image": {
         "src": "images/intel_80387.jpg",
-        "alt": "KL Intel 80387.jpg",
+        "alt": "Intel 80387 numeric coprocessor in its DX PGA package.",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80387.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "introduced",
+      "dateNote": "Original 80387/DX introduction in 1987. The SX has a separate 16-bit host interface and timeline entry; neither is an interchangeable 80287."
     },
     {
       "id": "motorola_68030",
@@ -2482,6 +2484,31 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:I386SX.jpg"
       }
+    },
+    {
+      "id": "intel_80387sx",
+      "title": "Intel 80387SX",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1988,
+      "dateLabel": "Documented by 1988",
+      "dateSource": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=968",
+      "era": "32",
+      "query": "Intel 80387SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 115,
+        "url": "https://github.com/hevangel/ai_engineer/issues/115"
+      },
+      "image": {
+        "src": "images/intel_80387sx.jpg",
+        "alt": "Intel i387 SX N80387SX numeric coprocessor in its 68-pin PLCC package.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_i387SX.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "Intel datasheet 240225-002, November 1988, printed page 4-450 (PDF page 968) in the 1989 handbook explicitly documents the 80387SX and 68-pin PLCC host interface. This establishes a dated bound, not an exact shipment date; the DX family’s 1987 date is not reused for SX."
     },
     {
       "id": "system_ps2_model70",

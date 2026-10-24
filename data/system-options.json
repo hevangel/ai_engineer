@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Curated planned expansion configurations, kept separate from native required completion dependencies.",
+  "description": "Curated planned chip and expansion-card options, separate from native required completion dependencies.",
   "links": [
     {
       "source": "card_ega",
@@ -85,6 +85,36 @@
       "target": "system_ps2_model35sx",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
       "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite."
+    },
+    {
+      "source": "intel_80287",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://minuszerodegrees.net/manuals/IBM_5170_Technical_Reference_1502243_MAR84.pdf",
+      "note": "IBM AT optional 80287 socket profile; select exact board, speed grade, clock and BIOS. Legacy 287 and later 287XL behavior need separate qualification. Optional configuration, not a factory-installed claim or base-machine POST prerequisite."
+    },
+    {
+      "source": "intel_80387",
+      "target": "system_ps2_model70",
+      "evidence": "https://www.ardent-tool.com/qtechinfo/GJAN-43WJX8.html",
+      "note": "Preserved IBM Model 70 specification lists an optional 80387. Select the DX PGA part and clock for the exact 8570 planar; not an SX socket. Optional configuration, not a factory-installed claim or base-machine POST prerequisite."
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://www.ardent-tool.com/35_40/",
+      "note": "Model 35 SX planar U29 is the i387SX socket; select the 20 MHz host-compatible grade and exact board/ROM. Optional configuration, not a factory-installed claim or base-machine POST prerequisite."
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_pc_386sx",
+      "evidence": "https://www.ardent-tool.com/8525/192-019.txt",
+      "note": "IBM announcement 192-019 specifies a math-coprocessor socket and 16 MHz 386SX. Planned 387SX candidate inferred from that host interface; confirm the exact K00 planar/socket and clock before acceptance. Optional configuration, not a factory-installed claim or base-machine POST prerequisite."
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_ps2_model56slc",
+      "evidence": "https://www.ardent-tool.com/8556/",
+      "note": "Selected 8556 386SLC planar U41 accepts a 68-pin PLCC 387SX socket or a CPU upgrade module. Qualify the installed adapter, 20 MHz grade and exact board; the CPU upgrade is a distinct option. Optional configuration, not a factory-installed claim or base-machine POST prerequisite."
     }
   ]
 }
