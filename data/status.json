@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T20:26:28.575Z",
+  "syncedAt": "2026-10-24T22:26:42.286Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -2165,6 +2165,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:38:49Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/125"
+    },
+    "card_roland_lapc_i": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Todo",
+      "updatedAt": "2026-10-24T22:26:35Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/183"
     },
     "card_sb": {
       "stage": "planned",

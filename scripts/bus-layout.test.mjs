@@ -7,10 +7,10 @@ const connections=JSON.parse(await fs.readFile(new URL('../data/connections.json
 const entries=new Map(catalog.entries.map(entry=>[entry.id,entry]));
 
 test('real ISA audio cards share one host bus without adding VGA or joining other hosts',()=>{
- const ids=new Set(['system_pc_386sx','system_ps2_model35sx','card_adlib','card_sb','card_vga']);
+ const ids=new Set(['system_pc_386sx','system_ps2_model35sx','card_adlib','card_sb','card_roland_lapc_i','card_vga']);
  const buses=groupExpansionBuses(connections.links,entries,ids,catalog.buses);
  assert.equal(buses.length,2);
- for(const bus of buses){assert.equal(bus.family,'isa');assert.deepEqual(bus.links.map(link=>link.source).sort(),['card_adlib','card_sb']);assert(bus.links.every(link=>link.type==='optional'&&link.target===bus.system));}
+ for(const bus of buses){assert.equal(bus.family,'isa');assert.deepEqual(bus.links.map(link=>link.source).sort(),['card_adlib','card_roland_lapc_i','card_sb']);assert(bus.links.every(link=>link.type==='optional'&&link.target===bus.system));}
  assert.notEqual(buses[0].system,buses[1].system);
 });
 
@@ -18,6 +18,7 @@ test('all recorded card evidence survives grouping and hidden hosts never acquir
  const buses=groupExpansionBuses(connections.links,entries,new Set(entries.keys()),catalog.buses);
  const original=connections.links.filter(link=>entries.get(link.source).kind==='card');
  assert.equal(buses.flatMap(bus=>bus.links).length,original.length);
+ for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(original.some(link=>link.source===entry.id),'ISA card has no host: '+entry.id);
  for(const link of original)assert(buses.some(bus=>bus.links.includes(link)&&bus.system===link.target));
  const visible=new Set(['card_cga','card_xtdisk']);
  assert.equal(groupExpansionBuses(connections.links,entries,visible,catalog.buses).length,0);

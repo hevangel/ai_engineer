@@ -14,3 +14,5 @@
 - [Public timeline](timeline.md): website data, issue-status schema, source coverage and photograph curation.
 
 - [Compatible processor profiles](compatible_chips.md): shared CPU-role wires, second-source qualifications and distinct 8086/8088 host profiles.
+
+See [Roland LAPC-I ISA profiles](roland_isa.md) for the 1989 manufacturer-document bound, licensed photo, four planned host buses and physical-fit qualifications.

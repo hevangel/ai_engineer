@@ -77,3 +77,7 @@ The distinct Intel 8088 timeline profile is anchored to 1979 by [Intel's histori
 ## Intel numeric coprocessors
 
 [287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.
+
+## Roland LAPC-I
+
+`card_roland_lapc_i`: **Documented by 1989**, from the copyright on PDF page 2 of [Roland’s original manual](https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=2). This is a documentation bound. [The 1995 support supplement](https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf) describes setup, not introduction. See [the card profiles](roland_isa.md).

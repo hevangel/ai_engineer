@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const json=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8'));
 const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','images/credits.json'].map(json));
+const connections=await json('data/connections.json');
 const ids=new Set(),stages=new Set(vocabulary.stages.map(s=>s.id)),eras=new Set(catalog.eras.map(e=>e.id));
 let representative=0;
 for(const entry of catalog.entries){
@@ -26,5 +27,6 @@ for(const entry of catalog.entries){
  assert.equal(new URL(credit.source).hostname,'commons.wikimedia.org');
  if(entry.image.representative)representative++;
 }
+for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(connections.links.some(link=>link.source===entry.id&&catalog.entries.some(target=>target.id===link.target&&target.kind==='system')),'ISA card has no computer bus connection: '+entry.id);
 assert.equal(Object.keys(snapshot.statuses).length,ids.size,'Stale snapshot entries');
 console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} explicitly labeled representative photos).`);

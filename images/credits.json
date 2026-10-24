@@ -1387,5 +1387,17 @@
     "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/1d/KL_Intel_i387SX.jpg",
     "changes": "JPEG optimized locally; no crop or recoloring. Displayed with contain sizing.",
     "representative": false
+  },
+  "card_roland_lapc_i": {
+    "curated": true,
+    "title": "File:Lapc-1.jpg",
+    "creator": "Atarian~commonswiki (author inferred by Commons from copyright claims)",
+    "credit": "Own work assumed by Commons based on copyright claims; no machine-readable author/source supplied.",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "source": "https://commons.wikimedia.org/wiki/File:Lapc-1.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/11/Lapc-1.jpg",
+    "changes": "JPEG optimized locally; no crop or recoloring. Displayed with contain sizing.",
+    "representative": false
   }
 }

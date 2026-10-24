@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T20:26:51.350Z",
+  "syncedAt": "2026-10-24T22:27:06.394Z",
   "source": "Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives",
   "links": [
     {
@@ -1101,6 +1101,34 @@
       "target": "system_ps2_model56slc",
       "evidence": "https://www.ardent-tool.com/8556/",
       "note": "Selected 8556 386SLC planar U41 accepts a 68-pin PLCC 387SX socket or a CPU upgrade module. Qualify the installed adapter, 20 MHz grade and exact board; the CPU upgrade is a distinct option. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_deskpro_386",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_pc_386sx",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Candidate PS/2 SX configuration pending exact planar/riser and full-length physical-fit qualification. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Candidate PS/2 SX configuration pending exact planar/riser and full-length physical-fit qualification. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
       "type": "optional"
     }
   ]

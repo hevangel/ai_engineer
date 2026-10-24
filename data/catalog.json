@@ -77,6 +77,10 @@
     "dec": {
       "name": "DEC / Digital",
       "color": "#8B2346"
+    },
+    "roland": {
+      "name": "Roland",
+      "color": "#E85B25"
     }
   },
   "eras": [
@@ -2581,6 +2585,41 @@
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
       "dateNote": "Creative dates the original Sound Blaster to 1989. This anchors its original digital-audio controller profile; later Pro/16 DSPs retain their own dates."
+    },
+    {
+      "id": "card_roland_lapc_i",
+      "title": "Roland LAPC-I",
+      "kind": "card",
+      "company": "roland",
+      "bus": "isa",
+      "year": 1989,
+      "era": "32",
+      "dateLabel": "Documented by 1989",
+      "dateSource": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=2",
+      "dateBasis": "documented",
+      "dateNote": "Roland’s original LAPC-I owner’s manual carries copyright 1989 on PDF page 2. This establishes a contemporary documentation bound, not an exact shipping date. Page 3 requires an available full-length 13-inch expansion slot. LAPC-I is the ISA card; external MT-32 modules and LAPC-N are separate hardware.",
+      "query": "Roland LAPC-I LAPC-1 MPU-401 LA sound card",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 183,
+        "url": "https://github.com/hevangel/ai_engineer/issues/183"
+      },
+      "image": {
+        "src": "images/card_roland_lapc_i.jpg",
+        "alt": "Roland LAPC-I full-length ISA sound card, showing its LA synthesis chips, ISA edge connector and audio/MIDI bracket.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Lapc-1.jpg"
+      },
+      "historySources": [
+        {
+          "url": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+          "note": "Original full-length slot requirements"
+        },
+        {
+          "url": "https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf",
+          "note": "Roland IRQ and I/O-address setup notes"
+        }
+      ]
     },
     {
       "id": "card_sb",

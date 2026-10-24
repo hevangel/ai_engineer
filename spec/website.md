@@ -138,3 +138,5 @@ Read [compatible_chips.md](compatible_chips.md). `data/compatible-chips.json` de
 ## Optional coprocessors
 
 See [the 287/387 profiles](coprocessors_287_387.md) for canonical issues, sourced DX/SX history, machine options and dotted left-side chip links. Optional chip links do not enter expansion-card buses or add native completion blockers.
+
+See [Roland LAPC-I ISA profiles](roland_isa.md) for the 1989 manufacturer-document bound, licensed photo, four planned host buses and physical-fit qualifications.

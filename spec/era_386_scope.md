@@ -128,3 +128,5 @@ AMD 8086/8088, 80186/80188, 80286/Am286 and Am386DX/SX have explicit history ent
 ## Intel numeric coprocessors
 
 [287 and 387 profiles](coprocessors_287_387.md) retain canonical #113/#115, distinguish 387DX/SX history and host interfaces, and record optional machine configurations without adding base-machine blockers. The 387SX has a separate photograph and a November 1988 manufacturer-document bound.
+
+See [Roland LAPC-I ISA profiles](roland_isa.md) for the 1989 manufacturer-document bound, licensed photo, four planned host buses and physical-fit qualifications.
