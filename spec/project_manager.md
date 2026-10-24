@@ -53,3 +53,9 @@ Manage the [EDA tools track](eda_tools.md) in the Tooling Workstream, separately
 The owner set the PC endpoint to 386DX/SX and the corresponding classic Macintosh endpoint to 68030, including the 68020 transition. Follow [era_386_scope.md](era_386_scope.md). Include AdLib and Sound Blaster as explicit card/software deliverables. Keep a complete BOM and firmware/OS/application coverage ledger per selected machine, expanding issues as sources reveal missing parts. The CPU-generation endpoint does not forbid later ISA peripheral profiles useful on these hosts.
 
 When reconciling issues or project items, fetch all pages or raise the CLI limit to cover the inventory. GitHub dependency GET responses default to 30 entries; request per_page=100 and paginate when required before declaring a blocker missing.
+
+## PDP-1 and expanded x86 profiles
+
+Read [pdp1_am29xx.md](pdp1_am29xx.md) and [ibm_386_amd_scope.md](ibm_386_amd_scope.md) for the owner’s additions. Keep AMD Am29xx in #7 and the original Intel DX/SX family in #116; separate history photographs/device profiles do not require duplicate canonical family issues. Keep IBM 386SLC distinct from Intel 386SL and later 486 variants. The Model 25 SX selection supersedes Compaq 386s SX in #148/#149/#150, while Model 35 SX, Model 70 and Model 56 SLC have separate system/software/FPGA tracks.
+
+The PDP-1’s Am29xx gate is a new implementation dependency, explicitly qualified in `data/component-profiles.json`; it is not an assertion about DEC’s original 1959 BOM. A shared chip issue can map to multiple public variants: curate exact target selection and preserve the native gate. AMD histories do not create unsourced AMD-to-IBM factory-component links. ISA and MCA options must remain separate; board/ROM and physical card-fit qualification precede sign-off.

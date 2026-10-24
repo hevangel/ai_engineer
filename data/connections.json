@@ -1,8 +1,16 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T05:16:15.639Z",
+  "syncedAt": "2026-10-24T13:35:10.397Z",
   "source": "Native GitHub system completion dependencies plus separately curated planned card options",
   "links": [
+    {
+      "source": "amd_am29xx",
+      "target": "system_pdp1",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/184",
+      "note": "Owner-selected Am29xx implementation of the older PDP-1 architecture. These later chips were not present in DEC’s original 1959 machine.",
+      "basis": "reconstruction"
+    },
     {
       "source": "intel_mcs4",
       "target": "system_busicom_141pf",
@@ -323,7 +331,8 @@
       "target": "system_deskpro_386",
       "type": "required",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original"
     },
     {
       "source": "pc_at_glue",
@@ -421,7 +430,8 @@
       "target": "system_ps2_model80",
       "type": "required",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/151",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original"
     },
     {
       "source": "pc_at_glue",
@@ -536,6 +546,35 @@
       "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
     },
     {
+      "source": "intel_80386",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original"
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
       "source": "motorola_68030",
       "target": "system_mac_iix",
       "type": "required",
@@ -589,34 +628,6 @@
       "target": "system_mac_iix",
       "type": "required",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
-    },
-    {
-      "source": "intel_80386",
-      "target": "system_pc_386sx",
-      "type": "required",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
-    },
-    {
-      "source": "pc_at_glue",
-      "target": "system_pc_386sx",
-      "type": "required",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
-    },
-    {
-      "source": "intel_8042",
-      "target": "system_pc_386sx",
-      "type": "required",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
-      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
-    },
-    {
-      "source": "rtc146818",
-      "target": "system_pc_386sx",
-      "type": "required",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
       "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
     },
     {
@@ -781,6 +792,92 @@
       "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
     },
     {
+      "source": "intel_80386sx",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original"
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386sx",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original"
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "ibm_386slc",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
       "source": "card_ega",
       "target": "system_ibm_at_5170",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
@@ -795,13 +892,6 @@
       "type": "optional"
     },
     {
-      "source": "card_ega",
-      "target": "system_pc_386sx",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
-      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
-      "type": "optional"
-    },
-    {
       "source": "card_vga",
       "target": "system_ibm_at_5170",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
@@ -811,13 +901,6 @@
     {
       "source": "card_vga",
       "target": "system_deskpro_386",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
-      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
-      "type": "optional"
-    },
-    {
-      "source": "card_vga",
-      "target": "system_pc_386sx",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
       "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
       "type": "optional"
@@ -832,13 +915,6 @@
     {
       "source": "card_adlib",
       "target": "system_deskpro_386",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
-      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
-      "type": "optional"
-    },
-    {
-      "source": "card_adlib",
-      "target": "system_pc_386sx",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
       "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
       "type": "optional"
@@ -853,13 +929,6 @@
     {
       "source": "card_sb",
       "target": "system_deskpro_386",
-      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
-      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
-      "type": "optional"
-    },
-    {
-      "source": "card_sb",
-      "target": "system_pc_386sx",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
       "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
       "type": "optional"
@@ -876,6 +945,34 @@
       "target": "system_apple_iie",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/109",
       "note": "Planned Disk II storage/controller option tracked by the machine software roadmap; qualify the selected drive, controller and firmware revision.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
       "type": "optional"
     }
   ]

@@ -2,7 +2,7 @@
 
 ## Meaning of the dates
 
-This audit resolves all 19 entries previously shown as undated and corrects four MOS entries placed using later reference-manual printings. It changes historical presentation, not engineering completion status. All 102 catalog entries now have a year; uncertain introduction dates remain qualified.
+This audit resolves all 19 entries previously shown as undated and corrects four MOS entries placed using later reference-manual printings. It changes historical presentation, not engineering completion status. At the initial audit, all 102 catalog entries had a year; uncertain introduction dates remained qualified. Subsequent additions follow the same evidence rules.
 
 - **Introduction:** a source explicitly dates the family’s introduction.
 - **Documented by:** a dated document proves the part was documented by that year; exact commercial launch may be earlier.
@@ -66,3 +66,7 @@ The pictured package or board can be a later representative revision. Its photog
 3. A required original chip cannot be placed after the computer that used it. Investigate a late manual, wrong revision or overly broad family before changing dates or dependencies.
 4. Keep later optional retrofit cards at their real dates; an optional Sound Blaster for an older AT does not make the card a 1984 product.
 5. Preserve stable entry IDs, canonical issues, image attribution and status snapshots when changing history. New evidence can improve an availability bound without silently promoting it to a confirmed launch date.
+
+## PDP-1, IBM and AMD additions
+
+See [PDP-1](pdp1_am29xx.md) for the 1959 original-machine date and explicit later-Am29xx reconstruction exception. See [IBM/AMD profiles](ibm_386_amd_scope.md) for the 1988 Intel SX and Model 70, 1991 IBM 386SLC/Model 35 SX/Am386, 1992 Model 25 SX/Model 56 SLC, and qualified AMD 1983 catalog bounds/previews. The former Compaq 386s SX selection is replaced by IBM Model 25 SX; keep its stable catalog and issue IDs. The historical Compaq flyer is not evidence for the IBM replacement.

@@ -9,6 +9,7 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 - `data/status.json`: generated GitHub snapshot. Never hand-code build stages into HTML.
 - `data/connections.json`: generated required chip/card prerequisites and separately labeled planned expansion configurations.
 - `data/system-options.json`: curated optional card-to-computer profiles, evidence and qualifications.
+- `data/component-profiles.json`: explicit CPU variants for shared canonical issues and qualified later reconstruction components; each must match a native completion dependency.
 - `data/stages.json`: public legend, labels, symbols and colors. Labels are rendered from this file.
 - `images/`: local photographs and per-image Commons attribution in `credits.json`.
 - `scripts/`: status synchronization, photo import, preview server and verification.
@@ -85,8 +86,16 @@ Each link has `source` and `target` catalog IDs, `type` (`required` or `optional
 
 The page renders maker lineage on the right and chip/card-to-computer relationships on the left, using straight runs, 45-degree chamfers and separate hollow bottom/top pads. It allocates individual row tracks and vertical lanes whose occupied spans cannot overlap. Each year groups chips first, expansion cards next and computer systems last, with computers always starting below the chip/card rows. Solid lines show maker lineage; dashed lines show recorded required components; dotted lines show planned card options. The Show wires master toggle hides both layers and collapses their routing space; the layer controls can toggle either layer separately. The computer selector and each machine's trace button filter the archive to that computer and its linked parts. Other filters still apply, and connections disappear when either endpoint is hidden. All relationships stay in JSON, not hard-coded device wiring in HTML or browser code.
 
-The 386SX placeholder now identifies the original Compaq Deskpro 386s, dated 1988 from a manufacturer brochure; see `spec/era_386_scope.md`. Keep the stable catalog ID `system_pc_386sx` and issue #148. Its exact model photo replaces the old generic Sinclair representative. Exact PCB/ROM selection remains engineering work.
+The stable catalog ID `system_pc_386sx` and #148 now select IBM PS/2 Model 25 SX, replacing the Compaq 386s SX target at the owner’s request. Model 35 SX, Model 70 386 and Model 56 SLC are separate sourced profiles. See [the IBM/AMD scope](ibm_386_amd_scope.md).
 
 ## Company colors
 
 Keep company colors in `data/catalog.json`. User-selected colors are Intel blue, AMD red, Motorola indigo (`#4B3F8F`), Apple black (`#111111`, for contrast on the off-white page), MOS/Commodore green (`#2E8B57`), TI `#CC0000`, Nintendo `#E60012` and Atari `#E41B23`. Labels, card strokes and wires must use the same catalog values.
+
+## Historical predecessors and reconstruction components
+
+The [PDP-1 plan](pdp1_am29xx.md) adds a 1959 discrete-logic 18-bit prelude before the microprocessor chapters. Historical placement describes the original machine. An Am29xx-based rebuild is a later implementation: its component profile uses `basis: reconstruction`, a distinct left-wire pattern/title and a separate legend/count. Such a link may run toward an older machine; do not falsify the machine or chip year to force chronological wire direction. Original fitted components still precede their original hosts.
+
+`sync-connections.mjs` groups all catalog entries sharing a canonical issue. When a blocked-by issue maps to multiple variants, `component-profiles.json` must select exactly one for that target. A missing or ambiguous selection fails the refresh and preserves the old snapshot. Every curated profile must be consumed by a matching native dependency; it cannot invent a GitHub blocker. This keeps Intel DX/SX and future vendor variants distinct while retaining one issue per coherent family. `basis: original` selects an original profile; `basis: reconstruction` explicitly identifies a later implementation part. Optional card profiles remain separate.
+
+Photograph `caption` is optional. It is shown below the image and in attribution when present; a representative image must identify the hardware actually pictured. Native-status snapshots retain one record per stable catalog ID even when two entries share a canonical issue. The public page never embeds device states or dependency lists in HTML.

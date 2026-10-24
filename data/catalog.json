@@ -73,9 +73,19 @@
     "adlib": {
       "name": "AdLib",
       "color": "#a77c20"
+    },
+    "dec": {
+      "name": "DEC / Digital",
+      "color": "#8B2346"
     }
   },
   "eras": [
+    {
+      "id": "18",
+      "title": "Before the microprocessor",
+      "label": "Discrete-logic 18-bit prelude",
+      "range": "1959—1965"
+    },
     {
       "id": "4",
       "title": "The first microprocessors",
@@ -108,6 +118,42 @@
     }
   ],
   "entries": [
+    {
+      "id": "system_pdp1",
+      "title": "DEC PDP-1 · Am29xx reconstruction",
+      "kind": "system",
+      "company": "dec",
+      "year": 1959,
+      "dateLabel": "1959 · original PDP-1 introduction",
+      "dateSource": "https://www.computerhistory.org/pdp-1/",
+      "era": "18",
+      "query": "DEC PDP-1 · Am29xx reconstruction",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 184,
+        "url": "https://github.com/hevangel/ai_engineer/issues/184"
+      },
+      "description": "18-bit architecture · planned Am29xx datapath, SV web front panel & FPGA",
+      "dateBasis": "introduced",
+      "dateNote": "The 1959 DEC original used discrete transistor modules. Our planned Am29xx bit-slice implementation uses later parts; its reconstruction wire is not an original-machine component claim.",
+      "image": {
+        "src": "images/system_pdp1.jpg",
+        "alt": "Original DEC PDP-1 cabinets, display and typewriter photographed by Matthew Hutchinson",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:PDP-1.jpg",
+        "caption": "Original DEC machine; the Am29xx reconstruction is planned."
+      },
+      "historySources": [
+        {
+          "url": "https://bitsavers.trailing-edge.com/pdf/dec/pdp1/F15B_PDP1_Handbook_1961.pdf",
+          "note": "DEC original PDP-1 handbook (1961)"
+        },
+        {
+          "url": "https://github.com/hevangel/ai_engineer/issues/7",
+          "note": "Planned Am29xx implementation family"
+        }
+      ]
+    },
     {
       "id": "ttl_74_series",
       "title": "74-series logic",
@@ -1393,6 +1439,107 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
+      "id": "amd_80186",
+      "title": "AMD 80186 / 80188 family",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "1983 · AMD catalog preview",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 80186 / 80188 family",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 190,
+        "url": "https://github.com/hevangel/ai_engineer/issues/190"
+      },
+      "description": "Integrated x86 · DMA, timers, interrupt control & chip selects",
+      "dateBasis": "preview",
+      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative; the photo depicts an AMD 80C186 die.",
+      "image": {
+        "src": "images/amd_80186.jpg",
+        "alt": "AMD 80C186 SoC die.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_80C186_SoC_die.JPG",
+        "caption": "Representative AMD 80C186 die; not the original 1983 advance-information device."
+      }
+    },
+    {
+      "id": "amd_80286",
+      "title": "AMD 80286 / Am286",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "1983 · AMD catalog preview",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 80286 / Am286",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 191,
+        "url": "https://github.com/hevangel/ai_engineer/issues/191"
+      },
+      "description": "Protected-mode x86 · vendor and revision profiles",
+      "dateBasis": "preview",
+      "dateNote": "AMD’s 1983 catalog includes 80286 advance information at printed page 2-54. This is a catalog-preview date, not a confirmed production or shipment date for every Am286 revision.",
+      "image": {
+        "src": "images/amd_80286.jpg",
+        "alt": "AMD 80286 12S CPU.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_80286_12S_CPU.jpg"
+      }
+    },
+    {
+      "id": "amd_8086",
+      "title": "AMD 8086",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "Documented by 1983",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 8086",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 189,
+        "url": "https://github.com/hevangel/ai_engineer/issues/189"
+      },
+      "description": "16-bit x86 · 16-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s 1983 data book documents the 8086 at printed page 2-104. This is an availability/documentation bound, not Intel’s 1978 launch date or an exact AMD first shipment.",
+      "image": {
+        "src": "images/amd_8086.jpg",
+        "alt": "Ic-photo-AMD--P8086-2--(8086-CPU).JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8086-2--(8086-CPU).JPG"
+      }
+    },
+    {
+      "id": "amd_8088",
+      "title": "AMD 8088",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "Documented by 1983",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 8088",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 189,
+        "url": "https://github.com/hevangel/ai_engineer/issues/189"
+      },
+      "description": "16-bit x86 · 8-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s 1983 data book documents the 8088 at printed page 2-136. Keep the AMD-specific bound separate from Intel’s original introduction and from any factory IBM CPU claim.",
+      "image": {
+        "src": "images/amd_8088.png",
+        "alt": "Ic-photo-AMD--P8088-2-(8088-CPU).png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8088-2-(8088-CPU).png"
+      }
+    },
+    {
       "id": "apple_iie_iou",
       "title": "Apple IIe IOU",
       "kind": "chip",
@@ -1878,7 +2025,7 @@
     },
     {
       "id": "intel_80386",
-      "title": "Intel 80386 family",
+      "title": "Intel 80386DX",
       "kind": "chip",
       "company": "intel",
       "year": 1985,
@@ -1893,11 +2040,13 @@
       },
       "image": {
         "src": "images/intel_80386.jpg",
-        "alt": "80386 - P9 mainboard MXIC. img 01.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:80386_-_P9_mainboard_MXIC._img_01.jpg"
+        "alt": "A80386DX-25 SX218.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:A80386DX-25_SX218.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "32-bit ISA and external data bus · original 386 / DX profile",
+      "dateNote": "Intel introduced the original 80386 in 1985; the DX name distinguishes its 32-bit external bus from the later 16-bit-bus SX. The photographed 25 MHz package is a later speed grade.",
+      "dateBasis": "introduced"
     },
     {
       "id": "motorola_68851",
@@ -2297,37 +2446,54 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
-      "id": "system_pc_386sx",
-      "title": "Compaq Deskpro 386s (386SX)",
-      "kind": "system",
-      "company": "compaq",
+      "id": "intel_80386sx",
+      "title": "Intel 80386SX",
+      "kind": "chip",
+      "company": "intel",
       "year": 1988,
-      "dateLabel": "1988 · 386SX / ISA",
-      "dateSource": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-1988-sales-flyer.pdf",
+      "dateLabel": "1988 · 386SX introduction",
+      "dateSource": "https://www.intel.com/pressroom/kits/quickrefyr.htm",
       "era": "32",
-      "query": "Compaq Deskpro 386s",
+      "query": "Intel 80386SX",
       "issue": {
         "repo": "hevangel/ai_engineer",
-        "number": 148,
-        "url": "https://github.com/hevangel/ai_engineer/issues/148"
+        "number": 116,
+        "url": "https://github.com/hevangel/ai_engineer/issues/116"
       },
+      "description": "32-bit architecture · 16-bit external bus · 24-bit physical addressing",
+      "dateBasis": "introduced",
+      "dateNote": "The SX retains the 32-bit architecture but uses a 16-bit external data bus and 24-bit physical address bus. It is distinct from the earlier DX and from IBM 386SLC.",
       "image": {
-        "src": "images/system_pc_386sx.jpg",
-        "alt": "Compaq Deskpro 386s on display at the Living Computer Museum, Seattle",
+        "src": "images/intel_80386sx.jpg",
+        "alt": "I386SX.jpg",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:DeskPro_386S.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:I386SX.jpg"
+      }
+    },
+    {
+      "id": "system_ps2_model70",
+      "title": "IBM PS/2 Model 70 386",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1988,
+      "dateLabel": "1988 · Model 70 announced",
+      "dateSource": "https://www.ardent-tool.com/qtechinfo/GJAN-43WJX8.html",
+      "era": "32",
+      "query": "IBM PS/2 Model 70 386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 196,
+        "url": "https://github.com/hevangel/ai_engineer/issues/196"
       },
-      "description": "16 MHz 80386SX · 8/16-bit ISA · sourced 1988 Compaq profile",
-      "historySources": [
-        {
-          "url": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-1988-sales-flyer.pdf",
-          "note": "Original Compaq sales flyer, document 043A/0688: 80386SX, 8/16-bit expansion bus and 1988 copyright."
-        },
-        {
-          "url": "https://www.retroviator.com/wp-content/uploads/2019/12/deskpro-386s-16-spec-sheet.pdf",
-          "note": "IBM technical-service sheet: 16 MHz 80386SX and ISA bus. This 1996 sheet is hardware evidence, not the introduction date."
-        }
-      ]
+      "description": "386DX · Micro Channel · original 8570 desktop profile",
+      "dateBasis": "introduced",
+      "dateNote": "The preserved IBM specification gives June 2, 1988 and 16/20 MHz 80386DX profiles with Micro Channel. Select an exact 8570 board/ROM; later 486 Model 70 and portable P70 are different machines.",
+      "image": {
+        "src": "images/system_ps2_model70.jpg",
+        "alt": "IBM PS2 MCA Model 70, front view.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_MCA_Model_70,_front_view.jpg"
+      }
     },
     {
       "id": "system_mac_iix",
@@ -2518,6 +2684,84 @@
       "description": "Complete machine · SystemVerilog, web interface & FPGA"
     },
     {
+      "id": "amd_am386dx",
+      "title": "AMD Am386DX",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1991,
+      "dateLabel": "1991 · Am386 family introduced",
+      "dateSource": "https://ir.amd.com/financial-information/sec-filings/content/0000891618-94-000068/EX-13.txt",
+      "era": "32",
+      "query": "AMD Am386DX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 192,
+        "url": "https://github.com/hevangel/ai_engineer/issues/192"
+      },
+      "description": "32-bit x86 · 32-bit external data bus",
+      "dateBasis": "introduced",
+      "dateNote": "AMD’s annual report explicitly dates the Am386 family introduction to 1991. This is the 32-bit external-bus DX profile; the pictured 40 MHz grade is not claimed to date every package or revision.",
+      "image": {
+        "src": "images/amd_am386dx.jpg",
+        "alt": "AMD AM386DX-40.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM386DX-40.jpg",
+        "caption": "Motherboard with an AMD Am386DX-40; this later speed grade illustrates the 1991 family."
+      }
+    },
+    {
+      "id": "amd_am386sx",
+      "title": "AMD Am386SX",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1991,
+      "dateLabel": "1991 · SX datasheet published",
+      "dateSource": "https://www.ardent-tool.com/CPU/docs/AMD/386/386SX/15022a.pdf",
+      "era": "32",
+      "query": "AMD Am386SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 192,
+        "url": "https://github.com/hevangel/ai_engineer/issues/192"
+      },
+      "description": "32-bit x86 · 16-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s Am386SX Rev A sheet is dated March 1991. The SX has a 16-bit external data bus; later SXL/SXLV power and speed variants require separate dates and contracts.",
+      "image": {
+        "src": "images/amd_am386sx.jpg",
+        "alt": "Am386SX25.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Am386SX25.jpg",
+        "caption": "AMD Am386SX/SXL-25 package; the pictured later SXL variant illustrates the SX family."
+      }
+    },
+    {
+      "id": "ibm_386slc",
+      "title": "IBM 386SLC",
+      "kind": "chip",
+      "company": "ibm",
+      "year": 1991,
+      "dateLabel": "1991 · IBM cached-processor announcement",
+      "dateSource": "https://www.ardent-tool.com/CPU/191-201.txt",
+      "era": "32",
+      "query": "IBM 386SLC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 188,
+        "url": "https://github.com/hevangel/ai_engineer/issues/188"
+      },
+      "description": "386SX-derived IBM CPU · 8 KB internal cache",
+      "dateBasis": "documented",
+      "dateNote": "IBM announcement 191-201, October 17, 1991, specifies the 20 MHz 386SLC and 8 KB internal cache, with December availability planned. The Model 56 SLC followed in 1992; this is not Intel 386SL or a 486SLC.",
+      "image": {
+        "src": "images/ibm_386slc.png",
+        "alt": "IBM PS/2 family hosts; the individual 386SLC processor is not pictured.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "IBM PS/2 family hosts; the individual 386SLC processor is not pictured."
+      }
+    },
+    {
       "id": "ymf262",
       "title": "Yamaha YMF262 OPL3 and associated DAC profile",
       "kind": "chip",
@@ -2539,6 +2783,84 @@
         "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YMF262-M.png"
       },
       "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_ps2_model35sx",
+      "title": "IBM PS/2 Model 35 SX",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1991,
+      "dateLabel": "1991 · Model 35 SX availability",
+      "dateSource": "https://www.ardent-tool.com/35_40/191-075.txt",
+      "era": "32",
+      "query": "IBM PS/2 Model 35 SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 193,
+        "url": "https://github.com/hevangel/ai_engineer/issues/193"
+      },
+      "description": "20 MHz 386SX · 16-bit ISA · VGA & IDE",
+      "dateBasis": "introduced",
+      "dateNote": "IBM announcement 191-075 gives June 11, 1991 availability and a 20 MHz 80386SX. Model 35 SX uses ISA; the later 35 SLC is a separate profile. The photograph is a representative PS/2 family view.",
+      "image": {
+        "src": "images/system_ps2_model35sx.png",
+        "alt": "Representative PS/2 family: PS/2E above Model 56 and Model 30-286; not a Model 35 SX.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "Representative PS/2 family: PS/2E above Model 56 and Model 30-286; not a Model 35 SX."
+      }
+    },
+    {
+      "id": "system_pc_386sx",
+      "title": "IBM PS/2 Model 25 SX",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1992,
+      "dateLabel": "1992 · Model 25 SX announced",
+      "dateSource": "https://www.ardent-tool.com/8525/192-019.txt",
+      "era": "32",
+      "query": "IBM PS/2 Model 25 SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 148,
+        "url": "https://github.com/hevangel/ai_engineer/issues/148"
+      },
+      "description": "16 MHz 386SX · 16-bit ISA · integrated color VGA",
+      "dateBasis": "introduced",
+      "dateNote": "IBM letter 192-019 (January 21, 1992) specifies a 16 MHz 80386SX, with April 17 planned availability. The selected K00 profile replaces the Compaq 386s SX build; the photograph is a representative Model 25 chassis, not a confirmed K00 planar.",
+      "image": {
+        "src": "images/system_pc_386sx.jpg",
+        "alt": "IBM Model 25 family chassis; the selected 1992 SX board revision is not confirmed in this photo.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_model_25_(1).jpg",
+        "caption": "IBM Model 25 family chassis; the selected 1992 SX board revision is not confirmed in this photo."
+      }
+    },
+    {
+      "id": "system_ps2_model56slc",
+      "title": "IBM PS/2 Model 56 SLC",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1992,
+      "dateLabel": "1992 · Model 56 SLC announced",
+      "dateSource": "https://www.ardent-tool.com/qtechinfo/GJAN-43VR4V.html",
+      "era": "32",
+      "query": "IBM PS/2 Model 56 SLC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 199,
+        "url": "https://github.com/hevangel/ai_engineer/issues/199"
+      },
+      "description": "20 MHz IBM 386SLC · 16-bit Micro Channel · SCSI",
+      "dateBasis": "introduced",
+      "dateNote": "IBM’s preserved specification gives February 25, 1992: 20 MHz IBM 386SLC, 8 KB cache, 16-bit Micro Channel and integrated SCSI. The selected 8556-055 is distinct from plain SX, LS and later SLC2 variants; the pictured Model 56 revision is unconfirmed.",
+      "image": {
+        "src": "images/system_ps2_model56slc.png",
+        "alt": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
+      }
     }
   ]
 }

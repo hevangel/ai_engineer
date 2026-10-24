@@ -68,3 +68,6 @@
 /* Qualified dates remain readable without mistaking manual dates for chip launches. */
 .date-note{margin-top:8px;font-size:10px;color:var(--muted)}.date-note summary{cursor:pointer;width:fit-content;text-decoration:underline;text-underline-offset:3px}.date-note p{margin-top:6px;max-width:60ch}.date-note summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 .date-note>a{display:block;margin-top:5px;text-decoration:underline;text-underline-offset:3px}
+
+/* Later implementation parts are distinguished from original machine components. */
+.connection-reconstruction .trace-wire{stroke-dasharray:10 3 2 3;stroke-width:2.5px}.connection-key .reconstruction-key{border-top-style:dashed;border-top-color:#ed1c24}.photo-caption{font-size:9px!important;margin-top:6px!important;color:#596b62!important}.era[data-era="18"]{background:linear-gradient(90deg,rgba(220,227,234,.4),transparent 70%)}
