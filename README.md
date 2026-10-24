@@ -35,3 +35,9 @@ Nested dependencies can be large. The root submodule pointers pin the revisions 
 ## For contributors
 
 Read [AGENTS.md](AGENTS.md) before changing this repository. For work inside a project submodule, read and follow that project's own `AGENTS.md`. Each project has its own license; check it before reusing code, images, or other assets in the public site.
+
+## Roadmap
+
+The [AI Engineer GitHub Project](https://github.com/users/hevangel/projects/1) coordinates chip families, complete systems, bus-organized expansion cards, Rust/LLVM targets, software reconstruction and future FPGA implementations. Access to the board follows its GitHub visibility settings.
+
+See the [initial project plan](spec/initial_project_plan.md) for the canonical issue inventory and dependencies, and the [project manager instructions](spec/project_manager.md) for how that roadmap is maintained. The planned `ai_fpga_engineer` repository has not been created yet.

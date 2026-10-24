@@ -15,6 +15,7 @@ The website and its shared presentation belong at this repository root. The thre
 | `ai_hw_engineer/` | Hardware designs, RTL, verification, and virtual systems |
 | `ai_sw_engineer/` | Software reimplementations, Rust, LLVM backends, and target systems |
 | `hdl-workbench/` | Browser-based HDL workbench and its implementation |
+| `spec/` | Cross-project roadmap, project manager instructions and dependency inventory |
 | `.gitmodules` | Canonical submodule URLs; the root Git tree pins each submodule commit |
 
 ## Scope and ownership
@@ -46,3 +47,7 @@ The website and its shared presentation belong at this repository root. The thre
 - Make root-level website changes in a feature branch. Do not push directly to `main`.
 - Use the build, lint, or link-check commands documented by the site once they exist. Report the exact checks run and any limitations; do not claim a check passed unless it did.
 - Do not publish or deploy the site unless the user explicitly asks for that action.
+
+## Project management
+
+Read [spec/project_manager.md](spec/project_manager.md) before creating, triaging, scheduling or updating roadmap issues and dependencies. The initial inventory and canonical issue links are in [spec/initial_project_plan.md](spec/initial_project_plan.md). Manage the AI Engineer GitHub Project across chips, systems, bus-organized cards, Rust toolchains/software, HDL Workbench and the planned ai_fpga_engineer repository.
