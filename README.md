@@ -10,6 +10,8 @@ The timeline is the public window into that work. Browse the machines, follow th
 
 Scroll from the PDP-1 and early microprocessors through the 386 and 68030 generation, or use the year rail to jump through time. Search for a chip or machine, filter by maker or build stage, and choose a computer to see its recorded components.
 
+The timeline starts with maker lines for a clearer overview. Choose a computer to see its component wires; turn on **All computer links** to show the complete diagram. Returning to **All computers** restores the overview.
+
 The connections show different relationships:
 
 - **Company lines on the right** follow chip families from the same maker. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.

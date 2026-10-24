@@ -20,3 +20,7 @@ See [Roland LAPC-I ISA profiles](roland_isa.md) for the 1989 manufacturer-docume
 ## Grouped support chipsets
 
 See [chipset cards](chipsets.md) for one-card member lists, canonical family issues, date/photo qualifications and exact-board dependency selection. The member list is data-driven and searchable; each chipset retains one status and one set of wire endpoints.
+
+## Focused wire overview
+
+The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Show wires remains the master. See [focused wire behavior](focused_wires.md).
