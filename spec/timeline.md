@@ -16,7 +16,7 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 
 Run `node scripts/serve.mjs`, then open `http://127.0.0.1:4173`. A static HTTP server is required because browsers restrict JSON fetches from `file:` URLs. Deployment consists of `index.html`, `assets/`, `data/`, and `images/`; do not copy submodule checkouts, `.git`, scripts, scratch files or credentials into a public deployment directory.
 
-Card `description` is optional. Omit repeated project-wide boilerplate; render a description paragraph only when the catalog supplies useful entry-specific text.
+Card descriptions may remain in the catalog as metadata, but the public cards do not render descriptive subtitles beneath their titles. Preserve dates, status badges and sourced photo qualifications.
 
 ## Status synchronization
 
