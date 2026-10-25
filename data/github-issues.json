@@ -1,0 +1,2406 @@
+{
+  "schemaVersion": 1,
+  "repository": "hevangel/ai_engineer",
+  "project": {
+    "owner": "hevangel",
+    "number": 1
+  },
+  "fields": {
+    "Status": {
+      "id": "PVTSSF_lAHOALQ9dM4BoWAFzhm2jRk",
+      "options": [
+        {
+          "id": "09c6224f",
+          "name": "Planned"
+        },
+        {
+          "id": "588b3e91",
+          "name": "Researching"
+        },
+        {
+          "id": "b75e1c14",
+          "name": "Sources Ready"
+        },
+        {
+          "id": "a09c80ec",
+          "name": "Building"
+        },
+        {
+          "id": "176bb3bd",
+          "name": "Blocked"
+        },
+        {
+          "id": "25aa5d3b",
+          "name": "AI verified"
+        },
+        {
+          "id": "9ba5a8d9",
+          "name": "Human verified"
+        }
+      ]
+    },
+    "Agent": {
+      "id": "PVTSSF_lAHOALQ9dM4BoWAFzhm2jsk",
+      "options": [
+        {
+          "id": "9282166a",
+          "name": "Codex"
+        },
+        {
+          "id": "8a5d08e5",
+          "name": "Claude"
+        },
+        {
+          "id": "ee61bcde",
+          "name": "GLM"
+        },
+        {
+          "id": "3a64838b",
+          "name": "Muse"
+        },
+        {
+          "id": "478d0b17",
+          "name": "Kiro"
+        },
+        {
+          "id": "0b29ec8c",
+          "name": "Copilot"
+        },
+        {
+          "id": "53270c06",
+          "name": "OpenCode"
+        },
+        {
+          "id": "d4fb3413",
+          "name": "KiloCode"
+        },
+        {
+          "id": "e072d3ca",
+          "name": "Cursor"
+        },
+        {
+          "id": "2aeb970d",
+          "name": "Antigravity"
+        }
+      ]
+    },
+    "Sprint": {
+      "id": "PVTIF_lAHOALQ9dM4BoWAFzhm2jss"
+    },
+    "Workstream": {
+      "id": "PVTSSF_lAHOALQ9dM4BoWAFzhm-K80",
+      "options": [
+        {
+          "id": "9cfd0081",
+          "name": "Chips"
+        },
+        {
+          "id": "bfbaedaa",
+          "name": "Systems"
+        },
+        {
+          "id": "48b77bd4",
+          "name": "Cards"
+        },
+        {
+          "id": "bc3d0cd0",
+          "name": "Toolchains"
+        },
+        {
+          "id": "e52022d6",
+          "name": "Software"
+        },
+        {
+          "id": "ecc0ae55",
+          "name": "FPGA"
+        },
+        {
+          "id": "07b9f44f",
+          "name": "Tooling"
+        },
+        {
+          "id": "df3ccc16",
+          "name": "Website"
+        }
+      ]
+    }
+  },
+  "series": [
+    {
+      "issue": 4,
+      "title": "[Chip] 74-series logic",
+      "path": "design/ttl_74_series",
+      "members": [
+        {
+          "part": "74181",
+          "paths": [
+            "design/ttl_74_series/alu_74181"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 248,
+            "url": "https://github.com/hevangel/ai_engineer/issues/248",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFHqw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBGQ"
+        },
+        {
+          "part": "74LS00",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls00"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls00.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 308,
+            "url": "https://github.com/hevangel/ai_engineer/issues/308",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHzJA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDd8"
+        },
+        {
+          "part": "74LS02",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls02"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls02.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 309,
+            "url": "https://github.com/hevangel/ai_engineer/issues/309",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHzMg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDeg"
+        },
+        {
+          "part": "74LS04",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls04"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls04.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 310,
+            "url": "https://github.com/hevangel/ai_engineer/issues/310",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHzRA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDeU"
+        },
+        {
+          "part": "74LS08",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls08"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls08.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 311,
+            "url": "https://github.com/hevangel/ai_engineer/issues/311",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHzdA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDfM"
+        },
+        {
+          "part": "74LS11",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls11"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls11.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 312,
+            "url": "https://github.com/hevangel/ai_engineer/issues/312",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHz3w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDfE"
+        },
+        {
+          "part": "74LS138",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls138"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls138.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 313,
+            "url": "https://github.com/hevangel/ai_engineer/issues/313",
+            "nodeId": "I_kwDOVUYpy88AAAABZvHz-Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDfw"
+        },
+        {
+          "part": "74LS139",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls139"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls139.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 314,
+            "url": "https://github.com/hevangel/ai_engineer/issues/314",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH0GQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDgc"
+        },
+        {
+          "part": "74LS151",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls151"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls151.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 315,
+            "url": "https://github.com/hevangel/ai_engineer/issues/315",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH0Lw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDhQ"
+        },
+        {
+          "part": "74LS153",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls153"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls153.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 316,
+            "url": "https://github.com/hevangel/ai_engineer/issues/316",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH0ww"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDhE"
+        },
+        {
+          "part": "74LS161",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls161"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls161.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 317,
+            "url": "https://github.com/hevangel/ai_engineer/issues/317",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH07A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDiQ"
+        },
+        {
+          "part": "74LS166",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls166"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls166.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 318,
+            "url": "https://github.com/hevangel/ai_engineer/issues/318",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH1BQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDiw"
+        },
+        {
+          "part": "74LS174",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls174"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls174.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 319,
+            "url": "https://github.com/hevangel/ai_engineer/issues/319",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH1Fw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDi8"
+        },
+        {
+          "part": "74LS175",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls175"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls175.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 320,
+            "url": "https://github.com/hevangel/ai_engineer/issues/320",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH1nA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDjo"
+        },
+        {
+          "part": "74LS194",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls194"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls194.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 321,
+            "url": "https://github.com/hevangel/ai_engineer/issues/321",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH1zw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDj8"
+        },
+        {
+          "part": "74LS195",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls195"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls195.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 322,
+            "url": "https://github.com/hevangel/ai_engineer/issues/322",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH14Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDkk"
+        },
+        {
+          "part": "74LS20",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls20"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls20.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 323,
+            "url": "https://github.com/hevangel/ai_engineer/issues/323",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH1-w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDlE"
+        },
+        {
+          "part": "74LS251",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls251"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls251.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 324,
+            "url": "https://github.com/hevangel/ai_engineer/issues/324",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH2ew"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDlY"
+        },
+        {
+          "part": "74LS257",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls257"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls257.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 325,
+            "url": "https://github.com/hevangel/ai_engineer/issues/325",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH2mQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDlw"
+        },
+        {
+          "part": "74LS259",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls259"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls259.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 326,
+            "url": "https://github.com/hevangel/ai_engineer/issues/326",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH2uw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDl8"
+        },
+        {
+          "part": "74LS283",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls283"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls283.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 327,
+            "url": "https://github.com/hevangel/ai_engineer/issues/327",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH27w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDn4"
+        },
+        {
+          "part": "74LS32",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls32"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls32.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 328,
+            "url": "https://github.com/hevangel/ai_engineer/issues/328",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH3bQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDok"
+        },
+        {
+          "part": "74LS51",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls51"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls51.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 329,
+            "url": "https://github.com/hevangel/ai_engineer/issues/329",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH3gA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDpI"
+        },
+        {
+          "part": "74LS74",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls74"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls74.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 330,
+            "url": "https://github.com/hevangel/ai_engineer/issues/330",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH3jg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDpo"
+        },
+        {
+          "part": "74LS86",
+          "paths": [
+            "design/ttl_74_series/ttl_74ls86"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_74ls86.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 331,
+            "url": "https://github.com/hevangel/ai_engineer/issues/331",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH3ow"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDp8"
+        }
+      ]
+    },
+    {
+      "issue": 5,
+      "title": "[Chip] AMD Am25xx series",
+      "path": "design/amd_am25xx",
+      "members": [
+        {
+          "part": "am2501",
+          "paths": [
+            "design/amd_am25xx/amd_am2501"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 249,
+            "url": "https://github.com/hevangel/ai_engineer/issues/249",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFHww"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBHQ"
+        },
+        {
+          "part": "am2505",
+          "paths": [
+            "design/amd_am25xx/amd_am2505"
+          ],
+          "existingIssue": 6,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 6,
+            "url": "https://github.com/hevangel/ai_engineer/issues/6",
+            "nodeId": "I_kwDOVUYpy88AAAABZhpv9Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDIly8"
+        }
+      ]
+    },
+    {
+      "issue": 7,
+      "title": "[Chip] AMD Am29xx series",
+      "path": "design/amd_am29xx",
+      "members": [
+        {
+          "part": "am2901",
+          "paths": [
+            "design/amd_am29xx/amd_am2901"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 250,
+            "url": "https://github.com/hevangel/ai_engineer/issues/250",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFH2g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBI8"
+        },
+        {
+          "part": "am2902",
+          "paths": [
+            "design/amd_am29xx/amd_am2902"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 251,
+            "url": "https://github.com/hevangel/ai_engineer/issues/251",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFH8A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBKI"
+        },
+        {
+          "part": "am2903",
+          "paths": [
+            "design/amd_am29xx/amd_am2903"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 252,
+            "url": "https://github.com/hevangel/ai_engineer/issues/252",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFIQg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBKo"
+        },
+        {
+          "part": "am2904",
+          "paths": [
+            "design/amd_am29xx/amd_am2904"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 253,
+            "url": "https://github.com/hevangel/ai_engineer/issues/253",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFIXA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBLI"
+        },
+        {
+          "part": "am2909",
+          "paths": [
+            "design/amd_am29xx/amd_am2909"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 254,
+            "url": "https://github.com/hevangel/ai_engineer/issues/254",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFIag"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBL8"
+        },
+        {
+          "part": "am2910",
+          "paths": [
+            "design/amd_am29xx/amd_am2910"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 255,
+            "url": "https://github.com/hevangel/ai_engineer/issues/255",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFIhg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBMo"
+        },
+        {
+          "part": "am2911",
+          "paths": [
+            "design/amd_am29xx/amd_am2911"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 256,
+            "url": "https://github.com/hevangel/ai_engineer/issues/256",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFI-Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBOE"
+        },
+        {
+          "part": "am2913",
+          "paths": [
+            "design/amd_am29xx/amd_am2913"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 257,
+            "url": "https://github.com/hevangel/ai_engineer/issues/257",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFJEw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBP4"
+        },
+        {
+          "part": "am2914",
+          "paths": [
+            "design/amd_am29xx/amd_am2914"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 258,
+            "url": "https://github.com/hevangel/ai_engineer/issues/258",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFJJg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBQg"
+        },
+        {
+          "part": "am2918",
+          "paths": [
+            "design/amd_am29xx/amd_am2918"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 259,
+            "url": "https://github.com/hevangel/ai_engineer/issues/259",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFJNg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBQ4"
+        }
+      ]
+    },
+    {
+      "issue": 19,
+      "title": "[Chip] Intel MCS-4 family",
+      "path": "design/intel_mcs4",
+      "members": [
+        {
+          "part": "4001",
+          "paths": [
+            "design/intel_mcs4/intel_4001"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 260,
+            "url": "https://github.com/hevangel/ai_engineer/issues/260",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFJzg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBSY"
+        },
+        {
+          "part": "4002",
+          "paths": [
+            "design/intel_mcs4/intel_4002"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 261,
+            "url": "https://github.com/hevangel/ai_engineer/issues/261",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFJ_g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBTo"
+        },
+        {
+          "part": "4003",
+          "paths": [
+            "design/intel_mcs4/intel_4003"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 262,
+            "url": "https://github.com/hevangel/ai_engineer/issues/262",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFKEw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBUI"
+        },
+        {
+          "part": "4004",
+          "paths": [
+            "design/intel_mcs4/intel_4004"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 263,
+            "url": "https://github.com/hevangel/ai_engineer/issues/263",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFKQg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBVo"
+        }
+      ]
+    },
+    {
+      "issue": 18,
+      "title": "[Chip] Intel MCS-8 family",
+      "path": "design/intel_mcs8",
+      "members": [
+        {
+          "part": "8008",
+          "paths": [
+            "design/intel_mcs8/intel_8008"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 264,
+            "url": "https://github.com/hevangel/ai_engineer/issues/264",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFKwQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBX0"
+        },
+        {
+          "part": "3205",
+          "paths": [
+            "design/intel_mcs8/intel_3205"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 265,
+            "url": "https://github.com/hevangel/ai_engineer/issues/265",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFK1g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBYQ"
+        },
+        {
+          "part": "3404",
+          "paths": [
+            "design/intel_mcs8/intel_3404"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 266,
+            "url": "https://github.com/hevangel/ai_engineer/issues/266",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFK8Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBZ4"
+        }
+      ]
+    },
+    {
+      "issue": 33,
+      "title": "[Chip] MOS 6502 CPU family and package variants",
+      "path": "design/mos_6502_family",
+      "members": [
+        {
+          "part": "MOS 6502",
+          "paths": [
+            "design/mos_6502_family/mos_6502",
+            "design/mos_6502_family/mos_6502/cycle"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 267,
+            "url": "https://github.com/hevangel/ai_engineer/issues/267",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFLDA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBas"
+        },
+        {
+          "part": "MOS 6507",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 268,
+            "url": "https://github.com/hevangel/ai_engineer/issues/268",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFLbw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBbY"
+        },
+        {
+          "part": "MOS 6510",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 269,
+            "url": "https://github.com/hevangel/ai_engineer/issues/269",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFLig"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBds"
+        }
+      ]
+    },
+    {
+      "issue": 22,
+      "title": "[Chip] Intel 8086 / 8088 family — distinct external-bus profiles",
+      "path": "design/intel_8086_8088",
+      "members": [
+        {
+          "part": "Intel 8086",
+          "paths": [
+            "design/intel_8086_8088/intel_8086"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 270,
+            "url": "https://github.com/hevangel/ai_engineer/issues/270",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFLng"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBeM"
+        },
+        {
+          "part": "Intel 8088",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 271,
+            "url": "https://github.com/hevangel/ai_engineer/issues/271",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFLsw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBfc"
+        }
+      ]
+    },
+    {
+      "issue": 26,
+      "title": "[Chip] intel 8253 8254",
+      "path": "design/intel_8253_8254",
+      "members": [
+        {
+          "part": "Intel 8253",
+          "paths": [
+            "design/intel_8253_8254/intel_8253"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 272,
+            "url": "https://github.com/hevangel/ai_engineer/issues/272",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFMKQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBgw"
+        },
+        {
+          "part": "Intel 8254",
+          "paths": [
+            "design/intel_8253_8254/intel_8254"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 273,
+            "url": "https://github.com/hevangel/ai_engineer/issues/273",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFMQw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBiI"
+        }
+      ]
+    },
+    {
+      "issue": 116,
+      "title": "[Chip] Intel 80386 family — DX and SX",
+      "path": "design/intel_80386",
+      "members": [
+        {
+          "part": "Intel 80386DX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 274,
+            "url": "https://github.com/hevangel/ai_engineer/issues/274",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFMWw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBjM"
+        },
+        {
+          "part": "Intel 80386SX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 275,
+            "url": "https://github.com/hevangel/ai_engineer/issues/275",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFMfA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBjs"
+        }
+      ]
+    },
+    {
+      "issue": 115,
+      "title": "[Chip] Intel 80387 family — DX and SX coprocessors",
+      "path": "design/intel_80387",
+      "members": [
+        {
+          "part": "Intel 80387DX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 276,
+            "url": "https://github.com/hevangel/ai_engineer/issues/276",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFM7A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBkg"
+        },
+        {
+          "part": "Intel 80387SX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 277,
+            "url": "https://github.com/hevangel/ai_engineer/issues/277",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNCA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBkw"
+        }
+      ]
+    },
+    {
+      "issue": 189,
+      "title": "[Chip] AMD 8086 and 8088 family — licensed x86 implementations",
+      "path": "design/amd_8086_8088",
+      "members": [
+        {
+          "part": "AMD 8086",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 278,
+            "url": "https://github.com/hevangel/ai_engineer/issues/278",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNHA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBm8"
+        },
+        {
+          "part": "AMD 8088",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 279,
+            "url": "https://github.com/hevangel/ai_engineer/issues/279",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNOQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBnU"
+        }
+      ]
+    },
+    {
+      "issue": 190,
+      "title": "[Chip] AMD 80186 and 80188 family — integrated x86 processors",
+      "path": "design/amd_80186_80188",
+      "members": [
+        {
+          "part": "AMD 80186",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 280,
+            "url": "https://github.com/hevangel/ai_engineer/issues/280",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNkw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBoo"
+        },
+        {
+          "part": "AMD 80188",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 281,
+            "url": "https://github.com/hevangel/ai_engineer/issues/281",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNqQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBqQ"
+        }
+      ]
+    },
+    {
+      "issue": 192,
+      "title": "[Chip] AMD Am386 family — DX, SX and low-power variants",
+      "path": "design/amd_am386",
+      "members": [
+        {
+          "part": "AMD Am386DX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 282,
+            "url": "https://github.com/hevangel/ai_engineer/issues/282",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFNwQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBrE"
+        },
+        {
+          "part": "AMD Am386SX",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 283,
+            "url": "https://github.com/hevangel/ai_engineer/issues/283",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFN0w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBr8"
+        }
+      ]
+    },
+    {
+      "issue": 119,
+      "title": "[Chip] Motorola MC68881 and MC68882 FPU family",
+      "path": "design/motorola_6888x",
+      "members": [
+        {
+          "part": "Motorola MC68881",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 284,
+            "url": "https://github.com/hevangel/ai_engineer/issues/284",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFOSQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBto"
+        },
+        {
+          "part": "Motorola MC68882",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 285,
+            "url": "https://github.com/hevangel/ai_engineer/issues/285",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFOYA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBuQ"
+        }
+      ]
+    },
+    {
+      "issue": 131,
+      "title": "[Chip] Apple IWM and SWIM floppy-controller family",
+      "path": "design/apple_iwm_swim",
+      "members": [
+        {
+          "part": "Apple IWM",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 286,
+            "url": "https://github.com/hevangel/ai_engineer/issues/286",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFOew"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBvc"
+        },
+        {
+          "part": "Apple SWIM",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 287,
+            "url": "https://github.com/hevangel/ai_engineer/issues/287",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFOkQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBxE"
+        }
+      ]
+    },
+    {
+      "issue": 48,
+      "title": "[Chip] NES/Famicom Ricoh CPU, PPU, APU and cartridge support",
+      "path": "design/nes_parts",
+      "members": [
+        {
+          "part": "Ricoh 2A03",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 288,
+            "url": "https://github.com/hevangel/ai_engineer/issues/288",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFO-A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBx0"
+        },
+        {
+          "part": "Ricoh 2A07",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 289,
+            "url": "https://github.com/hevangel/ai_engineer/issues/289",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFPEw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBzM"
+        },
+        {
+          "part": "Ricoh 2C02",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 290,
+            "url": "https://github.com/hevangel/ai_engineer/issues/290",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFPKQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBzw"
+        },
+        {
+          "part": "Ricoh 2C07",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 291,
+            "url": "https://github.com/hevangel/ai_engineer/issues/291",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFPPQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB0k"
+        }
+      ]
+    },
+    {
+      "issue": 47,
+      "title": "[Chip] Super Nintendo CPU, PPU, audio and support devices",
+      "path": "design/snes_parts",
+      "members": [
+        {
+          "part": "Ricoh 5A22",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 292,
+            "url": "https://github.com/hevangel/ai_engineer/issues/292",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFPuA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB2o"
+        },
+        {
+          "part": "Sony SPC700",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 293,
+            "url": "https://github.com/hevangel/ai_engineer/issues/293",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFP0g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB3I"
+        }
+      ]
+    },
+    {
+      "issue": 204,
+      "title": "[Chipset] CHIPS NEAT CS8221 — 82C211 / 82C212 / 82C215 / 82C206",
+      "path": "design/neat_cs8221",
+      "members": [
+        {
+          "part": "82C211",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 294,
+            "url": "https://github.com/hevangel/ai_engineer/issues/294",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFP7w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB5M"
+        },
+        {
+          "part": "82C212",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 295,
+            "url": "https://github.com/hevangel/ai_engineer/issues/295",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFQBg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB6k"
+        },
+        {
+          "part": "82C215",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 296,
+            "url": "https://github.com/hevangel/ai_engineer/issues/296",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFQgQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB7s"
+        },
+        {
+          "part": "82C206",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 297,
+            "url": "https://github.com/hevangel/ai_engineer/issues/297",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFQmQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB8Q"
+        }
+      ]
+    },
+    {
+      "issue": 203,
+      "title": "[Chipset] Intel 82230 / 82231 AT-compatible support chipset",
+      "path": "design/intel_at_chipset",
+      "members": [
+        {
+          "part": "82230",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 298,
+            "url": "https://github.com/hevangel/ai_engineer/issues/298",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFQtg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB88"
+        },
+        {
+          "part": "82231",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 299,
+            "url": "https://github.com/hevangel/ai_engineer/issues/299",
+            "nodeId": "I_kwDOVUYpy88AAAABZvFQyg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB94"
+        }
+      ]
+    },
+    {
+      "issue": 17,
+      "title": "[Chip] apple ii chips",
+      "path": "design/apple_ii_chips",
+      "members": [
+        {
+          "part": "2513",
+          "paths": [
+            "design/apple_ii_chips/members/2513"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_2513.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 332,
+            "url": "https://github.com/hevangel/ai_engineer/issues/332",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH4Rw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDww"
+        },
+        {
+          "part": "4116",
+          "paths": [
+            "design/apple_ii_chips/members/4116"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_4116.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 333,
+            "url": "https://github.com/hevangel/ai_engineer/issues/333",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH4XA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDwk"
+        },
+        {
+          "part": "8T28",
+          "paths": [
+            "design/apple_ii_chips/members/8t28"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_8t28_appleii.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 334,
+            "url": "https://github.com/hevangel/ai_engineer/issues/334",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH4fQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDxg"
+        },
+        {
+          "part": "8T97",
+          "paths": [
+            "design/apple_ii_chips/members/8t97"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/a2_8t97_appleii.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 335,
+            "url": "https://github.com/hevangel/ai_engineer/issues/335",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH4nw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDyA"
+        },
+        {
+          "part": "LM741",
+          "paths": [
+            "design/apple_ii_chips/members/lm741"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/analog/a2_lm741.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 336,
+            "url": "https://github.com/hevangel/ai_engineer/issues/336",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH5HQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDy0"
+        },
+        {
+          "part": "NE555",
+          "paths": [
+            "design/apple_ii_chips/members/ne555"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/analog/a2_ne555.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 337,
+            "url": "https://github.com/hevangel/ai_engineer/issues/337",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH5Mw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDyk"
+        },
+        {
+          "part": "NE558",
+          "paths": [
+            "design/apple_ii_chips/members/ne558"
+          ],
+          "implementationSources": [
+            "design/apple_ii_chips/src/analog/a2_ne558.sv"
+          ],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 338,
+            "url": "https://github.com/hevangel/ai_engineer/issues/338",
+            "nodeId": "I_kwDOVUYpy88AAAABZvH5Sg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDzY"
+        }
+      ]
+    }
+  ],
+  "implementationInventory": [
+    {
+      "issue": 89,
+      "title": "[System] Space Invaders arcade board — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/space_invaders"
+      ],
+      "evidence": [
+        {
+          "path": "system/space_invaders",
+          "rtlFiles": 3,
+          "reports": [
+            "system/space_invaders/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 86,
+      "title": "[System] IBM PS/2 Model 30 — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/ibm_ps2_model30"
+      ],
+      "evidence": [
+        {
+          "path": "system/ibm_ps2_model30",
+          "rtlFiles": 7,
+          "reports": [
+            "system/ibm_ps2_model30/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 83,
+      "title": "[System] IBM PC XT 5160 — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/ibm_pc_xt_5160"
+      ],
+      "evidence": [
+        {
+          "path": "system/ibm_pc_xt_5160",
+          "rtlFiles": 2,
+          "reports": [
+            "system/ibm_pc_xt_5160/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 80,
+      "title": "[System] IBM PC 5150 — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/ibm_pc"
+      ],
+      "evidence": [
+        {
+          "path": "system/ibm_pc",
+          "rtlFiles": 2,
+          "reports": [
+            "system/ibm_pc/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 77,
+      "title": "[System] Apple IIe — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/apple_iie"
+      ],
+      "evidence": [
+        {
+          "path": "system/apple_iie",
+          "rtlFiles": 2,
+          "reports": [
+            "system/apple_iie/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 74,
+      "title": "[System] Apple II revision 0 — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/apple_ii"
+      ],
+      "evidence": [
+        {
+          "path": "system/apple_ii",
+          "rtlFiles": 9,
+          "reports": [
+            "system/apple_ii/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 71,
+      "title": "[System] MITS Altair 8800 — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/altair_8800"
+      ],
+      "evidence": [
+        {
+          "path": "system/altair_8800",
+          "rtlFiles": 2,
+          "reports": [
+            "system/altair_8800/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 68,
+      "title": "[System] Micral N — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/micral_n"
+      ],
+      "evidence": [
+        {
+          "path": "system/micral_n",
+          "rtlFiles": 1,
+          "reports": [
+            "system/micral_n/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 65,
+      "title": "[System] Busicom 141-PF — SV simulation, web frontend and FPGA handoff",
+      "paths": [
+        "system/busicom_141pf"
+      ],
+      "evidence": [
+        {
+          "path": "system/busicom_141pf",
+          "rtlFiles": 1,
+          "reports": [
+            "system/busicom_141pf/report/final_report.md",
+            "system/busicom_141pf/report/manual_regression.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 46,
+      "title": "[Chip] motorola 6809",
+      "paths": [
+        "design/motorola_6809"
+      ],
+      "evidence": [
+        {
+          "path": "design/motorola_6809",
+          "rtlFiles": 1,
+          "reports": [
+            "design/motorola_6809/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 45,
+      "title": "[Chip] motorola 68000",
+      "paths": [
+        "design/motorola_68000"
+      ],
+      "evidence": [
+        {
+          "path": "design/motorola_68000",
+          "rtlFiles": 1,
+          "reports": [
+            "design/motorola_68000/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 43,
+      "title": "[Chip] motorola 6800",
+      "paths": [
+        "design/motorola_6800"
+      ],
+      "evidence": [
+        {
+          "path": "design/motorola_6800",
+          "rtlFiles": 1,
+          "reports": [
+            "design/motorola_6800/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 33,
+      "title": "[Chip] MOS 6502 CPU family and package variants",
+      "paths": [
+        "design/mos_6502_family/mos_6502",
+        "design/mos_6502_family/mos_6502/cycle"
+      ],
+      "evidence": [
+        {
+          "path": "design/mos_6502_family/mos_6502",
+          "rtlFiles": 1,
+          "reports": [
+            "design/mos_6502_family/mos_6502/report/coverage_report.md",
+            "design/mos_6502_family/mos_6502/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/mos_6502_family/mos_6502/cycle",
+          "rtlFiles": 2,
+          "reports": [
+            "design/mos_6502_family/mos_6502/cycle/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 32,
+      "title": "[Chip] intel 8279",
+      "paths": [
+        "design/intel_8279"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8279",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8279/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 31,
+      "title": "[Chip] intel 8275",
+      "paths": [
+        "design/intel_8275"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8275",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8275/report/coverage_report.md",
+            "design/intel_8275/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 30,
+      "title": "[Chip] intel 8273",
+      "paths": [
+        "design/intel_8273"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8273",
+          "rtlFiles": 4,
+          "reports": [
+            "design/intel_8273/report/coverage_report.md",
+            "design/intel_8273/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 29,
+      "title": "[Chip] intel 8272",
+      "paths": [
+        "design/intel_8272"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8272",
+          "rtlFiles": 3,
+          "reports": [
+            "design/intel_8272/report/coverage_report.md",
+            "design/intel_8272/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 28,
+      "title": "[Chip] intel 8259",
+      "paths": [
+        "design/intel_8259"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8259",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8259/report/coverage_report.md",
+            "design/intel_8259/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 27,
+      "title": "[Chip] intel 8255",
+      "paths": [
+        "design/intel_8255"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8255",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8255/report/coverage_report.md",
+            "design/intel_8255/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 26,
+      "title": "[Chip] intel 8253 8254",
+      "paths": [
+        "design/intel_8253_8254"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8253_8254",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8253_8254/report/coverage_report.md",
+            "design/intel_8253_8254/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 25,
+      "title": "[Chip] intel 8251",
+      "paths": [
+        "design/intel_8251"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8251",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8251/report/coverage_report.md",
+            "design/intel_8251/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 24,
+      "title": "[Chip] intel 8237",
+      "paths": [
+        "design/intel_8237"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8237",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_8237/report/coverage_report.md",
+            "design/intel_8237/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 23,
+      "title": "[Chip] intel 8087",
+      "paths": [
+        "design/intel_8087"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8087",
+          "rtlFiles": 3,
+          "reports": [
+            "design/intel_8087/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 22,
+      "title": "[Chip] Intel 8086 / 8088 family — distinct external-bus profiles",
+      "paths": [
+        "design/intel_8086_8088/intel_8086"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8086_8088/intel_8086",
+          "rtlFiles": 6,
+          "reports": [
+            "design/intel_8086_8088/intel_8086/report/encoding_coverage.md",
+            "design/intel_8086_8088/intel_8086/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 21,
+      "title": "[Chip] intel 8080",
+      "paths": [
+        "design/intel_8080"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_8080",
+          "rtlFiles": 2,
+          "reports": [
+            "design/intel_8080/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 19,
+      "title": "[Chip] Intel MCS-4 family",
+      "paths": [
+        "design/intel_mcs4/intel_4001",
+        "design/intel_mcs4/intel_4002",
+        "design/intel_mcs4/intel_4003",
+        "design/intel_mcs4/intel_4004"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_mcs4/intel_4001",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs4/intel_4001/report/coverage_report.md",
+            "design/intel_mcs4/intel_4001/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/intel_mcs4/intel_4002",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs4/intel_4002/report/coverage_report.md",
+            "design/intel_mcs4/intel_4002/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/intel_mcs4/intel_4003",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs4/intel_4003/report/coverage_report.md",
+            "design/intel_mcs4/intel_4003/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/intel_mcs4/intel_4004",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs4/intel_4004/report/coverage_report.md",
+            "design/intel_mcs4/intel_4004/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 18,
+      "title": "[Chip] Intel MCS-8 family",
+      "paths": [
+        "design/intel_mcs8/intel_3205",
+        "design/intel_mcs8/intel_3404",
+        "design/intel_mcs8/intel_8008"
+      ],
+      "evidence": [
+        {
+          "path": "design/intel_mcs8/intel_3205",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs8/intel_3205/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/intel_mcs8/intel_3404",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs8/intel_3404/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/intel_mcs8/intel_8008",
+          "rtlFiles": 1,
+          "reports": [
+            "design/intel_mcs8/intel_8008/report/coverage_report.md",
+            "design/intel_mcs8/intel_8008/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 17,
+      "title": "[Chip] apple ii chips",
+      "paths": [
+        "design/apple_ii_chips"
+      ],
+      "evidence": [
+        {
+          "path": "design/apple_ii_chips",
+          "rtlFiles": 29,
+          "reports": [
+            "design/apple_ii_chips/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 16,
+      "title": "[Chip] apple iie pal",
+      "paths": [
+        "design/apple_iie_pal"
+      ],
+      "evidence": [
+        {
+          "path": "design/apple_iie_pal",
+          "rtlFiles": 1,
+          "reports": [
+            "design/apple_iie_pal/report/coverage_report.md",
+            "design/apple_iie_pal/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 15,
+      "title": "[Chip] apple iie mmu",
+      "paths": [
+        "design/apple_iie_mmu"
+      ],
+      "evidence": [
+        {
+          "path": "design/apple_iie_mmu",
+          "rtlFiles": 1,
+          "reports": [
+            "design/apple_iie_mmu/report/coverage_report.md",
+            "design/apple_iie_mmu/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 14,
+      "title": "[Chip] apple iie iou",
+      "paths": [
+        "design/apple_iie_iou"
+      ],
+      "evidence": [
+        {
+          "path": "design/apple_iie_iou",
+          "rtlFiles": 1,
+          "reports": [
+            "design/apple_iie_iou/report/coverage_report.md",
+            "design/apple_iie_iou/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 13,
+      "title": "[Chip] amd am9517",
+      "paths": [
+        "design/amd_am9517"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am9517",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am9517/report/coverage_report.md",
+            "design/amd_am9517/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 12,
+      "title": "[Chip] amd am9511",
+      "paths": [
+        "design/amd_am9511"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am9511",
+          "rtlFiles": 6,
+          "reports": [
+            "design/amd_am9511/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 11,
+      "title": "[Chip] amd am9300",
+      "paths": [
+        "design/amd_am9300"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am9300",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am9300/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 10,
+      "title": "[Chip] amd am9102",
+      "paths": [
+        "design/amd_am9102"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am9102",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am9102/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 9,
+      "title": "[Chip] amd am9080",
+      "paths": [
+        "design/amd_am9080"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am9080",
+          "rtlFiles": 2,
+          "reports": [
+            "design/amd_am9080/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 8,
+      "title": "[Chip] amd am3101",
+      "paths": [
+        "design/amd_am3101"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am3101",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am3101/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 7,
+      "title": "[Chip] AMD Am29xx series",
+      "paths": [
+        "design/amd_am29xx/amd_am2901",
+        "design/amd_am29xx/amd_am2902",
+        "design/amd_am29xx/amd_am2903",
+        "design/amd_am29xx/amd_am2904",
+        "design/amd_am29xx/amd_am2909",
+        "design/amd_am29xx/amd_am2910",
+        "design/amd_am29xx/amd_am2911",
+        "design/amd_am29xx/amd_am2913",
+        "design/amd_am29xx/amd_am2914",
+        "design/amd_am29xx/amd_am2918"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am29xx/amd_am2901",
+          "rtlFiles": 2,
+          "reports": [
+            "design/amd_am29xx/amd_am2901/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2902",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2902/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2903",
+          "rtlFiles": 2,
+          "reports": [
+            "design/amd_am29xx/amd_am2903/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2904",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2904/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2909",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2909/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2910",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2910/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2911",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2911/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2913",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2913/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2914",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2914/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am29xx/amd_am2918",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am29xx/amd_am2918/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 6,
+      "title": "[Superseded by #5] AMD Am2505",
+      "paths": [
+        "design/amd_am25xx/amd_am2505"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am25xx/amd_am2505",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am25xx/amd_am2505/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 5,
+      "title": "[Chip] AMD Am25xx series",
+      "paths": [
+        "design/amd_am25xx/amd_am2501",
+        "design/amd_am25xx/amd_am2505"
+      ],
+      "evidence": [
+        {
+          "path": "design/amd_am25xx/amd_am2501",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am25xx/amd_am2501/report/final_report.md"
+          ]
+        },
+        {
+          "path": "design/amd_am25xx/amd_am2505",
+          "rtlFiles": 1,
+          "reports": [
+            "design/amd_am25xx/amd_am2505/report/final_report.md"
+          ]
+        }
+      ]
+    },
+    {
+      "issue": 4,
+      "title": "[Chip] 74-series logic",
+      "paths": [
+        "design/ttl_74_series/alu_74181"
+      ],
+      "evidence": [
+        {
+          "path": "design/ttl_74_series/alu_74181",
+          "rtlFiles": 1,
+          "reports": [
+            "design/ttl_74_series/alu_74181/report/coverage_report.md",
+            "design/ttl_74_series/alu_74181/report/final_report.md"
+          ]
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "key": "eqy",
+      "title": "EQY",
+      "path": "docs/eqy",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 300,
+        "url": "https://github.com/hevangel/ai_engineer/issues/300",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRRw"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCU4"
+    },
+    {
+      "key": "iverilog",
+      "title": "Icarus Verilog",
+      "path": "docs/iverilog",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 301,
+        "url": "https://github.com/hevangel/ai_engineer/issues/301",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRXg"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCVE"
+    },
+    {
+      "key": "verible",
+      "title": "Verible",
+      "path": "docs/verible",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 302,
+        "url": "https://github.com/hevangel/ai_engineer/issues/302",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFReA"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCVc"
+    },
+    {
+      "key": "verilator",
+      "title": "Verilator",
+      "path": "docs/verilator",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 303,
+        "url": "https://github.com/hevangel/ai_engineer/issues/303",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRiw"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXk"
+    },
+    {
+      "key": "uvm",
+      "title": "UVM reference libraries",
+      "path": "docs/uvm",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 304,
+        "url": "https://github.com/hevangel/ai_engineer/issues/304",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFR8A"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXs"
+    },
+    {
+      "key": "yosys",
+      "title": "Yosys",
+      "path": "docs/yosys-symbiyosys",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 305,
+        "url": "https://github.com/hevangel/ai_engineer/issues/305",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFSAw"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXw"
+    },
+    {
+      "key": "sby",
+      "title": "SymbiYosys",
+      "path": "docs/yosys-symbiyosys",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 306,
+        "url": "https://github.com/hevangel/ai_engineer/issues/306",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFSFA"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCX8"
+    }
+  ],
+  "docker": {
+    "path": "Dockerfile",
+    "toolIssues": [
+      110,
+      111,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306
+    ],
+    "issue": {
+      "repo": "hevangel/ai_engineer",
+      "number": 307,
+      "url": "https://github.com/hevangel/ai_engineer/issues/307",
+      "nodeId": "I_kwDOVUYpy88AAAABZvFSIw"
+    },
+    "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCZg"
+  },
+  "hardwareSource": {
+    "repository": "hevangel/ai_hw_engineer",
+    "baseCommit": "4612e2c",
+    "branch": "codex/chip-family-roadmap",
+    "pullRequest": "https://github.com/hevangel/ai_hw_engineer/pull/67",
+    "limitations": [
+      "Existing file/report inventory does not imply current verification.",
+      "Generic Apple II mask ROM identity and additional NES/SNES peripheral/mapper parts remain research gaps."
+    ]
+  }
+}
