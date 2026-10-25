@@ -14,7 +14,7 @@ Manage [AI Engineer](https://github.com/users/hevangel/projects/1) as the cross-
 
 ## Issue granularity
 
-One canonical issue per chip or coherent series: one 74-series issue, one AMD Am29xx issue, one MCS-4 issue, one MCS-8 issue. Maintain a member checklist rather than duplicate chip trackers. Add one issue per whole computer/system. Track bus/card infrastructure separately and create individual card issues only after identifying the original board and revision. Software starts with a per-machine catalog issue; expand to one child issue per selected firmware, OS or application. A compiler target is shared across every compatible machine. Use parent/sub-issue relationships for decomposition, and native blocked-by relationships only for real completion prerequisites.
+One canonical issue per chip or coherent series: one 74-series issue, one AMD Am29xx issue, one MCS-4 issue, one MCS-8 issue. Maintain a linked member ledger and one native sub-issue per identified physical chip, following [github_issues.md](github_issues.md). Add one issue per whole computer/system. Track bus/card infrastructure separately and create individual card issues only after identifying the original board and revision. Software starts with a per-machine catalog issue; expand to one child issue per selected firmware, OS or application. A compiler target is shared across every compatible machine. Use parent/sub-issue relationships for decomposition, and native blocked-by relationships only for real completion prerequisites.
 
 ## Dependencies and scheduling
 
@@ -24,9 +24,9 @@ Start with the Busicom/MCS-4 vertical slice and the existing llvm-i4004 work; th
 
 ## Board operations
 
-Use gh project list --owner hevangel, gh project item-list 1 --owner hevangel --limit 200 --format json, and gh project field-list 1 --owner hevangel --format json to inspect state. Authentication needs the project scope plus repository issue access. Search existing issues and board items before creating anything; retain canonical URLs in initial_project_plan.md. Add coordination issues in hevangel/ai_engineer and add them to project 1. Native dependency REST endpoints are repos/{owner}/{repo}/issues/{number}/dependencies/blocked_by: GET lists blockers; POST with issue_id adds a blocker. Inspect endpoints and existing edges before mutations; never expose credentials.
+Use gh project list --owner hevangel, gh project item-list 1 --owner hevangel --limit 200 --format json, and gh project field-list 1 --owner hevangel --format json to inspect state. Authentication needs the project scope plus repository issue access. Search existing issues and board items before creating anything; retain canonical URLs in initial_project_plan.md. Keep cross-project coordination in hevangel/ai_engineer; transfer implementation and maintenance issues to their owning repositories and retain them in project 1. Native dependency REST endpoints are repos/{owner}/{repo}/issues/{number}/dependencies/blocked_by: GET lists blockers; POST with issue_id adds a blocker. Inspect endpoints and existing edges before mutations; never expose credentials.
 
-The first roadmap uses existing Todo/In progress/Done status values. Todo means acceptance has not been audited, not that no code exists. Move to In progress only when active work is established. Done requires linked reports and all scoped acceptance gates, including explicit limitations. Track partial implementation in the issue body. Record verification failures and evidence, and follow the owning repository's escaped-defect process. Never mark hardware verified solely because simulation passes.
+Use the live Planned, Researching, Sources Ready, Building, Blocked, AI verified and Human verified statuses defined in [github_issues.md](github_issues.md). The owner reset issues to Planned; leave untouched backlog Planned and move active work to Researching or Building. Track current coding ownership in Agent and Scrum commitments in Sprint. Verification requires linked reports and all scoped acceptance gates, including explicit limitations. Track partial implementation in the issue body. Record verification failures and evidence, and follow the owning repository's escaped-defect process. Never mark hardware verified solely because simulation passes.
 
 ## Routine management
 
@@ -34,7 +34,7 @@ The first roadmap uses existing Todo/In progress/Done status values. Todo means 
 2. Reconcile inventory and issue scope; exclude scratch/corrupt folders and disclose local-only candidates.
 3. Update member checklists, dependencies and title-level software/card inventories with source evidence.
 4. Select ready work, record concrete acceptance criteria and link implementation PRs and results.
-5. Reconcile board status with evidence and update the tracked plan. Do not close legacy duplicates or erase user dates without explicit triage.
+5. Reconcile board status with evidence and update the tracked plan. For read-only inventory requests, follow the [committed-progress audit procedure](github_issues.md#read-only-committed-progress-audits): pin the commit, record implementation and gaps, and update only the authorized GitHub metadata/comments. Historical Start dates follow the [first-commit procedure](github_issues.md#historical-start-dates), with rename/copy checks and date provenance. Do not close legacy duplicates or erase user dates without explicit triage.
 
 ## Historical fidelity and publication
 
@@ -75,4 +75,13 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 
 ## AMD Am25xx canonical scope
 
-Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is a superseded historical tracker and its project item is archived; do not recreate a separate active Am2505 issue/card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
+Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is reactivated as the Am2505 member sub-issue of #5 under the current owner instruction; it is not a separate series card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
+
+## Optional configuration and CPU-alternative tracking
+
+Run `node scripts/sync-option-issues.mjs` for a read-only live check that every curated optional chip/card configuration and compatible CPU profile has an issue, the requested native blocker, and membership in project 1. Run with `--apply` only when authorized to create/reconcile issues. The registry is `data/option-issues.json`; sources remain `data/system-options.json` and `data/compatible-chips.json`. Existing statuses are preserved on subsequent runs.
+
+Each optional configuration issue is blocked by its computer system. Each CPU-alternative qualification issue is blocked by the original CPU's canonical issue. These are integration/qualification tasks referencing existing implementation issues, not duplicate chip-family cards. Base systems retain their original required hardware gates; optional configurations and CPU OR choices never become additional mandatory base-system prerequisites. Optional coprocessor configurations use the same host-first rule. Preserve exact package, clock, bus, physical-fit and firmware restrictions in the issue acceptance criteria.
+
+
+Follow the mandatory lifecycle in [github_issues.md](github_issues.md#mandatory-start-progress-and-finish-sequence): transfer to the owner, set `<repo>/<path>`, preserve the first Start date, update Status on actual start, register the working agent, and clear Agent whenever work stops. Audit completion evidence before resolving a blocker; a tool existing in an image is not proof of every acceptance gate.
