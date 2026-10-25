@@ -110,3 +110,12 @@
 .info-date h3,.info-date h4,.chipset-members h4{margin:0 0 6px;font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}.info-date h4{margin-top:12px}.info-date p{margin:0 0 6px}.info-date a{display:block;margin-top:5px}
 .info-issue{margin:14px 0 0}
 .info-photo{margin-top:20px;border-top:1px solid var(--line);padding-top:12px}.info-photo summary{cursor:pointer;font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}.info-photo summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.info-photo p{margin:4px 0}
+
+/* Keep controls and their live totals together; wrap the totals on small screens. */
+.connection-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px;padding:12px 0;border-bottom:1px solid var(--line)}
+.connection-row .connection-controls{flex:0 1 auto;min-width:0;padding:0;border-bottom:0}
+.connection-row #trace-summary{flex:1 1 320px;margin:0 0 0 auto;text-align:right;line-height:1.6}
+.wire-help strong{font-weight:700;color:var(--ink)}
+.archive-caption{gap:8px 16px;flex-wrap:wrap}
+.archive-caption #result-count{margin-left:auto;text-align:right;white-space:nowrap}
+@media(max-width:650px){.connection-row .connection-controls{width:100%}.connection-row #trace-summary{flex-basis:100%}}
