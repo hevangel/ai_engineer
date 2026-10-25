@@ -279,3 +279,7 @@ See [chipsets.md](chipsets.md). No factory-board links are inferred from AT comp
 ## Am25xx series consolidation
 
 Issue #5 is the sole active Am25xx series tracker and maps to one timeline card with Am2501 and Am2505 member records. Former issue [#6](https://github.com/hevangel/ai_engineer/issues/6) is closed as superseded (not implemented) and its project item is archived. Neither issue had native blocked-by or blocking edges to transfer. The stable catalog ID `amd_am2501` is retained; its public title is AMD Am25xx series, and its earliest documented member anchors the card to 1970. Am2505 retains its documented-by-1971 qualification in the member ledger.
+
+## Compatible and optional configuration follow-up
+
+The complete qualification tracker inventory is maintained in [data/option-issues.json](../data/option-issues.json). There is one tracker for each curated compatible CPU profile and each optional card/coprocessor–host pair. Original CPU issues block CPU-alternative qualification; computer issues block optional configuration acceptance. Existing canonical chip/card issues remain the implementation inventory. Run the read-only `sync-option-issues.mjs` check to compare this inventory with native GitHub blockers and project membership.

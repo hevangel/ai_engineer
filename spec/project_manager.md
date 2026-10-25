@@ -76,3 +76,9 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 ## AMD Am25xx canonical scope
 
 Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is a superseded historical tracker and its project item is archived; do not recreate a separate active Am2505 issue/card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
+
+## Optional configuration and CPU-alternative tracking
+
+Run `node scripts/sync-option-issues.mjs` for a read-only live check that every curated optional chip/card configuration and compatible CPU profile has an issue, the requested native blocker, and membership in project 1. Run with `--apply` only when authorized to create/reconcile issues. The registry is `data/option-issues.json`; sources remain `data/system-options.json` and `data/compatible-chips.json`. Existing statuses are preserved on subsequent runs.
+
+Each optional configuration issue is blocked by its computer system. Each CPU-alternative qualification issue is blocked by the original CPU's canonical issue. These are integration/qualification tasks referencing existing implementation issues, not duplicate chip-family cards. Base systems retain their original required hardware gates; optional configurations and CPU OR choices never become additional mandatory base-system prerequisites. Optional coprocessor configurations use the same host-first rule. Preserve exact package, clock, bus, physical-fit and firmware restrictions in the issue acceptance criteria.

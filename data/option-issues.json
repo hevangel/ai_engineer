@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "repository": "hevangel/ai_engineer",
+  "project": {
+    "owner": "hevangel",
+    "number": 1
+  },
+  "initialStatus": "Blocked",
+  "trackers": [
+    {
+      "key": "cpu:8086_dip40:amd_8086",
+      "kind": "cpu",
+      "source": "amd_8086",
+      "target": "intel_8086",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 219,
+        "url": "https://github.com/hevangel/ai_engineer/issues/219"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUzgM"
+    },
+    {
+      "key": "cpu:8088_dip40:amd_8088",
+      "kind": "cpu",
+      "source": "amd_8088",
+      "target": "intel_8088",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 220,
+        "url": "https://github.com/hevangel/ai_engineer/issues/220"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUzjU"
+    },
+    {
+      "key": "cpu:80286_68pin:amd_80286",
+      "kind": "cpu",
+      "source": "amd_80286",
+      "target": "intel_80286",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 221,
+        "url": "https://github.com/hevangel/ai_engineer/issues/221"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUznY"
+    },
+    {
+      "key": "cpu:386dx_132pin:amd_am386dx",
+      "kind": "cpu",
+      "source": "amd_am386dx",
+      "target": "intel_80386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 222,
+        "url": "https://github.com/hevangel/ai_engineer/issues/222"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUzrg"
+    },
+    {
+      "key": "cpu:386sx_100pin:amd_am386sx",
+      "kind": "cpu",
+      "source": "amd_am386sx",
+      "target": "intel_80386sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 223,
+        "url": "https://github.com/hevangel/ai_engineer/issues/223"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUzv0"
+    },
+    {
+      "key": "option:card_ega:system_ibm_at_5170",
+      "kind": "card",
+      "source": "card_ega",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 224,
+        "url": "https://github.com/hevangel/ai_engineer/issues/224"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUz2w"
+    },
+    {
+      "key": "option:card_ega:system_deskpro_386",
+      "kind": "card",
+      "source": "card_ega",
+      "target": "system_deskpro_386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 225,
+        "url": "https://github.com/hevangel/ai_engineer/issues/225"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDUz84"
+    },
+    {
+      "key": "option:card_vga:system_ibm_at_5170",
+      "kind": "card",
+      "source": "card_vga",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 226,
+        "url": "https://github.com/hevangel/ai_engineer/issues/226"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0AE"
+    },
+    {
+      "key": "option:card_vga:system_deskpro_386",
+      "kind": "card",
+      "source": "card_vga",
+      "target": "system_deskpro_386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 227,
+        "url": "https://github.com/hevangel/ai_engineer/issues/227"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0Cs"
+    },
+    {
+      "key": "option:card_adlib:system_ibm_at_5170",
+      "kind": "card",
+      "source": "card_adlib",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 228,
+        "url": "https://github.com/hevangel/ai_engineer/issues/228"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0Fg"
+    },
+    {
+      "key": "option:card_adlib:system_deskpro_386",
+      "kind": "card",
+      "source": "card_adlib",
+      "target": "system_deskpro_386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 229,
+        "url": "https://github.com/hevangel/ai_engineer/issues/229"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0I4"
+    },
+    {
+      "key": "option:card_sb:system_ibm_at_5170",
+      "kind": "card",
+      "source": "card_sb",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 230,
+        "url": "https://github.com/hevangel/ai_engineer/issues/230"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0MA"
+    },
+    {
+      "key": "option:card_sb:system_deskpro_386",
+      "kind": "card",
+      "source": "card_sb",
+      "target": "system_deskpro_386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 231,
+        "url": "https://github.com/hevangel/ai_engineer/issues/231"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0PM"
+    },
+    {
+      "key": "option:card_diskii:system_apple_ii",
+      "kind": "card",
+      "source": "card_diskii",
+      "target": "system_apple_ii",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 232,
+        "url": "https://github.com/hevangel/ai_engineer/issues/232"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0SM"
+    },
+    {
+      "key": "option:card_diskii:system_apple_iie",
+      "kind": "card",
+      "source": "card_diskii",
+      "target": "system_apple_iie",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 233,
+        "url": "https://github.com/hevangel/ai_engineer/issues/233"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0WM"
+    },
+    {
+      "key": "option:card_adlib:system_pc_386sx",
+      "kind": "card",
+      "source": "card_adlib",
+      "target": "system_pc_386sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 234,
+        "url": "https://github.com/hevangel/ai_engineer/issues/234"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0Zk"
+    },
+    {
+      "key": "option:card_sb:system_pc_386sx",
+      "kind": "card",
+      "source": "card_sb",
+      "target": "system_pc_386sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 235,
+        "url": "https://github.com/hevangel/ai_engineer/issues/235"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0eE"
+    },
+    {
+      "key": "option:card_adlib:system_ps2_model35sx",
+      "kind": "card",
+      "source": "card_adlib",
+      "target": "system_ps2_model35sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 236,
+        "url": "https://github.com/hevangel/ai_engineer/issues/236"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0iM"
+    },
+    {
+      "key": "option:card_sb:system_ps2_model35sx",
+      "kind": "card",
+      "source": "card_sb",
+      "target": "system_ps2_model35sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 237,
+        "url": "https://github.com/hevangel/ai_engineer/issues/237"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0lw"
+    },
+    {
+      "key": "option:intel_80287:system_ibm_at_5170",
+      "kind": "coprocessor",
+      "source": "intel_80287",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 238,
+        "url": "https://github.com/hevangel/ai_engineer/issues/238"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0qI"
+    },
+    {
+      "key": "option:intel_80387:system_ps2_model70",
+      "kind": "coprocessor",
+      "source": "intel_80387",
+      "target": "system_ps2_model70",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 239,
+        "url": "https://github.com/hevangel/ai_engineer/issues/239"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0vU"
+    },
+    {
+      "key": "option:intel_80387sx:system_ps2_model35sx",
+      "kind": "coprocessor",
+      "source": "intel_80387sx",
+      "target": "system_ps2_model35sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 240,
+        "url": "https://github.com/hevangel/ai_engineer/issues/240"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU00c"
+    },
+    {
+      "key": "option:intel_80387sx:system_pc_386sx",
+      "kind": "coprocessor",
+      "source": "intel_80387sx",
+      "target": "system_pc_386sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 241,
+        "url": "https://github.com/hevangel/ai_engineer/issues/241"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU04o"
+    },
+    {
+      "key": "option:intel_80387sx:system_ps2_model56slc",
+      "kind": "coprocessor",
+      "source": "intel_80387sx",
+      "target": "system_ps2_model56slc",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 242,
+        "url": "https://github.com/hevangel/ai_engineer/issues/242"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU07c"
+    },
+    {
+      "key": "option:card_roland_lapc_i:system_ibm_at_5170",
+      "kind": "card",
+      "source": "card_roland_lapc_i",
+      "target": "system_ibm_at_5170",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 243,
+        "url": "https://github.com/hevangel/ai_engineer/issues/243"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU0-8"
+    },
+    {
+      "key": "option:card_roland_lapc_i:system_deskpro_386",
+      "kind": "card",
+      "source": "card_roland_lapc_i",
+      "target": "system_deskpro_386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 244,
+        "url": "https://github.com/hevangel/ai_engineer/issues/244"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU1DM"
+    },
+    {
+      "key": "option:card_roland_lapc_i:system_pc_386sx",
+      "kind": "card",
+      "source": "card_roland_lapc_i",
+      "target": "system_pc_386sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 245,
+        "url": "https://github.com/hevangel/ai_engineer/issues/245"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU1HQ"
+    },
+    {
+      "key": "option:card_roland_lapc_i:system_ps2_model35sx",
+      "kind": "card",
+      "source": "card_roland_lapc_i",
+      "target": "system_ps2_model35sx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 246,
+        "url": "https://github.com/hevangel/ai_engineer/issues/246"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDU1LA"
+    }
+  ]
+}

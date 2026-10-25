@@ -21,3 +21,7 @@ Short card stubs retain required/optional patterns. A shared row run and family 
 ## Checks
 
 Run the bus, compatible-CPU, status and window-fit tests. Test one ISA/NuBus rail, unique endpoint taps, exact evidence retention, absent cross-product/hidden-host connections, one horizontal row run per family, bottom/top tap geometry and track order. In the browser inspect the 1987 AdLib/VGA/NuBus row and computer rows at three, two and one columns, the endpoint and family choosers, keyboard navigation and the layer toggles.
+
+## Optional configuration acceptance
+
+Every curated option in `data/system-options.json` has a separate qualification issue registered in `data/option-issues.json`, blocked by the host computer. This direction lets optional expansion follow base-system acceptance without making base POST depend on optional expansion or introducing a cycle through a required card. The canonical card implementation issue remains shared across hosts. Optional numeric coprocessors follow the same rule.

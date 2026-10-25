@@ -36,3 +36,5 @@ Read the specification that covers your task before changing anything:
 - Do not update submodule pins as routine cleanup, and do not copy submodule content into the root.
 - Report exactly which checks you ran. Do not claim a check passed unless it did. For page changes run `node scripts/check-site.mjs` (it also verifies every `text('…')` key and icon shape), `node scripts/sync-timeline.mjs --check` and `node --test scripts/*.test.mjs`, then inspect the page in a browser at desktop and narrow widths.
 - Do not publish or deploy the site unless explicitly asked. When asked, run the `publish-pages.mjs` dry run, then `--publish`, and confirm the public URL serves the new files before reporting it live ([spec/website.md](spec/website.md#github-pages-publication)).
+
+The qualification issue registry is `data/option-issues.json`. For compatible CPU and optional chip/card tracking, follow the native-edge rules in [project_manager.md](spec/project_manager.md#optional-configuration-and-cpu-alternative-tracking) and run `node scripts/sync-option-issues.mjs` to check live blockers/project membership; `--apply` mutates GitHub and requires task authorization.

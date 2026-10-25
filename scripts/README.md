@@ -32,3 +32,7 @@ See [the 287/387 profiles](../spec/coprocessors_287_387.md) for canonical issues
 ## Content sources
 
 All editable website data and copy belong under `data/`. `ui.json` supplies runtime wording and the generated HTML shell; `photo-credits.json` supplies per-image licensing; `image-import.json` supplies photo-search curation; `sync.json` supplies exported metadata and GitHub project-stage mapping. `check-site.mjs` validates these and compares the generated shell. The image importer reads the JSON rules and writes credits back to `data/photo-credits.json`; do not restore per-device lookup tables in JavaScript. See [the audit and maintenance contract](../spec/content_data.md).
+
+## Qualification issue synchronization
+
+`node scripts/sync-option-issues.mjs` checks the live GitHub issue blockers and project membership for all compatible CPU profiles and optional chip/card configurations. It is read-only by default and exits nonzero on missing trackers, missing blockers, missing project items or stale registry records. `--apply` creates missing qualification issues and blockers and adds them to project 1, initially Blocked. It records public issue references in `data/option-issues.json`; repeat runs preserve previously recorded project statuses. It does not edit canonical hardware-family issues or reverse base-system dependencies.
