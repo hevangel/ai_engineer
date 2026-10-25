@@ -299,17 +299,18 @@
       "dateLabel": "1971",
       "dateSource": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-story-of-the-intel-4004.html",
       "era": "4",
-      "query": "Intel 4004",
+      "query": "File:Intel C4004.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 19,
         "url": "https://github.com/hevangel/ai_engineer/issues/19"
       },
       "image": {
-        "src": "images/intel_mcs4.jpg",
-        "alt": "Intel 4004 open.jpg",
+        "src": "images/intel_mcs4_package.jpg",
+        "alt": "Intel C4004 processor in its closed 16-pin ceramic package, with the C4004 marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_open.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_C4004.jpg",
+        "caption": "Intel C4004, the CPU member of the MCS-4 family, shown in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Intel's first microprocessor set: the 4004 CPU with its ROM, RAM and I/O chips"
@@ -470,17 +471,18 @@
       "dateLabel": "1975",
       "dateSource": "https://en.wikipedia.org/wiki/MOS_6502",
       "era": "8",
-      "query": "MOS 6502",
+      "query": "File:KL MOS 6502.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 33,
         "url": "https://github.com/hevangel/ai_engineer/issues/33"
       },
       "image": {
-        "src": "images/mos_6502_family.jpg",
-        "alt": "MOS 6502 die.jpg",
+        "src": "images/mos_6502_family_package.jpg",
+        "alt": "MOS MPS6502A processor in a 40-pin plastic dual-inline package, with MOS and MPS6502 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_MOS_6502.jpg",
+        "caption": "MOS MPS6502A, a packaged member of the 6502 CPU family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Low-cost 8-bit CPU family used in the Apple II, Atari 2600 and Commodore 64"
@@ -1063,17 +1065,18 @@
       "dateLabel": "1978",
       "dateSource": "https://en.wikipedia.org/wiki/Motorola_6809",
       "era": "16",
-      "query": "Motorola 6809",
+      "query": "File:KL Motorola MC6809.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 46,
         "url": "https://github.com/hevangel/ai_engineer/issues/46"
       },
       "image": {
-        "src": "images/motorola_6809.jpg",
-        "alt": "Motorola 6809 die.JPG",
+        "src": "images/motorola_6809_package.jpg",
+        "alt": "Motorola MC6809P processor in a 40-pin plastic dual-inline package, with the Motorola logo and MC6809P marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_6809_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Motorola_MC6809.jpg",
+        "caption": "Motorola MC6809P in its plastic dual-inline package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Motorola's advanced 8-bit CPU with hardware multiply and position-independent code"
@@ -1159,17 +1162,18 @@
       "dateLabel": "1979",
       "dateSource": "https://en.wikipedia.org/wiki/Motorola_68000",
       "era": "16",
-      "query": "Motorola 68000",
+      "query": "File:KL Motorola MC68000 CDIP.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 45,
         "url": "https://github.com/hevangel/ai_engineer/issues/45"
       },
       "image": {
-        "src": "images/motorola_68000.jpg",
-        "alt": "Motorola 68000 die.JPG",
+        "src": "images/motorola_68000_package.jpg",
+        "alt": "Motorola MC68000 processor in a closed 64-pin ceramic dual-inline package, with Motorola and MC68000 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68000_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Motorola_MC68000_CDIP.jpg",
+        "caption": "Motorola MC68000 in its closed ceramic dual-inline package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Motorola's 16/32-bit CPU, used in the original Macintosh"
@@ -1209,17 +1213,18 @@
       "dateLabel": "1980",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "16",
-      "query": "Intel 8087",
+      "query": "File:Intel C8087 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 23,
         "url": "https://github.com/hevangel/ai_engineer/issues/23"
       },
       "image": {
-        "src": "images/intel_8087.jpg",
-        "alt": "Intel 8087 die.JPG",
+        "src": "images/intel_8087_package.jpg",
+        "alt": "Intel C8087 floating-point coprocessor in a closed ceramic dual-inline package, with C8087 marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_8087_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_C8087_1.jpg",
+        "caption": "Intel C8087 floating-point coprocessor in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Numeric coprocessor that adds floating-point maths to the 8086 and 8088"
@@ -1408,17 +1413,18 @@
       "dateLabel": "1982",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "16",
-      "query": "Intel 80286",
+      "query": "File:KL Intel 80286 CLCC Top.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 20,
         "url": "https://github.com/hevangel/ai_engineer/issues/20"
       },
       "image": {
-        "src": "images/intel_80286.jpg",
-        "alt": "Intel 80286 die2.JPG",
+        "src": "images/intel_80286_package.jpg",
+        "alt": "Intel R80286-8 processor viewed from the marked top of its ceramic leadless package.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_80286_die2.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80286_CLCC_Top.jpg",
+        "caption": "Intel R80286-8, shown from the marked top of its ceramic leadless package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Intel's 16-bit CPU with protected mode, used in the IBM PC AT"
@@ -1432,17 +1438,18 @@
       "dateLabel": "1982",
       "dateSource": "https://en.wikipedia.org/wiki/Intel_80287",
       "era": "16",
-      "query": "Intel 80287",
+      "query": "File:KL Intel C80287.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 113,
         "url": "https://github.com/hevangel/ai_engineer/issues/113"
       },
       "image": {
-        "src": "images/intel_80287.jpg",
-        "alt": "Intel 80287 die2.JPG",
+        "src": "images/intel_80287_package.jpg",
+        "alt": "Intel C80287-3 numeric coprocessor in a closed ceramic dual-inline package, with Intel and C80287-3 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_80287_die2.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_C80287.jpg",
+        "caption": "Intel C80287-3 numeric coprocessor in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Floating-point coprocessor for the 80286"
@@ -1551,7 +1558,7 @@
       "dateLabel": "1983 · AMD catalog preview",
       "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
       "era": "16",
-      "query": "AMD 80186 / 80188 family",
+      "query": "File:Ic-photo-AMD--R80186-6 B4-(186-CPU).png",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 190,
@@ -1559,13 +1566,13 @@
       },
       "description": "Integrated x86 · DMA, timers, interrupt control & chip selects",
       "dateBasis": "preview",
-      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative; the photo depicts an AMD 80C186 die.",
+      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative. The photograph shows an R80186-6/B4 package marked ©1984 AMD.",
       "image": {
-        "src": "images/amd_80186.jpg",
-        "alt": "AMD 80C186 SoC die.JPG",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AMD_80C186_SoC_die.JPG",
-        "caption": "Representative AMD 80C186 die; not the original 1983 advance-information device."
+        "src": "images/amd_80186_package.png",
+        "alt": "AMD R80186-6/B4 processor in its closed ceramic leadless package, with the AMD logo and R80186-6/B4 marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--R80186-6_B4-(186-CPU).png",
+        "caption": "AMD R80186-6/B4, shown in its ceramic leadless package."
       },
       "summary": "AMD's 80186 and 80188 16-bit CPUs with built-in peripherals"
     },
