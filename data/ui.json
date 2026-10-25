@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "description": "Public interface wording for the timeline page. Values may use {name} placeholders filled by assets/timeline.js. Keep per-device facts in catalog.json and statuses in status.json.",
+  "kinds": {
+    "all": {
+      "tab": "All hardware"
+    },
+    "chip": {
+      "tab": "Chip families",
+      "heading": "CHIP FAMILIES",
+      "badge": "CHIP FAMILY",
+      "noun": "chip"
+    },
+    "chipset": {
+      "badge": "CHIPSET"
+    },
+    "system": {
+      "tab": "Computers",
+      "heading": "COMPUTER SYSTEMS",
+      "badge": "COMPUTER SYSTEM",
+      "noun": "computer"
+    },
+    "card": {
+      "tab": "Cards",
+      "heading": "EXPANSION CARDS",
+      "badge": "EXPANSION CARD",
+      "noun": "card"
+    }
+  },
+  "viewTabs": [
+    "all",
+    "chip",
+    "system",
+    "card"
+  ],
+  "card": {
+    "chipsetMembers": "Chipset members",
+    "chipsetHeading": "{count} chips · one chipset",
+    "photoAttribution": "Photo attribution for {title}",
+    "coverageUnreported": "Source coverage not reported",
+    "coverage": "{percent}% source coverage: {cleaned} cleaned of {total} defined items",
+    "statusFallback": {
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10
+          },
+          {
+            "tag": "path",
+            "d": "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+          },
+          {
+            "tag": "path",
+            "d": "M12 17h.01"
+          }
+        ]
+      },
+      "label": "Status unavailable",
+      "color": "#78828c"
+    },
+    "datePlacement": "Historical placement; follow the source for date qualifications",
+    "representative": "Representative family photograph",
+    "representativeDialog": "Representative family photograph; not a confirmed image of this exact device or revision.",
+    "creatorUnknown": "Creator listed at original source",
+    "originalPhoto": "Original photograph and license ↗",
+    "licenseTerms": "License terms ↗",
+    "dateEvidence": "Date evidence",
+    "supportingSource": "Supporting source {number}"
+  },
+  "trace": {
+    "button": "Trace {count} components",
+    "label": "Trace components for {title}"
+  },
+  "results": {
+    "count": "{shown} OF {total} ENTRIES"
+  },
+  "era": {
+    "small": "BIT",
+    "undatedSmall": "DATE",
+    "undatedMark": "?",
+    "undatedYear": "UNDATED"
+  },
+  "bus": {
+    "choicesTitle": "{label} choices · {title}",
+    "title": "{label} bus",
+    "endpointTitle": "{label} bus · {title}",
+    "chooseWhere": "Choose where to go. Planned options still require card, slot and software compatibility checks.",
+    "chooseRecorded": "Choose a recorded connection. The family rail groups the diagram; each computer keeps its own configuration.",
+    "computer": "Computer",
+    "originalCpu": "Original CPU profile",
+    "alternative": "Compatible alternative",
+    "planned": "Planned option",
+    "required": "Required card",
+    "evidenceSummary": "Evidence and configuration",
+    "evidenceLink": "Connection evidence ↗"
+  },
+  "wires": {
+    "allLinks": "All computer links",
+    "links": "Computer links",
+    "contextAll": "All computer connections are visible. Choose one computer for a focused trace.",
+    "contextFocused": "Focused computer trace. Maker lineage can be enabled separately.",
+    "previous": "Previous",
+    "next": "Next",
+    "jump": "{direction} {noun}: {title}",
+    "hint": "{label} · Enter to jump · {keys}",
+    "via": " via {label}",
+    "viaBus": " via {label} bus",
+    "relation": {
+      "maker": "maker lineage",
+      "reconstruction": "later reconstruction component · not original hardware",
+      "optional": "planned optional component · {note}",
+      "required": "recorded prerequisite"
+    },
+    "chooseCpu": "Choose a compatible processor for {title}",
+    "alternatives": "{label} alternatives for {title}",
+    "connectionsFor": "{label} connections for {title}",
+    "busRun": "{label} bus · choose a recorded connection",
+    "busRail": "{label} bus · choose a recorded card-to-computer connection",
+    "count": {
+      "maker": "{count} maker links",
+      "required": "{count} chip links",
+      "optionalChip": "{count} optional chip links",
+      "reconstruction": "{count} reconstruction links",
+      "bus": "{count} shared bus rails ({cards} card connections)",
+      "compatible": "{count} shared CPU roles"
+    },
+    "none": "No connections match the current filters.",
+    "helpComputers": "Click a wire or dot to follow it. Click a shared bus or CPU wire to choose a connected part. Keyboard: Tab and Enter; ↑/k and ↓/j follow either end of a chip wire, ←/h and →/l either end of a maker wire.",
+    "helpCards": "With a card selected: ←/h and →/l move along its family line; ↑/k and ↓/j move between a chip and its computers."
+  },
+  "keys": {
+    "family": "←/h previous · →/l next",
+    "system": "↑/k previous · ↓/j next"
+  },
+  "wireLayers": [
+    {
+      "id": "maker",
+      "swatch": "",
+      "label": "Maker lineage · right and row gaps"
+    },
+    {
+      "id": "required",
+      "swatch": "required-key",
+      "label": "Chip prerequisite · left / row gaps"
+    },
+    {
+      "id": "optionalChip",
+      "swatch": "optional-key",
+      "label": "Optional coprocessor · left / row gaps"
+    },
+    {
+      "id": "optionalCard",
+      "swatch": "optional-key",
+      "label": "Planned card tap · bus"
+    },
+    {
+      "id": "compatible",
+      "swatch": "compatible-key",
+      "label": "Compatible CPU choices · shared left wire"
+    },
+    {
+      "id": "bus",
+      "swatch": "bus-key",
+      "label": "Bus family rail · far right"
+    },
+    {
+      "id": "reconstruction",
+      "swatch": "reconstruction-key",
+      "label": "Later reconstruction part · left"
+    }
+  ],
+  "legend": {
+    "fineprint": "Verification is recorded from explicit evidence in the linked issue. A closed issue is not a human approval. Era bands are narrative chapters; architectures and word widths overlap. A separate 18-bit prelude covers discrete-logic machines. Reconstruction wires identify later implementation parts, not original factory hardware. Dates distinguish introductions, documented bounds, previews and original system profiles. Open “Date evidence” on a card for qualifications; chips precede computers within the same year."
+  },
+  "load": {
+    "snapshot": "GITHUB SNAPSHOT · {when}",
+    "notSynced": "not synced"
+  }
+}
