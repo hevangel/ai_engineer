@@ -175,7 +175,7 @@ function drawConnectionPass(layout,columns){
  const ranks=new Map([...nodes.keys()].map((id,index)=>[id,index]));
  const allComputers=$('computer').value==='all';
  $('system-links-label').textContent=text(allComputers?'wires.allLinks':'wires.links');
- const context=allComputers?($('show-systems').checked?text('wires.contextAll'):''):text('wires.contextFocused');
+ const context=allComputers?'':text('wires.contextFocused');
  $('wire-context').textContent=context;$('wire-context').hidden=!context;
  const edges=[];
  if($('show-makers').checked){
