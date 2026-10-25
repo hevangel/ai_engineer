@@ -11,7 +11,7 @@ All commands run from the repository root with Node.js 22 or newer. No packages 
 | `node scripts/sync-connections.mjs` | Refresh native component gates, select exact CPU variants, derive qualified compatible alternatives, and merge curated planned chip/card options. |
 | `node scripts/sync-timeline.mjs --check` | Validate the checked-in catalog/status snapshot without network access. |
 | `node scripts/check-site.mjs` | Check local photo files, attribution, dated sources and catalog/status coverage. |
-| `node --test scripts/bus-layout.test.mjs` | Check shared-bus membership, independent host lanes and under-row geometry. |
+| `node --test scripts/bus-layout.test.mjs` | Check bus-family rails, exact host membership, shared row runs and bottom/top tap geometry. |
 | `node --test scripts/status.test.mjs` | Verify stage, evidence and percentage rules. |
 | `node scripts/fetch-images.mjs` | Import missing licensed Commons photos with attribution; inspect and curate results. |
 
