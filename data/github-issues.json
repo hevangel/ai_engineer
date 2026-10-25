@@ -123,6 +123,15 @@
           "name": "Website"
         }
       ]
+    },
+    "Path": {
+      "id": "PVTF_lAHOALQ9dM4BoWAFzhnG58s"
+    },
+    "Start date": {
+      "id": "PVTF_lAHOALQ9dM4BoWAFzhm2js8"
+    },
+    "End date": {
+      "id": "PVTF_lAHOALQ9dM4BoWAFzhm2jtE"
     }
   },
   "series": [
@@ -2288,110 +2297,249 @@
   ],
   "tools": [
     {
+      "key": "surfer",
+      "title": "Surfer",
+      "path": "docs/surfer",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 68,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/68",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytw6w"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdjE",
+      "projectPath": "ai_hw_engineer/docs/surfer",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
+    },
+    {
+      "key": "xezim",
+      "title": "Xezim",
+      "path": "docs/xezim",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 69,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/69",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytxfw"
+      },
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdk0",
+      "projectPath": "ai_hw_engineer/docs/xezim",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
+    },
+    {
       "key": "eqy",
       "title": "EQY",
       "path": "docs/eqy",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 300,
-        "url": "https://github.com/hevangel/ai_engineer/issues/300",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFRRw"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 70,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/70",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyGw"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCU4"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCU4",
+      "projectPath": "ai_hw_engineer/docs/eqy",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "iverilog",
       "title": "Icarus Verilog",
       "path": "docs/iverilog",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 301,
-        "url": "https://github.com/hevangel/ai_engineer/issues/301",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFRXg"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 71,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/71",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyzA"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCVE"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdmk",
+      "projectPath": "ai_hw_engineer/docs/iverilog",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "verible",
       "title": "Verible",
       "path": "docs/verible",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 302,
-        "url": "https://github.com/hevangel/ai_engineer/issues/302",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFReA"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 72,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/72",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytzZw"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCVc"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCVc",
+      "projectPath": "ai_hw_engineer/docs/verible",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "verilator",
       "title": "Verilator",
       "path": "docs/verilator",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 303,
-        "url": "https://github.com/hevangel/ai_engineer/issues/303",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFRiw"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 73,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/73",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0DA"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXk"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdpA",
+      "projectPath": "ai_hw_engineer/docs/verilator",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "uvm",
       "title": "UVM reference libraries",
       "path": "docs/uvm",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 304,
-        "url": "https://github.com/hevangel/ai_engineer/issues/304",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFR8A"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 74,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/74",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0wg"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXs"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdpk",
+      "projectPath": "ai_hw_engineer/docs/uvm",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "yosys",
       "title": "Yosys",
       "path": "docs/yosys-symbiyosys",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 305,
-        "url": "https://github.com/hevangel/ai_engineer/issues/305",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFSAw"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 75,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/75",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt1iw"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXw"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCXw",
+      "projectPath": "ai_hw_engineer/docs/yosys-symbiyosys",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     },
     {
       "key": "sby",
       "title": "SymbiYosys",
       "path": "docs/yosys-symbiyosys",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 306,
-        "url": "https://github.com/hevangel/ai_engineer/issues/306",
-        "nodeId": "I_kwDOVUYpy88AAAABZvFSFA"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 76,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/76",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt2KA"
       },
-      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCX8"
+      "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCX8",
+      "projectPath": "ai_hw_engineer/docs/yosys-symbiyosys",
+      "audit": {
+        "date": "2026-10-25",
+        "stage": "AI verified",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+      }
     }
   ],
   "docker": {
     "path": "Dockerfile",
     "toolIssues": [
-      110,
-      111,
-      300,
-      301,
-      302,
-      303,
-      304,
-      305,
-      306
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 68,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/68",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytw6w"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 69,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/69",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytxfw"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 70,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/70",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyGw"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 71,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/71",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyzA"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 72,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/72",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytzZw"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 73,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/73",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0DA"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 74,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/74",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0wg"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 75,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/75",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt1iw"
+      },
+      {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 76,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/76",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt2KA"
+      }
     ],
     "issue": {
-      "repo": "hevangel/ai_engineer",
-      "number": 307,
-      "url": "https://github.com/hevangel/ai_engineer/issues/307",
-      "nodeId": "I_kwDOVUYpy88AAAABZvFSIw"
+      "repo": "hevangel/ai_hw_engineer",
+      "number": 77,
+      "url": "https://github.com/hevangel/ai_hw_engineer/issues/77",
+      "nodeId": "I_kwDOUDSvDc8AAAABZyt2yg"
     },
-    "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCZg"
+    "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDYdr0",
+    "projectPath": "ai_hw_engineer/Dockerfile",
+    "audit": {
+      "date": "2026-10-25",
+      "stage": "AI verified",
+      "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+      "scope": "Current pinned baseline only; broader acceptance and source review remain open."
+    }
   },
   "hardwareSource": {
     "repository": "hevangel/ai_hw_engineer",
@@ -2402,5 +2550,156 @@
       "Existing file/report inventory does not imply current verification.",
       "Generic Apple II mask ROM identity and additional NES/SNES peripheral/mapper parts remain research gaps."
     ]
+  },
+  "transfers": [
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 111,
+        "url": "https://github.com/hevangel/ai_engineer/issues/111",
+        "nodeId": "I_kwDOVUYpy88AAAABZhuoSA"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 68,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/68",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytw6w"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 110,
+        "url": "https://github.com/hevangel/ai_engineer/issues/110",
+        "nodeId": "I_kwDOVUYpy88AAAABZhun3g"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 69,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/69",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytxfw"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 300,
+        "url": "https://github.com/hevangel/ai_engineer/issues/300",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRRw"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 70,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/70",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyGw"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 301,
+        "url": "https://github.com/hevangel/ai_engineer/issues/301",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRXg"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 71,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/71",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytyzA"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 302,
+        "url": "https://github.com/hevangel/ai_engineer/issues/302",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFReA"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 72,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/72",
+        "nodeId": "I_kwDOUDSvDc8AAAABZytzZw"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 303,
+        "url": "https://github.com/hevangel/ai_engineer/issues/303",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFRiw"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 73,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/73",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0DA"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 304,
+        "url": "https://github.com/hevangel/ai_engineer/issues/304",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFR8A"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 74,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/74",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt0wg"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 305,
+        "url": "https://github.com/hevangel/ai_engineer/issues/305",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFSAw"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 75,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/75",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt1iw"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 306,
+        "url": "https://github.com/hevangel/ai_engineer/issues/306",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFSFA"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 76,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/76",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt2KA"
+      }
+    },
+    {
+      "from": {
+        "repo": "hevangel/ai_engineer",
+        "number": 307,
+        "url": "https://github.com/hevangel/ai_engineer/issues/307",
+        "nodeId": "I_kwDOVUYpy88AAAABZvFSIw"
+      },
+      "to": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 77,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/77",
+        "nodeId": "I_kwDOUDSvDc8AAAABZyt2yg"
+      }
+    }
+  ],
+  "audit": {
+    "date": "2026-10-25",
+    "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+    "hardwarePullRequest": "https://github.com/hevangel/ai_hw_engineer/pull/78",
+    "cliChecks": 29,
+    "surferBrowser": "Built-in browser: load, scope/signals, two cursor samples, zoom; screenshot in report.",
+    "baseImage": "sha256:93051caf5a9f2678a1653cf85af576f7a9ee6cc66dded18e53c4ccc91a58cad5",
+    "icarusOverlayImage": "sha256:a18124d8a7e0e1063ec6e44bed4ccf597f6d9d7684cc203f7f9bca3f008ded2a"
   }
 }
