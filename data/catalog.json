@@ -197,17 +197,18 @@
       "dateLabel": "Documented by 1970",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "4",
-      "query": "AMD Am9300",
+      "query": "File:AMD 930059X 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 11,
         "url": "https://github.com/hevangel/ai_engineer/issues/11"
       },
       "image": {
-        "src": "images/amd_am9300.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "src": "images/amd_am9300_verified.jpg",
+        "alt": "AMD 930059X (Am9300) four-bit shift register with the AMD logo and 930059X marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_930059X_1.jpg",
+        "caption": "AMD 930059X, a packaged Am9300 shift-register variant."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "4-bit universal shift register"
@@ -228,10 +229,15 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/5"
       },
       "image": {
-        "src": "images/amd_am2501.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Am2501 reference shared by Ken Shirriff",
+            "url": "https://x.com/kenshirriff/status/1218982024070955009",
+            "note": "Candidate photograph; reuse permission has not been verified."
+          }
+        ]
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Logic counter, AMD's first proprietary product (1970)"
@@ -252,10 +258,9 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/6"
       },
       "image": {
-        "src": "images/amd_am2505.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Fast multiplier, AMD's best-selling product of 1971"
@@ -269,17 +274,18 @@
       "dateLabel": "Documented by 1971",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "4",
-      "query": "AMD Am3101",
+      "query": "File:AMD AM3101E 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 8,
         "url": "https://github.com/hevangel/ai_engineer/issues/8"
       },
       "image": {
-        "src": "images/amd_am3101.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "src": "images/amd_am3101_verified.jpg",
+        "alt": "AMD AM3101E 64-bit bipolar RAM with the AMD logo and AM3101E marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM3101E_1.jpg",
+        "caption": "AMD AM3101E, a member of the Am3101 64-bit bipolar RAM family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "64-bit bipolar static RAM, AMD's version of the Intel 3101"
@@ -394,10 +400,15 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/10"
       },
       "image": {
-        "src": "images/amd_am9102.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Am9102 collector photograph",
+            "url": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
+            "note": "A photographed Am9102 in a collector paperweight; reuse permission has not been verified."
+          }
+        ]
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "1024 x 1-bit static RAM"
@@ -507,17 +518,18 @@
       "dateLabel": "Documented by 1975",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "8",
-      "query": "AMD Am9080",
+      "query": "File:AMD AM9080ADC 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 9,
         "url": "https://github.com/hevangel/ai_engineer/issues/9"
       },
       "image": {
-        "src": "images/amd_am9080.jpg",
-        "alt": "AMD C8080A.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AMD_C8080A.jpg"
+        "src": "images/amd_am9080_verified.jpg",
+        "alt": "AMD AM9080ADC processor in a white ceramic package, marked AM9080ADC and IC8080A.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM9080ADC_1.jpg",
+        "caption": "AMD AM9080ADC, an AMD 8080-compatible processor in the Am9080 family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "AMD's version of the Intel 8080 8-bit microprocessor"
@@ -701,17 +713,18 @@
       "dateLabel": "1977",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "8",
-      "query": "AMD Am9511",
+      "query": "File:AMD AM9511A IDC 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 12,
         "url": "https://github.com/hevangel/ai_engineer/issues/12"
       },
       "image": {
-        "src": "images/amd_am9511.jpg",
-        "alt": "AM9511-1 Arithmetic Co-Processor side.jpg",
+        "src": "images/amd_am9511_verified.jpg",
+        "alt": "AMD AM9511A-1DC arithmetic processor with the AMD logo and AM9511A-1DC marking visible.",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AM9511-1_Arithmetic_Co-Processor_side.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM9511A_IDC_1.jpg",
+        "caption": "AMD AM9511A-1DC, a later A variant of the Am9511 arithmetic-processor family; not the original 1977 package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Arithmetic processor that adds floating-point maths to a CPU"
@@ -978,10 +991,15 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/13"
       },
       "image": {
-        "src": "images/amd_am9517.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Am9517 and Am9517-5 collector photographs",
+            "url": "https://iccollection.try.mydns.jp/intel80peripheral/i8237A.html",
+            "note": "Candidate photographs; reuse permission has not been verified."
+          }
+        ]
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Multimode direct-memory-access (DMA) controller"

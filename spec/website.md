@@ -179,3 +179,7 @@ Adjacent same-row chips from the same company connect horizontally across their 
 ## Toolbar totals and navigation help
 
 The second toolbar row groups Maker lineage, computer links and the computer selector on the left, with the live connection totals aligned to the right. Totals wrap within that row when space is limited. The displayed entry count is right-aligned on the archive caption row. After the company-color legend, show one navigation paragraph with a bold heading. Its consolidated wording comes from `wires.navigationHeading` and `wires.help` in `data/ui.json`; avoid repeating separate wire/card keyboard instructions. Keep `wire-help` as the SVG's accessible description, hide the guide when no links are drawn, and preserve its heading when updating the text.
+
+## Photos still needed
+
+Use the catalog's explicit `image.status: "needed"` state for unsourced photographs. `appendPhoto` renders a labeled panel and `photoCredit` renders the explanation and qualified research links, all with wording from `data/ui.json`. Keep the photo area's aspect ratio, info button, source/build/stage badges and connection pads. Do not mark this as a representative photo or attach another chip's attribution. See [the image contract](timeline.md#verified-and-unsourced-photographs) and [AMD photo audit](amd_photos.md).

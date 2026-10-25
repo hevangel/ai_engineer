@@ -138,3 +138,9 @@ The page starts with maker lineage only. Selecting a computer enables its compon
 ## Direct maker links within a row
 
 Adjacent same-row chips from the same company connect horizontally across their gap using side pads. Other maker links keep right-gutter bottom/top routing. Recompute adjacency after filters and column changes; never cross another card. [Ordering, geometry and checks](maker_row_links.md).
+
+## Verified and unsourced photographs
+
+An entry may declare `image: {status: "needed", representative: false, sourceLeads: [...]}` when an exact, reuse-cleared photo has not been verified. Render a clearly labeled Photo needed panel with the actual entry title, preserving status badges and wire geometry. Do not render a broken image or borrow an unrelated chip photo. Its info dialog gives the shared JSON explanation and any qualified external leads; these are references, not licensed website assets. There is no credit record for a missing image. Normal sourced images retain `src`, descriptive `alt`, attribution and explicit representative qualifications.
+
+The early AMD audit and source decisions are in [amd_photos.md](amd_photos.md). Importer `requireExact` entries fail without an exact match; the generic AMD brand fallback is removed. `photo-regression.test.mjs` checks that distinct AMD chip cards do not reuse identical image bytes.
