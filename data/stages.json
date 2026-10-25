@@ -3,42 +3,170 @@
     {
       "id": "planned",
       "label": "Planned",
-      "icon": "○",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "path",
+            "d": "M8 2v4"
+          },
+          {
+            "tag": "path",
+            "d": "M16 2v4"
+          },
+          {
+            "tag": "rect",
+            "x": 3,
+            "y": 4,
+            "width": 18,
+            "height": 18,
+            "rx": 2
+          },
+          {
+            "tag": "path",
+            "d": "M3 10h18"
+          },
+          {
+            "tag": "path",
+            "d": "M8 14h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M12 14h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M16 14h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M8 18h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M12 18h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M16 18h.01"
+          }
+        ]
+      },
       "color": "#78828c",
       "description": "Scope is on the roadmap."
     },
     {
       "id": "researching",
       "label": "Researching",
-      "icon": "◔",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 11,
+            "cy": 11,
+            "r": 8
+          },
+          {
+            "tag": "path",
+            "d": "m21 21-4.3-4.3"
+          }
+        ]
+      },
       "color": "#b77819",
       "description": "Requirements and source material are being assembled."
     },
     {
       "id": "sources_ready",
       "label": "Sources ready",
-      "icon": "▤",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "path",
+            "d": "M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+          },
+          {
+            "tag": "path",
+            "d": "m9 13 2 2 4-4"
+          }
+        ]
+      },
       "color": "#996823",
       "description": "The defined source set is collected and cleaned."
     },
     {
       "id": "building",
       "label": "Building",
-      "icon": "⌘",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "path",
+            "d": "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+          }
+        ]
+      },
       "color": "#0071c5",
       "description": "Implementation is in progress."
     },
     {
       "id": "ai_verified",
       "label": "AI verified",
-      "icon": "◇",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "path",
+            "d": "M9.5 5.5V3"
+          },
+          {
+            "tag": "rect",
+            "x": 2.5,
+            "y": 5.5,
+            "width": 14,
+            "height": 10,
+            "rx": 3
+          },
+          {
+            "tag": "path",
+            "d": "M7 9.5v2"
+          },
+          {
+            "tag": "path",
+            "d": "M12 9.5v2"
+          },
+          {
+            "tag": "path",
+            "d": "m14 19 2.5 2.5 5-5.5"
+          }
+        ]
+      },
       "color": "#713eae",
       "description": "An explicit AI verification record links supporting evidence."
     },
     {
       "id": "human_verified",
       "label": "Human verified",
-      "icon": "✦",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "path",
+            "d": "M2 21a8 8 0 0 1 13.292-6"
+          },
+          {
+            "tag": "circle",
+            "cx": 10,
+            "cy": 8,
+            "r": 5
+          },
+          {
+            "tag": "path",
+            "d": "m16 19 2 2 4-4"
+          }
+        ]
+      },
       "color": "#237647",
       "description": "A named human approval links supporting evidence."
     }
@@ -47,17 +175,63 @@
     {
       "id": "unknown",
       "label": "Build unreported",
-      "icon": "−"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10,
+            "stroke-dasharray": "2.4 4.67"
+          }
+        ]
+      },
+      "color": "#8a949b"
     },
     {
       "id": "passing",
       "label": "Build passing",
-      "icon": "✓"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10
+          },
+          {
+            "tag": "path",
+            "d": "m9 12 2 2 4-4"
+          }
+        ]
+      },
+      "color": "#237647"
     },
     {
       "id": "failing",
       "label": "Build failing",
-      "icon": "!"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10
+          },
+          {
+            "tag": "path",
+            "d": "m15 9-6 6"
+          },
+          {
+            "tag": "path",
+            "d": "m9 9 6 6"
+          }
+        ]
+      },
+      "color": "#b32631"
     }
   ],
   "coverageLabel": "Source coverage",
