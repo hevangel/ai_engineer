@@ -14,7 +14,7 @@ Manage [AI Engineer](https://github.com/users/hevangel/projects/1) as the cross-
 
 ## Issue granularity
 
-One canonical issue per chip or coherent series: one 74-series issue, one AMD Am29xx issue, one MCS-4 issue, one MCS-8 issue. Maintain a member checklist rather than duplicate chip trackers. Add one issue per whole computer/system. Track bus/card infrastructure separately and create individual card issues only after identifying the original board and revision. Software starts with a per-machine catalog issue; expand to one child issue per selected firmware, OS or application. A compiler target is shared across every compatible machine. Use parent/sub-issue relationships for decomposition, and native blocked-by relationships only for real completion prerequisites.
+One canonical issue per chip or coherent series: one 74-series issue, one AMD Am29xx issue, one MCS-4 issue, one MCS-8 issue. Maintain a linked member ledger and one native sub-issue per identified physical chip, following [github_issues.md](github_issues.md). Add one issue per whole computer/system. Track bus/card infrastructure separately and create individual card issues only after identifying the original board and revision. Software starts with a per-machine catalog issue; expand to one child issue per selected firmware, OS or application. A compiler target is shared across every compatible machine. Use parent/sub-issue relationships for decomposition, and native blocked-by relationships only for real completion prerequisites.
 
 ## Dependencies and scheduling
 
@@ -26,7 +26,7 @@ Start with the Busicom/MCS-4 vertical slice and the existing llvm-i4004 work; th
 
 Use gh project list --owner hevangel, gh project item-list 1 --owner hevangel --limit 200 --format json, and gh project field-list 1 --owner hevangel --format json to inspect state. Authentication needs the project scope plus repository issue access. Search existing issues and board items before creating anything; retain canonical URLs in initial_project_plan.md. Add coordination issues in hevangel/ai_engineer and add them to project 1. Native dependency REST endpoints are repos/{owner}/{repo}/issues/{number}/dependencies/blocked_by: GET lists blockers; POST with issue_id adds a blocker. Inspect endpoints and existing edges before mutations; never expose credentials.
 
-The first roadmap uses existing Todo/In progress/Done status values. Todo means acceptance has not been audited, not that no code exists. Move to In progress only when active work is established. Done requires linked reports and all scoped acceptance gates, including explicit limitations. Track partial implementation in the issue body. Record verification failures and evidence, and follow the owning repository's escaped-defect process. Never mark hardware verified solely because simulation passes.
+Use the live Planned, Researching, Sources Ready, Building, Blocked, AI verified and Human verified statuses defined in [github_issues.md](github_issues.md). The owner reset issues to Planned; preserve that baseline until actual work/evidence warrants a transition. Track current coding ownership in Agent and Scrum commitments in Sprint. Verification requires linked reports and all scoped acceptance gates, including explicit limitations. Track partial implementation in the issue body. Record verification failures and evidence, and follow the owning repository's escaped-defect process. Never mark hardware verified solely because simulation passes.
 
 ## Routine management
 
@@ -75,7 +75,7 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 
 ## AMD Am25xx canonical scope
 
-Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is a superseded historical tracker and its project item is archived; do not recreate a separate active Am2505 issue/card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
+Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is reactivated as the Am2505 member sub-issue of #5 under the current owner instruction; it is not a separate series card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
 
 ## Optional configuration and CPU-alternative tracking
 
