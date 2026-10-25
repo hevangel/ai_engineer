@@ -8,7 +8,7 @@ const json=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8')
 const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','data/photo-credits.json'].map(json));
 const connections=await json('data/connections.json');
 const ids=new Set(),stages=new Set(vocabulary.stages.map(s=>s.id)),eras=new Set(catalog.eras.map(e=>e.id));
-let representative=0;
+let representative=0,photosNeeded=0;
 for(const entry of catalog.entries){
  assert(!ids.has(entry.id),'Duplicate entry '+entry.id);ids.add(entry.id);
  assert(catalog.companies[entry.company],'Missing company '+entry.id);
@@ -20,6 +20,13 @@ for(const entry of catalog.entries){
  const status=snapshot.statuses[entry.id];assert(status&&stages.has(status.stage),'Missing stage '+entry.id);
  assert.equal(new URL(entry.issue.url).hostname,'github.com');
  assert(typeof entry.summary==='string'&&entry.summary.trim()&&entry.summary.length<=100&&!/[\r\n]/.test(entry.summary),'Missing one-line summary (100 characters or fewer) '+entry.id);
+ if(entry.image?.status==='needed'){
+  assert.equal(entry.image.representative,false,'Missing photo is not a representative photograph '+entry.id);
+  assert(!entry.image.src&&!credits[entry.id],'Missing photo must not retain a substituted image/credit '+entry.id);
+  assert(Array.isArray(entry.image.sourceLeads),'Missing photo research leads '+entry.id);
+  for(const lead of entry.image.sourceLeads){assert(lead.label&&lead.note,'Unqualified photo lead '+entry.id);assert.equal(new URL(lead.url).protocol,'https:');}
+  photosNeeded++;continue;
+ }
  assert(entry.image?.alt?.trim(),'Missing image alt '+entry.id);
  assert(/^images\/[a-z0-9_-]+\.(jpg|png)$/i.test(entry.image.src),'Invalid image path '+entry.id);
  const bytes=await fs.readFile(path.join(root,entry.image.src));
@@ -47,7 +54,7 @@ for(const key of ['maker','required','optionalChip','reconstruction','bus','comp
 for(const key of ['maker','reconstruction','optional','required'])assert.equal(typeof lookup('wires.relation.'+key),'string','Missing relation text: '+key);
 for(const key of ['previous','next'])assert.equal(typeof lookup('wires.'+key),'string','Missing direction text: '+key);
 for(const layer of ui.wireLayers)assert(layer.id&&layer.label,'Incomplete wire layer');
-console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} explicitly labeled representative photos).`);
+console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} representative photos, ${photosNeeded} photos needed).`);
 
 const template=await fs.readFile(path.join(root,'templates/index.html'),'utf8');
 assert.equal((await fs.readFile(path.join(root,'index.html'),'utf8')).replaceAll('\r\n','\n'),renderSite(template,ui,catalog),'Stale index.html; run node scripts/render-site.mjs');
