@@ -18,6 +18,7 @@ for(const entry of catalog.entries){
  if(entry.year!==null){assert(Number.isInteger(entry.year)&&entry.year>1900,'Invalid year '+entry.id);assert(new URL(entry.dateSource).protocol==='https:','Missing historical source '+entry.id);}
  const status=snapshot.statuses[entry.id];assert(status&&stages.has(status.stage),'Missing stage '+entry.id);
  assert.equal(new URL(entry.issue.url).hostname,'github.com');
+ assert(typeof entry.summary==='string'&&entry.summary.trim()&&entry.summary.length<=100&&!/[\r\n]/.test(entry.summary),'Missing one-line summary (100 characters or fewer) '+entry.id);
  assert(entry.image?.alt?.trim(),'Missing image alt '+entry.id);
  assert(/^images\/[a-z0-9_-]+\.(jpg|png)$/i.test(entry.image.src),'Invalid image path '+entry.id);
  const bytes=await fs.readFile(path.join(root,entry.image.src));

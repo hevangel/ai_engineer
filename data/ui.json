@@ -34,9 +34,6 @@
     "card"
   ],
   "card": {
-    "chipsetMembers": "Chipset members",
-    "chipsetHeading": "{count} chips · one chipset",
-    "photoAttribution": "Photo attribution for {title}",
     "coverageUnreported": "Source coverage not reported",
     "coverage": "{percent}% source coverage: {cleaned} cleaned of {total} defined items",
     "statusFallback": {
@@ -61,15 +58,24 @@
       },
       "label": "Status unavailable",
       "color": "#78828c"
-    },
+    }
+  },
+  "info": {
+    "button": "About {title}",
+    "close": "Close details",
+    "dateHeading": "Date",
+    "dateEvidence": "Date evidence",
+    "supportingSource": "Supporting source {number}",
     "datePlacement": "Historical placement; follow the source for date qualifications",
-    "representative": "Representative family photograph",
-    "representativeDialog": "Representative family photograph; not a confirmed image of this exact device or revision.",
+    "issue": "Roadmap issue #{number} ↗",
+    "chipsetMembers": "Chipset members",
+    "chipsetHeading": "{count} chips · one chipset",
+    "photoHeading": "Photo credit",
+    "photoRepresentative": "Photo credit · representative photograph",
+    "representative": "Representative family photograph; not a confirmed image of this exact device or revision.",
     "creatorUnknown": "Creator listed at original source",
     "originalPhoto": "Original photograph and license ↗",
-    "licenseTerms": "License terms ↗",
-    "dateEvidence": "Date evidence",
-    "supportingSource": "Supporting source {number}"
+    "licenseTerms": "License terms ↗"
   },
   "trace": {
     "button": "Trace {count} components",
@@ -174,7 +180,7 @@
     }
   ],
   "legend": {
-    "fineprint": "Verification is recorded from explicit evidence in the linked issue. A closed issue is not a human approval. Era bands are narrative chapters; architectures and word widths overlap. A separate 18-bit prelude covers discrete-logic machines. Reconstruction wires identify later implementation parts, not original factory hardware. Dates distinguish introductions, documented bounds, previews and original system profiles. Open “Date evidence” on a card for qualifications; chips precede computers within the same year."
+    "fineprint": "Verification is recorded from explicit evidence in the linked issue. A closed issue is not a human approval. Era bands are narrative chapters; architectures and word widths overlap. A separate 18-bit prelude covers discrete-logic machines. Reconstruction wires identify later implementation parts, not original factory hardware. Dates distinguish introductions, documented bounds, previews and original system profiles. Open the “i” button on a card for date qualifications and photo credit; chips precede computers within the same year."
   },
   "load": {
     "snapshot": "GITHUB SNAPSHOT · {when}",
