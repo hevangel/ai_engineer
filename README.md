@@ -82,7 +82,7 @@ Maintainers can find status-refresh commands, checks and release instructions in
 
 ## Website content
 
-Editable content lives under `data/`: hardware facts in `catalog.json`, shared wording and page copy in `ui.json`, badge definitions in `stages.json`, and attribution in `photo-credits.json`. Photo-import choices and synchronization metadata also have their own JSON files. JavaScript handles rendering and interaction. When an exact, reuse-cleared photograph is still unsourced, the card says “Photo needed” and its info dialog records any qualified source leads instead of borrowing a different chip’s picture.
+Editable content lives under `data/`: hardware facts in `catalog.json`, shared wording and page copy in `ui.json`, badge definitions in `stages.json`, and attribution in `photo-credits.json`. Photo-import choices and synchronization metadata also have their own JSON files. JavaScript handles rendering and interaction. Every displayed photo is checked into `images/`; browsers load relative local files, while external links provide source and attribution only. When an exact, reuse-cleared photograph is still unsourced, the card says “Photo needed” and its info dialog records any qualified source leads instead of borrowing a different chip’s picture.
 
 After changing page copy in `data/ui.json` or the layout template, run `node scripts/render-site.mjs` to refresh the static `index.html`. The page keeps its introductory copy, metadata and fallback links even when JavaScript cannot load. `node scripts/check-site.mjs` checks that the generated page matches its JSON sources.
 

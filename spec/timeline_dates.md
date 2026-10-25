@@ -88,4 +88,4 @@ Intel 82230/82231: **Documented by 1988**, Intel 240017-002, August 1988, printe
 
 ## Early AMD within-year order
 
-The owner specified Am9300 before Am2501. Retain both existing 1970 documentation bounds and place Am9300 first in catalog order; no precise introduction month/day is inferred. See [direct maker links](maker_row_links.md).
+Am9300 precedes the combined Am25xx series card, anchored by its Am2501 member. Retain both existing 1970 documentation bounds and place Am9300 first in catalog order; no precise introduction month/day is inferred. See [direct maker links](maker_row_links.md).

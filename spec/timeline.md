@@ -11,7 +11,7 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 - `data/system-options.json`: curated optional chip/card-to-computer profiles, evidence and qualifications.
 - `data/component-profiles.json`: explicit CPU variants for shared canonical issues and qualified later reconstruction components; each must match a native completion dependency.
 - `data/stages.json`: public legend, labels, symbols and colors. Labels are rendered from this file.
-- `images/`: local photographs; per-image Commons attribution is in `data/photo-credits.json`.
+- `images/`: local photographs; per-image attribution is in `data/photo-credits.json`.
 - `scripts/`: status synchronization, photo import, preview server and verification.
 
 Run `node scripts/serve.mjs`, then open `http://127.0.0.1:4173`. A static HTTP server is required because browsers restrict JSON fetches from `file:` URLs. Deployment consists of `index.html`, `assets/`, `data/`, and `images/`; do not copy submodule checkouts, `.git`, scripts, scratch files or credentials into a public deployment directory.
@@ -146,3 +146,5 @@ An entry may declare `image: {status: "needed", representative: false, sourceLea
 The early AMD audit and source decisions are in [amd_photos.md](amd_photos.md). Importer `requireExact` entries fail without an exact match; the generic AMD brand fallback is removed. `photo-regression.test.mjs` checks that distinct AMD chip cards do not reuse identical image bytes.
 
 The MCS-4 card uses a closed Intel C4004 package. The 6502, Motorola 6809/68000, Intel 8087/80286/80287 and AMD 80186-family cards also use visually inspected package photographs, with the photographed variants named in their JSON captions and individual credits. Exact-file importer selections and `requireExact` protect these choices from reverting to die photos. Package markings and photo dates do not replace the historical date sources.
+
+A coherent chip series may have `series.members`, each with `part`, `role`, a qualified `year` and HTTPS `source`. Keep one card and issue for that series; anchor its year to the earliest documented member, and expose later member dates in the info dialog. This is not a claim that independent series members form a motherboard chipset or are interchangeable. The Am25xx consolidation retains stable entry ID `amd_am2501` and removes the separate Am2505 card.

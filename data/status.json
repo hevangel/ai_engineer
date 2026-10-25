@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T22:48:50.957Z",
+  "syncedAt": "2026-10-25T06:31:49.037Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -45,27 +45,6 @@
       "updatedAt": "2026-10-24T01:30:59Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/4"
     },
-    "amd_am2501": {
-      "stage": "planned",
-      "coverage": {
-        "collected": null,
-        "cleaned": null,
-        "total": null,
-        "percent": null
-      },
-      "build": {
-        "status": "unknown",
-        "evidence": null
-      },
-      "verification": {
-        "ai": null,
-        "human": null
-      },
-      "issueState": "open",
-      "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:26:13Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/5"
-    },
     "amd_am9300": {
       "stage": "planned",
       "coverage": {
@@ -87,7 +66,7 @@
       "updatedAt": "2026-10-24T01:26:15Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/11"
     },
-    "amd_am2505": {
+    "amd_am2501": {
       "stage": "planned",
       "coverage": {
         "collected": null,
@@ -105,8 +84,8 @@
       },
       "issueState": "open",
       "projectStatus": "Todo",
-      "updatedAt": "2026-10-24T01:26:13Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/6"
+      "updatedAt": "2026-10-25T06:31:36Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/5"
     },
     "amd_am3101": {
       "stage": "planned",

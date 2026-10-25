@@ -19,8 +19,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | Key | Issue | Kind | Blocked by |
 | --- | --- | --- | --- |
 | ttl_74_series | [[Chip] 74-series logic](https://github.com/hevangel/ai_engineer/issues/4) | chip | — |
-| amd_am2501 | [[Chip] amd am2501](https://github.com/hevangel/ai_engineer/issues/5) | chip | — |
-| amd_am2505 | [[Chip] amd am2505](https://github.com/hevangel/ai_engineer/issues/6) | chip | — |
+| amd_am2501 (Am25xx series) | [[Chip] AMD Am25xx series](https://github.com/hevangel/ai_engineer/issues/5) | chip | — |
 | amd_am29xx | [[Chip] AMD Am29xx series](https://github.com/hevangel/ai_engineer/issues/7) | chip | — |
 | amd_am3101 | [[Chip] amd am3101](https://github.com/hevangel/ai_engineer/issues/8) | chip | — |
 | amd_am9080 | [[Chip] amd am9080](https://github.com/hevangel/ai_engineer/issues/9) | chip | — |
@@ -276,3 +275,7 @@ The IBM/AMD table includes the retained Model 25 SX issue identities and all new
 - [[Chipset] CHIPS NEAT CS8221 — 82C211 / 82C212 / 82C215 / 82C206](https://github.com/hevangel/ai_engineer/issues/204): 82C211, 82C212, 82C215, 82C206; Todo / Chips, one public card.
 
 See [chipsets.md](chipsets.md). No factory-board links are inferred from AT compatibility.
+
+## Am25xx series consolidation
+
+Issue #5 is the sole active Am25xx series tracker and maps to one timeline card with Am2501 and Am2505 member records. Former issue [#6](https://github.com/hevangel/ai_engineer/issues/6) is closed as superseded (not implemented) and its project item is archived. Neither issue had native blocked-by or blocking edges to transfer. The stable catalog ID `amd_am2501` is retained; its public title is AMD Am25xx series, and its earliest documented member anchors the card to 1970. Am2505 retains its documented-by-1971 qualification in the member ledger.
