@@ -175,17 +175,63 @@
     {
       "id": "unknown",
       "label": "Build unreported",
-      "icon": "−"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10,
+            "stroke-dasharray": "2.4 4.67"
+          }
+        ]
+      },
+      "color": "#8a949b"
     },
     {
       "id": "passing",
       "label": "Build passing",
-      "icon": "✓"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10
+          },
+          {
+            "tag": "path",
+            "d": "m9 12 2 2 4-4"
+          }
+        ]
+      },
+      "color": "#237647"
     },
     {
       "id": "failing",
       "label": "Build failing",
-      "icon": "!"
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "circle",
+            "cx": 12,
+            "cy": 12,
+            "r": 10
+          },
+          {
+            "tag": "path",
+            "d": "m15 9-6 6"
+          },
+          {
+            "tag": "path",
+            "d": "m9 9 6 6"
+          }
+        ]
+      },
+      "color": "#b32631"
     }
   ],
   "coverageLabel": "Source coverage",

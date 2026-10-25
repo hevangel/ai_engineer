@@ -31,8 +31,9 @@ for(const entry of catalog.entries){
 for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(connections.links.some(link=>link.source===entry.id&&catalog.entries.some(target=>target.id===link.target&&target.kind==='system')),'ISA card has no computer bus connection: '+entry.id);
 assert.equal(Object.keys(snapshot.statuses).length,ids.size,'Stale snapshot entries');
 const iconShapes={path:['d'],rect:['x','y','width','height','rx'],circle:['cx','cy','r'],line:['x1','y1','x2','y2'],polyline:['points']};
-const checkIcon=(icon,name)=>{assert(/^0 0 \d+ \d+$/.test(icon?.viewBox),'Missing icon viewBox: '+name);assert(icon.shapes?.length,'Empty icon: '+name);for(const {tag,...attributes}of icon.shapes){assert(iconShapes[tag],'Unsupported icon shape in '+name+': '+tag);assert.deepEqual(Object.keys(attributes).filter(key=>!iconShapes[tag].includes(key)),[],'Unexpected icon attribute in '+name+': '+tag);for(const key of iconShapes[tag])assert(attributes[key]!==undefined,'Missing icon attribute in '+name+': '+tag+' '+key);}};
+const checkIcon=(icon,name)=>{assert(/^0 0 \d+ \d+$/.test(icon?.viewBox),'Missing icon viewBox: '+name);assert(icon.shapes?.length,'Empty icon: '+name);for(const {tag,...attributes}of icon.shapes){assert(iconShapes[tag],'Unsupported icon shape in '+name+': '+tag);assert.deepEqual(Object.keys(attributes).filter(key=>!iconShapes[tag].includes(key)&&key!=='stroke-dasharray'),[],'Unexpected icon attribute in '+name+': '+tag);for(const key of iconShapes[tag])assert(attributes[key]!==undefined,'Missing icon attribute in '+name+': '+tag+' '+key);}};
 for(const stage of vocabulary.stages)checkIcon(stage.icon,'stage '+stage.id);
+for(const build of vocabulary.builds){checkIcon(build.icon,'build '+build.id);assert(/^#[0-9a-f]{6}$/i.test(build.color),'Missing build color: '+build.id);}
 const ui=await json('data/ui.json'),source=await fs.readFile(path.join(root,'assets/timeline.js'),'utf8');
 const lookup=key=>key.split('.').reduce((node,part)=>node?.[part],ui);
 const keys=new Set([...source.matchAll(/\btext\('([A-Za-z0-9_.]+)'[,)]/g)].map(match=>match[1]));
