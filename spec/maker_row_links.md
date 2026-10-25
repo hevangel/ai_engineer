@@ -7,3 +7,5 @@ Adjacent visible chips from one maker on the same year/category row connect dire
 Compute adjacency from actual rendered columns inside each width-fitting pass, after filtering. At one column the same link returns to the gutter. Preserve bidirectional clicking, Enter and arrow-key navigation; transparent rectangular hit areas give horizontal segments a usable mouse/keyboard target. Show wires and Maker lineage control these links normally. Company colors and canonical issue/status data remain unchanged.
 
 `assets/maker-layout.js` supplies adjacency and horizontal geometry. Run `node --test scripts/maker-layout.test.mjs` with the existing suite. Verify the AMD 1970 order, a two/three-column direct segment, the one-column fallback, filters, endpoint/keyboard navigation and the absence of extra row-track spacing.
+
+The same adjacent-cell rule covers Am2505 → Am3101 in the 1971 chip row. Their existing order and qualified dates remain unchanged; check this pair in the unfiltered overview, not only the AMD filter.
