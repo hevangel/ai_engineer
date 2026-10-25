@@ -160,7 +160,8 @@
           "url": "https://github.com/hevangel/ai_engineer/issues/7",
           "note": "Planned Am29xx implementation family"
         }
-      ]
+      ],
+      "summary": "DEC's 1959 18-bit transistor computer, rebuilt here with Am29xx bit-slice parts"
     },
     {
       "id": "ttl_74_series",
@@ -183,7 +184,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Fairchild_F74LS181PC_bottom.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Standard 7400-series TTL logic gates, flip-flops and counters"
     },
     {
       "id": "amd_am9300",
@@ -206,7 +208,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "4-bit universal shift register"
     },
     {
       "id": "amd_am2501",
@@ -229,7 +232,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Logic counter, AMD's first proprietary product (1970)"
     },
     {
       "id": "amd_am2505",
@@ -252,7 +256,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Fast multiplier, AMD's best-selling product of 1971"
     },
     {
       "id": "amd_am3101",
@@ -275,7 +280,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "64-bit bipolar static RAM, AMD's version of the Intel 3101"
     },
     {
       "id": "intel_mcs4",
@@ -298,7 +304,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_open.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Intel's first microprocessor set: the 4004 CPU with its ROM, RAM and I/O chips"
     },
     {
       "id": "system_busicom_141pf",
@@ -320,7 +327,8 @@
         "alt": "Busicom 141 PF 1.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Busicom_141_PF_1.jpg"
-      }
+      },
+      "summary": "Busicom printing desktop calculator, the first product built around the Intel 4004"
     },
     {
       "id": "intel_mcs8",
@@ -343,7 +351,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_8008.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Intel's 8-bit 8008 CPU and its support chips"
     },
     {
       "id": "system_micral_n",
@@ -365,7 +374,8 @@
         "alt": "Micral N prototype-PR082-IMG 5371-white.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Micral_N_prototype-PR082-IMG_5371-white.jpg"
-      }
+      },
+      "summary": "French 1973 microcomputer built around the Intel 8008"
     },
     {
       "id": "amd_am9102",
@@ -388,7 +398,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "1024 x 1-bit static RAM"
     },
     {
       "id": "intel_8080",
@@ -411,7 +422,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_8080_1.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Intel's 8-bit microprocessor, the CPU of the Altair 8800"
     },
     {
       "id": "motorola_6800",
@@ -434,7 +446,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_6800_proto_board.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Motorola's 8-bit microprocessor that runs from a single 5 V supply"
     },
     {
       "id": "mos_6502_family",
@@ -457,7 +470,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Low-cost 8-bit CPU family used in the Apple II, Atari 2600 and Commodore 64"
     },
     {
       "id": "amd_am29xx",
@@ -480,7 +494,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "AMD's 4-bit bit-slice processor building blocks, such as the Am2901 ALU"
     },
     {
       "id": "amd_am9080",
@@ -503,7 +518,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:AMD_C8080A.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "AMD's version of the Intel 8080 8-bit microprocessor"
     },
     {
       "id": "intel_8251",
@@ -526,7 +542,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--C8251.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable serial communication interface (USART)"
     },
     {
       "id": "intel_8253_8254",
@@ -549,7 +566,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--C8253.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable interval timer used for system timing"
     },
     {
       "id": "intel_8255",
@@ -572,7 +590,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--D8255.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable parallel I/O interface"
     },
     {
       "id": "mos_6530",
@@ -597,7 +616,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "MOS’s August 1975 MCS6500 Hardware Manual describes the MCS6530 on introductory page iii. Exact first shipment is not established here."
+      "dateNote": "MOS’s August 1975 MCS6500 Hardware Manual describes the MCS6530 on introductory page iii. Exact first shipment is not established here.",
+      "summary": "ROM, RAM, I/O and timer in one chip, used in the KIM-1"
     },
     {
       "id": "card_sio",
@@ -621,7 +641,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:Altairinside.JPG"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "s100"
+      "bus": "s100",
+      "summary": "Altair 88-SIO serial I/O board for connecting a terminal"
     },
     {
       "id": "system_altair_8800",
@@ -643,7 +664,8 @@
         "alt": "HomeComputerMuseum - MITS Altair 8800.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:HomeComputerMuseum_-_MITS_Altair_8800.jpg"
-      }
+      },
+      "summary": "MITS 1975 Intel 8080 kit computer that started the personal-computer era"
     },
     {
       "id": "intel_8259",
@@ -666,7 +688,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_d8259a_observe.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable interrupt controller"
     },
     {
       "id": "amd_am9511",
@@ -689,7 +712,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:AM9511-1_Arithmetic_Co-Processor_side.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Arithmetic processor that adds floating-point maths to a CPU"
     },
     {
       "id": "apple_ii_chips",
@@ -712,7 +736,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Interface_Cards_Motherboard_and_Power_Supply_Apple2.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Support chips on the Apple II motherboard"
     },
     {
       "id": "tia",
@@ -737,7 +762,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "Anchored to the original 1977 Atari VCS chipset. Earlier development documents and later TIA revisions do not establish one introduction date for every support device."
+      "dateNote": "Anchored to the original 1977 Atari VCS chipset. Earlier development documents and later TIA revisions do not establish one introduction date for every support device.",
+      "summary": "Atari 2600 TIA video and audio chip and its remaining support devices"
     },
     {
       "id": "intel_8273",
@@ -760,7 +786,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable HDLC/SDLC serial protocol controller"
     },
     {
       "id": "intel_8275",
@@ -783,7 +810,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable CRT controller for raster-scan text displays"
     },
     {
       "id": "intel_8279",
@@ -806,7 +834,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:8279_IMG_0813.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable keyboard and display interface"
     },
     {
       "id": "crtc6845",
@@ -831,7 +860,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "preview",
-      "dateNote": "Motorola’s MC6845 advance-information sheet is copyrighted 1977. This documents the original controller, not every later compatible variant."
+      "dateNote": "Motorola’s MC6845 advance-information sheet is copyrighted 1977. This documents the original controller, not every later compatible variant.",
+      "summary": "Motorola 6845 CRT controller, the video timing chip of early PC display cards"
     },
     {
       "id": "mos_6522",
@@ -856,7 +886,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "The Smithsonian catalogs an original MOS MCS6522 preliminary datasheet dated March 1977. This is a documentation bound rather than an exact shipping date."
+      "dateNote": "The Smithsonian catalogs an original MOS MCS6522 preliminary datasheet dated March 1977. This is a documentation bound rather than an exact shipping date.",
+      "summary": "Versatile Interface Adapter with two parallel ports, timers and a shift register"
     },
     {
       "id": "mos_6532",
@@ -881,7 +912,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "The Smithsonian catalogs MOS’s MCS6532 datasheet dated February 1977. The previous 1982 catalog bound was too late to place the RIOT used in the original 1977 Atari VCS."
+      "dateNote": "The Smithsonian catalogs MOS’s MCS6532 datasheet dated February 1977. The previous 1982 catalog bound was too late to place the RIOT used in the original 1977 Atari VCS.",
+      "summary": "RIOT combining 128 bytes of RAM, I/O ports and a timer"
     },
     {
       "id": "system_apple_ii",
@@ -903,7 +935,8 @@
         "alt": "Apple II, 1977, Computer History Museum.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_II,_1977,_Computer_History_Museum.jpg"
-      }
+      },
+      "summary": "Apple's 1977 6502-based personal computer with eight expansion slots"
     },
     {
       "id": "system_atari_2600",
@@ -925,7 +958,8 @@
         "alt": "Atari-2600-Wood-4Sw-Set.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
-      }
+      },
+      "summary": "Atari's 1977 cartridge game console, the Video Computer System"
     },
     {
       "id": "amd_am9517",
@@ -948,7 +982,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Multimode direct-memory-access (DMA) controller"
     },
     {
       "id": "intel_8086",
@@ -971,7 +1006,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_C8086.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Intel's 16-bit microprocessor that defined the x86 architecture"
     },
     {
       "id": "rtc146818",
@@ -996,7 +1032,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "preview",
-      "dateNote": "Motorola’s 1978 data book previews MC146818/MC146819 on page 6-7, with proposed packages. This dates the family preview, not the later production package fitted in the IBM AT."
+      "dateNote": "Motorola’s 1978 data book previews MC146818/MC146819 on page 6-7, with proposed packages. This dates the family preview, not the later production package fitted in the IBM AT.",
+      "summary": "Motorola MC146818 real-time clock with battery-backed RAM"
     },
     {
       "id": "motorola_6809",
@@ -1019,7 +1056,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_6809_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Motorola's advanced 8-bit CPU with hardware multiply and position-independent code"
     },
     {
       "id": "card_diskii",
@@ -1043,7 +1081,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:Disk_II_Floppy_Disk_Subsystem.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "apple_ii"
+      "bus": "apple_ii",
+      "summary": "Apple Disk II floppy controller card for the Apple II"
     },
     {
       "id": "system_space_invaders",
@@ -1065,7 +1104,8 @@
         "alt": "Space Invaders.JPG",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Space_Invaders.JPG"
-      }
+      },
+      "summary": "Taito's 1978 arcade board built around an Intel 8080"
     },
     {
       "id": "intel_8237",
@@ -1088,7 +1128,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Siemens_SAB8237A5P.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable DMA controller used in the IBM PC"
     },
     {
       "id": "motorola_68000",
@@ -1111,7 +1152,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_68000_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Motorola's 16/32-bit CPU, used in the original Macintosh"
     },
     {
       "id": "intel_8088",
@@ -1136,7 +1178,8 @@
         "caption": "Intel P8088-6; a later speed grade illustrating the 8088 family."
       },
       "dateBasis": "introduced",
-      "dateNote": "The 8088 has an 8-bit external data bus and a different pinout from the 16-bit-bus 8086. IBM PC and XT use this variant; the original PS/2 Model 30 uses 8086. The photographed P8088-6 is a later speed-grade package, not a dated launch specimen."
+      "dateNote": "The 8088 has an 8-bit external data bus and a different pinout from the 16-bit-bus 8086. IBM PC and XT use this variant; the original PS/2 Model 30 uses 8086. The photographed P8088-6 is a later speed-grade package, not a dated launch specimen.",
+      "summary": "Intel's 8086 variant with an 8-bit bus, the CPU of the IBM PC"
     },
     {
       "id": "intel_8087",
@@ -1159,7 +1202,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_8087_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Numeric coprocessor that adds floating-point maths to the 8086 and 8088"
     },
     {
       "id": "intel_8272",
@@ -1182,7 +1226,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KA1845VZh1_Kvazar.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Floppy disk controller"
     },
     {
       "id": "mos_6560",
@@ -1207,7 +1252,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "The original MOS 6560/6561 datasheet is dated February 1980. This replaces a later 1983 manual-printing bound; it does not assert the first design or shipment date."
+      "dateNote": "The original MOS 6560/6561 datasheet is dated February 1980. This replaces a later 1983 manual-printing bound; it does not assert the first design or shipment date.",
+      "summary": "VIC video and sound chip of the Commodore VIC-20"
     },
     {
       "id": "mos_6526",
@@ -1230,7 +1276,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:MOS_6526_2983_top.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Complex Interface Adapter with parallel ports, timers and a time-of-day clock"
     },
     {
       "id": "mac_scc",
@@ -1249,13 +1296,15 @@
       },
       "image": {
         "src": "images/mac_scc.jpg",
-        "alt": "Macintosh II motherboard.jpg",
+        "alt": "Zilog Z0803006PSC Z-SCC (Z8030) serial communications controller in a 40-pin DIP package",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:ZILOG_Z0803006_SCC.jpg",
+        "caption": "Zilog Z8030 Z-BUS SCC, the multiplexed-bus sibling of the Z8530. The Z8530 itself is not pictured."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "introduced",
-      "dateNote": "Zilog explicitly dates introduction of its SCC family to 1981. The cited later CMOS datasheet records that history; its own publication year is not the family’s launch year."
+      "dateNote": "Zilog explicitly dates introduction of its SCC family to 1981. The cited later CMOS datasheet records that history; its own publication year is not the family’s launch year.",
+      "summary": "Zilog Z8530 serial communications controller used for Macintosh serial ports"
     },
     {
       "id": "card_cga",
@@ -1279,7 +1328,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:IBM_Color_Graphics_Adapter.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "IBM's 1981 Color/Graphics Adapter for the PC"
     },
     {
       "id": "system_ibm_pc",
@@ -1301,7 +1351,8 @@
         "alt": "IBM PC 5150.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg"
-      }
+      },
+      "summary": "IBM's 1981 Intel 8088 personal computer"
     },
     {
       "id": "intel_8042",
@@ -1326,7 +1377,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "Intel’s UPI-42 (8042) appears in the August 1982 new-product notice. The earlier MCS-48 family launch does not date this specific controller."
+      "dateNote": "Intel’s UPI-42 (8042) appears in the August 1982 new-product notice. The earlier MCS-48 family launch does not date this specific controller.",
+      "summary": "Keyboard controller microcontroller used in PC AT-class machines"
     },
     {
       "id": "intel_80286",
@@ -1349,7 +1401,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_80286_die2.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Intel's 16-bit CPU with protected mode, used in the IBM PC AT"
     },
     {
       "id": "intel_80287",
@@ -1372,7 +1425,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Intel_80287_die2.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Floating-point coprocessor for the 80286"
     },
     {
       "id": "mos_6567",
@@ -1407,7 +1461,8 @@
           "url": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
           "note": "Commodore schematic 326106, VIC-II and SID"
         }
-      ]
+      ],
+      "summary": "VIC-II video chip of the Commodore 64 (NTSC)"
     },
     {
       "id": "mos_6581",
@@ -1442,7 +1497,8 @@
           "url": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
           "note": "Commodore schematic 326106, VIC-II and SID"
         }
-      ]
+      ],
+      "summary": "SID sound synthesizer chip of the Commodore 64"
     },
     {
       "id": "system_c64",
@@ -1464,7 +1520,8 @@
         "alt": "Commodore-64-Computer-FL.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg"
-      }
+      },
+      "summary": "Commodore's 1982 best-selling 8-bit home computer"
     },
     {
       "id": "amd_80186",
@@ -1490,7 +1547,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:AMD_80C186_SoC_die.JPG",
         "caption": "Representative AMD 80C186 die; not the original 1983 advance-information device."
-      }
+      },
+      "summary": "AMD's 80186 and 80188 16-bit CPUs with built-in peripherals"
     },
     {
       "id": "amd_80286",
@@ -1515,7 +1573,8 @@
         "alt": "AMD 80286 12S CPU.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:AMD_80286_12S_CPU.jpg"
-      }
+      },
+      "summary": "AMD's version of Intel's 80286 16-bit CPU"
     },
     {
       "id": "amd_8086",
@@ -1540,7 +1599,8 @@
         "alt": "Ic-photo-AMD--P8086-2--(8086-CPU).JPG",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8086-2--(8086-CPU).JPG"
-      }
+      },
+      "summary": "AMD's version of the Intel 8086 16-bit CPU"
     },
     {
       "id": "amd_8088",
@@ -1565,7 +1625,8 @@
         "alt": "Ic-photo-AMD--P8088-2-(8088-CPU).png",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8088-2-(8088-CPU).png"
-      }
+      },
+      "summary": "AMD's version of the Intel 8088 CPU"
     },
     {
       "id": "apple_iie_iou",
@@ -1588,7 +1649,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:344-0020_Apple_8317_die_240nmpp.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Apple IIe custom I/O unit handling keyboard, game I/O and video switches"
     },
     {
       "id": "apple_iie_mmu",
@@ -1611,7 +1673,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe_1986_Mobo.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Apple IIe memory management unit that maps ROM and banked RAM"
     },
     {
       "id": "apple_iie_pal",
@@ -1634,7 +1697,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe_1986_Mobo.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable logic chip that generates the Apple IIe's timing signals"
     },
     {
       "id": "nes_parts",
@@ -1659,7 +1723,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "Anchored to Nintendo’s 1983 Japanese Famicom launch. Later NES regional silicon, cartridge mappers and revisions are not all 1983 devices."
+      "dateNote": "Anchored to Nintendo’s 1983 Japanese Famicom launch. Later NES regional silicon, cartridge mappers and revisions are not all 1983 devices.",
+      "summary": "Ricoh CPU, picture and audio chips of the NES/Famicom, plus cartridge support"
     },
     {
       "id": "card_xtdisk",
@@ -1683,7 +1748,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "Xebec controller that gave the IBM PC XT its hard disk"
     },
     {
       "id": "system_apple_iie",
@@ -1705,7 +1771,8 @@
         "alt": "Apple IIe.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe.jpg"
-      }
+      },
+      "summary": "Apple's 1983 enhanced Apple II with 64 KB of RAM"
     },
     {
       "id": "system_ibm_pc_xt_5160",
@@ -1727,7 +1794,8 @@
         "alt": "IBM PC XT color.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
-      }
+      },
+      "summary": "IBM's 1983 PC variant with a hard disk and eight expansion slots"
     },
     {
       "id": "system_nes",
@@ -1749,7 +1817,8 @@
         "alt": "Nintendo Entertainment System - Mattel Version (42532353740).jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Nintendo_Entertainment_System_-_Mattel_Version_(42532353740).jpg"
-      }
+      },
+      "summary": "Nintendo's 8-bit console, sold as the Famicom in Japan"
     },
     {
       "id": "pc_at_glue",
@@ -1774,7 +1843,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "The original IBM AT support circuits anchor this mixed family in 1984. Later 386 chipsets are separate implementation profiles, not 1984 parts."
+      "dateNote": "The original IBM AT support circuits anchor this mixed family in 1984. Later 386 chipsets are separate implementation profiles, not 1984 parts.",
+      "summary": "Support chips that tie together the IBM PC AT's CPU, memory and I/O"
     },
     {
       "id": "ega_chip",
@@ -1799,7 +1869,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "IBM’s EGA technical-reference section, dated August 2, 1984, documents the original controller chipset. Later EGA-compatible implementations have separate dates."
+      "dateNote": "IBM’s EGA technical-reference section, dated August 2, 1984, documents the original controller chipset. Later EGA-compatible implementations have separate dates.",
+      "summary": "IBM's Enhanced Graphics Adapter controller chipset"
     },
     {
       "id": "mac_floppy",
@@ -1818,13 +1889,15 @@
       },
       "image": {
         "src": "images/mac_floppy.jpg",
-        "alt": "Macintosh II motherboard.jpg",
+        "alt": "Apple 344S0061-A SWIM floppy disk controller in a VLSI PLCC package, marked Apple 88",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Pack_top_–_Apple_344s0061-a_–_John_McMaster.jpg",
+        "caption": "Apple SWIM (344S0061-A, made by VLSI), the later chip of this family. The earlier IWM is not pictured."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "Apple identifies the IWM in the original Macintosh 128K. This is an in-system availability bound; the later SWIM is not assigned a 1984 launch date."
+      "dateNote": "Apple identifies the IWM in the original Macintosh 128K. This is an in-system availability bound; the later SWIM is not assigned a 1984 launch date.",
+      "summary": "Apple's Integrated Woz Machine and SWIM floppy controllers"
     },
     {
       "id": "mac_glue",
@@ -1843,13 +1916,15 @@
       },
       "image": {
         "src": "images/mac_glue.jpg",
-        "alt": "Macintosh II motherboard.jpg",
+        "alt": "Original Macintosh logic board with its labeled PAL chips LAG, TSM, BMU0, BMU1 and TSG beside the IWM and Z8530",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh-motherboard.jpg",
+        "caption": "Original 1984 Macintosh logic board; its PAL glue logic is labeled on the board."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "The original Macintosh’s PAL logic anchors this family. BBU, GLUE, ASC and later I/O processors belong to subsequent machine profiles."
+      "dateNote": "The original Macintosh’s PAL logic anchors this family. BBU, GLUE, ASC and later I/O processors belong to subsequent machine profiles.",
+      "summary": "Custom PALs and logic that glue the original Macintosh together"
     },
     {
       "id": "mos_7360",
@@ -1874,7 +1949,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "Commodore’s October 1984 C16 service manual lists the 7360 TED and its 8360 substitute. The bound does not date every TED revision."
+      "dateNote": "Commodore’s October 1984 C16 service manual lists the 7360 TED and its 8360 substitute. The bound does not date every TED revision.",
+      "summary": "TED video, sound and timer chip of the Commodore 16 and Plus/4"
     },
     {
       "id": "motorola_68020",
@@ -1897,7 +1973,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_68020_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Motorola's first fully 32-bit 68000-family CPU"
     },
     {
       "id": "motorola_6888x",
@@ -1920,7 +1997,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_68881_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Floating-point coprocessors for the 68020 and 68030"
     },
     {
       "id": "mac_scsi",
@@ -1955,7 +2033,8 @@
           "url": "https://bitsavers.trailing-edge.com/pdf/apple/file_server/File_Server_Theory_of_Operation_Apr85.pdf",
           "note": "Apple File Server theory of operation, April 1985"
         }
-      ]
+      ],
+      "summary": "NCR 5380 SCSI controller used for Macintosh hard-disk ports"
     },
     {
       "id": "card_ega",
@@ -1979,7 +2058,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:EGA_card.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "IBM's 1984 Enhanced Graphics Adapter for the PC"
     },
     {
       "id": "system_ibm_at_5170",
@@ -2001,7 +2081,8 @@
         "alt": "Restoring an IBM AT 5170.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Restoring_an_IBM_AT_5170.jpg"
-      }
+      },
+      "summary": "IBM's 1984 80286-based PC AT"
     },
     {
       "id": "system_mac_128k",
@@ -2023,7 +2104,8 @@
         "alt": "Computer macintosh 128k, 1984 (all about Apple onlus).jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Computer_macintosh_128k,_1984_(all_about_Apple_onlus).jpg"
-      }
+      },
+      "summary": "Apple's original 1984 Macintosh with a 68000 and 128 KB of RAM"
     },
     {
       "id": "system_mac_512k",
@@ -2045,7 +2127,8 @@
         "alt": "Apple Macintosh 512K Desktop.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_Macintosh_512K_Desktop.jpg"
-      }
+      },
+      "summary": "Macintosh with 512 KB of RAM, nicknamed the Fat Mac"
     },
     {
       "id": "intel_80386",
@@ -2070,7 +2153,8 @@
       },
       "description": "32-bit ISA and external data bus · original 386 / DX profile",
       "dateNote": "Intel introduced the original 80386 in 1985; the DX name distinguishes its 32-bit external bus from the later 16-bit-bus SX. The photographed 25 MHz package is a later speed grade.",
-      "dateBasis": "introduced"
+      "dateBasis": "introduced",
+      "summary": "Intel's first 32-bit x86 CPU"
     },
     {
       "id": "motorola_68851",
@@ -2093,7 +2177,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_68851_die.JPG"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "External paged memory management unit for the 68020"
     },
     {
       "id": "ym3812",
@@ -2116,7 +2201,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YM3812.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Yamaha OPL2 FM synthesis chip used on AdLib and early Sound Blaster cards"
     },
     {
       "id": "mac_adb",
@@ -2141,7 +2227,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "The original Apple IIgs provides the 1986 ADB anchor; Macintosh II and SE implementations follow in 1987. Individual controller revisions need their own dates."
+      "dateNote": "The original Apple IIgs provides the 1986 ADB anchor; Macintosh II and SE implementations follow in 1987. Individual controller revisions need their own dates.",
+      "summary": "Controllers for Apple Desktop Bus keyboards and mice"
     },
     {
       "id": "mos_8520",
@@ -2164,7 +2251,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Mos_8520_mcmaster_mz_mit20x.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Complex Interface Adapter of the Commodore Amiga"
     },
     {
       "id": "saa1099",
@@ -2187,7 +2275,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Philips SAA1099 six-channel sound generator"
     },
     {
       "id": "system_deskpro_386",
@@ -2209,7 +2298,8 @@
         "alt": "Compaq Deskpro 386 16Mhz.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Compaq_Deskpro_386_16Mhz.jpg"
-      }
+      },
+      "summary": "Compaq's 1986 desktop, the first PC built around the Intel 386"
     },
     {
       "id": "system_mac_plus",
@@ -2231,7 +2321,8 @@
         "alt": "Macintosh Plus interior 2.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Macintosh_Plus_interior_2.jpg"
-      }
+      },
+      "summary": "1986 Macintosh with 1 MB of RAM, SCSI and a double-sided floppy drive"
     },
     {
       "id": "intel_80387",
@@ -2256,7 +2347,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "introduced",
-      "dateNote": "Original 80387/DX introduction in 1987. The SX has a separate 16-bit host interface and timeline entry; neither is an interchangeable 80287."
+      "dateNote": "Original 80387/DX introduction in 1987. The SX has a separate 16-bit host interface and timeline entry; neither is an interchangeable 80287.",
+      "summary": "Floating-point coprocessor for the 80386DX"
     },
     {
       "id": "motorola_68030",
@@ -2279,7 +2371,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Motorola_68030_32-bit_microprocessor.jpg"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Motorola's 32-bit CPU with on-chip caches and a built-in MMU"
     },
     {
       "id": "vga_chip",
@@ -2304,7 +2397,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "IBM dates the PS/2 and its new VGA controller to 1987. Later VGA-compatible chips are subsequent family members."
+      "dateNote": "IBM dates the PS/2 and its new VGA controller to 1987. Later VGA-compatible chips are subsequent family members.",
+      "summary": "Video Graphics Array controller family introduced with the IBM PS/2"
     },
     {
       "id": "card_adlib",
@@ -2328,7 +2422,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:Adlib_sound_card_version_1.5.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "AdLib Music Synthesizer card with Yamaha OPL2 FM sound"
     },
     {
       "id": "card_vga",
@@ -2352,7 +2447,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:IBM_VGA_graphics_card.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "IBM's VGA display adapter for ISA PCs"
     },
     {
       "id": "card_nubus_video",
@@ -2378,7 +2474,8 @@
       "description": "Expansion card · bus, components & software",
       "dateBasis": "documented",
       "dateNote": "Apple’s Macintosh II Video Card and Expansion Kit product sheet is dated March 1987. Later NuBus video adapters are separate card profiles.",
-      "bus": "nubus"
+      "bus": "nubus",
+      "summary": "NuBus video card for the Macintosh II family"
     },
     {
       "id": "system_ibm_ps2_model30",
@@ -2400,7 +2497,8 @@
         "alt": "IBM PS2 (R) model 30 (white background).jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_(R)_model_30_(white_background).jpg"
-      }
+      },
+      "summary": "IBM's 1987 PS/2 desktop with an 8086 and an ISA bus"
     },
     {
       "id": "system_ps2_model80",
@@ -2422,7 +2520,8 @@
         "alt": "IBM PS2 (R) model 30 (white background).jpg",
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_(R)_model_30_(white_background).jpg"
-      }
+      },
+      "summary": "IBM's 1987 PS/2 tower with a 386 and the Micro Channel bus"
     },
     {
       "id": "system_mac_ii",
@@ -2444,7 +2543,8 @@
         "alt": "MacII.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
-      }
+      },
+      "summary": "Apple's 1987 modular Macintosh with a 68020 and NuBus slots"
     },
     {
       "id": "system_mac_se",
@@ -2466,7 +2566,8 @@
         "alt": "Macintosh SE cropped.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Macintosh_SE_cropped.jpg"
-      }
+      },
+      "summary": "Compact 1987 Macintosh with a 68000 and one expansion slot"
     },
     {
       "id": "neat_cs8221",
@@ -2511,7 +2612,8 @@
             "role": "Integrated peripherals controller"
           }
         ]
-      }
+      },
+      "summary": "Four-chip CHIPS NEAT chipset for AT-class motherboards"
     },
     {
       "id": "intel_80386sx",
@@ -2536,7 +2638,8 @@
         "alt": "I386SX.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:I386SX.jpg"
-      }
+      },
+      "summary": "Intel's 386 with a 16-bit bus for lower-cost systems"
     },
     {
       "id": "intel_80387sx",
@@ -2561,7 +2664,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "documented",
-      "dateNote": "Intel datasheet 240225-002, November 1988, printed page 4-450 (PDF page 968) in the 1989 handbook explicitly documents the 80387SX and 68-pin PLCC host interface. This establishes a dated bound, not an exact shipment date; the DX family’s 1987 date is not reused for SX."
+      "dateNote": "Intel datasheet 240225-002, November 1988, printed page 4-450 (PDF page 968) in the 1989 handbook explicitly documents the 80387SX and 68-pin PLCC host interface. This establishes a dated bound, not an exact shipment date; the DX family’s 1987 date is not reused for SX.",
+      "summary": "Floating-point coprocessor for the 80386SX"
     },
     {
       "id": "system_ps2_model70",
@@ -2586,7 +2690,8 @@
         "alt": "IBM PS2 MCA Model 70, front view.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_MCA_Model_70,_front_view.jpg"
-      }
+      },
+      "summary": "IBM's 1988 PS/2 desktop with a 386 and the Micro Channel bus"
     },
     {
       "id": "system_mac_iix",
@@ -2608,7 +2713,8 @@
         "alt": "MacII.jpg",
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
-      }
+      },
+      "summary": "Macintosh II-class computer with a 68030 and a 68882 FPU"
     },
     {
       "id": "intel_at_chipset",
@@ -2645,7 +2751,8 @@
             "role": "Timer, clock, memory mapper, dual DMA and refresh/arbitration logic"
           }
         ]
-      }
+      },
+      "summary": "Intel 82230 and 82231 support chipset for AT-compatible systems"
     },
     {
       "id": "sb_dsp",
@@ -2670,7 +2777,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "Creative dates the original Sound Blaster to 1989. This anchors its original digital-audio controller profile; later Pro/16 DSPs retain their own dates."
+      "dateNote": "Creative dates the original Sound Blaster to 1989. This anchors its original digital-audio controller profile; later Pro/16 DSPs retain their own dates.",
+      "summary": "Digital-audio controller (DSP) family of Creative's Sound Blaster cards"
     },
     {
       "id": "card_roland_lapc_i",
@@ -2705,7 +2813,8 @@
           "url": "https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf",
           "note": "Roland IRQ and I/O-address setup notes"
         }
-      ]
+      ],
+      "summary": "Roland's 1989 MT-32-compatible synthesizer card for ISA PCs"
     },
     {
       "id": "card_sb",
@@ -2729,7 +2838,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
       },
       "description": "Expansion card · bus, components & software",
-      "bus": "isa"
+      "bus": "isa",
+      "summary": "Creative's Sound Blaster sound cards"
     },
     {
       "id": "system_mac_iici",
@@ -2751,7 +2861,8 @@
         "alt": "Macintosh IIci Rear Panel.png",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Macintosh_IIci_Rear_Panel.png"
-      }
+      },
+      "summary": "1989 Macintosh II-class computer with a 25 MHz 68030"
     },
     {
       "id": "system_mac_se30",
@@ -2773,7 +2884,8 @@
         "alt": "Apple Macintosh SE-30 computer (1989) clear background.png",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Apple_Macintosh_SE-30_computer_(1989)_clear_background.png"
-      }
+      },
+      "summary": "Compact Macintosh with a 68030 processor"
     },
     {
       "id": "snes_parts",
@@ -2798,7 +2910,8 @@
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
-      "dateNote": "Anchored to Nintendo’s 1990 Japanese Super Famicom launch. The US SNES followed in 1991; the representative 1CHIP board photograph depicts a later revision."
+      "dateNote": "Anchored to Nintendo’s 1990 Japanese Super Famicom launch. The US SNES followed in 1991; the representative 1CHIP board photograph depicts a later revision.",
+      "summary": "Super Nintendo's CPU, picture and audio processors and support chips"
     },
     {
       "id": "system_mac_iifx",
@@ -2820,7 +2933,8 @@
         "alt": "MacII.jpg",
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
-      }
+      },
+      "summary": "Apple's 1990 high-end Macintosh II-class computer with a 40 MHz 68030"
     },
     {
       "id": "system_snes",
@@ -2842,7 +2956,8 @@
         "alt": "SNES-Mod1-Console-Set.jpg",
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.jpg"
-      }
+      },
+      "summary": "Nintendo's 16-bit console, sold as the Super Famicom in Japan"
     },
     {
       "id": "amd_am386dx",
@@ -2868,7 +2983,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:AMD_AM386DX-40.jpg",
         "caption": "Motherboard with an AMD Am386DX-40; this later speed grade illustrates the 1991 family."
-      }
+      },
+      "summary": "AMD's 32-bit 386DX CPU"
     },
     {
       "id": "amd_am386sx",
@@ -2894,7 +3010,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Am386SX25.jpg",
         "caption": "AMD Am386SX/SXL-25 package; the pictured later SXL variant illustrates the SX family."
-      }
+      },
+      "summary": "AMD's 386 CPU with a 16-bit bus"
     },
     {
       "id": "ibm_386slc",
@@ -2920,7 +3037,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
         "caption": "IBM PS/2 family hosts; the individual 386SLC processor is not pictured."
-      }
+      },
+      "summary": "IBM's 386-class CPU with an 8 KB on-chip cache"
     },
     {
       "id": "ymf262",
@@ -2943,7 +3061,8 @@
         "representative": false,
         "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YMF262-M.png"
       },
-      "description": "Chip family · specification, RTL & independent verification"
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Yamaha OPL3, a four-operator FM synthesis chip"
     },
     {
       "id": "system_ps2_model35sx",
@@ -2969,7 +3088,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
         "caption": "Representative PS/2 family: PS/2E above Model 56 and Model 30-286; not a Model 35 SX."
-      }
+      },
+      "summary": "IBM PS/2 desktop with an Intel 386SX"
     },
     {
       "id": "system_pc_386sx",
@@ -2995,7 +3115,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_model_25_(1).jpg",
         "caption": "IBM Model 25 family chassis; the selected 1992 SX board revision is not confirmed in this photo."
-      }
+      },
+      "summary": "IBM PS/2 Model 25 desktop with a 16 MHz 386SX"
     },
     {
       "id": "system_ps2_model56slc",
@@ -3021,7 +3142,8 @@
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
         "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
-      }
+      },
+      "summary": "IBM PS/2 Model 56 with the IBM 386SLC CPU"
     }
   ],
   "buses": {
