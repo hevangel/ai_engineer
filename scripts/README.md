@@ -4,6 +4,7 @@ All commands run from the repository root with Node.js 22 or newer. No packages 
 
 | Command | Purpose |
 | --- | --- |
+| `node scripts/render-site.mjs` | Generate the static HTML shell from `templates/index.html` and `data/ui.json`; `--check` detects a stale page. |
 | `node scripts/publish-pages.mjs --ref HEAD` | Preview the committed static snapshot; add `--publish` only for an authorized release to `gh-pages`. |
 | `node scripts/serve.mjs` | Serve only the website files on `127.0.0.1:4173`; set `PORT` to choose another port. |
 | `node scripts/sync-timeline.mjs` | Refresh status JSON from public GitHub issues using authenticated `gh`. |
@@ -27,3 +28,7 @@ Run `node --test scripts/compatible-layout.test.mjs` when changing compatible pr
 ## Optional coprocessors
 
 See [the 287/387 profiles](../spec/coprocessors_287_387.md) for canonical issues, sourced DX/SX history, machine options and dotted left-side chip links. Optional chip links do not enter expansion-card buses or add native completion blockers.
+
+## Content sources
+
+All editable website data and copy belong under `data/`. `ui.json` supplies runtime wording and the generated HTML shell; `photo-credits.json` supplies per-image licensing; `image-import.json` supplies photo-search curation; `sync.json` supplies exported metadata and GitHub project-stage mapping. `check-site.mjs` validates these and compares the generated shell. The image importer reads the JSON rules and writes credits back to `data/photo-credits.json`; do not restore per-device lookup tables in JavaScript. See [the audit and maintenance contract](../spec/content_data.md).

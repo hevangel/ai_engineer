@@ -8,7 +8,7 @@ Roland’s [original owner’s manual](https://cdn.roland.com/assets/media/pdf/L
 
 The [manufacturer’s July 10, 1995 setup supplement](https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf), pages 1–2, identifies LAPC-1, address/IRQ conflicts and selectable settings. This later support note is not used to date the card’s launch. ROM, PCB and software revisions still need an implementation source inventory; inspecting these references does not establish cleaned-source percentages or verification.
 
-The [Commons photograph](https://commons.wikimedia.org/wiki/File:Lapc-1.jpg) is CC BY-SA 2.5. Commons infers author Atarian~commonswiki and own-work provenance from copyright claims; preserve that qualification and the license in `images/credits.json`. The local JPEG is optimized without cropping/recoloring.
+The [Commons photograph](https://commons.wikimedia.org/wiki/File:Lapc-1.jpg) is CC BY-SA 2.5. Commons infers author Atarian~commonswiki and own-work provenance from copyright claims; preserve that qualification and the license in `data/photo-credits.json`. The local JPEG is optimized without cropping/recoloring.
 
 ## Planned hosts and diagram
 

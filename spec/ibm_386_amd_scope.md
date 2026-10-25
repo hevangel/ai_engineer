@@ -65,6 +65,6 @@ Software requires the machine plus original-i386 toolchain #140 for complete nat
 
 ## Photo provenance and limits
 
-Each downloaded image retains its Commons source, creator and license in `images/credits.json`. CPU package/model identity is inspected separately from the year used for family placement. The AMD 80C186 die is a labeled representative of the earlier 80186-family catalog entry. A Model 25 family chassis is representative, not proof of the selected K00 board. The Model 70 photograph depicts an actual Model 70.
+Each downloaded image retains its Commons source, creator and license in `data/photo-credits.json`. CPU package/model identity is inspected separately from the year used for family placement. The AMD 80C186 die is a labeled representative of the earlier 80186-family catalog entry. A Model 25 family chassis is representative, not proof of the selected K00 board. The Model 70 photograph depicts an actual Model 70.
 
 An exact licensed Model 35 SX photo and individual IBM 386SLC package photo were not located. Their cards explicitly identify the actual representative PS/2 family host image. The Model 56 photo contains a Model 56 below a PS/2E, with another Model 30-286 below it; the SLC planar revision is unconfirmed. Captions and attribution expose that limitation. Replace these with exact licensed photographs when available; never relabel them as exact images.
