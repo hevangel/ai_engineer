@@ -215,7 +215,7 @@
     },
     {
       "id": "amd_am2501",
-      "title": "AMD Am2501",
+      "title": "AMD Am25xx series",
       "kind": "chip",
       "company": "amd",
       "year": 1970,
@@ -229,41 +229,31 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/5"
       },
       "image": {
-        "status": "needed",
+        "src": "images/amd_am25xx_package.jpg",
+        "alt": "AMD Am2501DC counter chip in its closed ceramic package, with the AMD logo and Am2501DC marking visible.",
         "representative": false,
-        "sourceLeads": [
+        "source": "https://x.com/kenshirriff/status/1218982024070955009",
+        "caption": "AMD Am2501DC, one member of the Am25xx series. This photographed device is dated 1985; the Am2505 multiplier is not pictured."
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Early AMD Am25xx logic: Am2501 binary counter and Am2505 multiplier",
+      "dateNote": "The series is anchored to the Am2501 documented-by-1970 profile. The Am2505 multiplier is documented by 1971 and is tracked as a separate member of this series. The photograph shows an Am2501DC device dated 1985, not the original 1970 package.",
+      "series": {
+        "members": [
           {
-            "label": "Am2501 reference shared by Ken Shirriff",
-            "url": "https://x.com/kenshirriff/status/1218982024070955009",
-            "note": "Candidate photograph; reuse permission has not been verified."
+            "part": "Am2501",
+            "role": "4-bit binary counter",
+            "year": 1970,
+            "source": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md"
+          },
+          {
+            "part": "Am2505",
+            "role": "4 × 2-bit two’s-complement multiplier",
+            "year": 1971,
+            "source": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md"
           }
         ]
-      },
-      "description": "Chip family · specification, RTL & independent verification",
-      "summary": "Logic counter, AMD's first proprietary product (1970)"
-    },
-    {
-      "id": "amd_am2505",
-      "title": "AMD Am2505",
-      "kind": "chip",
-      "company": "amd",
-      "year": 1971,
-      "dateLabel": "Documented by 1971",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
-      "era": "4",
-      "query": "AMD Am2505",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 6,
-        "url": "https://github.com/hevangel/ai_engineer/issues/6"
-      },
-      "image": {
-        "status": "needed",
-        "representative": false,
-        "sourceLeads": []
-      },
-      "description": "Chip family · specification, RTL & independent verification",
-      "summary": "Fast multiplier, AMD's best-selling product of 1971"
+      }
     },
     {
       "id": "amd_am3101",

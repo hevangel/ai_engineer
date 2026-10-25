@@ -1375,5 +1375,19 @@
     "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Chips%26technologies_82C206_IMGP0216_smial_wp.JPG",
     "changes": "JPEG resized and optimized locally; no crop or recoloring. Displayed with contain sizing.",
     "representative": true
+  },
+  "amd_am2501": {
+    "title": "AMD Am2501DC photograph shared by Ken Shirriff",
+    "creator": "Ken Shirriff (@kenshirriff), source post",
+    "credit": "Photograph supplied by the project owner from the linked source post.",
+    "license": "Reuse license not specified in source post",
+    "licenseUrl": null,
+    "rightsStatus": "unspecified",
+    "provenance": "user-supplied",
+    "source": "https://x.com/kenshirriff/status/1218982024070955009",
+    "downloadedFrom": "https://pbs.twimg.com/media/EOqxpz0U8AIOCds?format=jpg&name=small",
+    "changes": "Supplied JPEG downloaded unchanged; displayed with contain sizing.",
+    "representative": false,
+    "curated": true
   }
 }
