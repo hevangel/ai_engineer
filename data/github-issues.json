@@ -2392,5 +2392,15 @@
       "nodeId": "I_kwDOVUYpy88AAAABZvFSIw"
     },
     "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVCZg"
+  },
+  "hardwareSource": {
+    "repository": "hevangel/ai_hw_engineer",
+    "baseCommit": "4612e2c",
+    "branch": "codex/chip-family-roadmap",
+    "pullRequest": "https://github.com/hevangel/ai_hw_engineer/pull/67",
+    "limitations": [
+      "Existing file/report inventory does not imply current verification.",
+      "Generic Apple II mask ROM identity and additional NES/SNES peripheral/mapper parts remain research gaps."
+    ]
   }
 }
