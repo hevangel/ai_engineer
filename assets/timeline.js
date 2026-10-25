@@ -10,9 +10,20 @@ const text=(path,vars={})=>{const value=path.split('.').reduce((node,key)=>node?
 const element=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 const link=(text,url)=>{const a=element('a','',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
 async function read(url){const r=await fetch(url);if(!r.ok)throw Error(url+' returned HTTP '+r.status);return r.json();}
-function legend(){for(const stage of vocabulary.stages){const item=element('div','legend-item');const icon=element('span','stage-symbol',stage.icon);icon.style.setProperty('--stage',stage.color);const copy=element('div');copy.append(element('strong','',stage.label),element('p','',stage.description));item.append(icon,copy);$('stage-legend').append(item);const option=element('option','',stage.label);option.value=stage.id;$('stage').append(option);}for(const build of vocabulary.builds)$('build-legend').append(element('span','',build.icon+' '+build.label));$('coverage-explanation').textContent=vocabulary.coverageLabel+': '+vocabulary.coverageDescription;}
+function legend(){for(const stage of vocabulary.stages){const item=element('div','legend-item');const icon=element('span','stage-symbol');icon.append(iconNode(stage.icon));icon.style.setProperty('--stage',stage.color);const copy=element('div');copy.append(element('strong','',stage.label),element('p','',stage.description));item.append(icon,copy);$('stage-legend').append(item);const option=element('option','',stage.label);option.value=stage.id;$('stage').append(option);}for(const build of vocabulary.builds)$('build-legend').append(element('span','',build.icon+' '+build.label));$('coverage-explanation').textContent=vocabulary.coverageLabel+': '+vocabulary.coverageDescription;}
 function credit(entry){const data=credits[entry.id];$('photo-credit').replaceChildren();const image=element('img');image.src=entry.image.src;image.alt=entry.image.alt;$('photo-credit').append(image);if(data){$('photo-credit').append(element('p','',data.title),element('p','',data.creator||text('card.creatorUnknown')),element('p','',data.license+' · '+data.changes),link(text('card.originalPhoto'),data.source));if(data.credit&&data.credit!==data.creator)$('photo-credit').append(element('p','',data.credit));if(entry.image?.caption)$('photo-credit').append(element('p','',entry.image.caption));if(data.licenseUrl)$('photo-credit').append(element('p',''),link(text('card.licenseTerms'),data.licenseUrl));}if(entry.image.representative)$('photo-credit').append(element('p','representative',text('card.representativeDialog')));$('photo-dialog').showModal();}
-function badge(symbol,label,className=''){const b=element('span','badge '+className,symbol);b.tabIndex=0;b.setAttribute('role','img');b.setAttribute('aria-label',label);b.title=label;return b;}
+// Icons are shape lists in the JSON data; build them with DOM calls, never markup strings.
+const iconTags=new Set(['path','rect','circle','line','polyline']);
+function iconNode(definition){
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
+ svg.setAttribute('viewBox',definition.viewBox);svg.setAttribute('class','stage-icon');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');
+ for(const {tag,...attributes}of definition.shapes){
+  if(!iconTags.has(tag))throw Error('Unsupported icon shape: '+tag);
+  const shape=document.createElementNS(ns,tag);for(const [name,value]of Object.entries(attributes))shape.setAttribute(name,String(value));svg.append(shape);
+ }
+ return svg;
+}
+function badge(symbol,label,className=''){const b=element('span','badge '+className);b.append(typeof symbol==='string'?document.createTextNode(symbol):iconNode(symbol));b.tabIndex=0;b.setAttribute('role','img');b.setAttribute('aria-label',label);b.title=label;return b;}
 function appendChipsetMembers(article,entry){
  if(!entry.chipset)return;
  const section=element('section','chipset-members');section.setAttribute('aria-label',text('card.chipsetMembers'));
