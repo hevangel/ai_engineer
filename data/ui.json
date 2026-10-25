@@ -140,8 +140,8 @@
       "compatible": "{count} shared CPU roles"
     },
     "none": "No connections match the current filters.",
-    "helpComputers": "Click a wire or dot to follow it. Click a shared bus or CPU wire to choose a connected part. Keyboard: Tab and Enter; ↑/k and ↓/j follow either end of a chip wire, ←/h and →/l either end of a maker wire.",
-    "helpCards": "With a card selected: ←/h and →/l move along its family line; ↑/k and ↓/j move between a chip and its computers."
+    "navigationHeading": "Navigation:",
+    "help": "Click a wire or hollow dot to follow it; click a shared bus or CPU wire to choose a connected part. Use Tab and Enter to follow a focused wire. On a wire or selected card, ←/h and →/l move along maker lineage; ↑/k and ↓/j move between chips and computers."
   },
   "keys": {
     "family": "←/h previous · →/l next",

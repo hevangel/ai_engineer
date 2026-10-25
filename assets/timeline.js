@@ -377,7 +377,7 @@ function drawConnectionPass(layout,columns){
  const cards=buses.reduce((n,bus)=>n+bus.links.length,0),parts=['maker','required','optionalChip','reconstruction','bus','compatible'].filter(layer=>counts[layer]).map(layer=>text('wires.count.'+layer,{count:counts[layer],cards}));
  $('trace-summary').textContent=parts.join(' · ')||text('wires.none');
  for(const item of document.querySelectorAll('[data-wire-layer]'))item.hidden=!counts[item.dataset.wireLayer];
- $('wire-help').textContent=[computerLinks.length?text('wires.helpComputers'):'',text('wires.helpCards')].filter(Boolean).join(' ');
+ $('wire-help-text').textContent=text('wires.help');
 
 }
 
