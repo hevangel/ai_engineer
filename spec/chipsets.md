@@ -23,7 +23,7 @@ Generic 8259, 8237, 8254 and other independently used physical chips keep their 
 
 Intel 240017-002 is dated August 1988, printed page 4-667 (PDF page 1185 in the linked 1989 handbook). The CHIPS CS8221 book’s opening pages identify all four members and carry **10/87 Rev 0**. Both public dates are **Documented by**, rather than guessed first shipments. Keep those document dates separate from dates printed on later photographed silicon.
 
-The Intel photo shows **N82230-2** and retains ZyMOS attribution / CC BY-SA 4.0. The NEAT representative photo shows **P82C206 on a motherboard**, with Smial/Rainer Knäpper attribution under the Free Art License. It does not establish that the pictured board is a complete NEAT implementation. Both captions explicitly identify the pictured member and the remaining unpictured chips. Preserve each photo’s individual license and source in `images/credits.json`.
+The Intel photo shows **N82230-2** and retains ZyMOS attribution / CC BY-SA 4.0. The NEAT representative photo shows **P82C206 on a motherboard**, with Smial/Rainer Knäpper attribution under the Free Art License. It does not establish that the pictured board is a complete NEAT implementation. Both captions explicitly identify the pictured member and the remaining unpictured chips. Preserve each photo’s individual license and source in `data/photo-credits.json`.
 
 ## Maintenance
 

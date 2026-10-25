@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "description": "Curated Commons search queries and title filters. They do not establish photo identity; inspect and qualify every selected photograph.",
+  "selections": {
+    "system_micral_n": {
+      "query": "\"Micral N\"",
+      "titlePattern": {
+        "source": "micral[ _-]*n\\b",
+        "flags": "i"
+      }
+    },
+    "system_apple_ii": {
+      "query": "\"Apple II\" computer",
+      "titlePattern": {
+        "source": "apple[ _-]*ii\\b",
+        "flags": "i"
+      }
+    },
+    "system_ibm_at_5170": {
+      "query": "\"IBM\" \"5170\"",
+      "titlePattern": {
+        "source": "5170|pc[ _-]*at\\b",
+        "flags": "i"
+      }
+    },
+    "system_mac_128k": {
+      "query": "\"Macintosh 128K\"",
+      "titlePattern": {
+        "source": "macintosh.*128|128.*macintosh",
+        "flags": "i"
+      }
+    },
+    "system_ps2_model80": {
+      "query": "File:IBM PS-2 Model 80.jpg",
+      "titlePattern": {
+        "source": "model[ _-]*80|8580",
+        "flags": "i"
+      }
+    },
+    "card_adlib": {
+      "query": "\"AdLib\" sound card -gold",
+      "titlePattern": {
+        "source": "adlib",
+        "flags": "i"
+      }
+    },
+    "system_mac_ii": {
+      "query": "\"Macintosh II\"",
+      "titlePattern": {
+        "source": "macintosh[ _-]*ii\\b|macii\\.",
+        "flags": "i"
+      }
+    },
+    "system_mac_se": {
+      "query": "\"Macintosh SE\"",
+      "titlePattern": {
+        "source": "macintosh[ _-]*se\\b",
+        "flags": "i"
+      }
+    },
+    "system_mac_iix": {
+      "query": "\"Macintosh IIx\"",
+      "titlePattern": {
+        "source": "iix\\b",
+        "flags": "i"
+      }
+    },
+    "system_mac_iici": {
+      "query": "\"Macintosh IIci\"",
+      "titlePattern": {
+        "source": "iici\\b",
+        "flags": "i"
+      }
+    },
+    "system_mac_se30": {
+      "query": "\"Macintosh SE/30\"",
+      "titlePattern": {
+        "source": "se.?30",
+        "flags": "i"
+      }
+    },
+    "system_mac_iifx": {
+      "query": "\"Macintosh IIfx\"",
+      "titlePattern": {
+        "source": "iifx",
+        "flags": "i"
+      }
+    },
+    "system_pc_386sx": {
+      "query": "\"386SX\" computer",
+      "titlePattern": {
+        "source": "386",
+        "flags": "i"
+      }
+    },
+    "system_snes": {
+      "query": "File:SNES-Mod1-Console-Set.jpg",
+      "titlePattern": {
+        "source": "snes|super.nintendo",
+        "flags": "i"
+      }
+    },
+    "motorola_6888x": {
+      "query": "\"Motorola 68881\"",
+      "titlePattern": {
+        "source": "68881",
+        "flags": ""
+      }
+    },
+    "intel_80387": {
+      "query": "\"Intel 80387\"",
+      "titlePattern": {
+        "source": "80387",
+        "flags": ""
+      }
+    },
+    "motorola_68030": {
+      "query": "\"Motorola 68030\"",
+      "titlePattern": {
+        "source": "68030",
+        "flags": ""
+      }
+    },
+    "ymf262": {
+      "query": "\"Yamaha YMF262\"",
+      "titlePattern": {
+        "source": "ymf262",
+        "flags": "i"
+      }
+    },
+    "card_sb": {
+      "query": "\"Sound Blaster\" \"CT1320\"",
+      "titlePattern": {
+        "source": "ct1320|sound.blaster",
+        "flags": "i"
+      }
+    },
+    "intel_8042": {
+      "query": "\"Intel\" \"8042\"",
+      "titlePattern": {
+        "source": "8042",
+        "flags": ""
+      }
+    },
+    "mac_adb": {
+      "query": "\"Apple Desktop Bus\" keyboard",
+      "titlePattern": {
+        "source": "keyboard",
+        "flags": "i"
+      }
+    },
+    "mac_scc": {
+      "query": "\"Zilog Z8530\"",
+      "titlePattern": {
+        "source": "8530",
+        "flags": ""
+      }
+    },
+    "mac_floppy": {
+      "query": "\"Apple IWM\"",
+      "titlePattern": {
+        "source": "iwm",
+        "flags": "i"
+      }
+    },
+    "mac_glue": {
+      "query": "\"Macintosh II\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|board",
+        "flags": "i"
+      }
+    },
+    "pc_at_glue": {
+      "query": "\"IBM PC AT\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|mainboard",
+        "flags": "i"
+      }
+    },
+    "tia": {
+      "query": "\"Atari TIA\"",
+      "titlePattern": {
+        "source": "tia",
+        "flags": "i"
+      }
+    },
+    "ega_chip": {
+      "query": "\"IBM EGA\" chips",
+      "titlePattern": {
+        "source": "ega",
+        "flags": "i"
+      }
+    },
+    "card_nubus_video": {
+      "query": "\"Macintosh II\" \"video\" card",
+      "titlePattern": {
+        "source": "card|video",
+        "flags": "i"
+      }
+    },
+    "rtc146818": {
+      "query": "\"MC146818\"",
+      "titlePattern": {
+        "source": "146818",
+        "flags": ""
+      }
+    },
+    "crtc6845": {
+      "query": "\"MC6845\"",
+      "titlePattern": {
+        "source": "6845",
+        "flags": ""
+      }
+    },
+    "mos_6522": {
+      "query": "\"MOS 6522\"",
+      "titlePattern": {
+        "source": "6522",
+        "flags": ""
+      }
+    },
+    "mos_6530": {
+      "query": "\"MOS 6530\"",
+      "titlePattern": {
+        "source": "6530",
+        "flags": ""
+      }
+    },
+    "mos_7360": {
+      "query": "\"MOS 7360\"",
+      "titlePattern": {
+        "source": "7360",
+        "flags": ""
+      }
+    },
+    "mac_scsi": {
+      "query": "\"NCR 5380\"",
+      "titlePattern": {
+        "source": "5380",
+        "flags": ""
+      }
+    },
+    "nes_parts": {
+      "query": "\"Ricoh 2A03\"",
+      "titlePattern": {
+        "source": "2a03",
+        "flags": "i"
+      }
+    },
+    "sb_dsp": {
+      "query": "\"Sound Blaster\" DSP",
+      "titlePattern": {
+        "source": "sound.blaster|ct1320",
+        "flags": "i"
+      }
+    },
+    "snes_parts": {
+      "query": "\"Super Nintendo\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|mainboard",
+        "flags": "i"
+      }
+    },
+    "vga_chip": {
+      "query": "\"VGA\" chip",
+      "titlePattern": {
+        "source": "vga",
+        "flags": "i"
+      }
+    },
+    "saa1099": {
+      "query": "\"SAA1099\"",
+      "titlePattern": {
+        "source": "saa1099",
+        "flags": "i"
+      }
+    },
+    "apple_ii_chips": {
+      "query": "\"Apple II\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|mainboard",
+        "flags": "i"
+      }
+    },
+    "apple_iie_mmu": {
+      "query": "\"Apple IIe\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|board",
+        "flags": "i"
+      }
+    },
+    "apple_iie_pal": {
+      "query": "\"Apple IIe\" motherboard",
+      "titlePattern": {
+        "source": "motherboard|board",
+        "flags": "i"
+      }
+    },
+    "card_vga": {
+      "query": "\"IBM VGA\" card",
+      "titlePattern": {
+        "source": "vga",
+        "flags": "i"
+      }
+    },
+    "card_xtdisk": {
+      "query": "\"Xebec\" controller",
+      "titlePattern": {
+        "source": "xebec",
+        "flags": "i"
+      }
+    },
+    "card_sio": {
+      "query": "\"Altair\" \"SIO\"",
+      "titlePattern": {
+        "source": "sio",
+        "flags": "i"
+      }
+    }
+  },
+  "brandFallbacks": {
+    "intel": "Intel 4004",
+    "amd": "AMD Am2901",
+    "motorola": "Motorola 68000",
+    "mos": "MOS 6502",
+    "apple": "Macintosh II",
+    "ibm": "IBM PC motherboard",
+    "ti": "SN74181",
+    "nintendo": "Ricoh 2A03",
+    "atari": "Atari 2600 TIA",
+    "yamaha": "Yamaha YM3812",
+    "creative": "Sound Blaster CT1320",
+    "philips": "SAA1099",
+    "zilog": "Zilog Z8530",
+    "ncr": "NCR 5380",
+    "compaq": "Compaq Deskpro",
+    "mits": "Altair 8800"
+  },
+  "fallbackQueries": {
+    "card_sio": "Altair 8800 inside",
+    "crtc6845": "Motorola 6845",
+    "saa1099": "Sound Blaster CT1320",
+    "mac_scsi": "Macintosh Plus motherboard",
+    "mac_scc": "Macintosh SE motherboard",
+    "ega_chip": "IBM EGA card",
+    "snes_parts": "Super Nintendo motherboard",
+    "nes_parts": "Nintendo Entertainment System motherboard"
+  },
+  "representativeIds": [
+    "mac_adb",
+    "pc_at_glue",
+    "ega_chip",
+    "mac_glue",
+    "mac_scc",
+    "mac_floppy",
+    "apple_ii_chips",
+    "apple_iie_mmu",
+    "apple_iie_pal",
+    "sb_dsp",
+    "system_pc_386sx"
+  ],
+  "excludeTitles": {
+    "card_adlib": {
+      "source": "gold|piggyback",
+      "flags": "i"
+    },
+    "system_apple_ii": {
+      "source": "iie|iic|iigs|ii plus|ii\\+",
+      "flags": "i"
+    }
+  },
+  "defaults": {
+    "creator": "Creator not identified in Commons metadata; consult the linked original file page.",
+    "changes": "Thumbnail resized by Wikimedia; displayed with contain sizing, no recoloring."
+  },
+  "search": {
+    "omittedTerms": [
+      "diagram",
+      "schematic",
+      "datasheet",
+      "logo",
+      "book"
+    ],
+    "excludedTitlePattern": {
+      "source": "programming|manual|riot aftermath|in box|book|tim jackson|diagram|schematic|datasheet|pinout|steve.jobs|bernard.gotfryd|Nokia|Swissair|McDonnell|aircraft|Boeing|Airbus",
+      "flags": "i"
+    }
+  },
+  "service": {
+    "apiUrl": "https://commons.wikimedia.org/w/api.php",
+    "userAgent": "AIEngineerTimeline/1.0 (historical hardware catalog; github.com/hevangel/ai_engineer)"
+  }
+}

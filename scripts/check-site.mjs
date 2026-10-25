@@ -1,10 +1,11 @@
+import {renderSite} from './render-site.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const json=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8'));
-const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','images/credits.json'].map(json));
+const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','data/photo-credits.json'].map(json));
 const connections=await json('data/connections.json');
 const ids=new Set(),stages=new Set(vocabulary.stages.map(s=>s.id)),eras=new Set(catalog.eras.map(e=>e.id));
 let representative=0;
@@ -47,3 +48,21 @@ for(const key of ['maker','reconstruction','optional','required'])assert.equal(t
 for(const key of ['previous','next'])assert.equal(typeof lookup('wires.'+key),'string','Missing direction text: '+key);
 for(const layer of ui.wireLayers)assert(layer.id&&layer.label,'Incomplete wire layer');
 console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} explicitly labeled representative photos).`);
+
+const template=await fs.readFile(path.join(root,'templates/index.html'),'utf8');
+assert.equal((await fs.readFile(path.join(root,'index.html'),'utf8')).replaceAll('\r\n','\n'),renderSite(template,ui,catalog),'Stale index.html; run node scripts/render-site.mjs');
+console.log('Validated JSON-generated page shell');
+
+const imports=await json('data/image-import.json'),syncConfig=await json('data/sync.json');
+for(const [id,selection]of Object.entries(imports.selections)){assert(selection.query?.trim(),'Missing photo query '+id);new RegExp(selection.titlePattern.source,selection.titlePattern.flags);}
+for(const pattern of [...Object.values(imports.excludeTitles),imports.search.excludedTitlePattern])new RegExp(pattern.source,pattern.flags);
+assert(imports.defaults.creator&&imports.defaults.changes,'Missing photo import metadata');
+for(const stage of Object.values(syncConfig.projectStages))assert(stages.has(stage),'Unknown configured project stage '+stage);
+assert(syncConfig.nativeDependencyNote&&syncConfig.connectionsSource&&syncConfig.githubOwner,'Missing sync configuration');
+
+assert.equal(new URL(ui.links.source).protocol,'https:','Source link must use HTTPS');
+assert(/^#[0-9a-f]{6}$/i.test(ui.themeColor),'Invalid page theme color');
+
+assert.equal(new URL(imports.service.apiUrl).protocol,'https:','Photo service must use HTTPS');
+
+for(const [,resource]of source.matchAll(/\bread\('([^']+)'\)/g))assert(/^data\/[a-z0-9-]+\.json$/.test(resource),'Runtime data must live under data/: '+resource);
