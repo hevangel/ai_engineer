@@ -316,11 +316,73 @@
         "source": "sio",
         "flags": "i"
       }
+    },
+    "ttl_74_series": {
+      "query": "File:TI SN7400N.jpg",
+      "titlePattern": {
+        "source": "^File:TI SN7400N\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_am2501": {
+      "query": "AMD Am2501",
+      "titlePattern": {
+        "source": "(?=.*AMD)(?=.*2501)",
+        "flags": "i"
+      }
+    },
+    "amd_am2505": {
+      "query": "AMD Am2505",
+      "titlePattern": {
+        "source": "(?=.*AMD)(?=.*2505)",
+        "flags": "i"
+      }
+    },
+    "amd_am9102": {
+      "query": "AMD Am9102",
+      "titlePattern": {
+        "source": "(?=.*AMD)(?=.*9102)",
+        "flags": "i"
+      }
+    },
+    "amd_am9517": {
+      "query": "AMD Am9517",
+      "titlePattern": {
+        "source": "(?=.*AMD)(?=.*9517)",
+        "flags": "i"
+      }
+    },
+    "amd_am9300": {
+      "query": "File:AMD 930059X 1.jpg",
+      "titlePattern": {
+        "source": "^File:AMD 930059X 1\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_am3101": {
+      "query": "File:AMD AM3101E 1.jpg",
+      "titlePattern": {
+        "source": "^File:AMD AM3101E 1\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_am9080": {
+      "query": "File:AMD AM9080ADC 1.jpg",
+      "titlePattern": {
+        "source": "^File:AMD AM9080ADC 1\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_am9511": {
+      "query": "File:AMD AM9511A IDC 1.jpg",
+      "titlePattern": {
+        "source": "^File:AMD AM9511A IDC 1\\.jpg$",
+        "flags": "i"
+      }
     }
   },
   "brandFallbacks": {
     "intel": "Intel 4004",
-    "amd": "AMD Am2901",
     "motorola": "Motorola 68000",
     "mos": "MOS 6502",
     "apple": "Macintosh II",
@@ -344,7 +406,8 @@
     "mac_scc": "Macintosh SE motherboard",
     "ega_chip": "IBM EGA card",
     "snes_parts": "Super Nintendo motherboard",
-    "nes_parts": "Nintendo Entertainment System motherboard"
+    "nes_parts": "Nintendo Entertainment System motherboard",
+    "ttl_74_series": "Texas Instruments SN7400N"
   },
   "representativeIds": [
     "mac_adb",
@@ -357,7 +420,8 @@
     "apple_iie_mmu",
     "apple_iie_pal",
     "sb_dsp",
-    "system_pc_386sx"
+    "system_pc_386sx",
+    "amd_am9511"
   ],
   "excludeTitles": {
     "card_adlib": {
@@ -389,5 +453,11 @@
   "service": {
     "apiUrl": "https://commons.wikimedia.org/w/api.php",
     "userAgent": "AIEngineerTimeline/1.0 (historical hardware catalog; github.com/hevangel/ai_engineer)"
-  }
+  },
+  "requireExact": [
+    "amd_am2501",
+    "amd_am2505",
+    "amd_am9102",
+    "amd_am9517"
+  ]
 }

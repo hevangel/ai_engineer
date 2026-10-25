@@ -256,5 +256,12 @@
   "themeColor": "#f6f5f0",
   "links": {
     "source": "https://github.com/hevangel/ai_engineer"
+  },
+  "photos": {
+    "neededLabel": "Photo needed",
+    "neededAlt": "A verified photograph of {title} is needed.",
+    "neededHeading": "Photograph needed",
+    "neededDescription": "An exact photograph with confirmed reuse permission is still needed.",
+    "sourceLeads": "Source leads (not cleared for reuse)"
   }
 }
