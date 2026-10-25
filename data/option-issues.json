@@ -5,7 +5,7 @@
     "owner": "hevangel",
     "number": 1
   },
-  "initialStatus": "Blocked",
+  "initialStatus": "Planned",
   "trackers": [
     {
       "key": "cpu:8086_dip40:amd_8086",
