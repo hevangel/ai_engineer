@@ -2311,7 +2311,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2330,7 +2330,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2349,7 +2349,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2368,7 +2368,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2387,7 +2387,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2406,7 +2406,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2425,7 +2425,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2444,7 +2444,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     },
@@ -2463,7 +2463,7 @@
       "audit": {
         "date": "2026-10-25",
         "stage": "AI verified",
-        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+        "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
         "scope": "Current pinned baseline only; broader acceptance and source review remain open."
       }
     }
@@ -2537,7 +2537,7 @@
     "audit": {
       "date": "2026-10-25",
       "stage": "AI verified",
-      "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
+      "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
       "scope": "Current pinned baseline only; broader acceptance and source review remain open."
     }
   },
@@ -2695,8 +2695,8 @@
   ],
   "audit": {
     "date": "2026-10-25",
-    "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-audit/docs/eda-tool-qualification.md",
-    "hardwarePullRequest": "https://github.com/hevangel/ai_hw_engineer/pull/78",
+    "report": "https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md",
+    "hardwarePullRequest": "https://github.com/hevangel/ai_hw_engineer/pull/79",
     "cliChecks": 29,
     "surferBrowser": "Built-in browser: load, scope/signals, two cursor samples, zoom; screenshot in report.",
     "baseImage": "sha256:93051caf5a9f2678a1653cf85af576f7a9ee6cc66dded18e53c4ccc91a58cad5",
