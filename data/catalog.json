@@ -186,29 +186,6 @@
       "description": "Chip family · specification, RTL & independent verification"
     },
     {
-      "id": "amd_am2501",
-      "title": "AMD Am2501",
-      "kind": "chip",
-      "company": "amd",
-      "year": 1970,
-      "dateLabel": "Documented by 1970",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
-      "era": "4",
-      "query": "AMD Am2501",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 5,
-        "url": "https://github.com/hevangel/ai_engineer/issues/5"
-      },
-      "image": {
-        "src": "images/amd_am2501.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
-      },
-      "description": "Chip family · specification, RTL & independent verification"
-    },
-    {
       "id": "amd_am9300",
       "title": "AMD Am9300",
       "kind": "chip",
@@ -225,6 +202,29 @@
       },
       "image": {
         "src": "images/amd_am9300.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am2501",
+      "title": "AMD Am2501",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1970,
+      "dateLabel": "Documented by 1970",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "4",
+      "query": "AMD Am2501",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 5,
+        "url": "https://github.com/hevangel/ai_engineer/issues/5"
+      },
+      "image": {
+        "src": "images/amd_am2501.jpg",
         "alt": "KL AMD 2901.jpg",
         "representative": true,
         "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
