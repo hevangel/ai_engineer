@@ -1,0 +1,9 @@
+[submodule "ai_hw_engineer"]
+	path = ai_hw_engineer
+	url = https://github.com/hevangel/ai_hw_engineer.git
+[submodule "ai_sw_engineer"]
+	path = ai_sw_engineer
+	url = https://github.com/hevangel/ai_sw_engineer.git
+[submodule "hdl-workbench"]
+	path = hdl-workbench
+	url = https://github.com/hevangel/hdl-workbench.git

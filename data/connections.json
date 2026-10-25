@@ -1,0 +1,1135 @@
+{
+  "schemaVersion": 1,
+  "syncedAt": "2026-10-24T22:49:12.704Z",
+  "source": "Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives",
+  "links": [
+    {
+      "source": "amd_am29xx",
+      "target": "system_pdp1",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/184",
+      "note": "Owner-selected Am29xx implementation of the older PDP-1 architecture. These later chips were not present in DEC’s original 1959 machine.",
+      "basis": "reconstruction"
+    },
+    {
+      "source": "intel_mcs4",
+      "target": "system_busicom_141pf",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/65",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_mcs8",
+      "target": "system_micral_n",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/68",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8080",
+      "target": "system_altair_8800",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/71",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_sio",
+      "target": "system_altair_8800",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/71",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6502_family",
+      "target": "system_apple_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/74",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "apple_ii_chips",
+      "target": "system_apple_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/74",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6502_family",
+      "target": "system_atari_2600",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/92",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6532",
+      "target": "system_atari_2600",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/92",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "tia",
+      "target": "system_atari_2600",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/92",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8080",
+      "target": "system_space_invaders",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/89",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8088",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable.",
+      "basis": "original",
+      "compatibilityGroup": "8088_dip40"
+    },
+    {
+      "source": "amd_8088",
+      "target": "system_ibm_pc",
+      "type": "compatible",
+      "compatibilityGroup": "8088_dip40",
+      "originalSource": "intel_8088",
+      "evidence": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Matching 40-pin 8088 DIP pinout, 8-bit external data bus, supply, bus mode and host clock grade. An 8086 is not a physical substitute."
+    },
+    {
+      "source": "intel_8237",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8253_8254",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8255",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8259",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8272",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_cga",
+      "target": "system_ibm_pc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/80",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6502_family",
+      "target": "system_c64",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/95",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6526",
+      "target": "system_c64",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/95",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6567",
+      "target": "system_c64",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/95",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6581",
+      "target": "system_c64",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/95",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mos_6502_family",
+      "target": "system_apple_iie",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/77",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "apple_iie_mmu",
+      "target": "system_apple_iie",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/77",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "apple_iie_iou",
+      "target": "system_apple_iie",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/77",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "apple_iie_pal",
+      "target": "system_apple_iie",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/77",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8088",
+      "target": "system_ibm_pc_xt_5160",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/83",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable.",
+      "basis": "original",
+      "compatibilityGroup": "8088_dip40"
+    },
+    {
+      "source": "amd_8088",
+      "target": "system_ibm_pc_xt_5160",
+      "type": "compatible",
+      "compatibilityGroup": "8088_dip40",
+      "originalSource": "intel_8088",
+      "evidence": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Matching 40-pin 8088 DIP pinout, 8-bit external data bus, supply, bus mode and host clock grade. An 8086 is not a physical substitute."
+    },
+    {
+      "source": "intel_8087",
+      "target": "system_ibm_pc_xt_5160",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/83",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_cga",
+      "target": "system_ibm_pc_xt_5160",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/83",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_xtdisk",
+      "target": "system_ibm_pc_xt_5160",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/83",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "nes_parts",
+      "target": "system_nes",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/98",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80286",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification.",
+      "compatibilityGroup": "80286_68pin"
+    },
+    {
+      "source": "amd_80286",
+      "target": "system_ibm_at_5170",
+      "type": "compatible",
+      "compatibilityGroup": "80286_68pin",
+      "originalSource": "intel_80286",
+      "evidence": "https://www.bitsavers.org/components/amd/x86/_dataSheets/1985_80286.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Match the specific 68-pin package/socket, board voltage and clock/timing grade; PGA and leadless-carrier packages are separate physical choices."
+    },
+    {
+      "source": "intel_8042",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8237",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8259",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8253_8254",
+      "target": "system_ibm_at_5170",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/142",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68000",
+      "target": "system_mac_128k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/153",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_128k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/153",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_128k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/153",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_128k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/153",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68000",
+      "target": "system_mac_512k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/158",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_512k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/158",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_512k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/158",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_512k",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/158",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386",
+      "target": "system_deskpro_386",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original",
+      "compatibilityGroup": "386dx_132pin"
+    },
+    {
+      "source": "amd_am386dx",
+      "target": "system_deskpro_386",
+      "type": "compatible",
+      "compatibilityGroup": "386dx_132pin",
+      "originalSource": "intel_80386",
+      "evidence": "https://pccomponents.com/datasheets/AMD-A80386.PDF",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Use the matching 132-pin DX package and 5 V board timing profile. Match socket/package, clock, chipset, cache and BIOS; DX and SX are different pinouts."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_deskpro_386",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8042",
+      "target": "system_deskpro_386",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_deskpro_386",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/145",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68000",
+      "target": "system_mac_plus",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/160",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_plus",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/160",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_plus",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/160",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_plus",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/160",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_plus",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/160",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8086",
+      "target": "system_ibm_ps2_model30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable.",
+      "basis": "original",
+      "compatibilityGroup": "8086_dip40"
+    },
+    {
+      "source": "amd_8086",
+      "target": "system_ibm_ps2_model30",
+      "type": "compatible",
+      "compatibilityGroup": "8086_dip40",
+      "originalSource": "intel_8086",
+      "evidence": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Matching 40-pin 8086 DIP pinout, supply, minimum/maximum bus mode and system clock grade. The selected PS/2 Model 30 uses an 8 MHz 8086-2-class profile."
+    },
+    {
+      "source": "intel_8237",
+      "target": "system_ibm_ps2_model30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8253_8254",
+      "target": "system_ibm_ps2_model30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8259",
+      "target": "system_ibm_ps2_model30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_8272",
+      "target": "system_ibm_ps2_model30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386",
+      "target": "system_ps2_model80",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/151",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original",
+      "compatibilityGroup": "386dx_132pin"
+    },
+    {
+      "source": "amd_am386dx",
+      "target": "system_ps2_model80",
+      "type": "compatible",
+      "compatibilityGroup": "386dx_132pin",
+      "originalSource": "intel_80386",
+      "evidence": "https://pccomponents.com/datasheets/AMD-A80386.PDF",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Use the matching 132-pin DX package and 5 V board timing profile. Match socket/package, clock, chipset, cache and BIOS; DX and SX are different pinouts."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model80",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/151",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model80",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/151",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68020",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_6888x",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_nubus_video",
+      "target": "system_mac_ii",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/167",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68000",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_se",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/163",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original",
+      "compatibilityGroup": "386dx_132pin"
+    },
+    {
+      "source": "amd_am386dx",
+      "target": "system_ps2_model70",
+      "type": "compatible",
+      "compatibilityGroup": "386dx_132pin",
+      "originalSource": "intel_80386",
+      "evidence": "https://pccomponents.com/datasheets/AMD-A80386.PDF",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Use the matching 132-pin DX package and 5 V board timing profile. Match socket/package, clock, chipset, cache and BIOS; DX and SX are different pinouts."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model70",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/196",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68030",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_6888x",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_nubus_video",
+      "target": "system_mac_iix",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/169",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68030",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_6888x",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_iici",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/175",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68030",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_6888x",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_se30",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/172",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_68030",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "motorola_6888x",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scc",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_floppy",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_scsi",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_adb",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "mac_glue",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_nubus_video",
+      "target": "system_mac_iifx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/179",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "snes_parts",
+      "target": "system_snes",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/101",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386sx",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original",
+      "compatibilityGroup": "386sx_100pin"
+    },
+    {
+      "source": "amd_am386sx",
+      "target": "system_ps2_model35sx",
+      "type": "compatible",
+      "compatibilityGroup": "386sx_100pin",
+      "originalSource": "intel_80386sx",
+      "evidence": "https://www.ardent-tool.com/CPU/docs/AMD/386/386SX/15022a.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Use the original 5 V Am386SX in the matching 100-lead PQFP profile and qualify the host clock/timing. Do not infer compatibility for every SXL/SXLV/low-voltage member or IBM 386SLC."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model35sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/193",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_80386sx",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Selected original CPU variant; shared canonical Intel 80386 family issue retains separate DX/SX device profiles.",
+      "basis": "original",
+      "compatibilityGroup": "386sx_100pin"
+    },
+    {
+      "source": "amd_am386sx",
+      "target": "system_pc_386sx",
+      "type": "compatible",
+      "compatibilityGroup": "386sx_100pin",
+      "originalSource": "intel_80386sx",
+      "evidence": "https://www.ardent-tool.com/CPU/docs/AMD/386/386SX/15022a.pdf",
+      "note": "Compatible substitute candidate for the matching CPU role, not an original factory-BOM claim or verified physical installation. Later AMD parts may follow the original host date. Use the original 5 V Am386SX in the matching 100-lead PQFP profile and qualify the host clock/timing. Do not infer compatibility for every SXL/SXLV/low-voltage member or IBM 386SLC."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_pc_386sx",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/148",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "ibm_386slc",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "pc_at_glue",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "vga_chip",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "rtc146818",
+      "target": "system_ps2_model56slc",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "card_ega",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_ega",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/134",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_vga",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_vga",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/136",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_deskpro_386",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA expansion profile. Exact card revision, resource settings and software must be qualified; not a factory-installed part or a base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_diskii",
+      "target": "system_apple_ii",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/109",
+      "note": "Planned Disk II storage/controller option tracked by the machine software roadmap; qualify the selected drive, controller and firmware revision.",
+      "type": "optional"
+    },
+    {
+      "source": "card_diskii",
+      "target": "system_apple_iie",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/109",
+      "note": "Planned Disk II storage/controller option tracked by the machine software roadmap; qualify the selected drive, controller and firmware revision.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_pc_386sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_adlib",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/137",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_sb",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/138",
+      "note": "Planned ISA audio option only. Exact card revision, chassis clearance, riser/slot fit, DMA/IRQ allocation and software require qualification; not a factory part or POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "intel_80287",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://minuszerodegrees.net/manuals/IBM_5170_Technical_Reference_1502243_MAR84.pdf",
+      "note": "IBM AT optional 80287 socket profile; select exact board, speed grade, clock and BIOS. Legacy 287 and later 287XL behavior need separate qualification. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "intel_80387",
+      "target": "system_ps2_model70",
+      "evidence": "https://www.ardent-tool.com/qtechinfo/GJAN-43WJX8.html",
+      "note": "Preserved IBM Model 70 specification lists an optional 80387. Select the DX PGA part and clock for the exact 8570 planar; not an SX socket. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://www.ardent-tool.com/35_40/",
+      "note": "Model 35 SX planar U29 is the i387SX socket; select the 20 MHz host-compatible grade and exact board/ROM. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_pc_386sx",
+      "evidence": "https://www.ardent-tool.com/8525/192-019.txt",
+      "note": "IBM announcement 192-019 specifies a math-coprocessor socket and 16 MHz 386SX. Planned 387SX candidate inferred from that host interface; confirm the exact K00 planar/socket and clock before acceptance. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "intel_80387sx",
+      "target": "system_ps2_model56slc",
+      "evidence": "https://www.ardent-tool.com/8556/",
+      "note": "Selected 8556 386SLC planar U41 accepts a 68-pin PLCC 387SX socket or a CPU upgrade module. Qualify the installed adapter, 20 MHz grade and exact board; the CPU upgrade is a distinct option. Optional configuration, not a factory-installed claim or base-machine POST prerequisite.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_ibm_at_5170",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_deskpro_386",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_pc_386sx",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Candidate PS/2 SX configuration pending exact planar/riser and full-length physical-fit qualification. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    },
+    {
+      "source": "card_roland_lapc_i",
+      "target": "system_ps2_model35sx",
+      "evidence": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+      "note": "Planned LAPC-I ISA audio option. Roland’s manual requires a full-length 13-inch slot; qualify the exact chassis/riser clearance, power, PCB/ROM revision, IRQ 2/9 routing, I/O settings and original software. Candidate PS/2 SX configuration pending exact planar/riser and full-length physical-fit qualification. Not a factory-installed part or base-machine POST prerequisite; not an MCA card.",
+      "type": "optional"
+    }
+  ]
+}

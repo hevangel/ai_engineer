@@ -1,0 +1,3045 @@
+{
+  "version": 1,
+  "title": "A history worth rebuilding.",
+  "companies": {
+    "intel": {
+      "name": "Intel",
+      "color": "#0071c5"
+    },
+    "amd": {
+      "name": "AMD",
+      "color": "#ed1c24"
+    },
+    "motorola": {
+      "name": "Motorola",
+      "color": "#4B3F8F"
+    },
+    "mos": {
+      "name": "MOS / Commodore",
+      "color": "#2E8B57"
+    },
+    "apple": {
+      "name": "Apple",
+      "color": "#111111"
+    },
+    "ibm": {
+      "name": "IBM",
+      "color": "#006699"
+    },
+    "ti": {
+      "name": "Texas Instruments",
+      "color": "#CC0000"
+    },
+    "nintendo": {
+      "name": "Nintendo",
+      "color": "#E60012"
+    },
+    "atari": {
+      "name": "Atari",
+      "color": "#E41B23"
+    },
+    "yamaha": {
+      "name": "Yamaha",
+      "color": "#652d90"
+    },
+    "creative": {
+      "name": "Creative",
+      "color": "#ec6b23"
+    },
+    "philips": {
+      "name": "Philips",
+      "color": "#1264a3"
+    },
+    "zilog": {
+      "name": "Zilog",
+      "color": "#c41230"
+    },
+    "ncr": {
+      "name": "NCR",
+      "color": "#287a3d"
+    },
+    "compaq": {
+      "name": "Compaq",
+      "color": "#b6172e"
+    },
+    "mits": {
+      "name": "MITS",
+      "color": "#315c78"
+    },
+    "other": {
+      "name": "Other / multi-vendor",
+      "color": "#6c766a"
+    },
+    "adlib": {
+      "name": "AdLib",
+      "color": "#a77c20"
+    },
+    "dec": {
+      "name": "DEC / Digital",
+      "color": "#8B2346"
+    },
+    "roland": {
+      "name": "Roland",
+      "color": "#E85B25"
+    },
+    "chips": {
+      "name": "CHIPS & Technologies",
+      "color": "#355DA4"
+    }
+  },
+  "eras": [
+    {
+      "id": "18",
+      "title": "Before the microprocessor",
+      "label": "Discrete-logic 18-bit prelude",
+      "range": "1959—1965"
+    },
+    {
+      "id": "4",
+      "title": "The first microprocessors",
+      "label": "4-bit era",
+      "range": "1966—1973"
+    },
+    {
+      "id": "8",
+      "title": "A computer becomes personal",
+      "label": "8-bit era",
+      "range": "1974—1977"
+    },
+    {
+      "id": "16",
+      "title": "The desktop takes shape",
+      "label": "16-bit era",
+      "range": "1978—1984"
+    },
+    {
+      "id": "32",
+      "title": "A wider world",
+      "label": "32-bit era",
+      "range": "1985 onward"
+    },
+    {
+      "id": "undated",
+      "title": "The supporting cast",
+      "label": "Dates under review",
+      "range": "Research queue"
+    }
+  ],
+  "entries": [
+    {
+      "id": "system_pdp1",
+      "title": "DEC PDP-1 · Am29xx reconstruction",
+      "kind": "system",
+      "company": "dec",
+      "year": 1959,
+      "dateLabel": "1959 · original PDP-1 introduction",
+      "dateSource": "https://www.computerhistory.org/pdp-1/",
+      "era": "18",
+      "query": "DEC PDP-1 · Am29xx reconstruction",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 184,
+        "url": "https://github.com/hevangel/ai_engineer/issues/184"
+      },
+      "description": "18-bit architecture · planned Am29xx datapath, SV web front panel & FPGA",
+      "dateBasis": "introduced",
+      "dateNote": "The 1959 DEC original used discrete transistor modules. Our planned Am29xx bit-slice implementation uses later parts; its reconstruction wire is not an original-machine component claim.",
+      "image": {
+        "src": "images/system_pdp1.jpg",
+        "alt": "Original DEC PDP-1 cabinets, display and typewriter photographed by Matthew Hutchinson",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:PDP-1.jpg",
+        "caption": "Original DEC machine; the Am29xx reconstruction is planned."
+      },
+      "historySources": [
+        {
+          "url": "https://bitsavers.trailing-edge.com/pdf/dec/pdp1/F15B_PDP1_Handbook_1961.pdf",
+          "note": "DEC original PDP-1 handbook (1961)"
+        },
+        {
+          "url": "https://github.com/hevangel/ai_engineer/issues/7",
+          "note": "Planned Am29xx implementation family"
+        }
+      ]
+    },
+    {
+      "id": "ttl_74_series",
+      "title": "74-series logic",
+      "kind": "chip",
+      "company": "ti",
+      "year": 1966,
+      "dateLabel": "1966 · plastic SN7400",
+      "dateSource": "https://www.computerhistory.org/siliconengine/standard-logic-ic-families-introduced/",
+      "era": "4",
+      "query": "Texas Instruments SN74181",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 4,
+        "url": "https://github.com/hevangel/ai_engineer/issues/4"
+      },
+      "image": {
+        "src": "images/ttl_74_series.jpg",
+        "alt": "Fairchild F74LS181PC bottom.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Fairchild_F74LS181PC_bottom.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am2501",
+      "title": "AMD Am2501",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1970,
+      "dateLabel": "Documented by 1970",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "4",
+      "query": "AMD Am2501",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 5,
+        "url": "https://github.com/hevangel/ai_engineer/issues/5"
+      },
+      "image": {
+        "src": "images/amd_am2501.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am9300",
+      "title": "AMD Am9300",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1970,
+      "dateLabel": "Documented by 1970",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "4",
+      "query": "AMD Am9300",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 11,
+        "url": "https://github.com/hevangel/ai_engineer/issues/11"
+      },
+      "image": {
+        "src": "images/amd_am9300.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am2505",
+      "title": "AMD Am2505",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1971,
+      "dateLabel": "Documented by 1971",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "4",
+      "query": "AMD Am2505",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 6,
+        "url": "https://github.com/hevangel/ai_engineer/issues/6"
+      },
+      "image": {
+        "src": "images/amd_am2505.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am3101",
+      "title": "AMD Am3101",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1971,
+      "dateLabel": "Documented by 1971",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "4",
+      "query": "AMD Am3101",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 8,
+        "url": "https://github.com/hevangel/ai_engineer/issues/8"
+      },
+      "image": {
+        "src": "images/amd_am3101.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_mcs4",
+      "title": "MCS-4 family",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1971,
+      "dateLabel": "1971",
+      "dateSource": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-story-of-the-intel-4004.html",
+      "era": "4",
+      "query": "Intel 4004",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 19,
+        "url": "https://github.com/hevangel/ai_engineer/issues/19"
+      },
+      "image": {
+        "src": "images/intel_mcs4.jpg",
+        "alt": "Intel 4004 open.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_open.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_busicom_141pf",
+      "title": "Busicom 141-PF",
+      "kind": "system",
+      "company": "other",
+      "year": 1971,
+      "dateLabel": "1971",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "4",
+      "query": "Busicom 141 PF",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 65,
+        "url": "https://github.com/hevangel/ai_engineer/issues/65"
+      },
+      "image": {
+        "src": "images/system_busicom_141pf.jpg",
+        "alt": "Busicom 141 PF 1.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Busicom_141_PF_1.jpg"
+      }
+    },
+    {
+      "id": "intel_mcs8",
+      "title": "MCS-8 family",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1972,
+      "dateLabel": "1972",
+      "dateSource": "https://en.wikipedia.org/wiki/Intel_8008",
+      "era": "4",
+      "query": "Intel 8008",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 18,
+        "url": "https://github.com/hevangel/ai_engineer/issues/18"
+      },
+      "image": {
+        "src": "images/intel_mcs8.jpg",
+        "alt": "Intel 8008.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_8008.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_micral_n",
+      "title": "Micral N",
+      "kind": "system",
+      "company": "other",
+      "year": 1973,
+      "dateLabel": "1973",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "4",
+      "query": "Micral N",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 68,
+        "url": "https://github.com/hevangel/ai_engineer/issues/68"
+      },
+      "image": {
+        "src": "images/system_micral_n.jpg",
+        "alt": "Micral N prototype-PR082-IMG 5371-white.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Micral_N_prototype-PR082-IMG_5371-white.jpg"
+      }
+    },
+    {
+      "id": "amd_am9102",
+      "title": "AMD Am9102",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1974,
+      "dateLabel": "Documented by 1974",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "AMD Am9102",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 10,
+        "url": "https://github.com/hevangel/ai_engineer/issues/10"
+      },
+      "image": {
+        "src": "images/amd_am9102.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8080",
+      "title": "Intel 8080",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1974,
+      "dateLabel": "1974",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8080",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 21,
+        "url": "https://github.com/hevangel/ai_engineer/issues/21"
+      },
+      "image": {
+        "src": "images/intel_8080.jpg",
+        "alt": "Intel 8080 1.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_8080_1.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "motorola_6800",
+      "title": "Motorola 6800",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1974,
+      "dateLabel": "1974",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_6800",
+      "era": "8",
+      "query": "Motorola 6800",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 43,
+        "url": "https://github.com/hevangel/ai_engineer/issues/43"
+      },
+      "image": {
+        "src": "images/motorola_6800.jpg",
+        "alt": "Motorola 6800 proto board.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_6800_proto_board.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mos_6502_family",
+      "title": "6502 CPU family",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1975,
+      "dateLabel": "1975",
+      "dateSource": "https://en.wikipedia.org/wiki/MOS_6502",
+      "era": "8",
+      "query": "MOS 6502",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 33,
+        "url": "https://github.com/hevangel/ai_engineer/issues/33"
+      },
+      "image": {
+        "src": "images/mos_6502_family.jpg",
+        "alt": "MOS 6502 die.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am29xx",
+      "title": "Am29xx bit-slice family",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1975,
+      "dateLabel": "1975",
+      "dateSource": "https://en.wikipedia.org/wiki/AMD_Am2900",
+      "era": "8",
+      "query": "AMD Am2901",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 7,
+        "url": "https://github.com/hevangel/ai_engineer/issues/7"
+      },
+      "image": {
+        "src": "images/amd_am29xx.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am9080",
+      "title": "AMD Am9080",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1975,
+      "dateLabel": "Documented by 1975",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "AMD Am9080",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 9,
+        "url": "https://github.com/hevangel/ai_engineer/issues/9"
+      },
+      "image": {
+        "src": "images/amd_am9080.jpg",
+        "alt": "AMD C8080A.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_C8080A.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8251",
+      "title": "Intel 8251",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1975,
+      "dateLabel": "Documented by 1975",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8251",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 25,
+        "url": "https://github.com/hevangel/ai_engineer/issues/25"
+      },
+      "image": {
+        "src": "images/intel_8251.jpg",
+        "alt": "Ic-photo-Intel--C8251.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--C8251.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8253_8254",
+      "title": "Intel 8253 8254",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1975,
+      "dateLabel": "Documented by 1975",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8253 8254",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 26,
+        "url": "https://github.com/hevangel/ai_engineer/issues/26"
+      },
+      "image": {
+        "src": "images/intel_8253_8254.jpg",
+        "alt": "Ic-photo-Intel--C8253.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--C8253.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8255",
+      "title": "Intel 8255",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1975,
+      "dateLabel": "Documented by 1975",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8255",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 27,
+        "url": "https://github.com/hevangel/ai_engineer/issues/27"
+      },
+      "image": {
+        "src": "images/intel_8255.jpg",
+        "alt": "Ic-photo-Intel--D8255.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--D8255.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mos_6530",
+      "title": "MOS 6530",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1975,
+      "dateLabel": "Documented by 1975",
+      "dateSource": "https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/processors/6502_Mostek.pdf",
+      "era": "8",
+      "query": "MOS 6530",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 36,
+        "url": "https://github.com/hevangel/ai_engineer/issues/36"
+      },
+      "image": {
+        "src": "images/mos_6530.jpg",
+        "alt": "MOS KIM-1 IMG 4211 cropped scale.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_KIM-1_IMG_4211_cropped_scale.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "MOS’s August 1975 MCS6500 Hardware Manual describes the MCS6530 on introductory page iii. Exact first shipment is not established here."
+    },
+    {
+      "id": "card_sio",
+      "title": "Altair 88-SIO serial interface",
+      "kind": "card",
+      "company": "mits",
+      "year": 1975,
+      "dateLabel": "1975",
+      "dateSource": "https://en.wikipedia.org/wiki/Altair_88_SIO",
+      "era": "8",
+      "query": "Altair 88 SIO",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 105,
+        "url": "https://github.com/hevangel/ai_engineer/issues/105"
+      },
+      "image": {
+        "src": "images/card_sio.jpg",
+        "alt": "Altairinside.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Altairinside.JPG"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "s100"
+    },
+    {
+      "id": "system_altair_8800",
+      "title": "MITS Altair 8800",
+      "kind": "system",
+      "company": "mits",
+      "year": 1975,
+      "dateLabel": "1975",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "8",
+      "query": "MITS Altair 8800",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 71,
+        "url": "https://github.com/hevangel/ai_engineer/issues/71"
+      },
+      "image": {
+        "src": "images/system_altair_8800.jpg",
+        "alt": "HomeComputerMuseum - MITS Altair 8800.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:HomeComputerMuseum_-_MITS_Altair_8800.jpg"
+      }
+    },
+    {
+      "id": "intel_8259",
+      "title": "Intel 8259",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1976,
+      "dateLabel": "1976",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8259",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 28,
+        "url": "https://github.com/hevangel/ai_engineer/issues/28"
+      },
+      "image": {
+        "src": "images/intel_8259.png",
+        "alt": "Intel d8259a observe.png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_d8259a_observe.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "amd_am9511",
+      "title": "AMD Am9511",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "AMD Am9511",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 12,
+        "url": "https://github.com/hevangel/ai_engineer/issues/12"
+      },
+      "image": {
+        "src": "images/amd_am9511.jpg",
+        "alt": "AM9511-1 Arithmetic Co-Processor side.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AM9511-1_Arithmetic_Co-Processor_side.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "apple_ii_chips",
+      "title": "Apple II support chips",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Apple II  chips",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 17,
+        "url": "https://github.com/hevangel/ai_engineer/issues/17"
+      },
+      "image": {
+        "src": "images/apple_ii_chips.jpg",
+        "alt": "Interface Cards Motherboard and Power Supply Apple2.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Interface_Cards_Motherboard_and_Power_Supply_Apple2.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "tia",
+      "title": "Atari TIA and missing Atari 2600 support devices",
+      "kind": "chip",
+      "company": "atari",
+      "year": 1977,
+      "dateLabel": "1977 · original VCS profile",
+      "dateSource": "https://atari.com/pages/history",
+      "era": "8",
+      "query": "Atari TIA and missing Atari 2600  devices",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 44,
+        "url": "https://github.com/hevangel/ai_engineer/issues/44"
+      },
+      "image": {
+        "src": "images/tia.jpg",
+        "alt": "Atari-7800- TIA-ami-C010444D.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-_TIA-ami-C010444D.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "Anchored to the original 1977 Atari VCS chipset. Earlier development documents and later TIA revisions do not establish one introduction date for every support device."
+    },
+    {
+      "id": "intel_8273",
+      "title": "Intel 8273",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8273",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 30,
+        "url": "https://github.com/hevangel/ai_engineer/issues/30"
+      },
+      "image": {
+        "src": "images/intel_8273.png",
+        "alt": "Radio86RK.png",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8275",
+      "title": "Intel 8275",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8275",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 31,
+        "url": "https://github.com/hevangel/ai_engineer/issues/31"
+      },
+      "image": {
+        "src": "images/intel_8275.png",
+        "alt": "Radio86RK.png",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8279",
+      "title": "Intel 8279",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "8",
+      "query": "Intel 8279",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 32,
+        "url": "https://github.com/hevangel/ai_engineer/issues/32"
+      },
+      "image": {
+        "src": "images/intel_8279.jpg",
+        "alt": "8279 IMG 0813.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:8279_IMG_0813.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "crtc6845",
+      "title": "MC6845-compatible CRTC for historical display cards",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1977,
+      "dateLabel": "1977 · advance information",
+      "dateSource": "https://www.theoddys.com/acorn/the_6845_crtc/MC6845%20Motorola%201977.pdf",
+      "era": "8",
+      "query": "MC6845-compatible CRTC for historical display cards",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 108,
+        "url": "https://github.com/hevangel/ai_engineer/issues/108"
+      },
+      "image": {
+        "src": "images/crtc6845.jpg",
+        "alt": "Motorola MC6845P.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_MC6845P.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "preview",
+      "dateNote": "Motorola’s MC6845 advance-information sheet is copyrighted 1977. This documents the original controller, not every later compatible variant."
+    },
+    {
+      "id": "mos_6522",
+      "title": "MOS 6522",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://www.americanhistory.si.edu/collections/object/nmah_1401243",
+      "era": "8",
+      "query": "MOS 6522",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 34,
+        "url": "https://github.com/hevangel/ai_engineer/issues/34"
+      },
+      "image": {
+        "src": "images/mos_6522.jpg",
+        "alt": "MOS Technology 6522-5374.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_Technology_6522-5374.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "The Smithsonian catalogs an original MOS MCS6522 preliminary datasheet dated March 1977. This is a documentation bound rather than an exact shipping date."
+    },
+    {
+      "id": "mos_6532",
+      "title": "MOS 6532",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1977,
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://www.americanhistory.si.edu/collections/object/nmah_1401243",
+      "era": "8",
+      "query": "MOS 6532",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 37,
+        "url": "https://github.com/hevangel/ai_engineer/issues/37"
+      },
+      "image": {
+        "src": "images/mos_6532.jpg",
+        "alt": "Atari-2600-Four-Switch-Motherboard-Flat-1982.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Four-Switch-Motherboard-Flat-1982.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "The Smithsonian catalogs MOS’s MCS6532 datasheet dated February 1977. The previous 1982 catalog bound was too late to place the RIOT used in the original 1977 Atari VCS."
+    },
+    {
+      "id": "system_apple_ii",
+      "title": "Apple II revision 0",
+      "kind": "system",
+      "company": "apple",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "8",
+      "query": "Apple II revision 0",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 74,
+        "url": "https://github.com/hevangel/ai_engineer/issues/74"
+      },
+      "image": {
+        "src": "images/system_apple_ii.jpg",
+        "alt": "Apple II, 1977, Computer History Museum.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_II,_1977,_Computer_History_Museum.jpg"
+      }
+    },
+    {
+      "id": "system_atari_2600",
+      "title": "Atari 2600",
+      "kind": "system",
+      "company": "atari",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_2600",
+      "era": "8",
+      "query": "Atari 2600",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 92,
+        "url": "https://github.com/hevangel/ai_engineer/issues/92"
+      },
+      "image": {
+        "src": "images/system_atari_2600.jpg",
+        "alt": "Atari-2600-Wood-4Sw-Set.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
+      }
+    },
+    {
+      "id": "amd_am9517",
+      "title": "AMD Am9517",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1978,
+      "dateLabel": "Documented by 1978",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "AMD Am9517",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 13,
+        "url": "https://github.com/hevangel/ai_engineer/issues/13"
+      },
+      "image": {
+        "src": "images/amd_am9517.jpg",
+        "alt": "KL AMD 2901.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8086",
+      "title": "Intel 8086",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1978,
+      "dateLabel": "1978",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Intel 8086",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 22,
+        "url": "https://github.com/hevangel/ai_engineer/issues/22"
+      },
+      "image": {
+        "src": "images/intel_8086.jpg",
+        "alt": "Intel C8086.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_C8086.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "rtc146818",
+      "title": "MC146818 RTC",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1978,
+      "dateLabel": "1978 · product preview",
+      "dateSource": "https://bitsavers.org/components/motorola/_dataBooks/1978_Motorola_CMOS_Data_Book.pdf",
+      "era": "16",
+      "query": "MC146818 RTC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 121,
+        "url": "https://github.com/hevangel/ai_engineer/issues/121"
+      },
+      "image": {
+        "src": "images/rtc146818.jpg",
+        "alt": "MC146818 Real Time Clock.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MC146818_Real_Time_Clock.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "preview",
+      "dateNote": "Motorola’s 1978 data book previews MC146818/MC146819 on page 6-7, with proposed packages. This dates the family preview, not the later production package fitted in the IBM AT."
+    },
+    {
+      "id": "motorola_6809",
+      "title": "Motorola 6809",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1978,
+      "dateLabel": "1978",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_6809",
+      "era": "16",
+      "query": "Motorola 6809",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 46,
+        "url": "https://github.com/hevangel/ai_engineer/issues/46"
+      },
+      "image": {
+        "src": "images/motorola_6809.jpg",
+        "alt": "Motorola 6809 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_6809_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "card_diskii",
+      "title": "Apple Disk II controller",
+      "kind": "card",
+      "company": "apple",
+      "year": 1978,
+      "dateLabel": "1978",
+      "dateSource": "https://en.wikipedia.org/wiki/Disk_II",
+      "era": "16",
+      "query": "Disk II",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 109,
+        "url": "https://github.com/hevangel/ai_engineer/issues/109"
+      },
+      "image": {
+        "src": "images/card_diskii.jpg",
+        "alt": "Disk II Floppy Disk Subsystem.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Disk_II_Floppy_Disk_Subsystem.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "apple_ii"
+    },
+    {
+      "id": "system_space_invaders",
+      "title": "Space Invaders arcade board",
+      "kind": "system",
+      "company": "other",
+      "year": 1978,
+      "dateLabel": "1978",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "Space Invaders arcade",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 89,
+        "url": "https://github.com/hevangel/ai_engineer/issues/89"
+      },
+      "image": {
+        "src": "images/system_space_invaders.jpg",
+        "alt": "Space Invaders.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Space_Invaders.JPG"
+      }
+    },
+    {
+      "id": "intel_8237",
+      "title": "Intel 8237",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1979,
+      "dateLabel": "Documented by 1979",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Intel 8237",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 24,
+        "url": "https://github.com/hevangel/ai_engineer/issues/24"
+      },
+      "image": {
+        "src": "images/intel_8237.jpg",
+        "alt": "Siemens SAB8237A5P.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Siemens_SAB8237A5P.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "motorola_68000",
+      "title": "Motorola 68000",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1979,
+      "dateLabel": "1979",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68000",
+      "era": "16",
+      "query": "Motorola 68000",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 45,
+        "url": "https://github.com/hevangel/ai_engineer/issues/45"
+      },
+      "image": {
+        "src": "images/motorola_68000.jpg",
+        "alt": "Motorola 68000 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68000_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8088",
+      "title": "Intel 8088",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1979,
+      "dateLabel": "1979 · 8088 introduction",
+      "dateSource": "https://www.intel.com/pressroom/kits/quickrefyr.htm",
+      "era": "16",
+      "query": "Intel 8088",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 22,
+        "url": "https://github.com/hevangel/ai_engineer/issues/22"
+      },
+      "image": {
+        "src": "images/intel_8088.jpg",
+        "alt": "Intel P8088-6 processor in a 40-pin DIP package photographed by Jud McCranie",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_8088_chip,_top.jpg",
+        "caption": "Intel P8088-6; a later speed grade illustrating the 8088 family."
+      },
+      "dateBasis": "introduced",
+      "dateNote": "The 8088 has an 8-bit external data bus and a different pinout from the 16-bit-bus 8086. IBM PC and XT use this variant; the original PS/2 Model 30 uses 8086. The photographed P8088-6 is a later speed-grade package, not a dated launch specimen."
+    },
+    {
+      "id": "intel_8087",
+      "title": "Intel 8087",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1980,
+      "dateLabel": "1980",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Intel 8087",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 23,
+        "url": "https://github.com/hevangel/ai_engineer/issues/23"
+      },
+      "image": {
+        "src": "images/intel_8087.jpg",
+        "alt": "Intel 8087 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_8087_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_8272",
+      "title": "Intel 8272",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1980,
+      "dateLabel": "Documented by 1980",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Intel 8272",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 29,
+        "url": "https://github.com/hevangel/ai_engineer/issues/29"
+      },
+      "image": {
+        "src": "images/intel_8272.jpg",
+        "alt": "KA1845VZh1 Kvazar.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KA1845VZh1_Kvazar.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mos_6560",
+      "title": "MOS 6560",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1980,
+      "dateLabel": "Documented by 1980",
+      "dateSource": "https://www.zimmers.net/anonftp/pub/cbm/documents/chipdata/6560.zip",
+      "era": "16",
+      "query": "MOS 6560",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 38,
+        "url": "https://github.com/hevangel/ai_engineer/issues/38"
+      },
+      "image": {
+        "src": "images/mos_6560.jpg",
+        "alt": "MOS 6561 VIC.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_6561_VIC.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "The original MOS 6560/6561 datasheet is dated February 1980. This replaces a later 1983 manual-printing bound; it does not assert the first design or shipment date."
+    },
+    {
+      "id": "mos_6526",
+      "title": "MOS 6526",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1981,
+      "dateLabel": "Documented by 1981",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "MOS 6526",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 35,
+        "url": "https://github.com/hevangel/ai_engineer/issues/35"
+      },
+      "image": {
+        "src": "images/mos_6526.jpg",
+        "alt": "MOS 6526 2983 top.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_6526_2983_top.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mac_scc",
+      "title": "Z8530 SCC family",
+      "kind": "chip",
+      "company": "zilog",
+      "year": 1981,
+      "dateLabel": "1981 · SCC family introduced",
+      "dateSource": "https://www.zilog.com/docs/serial/ps0117.pdf",
+      "era": "16",
+      "query": "Z8530 SCC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 128,
+        "url": "https://github.com/hevangel/ai_engineer/issues/128"
+      },
+      "image": {
+        "src": "images/mac_scc.jpg",
+        "alt": "Macintosh II motherboard.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "introduced",
+      "dateNote": "Zilog explicitly dates introduction of its SCC family to 1981. The cited later CMOS datasheet records that history; its own publication year is not the family’s launch year."
+    },
+    {
+      "id": "card_cga",
+      "title": "IBM CGA ISA display adapter",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1981,
+      "dateLabel": "1981",
+      "dateSource": "https://en.wikipedia.org/wiki/Color_Graphics_Adapter",
+      "era": "16",
+      "query": "IBM Color Graphics Adapter",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 107,
+        "url": "https://github.com/hevangel/ai_engineer/issues/107"
+      },
+      "image": {
+        "src": "images/card_cga.jpg",
+        "alt": "IBM Color Graphics Adapter.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_Color_Graphics_Adapter.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "system_ibm_pc",
+      "title": "IBM PC 5150",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1981,
+      "dateLabel": "1981",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "IBM PC 5150",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 80,
+        "url": "https://github.com/hevangel/ai_engineer/issues/80"
+      },
+      "image": {
+        "src": "images/system_ibm_pc.jpg",
+        "alt": "IBM PC 5150.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg"
+      }
+    },
+    {
+      "id": "intel_8042",
+      "title": "8042 controller family",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1982,
+      "dateLabel": "Documented by 1982",
+      "dateSource": "https://bitsavers.org/magazines/Digital_Design/Digital_Design_V12_N08_198208.pdf",
+      "era": "16",
+      "query": "8042 controller",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 120,
+        "url": "https://github.com/hevangel/ai_engineer/issues/120"
+      },
+      "image": {
+        "src": "images/intel_8042.jpg",
+        "alt": "KL Intel P8048H.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_P8048H.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "Intel’s UPI-42 (8042) appears in the August 1982 new-product notice. The earlier MCS-48 family launch does not date this specific controller."
+    },
+    {
+      "id": "intel_80286",
+      "title": "Intel 80286",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1982,
+      "dateLabel": "1982",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Intel 80286",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 20,
+        "url": "https://github.com/hevangel/ai_engineer/issues/20"
+      },
+      "image": {
+        "src": "images/intel_80286.jpg",
+        "alt": "Intel 80286 die2.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_80286_die2.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "intel_80287",
+      "title": "Intel 80287 numeric coprocessor",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1982,
+      "dateLabel": "1982",
+      "dateSource": "https://en.wikipedia.org/wiki/Intel_80287",
+      "era": "16",
+      "query": "Intel 80287",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 113,
+        "url": "https://github.com/hevangel/ai_engineer/issues/113"
+      },
+      "image": {
+        "src": "images/intel_80287.jpg",
+        "alt": "Intel 80287 die2.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_80287_die2.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mos_6567",
+      "title": "MOS 6567",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1982,
+      "dateLabel": "By 1982 · original C64 profile",
+      "dateSource": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
+      "era": "16",
+      "query": "MOS 6567",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 42,
+        "url": "https://github.com/hevangel/ai_engineer/issues/42"
+      },
+      "image": {
+        "src": "images/mos_6567.jpg",
+        "alt": "MOS6569R3 chtaube061229.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS6569R3_chtaube061229.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "The original 1982 C64 uses the 6567 VIC-II (U19 in Commodore schematic 326106). A 1983 reference-guide printing cannot serve as its introduction date; later PAL and die revisions need individual dates.",
+      "historySources": [
+        {
+          "url": "https://www.computerhistory.org/brochures/doc-4372957127052/",
+          "note": "Original Commodore C64 brochure, cataloged as 1982"
+        },
+        {
+          "url": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
+          "note": "Commodore schematic 326106, VIC-II and SID"
+        }
+      ]
+    },
+    {
+      "id": "mos_6581",
+      "title": "MOS 6581",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1982,
+      "dateLabel": "By 1982 · original C64 profile",
+      "dateSource": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
+      "era": "16",
+      "query": "MOS 6581",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 39,
+        "url": "https://github.com/hevangel/ai_engineer/issues/39"
+      },
+      "image": {
+        "src": "images/mos_6581.jpg",
+        "alt": "MOS Technology SID 6581.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MOS_Technology_SID_6581.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "The original 1982 C64 uses the 6581 SID (U18 in Commodore schematic 326106). The previous 1983 date identified a later manual printing, not the chip’s introduction; the 8580 is later.",
+      "historySources": [
+        {
+          "url": "https://www.computerhistory.org/brochures/doc-4372957127052/",
+          "note": "Original Commodore C64 brochure, cataloged as 1982"
+        },
+        {
+          "url": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/c64/326106-2of2.gif",
+          "note": "Commodore schematic 326106, VIC-II and SID"
+        }
+      ]
+    },
+    {
+      "id": "system_c64",
+      "title": "Commodore 64",
+      "kind": "system",
+      "company": "mos",
+      "year": 1982,
+      "dateLabel": "1982",
+      "dateSource": "https://en.wikipedia.org/wiki/Commodore_64",
+      "era": "16",
+      "query": "Commodore 64",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 95,
+        "url": "https://github.com/hevangel/ai_engineer/issues/95"
+      },
+      "image": {
+        "src": "images/system_c64.jpg",
+        "alt": "Commodore-64-Computer-FL.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg"
+      }
+    },
+    {
+      "id": "amd_80186",
+      "title": "AMD 80186 / 80188 family",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "1983 · AMD catalog preview",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 80186 / 80188 family",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 190,
+        "url": "https://github.com/hevangel/ai_engineer/issues/190"
+      },
+      "description": "Integrated x86 · DMA, timers, interrupt control & chip selects",
+      "dateBasis": "preview",
+      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative; the photo depicts an AMD 80C186 die.",
+      "image": {
+        "src": "images/amd_80186.jpg",
+        "alt": "AMD 80C186 SoC die.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_80C186_SoC_die.JPG",
+        "caption": "Representative AMD 80C186 die; not the original 1983 advance-information device."
+      }
+    },
+    {
+      "id": "amd_80286",
+      "title": "AMD 80286 / Am286",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "1983 · AMD catalog preview",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 80286 / Am286",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 191,
+        "url": "https://github.com/hevangel/ai_engineer/issues/191"
+      },
+      "description": "Protected-mode x86 · vendor and revision profiles",
+      "dateBasis": "preview",
+      "dateNote": "AMD’s 1983 catalog includes 80286 advance information at printed page 2-54. This is a catalog-preview date, not a confirmed production or shipment date for every Am286 revision.",
+      "image": {
+        "src": "images/amd_80286.jpg",
+        "alt": "AMD 80286 12S CPU.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_80286_12S_CPU.jpg"
+      }
+    },
+    {
+      "id": "amd_8086",
+      "title": "AMD 8086",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "Documented by 1983",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 8086",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 189,
+        "url": "https://github.com/hevangel/ai_engineer/issues/189"
+      },
+      "description": "16-bit x86 · 16-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s 1983 data book documents the 8086 at printed page 2-104. This is an availability/documentation bound, not Intel’s 1978 launch date or an exact AMD first shipment.",
+      "image": {
+        "src": "images/amd_8086.jpg",
+        "alt": "Ic-photo-AMD--P8086-2--(8086-CPU).JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8086-2--(8086-CPU).JPG"
+      }
+    },
+    {
+      "id": "amd_8088",
+      "title": "AMD 8088",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1983,
+      "dateLabel": "Documented by 1983",
+      "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
+      "era": "16",
+      "query": "AMD 8088",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 189,
+        "url": "https://github.com/hevangel/ai_engineer/issues/189"
+      },
+      "description": "16-bit x86 · 8-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s 1983 data book documents the 8088 at printed page 2-136. Keep the AMD-specific bound separate from Intel’s original introduction and from any factory IBM CPU claim.",
+      "image": {
+        "src": "images/amd_8088.png",
+        "alt": "Ic-photo-AMD--P8088-2-(8088-CPU).png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--P8088-2-(8088-CPU).png"
+      }
+    },
+    {
+      "id": "apple_iie_iou",
+      "title": "Apple IIe IOU",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Apple IIe IOU",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 14,
+        "url": "https://github.com/hevangel/ai_engineer/issues/14"
+      },
+      "image": {
+        "src": "images/apple_iie_iou.jpg",
+        "alt": "344-0020 Apple 8317 die 240nmpp.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:344-0020_Apple_8317_die_240nmpp.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "apple_iie_mmu",
+      "title": "Apple IIe MMU",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Apple IIe MMU",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 15,
+        "url": "https://github.com/hevangel/ai_engineer/issues/15"
+      },
+      "image": {
+        "src": "images/apple_iie_mmu.png",
+        "alt": "Apple IIe 1986 Mobo.png",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe_1986_Mobo.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "apple_iie_pal",
+      "title": "Apple IIe timing PAL",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "16",
+      "query": "Apple IIe timing PAL",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 16,
+        "url": "https://github.com/hevangel/ai_engineer/issues/16"
+      },
+      "image": {
+        "src": "images/apple_iie_pal.png",
+        "alt": "Apple IIe 1986 Mobo.png",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe_1986_Mobo.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "nes_parts",
+      "title": "NES/Famicom Ricoh CPU, PPU, APU and cartridge support",
+      "kind": "chip",
+      "company": "nintendo",
+      "year": 1983,
+      "dateLabel": "1983 · original Famicom profile",
+      "dateSource": "https://www.nintendo.co.jp/corporate/en/history/index.html",
+      "era": "16",
+      "query": "NES/Famicom Ricoh CPU, PPU, APU and cartridge",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 48,
+        "url": "https://github.com/hevangel/ai_engineer/issues/48"
+      },
+      "image": {
+        "src": "images/nes_parts.png",
+        "alt": "RP2A07A 20221102.png",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:RP2A07A_20221102.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "Anchored to Nintendo’s 1983 Japanese Famicom launch. Later NES regional silicon, cartridge mappers and revisions are not all 1983 devices."
+    },
+    {
+      "id": "card_xtdisk",
+      "title": "IBM/Xebec XT fixed-disk controller",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://en.wikipedia.org/wiki/IBM_Xebec_hard_disk_controller",
+      "era": "16",
+      "query": "IBM Xebec hard disk controller",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 106,
+        "url": "https://github.com/hevangel/ai_engineer/issues/106"
+      },
+      "image": {
+        "src": "images/card_xtdisk.jpg",
+        "alt": "IBM PC XT color.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "system_apple_iie",
+      "title": "Apple IIe",
+      "kind": "system",
+      "company": "apple",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "Apple IIe",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 77,
+        "url": "https://github.com/hevangel/ai_engineer/issues/77"
+      },
+      "image": {
+        "src": "images/system_apple_iie.jpg",
+        "alt": "Apple IIe.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_IIe.jpg"
+      }
+    },
+    {
+      "id": "system_ibm_pc_xt_5160",
+      "title": "IBM PC XT 5160",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "16",
+      "query": "IBM PC XT",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 83,
+        "url": "https://github.com/hevangel/ai_engineer/issues/83"
+      },
+      "image": {
+        "src": "images/system_ibm_pc_xt_5160.jpg",
+        "alt": "IBM PC XT color.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_XT_color.jpg"
+      }
+    },
+    {
+      "id": "system_nes",
+      "title": "Nintendo NES/Famicom",
+      "kind": "system",
+      "company": "nintendo",
+      "year": 1983,
+      "dateLabel": "1983",
+      "dateSource": "https://en.wikipedia.org/wiki/Nintendo_Entertainment_System",
+      "era": "16",
+      "query": "Nintendo Entertainment System",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 98,
+        "url": "https://github.com/hevangel/ai_engineer/issues/98"
+      },
+      "image": {
+        "src": "images/system_nes.jpg",
+        "alt": "Nintendo Entertainment System - Mattel Version (42532353740).jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Nintendo_Entertainment_System_-_Mattel_Version_(42532353740).jpg"
+      }
+    },
+    {
+      "id": "pc_at_glue",
+      "title": "AT / 386 support silicon",
+      "kind": "chip",
+      "company": "ibm",
+      "year": 1984,
+      "dateLabel": "1984 · original AT profile",
+      "dateSource": "https://minuszerodegrees.net/manuals/IBM_5170_Technical_Reference_1502243_MAR84.pdf",
+      "era": "16",
+      "query": "AT / 386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 122,
+        "url": "https://github.com/hevangel/ai_engineer/issues/122"
+      },
+      "image": {
+        "src": "images/pc_at_glue.jpg",
+        "alt": "IBM PC Motherboard (1981).jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_Motherboard_(1981).jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "The original IBM AT support circuits anchor this mixed family in 1984. Later 386 chipsets are separate implementation profiles, not 1984 parts."
+    },
+    {
+      "id": "ega_chip",
+      "title": "EGA controller family",
+      "kind": "chip",
+      "company": "ibm",
+      "year": 1984,
+      "dateLabel": "Documented by 1984",
+      "dateSource": "https://www.bitsavers.org/pdf/ibm/pc/cards/Technical_Reference_Options_and_Adapters_Volume_2_Apr84.pdf",
+      "era": "16",
+      "query": "EGA controller",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 126,
+        "url": "https://github.com/hevangel/ai_engineer/issues/126"
+      },
+      "image": {
+        "src": "images/ega_chip.jpg",
+        "alt": "EGA card.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:EGA_card.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "IBM’s EGA technical-reference section, dated August 2, 1984, documents the original controller chipset. Later EGA-compatible implementations have separate dates."
+    },
+    {
+      "id": "mac_floppy",
+      "title": "IWM / SWIM family",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1984,
+      "dateLabel": "By 1984 · IWM in Macintosh",
+      "dateSource": "https://vintageapple.org/inside_o/pdf/Guide_to_Macintosh_Family_Hardware_2nd_Edition_1990.pdf",
+      "era": "16",
+      "query": "IWM / SWIM",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 131,
+        "url": "https://github.com/hevangel/ai_engineer/issues/131"
+      },
+      "image": {
+        "src": "images/mac_floppy.jpg",
+        "alt": "Macintosh II motherboard.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "Apple identifies the IWM in the original Macintosh 128K. This is an in-system availability bound; the later SWIM is not assigned a 1984 launch date."
+    },
+    {
+      "id": "mac_glue",
+      "title": "Macintosh custom silicon",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1984,
+      "dateLabel": "1984 · original Macintosh profile",
+      "dateSource": "https://vintageapple.org/inside_o/pdf/Guide_to_Macintosh_Family_Hardware_2nd_Edition_1990.pdf",
+      "era": "16",
+      "query": "Macintosh custom",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 132,
+        "url": "https://github.com/hevangel/ai_engineer/issues/132"
+      },
+      "image": {
+        "src": "images/mac_glue.jpg",
+        "alt": "Macintosh II motherboard.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_II_motherboard.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "The original Macintosh’s PAL logic anchors this family. BBU, GLUE, ASC and later I/O processors belong to subsequent machine profiles."
+    },
+    {
+      "id": "mos_7360",
+      "title": "MOS 7360",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1984,
+      "dateLabel": "Documented by 1984",
+      "dateSource": "https://www.zimmers.net/anonftp/pub/cbm/schematics/computers/plus4/C16_Service_Manual_314001-03_(1984_Oct).pdf",
+      "era": "16",
+      "query": "MOS 7360",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 41,
+        "url": "https://github.com/hevangel/ai_engineer/issues/41"
+      },
+      "image": {
+        "src": "images/mos_7360.jpg",
+        "alt": "Commodore 16 (Thomas Conté) (2).jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Commodore_16_(Thomas_Cont%C3%A9)_(2).jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "Commodore’s October 1984 C16 service manual lists the 7360 TED and its 8360 substitute. The bound does not date every TED revision."
+    },
+    {
+      "id": "motorola_68020",
+      "title": "Motorola MC68020",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68020",
+      "era": "16",
+      "query": "Motorola 68020",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 114,
+        "url": "https://github.com/hevangel/ai_engineer/issues/114"
+      },
+      "image": {
+        "src": "images/motorola_68020.jpg",
+        "alt": "Motorola 68020 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68020_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "motorola_6888x",
+      "title": "Motorola MC68881 and MC68882 FPU family",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68881",
+      "era": "16",
+      "query": "Motorola 68881",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 119,
+        "url": "https://github.com/hevangel/ai_engineer/issues/119"
+      },
+      "image": {
+        "src": "images/motorola_6888x.jpg",
+        "alt": "Motorola 68881 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68881_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mac_scsi",
+      "title": "NCR 5380 SCSI",
+      "kind": "chip",
+      "company": "ncr",
+      "year": 1984,
+      "dateLabel": "1984 · NCR 5380 introduction",
+      "dateSource": "https://www.endl.com/letter/se100t10.pdf",
+      "era": "16",
+      "query": "NCR 5380 SCSI",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 129,
+        "url": "https://github.com/hevangel/ai_engineer/issues/129"
+      },
+      "image": {
+        "src": "images/mac_scsi.jpg",
+        "alt": "Ncr5380dip.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ncr5380dip.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "reported",
+      "dateNote": "The ENDL SCSI history dates NCR’s 5380 introduction to April 1984, following the distinct 5385 in April 1983. Apple’s April 1985 File Server manual independently documents the 5380 in use.",
+      "historySources": [
+        {
+          "url": "https://www.endl.com/letter/se100t10.pdf",
+          "note": "ENDL history: NCR5380 introduction in April 1984"
+        },
+        {
+          "url": "https://bitsavers.trailing-edge.com/pdf/apple/file_server/File_Server_Theory_of_Operation_Apr85.pdf",
+          "note": "Apple File Server theory of operation, April 1985"
+        }
+      ]
+    },
+    {
+      "id": "card_ega",
+      "title": "IBM EGA ISA display adapter",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Enhanced_Graphics_Adapter",
+      "era": "16",
+      "query": "IBM Enhanced Graphics Adapter",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 134,
+        "url": "https://github.com/hevangel/ai_engineer/issues/134"
+      },
+      "image": {
+        "src": "images/card_ega.jpg",
+        "alt": "EGA card.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:EGA_card.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "system_ibm_at_5170",
+      "title": "IBM PC AT 5170",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/IBM_Personal_Computer_AT",
+      "era": "16",
+      "query": "IBM Personal Computer AT",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 142,
+        "url": "https://github.com/hevangel/ai_engineer/issues/142"
+      },
+      "image": {
+        "src": "images/system_ibm_at_5170.jpg",
+        "alt": "Restoring an IBM AT 5170.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Restoring_an_IBM_AT_5170.jpg"
+      }
+    },
+    {
+      "id": "system_mac_128k",
+      "title": "Macintosh 128K",
+      "kind": "system",
+      "company": "apple",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_128K",
+      "era": "16",
+      "query": "Macintosh 128K",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 153,
+        "url": "https://github.com/hevangel/ai_engineer/issues/153"
+      },
+      "image": {
+        "src": "images/system_mac_128k.jpg",
+        "alt": "Computer macintosh 128k, 1984 (all about Apple onlus).jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Computer_macintosh_128k,_1984_(all_about_Apple_onlus).jpg"
+      }
+    },
+    {
+      "id": "system_mac_512k",
+      "title": "Macintosh 512K",
+      "kind": "system",
+      "company": "apple",
+      "year": 1984,
+      "dateLabel": "1984",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_512K",
+      "era": "16",
+      "query": "Macintosh 512K",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 158,
+        "url": "https://github.com/hevangel/ai_engineer/issues/158"
+      },
+      "image": {
+        "src": "images/system_mac_512k.jpg",
+        "alt": "Apple Macintosh 512K Desktop.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_Macintosh_512K_Desktop.jpg"
+      }
+    },
+    {
+      "id": "intel_80386",
+      "title": "Intel 80386DX",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1985,
+      "dateLabel": "1985",
+      "dateSource": "https://www.intel.com/pressroom/kits/quickrefyr.htm",
+      "era": "32",
+      "query": "Intel 80386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 116,
+        "url": "https://github.com/hevangel/ai_engineer/issues/116"
+      },
+      "image": {
+        "src": "images/intel_80386.jpg",
+        "alt": "A80386DX-25 SX218.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:A80386DX-25_SX218.jpg"
+      },
+      "description": "32-bit ISA and external data bus · original 386 / DX profile",
+      "dateNote": "Intel introduced the original 80386 in 1985; the DX name distinguishes its 32-bit external bus from the later 16-bit-bus SX. The photographed 25 MHz package is a later speed grade.",
+      "dateBasis": "introduced"
+    },
+    {
+      "id": "motorola_68851",
+      "title": "Motorola MC68851 external PMMU",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1985,
+      "dateLabel": "Documented by 1985",
+      "dateSource": "https://www.motorolasolutions.com/content/dam/msi/docs/en-xw/static_files/history-motorola-annual-report-archive-1985-7p72mb-36.pdf",
+      "era": "32",
+      "query": "Motorola 68851",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 117,
+        "url": "https://github.com/hevangel/ai_engineer/issues/117"
+      },
+      "image": {
+        "src": "images/motorola_68851.jpg",
+        "alt": "Motorola 68851 die.JPG",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68851_die.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "ym3812",
+      "title": "Yamaha YM3812 OPL2 and associated DAC profile",
+      "kind": "chip",
+      "company": "yamaha",
+      "year": 1985,
+      "dateLabel": "1985",
+      "dateSource": "https://en.wikipedia.org/wiki/Yamaha_YM3812",
+      "era": "32",
+      "query": "Yamaha YM3812",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 124,
+        "url": "https://github.com/hevangel/ai_engineer/issues/124"
+      },
+      "image": {
+        "src": "images/ym3812.jpg",
+        "alt": "Yamaha YM3812.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YM3812.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "mac_adb",
+      "title": "Apple Desktop Bus controllers",
+      "kind": "chip",
+      "company": "apple",
+      "year": 1986,
+      "dateLabel": "1986 · Apple IIgs profile",
+      "dateSource": "https://goldstarsoftware.com/applesite/Documentation/AppleIIgsHardwareReferenceManual.PDF",
+      "era": "32",
+      "query": "Apple Desktop Bus",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 130,
+        "url": "https://github.com/hevangel/ai_engineer/issues/130"
+      },
+      "image": {
+        "src": "images/mac_adb.jpg",
+        "alt": "Apple Desktop Bus keyboard SMK - keyboard controller.JPG",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_Desktop_Bus_keyboard_SMK_-_keyboard_controller.JPG"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "The original Apple IIgs provides the 1986 ADB anchor; Macintosh II and SE implementations follow in 1987. Individual controller revisions need their own dates."
+    },
+    {
+      "id": "mos_8520",
+      "title": "MOS 8520",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1986,
+      "dateLabel": "Documented by 1986",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
+      "era": "32",
+      "query": "MOS 8520",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 40,
+        "url": "https://github.com/hevangel/ai_engineer/issues/40"
+      },
+      "image": {
+        "src": "images/mos_8520.jpg",
+        "alt": "Mos 8520 mcmaster mz mit20x.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Mos_8520_mcmaster_mz_mit20x.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "saa1099",
+      "title": "Philips SAA1099 family",
+      "kind": "chip",
+      "company": "philips",
+      "year": 1986,
+      "dateLabel": "Documented by 1986",
+      "dateSource": "https://bitsavers.org/components/philips/_dataBooks/1986_IC01_Philips_Radio_Audio_and_Associated_Systems.pdf",
+      "era": "32",
+      "query": "Philips SAA1099",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 182,
+        "url": "https://github.com/hevangel/ai_engineer/issues/182"
+      },
+      "image": {
+        "src": "images/saa1099.jpg",
+        "alt": "Soundblaster-1.0-ct1320.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_deskpro_386",
+      "title": "Compaq Deskpro 386",
+      "kind": "system",
+      "company": "compaq",
+      "year": 1986,
+      "dateLabel": "1986",
+      "dateSource": "https://en.wikipedia.org/wiki/Compaq_Deskpro",
+      "era": "32",
+      "query": "Compaq Deskpro 386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 145,
+        "url": "https://github.com/hevangel/ai_engineer/issues/145"
+      },
+      "image": {
+        "src": "images/system_deskpro_386.jpg",
+        "alt": "Compaq Deskpro 386 16Mhz.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Compaq_Deskpro_386_16Mhz.jpg"
+      }
+    },
+    {
+      "id": "system_mac_plus",
+      "title": "Macintosh Plus",
+      "kind": "system",
+      "company": "apple",
+      "year": 1986,
+      "dateLabel": "1986",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_Plus",
+      "era": "32",
+      "query": "Macintosh Plus",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 160,
+        "url": "https://github.com/hevangel/ai_engineer/issues/160"
+      },
+      "image": {
+        "src": "images/system_mac_plus.jpg",
+        "alt": "Macintosh Plus interior 2.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_Plus_interior_2.jpg"
+      }
+    },
+    {
+      "id": "intel_80387",
+      "title": "Intel 80387DX",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Intel_80387",
+      "era": "32",
+      "query": "Intel 80387",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 115,
+        "url": "https://github.com/hevangel/ai_engineer/issues/115"
+      },
+      "image": {
+        "src": "images/intel_80387.jpg",
+        "alt": "Intel 80387 numeric coprocessor in its DX PGA package.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80387.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "introduced",
+      "dateNote": "Original 80387/DX introduction in 1987. The SX has a separate 16-bit host interface and timeline entry; neither is an interchangeable 80287."
+    },
+    {
+      "id": "motorola_68030",
+      "title": "Motorola MC68030",
+      "kind": "chip",
+      "company": "motorola",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Motorola_68030",
+      "era": "32",
+      "query": "Motorola 68030",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 118,
+        "url": "https://github.com/hevangel/ai_engineer/issues/118"
+      },
+      "image": {
+        "src": "images/motorola_68030.jpg",
+        "alt": "Motorola 68030 32-bit microprocessor.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68030_32-bit_microprocessor.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "vga_chip",
+      "title": "VGA controller family",
+      "kind": "chip",
+      "company": "ibm",
+      "year": 1987,
+      "dateLabel": "1987 · original PS/2 VGA profile",
+      "dateSource": "https://www.ibm.com/history/ps-2",
+      "era": "32",
+      "query": "VGA controller",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 127,
+        "url": "https://github.com/hevangel/ai_engineer/issues/127"
+      },
+      "image": {
+        "src": "images/vga_chip.jpg",
+        "alt": "ISA VGA card.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:ISA_VGA_card.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "IBM dates the PS/2 and its new VGA controller to 1987. Later VGA-compatible chips are subsequent family members."
+    },
+    {
+      "id": "card_adlib",
+      "title": "AdLib Music Synthesizer",
+      "kind": "card",
+      "company": "adlib",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Ad_Lib,_Inc.",
+      "era": "32",
+      "query": "AdLib sound card",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 137,
+        "url": "https://github.com/hevangel/ai_engineer/issues/137"
+      },
+      "image": {
+        "src": "images/card_adlib.jpg",
+        "alt": "Adlib sound card version 1.5.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Adlib_sound_card_version_1.5.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "card_vga",
+      "title": "IBM VGA ISA display adapter",
+      "kind": "card",
+      "company": "ibm",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Video_Graphics_Array",
+      "era": "32",
+      "query": "IBM Video Graphics Array",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 136,
+        "url": "https://github.com/hevangel/ai_engineer/issues/136"
+      },
+      "image": {
+        "src": "images/card_vga.jpg",
+        "alt": "IBM VGA graphics card.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_VGA_graphics_card.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "card_nubus_video",
+      "title": "Macintosh II-family NuBus video adapter",
+      "kind": "card",
+      "company": "apple",
+      "year": 1987,
+      "dateLabel": "March 1987 · Macintosh II Video Card",
+      "dateSource": "https://fsck.technology/documentation/Apple/Product%20Data%20%28Information%20Exchange%29%20-%201990/displays/macintosh-ii-video-card-8703.pdf",
+      "era": "32",
+      "query": "Macintosh II- NuBus video adapter",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 139,
+        "url": "https://github.com/hevangel/ai_engineer/issues/139"
+      },
+      "image": {
+        "src": "images/card_nubus_video.jpg",
+        "alt": "Apple-macintosh-ii-video-card-v80019946.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple-macintosh-ii-video-card-v80019946.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "dateBasis": "documented",
+      "dateNote": "Apple’s Macintosh II Video Card and Expansion Kit product sheet is dated March 1987. Later NuBus video adapters are separate card profiles.",
+      "bus": "nubus"
+    },
+    {
+      "id": "system_ibm_ps2_model30",
+      "title": "IBM PS/2 Model 30",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/system/README.md",
+      "era": "32",
+      "query": "IBM PS/2 Model 30",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 86,
+        "url": "https://github.com/hevangel/ai_engineer/issues/86"
+      },
+      "image": {
+        "src": "images/system_ibm_ps2_model30.jpg",
+        "alt": "IBM PS2 (R) model 30 (white background).jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_(R)_model_30_(white_background).jpg"
+      }
+    },
+    {
+      "id": "system_ps2_model80",
+      "title": "IBM PS/2 Model 80",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/IBM_PS%2F2_Model_80",
+      "era": "32",
+      "query": "IBM PS/2 Model 80",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 151,
+        "url": "https://github.com/hevangel/ai_engineer/issues/151"
+      },
+      "image": {
+        "src": "images/system_ps2_model80.jpg",
+        "alt": "IBM PS2 (R) model 30 (white background).jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_(R)_model_30_(white_background).jpg"
+      }
+    },
+    {
+      "id": "system_mac_ii",
+      "title": "Macintosh II",
+      "kind": "system",
+      "company": "apple",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://support.apple.com/en-euro/112188",
+      "era": "32",
+      "query": "Macintosh II",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 167,
+        "url": "https://github.com/hevangel/ai_engineer/issues/167"
+      },
+      "image": {
+        "src": "images/system_mac_ii.jpg",
+        "alt": "MacII.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
+      }
+    },
+    {
+      "id": "system_mac_se",
+      "title": "Macintosh SE",
+      "kind": "system",
+      "company": "apple",
+      "year": 1987,
+      "dateLabel": "1987",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_SE",
+      "era": "32",
+      "query": "Macintosh SE",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 163,
+        "url": "https://github.com/hevangel/ai_engineer/issues/163"
+      },
+      "image": {
+        "src": "images/system_mac_se.jpg",
+        "alt": "Macintosh SE cropped.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_SE_cropped.jpg"
+      }
+    },
+    {
+      "id": "neat_cs8221",
+      "title": "CHIPS NEAT CS8221 chipset",
+      "kind": "chip",
+      "company": "chips",
+      "year": 1987,
+      "era": "32",
+      "dateLabel": "Documented by 1987",
+      "dateBasis": "documented",
+      "dateSource": "https://www.ardent-tool.com/datasheets/CHIPs_CS8221_Chipset.pdf",
+      "dateNote": "CHIPS CS8221 NEAT Data Book, 10/87 Rev 0, pages 1–2. Documentation bound; not a shipping-date assertion. This is a non-CPU support chipset. The same set can be used by different motherboards; exact board/ROM selection precedes any computer connection.",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 204,
+        "url": "https://github.com/hevangel/ai_engineer/issues/204"
+      },
+      "image": {
+        "src": "images/neat_cs8221.jpg",
+        "alt": "CHIPS P82C206 integrated peripheral controller, one member of the four-chip NEAT CS8221 set.",
+        "representative": true,
+        "caption": "Representative member: CHIPS P82C206 on a motherboard; the other three CS8221 members are not pictured.",
+        "source": "https://commons.wikimedia.org/wiki/File:Chips%26technologies_82C206_IMGP0216_smial_wp.JPG"
+      },
+      "chipset": {
+        "evidence": "https://www.ardent-tool.com/datasheets/CHIPs_CS8221_Chipset.pdf",
+        "members": [
+          {
+            "part": "82C211",
+            "role": "CPU/bus controller"
+          },
+          {
+            "part": "82C212",
+            "role": "Page/interleave and EMS memory controller"
+          },
+          {
+            "part": "82C215",
+            "role": "Data/address buffer and parity logic"
+          },
+          {
+            "part": "82C206",
+            "role": "Integrated peripherals controller"
+          }
+        ]
+      }
+    },
+    {
+      "id": "intel_80386sx",
+      "title": "Intel 80386SX",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1988,
+      "dateLabel": "1988 · 386SX introduction",
+      "dateSource": "https://www.intel.com/pressroom/kits/quickrefyr.htm",
+      "era": "32",
+      "query": "Intel 80386SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 116,
+        "url": "https://github.com/hevangel/ai_engineer/issues/116"
+      },
+      "description": "32-bit architecture · 16-bit external bus · 24-bit physical addressing",
+      "dateBasis": "introduced",
+      "dateNote": "The SX retains the 32-bit architecture but uses a 16-bit external data bus and 24-bit physical address bus. It is distinct from the earlier DX and from IBM 386SLC.",
+      "image": {
+        "src": "images/intel_80386sx.jpg",
+        "alt": "I386SX.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:I386SX.jpg"
+      }
+    },
+    {
+      "id": "intel_80387sx",
+      "title": "Intel 80387SX",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1988,
+      "dateLabel": "Documented by 1988",
+      "dateSource": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=968",
+      "era": "32",
+      "query": "Intel 80387SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 115,
+        "url": "https://github.com/hevangel/ai_engineer/issues/115"
+      },
+      "image": {
+        "src": "images/intel_80387sx.jpg",
+        "alt": "Intel i387 SX N80387SX numeric coprocessor in its 68-pin PLCC package.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_i387SX.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "documented",
+      "dateNote": "Intel datasheet 240225-002, November 1988, printed page 4-450 (PDF page 968) in the 1989 handbook explicitly documents the 80387SX and 68-pin PLCC host interface. This establishes a dated bound, not an exact shipment date; the DX family’s 1987 date is not reused for SX."
+    },
+    {
+      "id": "system_ps2_model70",
+      "title": "IBM PS/2 Model 70 386",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1988,
+      "dateLabel": "1988 · Model 70 announced",
+      "dateSource": "https://www.ardent-tool.com/qtechinfo/GJAN-43WJX8.html",
+      "era": "32",
+      "query": "IBM PS/2 Model 70 386",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 196,
+        "url": "https://github.com/hevangel/ai_engineer/issues/196"
+      },
+      "description": "386DX · Micro Channel · original 8570 desktop profile",
+      "dateBasis": "introduced",
+      "dateNote": "The preserved IBM specification gives June 2, 1988 and 16/20 MHz 80386DX profiles with Micro Channel. Select an exact 8570 board/ROM; later 486 Model 70 and portable P70 are different machines.",
+      "image": {
+        "src": "images/system_ps2_model70.jpg",
+        "alt": "IBM PS2 MCA Model 70, front view.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_MCA_Model_70,_front_view.jpg"
+      }
+    },
+    {
+      "id": "system_mac_iix",
+      "title": "Macintosh IIx",
+      "kind": "system",
+      "company": "apple",
+      "year": 1988,
+      "dateLabel": "1988",
+      "dateSource": "https://support.apple.com/en-ca/112189",
+      "era": "32",
+      "query": "Macintosh IIx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 169,
+        "url": "https://github.com/hevangel/ai_engineer/issues/169"
+      },
+      "image": {
+        "src": "images/system_mac_iix.jpg",
+        "alt": "MacII.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
+      }
+    },
+    {
+      "id": "intel_at_chipset",
+      "title": "Intel 82230 / 82231 chipset",
+      "kind": "chip",
+      "company": "intel",
+      "year": 1988,
+      "era": "32",
+      "dateLabel": "Documented by 1988",
+      "dateBasis": "documented",
+      "dateSource": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=1185",
+      "dateNote": "Intel 240017-002, August 1988, printed 4-667 / PDF page 1185. Documentation bound; not a shipping-date assertion. This is a non-CPU support chipset. The same set can be used by different motherboards; exact board/ROM selection precedes any computer connection.",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 203,
+        "url": "https://github.com/hevangel/ai_engineer/issues/203"
+      },
+      "image": {
+        "src": "images/intel_at_chipset.jpg",
+        "alt": "Intel N82230-2 support IC, one member of the 82230/82231 two-chip set.",
+        "representative": true,
+        "caption": "Representative member: Intel N82230-2 from the two-chip 82230/82231 set.",
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-Intel--ZyMOS--N82230-2--Z949208.JPG"
+      },
+      "chipset": {
+        "evidence": "https://www.bitsavers.org/components/intel/_dataBooks/1989_Intel_Microprocessor_and_Peripheral_Handbook_Vol_1.pdf#page=1185",
+        "members": [
+          {
+            "part": "82230",
+            "role": "Clock/ready, bus control, RTC, dual interrupt controllers and coprocessor/control logic"
+          },
+          {
+            "part": "82231",
+            "role": "Timer, clock, memory mapper, dual DMA and refresh/arbitration logic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sb_dsp",
+      "title": "Sound Blaster DSP family",
+      "kind": "chip",
+      "company": "creative",
+      "year": 1989,
+      "dateLabel": "1989 · Sound Blaster 1.0 profile",
+      "dateSource": "https://us.creative.com/soundblaster/ourstory/",
+      "era": "32",
+      "query": "Sound Blaster DSP",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 125,
+        "url": "https://github.com/hevangel/ai_engineer/issues/125"
+      },
+      "image": {
+        "src": "images/sb_dsp.jpg",
+        "alt": "Soundblaster-1.0-ct1320.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "Creative dates the original Sound Blaster to 1989. This anchors its original digital-audio controller profile; later Pro/16 DSPs retain their own dates."
+    },
+    {
+      "id": "card_roland_lapc_i",
+      "title": "Roland LAPC-I",
+      "kind": "card",
+      "company": "roland",
+      "bus": "isa",
+      "year": 1989,
+      "era": "32",
+      "dateLabel": "Documented by 1989",
+      "dateSource": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=2",
+      "dateBasis": "documented",
+      "dateNote": "Roland’s original LAPC-I owner’s manual carries copyright 1989 on PDF page 2. This establishes a contemporary documentation bound, not an exact shipping date. Page 3 requires an available full-length 13-inch expansion slot. LAPC-I is the ISA card; external MT-32 modules and LAPC-N are separate hardware.",
+      "query": "Roland LAPC-I LAPC-1 MPU-401 LA sound card",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 183,
+        "url": "https://github.com/hevangel/ai_engineer/issues/183"
+      },
+      "image": {
+        "src": "images/card_roland_lapc_i.jpg",
+        "alt": "Roland LAPC-I full-length ISA sound card, showing its LA synthesis chips, ISA edge connector and audio/MIDI bracket.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Lapc-1.jpg"
+      },
+      "historySources": [
+        {
+          "url": "https://cdn.roland.com/assets/media/pdf/LAPC-1_OM.pdf#page=3",
+          "note": "Original full-length slot requirements"
+        },
+        {
+          "url": "https://cdn.roland.com/assets/media/pdf/MPU401_Setup.pdf",
+          "note": "Roland IRQ and I/O-address setup notes"
+        }
+      ]
+    },
+    {
+      "id": "card_sb",
+      "title": "Creative Sound Blaster family",
+      "kind": "card",
+      "company": "creative",
+      "year": 1989,
+      "dateLabel": "1989",
+      "dateSource": "https://en.wikipedia.org/wiki/Sound_Blaster",
+      "era": "32",
+      "query": "Sound Blaster",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 138,
+        "url": "https://github.com/hevangel/ai_engineer/issues/138"
+      },
+      "image": {
+        "src": "images/card_sb.jpg",
+        "alt": "Soundblaster-1.0-ct1320.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
+      },
+      "description": "Expansion card · bus, components & software",
+      "bus": "isa"
+    },
+    {
+      "id": "system_mac_iici",
+      "title": "Macintosh IIci",
+      "kind": "system",
+      "company": "apple",
+      "year": 1989,
+      "dateLabel": "1989",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_IIci",
+      "era": "32",
+      "query": "Macintosh IIci",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 175,
+        "url": "https://github.com/hevangel/ai_engineer/issues/175"
+      },
+      "image": {
+        "src": "images/system_mac_iici.png",
+        "alt": "Macintosh IIci Rear Panel.png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Macintosh_IIci_Rear_Panel.png"
+      }
+    },
+    {
+      "id": "system_mac_se30",
+      "title": "Macintosh SE/30",
+      "kind": "system",
+      "company": "apple",
+      "year": 1989,
+      "dateLabel": "1989",
+      "dateSource": "https://support.apple.com/en-me/112247",
+      "era": "32",
+      "query": "Macintosh SE/30",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 172,
+        "url": "https://github.com/hevangel/ai_engineer/issues/172"
+      },
+      "image": {
+        "src": "images/system_mac_se30.png",
+        "alt": "Apple Macintosh SE-30 computer (1989) clear background.png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_Macintosh_SE-30_computer_(1989)_clear_background.png"
+      }
+    },
+    {
+      "id": "snes_parts",
+      "title": "Super Nintendo CPU, PPU, audio and support devices",
+      "kind": "chip",
+      "company": "nintendo",
+      "year": 1990,
+      "dateLabel": "1990 · original Super Famicom profile",
+      "dateSource": "https://www.nintendo.co.jp/corporate/en/history/index.html",
+      "era": "32",
+      "query": "Super Nintendo CPU, PPU, audio and  devices",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 47,
+        "url": "https://github.com/hevangel/ai_engineer/issues/47"
+      },
+      "image": {
+        "src": "images/snes_parts.jpg",
+        "alt": "Super-Nintendo-1Chip-Motherboard-Top-Flat.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Super-Nintendo-1Chip-Motherboard-Top-Flat.jpg"
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "dateBasis": "system",
+      "dateNote": "Anchored to Nintendo’s 1990 Japanese Super Famicom launch. The US SNES followed in 1991; the representative 1CHIP board photograph depicts a later revision."
+    },
+    {
+      "id": "system_mac_iifx",
+      "title": "Macintosh IIfx",
+      "kind": "system",
+      "company": "apple",
+      "year": 1990,
+      "dateLabel": "1990",
+      "dateSource": "https://en.wikipedia.org/wiki/Macintosh_IIfx",
+      "era": "32",
+      "query": "Macintosh IIfx",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 179,
+        "url": "https://github.com/hevangel/ai_engineer/issues/179"
+      },
+      "image": {
+        "src": "images/system_mac_iifx.jpg",
+        "alt": "MacII.jpg",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MacII.jpg"
+      }
+    },
+    {
+      "id": "system_snes",
+      "title": "Super Nintendo",
+      "kind": "system",
+      "company": "nintendo",
+      "year": 1990,
+      "dateLabel": "1990",
+      "dateSource": "https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System",
+      "era": "32",
+      "query": "Super Nintendo Entertainment System",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 101,
+        "url": "https://github.com/hevangel/ai_engineer/issues/101"
+      },
+      "image": {
+        "src": "images/system_snes.jpg",
+        "alt": "SNES-Mod1-Console-Set.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.jpg"
+      }
+    },
+    {
+      "id": "amd_am386dx",
+      "title": "AMD Am386DX",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1991,
+      "dateLabel": "1991 · Am386 family introduced",
+      "dateSource": "https://ir.amd.com/financial-information/sec-filings/content/0000891618-94-000068/EX-13.txt",
+      "era": "32",
+      "query": "AMD Am386DX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 192,
+        "url": "https://github.com/hevangel/ai_engineer/issues/192"
+      },
+      "description": "32-bit x86 · 32-bit external data bus",
+      "dateBasis": "introduced",
+      "dateNote": "AMD’s annual report explicitly dates the Am386 family introduction to 1991. This is the 32-bit external-bus DX profile; the pictured 40 MHz grade is not claimed to date every package or revision.",
+      "image": {
+        "src": "images/amd_am386dx.jpg",
+        "alt": "AMD AM386DX-40.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM386DX-40.jpg",
+        "caption": "Motherboard with an AMD Am386DX-40; this later speed grade illustrates the 1991 family."
+      }
+    },
+    {
+      "id": "amd_am386sx",
+      "title": "AMD Am386SX",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1991,
+      "dateLabel": "1991 · SX datasheet published",
+      "dateSource": "https://www.ardent-tool.com/CPU/docs/AMD/386/386SX/15022a.pdf",
+      "era": "32",
+      "query": "AMD Am386SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 192,
+        "url": "https://github.com/hevangel/ai_engineer/issues/192"
+      },
+      "description": "32-bit x86 · 16-bit external data bus",
+      "dateBasis": "documented",
+      "dateNote": "AMD’s Am386SX Rev A sheet is dated March 1991. The SX has a 16-bit external data bus; later SXL/SXLV power and speed variants require separate dates and contracts.",
+      "image": {
+        "src": "images/amd_am386sx.jpg",
+        "alt": "Am386SX25.jpg",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Am386SX25.jpg",
+        "caption": "AMD Am386SX/SXL-25 package; the pictured later SXL variant illustrates the SX family."
+      }
+    },
+    {
+      "id": "ibm_386slc",
+      "title": "IBM 386SLC",
+      "kind": "chip",
+      "company": "ibm",
+      "year": 1991,
+      "dateLabel": "1991 · IBM cached-processor announcement",
+      "dateSource": "https://www.ardent-tool.com/CPU/191-201.txt",
+      "era": "32",
+      "query": "IBM 386SLC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 188,
+        "url": "https://github.com/hevangel/ai_engineer/issues/188"
+      },
+      "description": "386SX-derived IBM CPU · 8 KB internal cache",
+      "dateBasis": "documented",
+      "dateNote": "IBM announcement 191-201, October 17, 1991, specifies the 20 MHz 386SLC and 8 KB internal cache, with December availability planned. The Model 56 SLC followed in 1992; this is not Intel 386SL or a 486SLC.",
+      "image": {
+        "src": "images/ibm_386slc.png",
+        "alt": "IBM PS/2 family hosts; the individual 386SLC processor is not pictured.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "IBM PS/2 family hosts; the individual 386SLC processor is not pictured."
+      }
+    },
+    {
+      "id": "ymf262",
+      "title": "Yamaha YMF262 OPL3 and associated DAC profile",
+      "kind": "chip",
+      "company": "yamaha",
+      "year": 1991,
+      "dateLabel": "Documented by 1991",
+      "dateSource": "https://www.bitsavers.org/components/yamaha/YMF262_199110.pdf",
+      "era": "32",
+      "query": "Yamaha YMF262",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 123,
+        "url": "https://github.com/hevangel/ai_engineer/issues/123"
+      },
+      "image": {
+        "src": "images/ymf262.png",
+        "alt": "Yamaha YMF262-M.png",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YMF262-M.png"
+      },
+      "description": "Chip family · specification, RTL & independent verification"
+    },
+    {
+      "id": "system_ps2_model35sx",
+      "title": "IBM PS/2 Model 35 SX",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1991,
+      "dateLabel": "1991 · Model 35 SX availability",
+      "dateSource": "https://www.ardent-tool.com/35_40/191-075.txt",
+      "era": "32",
+      "query": "IBM PS/2 Model 35 SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 193,
+        "url": "https://github.com/hevangel/ai_engineer/issues/193"
+      },
+      "description": "20 MHz 386SX · 16-bit ISA · VGA & IDE",
+      "dateBasis": "introduced",
+      "dateNote": "IBM announcement 191-075 gives June 11, 1991 availability and a 20 MHz 80386SX. Model 35 SX uses ISA; the later 35 SLC is a separate profile. The photograph is a representative PS/2 family view.",
+      "image": {
+        "src": "images/system_ps2_model35sx.png",
+        "alt": "Representative PS/2 family: PS/2E above Model 56 and Model 30-286; not a Model 35 SX.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "Representative PS/2 family: PS/2E above Model 56 and Model 30-286; not a Model 35 SX."
+      }
+    },
+    {
+      "id": "system_pc_386sx",
+      "title": "IBM PS/2 Model 25 SX",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1992,
+      "dateLabel": "1992 · Model 25 SX announced",
+      "dateSource": "https://www.ardent-tool.com/8525/192-019.txt",
+      "era": "32",
+      "query": "IBM PS/2 Model 25 SX",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 148,
+        "url": "https://github.com/hevangel/ai_engineer/issues/148"
+      },
+      "description": "16 MHz 386SX · 16-bit ISA · integrated color VGA",
+      "dateBasis": "introduced",
+      "dateNote": "IBM letter 192-019 (January 21, 1992) specifies a 16 MHz 80386SX, with April 17 planned availability. The selected K00 profile replaces the Compaq 386s SX build; the photograph is a representative Model 25 chassis, not a confirmed K00 planar.",
+      "image": {
+        "src": "images/system_pc_386sx.jpg",
+        "alt": "IBM Model 25 family chassis; the selected 1992 SX board revision is not confirmed in this photo.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2_model_25_(1).jpg",
+        "caption": "IBM Model 25 family chassis; the selected 1992 SX board revision is not confirmed in this photo."
+      }
+    },
+    {
+      "id": "system_ps2_model56slc",
+      "title": "IBM PS/2 Model 56 SLC",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1992,
+      "dateLabel": "1992 · Model 56 SLC announced",
+      "dateSource": "https://www.ardent-tool.com/qtechinfo/GJAN-43VR4V.html",
+      "era": "32",
+      "query": "IBM PS/2 Model 56 SLC",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 199,
+        "url": "https://github.com/hevangel/ai_engineer/issues/199"
+      },
+      "description": "20 MHz IBM 386SLC · 16-bit Micro Channel · SCSI",
+      "dateBasis": "introduced",
+      "dateNote": "IBM’s preserved specification gives February 25, 1992: 20 MHz IBM 386SLC, 8 KB cache, 16-bit Micro Channel and integrated SCSI. The selected 8556-055 is distinct from plain SX, LS and later SLC2 variants; the pictured Model 56 revision is unconfirmed.",
+      "image": {
+        "src": "images/system_ps2_model56slc.png",
+        "alt": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PS2E.png",
+        "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
+      }
+    }
+  ],
+  "buses": {
+    "s100": {
+      "label": "S-100",
+      "color": "#557948"
+    },
+    "apple_ii": {
+      "label": "Apple II",
+      "color": "#4C7174"
+    },
+    "isa": {
+      "label": "ISA",
+      "color": "#756145"
+    },
+    "nubus": {
+      "label": "NuBus",
+      "color": "#725D85"
+    }
+  }
+}
