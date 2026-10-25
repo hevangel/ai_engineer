@@ -1,6 +1,6 @@
 import {minimumBoardWidth,preferredColumns} from './timeline-layout.js';
 import {groupCompatibleConnections} from './compatible-layout.js';
-import {groupExpansionBuses,allocateBusLanes,busBranchPoints} from './bus-layout.js';
+import {groupExpansionBuses,allocateBusLanes,groupBusRowRuns,busTapPoints} from './bus-layout.js';
 const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible;let kind='all';let visible=[];let drawFrame=0;
 const element=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 const link=(text,url)=>{const a=element('a','',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
@@ -77,7 +77,8 @@ function splitRoute(points){
  }
  return [points,points];
 }
-function openBus(bus){
+function openBus(bus,endpoint=null){
+ if(bus.kind!=='compatible')return openExpansionBus(bus,endpoint);
  const dialog=$('bus-dialog'),entries=new Map(catalog.entries.map(entry=>[entry.id,entry]));
  const isCPU=bus.kind==='compatible';
  $('bus-title').textContent=bus.label+(isCPU?' choices · ':' bus · ')+entries.get(bus.system).title;
@@ -91,6 +92,21 @@ function openBus(bus){
   item.append(anchor,element('small','',qualification));list.append(item);
  }
  dialog.showModal();
+}
+function openExpansionBus(bus,endpoint){
+ const entries=new Map(catalog.entries.map(entry=>[entry.id,entry]));
+ $('bus-title').textContent=bus.label+' bus'+(endpoint?' · '+entries.get(endpoint).title:'');
+ $('bus-dialog').querySelector('p').textContent='Choose a recorded connection. The family rail groups the diagram; each computer keeps its own configuration.';
+ $('connection-evidence').replaceChildren();const list=$('bus-members');list.replaceChildren();
+ const destination=id=>{const anchor=element('a','',entries.get(id).title);anchor.href='#hardware-'+id;anchor.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();$('bus-dialog').close();jumpToHardware(id);});return anchor;};
+ for(const connection of bus.links.filter(link=>!endpoint||link.source===endpoint||link.target===endpoint)){
+  const item=element('li');
+  if(!endpoint)item.append(destination(connection.source),element('span','bus-direction','→'),destination(connection.target));
+  else item.append(destination(connection.source===endpoint?connection.target:connection.source));
+  item.append(element('small','',connection.type==='optional'?'Planned option':'Required card'));
+  const evidence=element('details','bus-evidence');evidence.append(element('summary','','Evidence and configuration'),element('p','',connection.note),link('Connection evidence ↗',connection.evidence));item.append(evidence);list.append(item);
+ }
+ $('bus-dialog').showModal();
 }
 function drawConnections(){
  const timeline=$('timeline'),grid=document.querySelector('.year-grid'),era=document.querySelector('.era');
@@ -128,8 +144,8 @@ function drawConnectionPass(layout,columns){
  for(const net of sockets){net.sourceTaps=net.links.map(link=>({...link,side:'left',net,endpoint:'source'}));net.targetTap={source:net.links[0].source,target:net.system,side:'left',net,endpoint:'target'};}
  for(const link of computerLinks)if(nodes.has(link.source)&&nodes.has(link.target)&&entryById.get(link.source).kind!=='card'&&!link.compatibilityGroup)edges.push({...link,side:'left',color:catalog.companies[entryById.get(link.source).company].color});
  const buses=groupExpansionBuses(computerLinks,entryById,new Set(nodes.keys()),catalog.buses);
- const branches=buses.flatMap(bus=>[{bus,id:bus.system,type:'system'},...bus.links.map(link=>({bus,id:link.source,type:link.type,link}))]);
- const tapsById=new Map([...nodes.keys()].map(id=>[id,branches.filter(branch=>branch.id===id).sort((a,b)=>ranks.get(a.bus.system)-ranks.get(b.bus.system)||a.bus.id.localeCompare(b.bus.id))]));
+ const branches=buses.flatMap(bus=>[...bus.cards.map(id=>{const links=bus.links.filter(link=>link.source===id);return {bus,id,role:'card',type:links.some(link=>link.type==='required')?'required':'optional',links};}),...bus.systems.map(id=>({bus,id,role:'system',type:'system',links:bus.links.filter(link=>link.target===id)}))]);
+ const tapsById=new Map([...nodes.keys()].map(id=>[id,branches.filter(branch=>branch.id===id).sort((a,b)=>a.bus.id.localeCompare(b.bus.id))]));
  for(const taps of tapsById.values())taps.forEach((branch,index)=>{branch.port=index;branch.portCount=taps.length;});
  const incoming=new Map(),outgoing=new Map();
  for(const id of nodes.keys()){incoming.set(id,[]);outgoing.set(id,[]);}
@@ -152,19 +168,20 @@ function drawConnectionPass(layout,columns){
   const columns=getComputedStyle(grid).gridTemplateColumns.split(' ').length,cards=[...grid.children];
   for(let i=0;i<cards.length;i+=columns){
    const row={cards:cards.slice(i,i+columns)},index=rows.length;rows.push(row);
-   const top=assignTracks(row.cards,'in',incoming);row.outSpace=assignTracks(row.cards,'out',outgoing);
+   const top=assignTracks(row.cards,'in',incoming);row.outSpace=assignTracks(row.cards,'out',outgoing);row.inSpace=top;
    for(const [column,node]of row.cards.entries()){
     rowById.set(node.dataset.id,index);
     for(const branch of tapsById.get(node.dataset.id)){branch.row=row;branch.column=column;branch.below=column<row.cards.length-1;}
    }
-   // Rightmost inner card first: later lower tracks can pass below its vertical stubs.
-   const under=branches.filter(branch=>branch.row===row&&branch.below).sort((a,b)=>b.column-a.column||a.port-b.port);
-   under.forEach((branch,track)=>{branch.track=track;});
-   const bottom=row.outSpace+(under.length?safe+under.length*pitch:0);
-   for(const node of row.cards){node.style.marginTop=top+'px';node.style.marginBottom=bottom+'px';}
+   row.busRuns=groupBusRowRuns(branches.filter(branch=>branch.row===row));
+   const topRuns=row.busRuns.filter(run=>run.role==='system'),bottomRuns=row.busRuns.filter(run=>run.role==='card');
+   const upper=top+(topRuns.length?safe+topRuns.length*pitch:0),bottom=row.outSpace+(bottomRuns.length?safe+bottomRuns.length*pitch:0);
+   for(const node of row.cards){node.style.marginTop=upper+'px';node.style.marginBottom=bottom+'px';}
+
   }
  }
- const busLanes=allocateBusLanes(buses,rowById),socketLanes=allocateBusLanes(sockets,rowById);
+ buses.forEach((bus,lane)=>{bus.lane=lane;});
+ const busLanes=buses.length,socketLanes=allocateBusLanes(sockets,rowById);
  const allocateLanes=side=>{
   const laneEnds=[];
   const sorted=edges.filter(edge=>edge.side===side).map(edge=>{
@@ -224,10 +241,10 @@ function drawConnectionPass(layout,columns){
   }
  }
  const busPaths=document.createDocumentFragment(),busPads=document.createDocumentFragment();
- const busControl=(bus,label)=>{
+ const busControl=(bus,label,endpoint=null)=>{
   const control=shape('a',{href:'#bus-'+bus.id,class:'bus-control',role:'button',tabindex:0,'aria-label':label});
   const title=shape('title',{});title.textContent=label;control.append(title);
-  control.addEventListener('click',event=>{event.preventDefault();openBus(bus);});control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openBus(bus);}});
+  control.addEventListener('click',event=>{event.preventDefault();openBus(bus,endpoint);});control.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openBus(bus,endpoint);}});
   return control;
  };
  const socketPaths=document.createDocumentFragment(),socketPads=document.createDocumentFragment();
@@ -252,36 +269,38 @@ function drawConnectionPass(layout,columns){
   const label=shape('text',{x:coordinate(lane),y:coordinate(min-14),class:'bus-label','text-anchor':'middle',fill:net.color,'aria-hidden':true});label.textContent=net.spec.wireLabel;group.append(label);socketPaths.append(group);
  }
  for(const bus of buses){
-  const lane=bounds.width-busGutter+12+bus.lane*busPitch,local=branches.filter(branch=>branch.bus===bus),joins=[];
-  const host=entryById.get(bus.system),group=shape('g',{class:'expansion-bus','data-bus':bus.id,'data-family':bus.family,'data-system':bus.system,'data-side':'far-right','data-lane':bus.lane});
-  for(const branch of local){
-   const node=nodes.get(branch.id),rect=node.getBoundingClientRect(),offset=(branch.port-(branch.portCount-1)/2)*12;
-   const tap={x:rect.right-bounds.left,y:rect.top-bounds.top+rect.height/2+offset};
-   let underY=null,turnX=null,bend=3;
-   if(branch.below){
-    const next=branch.row.cards[branch.column+1].getBoundingClientRect(),slot=(next.left-rect.right)/(branch.portCount+1);
-    turnX=tap.x+slot*(branch.portCount-branch.port);bend=Math.min(3,slot/2);
-    underY=Math.max(...branch.row.cards.map(card=>card.getBoundingClientRect().bottom))-bounds.top+branch.row.outSpace+safe+(branch.track+1)*pitch;
+  const lane=bounds.width-busGutter+12+bus.lane*busPitch,joins=[],group=shape('g',{class:'expansion-bus','data-bus':bus.id,'data-family':bus.family,'data-side':'far-right','data-lane':bus.lane});
+  for(const [rowIndex,row]of rows.entries())for(const run of row.busRuns.filter(run=>run.bus===bus)){
+   const rects=row.cards.map(card=>card.getBoundingClientRect()),cardRun=run.role==='card';
+   const barY=cardRun?Math.max(...rects.map(rect=>rect.bottom))-bounds.top+row.outSpace+safe+(run.track+1)*pitch:Math.min(...rects.map(rect=>rect.top))-bounds.top-row.inSpace-safe-(run.track+1)*pitch;
+   const junctions=[];
+   for(const branch of run.branches){
+    const rect=nodes.get(branch.id).getBoundingClientRect(),tap={x:rect.right-bounds.left-18-branch.port*12,y:(cardRun?rect.bottom:rect.top)-bounds.top};
+    const points=busTapPoints(tap,barY,run.role),junction=cardRun?points.at(-1):points[0],d=pathData(points);junctions.push(junction[0]);
+    const branchGroup=shape('g',{class:'bus-branch connection-'+branch.type,'data-entry':branch.id,'data-row':rowIndex,'data-role':run.role,'data-direction':cardRun?'out':'in'});
+    const single=branch.links.length===1,target=cardRun?branch.links[0].target:branch.links[0].source;
+    const label=bus.label+' connections for '+entryById.get(branch.id).title;
+    const control=single?makeJump(target,branch.id,[branch.id,target].sort((a,b)=>ranks.get(a)-ranks.get(b)),true,' via '+bus.label+' bus'):busControl(bus,label,branch.id);
+    branchGroup.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire bus-tap',stroke:bus.color,'aria-hidden':true}));
+    control.append(shape('path',{d,class:'trace-hit','stroke-width':6}));branchGroup.append(control);group.append(branchGroup);
+    const pad=single?makeJump(target,branch.id,[branch.id,target].sort((a,b)=>ranks.get(a)-ranks.get(b)),false,' via '+bus.label+' bus'):busControl(bus,label,branch.id);pad.setAttribute('tabindex','-1');
+    pad.append(shape('circle',{cx:coordinate(tap.x),cy:coordinate(tap.y),r:4.5,class:'trace-pad bus-pad','data-entry':branch.id,'data-direction':cardRun?'out':'in',stroke:bus.color}));busPads.append(pad);
+    busPads.append(shape('circle',{cx:coordinate(junction[0]),cy:coordinate(barY),r:3,class:'bus-junction',fill:bus.color,'aria-hidden':true}));
    }
-   const points=busBranchPoints(tap,lane,underY,turnX,bend),join=points.at(-1),d=pathData(points);joins.push(join[1]);
-   const branchGroup=shape('g',{class:'bus-branch connection-'+branch.type,'data-entry':branch.id,'data-under-row':branch.below,'data-kind':branch.type});
-   const ordered=[branch.id,bus.system].sort((a,b)=>ranks.get(a)-ranks.get(b));
-   const control=branch.type==='system'?busControl(bus,'Choose cards on '+bus.label+' bus for '+host.title):makeJump(bus.system,branch.id,ordered,true,' via '+bus.label+' bus');
-   branchGroup.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire bus-tap',stroke:bus.color,'aria-hidden':true}));
-   control.append(branch.below?shape('path',{d,class:'trace-hit','stroke-width':5}):shape('rect',{x:coordinate(tap.x),y:coordinate(tap.y-4),width:coordinate(lane-tap.x),height:8,class:'bus-direct-hit'}));branchGroup.append(control);group.append(branchGroup);
-   const padControl=branch.type==='system'?busControl(bus,'Choose cards on '+bus.label+' bus for '+host.title):makeJump(bus.system,branch.id,ordered,false,' via '+bus.label+' bus');
-   padControl.setAttribute('tabindex','-1');
-   padControl.append(shape('circle',{cx:coordinate(tap.x),cy:coordinate(tap.y),r:4.5,class:'trace-pad bus-pad','data-entry':branch.id,stroke:bus.color}));busPads.append(padControl);
-   busPads.append(shape('circle',{cx:coordinate(lane),cy:coordinate(join[1]),r:3,class:'bus-junction',fill:bus.color,'aria-hidden':true}));
+   const start=Math.min(...junctions),d=pathData([[start,barY],[lane,barY]]),bar=shape('g',{class:'bus-row-run','data-family':bus.family,'data-row':rowIndex,'data-role':run.role});
+   const control=busControl(bus,bus.label+' bus · choose a recorded connection');
+   bar.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire bus-row-wire',stroke:bus.color,'aria-hidden':true}));
+   control.append(shape('rect',{x:coordinate(start),y:coordinate(barY-4),width:coordinate(lane-start),height:8,class:'bus-direct-hit'}));bar.append(control);group.append(bar);
+   busPads.append(shape('circle',{cx:coordinate(lane),cy:coordinate(barY),r:3,class:'bus-junction',fill:bus.color,'aria-hidden':true}));joins.push(barY);
   }
-  const min=Math.min(...joins),max=Math.max(...joins),d=pathData([[lane,min-8],[lane,max+8]]),rail=busControl(bus,bus.label+' bus for '+host.title+' · choose a connected card or computer');
+  const min=Math.min(...joins),max=Math.max(...joins),d=pathData([[lane,min-8],[lane,max+8]]),rail=busControl(bus,bus.label+' bus · choose a recorded card-to-computer connection');
   rail.setAttribute('class','bus-control bus-rail');rail.id='bus-'+bus.id;rail.append(shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire bus-trunk',stroke:bus.color,'aria-hidden':true}),shape('rect',{x:coordinate(lane-5),y:coordinate(min-8),width:10,height:coordinate(max-min+16),class:'bus-rail-hit'}));group.append(rail);
   const label=shape('text',{x:coordinate(lane),y:coordinate(min-14),class:'bus-label','text-anchor':'middle',fill:bus.color,'aria-hidden':true});label.textContent=bus.label;group.append(label);busPaths.append(group);
  }
  $('wire-help').hidden=!wires||(!edges.length&&!buses.length&&!sockets.length);
  svg.setAttribute('viewBox',`0 0 ${bounds.width} ${bounds.height}`);svg.style.height=bounds.height+'px';svg.replaceChildren(paths,socketPaths,busPaths,pads,socketPads,busPads);
  const counts={maker:edges.filter(edge=>edge.type==='maker').length,required:edges.filter(edge=>edge.type==='required'&&edge.basis!=='reconstruction').length,optionalChip:edges.filter(edge=>edge.type==='optional').length,reconstruction:edges.filter(edge=>edge.basis==='reconstruction').length,bus:buses.length,compatible:sockets.length,optionalCard:buses.reduce((n,bus)=>n+bus.links.filter(link=>link.type==='optional').length,0)};
- const parts=[[counts.maker,'maker links'],[counts.required,'chip links'],[counts.optionalChip,'optional chip links'],[counts.reconstruction,'reconstruction links'],[counts.bus,'shared expansion buses ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections)'],[counts.compatible,'shared CPU roles']].filter(([count])=>count).map(([count,label])=>count+' '+label);
+ const parts=[[counts.maker,'maker links'],[counts.required,'chip links'],[counts.optionalChip,'optional chip links'],[counts.reconstruction,'reconstruction links'],[counts.bus,'shared bus rails ('+buses.reduce((n,bus)=>n+bus.links.length,0)+' card connections)'],[counts.compatible,'shared CPU roles']].filter(([count])=>count).map(([count,label])=>count+' '+label);
  $('trace-summary').textContent=wires?(parts.join(' · ')||'No connections match the current filters.'):'Wires hidden';
  for(const item of document.querySelectorAll('[data-wire-layer]'))item.hidden=!counts[item.dataset.wireLayer];
  $('wire-help').textContent=computerLinks.length?'Click a wire or dot to follow it. Click a shared bus or CPU wire to choose a connected part. Keyboard: Tab and Enter; ↑ / ↓ follows either end of a chip wire.':'Click a maker wire or hollow pad to follow it. Keyboard: Tab and Enter; ↑ / ↓ follows the earlier or later chip.';

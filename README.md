@@ -16,7 +16,7 @@ The connections show different relationships:
 
 - **Company lines on the right** follow chip families from the same maker. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.
 - **Chip links on the left** show recorded prerequisites for a computer build. Pin/function-compatible processors share one CPU-role wire; choose the original part or a qualified substitute from that wire. Dotted left wires show planned optional coprocessors such as 287 and 387DX/SX. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
-- **Shared expansion buses on the far right** connect cards to a computer through its bus. Card taps distinguish required hardware from planned options. A bus belongs to one computer; it does not electrically join different machines.
+- **Shared expansion buses on the far right** group cards and computers by bus family, with one ISA rail, one NuBus rail and so on. Cards connect from below and computers from above. Click a shared connection to see the exact recorded card-to-computer choices; each machine keeps its own configuration.
 
 Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑ and ↓. Turn off **Show wires** for a simpler view.
 

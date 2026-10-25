@@ -15,3 +15,5 @@ This is a presentation default, not a change to native prerequisites, compatibil
 Check a fresh overview has no computer/bus paths or left gutter; a selected IBM ISA host shows its original/compatible CPU choices, optional coprocessor and shared audio bus while maker paths are absent. Check the explicit full view restores every recorded visible relation, switching between hosts never mixes bus membership, and All computers restores maker overview. Exercise Show wires, keyboard navigation, chipsets, desktop and narrow layouts.
 
 The connection legend shows only layers currently drawn. Summary counts omit empty layers, and maker-only navigation help omits the bus chooser instructions.
+
+See [shared bus-family rails](expansion_buses.md) for unique card/computer taps, one horizontal run per family on a row, bottom/top routing and exact connection choosers.
