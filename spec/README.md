@@ -26,3 +26,7 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Show wires remains the master. See [focused wire behavior](focused_wires.md).
 
 See [shared bus-family rails](expansion_buses.md) for unique card/computer taps, one horizontal run per family on a row, bottom/top routing and exact connection choosers.
+
+## Direct maker links within a row
+
+Adjacent same-row chips from the same company connect horizontally across their gap using side pads. Other maker links keep right-gutter bottom/top routing. Recompute adjacency after filters and column changes; never cross another card. [Ordering, geometry and checks](maker_row_links.md).

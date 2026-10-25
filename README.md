@@ -14,7 +14,7 @@ The timeline starts with maker lines for a clearer overview. Choose a computer t
 
 The connections show different relationships:
 
-- **Company lines on the right** follow chip families from the same maker. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.
+- **Company lines on the right** follow chip families from the same maker; adjacent chips on a row connect directly across their gap. Intel is blue, AMD red, Motorola indigo and MOS/Commodore green.
 - **Chip links on the left** show recorded prerequisites for a computer build. Pin/function-compatible processors share one CPU-role wire; choose the original part or a qualified substitute from that wire. Dotted left wires show planned optional coprocessors such as 287 and 387DX/SX. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
 - **Shared expansion buses on the far right** group cards and computers by bus family, with one ISA rail, one NuBus rail and so on. Cards connect from below and computers from above. Click a shared connection to see the exact recorded card-to-computer choices; each machine keeps its own configuration.
 
