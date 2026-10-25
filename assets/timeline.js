@@ -13,10 +13,11 @@ const link=(text,url)=>{const a=element('a','',text);a.href=url;a.target='_blank
 async function read(url){const r=await fetch(url);if(!r.ok)throw Error(url+' returned HTTP '+r.status);return r.json();}
 function legend(){for(const stage of vocabulary.stages){const item=element('div','legend-item');const icon=element('span','stage-symbol');icon.append(iconNode(stage.icon));icon.style.setProperty('--stage',stage.color);const copy=element('div');copy.append(element('strong','',stage.label),element('p','',stage.description));item.append(icon,copy);$('stage-legend').append(item);const option=element('option','',stage.label);option.value=stage.id;$('stage').append(option);}for(const build of vocabulary.builds){const item=element('span','build-legend-item'),icon=element('span','build-legend-icon');icon.style.setProperty('--stage',build.color);icon.append(iconNode(build.icon));item.append(icon,document.createTextNode(build.label));$('build-legend').append(item);}$('coverage-explanation').textContent=vocabulary.coverageLabel+': '+vocabulary.coverageDescription;}
 // The info dialog describes the hardware itself; the photo credit sits at the bottom, collapsed.
-function chipsetMembers(entry){
- const section=element('section','chipset-members');section.setAttribute('aria-label',text('info.chipsetMembers'));
- const heading=element('h4','',text('info.chipsetHeading',{count:entry.chipset.members.length})),list=element('ul');
- for(const member of entry.chipset.members){const row=element('li');row.append(element('strong','',member.part),element('span','',member.role));list.append(row);}
+function hardwareMembers(entry){
+ const series=Boolean(entry.series),members=(entry.series||entry.chipset).members;
+ const section=element('section','chipset-members');section.setAttribute('aria-label',text(series?'info.seriesMembers':'info.chipsetMembers'));
+ const heading=element('h4','',text(series?'info.seriesHeading':'info.chipsetHeading',{count:members.length})),list=element('ul');
+ for(const member of members){const row=element('li');row.append(element('strong','',member.part),element('span','',member.role));if(member.year&&member.source)row.append(link(text('info.memberYear',{year:member.year}),member.source));list.append(row);}
  section.append(heading,list);return section;
 }
 function photoCredit(entry){
@@ -28,7 +29,7 @@ function photoCredit(entry){
  const data=credits[entry.id],details=element('details','info-photo'),body=element('div','photo-credit-body');
  details.append(element('summary','',text(entry.image.representative?'info.photoRepresentative':'info.photoHeading')),body);
  const image=element('img');image.src=entry.image.src;image.alt=entry.image.alt;body.append(image);
- if(data){body.append(element('p','',data.title),element('p','',data.creator||text('info.creatorUnknown')),element('p','',data.license+' · '+data.changes),link(text('info.originalPhoto'),data.source));if(data.credit&&data.credit!==data.creator)body.append(element('p','',data.credit));if(data.licenseUrl)body.append(element('p',''),link(text('info.licenseTerms'),data.licenseUrl));}
+ if(data){body.append(element('p','',data.title),element('p','',data.creator||text('info.creatorUnknown')),element('p','',data.license+' · '+data.changes),link(text(data.licenseUrl?'info.originalPhoto':'info.originalPhotoSource'),data.source));if(data.credit&&data.credit!==data.creator)body.append(element('p','',data.credit));if(data.licenseUrl)body.append(element('p',''),link(text('info.licenseTerms'),data.licenseUrl));}
  if(entry.image.caption)body.append(element('p','',entry.image.caption));
  if(entry.image.representative)body.append(element('p','representative',text('info.representative')));
  return details;
@@ -41,7 +42,7 @@ function openInfo(entry){
  stamp.title=text('info.datePlacement');when.append(stamp);date.append(element('h3','',text('info.dateHeading')),when);
  if(entry.dateNote){date.append(element('h4','',text('info.dateEvidence')),element('p','',entry.dateNote));for(const [index,source]of (entry.historySources||[]).entries()){if(source.url)date.append(link(text('info.externalLink',{label:source.note||text('info.supportingSource',{number:index+1})}),source.url));}}
  const issue=element('p','info-issue');issue.append(link(text('info.issue',{number:entry.issue.number}),entry.issue.url));
- body.append(kind,title,element('p','info-summary',entry.summary),date);if(entry.chipset)body.append(chipsetMembers(entry));body.append(issue,photoCredit(entry));
+ body.append(kind,title,element('p','info-summary',entry.summary),date);if(entry.chipset||entry.series)body.append(hardwareMembers(entry));body.append(issue,photoCredit(entry));
  $('info-dialog').showModal();
 }
 // Icons are shape lists in the JSON data; build them with DOM calls, never markup strings.
@@ -68,7 +69,7 @@ function render(){
  const search=$('search').value.toLowerCase().trim(),company=$('company').value,stage=$('stage').value;
  const computer=$('computer').value;
  const connected=computer==='all'?null:new Set([computer,...relationships.links.filter(link=>link.target===computer).map(link=>link.source)]);
- visible=catalog.entries.filter(entry=>(!connected||connected.has(entry.id))&&(kind==='all'||kind===entry.kind)&&(company==='all'||company===entry.company)&&(stage==='all'||snapshot.statuses[entry.id]?.stage===stage)&&(!search||(entry.title+' '+entry.summary+' '+catalog.companies[entry.company].name+' '+entry.id+' '+(entry.chipset?.members||[]).map(member=>member.part+' '+member.role).join(' ')).toLowerCase().includes(search)));
+ visible=catalog.entries.filter(entry=>(!connected||connected.has(entry.id))&&(kind==='all'||kind===entry.kind)&&(company==='all'||company===entry.company)&&(stage==='all'||snapshot.statuses[entry.id]?.stage===stage)&&(!search||(entry.title+' '+entry.summary+' '+catalog.companies[entry.company].name+' '+entry.id+' '+(entry.chipset?.members||entry.series?.members||[]).map(member=>member.part+' '+member.role).join(' ')).toLowerCase().includes(search)));
  $('result-count').textContent=text('results.count',{shown:visible.length,total:catalog.entries.length});
  $('eras').replaceChildren();$('empty').hidden=visible.length>0;
  document.querySelectorAll('.maker-button').forEach(button=>button.classList.toggle('active',button.dataset.company===company));

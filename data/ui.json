@@ -80,7 +80,11 @@
     "originalPhoto": "Original photograph and license ↗",
     "licenseTerms": "License terms ↗",
     "symbol": "i",
-    "externalLink": "{label} ↗"
+    "externalLink": "{label} ↗",
+    "seriesMembers": "Series members",
+    "seriesHeading": "{count} documented series members",
+    "memberYear": "Documented by {year} ↗",
+    "originalPhotoSource": "Original photograph source ↗"
   },
   "trace": {
     "button": "Trace {count} components",

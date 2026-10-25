@@ -331,13 +331,6 @@
         "flags": "i"
       }
     },
-    "amd_am2505": {
-      "query": "AMD Am2505",
-      "titlePattern": {
-        "source": "(?=.*AMD)(?=.*2505)",
-        "flags": "i"
-      }
-    },
     "amd_am9102": {
       "query": "AMD Am9102",
       "titlePattern": {
@@ -512,7 +505,6 @@
   },
   "requireExact": [
     "amd_am2501",
-    "amd_am2505",
     "amd_am9102",
     "amd_am9517",
     "intel_mcs4",
@@ -523,5 +515,12 @@
     "intel_80286",
     "intel_80287",
     "amd_80186"
-  ]
+  ],
+  "userSupplied": {
+    "amd_am2501": {
+      "source": "https://x.com/kenshirriff/status/1218982024070955009",
+      "url": "https://pbs.twimg.com/media/EOqxpz0U8AIOCds?format=jpg&name=small",
+      "rightsStatus": "unspecified"
+    }
+  }
 }

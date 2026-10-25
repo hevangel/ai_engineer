@@ -15,13 +15,21 @@ All four replacement images are original JPEGs by Christian Bassow under **CC BY
 
 The Am9511A photograph remains explicitly representative of the earlier family. Captions name every pictured variant; historical catalog dates and implementation states do not change. The actual Am2901 image remains on Am29xx only.
 
+## User-supplied Am25xx photo and consolidated scope
+
+The owner supplied [this locally downloaded Am2501DC JPEG](https://pbs.twimg.com/media/EOqxpz0U8AIOCds?format=jpg&name=small), from [Ken Shirriff’s post](https://x.com/kenshirriff/status/1218982024070955009). Its package marking was visually inspected. The post identifies the photographed device as dating to 1985; no reuse license is stated. The credit explicitly records `provenance: user-supplied` and `rightsStatus: unspecified`, with the exact source registered under `userSupplied` in `data/image-import.json`. It must not be labeled Creative Commons without additional evidence.
+
+Am2501 and Am2505 now share one **AMD Am25xx series** card and canonical issue #5. The Am2501DC photo illustrates that series, with a caption explaining that Am2505 is not pictured. There is no separate Am2505 card or active issue; historical issue #6 is superseded. The stable Am2501 catalog ID is retained.
+
 ## Still unsourced
 
 | Card | Research result |
 | --- | --- |
-| Am2501 | Ken Shirriff shared an Am2501 reference; an exact reuse-cleared photo has not been verified. |
-| Am2505 | Exact-number web/image and Commons searches did not establish an authentic reusable chip photograph. Search engines frequently confuse it with modern AM5 hardware and unrelated products. |
 | Am9102 | Chipsetc shows an Am9102 collector paperweight; photo reuse permission has not been established. |
 | Am9517 | A collector page shows Am9517 and Am9517-5 packages; photo reuse permission has not been established. |
 
-These four cards use `image.status: "needed"`, with qualified leads in their info dialogs. They must not revert to generic Am2901 photos or republish candidate images as licensed assets. No permission requests have been sent to image owners. Searches covered exact part numbers, numeric package-name variants, Commons bitmap searches/file inventories, collector and museum pages, and image search. This records an unresolved source search, not a claim that no such photos exist.
+These two cards use `image.status: "needed"`, with qualified leads in their info dialogs. They must not revert to generic Am2901 photos or republish candidate images as licensed assets. A separate reuse-cleared Am2505 photo was not found; it is not needed for an additional card after the series consolidation. No permission requests have been sent to image owners. The earlier searches covered exact numbers, numeric package variants, Commons files, collector/museum pages and image search; they do not establish that no other photographs exist.
+
+## Local asset policy
+
+Every displayed photograph is a tracked JPEG/PNG under `images/`, referenced by a relative `image.src`. `source` and `downloadedFrom` are provenance and maintenance metadata, not runtime image sources. `check-site.mjs` rejects external catalog image paths, remote image tags and remote CSS asset URLs. A source site disappearing cannot break the checked-in website image.

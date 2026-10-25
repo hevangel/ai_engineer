@@ -72,3 +72,7 @@ Use [compatible_chips.md](compatible_chips.md) for qualified Intel/AMD choices. 
 ## Grouped support chipsets
 
 See [chipset cards](chipsets.md) for one-card member lists, canonical family issues, date/photo qualifications and exact-board dependency selection. The member list is data-driven and searchable; each chipset retains one status and one set of wire endpoints.
+
+## AMD Am25xx canonical scope
+
+Am2501 and Am2505 are members of one Am25xx series tracker, issue #5, and one public card. Maintain their separate member specifications and acceptance evidence inside that issue. Issue #6 is a superseded historical tracker and its project item is archived; do not recreate a separate active Am2505 issue/card. Additional sourced Am25xx members extend the ledger. Keep the earlier date for the combined family and qualify each later member separately.
