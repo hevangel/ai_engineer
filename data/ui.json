@@ -34,9 +34,6 @@
     "card"
   ],
   "card": {
-    "chipsetMembers": "Chipset members",
-    "chipsetHeading": "{count} chips · one chipset",
-    "photoAttribution": "Photo attribution for {title}",
     "coverageUnreported": "Source coverage not reported",
     "coverage": "{percent}% source coverage: {cleaned} cleaned of {total} defined items",
     "statusFallback": {
@@ -62,14 +59,28 @@
       "label": "Status unavailable",
       "color": "#78828c"
     },
+    "coverageUnknownSymbol": "—",
+    "coverageValue": "{percent}%",
+    "issueLink": "#{number} ↗"
+  },
+  "info": {
+    "button": "About {title}",
+    "close": "Close details",
+    "dateHeading": "Date",
+    "dateEvidence": "Date evidence",
+    "supportingSource": "Supporting source {number}",
     "datePlacement": "Historical placement; follow the source for date qualifications",
-    "representative": "Representative family photograph",
-    "representativeDialog": "Representative family photograph; not a confirmed image of this exact device or revision.",
+    "issue": "Roadmap issue #{number} ↗",
+    "chipsetMembers": "Chipset members",
+    "chipsetHeading": "{count} chips · one chipset",
+    "photoHeading": "Photo credit",
+    "photoRepresentative": "Photo credit · representative photograph",
+    "representative": "Representative family photograph; not a confirmed image of this exact device or revision.",
     "creatorUnknown": "Creator listed at original source",
     "originalPhoto": "Original photograph and license ↗",
     "licenseTerms": "License terms ↗",
-    "dateEvidence": "Date evidence",
-    "supportingSource": "Supporting source {number}"
+    "symbol": "i",
+    "externalLink": "{label} ↗"
   },
   "trace": {
     "button": "Trace {count} components",
@@ -174,10 +185,77 @@
     }
   ],
   "legend": {
-    "fineprint": "Verification is recorded from explicit evidence in the linked issue. A closed issue is not a human approval. Era bands are narrative chapters; architectures and word widths overlap. A separate 18-bit prelude covers discrete-logic machines. Reconstruction wires identify later implementation parts, not original factory hardware. Dates distinguish introductions, documented bounds, previews and original system profiles. Open “Date evidence” on a card for qualifications; chips precede computers within the same year."
+    "fineprint": "Verification is recorded from explicit evidence in the linked issue. A closed issue is not a human approval. Era bands are narrative chapters; architectures and word widths overlap. A separate 18-bit prelude covers discrete-logic machines. Reconstruction wires identify later implementation parts, not original factory hardware. Dates distinguish introductions, documented bounds, previews and original system profiles. Open the “i” button on a card for date qualifications and photo credit; chips precede computers within the same year."
   },
   "load": {
     "snapshot": "GITHUB SNAPSHOT · {when}",
-    "notSynced": "not synced"
+    "notSynced": "not synced",
+    "error": "The archive could not be loaded. Serve this folder over HTTP and check the JSON files. ",
+    "unavailable": "Archive unavailable"
+  },
+  "page": {
+    "metaDescription": "A living timeline of classic chips, computers and expansion cards being rebuilt in SystemVerilog, Rust and FPGA hardware.",
+    "title": "AI Engineer — A history worth rebuilding",
+    "brandName": "AI ENGINEER",
+    "brandTagline": "THE RECONSTRUCTION PROJECT",
+    "heroTitle": "A history worth",
+    "heroEmphasis": "rebuilding.",
+    "heroEyebrow": "A LIVING ARCHIVE · {firstYear} ONWARD",
+    "heroIntro": "Classic silicon. Familiar machines. A new life in",
+    "heroStack": "SystemVerilog, Rust, and real FPGA hardware.",
+    "heroFollow": "FOLLOW THE CONNECTIONS",
+    "heroNote": "From the first bits to the 386 era.",
+    "entriesLabel": "hardware entries",
+    "makersLabel": "makers",
+    "reading": "Reading the archive…",
+    "skip": "Skip to the timeline",
+    "navLabel": "Main navigation",
+    "navTimeline": "Timeline",
+    "navSource": "Source ↗",
+    "legendToggle": "Status guide ",
+    "legendLabel": "Status legend",
+    "legendEyebrow": "READING THE ARCHIVE",
+    "legendTitle": "Every badge has a meaning.",
+    "legendClose": "Close status guide",
+    "railLabel": "Year navigation",
+    "railTitle": "TIME",
+    "railScrubber": "Scroll to year",
+    "railTop": "Back to top",
+    "categoryLabel": "Hardware category",
+    "searchPlaceholder": "Find a machine or chip…",
+    "searchLabel": "Search the timeline",
+    "companyFilter": "Filter by company",
+    "companyAll": "All makers",
+    "stageFilter": "Filter by build stage",
+    "stageAll": "All stages",
+    "showMakers": "Maker lineage",
+    "computerPicker": "Trace a computer",
+    "computerAll": "All computers",
+    "connectionControls": "Connection display",
+    "connectionLegend": "Connection legend",
+    "makerColors": "Company connection colors",
+    "wireNavigation": "Hardware wire navigation",
+    "caption": "MAKERS, COMPONENTS & THE MACHINES THEY MAKE.",
+    "scrollRegion": "Hardware timeline; scroll horizontally when the wiring is wider than the screen",
+    "loading": "Opening the archive…",
+    "emptyTitle": "No hardware matches.",
+    "emptyHelp": "Try another maker, stage, or search term.",
+    "reset": "Reset filters",
+    "footerMission": "Preserve the behavior. Rebuild the machine.",
+    "footerEvidence": "Show the evidence.",
+    "footerSource": "Explore the source ↗",
+    "footerPhotos": "Photos retain their original licenses.",
+    "footerAttribution": "Each photograph links to its source and attribution.",
+    "noScript": "This timeline reads its catalog and status from JSON and needs JavaScript. View the",
+    "noScriptStatus": "status snapshot",
+    "noScriptDirect": "directly.",
+    "busClose": "Close bus connections",
+    "noScriptCatalog": "catalog",
+    "noScriptAnd": "and"
+  },
+  "language": "en",
+  "themeColor": "#f6f5f0",
+  "links": {
+    "source": "https://github.com/hevangel/ai_engineer"
   }
 }
