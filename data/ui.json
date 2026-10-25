@@ -112,7 +112,6 @@
   "wires": {
     "allLinks": "All computer links",
     "links": "Computer links",
-    "contextAll": "All computer connections are visible. Choose one computer for a focused trace.",
     "contextFocused": "Focused computer trace. Maker lineage can be enabled separately.",
     "previous": "Previous",
     "next": "Next",
