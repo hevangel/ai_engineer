@@ -21,7 +21,7 @@ Read the specification that covers your task before changing anything:
 | Grouped motherboard chipsets and member-chip cards | [spec/chipsets.md](spec/chipsets.md) |
 | Direct same-row maker links and short chip-to-computer row-gap links | [spec/maker_row_links.md](spec/maker_row_links.md), [spec/website.md](spec/website.md#direct-chip-links-between-consecutive-rows) |
 | Historical dates and placement | [spec/timeline_dates.md](spec/timeline_dates.md) |
-| GitHub issue lifecycle: owning-repo transfer, active Status, Path, first Start date, Agent register/clear, Scrum Sprint and chip sub-issues | [spec/github_issues.md](spec/github_issues.md) |
+| GitHub issue lifecycle, read-only committed-progress audits, historical first-commit Start dates, owning-repo transfer, Status/Path, Agent register/clear, Scrum Sprint and chip sub-issues | [spec/github_issues.md](spec/github_issues.md) |
 | Roadmap issues, dependencies and the GitHub Project | [spec/project_manager.md](spec/project_manager.md), [spec/initial_project_plan.md](spec/initial_project_plan.md) |
 | HDL Workbench, Xezim and Surfer maintenance | [spec/eda_tools.md](spec/eda_tools.md) |
 | 386/68030 coverage and complete-stack inventory | [spec/era_386_scope.md](spec/era_386_scope.md) |

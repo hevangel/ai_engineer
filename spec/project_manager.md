@@ -34,7 +34,7 @@ Use the live Planned, Researching, Sources Ready, Building, Blocked, AI verified
 2. Reconcile inventory and issue scope; exclude scratch/corrupt folders and disclose local-only candidates.
 3. Update member checklists, dependencies and title-level software/card inventories with source evidence.
 4. Select ready work, record concrete acceptance criteria and link implementation PRs and results.
-5. Reconcile board status with evidence and update the tracked plan. Do not close legacy duplicates or erase user dates without explicit triage.
+5. Reconcile board status with evidence and update the tracked plan. For read-only inventory requests, follow the [committed-progress audit procedure](github_issues.md#read-only-committed-progress-audits): pin the commit, record implementation and gaps, and update only the authorized GitHub metadata/comments. Historical Start dates follow the [first-commit procedure](github_issues.md#historical-start-dates), with rename/copy checks and date provenance. Do not close legacy duplicates or erase user dates without explicit triage.
 
 ## Historical fidelity and publication
 
