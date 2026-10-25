@@ -172,17 +172,18 @@
       "dateLabel": "1966 · plastic SN7400",
       "dateSource": "https://www.computerhistory.org/siliconengine/standard-logic-ic-families-introduced/",
       "era": "4",
-      "query": "Texas Instruments SN74181",
+      "query": "Texas Instruments SN7400N",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 4,
         "url": "https://github.com/hevangel/ai_engineer/issues/4"
       },
       "image": {
-        "src": "images/ttl_74_series.jpg",
-        "alt": "Fairchild F74LS181PC bottom.jpg",
+        "src": "images/ti_sn7400n.jpg",
+        "alt": "Texas Instruments SN7400N quad NAND-gate chip in a 14-pin DIP, with the TI logo, SN 7400N marking and 7645 date code clearly visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Fairchild_F74LS181PC_bottom.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:TI_SN7400N.jpg",
+        "caption": "Texas Instruments SN7400N; the pictured device is date-coded 7645 (1976, week 45), later than the family introduction."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Standard 7400-series TTL logic gates, flip-flops and counters"
