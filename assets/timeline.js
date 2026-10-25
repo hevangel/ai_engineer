@@ -1,3 +1,4 @@
+import {minimumBoardWidth,preferredColumns} from './timeline-layout.js';
 import {groupCompatibleConnections} from './compatible-layout.js';
 import {groupExpansionBuses,allocateBusLanes,busBranchPoints} from './bus-layout.js';
 const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible;let kind='all';let visible=[];let drawFrame=0;
@@ -92,6 +93,19 @@ function openBus(bus){
  dialog.showModal();
 }
 function drawConnections(){
+ const timeline=$('timeline'),grid=document.querySelector('.year-grid'),era=document.querySelector('.era');
+ const availableWidth=timeline.parentElement.clientWidth;
+ const style=getComputedStyle(timeline),gridStyle=grid&&getComputedStyle(grid),eraStyle=era&&getComputedStyle(era);
+ const metrics={cardMin:parseFloat(style.getPropertyValue('--card-min-width'))||200,gap:parseFloat(gridStyle?.columnGap)||0,padding:(parseFloat(eraStyle?.paddingLeft)||0)+(parseFloat(eraStyle?.paddingRight)||0)};
+ const columns=grid?preferredColumns(availableWidth,metrics):1;
+ const layout={availableWidth,metrics,hasCards:Boolean(grid)};
+ setTimelineColumns(layout,columns);drawConnectionPass(layout,columns);
+}
+function setTimelineColumns(layout,columns){
+ $('timeline').style.setProperty('--card-columns',columns);
+ $('timeline').style.setProperty('--board-width',(layout.hasCards?minimumBoardWidth(columns,layout.metrics):0)+'px');
+}
+function drawConnectionPass(layout,columns){
  const timeline=$('timeline'),svg=$('connections');
  const nodes=new Map([...document.querySelectorAll('.hardware')].map(node=>[node.dataset.id,node]));
  const entryById=new Map(catalog.entries.map(entry=>[entry.id,entry]));
@@ -165,6 +179,12 @@ function drawConnections(){
  const leftPitch=4,rightPitch=7,busPitch=30,socketGutter=socketLanes?24+socketLanes*28:0,leftGutter=socketGutter+(leftLanes?24+leftLanes*leftPitch:0),makerGutter=rightLanes?24+rightLanes*rightPitch:0,busGutter=busLanes?28+busLanes*busPitch:0;
  const rightGutter=makerGutter+busGutter;
  timeline.style.setProperty('--left-gutter',leftGutter+'px');timeline.style.setProperty('--right-gutter',rightGutter+'px');
+ // Reduce columns only within this pass: lane counts depend on row grouping.
+ // At most three passes; do not alternate column counts across resize frames.
+ if(columns>1&&minimumBoardWidth(columns,layout.metrics)+leftGutter+rightGutter>layout.availableWidth+0.5){
+  setTimelineColumns(layout,columns-1);drawConnectionPass(layout,columns-1);return;
+ }
+
  const bounds=timeline.getBoundingClientRect(),ns='http://www.w3.org/2000/svg';
  const shape=(tag,attributes)=>{const node=document.createElementNS(ns,tag);for(const [name,value]of Object.entries(attributes))node.setAttribute(name,String(value));return node;};
  const coordinate=value=>Math.round(value*2)/2;
