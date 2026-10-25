@@ -316,6 +316,13 @@
         "source": "sio",
         "flags": "i"
       }
+    },
+    "ttl_74_series": {
+      "query": "File:TI SN7400N.jpg",
+      "titlePattern": {
+        "source": "^File:TI SN7400N\\.jpg$",
+        "flags": "i"
+      }
     }
   },
   "brandFallbacks": {
@@ -344,7 +351,8 @@
     "mac_scc": "Macintosh SE motherboard",
     "ega_chip": "IBM EGA card",
     "snes_parts": "Super Nintendo motherboard",
-    "nes_parts": "Nintendo Entertainment System motherboard"
+    "nes_parts": "Nintendo Entertainment System motherboard",
+    "ttl_74_series": "Texas Instruments SN7400N"
   },
   "representativeIds": [
     "mac_adb",
