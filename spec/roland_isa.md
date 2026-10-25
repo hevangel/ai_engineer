@@ -14,7 +14,7 @@ The [Commons photograph](https://commons.wikimedia.org/wiki/File:Lapc-1.jpg) is 
 
 The selected optional profiles are IBM AT 5170, Compaq Deskpro 386, IBM PS/2 Model 25 SX and Model 35 SX. Match full-length clearance, slot/riser geometry, power, IRQ routing and I/O allocation for the exact machine before acceptance. The SX configurations remain explicit candidates pending physical-fit qualification. These records do not assert factory installation or simultaneous compatibility with every other optional card. Do not attach this ISA card to Model 70, Model 80 or Model 56 SLC Micro Channel buses.
 
-`data/system-options.json` holds the four choices and their evidence. After connection sync, they join the single far-right ISA family rail alongside AdLib and Sound Blaster. The chooser retains the four exact host profiles. The card tap leaves its bottom edge and joins the shared row run below the complete row; computer taps arrive from above. Optional taps stay dotted. There are no individual left-side card wires. Filters, member chooser, keyboard navigation and Show wires apply normally. No card subtitle is rendered.
+`data/system-options.json` holds the four choices and their evidence. After connection sync, they join the single far-right ISA family rail alongside AdLib and Sound Blaster. The chooser retains the four exact host profiles. The card tap leaves its bottom edge and joins the shared row run below the complete row; computer taps arrive from above. Optional taps stay dotted. There are no individual left-side card wires. Filters, member chooser, keyboard navigation and the layer toggles apply normally. No card subtitle is rendered.
 
 ## Maintenance checks
 

@@ -23,7 +23,7 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 
 ## Focused wire overview
 
-The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Show wires remains the master. See [focused wire behavior](focused_wires.md).
+The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Wires are always drawn; Maker lineage and All computer links choose the layers. See [focused wire behavior](focused_wires.md).
 
 See [shared bus-family rails](expansion_buses.md) for unique card/computer taps, one horizontal run per family on a row, bottom/top routing and exact connection choosers.
 

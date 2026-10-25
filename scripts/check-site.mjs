@@ -30,4 +30,14 @@ for(const entry of catalog.entries){
 }
 for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(connections.links.some(link=>link.source===entry.id&&catalog.entries.some(target=>target.id===link.target&&target.kind==='system')),'ISA card has no computer bus connection: '+entry.id);
 assert.equal(Object.keys(snapshot.statuses).length,ids.size,'Stale snapshot entries');
+const ui=await json('data/ui.json'),source=await fs.readFile(path.join(root,'assets/timeline.js'),'utf8');
+const lookup=key=>key.split('.').reduce((node,part)=>node?.[part],ui);
+const keys=new Set([...source.matchAll(/\btext\('([A-Za-z0-9_.]+)'[,)]/g)].map(match=>match[1]));
+for(const key of keys)assert.equal(typeof lookup(key),'string','Missing interface text in data/ui.json: '+key);
+for(const kind of ui.viewTabs)assert.equal(typeof lookup('kinds.'+kind+'.tab'),'string','Missing tab text: '+kind);
+for(const kind of ['chip','card','system'])for(const field of ['heading','badge','noun'])assert.equal(typeof lookup('kinds.'+kind+'.'+field),'string','Missing kind text: '+kind+'.'+field);
+for(const key of ['maker','required','optionalChip','reconstruction','bus','compatible'])assert.equal(typeof lookup('wires.count.'+key),'string','Missing count text: '+key);
+for(const key of ['maker','reconstruction','optional','required'])assert.equal(typeof lookup('wires.relation.'+key),'string','Missing relation text: '+key);
+for(const key of ['previous','next'])assert.equal(typeof lookup('wires.'+key),'string','Missing direction text: '+key);
+for(const layer of ui.wireLayers)assert(layer.id&&layer.label,'Incomplete wire layer');
 console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} explicitly labeled representative photos).`);

@@ -18,7 +18,7 @@ The connections show different relationships:
 - **Chip links on the left** show recorded prerequisites for a computer build. Pin/function-compatible processors share one CPU-role wire; choose the original part or a qualified substitute from that wire. Dotted left wires show planned optional coprocessors such as 287 and 387DX/SX. A separately marked reconstruction link identifies later implementation parts, such as Am29xx for the PDP-1.
 - **Shared expansion buses on the far right** group cards and computers by bus family, with one ISA rail, one NuBus rail and so on. Cards connect from below and computers from above. Click a shared connection to see the exact recorded card-to-computer choices; each machine keeps its own configuration.
 
-Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑ and ↓. Turn off **Show wires** for a simpler view.
+Click a wire or its endpoint circle to follow the connection. Click a shared bus to choose one of its cards or its computer. The destination is highlighted. Keyboard users can Tab to a connection and press Enter; paired chip wires also support ↑/`k` and ↓/`j`, and maker wires ←/`h` and →/`l`. With a card selected, ←/`h` and →/`l` walk its maker's family line and ↑/`k` and ↓/`j` move between a chip and its computers. Use **Maker lineage** and **All computer links** to choose which wires are drawn.
 
 Motherboard chipsets appear as one card listing their cooperating member chips. Searching a member’s part number finds its chipset card.
 

@@ -1,7 +1,5 @@
 // Keyboard moves for a selected card: sideways along the maker's family line, vertically between a chip and its computers.
 export const cardMoves={ArrowLeft:'previous',h:'previous',ArrowRight:'next',l:'next',ArrowUp:'up',k:'up',ArrowDown:'down',j:'down'};
-// Wire tooltips: a wire's halves lead to the earlier or later end in displayed order.
-export const familyKeys='←/h previous · →/l next',systemKeys='↑/k previous · ↓/j next';
 
 // order lists the rendered card IDs in display order; filters therefore limit destinations.
 // cursor remembers which chip a computer was reached from so Down can continue through that chip's computers.
