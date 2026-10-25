@@ -379,6 +379,62 @@
         "source": "^File:AMD AM9511A IDC 1\\.jpg$",
         "flags": "i"
       }
+    },
+    "intel_mcs4": {
+      "query": "File:Intel C4004.jpg",
+      "titlePattern": {
+        "source": "^File:Intel\\ C4004\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "mos_6502_family": {
+      "query": "File:KL MOS 6502.jpg",
+      "titlePattern": {
+        "source": "^File:KL\\ MOS\\ 6502\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "motorola_6809": {
+      "query": "File:KL Motorola MC6809.jpg",
+      "titlePattern": {
+        "source": "^File:KL\\ Motorola\\ MC6809\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "motorola_68000": {
+      "query": "File:KL Motorola MC68000 CDIP.jpg",
+      "titlePattern": {
+        "source": "^File:KL\\ Motorola\\ MC68000\\ CDIP\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "intel_8087": {
+      "query": "File:Intel C8087 1.jpg",
+      "titlePattern": {
+        "source": "^File:Intel\\ C8087\\ 1\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "intel_80286": {
+      "query": "File:KL Intel 80286 CLCC Top.jpg",
+      "titlePattern": {
+        "source": "^File:KL\\ Intel\\ 80286\\ CLCC\\ Top\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "intel_80287": {
+      "query": "File:KL Intel C80287.jpg",
+      "titlePattern": {
+        "source": "^File:KL\\ Intel\\ C80287\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_80186": {
+      "query": "File:Ic-photo-AMD--R80186-6 B4-(186-CPU).png",
+      "titlePattern": {
+        "source": "^File:Ic\\-photo\\-AMD\\-\\-R80186\\-6\\ B4\\-\\(186\\-CPU\\)\\.png$",
+        "flags": "i"
+      }
     }
   },
   "brandFallbacks": {
@@ -458,6 +514,14 @@
     "amd_am2501",
     "amd_am2505",
     "amd_am9102",
-    "amd_am9517"
+    "amd_am9517",
+    "intel_mcs4",
+    "mos_6502_family",
+    "motorola_6809",
+    "motorola_68000",
+    "intel_8087",
+    "intel_80286",
+    "intel_80287",
+    "amd_80186"
   ]
 }
