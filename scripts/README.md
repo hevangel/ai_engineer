@@ -12,6 +12,7 @@ All commands run from the repository root with Node.js 22 or newer. No packages 
 | `node scripts/sync-timeline.mjs --check` | Validate the checked-in catalog/status snapshot without network access. |
 | `node scripts/check-site.mjs` | Check local photo files, attribution, dated sources and catalog/status coverage. |
 | `node --test scripts/bus-layout.test.mjs` | Check bus-family rails, exact host membership, shared row runs and bottom/top tap geometry. |
+| `node --test scripts/card-navigation.test.mjs` | Check selected-card keyboard navigation along the maker family line and between chips and computers. |
 | `node --test scripts/status.test.mjs` | Verify stage, evidence and percentage rules. |
 | `node scripts/fetch-images.mjs` | Import missing licensed Commons photos with attribution; inspect and curate results. |
 

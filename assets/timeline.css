@@ -38,7 +38,7 @@
 .connection-key .optional-key{border-top-style:dotted}
 #trace-summary{font-size:9px;color:var(--muted);margin:0 0 12px}
 .trace-computer{margin-top:12px;padding:6px 9px;background:transparent;border:1px solid #b9c8bd;color:#41685f;font-size:10px;text-align:left}
-.trace-computer:hover{background:#e8eee6}
+.trace-computer:hover{background:#e8eee6}.trace-computer.active{background:#41685f;border-color:#41685f;color:#fff}.trace-computer.active:hover{background:#2f4f48}
 @media(max-width:1100px){#timeline{--trace-gutter:128px}}
 @media(max-width:650px){#timeline{--trace-gutter:64px}.connection-controls{gap:9px;font-size:10px}.computer-picker{flex-basis:100%;flex-wrap:wrap}.connection-controls select{width:100%;max-width:none}.connection-key{font-size:8px;gap:9px}.connection-required .trace-wire,.connection-optional .trace-wire{stroke-width:1.7px}.connection-required .trace-clearance,.connection-optional .trace-clearance{stroke-width:2.5px}.hardware h3{font-size:21px}}
 
