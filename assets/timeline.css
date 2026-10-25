@@ -101,3 +101,5 @@
 #timeline{--card-min-width:200px;--card-columns:1;--board-width:256px}
 .year-grid{grid-template-columns:repeat(var(--card-columns),minmax(var(--card-min-width),1fr))}
 @media(max-width:650px){#timeline{--card-min-width:190px;--board-width:212px}}
+
+.bus-row-wire{stroke-width:2.5px}.bus-direction{font-size:12px;color:var(--muted)}.bus-evidence{font-size:11px;color:var(--muted);line-height:1.6;margin-top:8px}.bus-evidence summary{cursor:pointer}.bus-evidence p{font-size:11px}.bus-evidence a{font-size:11px!important}
