@@ -1,3 +1,4 @@
+import {isLocalComponentLink,localComponentPoints} from './component-layout.js';
 import {isInlineMakerLink,horizontalMakerPoints} from './maker-layout.js';
 import {minimumBoardWidth,preferredColumns} from './timeline-layout.js';
 import {groupCompatibleConnections} from './compatible-layout.js';
@@ -187,11 +188,13 @@ function drawConnectionPass(layout,columns){
 
   }
  }
+ for(const edge of edges)edge.local=isLocalComponentLink(edge,rowById,entryById);
+ for(const list of incoming.values())list.filter(edge=>edge.local).forEach((edge,index)=>{edge.localInPort=index;});
  buses.forEach((bus,lane)=>{bus.lane=lane;});
  const busLanes=buses.length,socketLanes=allocateBusLanes(sockets,rowById);
  const allocateLanes=side=>{
   const laneEnds=[];
-  const sorted=edges.filter(edge=>edge.side===side&&!edge.inline).map(edge=>{
+  const sorted=edges.filter(edge=>edge.side===side&&!edge.inline&&!edge.local).map(edge=>{
    const from=nodes.get(edge.source).getBoundingClientRect(),to=nodes.get(edge.target).getBoundingClientRect();
    const outY=from.bottom+safe+(edge.outTrack+1)*pitch,inY=to.top-safe-(edge.inTrack+1)*pitch;
    return {edge,start:Math.min(outY,inY)-8,end:Math.max(outY,inY)+8};
@@ -236,6 +239,12 @@ function drawConnectionPass(layout,columns){
    const y=Math.max(left.top,right.top)-bounds.top+photoHeight/2;
    points=horizontalMakerPoints(left.right-bounds.left,right.left-bounds.left,y);
    from={x:points[0][0],y};to={x:points[1][0],y};
+  }else if(edge.local){
+   from=port(edge,'out');to=port(edge,'in');
+   const target=nodes.get(edge.target).getBoundingClientRect();
+   // Arrive beyond the left-aligned row heading, after any far-right bus pads.
+   to.x=target.right-bounds.left-18-12*(tapsById.get(edge.target).length+edge.localInPort);
+   points=localComponentPoints(from,to,from.y+safe+(edge.outTrack+1)*pitch);
   }else{
    const origin=port(edge,'out'),destination=port(edge,'in'),sign=edge.side==='left'?-1:1;
    const lane=edge.side==='left'?leftGutter-12-edge.lane*leftPitch:bounds.width-rightGutter+12+edge.lane*rightPitch;
@@ -244,13 +253,16 @@ function drawConnectionPass(layout,columns){
    points=[[origin.x,origin.y],[origin.x,outY-6],[origin.x+sign*6,outY],[lane-sign*bend,outY],[lane,outY+vertical*bend],[lane,inY-vertical*bend],[lane-sign*bend,inY],[destination.x+sign*6,inY],[destination.x,inY+6],[destination.x,destination.y]];
    from=origin;to=destination;
   }
-  const d=pathData(points),group=shape('g',{class:'connection connection-'+edge.type+(edge.basis==='reconstruction'?' connection-reconstruction':''),'data-source':edge.source,'data-target':edge.target,'data-type':edge.type,'data-side':edge.inline?'between-cards':edge.side,'data-route':edge.inline?'inline':'gutter',...(edge.inline?{}:{'data-lane':edge.lane})});
+  const d=pathData(points),group=shape('g',{class:'connection connection-'+edge.type+(edge.basis==='reconstruction'?' connection-reconstruction':''),'data-source':edge.source,'data-target':edge.target,'data-type':edge.type,'data-side':edge.inline?'between-cards':edge.local?'between-rows':edge.side,'data-route':edge.inline?'inline':edge.local?'local':'gutter',...(edge.inline||edge.local?{}:{'data-lane':edge.lane})});
   const title=shape('title',{});title.textContent=entryById.get(edge.source).title+' → '+entryById.get(edge.target).title+' · '+(edge.type==='maker'?'maker lineage':edge.basis==='reconstruction'?'later reconstruction component · not original hardware':edge.type==='optional'?'planned optional component · '+edge.note:'recorded prerequisite');
   const ordered=[edge.source,edge.target].sort((a,b)=>ranks.get(a)-ranks.get(b));
   group.append(title,shape('path',{d,class:'trace-clearance','aria-hidden':true}),shape('path',{d,class:'trace-wire',stroke:edge.color,'aria-hidden':true}));
   const halves=splitRoute(points);
   for(const [route,destination,origin]of [[halves[0],edge.target,edge.source],[halves[1],edge.source,edge.target]]){
-   const anchor=makeJump(destination,origin,ordered);anchor.append(edge.inline?shape('rect',{x:coordinate(Math.min(route[0][0],route.at(-1)[0])),y:coordinate(from.y-5),width:coordinate(Math.abs(route.at(-1)[0]-route[0][0])),height:10,class:'bus-direct-hit'}):shape('path',{d:pathData(route),class:'trace-hit','stroke-width':edge.side==='left'?4:6}));group.append(anchor);
+   const anchor=makeJump(destination,origin,ordered);
+   const horizontal=route.every(point=>point[1]===route[0][1]),vertical=route.every(point=>point[0]===route[0][0]);
+   const x=Math.min(...route.map(point=>point[0])),y=Math.min(...route.map(point=>point[1]));
+   anchor.append(horizontal||vertical?shape('rect',{x:coordinate(x-(vertical?5:0)),y:coordinate(y-(horizontal?5:0)),width:Math.max(10,coordinate(Math.abs(route.at(-1)[0]-route[0][0]))),height:Math.max(10,coordinate(Math.abs(route.at(-1)[1]-route[0][1]))),class:'bus-direct-hit'}):shape('path',{d:pathData(route),class:'trace-hit','stroke-width':edge.side==='left'?4:6}));group.append(anchor);
   }
   paths.append(group);
   for(const [direction,p,destination,origin]of [['out',from,edge.target,edge.source],['in',to,edge.source,edge.target]]){

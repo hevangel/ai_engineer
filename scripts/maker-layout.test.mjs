@@ -20,3 +20,13 @@ test('the direct wire has just one horizontal segment and no gutter detour',()=>
  assert.deepEqual(horizontalMakerPoints(300,332,160),[[300,160],[332,160]]);
  assert.throws(()=>horizontalMakerPoints(332,300,160));
 });
+
+test('Am2505 and Am3101 are adjacent in the unfiltered 1971 chip row',async()=>{
+ const {entries}=JSON.parse(await fs.readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
+ const chips=entries.filter(e=>e.year===1971&&e.kind==='chip');
+ assert.deepEqual(chips.slice(0,2).map(e=>e.id),['amd_am2505','amd_am3101']);
+ for(const columns of [2,3]){
+  const cells=new Map(chips.map((e,i)=>[e.id,{grid:'1971-chips',row:Math.floor(i/columns),column:i%columns}]));
+  assert(isInlineMakerLink({source:'amd_am2505',target:'amd_am3101',type:'maker'},cells));
+ }
+});
