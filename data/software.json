@@ -1,0 +1,1259 @@
+{
+  "version": 1,
+  "description": "Software view content: systems that host software, layers, categories (mirroring ai_sw_engineer issue labels) and the 42 retrosoftware Rust rewrite titles. Wording shown on the page lives in ui.json.",
+  "repository": "hevangel/ai_sw_engineer",
+  "layers": [
+    {
+      "id": "os",
+      "label": "Operating system"
+    },
+    {
+      "id": "driver",
+      "label": "Drivers"
+    },
+    {
+      "id": "firmware",
+      "label": "Firmware"
+    },
+    {
+      "id": "software",
+      "label": "Software"
+    }
+  ],
+  "categories": [
+    {
+      "id": "language",
+      "label": "Programming language",
+      "color": "#2563a8",
+      "description": "BASIC and other interpreters",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "polyline",
+            "points": "16 18 22 12 16 6"
+          },
+          {
+            "tag": "polyline",
+            "points": "8 6 2 12 8 18"
+          }
+        ]
+      }
+    },
+    {
+      "id": "operating-system",
+      "label": "Operating system",
+      "color": "#6b3fa0",
+      "description": "Disk, graphical and ROM operating systems",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "rect",
+            "x": 2,
+            "y": 3,
+            "width": 20,
+            "height": 14,
+            "rx": 2
+          },
+          {
+            "tag": "line",
+            "x1": 8,
+            "y1": 21,
+            "x2": 16,
+            "y2": 21
+          },
+          {
+            "tag": "line",
+            "x1": 12,
+            "y1": 17,
+            "x2": 12,
+            "y2": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "firmware",
+      "label": "Firmware",
+      "color": "#b5601a",
+      "description": "Boot ROMs, monitors, BIOS and kernels",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "rect",
+            "x": 4,
+            "y": 4,
+            "width": 16,
+            "height": 16,
+            "rx": 2
+          },
+          {
+            "tag": "rect",
+            "x": 9,
+            "y": 9,
+            "width": 6,
+            "height": 6,
+            "rx": 1
+          },
+          {
+            "tag": "path",
+            "d": "M9 2v2"
+          },
+          {
+            "tag": "path",
+            "d": "M15 2v2"
+          },
+          {
+            "tag": "path",
+            "d": "M9 20v2"
+          },
+          {
+            "tag": "path",
+            "d": "M15 20v2"
+          },
+          {
+            "tag": "path",
+            "d": "M2 9h2"
+          },
+          {
+            "tag": "path",
+            "d": "M2 15h2"
+          },
+          {
+            "tag": "path",
+            "d": "M20 9h2"
+          },
+          {
+            "tag": "path",
+            "d": "M20 15h2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "game",
+      "label": "Game",
+      "color": "#b32631",
+      "description": "Games and entertainment",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "line",
+            "x1": 6,
+            "y1": 12,
+            "x2": 10,
+            "y2": 12
+          },
+          {
+            "tag": "line",
+            "x1": 8,
+            "y1": 10,
+            "x2": 8,
+            "y2": 14
+          },
+          {
+            "tag": "path",
+            "d": "M15 13h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M18 11h.01"
+          },
+          {
+            "tag": "path",
+            "d": "M17.3 5H6.7a4 4 0 0 0-4 3.6C2.6 9.4 2 14.5 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.4-1.4A2 2 0 0 1 9.8 16h4.4a2 2 0 0 1 1.4.6L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.5-.6-6.6-.7-7.300A4 4 0 0 0 17.3 5z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "application",
+      "label": "Application",
+      "color": "#237647",
+      "description": "Productivity software",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "rect",
+            "x": 3,
+            "y": 3,
+            "width": 18,
+            "height": 18,
+            "rx": 2
+          },
+          {
+            "tag": "line",
+            "x1": 3,
+            "y1": 9,
+            "x2": 21,
+            "y2": 9
+          },
+          {
+            "tag": "line",
+            "x1": 3,
+            "y1": 15,
+            "x2": 21,
+            "y2": 15
+          },
+          {
+            "tag": "line",
+            "x1": 9,
+            "y1": 3,
+            "x2": 9,
+            "y2": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "utility",
+      "label": "Utility",
+      "color": "#4b6a76",
+      "description": "Shells and command-line tools",
+      "icon": {
+        "viewBox": "0 0 24 24",
+        "shapes": [
+          {
+            "tag": "polyline",
+            "points": "4 17 10 11 4 5"
+          },
+          {
+            "tag": "line",
+            "x1": 12,
+            "y1": 19,
+            "x2": 20,
+            "y2": 19
+          }
+        ]
+      }
+    }
+  ],
+  "systems": [
+    {
+      "id": "busicom_141pf",
+      "year": 1971,
+      "title": "Busicom 141-PF",
+      "cpu": "Intel 4004",
+      "catalog": "system_busicom_141pf"
+    },
+    {
+      "id": "micral_n",
+      "year": 1973,
+      "title": "Micral N",
+      "cpu": "Intel 8008",
+      "catalog": "system_micral_n"
+    },
+    {
+      "id": "altair_8800",
+      "year": 1975,
+      "title": "MITS Altair 8800",
+      "cpu": "Intel 8080",
+      "catalog": "system_altair_8800"
+    },
+    {
+      "id": "kim1",
+      "year": 1975,
+      "title": "MOS KIM-1",
+      "cpu": "MOS 6502",
+      "summary": "MOS Technology's 1976 single-board 6502 trainer with hex keypad and LED display",
+      "color": "#8a6d3b",
+      "image": {
+        "src": "images/sw_system_kim1.jpg",
+        "alt": "KIM-1 single board computer, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KIM-1_single_board_computer.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    },
+    {
+      "id": "trs80_model1",
+      "year": 1977,
+      "title": "TRS-80 Model I",
+      "cpu": "Zilog Z80",
+      "summary": "Tandy's 1977 Z80 home computer with built-in keyboard and cassette interface",
+      "color": "#7a5c3a",
+      "image": {
+        "src": "images/sw_system_trs80_model1.jpg",
+        "alt": "Tandy TRS-80 Model I, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Tandy_TRS-80_Model_I.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    },
+    {
+      "id": "apple_ii",
+      "year": 1977,
+      "title": "Apple II",
+      "cpu": "MOS 6502",
+      "catalog": "system_apple_ii"
+    },
+    {
+      "id": "atari_2600",
+      "year": 1977,
+      "title": "Atari 2600",
+      "cpu": "MOS 6507",
+      "catalog": "system_atari_2600"
+    },
+    {
+      "id": "space_invaders",
+      "year": 1978,
+      "title": "Space Invaders arcade board",
+      "cpu": "Intel 8080",
+      "catalog": "system_space_invaders"
+    },
+    {
+      "id": "atari_800",
+      "year": 1979,
+      "title": "Atari 400/800",
+      "cpu": "MOS 6502",
+      "summary": "Atari's 1979 home computers with custom ANTIC and GTIA graphics chips",
+      "color": "#a1442a",
+      "image": {
+        "src": "images/sw_system_atari_800.jpg",
+        "alt": "Atari-800-Computer-FL, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-800-Computer-FL.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    },
+    {
+      "id": "ibm_pc",
+      "year": 1981,
+      "title": "IBM PC 5150",
+      "cpu": "Intel 8088",
+      "catalog": "system_ibm_pc"
+    },
+    {
+      "id": "c64",
+      "year": 1982,
+      "title": "Commodore 64",
+      "cpu": "MOS 6510",
+      "catalog": "system_c64"
+    },
+    {
+      "id": "atari_5200",
+      "year": 1982,
+      "title": "Atari 5200",
+      "cpu": "MOS 6502",
+      "summary": "Atari's 1982 SuperSystem console, built from Atari 400/800 parts",
+      "color": "#a1442a",
+      "image": {
+        "src": "images/sw_system_atari_5200.jpg",
+        "alt": "Atari-5200-4-Port-wController-L, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-5200-4-Port-wController-L.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    },
+    {
+      "id": "atari_st",
+      "year": 1985,
+      "title": "Atari ST",
+      "cpu": "Motorola 68000",
+      "summary": "Atari's 1985 68000 home computer with the GEM desktop in ROM",
+      "color": "#a1442a",
+      "image": {
+        "src": "images/sw_system_atari_st.jpg",
+        "alt": "Atari 520ST Tietokonemuseo, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari_520ST_Tietokonemuseo.JPG",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    },
+    {
+      "id": "atari_7800",
+      "year": 1986,
+      "title": "Atari 7800",
+      "cpu": "MOS 6502C",
+      "summary": "Atari's 1986 ProSystem console with the MARIA graphics chip",
+      "color": "#a1442a",
+      "image": {
+        "src": "images/sw_system_atari_7800.jpg",
+        "alt": "Atari-7800-wControl-Pad-L, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "sw_busicom_firmware",
+      "title": "Busicom 141-PF firmware",
+      "system": "busicom_141pf",
+      "layer": "firmware",
+      "category": "firmware",
+      "year": 1971,
+      "difficulty": "Hard",
+      "sourceMaterial": "Recovered assembly",
+      "summary": "Calculator control program that ran on the Intel 4004 and its 4001/4002/4003 support chips",
+      "sources": [
+        {
+          "url": "https://www.4004.com/2009/Busicom-141PF-Calculator_asm_rel-1-0-1.txt",
+          "note": "Recovered Busicom 141-PF assembly"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 121,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/121"
+      }
+    },
+    {
+      "id": "sw_scelbal",
+      "title": "SCELBAL BASIC",
+      "system": "micral_n",
+      "layer": "software",
+      "category": "language",
+      "year": 1976,
+      "difficulty": "Hard",
+      "sourceMaterial": "Published source listings",
+      "summary": "Early 8008 BASIC interpreter sold as a printed source listing",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 122,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/122"
+      }
+    },
+    {
+      "id": "sw_shooting_stars",
+      "title": "Shooting Stars",
+      "system": "micral_n",
+      "layer": "software",
+      "category": "game",
+      "year": 1976,
+      "difficulty": "Medium",
+      "sourceMaterial": "Published listing",
+      "summary": "Small 8008 game from a period hobbyist listing",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 123,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/123"
+      }
+    },
+    {
+      "id": "sw_altair_basic",
+      "title": "Altair BASIC",
+      "system": "altair_8800",
+      "layer": "software",
+      "category": "language",
+      "year": 1975,
+      "difficulty": "Hard",
+      "sourceMaterial": "Historical listings and binaries",
+      "summary": "Microsoft's first product: a BASIC interpreter for the Intel 8080 Altair",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 124,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/124"
+      }
+    },
+    {
+      "id": "sw_tiny_basic",
+      "title": "Tiny BASIC",
+      "system": "altair_8800",
+      "layer": "software",
+      "category": "language",
+      "year": 1976,
+      "difficulty": "Easy",
+      "sourceMaterial": "Published assembly",
+      "summary": "Minimal 8080 BASIC that fit in a few kilobytes",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 125,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/125"
+      }
+    },
+    {
+      "id": "sw_cpm22",
+      "title": "CP/M 2.2",
+      "system": "altair_8800",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1979,
+      "difficulty": "Hard",
+      "sourceMaterial": "Reconstructed assembly",
+      "summary": "Digital Research disk operating system for 8080 and Z80 machines",
+      "sources": [
+        {
+          "url": "https://github.com/brouhaha/cpm22",
+          "note": "CP/M 2.2 reconstruction"
+        }
+      ],
+      "alsoOn": [
+        "trs80_model1"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 126,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/126"
+      }
+    },
+    {
+      "id": "sw_space_invaders_sw",
+      "title": "Space Invaders",
+      "system": "space_invaders",
+      "layer": "software",
+      "category": "game",
+      "year": 1978,
+      "difficulty": "Medium",
+      "sourceMaterial": "ROM and disassemblies",
+      "summary": "Taito arcade game running on an Intel 8080 board with custom shift hardware",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 127,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/127"
+      }
+    },
+    {
+      "id": "sw_sargon",
+      "title": "Sargon Chess",
+      "system": "trs80_model1",
+      "layer": "software",
+      "category": "game",
+      "year": 1978,
+      "difficulty": "Medium",
+      "sourceMaterial": "Published assembly",
+      "summary": "Z80 chess program published as a complete assembly listing",
+      "sources": [
+        {
+          "url": "https://github.com/billforsternz/retro-sargon",
+          "note": "Retro Sargon"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 128,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/128"
+      }
+    },
+    {
+      "id": "sw_microchess",
+      "title": "Microchess",
+      "system": "kim1",
+      "layer": "software",
+      "category": "game",
+      "year": 1976,
+      "difficulty": "Medium",
+      "sourceMaterial": "Original source resources",
+      "summary": "Peter Jennings chess program that fit in about 1 KB on the KIM-1",
+      "sources": [
+        {
+          "url": "https://benlo.com/microchess/",
+          "note": "Microchess historical resources"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 129,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/129"
+      }
+    },
+    {
+      "id": "sw_ms_basic6502",
+      "title": "Microsoft 6502 BASIC",
+      "system": "apple_ii",
+      "layer": "software",
+      "category": "language",
+      "year": 1977,
+      "difficulty": "Medium",
+      "sourceMaterial": "Original source, MIT",
+      "summary": "Microsoft BASIC for the 6502, the ancestor of Applesoft and Commodore BASIC",
+      "derivedFrom": [
+        "sw_altair_basic"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/BASIC-M6502",
+          "note": "Microsoft BASIC-M6502"
+        }
+      ],
+      "alsoOn": [
+        "c64"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 130,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/130"
+      }
+    },
+    {
+      "id": "sw_zork",
+      "title": "Zork / Z-machine",
+      "system": "apple_ii",
+      "layer": "software",
+      "category": "game",
+      "year": 1980,
+      "difficulty": "Medium–Hard",
+      "sourceMaterial": "Story source, interpreters, binaries",
+      "summary": "Infocom text adventure and the portable virtual machine that ran it",
+      "dependsOn": [
+        "sw_apple_dos33"
+      ],
+      "alsoOn": [
+        "c64",
+        "ibm_pc"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 131,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/131"
+      }
+    },
+    {
+      "id": "sw_apple_monitor",
+      "title": "Apple II Monitor",
+      "system": "apple_ii",
+      "layer": "firmware",
+      "category": "firmware",
+      "year": 1977,
+      "difficulty": "Easy",
+      "sourceMaterial": "ROM listings",
+      "summary": "Built-in ROM monitor for examining memory and running programs",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 132,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/132"
+      }
+    },
+    {
+      "id": "sw_apple_dos33",
+      "title": "Apple DOS 3.3",
+      "system": "apple_ii",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1983,
+      "difficulty": "Hard",
+      "sourceMaterial": "Historical assembly listings",
+      "summary": "Floppy-disk operating system for the Apple II",
+      "dependsOn": [
+        "sw_apple_monitor"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/computerhistory/Historical-Source-Code-Apple-II-DOS-Repository",
+          "note": "Apple DOS source"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 133,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/133"
+      }
+    },
+    {
+      "id": "sw_visicalc",
+      "title": "VisiCalc",
+      "system": "apple_ii",
+      "layer": "software",
+      "category": "application",
+      "year": 1979,
+      "difficulty": "Hard",
+      "sourceMaterial": "Reconstructed assembly",
+      "summary": "First spreadsheet, squeezed into the memory of an Apple II",
+      "dependsOn": [
+        "sw_apple_dos33"
+      ],
+      "sources": [
+        {
+          "url": "https://www.brutaldeluxe.fr/projects/visicalc/index.html",
+          "note": "VisiCalc reconstruction"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 134,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/134"
+      }
+    },
+    {
+      "id": "sw_prince_of_persia",
+      "title": "Prince of Persia",
+      "system": "apple_ii",
+      "layer": "software",
+      "category": "game",
+      "year": 1989,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Original assembly",
+      "summary": "Rotoscoped platformer with sophisticated animation on a 1 MHz 6502",
+      "dependsOn": [
+        "sw_apple_monitor"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/videogamepreservation/princeofpersia",
+          "note": "Prince of Persia source"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 135,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/135"
+      }
+    },
+    {
+      "id": "sw_combat",
+      "title": "Combat",
+      "system": "atari_2600",
+      "layer": "software",
+      "category": "game",
+      "year": 1977,
+      "difficulty": "Hard",
+      "sourceMaterial": "Annotated disassembly",
+      "summary": "Launch cartridge: tank and plane duels with cycle-timed video",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 136,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/136"
+      }
+    },
+    {
+      "id": "sw_adventure",
+      "title": "Adventure",
+      "system": "atari_2600",
+      "layer": "software",
+      "category": "game",
+      "year": 1980,
+      "difficulty": "Hard",
+      "sourceMaterial": "Annotated disassembly",
+      "summary": "First console adventure game, in 4 KB",
+      "sources": [
+        {
+          "url": "https://6502disassembly.com/2600-adventure/",
+          "note": "Adventure disassembly"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 137,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/137"
+      }
+    },
+    {
+      "id": "sw_pitfall",
+      "title": "Pitfall!",
+      "system": "atari_2600",
+      "layer": "software",
+      "category": "game",
+      "year": 1982,
+      "difficulty": "Very hard",
+      "sourceMaterial": "ROM and disassembly resources",
+      "summary": "Scrolling jungle platformer with cycle-exact kernels",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 138,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/138"
+      }
+    },
+    {
+      "id": "sw_atari_os",
+      "title": "Atari OS",
+      "system": "atari_800",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1979,
+      "difficulty": "Very hard",
+      "sourceMaterial": "OS assembly archives",
+      "summary": "ROM operating system of the Atari 400/800/XL/XE family",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 139,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/139"
+      }
+    },
+    {
+      "id": "sw_atari_basic",
+      "title": "Atari BASIC",
+      "system": "atari_800",
+      "layer": "software",
+      "category": "language",
+      "year": 1979,
+      "difficulty": "Medium",
+      "sourceMaterial": "Buildable assembly",
+      "summary": "Atari 8-bit BASIC cartridge, independent of Microsoft BASIC",
+      "dependsOn": [
+        "sw_atari_os"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/thinkyhead/AtariBASIC",
+          "note": "Atari BASIC source"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 140,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/140"
+      }
+    },
+    {
+      "id": "sw_atari_dos2",
+      "title": "Atari DOS 2.0S",
+      "system": "atari_800",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1980,
+      "difficulty": "Hard",
+      "sourceMaterial": "Published assembly listings",
+      "summary": "Disk operating system for the Atari 8-bit computers",
+      "dependsOn": [
+        "sw_atari_os"
+      ],
+      "sources": [
+        {
+          "url": "https://atariwiki.org/wiki/Wiki.jsp?page=Atari+DOS+II+Assembly+Source+Listing",
+          "note": "Atari DOS assembly"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 141,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/141"
+      }
+    },
+    {
+      "id": "sw_star_raiders",
+      "title": "Star Raiders",
+      "system": "atari_800",
+      "layer": "software",
+      "category": "game",
+      "year": 1979,
+      "difficulty": "Hard",
+      "sourceMaterial": "Original and reconstructed assembly",
+      "summary": "First-person space combat game using interrupts and custom graphics",
+      "dependsOn": [
+        "sw_atari_os"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/lwiest/StarRaiders",
+          "note": "Star Raiders reconstruction"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 142,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/142"
+      }
+    },
+    {
+      "id": "sw_cbm_basic2",
+      "title": "Commodore BASIC V2",
+      "system": "c64",
+      "layer": "software",
+      "category": "language",
+      "year": 1982,
+      "difficulty": "Medium",
+      "sourceMaterial": "ROM and assembly listings",
+      "summary": "The C64 ROM BASIC, a descendant of Microsoft 6502 BASIC",
+      "dependsOn": [
+        "sw_c64_kernal"
+      ],
+      "derivedFrom": [
+        "sw_ms_basic6502"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 143,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/143"
+      }
+    },
+    {
+      "id": "sw_c64_kernal",
+      "title": "C64 KERNAL",
+      "system": "c64",
+      "layer": "firmware",
+      "category": "firmware",
+      "year": 1982,
+      "difficulty": "Hard",
+      "sourceMaterial": "ROM and assembly listings",
+      "summary": "ROM operating-system core for I/O, screen editor and interrupts",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 144,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/144"
+      }
+    },
+    {
+      "id": "sw_elite",
+      "title": "Elite",
+      "system": "c64",
+      "layer": "software",
+      "category": "game",
+      "year": 1985,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Annotated source reconstruction",
+      "summary": "Fixed-point 3D space trading game in under 64 KB",
+      "dependsOn": [
+        "sw_c64_kernal"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 145,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/145"
+      }
+    },
+    {
+      "id": "sw_geos",
+      "title": "GEOS",
+      "system": "c64",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1986,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Reverse-engineered source",
+      "summary": "Graphical desktop environment for the Commodore 64",
+      "dependsOn": [
+        "sw_c64_kernal"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 146,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/146"
+      }
+    },
+    {
+      "id": "sw_super_breakout",
+      "title": "Super Breakout",
+      "system": "atari_5200",
+      "layer": "software",
+      "category": "game",
+      "year": 1982,
+      "difficulty": "Medium",
+      "sourceMaterial": "ROM / reverse engineering",
+      "summary": "Atari 5200 version of the paddle brick-breaking game",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 147,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/147"
+      }
+    },
+    {
+      "id": "sw_star_raiders_5200",
+      "title": "Star Raiders (5200)",
+      "system": "atari_5200",
+      "layer": "software",
+      "category": "game",
+      "year": 1982,
+      "difficulty": "Hard",
+      "sourceMaterial": "ROM / reverse engineering",
+      "summary": "Console port of the Atari 400/800 space combat game",
+      "derivedFrom": [
+        "sw_star_raiders"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 148,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/148"
+      }
+    },
+    {
+      "id": "sw_food_fight",
+      "title": "Food Fight",
+      "system": "atari_7800",
+      "layer": "software",
+      "category": "game",
+      "year": 1987,
+      "difficulty": "Hard",
+      "sourceMaterial": "Published assembly",
+      "summary": "Arcade chase game ported to the Atari 7800",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 149,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/149"
+      }
+    },
+    {
+      "id": "sw_asteroids_7800",
+      "title": "Asteroids",
+      "system": "atari_7800",
+      "layer": "software",
+      "category": "game",
+      "year": 1986,
+      "difficulty": "Medium",
+      "sourceMaterial": "ROM / reverse engineering",
+      "summary": "Atari 7800 conversion of the vector arcade classic",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 150,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/150"
+      }
+    },
+    {
+      "id": "sw_pc_bios",
+      "title": "IBM PC BIOS",
+      "system": "ibm_pc",
+      "layer": "firmware",
+      "category": "firmware",
+      "year": 1981,
+      "difficulty": "Hard",
+      "sourceMaterial": "Original assembly listings",
+      "summary": "ROM firmware that boots the PC and provides the INT services",
+      "sources": [
+        {
+          "url": "https://github.com/gawlas/IBM-PC-BIOS",
+          "note": "IBM PC BIOS assembly"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 151,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/151"
+      }
+    },
+    {
+      "id": "sw_msdos_1_25",
+      "title": "MS-DOS 1.25",
+      "system": "ibm_pc",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1982,
+      "difficulty": "Medium",
+      "sourceMaterial": "Original source, MIT",
+      "summary": "First MS-DOS release for 8086 hardware, with a CP/M-style API",
+      "dependsOn": [
+        "sw_pc_bios"
+      ],
+      "derivedFrom": [
+        "sw_cpm22"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/MS-DOS",
+          "note": "Microsoft MS-DOS"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 152,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/152"
+      }
+    },
+    {
+      "id": "sw_msdos_2_0",
+      "title": "MS-DOS 2.0",
+      "system": "ibm_pc",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1983,
+      "difficulty": "Hard",
+      "sourceMaterial": "Original source, MIT",
+      "summary": "Adds directories, file handles and device drivers",
+      "dependsOn": [
+        "sw_pc_bios"
+      ],
+      "derivedFrom": [
+        "sw_msdos_1_25"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/MS-DOS",
+          "note": "Microsoft MS-DOS"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 153,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/153"
+      }
+    },
+    {
+      "id": "sw_msdos_3_3",
+      "title": "MS-DOS 3.3",
+      "system": "ibm_pc",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1987,
+      "difficulty": "Hard",
+      "sourceMaterial": "Binaries, manuals, disassembly",
+      "summary": "Mature DOS with hard-disk partitions and 1.44 MB floppies",
+      "dependsOn": [
+        "sw_pc_bios"
+      ],
+      "derivedFrom": [
+        "sw_msdos_2_0"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 154,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/154"
+      }
+    },
+    {
+      "id": "sw_msdos_4_0",
+      "title": "MS-DOS 4.0",
+      "system": "ibm_pc",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1988,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Original source, MIT",
+      "summary": "DOS with the Shell and large-disk support",
+      "dependsOn": [
+        "sw_pc_bios"
+      ],
+      "derivedFrom": [
+        "sw_msdos_3_3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/MS-DOS",
+          "note": "Microsoft MS-DOS"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 155,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/155"
+      }
+    },
+    {
+      "id": "sw_msdos_5_0",
+      "title": "MS-DOS 5.0",
+      "system": "ibm_pc",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1991,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Binaries, documentation",
+      "summary": "DOS with high memory, QBasic and a full-screen editor",
+      "dependsOn": [
+        "sw_pc_bios"
+      ],
+      "derivedFrom": [
+        "sw_msdos_4_0"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 156,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/156"
+      }
+    },
+    {
+      "id": "sw_gw_basic",
+      "title": "GW-BASIC",
+      "system": "ibm_pc",
+      "layer": "software",
+      "category": "language",
+      "year": 1983,
+      "difficulty": "Medium–Hard",
+      "sourceMaterial": "Original source, MIT",
+      "summary": "Microsoft BASIC interpreter bundled with PC compatibles",
+      "dependsOn": [
+        "sw_msdos_2_0"
+      ],
+      "derivedFrom": [
+        "sw_altair_basic"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/GW-BASIC",
+          "note": "Microsoft GW-BASIC"
+        }
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 157,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/157"
+      }
+    },
+    {
+      "id": "sw_qbasic",
+      "title": "QBasic",
+      "system": "ibm_pc",
+      "layer": "software",
+      "category": "language",
+      "year": 1991,
+      "difficulty": "Hard",
+      "sourceMaterial": "Binaries and documentation",
+      "summary": "Structured BASIC with an integrated editor, replacing GW-BASIC",
+      "dependsOn": [
+        "sw_msdos_5_0"
+      ],
+      "derivedFrom": [
+        "sw_gw_basic"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 158,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/158"
+      }
+    },
+    {
+      "id": "sw_dos_shell",
+      "title": "DOS Shell",
+      "system": "ibm_pc",
+      "layer": "software",
+      "category": "utility",
+      "year": 1988,
+      "difficulty": "Hard",
+      "sourceMaterial": "Binaries and documentation",
+      "summary": "Text-mode graphical file and program launcher",
+      "dependsOn": [
+        "sw_msdos_4_0"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 159,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/159"
+      }
+    },
+    {
+      "id": "sw_dos_utilities",
+      "title": "DOS utilities",
+      "system": "ibm_pc",
+      "layer": "software",
+      "category": "utility",
+      "year": 1981,
+      "difficulty": "Easy–Medium",
+      "sourceMaterial": "Mixed; some original source",
+      "summary": "COMMAND.COM, EDIT, DOSKEY and the other small DOS tools",
+      "dependsOn": [
+        "sw_msdos_2_0"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 160,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/160"
+      }
+    },
+    {
+      "id": "sw_gem_tos",
+      "title": "GEM / TOS",
+      "system": "atari_st",
+      "layer": "os",
+      "category": "operating-system",
+      "year": 1985,
+      "difficulty": "Very hard",
+      "sourceMaterial": "Historical source and binaries",
+      "summary": "Graphical desktop and operating system of the Atari ST",
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 161,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/161"
+      }
+    },
+    {
+      "id": "sw_st_games",
+      "title": "Classic Atari ST games",
+      "system": "atari_st",
+      "layer": "software",
+      "category": "game",
+      "year": 1985,
+      "difficulty": "Hard–Very hard",
+      "sourceMaterial": "Varies by game",
+      "summary": "Representative 68000 games for GEM/TOS",
+      "dependsOn": [
+        "sw_gem_tos"
+      ],
+      "issue": {
+        "repo": "hevangel/ai_sw_engineer",
+        "number": 162,
+        "url": "https://github.com/hevangel/ai_sw_engineer/issues/162"
+      }
+    }
+  ]
+}

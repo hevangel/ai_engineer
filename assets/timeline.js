@@ -4,8 +4,9 @@ import {isLocalComponentLink,localComponentPoints} from './component-layout.js';
 import {isInlineMakerLink,horizontalMakerPoints} from './maker-layout.js';
 import {minimumBoardWidth,preferredColumns} from './timeline-layout.js';
 import {groupCompatibleConnections} from './compatible-layout.js';
+import {createSoftwareView} from './software-view.js';
 import {groupExpansionBuses,allocateBusLanes,groupBusRowRuns,busTapPoints} from './bus-layout.js';
-const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible,ui;let kind='all';let visible=[];let drawFrame=0;
+const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible,ui,softwareData,softwareView;let kind='all';let visible=[];let drawFrame=0;
 // Interface wording lives in data/ui.json; {name} placeholders take their values from vars.
 const text=(path,vars={})=>formatText(ui,path,vars);
 const element=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
@@ -168,7 +169,7 @@ function openExpansionBus(bus,endpoint){
  }
  $('bus-dialog').showModal();
 }
-function drawConnections(){
+function drawConnections(){if(document.body.classList.contains('view-software'))return;
  const timeline=$('timeline'),grid=document.querySelector('.year-grid'),era=document.querySelector('.era');
  const availableWidth=timeline.parentElement.clientWidth;
  const style=getComputedStyle(timeline),gridStyle=grid&&getComputedStyle(grid),eraStyle=era&&getComputedStyle(era);
@@ -402,5 +403,20 @@ function hydrate(){
  for(const layer of ui.wireLayers){const item=element('span');item.dataset.wireLayer=layer.id;item.append(element('i',layer.swatch),document.createTextNode(layer.label));$('connection-key').append(item);}
  $('legend-fineprint').textContent=text('legend.fineprint');$('info-close').setAttribute('aria-label',text('info.close'));
 }
+// The masthead switch chooses between the hardware timeline and the software view; #software in the URL selects the latter.
+function setView(view,{remember=true}={}){
+ const software=view==='software';
+ if(software&&!softwareView){softwareView=createSoftwareView({data:softwareData,catalog,snapshot,vocabulary,ui,text,element,link,badge,iconNode,openHardwareInfo:openInfo,photoCredit,appendPhoto,$});}
+ document.body.classList.toggle('view-software',software);
+ $('software-view').hidden=!software;document.querySelector('.archive-layout').hidden=software;
+ for(const [id,on] of [['view-hardware',!software],['view-software',software]]){$(id).setAttribute('aria-pressed',String(on));$(id).classList.toggle('selected',on);}
+ if(software)softwareView.show();else scheduleDraw();
+ if(remember)history.replaceState(null,'',software?'#software':location.pathname+location.search);
+}
+function setupViews(){
+ $('view-hardware').addEventListener('click',()=>setView('hardware'));$('view-software').addEventListener('click',()=>setView('software'));
+ $('view-hardware').classList.add('selected');
+ if(location.hash==='#software')setView('software',{remember:false});
+}
 function setup(){hydrate();for(const entry of catalog.entries.filter(e=>e.kind==='system')){const option=element('option','',entry.title);option.value=entry.id;$('computer').append(option);}$('computer').addEventListener('change',event=>focusComputer(event.target.value));for(const id of ['show-makers','show-systems'])$(id).addEventListener('change',scheduleDraw);for(const [id,company]of Object.entries(catalog.companies)){if(!catalog.entries.some(e=>e.company===id))continue;const option=element('option','',company.name);option.value=id;$('company').append(option);const button=element('button','maker-button');button.dataset.company=id;button.style.setProperty('--company',company.color);button.append(element('i'),document.createTextNode(company.name));button.addEventListener('click',()=>{$('company').value=$('company').value===id?'all':id;render();});$('maker-key').append(button);}const years=catalog.entries.map(e=>e.year).filter(Number.isFinite),min=Math.min(...years),max=Math.max(...years);$('year-scrubber').min=min;$('year-scrubber').max=max;for(let year=Math.ceil(min/5)*5;year<=max;year+=5){const button=element('button','year-marker',String(year));button.style.top=((year-min)/(max-min)*100)+'%';button.addEventListener('click',()=>goYear(year));$('year-markers').append(button);}$('year-scrubber').addEventListener('input',e=>goYear(Number(e.target.value)));for(const button of document.querySelectorAll('[data-kind]')){if(button.tagName!=='BUTTON')continue;button.addEventListener('click',()=>{kind=button.dataset.kind;document.querySelectorAll('.view-tabs button').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});render();});}for(const id of ['company','stage'])$(id).addEventListener('change',render);$('search').addEventListener('input',render);$('reset').addEventListener('click',()=>{$('company').value='all';$('stage').value='all';$('search').value='';$('computer').value='all';$('show-makers').checked=true;$('show-systems').checked=false;kind='all';document.querySelector('[data-kind="all"]').click();});$('entry-count').textContent=catalog.entries.length;$('company-count').textContent=new Set(catalog.entries.map(e=>e.company)).size;const stamp=new Date(snapshot.syncedAt);$('sync-label').textContent=text('load.snapshot',{when:Number.isNaN(stamp.valueOf())?text('load.notSynced'):stamp.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'})});const toggle=open=>{$('legend').hidden=!open;$('legend-toggle').setAttribute('aria-expanded',String(open));};$('legend-toggle').addEventListener('click',()=>toggle($('legend').hidden));$('legend-close').addEventListener('click',()=>{toggle(false);$('legend-toggle').focus();});$('bus-close').addEventListener('click',()=>$('bus-dialog').close());$('bus-dialog').addEventListener('click',event=>{if(event.target===$('bus-dialog'))$('bus-dialog').close();});$('info-close').addEventListener('click',()=>$('info-dialog').close());$('info-dialog').addEventListener('click',e=>{if(e.target===$('info-dialog'))$('info-dialog').close();});addEventListener('scroll',updateYear,{passive:true});addEventListener('resize',scheduleDraw);document.addEventListener('keydown',navigateCard);new ResizeObserver(scheduleDraw).observe($('eras'));}
-try{[catalog,snapshot,vocabulary,credits,relationships,compatible,ui]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('data/photo-credits.json'),read('data/connections.json'),read('data/compatible-chips.json'),read('data/ui.json')]);legend();setup();render();}catch(error){$('error').hidden=false;$('error').textContent=$('error').dataset.loadErrorPrefix+error.message;$('eras').replaceChildren();$('sync-label').textContent=$('sync-label').dataset.unavailable;console.error(error);}
+try{[catalog,snapshot,vocabulary,credits,relationships,compatible,ui,softwareData]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('data/photo-credits.json'),read('data/connections.json'),read('data/compatible-chips.json'),read('data/ui.json'),read('data/software.json')]);legend();setup();render();setupViews();}catch(error){$('error').hidden=false;$('error').textContent=$('error').dataset.loadErrorPrefix+error.message;$('eras').replaceChildren();$('sync-label').textContent=$('sync-label').dataset.unavailable;console.error(error);}

@@ -44,12 +44,13 @@ for(const entry of catalog.entries){
  if(entry.image.representative)representative++;
 }
 for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(connections.links.some(link=>link.source===entry.id&&catalog.entries.some(target=>target.id===link.target&&target.kind==='system')),'ISA card has no computer bus connection: '+entry.id);
-assert.equal(Object.keys(snapshot.statuses).length,ids.size,'Stale snapshot entries');
+const software=await json('data/software.json');
+assert.equal(Object.keys(snapshot.statuses).length,ids.size+software.entries.length,'Stale snapshot entries');
 const iconShapes={path:['d'],rect:['x','y','width','height','rx'],circle:['cx','cy','r'],line:['x1','y1','x2','y2'],polyline:['points']};
 const checkIcon=(icon,name)=>{assert(/^0 0 \d+ \d+$/.test(icon?.viewBox),'Missing icon viewBox: '+name);assert(icon.shapes?.length,'Empty icon: '+name);for(const {tag,...attributes}of icon.shapes){assert(iconShapes[tag],'Unsupported icon shape in '+name+': '+tag);assert.deepEqual(Object.keys(attributes).filter(key=>!iconShapes[tag].includes(key)&&key!=='stroke-dasharray'),[],'Unexpected icon attribute in '+name+': '+tag);for(const key of iconShapes[tag])assert(attributes[key]!==undefined,'Missing icon attribute in '+name+': '+tag+' '+key);}};
 for(const stage of vocabulary.stages)checkIcon(stage.icon,'stage '+stage.id);
 for(const build of vocabulary.builds){checkIcon(build.icon,'build '+build.id);assert(/^#[0-9a-f]{6}$/i.test(build.color),'Missing build color: '+build.id);}
-const ui=await json('data/ui.json'),source=await fs.readFile(path.join(root,'assets/timeline.js'),'utf8');
+const ui=await json('data/ui.json'),source=(await Promise.all(['assets/timeline.js','assets/software-view.js'].map(file=>fs.readFile(path.join(root,file),'utf8')))).join('\n');
 const lookup=key=>key.split('.').reduce((node,part)=>node?.[part],ui);
 const keys=new Set([...source.matchAll(/\btext\('([A-Za-z0-9_.]+)'[,)]/g)].map(match=>match[1]));
 for(const key of keys)assert.equal(typeof lookup(key),'string','Missing interface text in data/ui.json: '+key);
@@ -81,3 +82,42 @@ assert.equal(new URL(imports.service.apiUrl).protocol,'https:','Photo service mu
 for(const [,resource]of source.matchAll(/\bread\('([^']+)'\)/g))assert(/^data\/[a-z0-9-]+\.json$/.test(resource),'Runtime data must live under data/: '+resource);
 
 for(const name of ['index.html','assets/timeline.css']){const body=await fs.readFile(path.join(root,name),'utf8');assert(!/url\(\s*[\"']?(?:https?:)?\/\//i.test(body),'Remote CSS asset in '+name);assert(!/<img\b[^>]*\bsrc\s*=\s*[\"'](?:https?:)?\/\//i.test(body),'Remote image in '+name);}
+
+// Software view data: systems, layers, categories and the 42 rewrite titles.
+{
+ const {findCycle}=await import('../assets/software-layout.js');
+ const layerIds=new Set(software.layers.map(layer=>layer.id)),categoryIds=new Set(software.categories.map(category=>category.id));
+ const systemIds=new Set(),catalogSystems=new Set(catalog.entries.filter(entry=>entry.kind==='system').map(entry=>entry.id));
+ for(const category of software.categories){assert(category.label&&/^#[0-9a-f]{6}$/i.test(category.color),'Incomplete software category '+category.id);checkIcon(category.icon,'category '+category.id);}
+ for(const layer of software.layers)assert(layer.id&&layer.label,'Incomplete software layer');
+ for(const system of software.systems){
+  assert(!systemIds.has(system.id),'Duplicate software system '+system.id);systemIds.add(system.id);
+  assert(system.title&&system.cpu&&Number.isInteger(system.year),'Incomplete software system '+system.id);
+  if(system.catalog)assert(catalogSystems.has(system.catalog),'Unknown catalog system '+system.id);
+  else{
+   assert(/^#[0-9a-f]{6}$/i.test(system.color)&&system.summary?.trim()&&system.summary.length<=100,'Software-only system needs colour and one-line summary '+system.id);
+   assert(system.image?.src&&system.image.alt,'Software-only system needs a photo '+system.id);await fs.access(path.join(root,system.image.src));
+   const credit=credits['software_system_'+system.id];assert(credit?.creator&&credit.license&&credit.source&&credit.changes,'Missing attribution for software system '+system.id);
+   assert.equal(new URL(credit.source).hostname,'commons.wikimedia.org');assert.equal(credit.representative,system.image.representative);
+  }
+ }
+ const softwareIds=new Set(software.entries.map(entry=>entry.id));
+ assert.equal(softwareIds.size,software.entries.length,'Duplicate software entry');
+ for(const entry of software.entries){
+  assert(/^sw_[a-z0-9_]+$/.test(entry.id)&&!ids.has(entry.id),'Invalid software id '+entry.id);
+  assert(systemIds.has(entry.system),'Unknown software system '+entry.id);assert(layerIds.has(entry.layer),'Unknown layer '+entry.id);assert(categoryIds.has(entry.category),'Unknown category '+entry.id);
+  assert(Number.isInteger(entry.year)&&entry.difficulty&&entry.sourceMaterial,'Incomplete software entry '+entry.id);
+  assert(typeof entry.summary==='string'&&entry.summary.trim()&&entry.summary.length<=100&&!/[\r\n]/.test(entry.summary),'Missing one-line summary (100 characters or fewer) '+entry.id);
+  assert.equal(entry.issue.repo,software.repository);assert.equal(entry.issue.url,`https://github.com/${entry.issue.repo}/issues/${entry.issue.number}`);
+  for(const ref of [...(entry.dependsOn||[]),...(entry.derivedFrom||[])])assert(softwareIds.has(ref)&&ref!==entry.id,'Unknown software reference '+entry.id+' -> '+ref);
+  for(const other of entry.alsoOn||[])assert(systemIds.has(other),'Unknown alsoOn system '+entry.id);
+  for(const source of entry.sources||[])assert(new URL(source.url).protocol==='https:'&&source.note,'Invalid software source '+entry.id);
+  assert(snapshot.statuses[entry.id]&&stages.has(snapshot.statuses[entry.id].stage),'Missing software stage '+entry.id);
+ }
+ assert.equal(findCycle(software.entries),null,'Software dependency cycle');
+ for(const system of systemIds)assert(software.entries.some(entry=>entry.system===system),'Software system without titles '+system);
+ assert.equal(ui.software.steps.length,8,'The rewrite lifecycle has eight steps');
+ for(const key of ['dependency','lineage'])assert.equal(typeof lookup('software.wires.'+key),'string','Missing software wire text: '+key);
+ for(const key of ['system','cpu','year','layer','category','difficulty','source','alsoOn'])assert.equal(typeof lookup('software.info.'+key),'string','Missing software info text: '+key);
+ console.log(`Checked ${software.entries.length} software titles on ${systemIds.size} computers.`);
+}

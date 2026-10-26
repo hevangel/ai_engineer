@@ -7,6 +7,7 @@ All editable public content and curation/configuration data live in JSON under `
 | Hardware names, summaries, history, dates, company colors, bus families and images | `data/catalog.json` |
 | Shared wording, representative-photo warning, accessibility labels, page copy, source URL, metadata and load-error/no-script text | `data/ui.json` |
 | Stage/build icons, labels and colors | `data/stages.json` (fallback status in `ui.json`) |
+| Software-view computers, layers, categories, titles, links and issue references | `data/software.json` |
 | Build/source/verification state | `data/status.json`, refreshed from GitHub |
 | Component dependencies, optional profiles and CPU alternatives | `data/connections.json` and its curated input JSON files |
 | Per-photo creator, license, source and modifications | `data/photo-credits.json` |

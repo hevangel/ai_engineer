@@ -10,6 +10,7 @@ All commands run from the repository root with Node.js 22 or newer. No packages 
 | `node scripts/sync-timeline.mjs` | Refresh status JSON from public GitHub issues using authenticated `gh`. |
 | `node scripts/sync-timeline.mjs --project 1 --owner hevangel` | Also read the selected project's activity state; needs project access. |
 | `node scripts/sync-connections.mjs` | Refresh native component gates, select exact CPU variants, derive qualified compatible alternatives, and merge curated planned chip/card options. |
+| `node scripts/sync-timeline.mjs --software-only` | Refresh only the `sw_*` software statuses from `ai_sw_engineer` issues, keeping hardware statuses and the snapshot time. |
 | `node scripts/sync-timeline.mjs --check` | Validate the checked-in catalog/status snapshot without network access. |
 | `node scripts/check-site.mjs` | Check local photo files, attribution, dated sources, catalog/status coverage and that every `text('…')` key used by `assets/timeline.js` exists in `data/ui.json`. |
 | `node --test scripts/bus-layout.test.mjs` | Check bus-family rails, exact host membership, shared row runs and bottom/top tap geometry. |

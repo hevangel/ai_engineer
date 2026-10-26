@@ -23,6 +23,7 @@ The site is plain HTML, CSS and browser JavaScript, with no package installation
 | `data/component-profiles.json` | Explicit device variants for shared canonical issues and later reconstruction components; consumed during connection sync |
 | `data/system-options.json` | Curated planned chip and expansion-card configurations, separate from required hardware |
 | `data/stages.json` | Stage/build labels, stage and build icons (SVG shape lists), colors and legend explanations |
+| `data/software.json` | Software view: computers, layers, categories and the 42 Rust rewrite titles with dependency/lineage links and `ai_sw_engineer` issue references ([software_view.md](software_view.md)) |
 | `data/ui.json` | Page-shell copy and metadata, public source links, loading/error/no-script wording, and interface wording: filter tab and wire-legend labels, card, dialog and tooltip text, count and help messages, the status-guide footnote and the fallback status badge. Values may use `{name}` placeholders. |
 | `data/image-import.json` | Photo search selections, exclusions, fallback queries and generated attribution defaults |
 | `data/sync.json` | GitHub owner/project-stage mapping and exported connection/status metadata |
