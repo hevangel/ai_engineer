@@ -11,7 +11,7 @@ const [ui,catalog,template]=await Promise.all([
 test('changing representative-photo JSON changes the runtime warning',()=>{
  const changed=structuredClone(ui);changed.info.representative='An explicitly qualified family photo';
  assert.equal(formatText(changed,'info.representative'),'An explicitly qualified family photo');
- assert.equal(formatText(ui,'card.coverage',{percent:0,cleaned:0,total:12}),'0% source coverage: 0 cleaned of 12 defined items');
+ assert.equal(formatText(ui,'trace.button',{count:12}),'Trace 12 components');
 });
 test('missing wording or interpolation values fail instead of silently omitting content',()=>{
  assert.throws(()=>formatText(ui,'info.absent'),/Missing interface text/);

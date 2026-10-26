@@ -34,8 +34,6 @@
     "card"
   ],
   "card": {
-    "coverageUnreported": "Source coverage not reported",
-    "coverage": "{percent}% source coverage: {cleaned} cleaned of {total} defined items",
     "statusFallback": {
       "icon": {
         "viewBox": "0 0 24 24",
@@ -59,9 +57,8 @@
       "label": "Status unavailable",
       "color": "#78828c"
     },
-    "coverageUnknownSymbol": "—",
-    "coverageValue": "{percent}%",
-    "issueLink": "#{number} ↗"
+    "issueLink": "#{number} ↗",
+    "unknownSymbol": "—"
   },
   "info": {
     "button": "About {title}",
