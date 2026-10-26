@@ -1390,7 +1390,7 @@
     "representative": false,
     "curated": true
   },
-  "software_system_kim1": {
+  "system_kim1": {
     "title": "File:KIM-1 single board computer.jpg",
     "creator": "Maksym Kozlenko",
     "credit": "Photograph by Maksym Kozlenko.",
@@ -1402,7 +1402,7 @@
     "representative": true,
     "curated": true
   },
-  "software_system_trs80_model1": {
+  "system_trs80_model1": {
     "title": "File:Tandy TRS-80 Model I.jpg",
     "creator": "Prolete",
     "credit": "Photograph by Prolete.",
@@ -1414,7 +1414,7 @@
     "representative": true,
     "curated": true
   },
-  "software_system_atari_800": {
+  "system_atari_800": {
     "title": "File:Atari-800-Computer-FL.jpg",
     "creator": "Evan-Amos",
     "credit": "Photograph by Evan-Amos.",
@@ -1426,7 +1426,7 @@
     "representative": true,
     "curated": true
   },
-  "software_system_atari_5200": {
+  "system_atari_5200": {
     "title": "File:Atari-5200-4-Port-wController-L.jpg",
     "creator": "Evan-Amos",
     "credit": "Photograph by Evan-Amos.",
@@ -1438,19 +1438,7 @@
     "representative": true,
     "curated": true
   },
-  "software_system_atari_7800": {
-    "title": "File:Atari-7800-wControl-Pad-L.jpg",
-    "creator": "Evan-Amos",
-    "credit": "Photograph by Evan-Amos.",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
-    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Atari-7800-wControl-Pad-L.jpg/960px-Atari-7800-wControl-Pad-L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
-    "representative": true,
-    "curated": true
-  },
-  "software_system_atari_st": {
+  "system_atari_st": {
     "title": "File:Atari 520ST Tietokonemuseo.JPG",
     "creator": "MKFI",
     "credit": "Photograph by MKFI.",
@@ -1458,6 +1446,18 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "source": "https://commons.wikimedia.org/wiki/File:Atari_520ST_Tietokonemuseo.JPG",
     "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Atari_520ST_Tietokonemuseo.JPG/960px-Atari_520ST_Tietokonemuseo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "system_atari_7800": {
+    "title": "File:Atari-7800-wControl-Pad-L.jpg",
+    "creator": "Evan-Amos",
+    "credit": "Photograph by Evan-Amos.",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Atari-7800-wControl-Pad-L.jpg/960px-Atari-7800-wControl-Pad-L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
     "representative": true,
     "curated": true

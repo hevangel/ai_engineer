@@ -256,33 +256,17 @@
     },
     {
       "id": "kim1",
-      "year": 1975,
+      "year": 1976,
       "title": "MOS KIM-1",
       "cpu": "MOS 6502",
-      "summary": "MOS Technology's 1976 single-board 6502 trainer with hex keypad and LED display",
-      "color": "#8a6d3b",
-      "image": {
-        "src": "images/sw_system_kim1.jpg",
-        "alt": "KIM-1 single board computer, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KIM-1_single_board_computer.jpg",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_kim1"
     },
     {
       "id": "trs80_model1",
       "year": 1977,
       "title": "TRS-80 Model I",
       "cpu": "Zilog Z80",
-      "summary": "Tandy's 1977 Z80 home computer with built-in keyboard and cassette interface",
-      "color": "#7a5c3a",
-      "image": {
-        "src": "images/sw_system_trs80_model1.jpg",
-        "alt": "Tandy TRS-80 Model I, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Tandy_TRS-80_Model_I.jpg",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_trs80_model1"
     },
     {
       "id": "apple_ii",
@@ -310,15 +294,7 @@
       "year": 1979,
       "title": "Atari 400/800",
       "cpu": "MOS 6502",
-      "summary": "Atari's 1979 home computers with custom ANTIC and GTIA graphics chips",
-      "color": "#a1442a",
-      "image": {
-        "src": "images/sw_system_atari_800.jpg",
-        "alt": "Atari-800-Computer-FL, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Atari-800-Computer-FL.jpg",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_atari_800"
     },
     {
       "id": "ibm_pc",
@@ -339,45 +315,21 @@
       "year": 1982,
       "title": "Atari 5200",
       "cpu": "MOS 6502",
-      "summary": "Atari's 1982 SuperSystem console, built from Atari 400/800 parts",
-      "color": "#a1442a",
-      "image": {
-        "src": "images/sw_system_atari_5200.jpg",
-        "alt": "Atari-5200-4-Port-wController-L, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Atari-5200-4-Port-wController-L.jpg",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_atari_5200"
     },
     {
       "id": "atari_st",
       "year": 1985,
       "title": "Atari ST",
       "cpu": "Motorola 68000",
-      "summary": "Atari's 1985 68000 home computer with the GEM desktop in ROM",
-      "color": "#a1442a",
-      "image": {
-        "src": "images/sw_system_atari_st.jpg",
-        "alt": "Atari 520ST Tietokonemuseo, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Atari_520ST_Tietokonemuseo.JPG",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_atari_st"
     },
     {
       "id": "atari_7800",
       "year": 1986,
       "title": "Atari 7800",
       "cpu": "MOS 6502C",
-      "summary": "Atari's 1986 ProSystem console with the MARIA graphics chip",
-      "color": "#a1442a",
-      "image": {
-        "src": "images/sw_system_atari_7800.jpg",
-        "alt": "Atari-7800-wControl-Pad-L, photographed for Wikimedia Commons",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
-        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
-      }
+      "catalog": "system_atari_7800"
     }
   ],
   "entries": [
