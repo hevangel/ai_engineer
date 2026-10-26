@@ -56,7 +56,9 @@
       },
       "label": "Status unavailable",
       "color": "#78828c"
-    }
+    },
+    "issueLink": "#{number} ↗",
+    "unknownSymbol": "—"
   },
   "info": {
     "button": "About {title}",
@@ -73,7 +75,13 @@
     "representative": "Representative family photograph; not a confirmed image of this exact device or revision.",
     "creatorUnknown": "Creator listed at original source",
     "originalPhoto": "Original photograph and license ↗",
-    "licenseTerms": "License terms ↗"
+    "licenseTerms": "License terms ↗",
+    "symbol": "i",
+    "externalLink": "{label} ↗",
+    "seriesMembers": "Series members",
+    "seriesHeading": "{count} documented series members",
+    "memberYear": "Documented by {year} ↗",
+    "originalPhotoSource": "Original photograph source ↗"
   },
   "trace": {
     "button": "Trace {count} components",
@@ -105,7 +113,6 @@
   "wires": {
     "allLinks": "All computer links",
     "links": "Computer links",
-    "contextAll": "All computer connections are visible. Choose one computer for a focused trace.",
     "contextFocused": "Focused computer trace. Maker lineage can be enabled separately.",
     "previous": "Previous",
     "next": "Next",
@@ -133,8 +140,8 @@
       "compatible": "{count} shared CPU roles"
     },
     "none": "No connections match the current filters.",
-    "helpComputers": "Click a wire or dot to follow it. Click a shared bus or CPU wire to choose a connected part. Keyboard: Tab and Enter; ↑/k and ↓/j follow either end of a chip wire, ←/h and →/l either end of a maker wire.",
-    "helpCards": "With a card selected: ←/h and →/l move along its family line; ↑/k and ↓/j move between a chip and its computers."
+    "navigationHeading": "Navigation:",
+    "help": "Click a wire or hollow dot to follow it; click a shared bus or CPU wire to choose a connected part. Use Tab and Enter to follow a focused wire. On a wire or selected card, ←/h and →/l move along maker lineage; ↑/k and ↓/j move between chips and computers."
   },
   "keys": {
     "family": "←/h previous · →/l next",
@@ -182,6 +189,80 @@
   },
   "load": {
     "snapshot": "GITHUB SNAPSHOT · {when}",
-    "notSynced": "not synced"
+    "notSynced": "not synced",
+    "error": "The archive could not be loaded. Serve this folder over HTTP and check the JSON files. ",
+    "unavailable": "Archive unavailable"
+  },
+  "page": {
+    "metaDescription": "A living timeline of classic chips, computers and expansion cards being rebuilt in SystemVerilog, Rust and FPGA hardware.",
+    "title": "AI Engineer — A history worth rebuilding",
+    "brandName": "AI ENGINEER",
+    "brandTagline": "THE RECONSTRUCTION PROJECT",
+    "heroTitle": "A history worth",
+    "heroEmphasis": "rebuilding.",
+    "heroEyebrow": "A LIVING ARCHIVE · {firstYear} ONWARD",
+    "heroIntro": "Classic silicon. Familiar machines. A new life in",
+    "heroStack": "SystemVerilog, Rust, and real FPGA hardware.",
+    "heroFollow": "FOLLOW THE CONNECTIONS",
+    "heroNote": "From the first bits to the 386 era.",
+    "entriesLabel": "hardware entries",
+    "makersLabel": "makers",
+    "reading": "Reading the archive…",
+    "skip": "Skip to the timeline",
+    "navLabel": "Main navigation",
+    "navTimeline": "Timeline",
+    "navSource": "Source ↗",
+    "legendToggle": "Status guide ",
+    "legendLabel": "Status legend",
+    "legendEyebrow": "READING THE ARCHIVE",
+    "legendTitle": "Every badge has a meaning.",
+    "legendClose": "Close status guide",
+    "railLabel": "Year navigation",
+    "railTitle": "TIME",
+    "railScrubber": "Scroll to year",
+    "railTop": "Back to top",
+    "categoryLabel": "Hardware category",
+    "searchPlaceholder": "Find a machine or chip…",
+    "searchLabel": "Search the timeline",
+    "companyFilter": "Filter by company",
+    "companyAll": "All makers",
+    "stageFilter": "Filter by build stage",
+    "stageAll": "All stages",
+    "showMakers": "Maker lineage",
+    "computerPicker": "Trace a computer",
+    "computerAll": "All computers",
+    "connectionControls": "Connection display",
+    "connectionLegend": "Connection legend",
+    "makerColors": "Company connection colors",
+    "wireNavigation": "Hardware wire navigation",
+    "caption": "MAKERS, COMPONENTS & THE MACHINES THEY MAKE.",
+    "scrollRegion": "Hardware timeline; scroll horizontally when the wiring is wider than the screen",
+    "loading": "Opening the archive…",
+    "emptyTitle": "No hardware matches.",
+    "emptyHelp": "Try another maker, stage, or search term.",
+    "reset": "Reset filters",
+    "footerMission": "Preserve the behavior. Rebuild the machine.",
+    "footerEvidence": "Show the evidence.",
+    "footerSource": "Explore the source ↗",
+    "footerPhotos": "Photos retain their original licenses.",
+    "footerAttribution": "Each photograph links to its source and attribution.",
+    "noScript": "This timeline reads its catalog and status from JSON and needs JavaScript. View the",
+    "noScriptStatus": "status snapshot",
+    "noScriptDirect": "directly.",
+    "busClose": "Close bus connections",
+    "noScriptCatalog": "catalog",
+    "noScriptAnd": "and"
+  },
+  "language": "en",
+  "themeColor": "#f6f5f0",
+  "links": {
+    "source": "https://github.com/hevangel/ai_engineer"
+  },
+  "photos": {
+    "neededLabel": "Photo needed",
+    "neededAlt": "A verified photograph of {title} is needed.",
+    "neededHeading": "Photograph needed",
+    "neededDescription": "An exact photograph with confirmed reuse permission is still needed.",
+    "sourceLeads": "Source leads (not cleared for reuse)"
   }
 }

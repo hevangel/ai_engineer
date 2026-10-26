@@ -1,3 +1,4 @@
+import {formatText} from './ui-content.js';
 import {cardMoves,cardDestination} from './card-navigation.js';
 import {isLocalComponentLink,localComponentPoints} from './component-layout.js';
 import {isInlineMakerLink,horizontalMakerPoints} from './maker-layout.js';
@@ -6,23 +7,29 @@ import {groupCompatibleConnections} from './compatible-layout.js';
 import {groupExpansionBuses,allocateBusLanes,groupBusRowRuns,busTapPoints} from './bus-layout.js';
 const $=id=>document.getElementById(id);let catalog,snapshot,vocabulary,credits,relationships,compatible,ui;let kind='all';let visible=[];let drawFrame=0;
 // Interface wording lives in data/ui.json; {name} placeholders take their values from vars.
-const text=(path,vars={})=>{const value=path.split('.').reduce((node,key)=>node?.[key],ui);if(typeof value!=='string')throw Error('Missing interface text: '+path);return value.replace(/\{(\w+)\}/g,(_,name)=>vars[name]??'');};
+const text=(path,vars={})=>formatText(ui,path,vars);
 const element=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 const link=(text,url)=>{const a=element('a','',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
 async function read(url){const r=await fetch(url);if(!r.ok)throw Error(url+' returned HTTP '+r.status);return r.json();}
 function legend(){for(const stage of vocabulary.stages){const item=element('div','legend-item');const icon=element('span','stage-symbol');icon.append(iconNode(stage.icon));icon.style.setProperty('--stage',stage.color);const copy=element('div');copy.append(element('strong','',stage.label),element('p','',stage.description));item.append(icon,copy);$('stage-legend').append(item);const option=element('option','',stage.label);option.value=stage.id;$('stage').append(option);}for(const build of vocabulary.builds){const item=element('span','build-legend-item'),icon=element('span','build-legend-icon');icon.style.setProperty('--stage',build.color);icon.append(iconNode(build.icon));item.append(icon,document.createTextNode(build.label));$('build-legend').append(item);}}
 // The info dialog describes the hardware itself; the photo credit sits at the bottom, collapsed.
-function chipsetMembers(entry){
- const section=element('section','chipset-members');section.setAttribute('aria-label',text('info.chipsetMembers'));
- const heading=element('h4','',text('info.chipsetHeading',{count:entry.chipset.members.length})),list=element('ul');
- for(const member of entry.chipset.members){const row=element('li');row.append(element('strong','',member.part),element('span','',member.role));list.append(row);}
+function hardwareMembers(entry){
+ const series=Boolean(entry.series),members=(entry.series||entry.chipset).members;
+ const section=element('section','chipset-members');section.setAttribute('aria-label',text(series?'info.seriesMembers':'info.chipsetMembers'));
+ const heading=element('h4','',text(series?'info.seriesHeading':'info.chipsetHeading',{count:members.length})),list=element('ul');
+ for(const member of members){const row=element('li');row.append(element('strong','',member.part),element('span','',member.role));if(member.year&&member.source)row.append(link(text('info.memberYear',{year:member.year}),member.source));list.append(row);}
  section.append(heading,list);return section;
 }
 function photoCredit(entry){
+ if(entry.image.status==='needed'){
+  const section=element('section','info-photo');section.append(element('h3','',text('photos.neededHeading')),element('p','',text('photos.neededDescription')));
+  if(entry.image.sourceLeads.length){section.append(element('h4','',text('photos.sourceLeads')));for(const lead of entry.image.sourceLeads)section.append(link(lead.label,lead.url),element('p','',lead.note));}
+  return section;
+ }
  const data=credits[entry.id],details=element('details','info-photo'),body=element('div','photo-credit-body');
  details.append(element('summary','',text(entry.image.representative?'info.photoRepresentative':'info.photoHeading')),body);
  const image=element('img');image.src=entry.image.src;image.alt=entry.image.alt;body.append(image);
- if(data){body.append(element('p','',data.title),element('p','',data.creator||text('info.creatorUnknown')),element('p','',data.license+' · '+data.changes),link(text('info.originalPhoto'),data.source));if(data.credit&&data.credit!==data.creator)body.append(element('p','',data.credit));if(data.licenseUrl)body.append(element('p',''),link(text('info.licenseTerms'),data.licenseUrl));}
+ if(data){body.append(element('p','',data.title),element('p','',data.creator||text('info.creatorUnknown')),element('p','',data.license+' · '+data.changes),link(text(data.licenseUrl?'info.originalPhoto':'info.originalPhotoSource'),data.source));if(data.credit&&data.credit!==data.creator)body.append(element('p','',data.credit));if(data.licenseUrl)body.append(element('p',''),link(text('info.licenseTerms'),data.licenseUrl));}
  if(entry.image.caption)body.append(element('p','',entry.image.caption));
  if(entry.image.representative)body.append(element('p','representative',text('info.representative')));
  return details;
@@ -31,11 +38,11 @@ function openInfo(entry){
  const company=catalog.companies[entry.company],body=$('info-body');body.replaceChildren();$('info-dialog').style.setProperty('--company',company.color);
  const kind=element('p','info-kind');kind.append(element('span','maker',company.name),element('span','',text('kinds.'+(entry.chipset?'chipset':entry.kind)+'.badge')));
  const title=element('h2','',entry.title);title.id='info-title';
- const date=element('section','info-date'),when=element('p'),stamp=entry.dateSource?link(entry.dateLabel+' ↗',entry.dateSource):element('span','',entry.dateLabel);
+ const date=element('section','info-date'),when=element('p'),stamp=entry.dateSource?link(text('info.externalLink',{label:entry.dateLabel}),entry.dateSource):element('span','',entry.dateLabel);
  stamp.title=text('info.datePlacement');when.append(stamp);date.append(element('h3','',text('info.dateHeading')),when);
- if(entry.dateNote){date.append(element('h4','',text('info.dateEvidence')),element('p','',entry.dateNote));for(const [index,source]of (entry.historySources||[]).entries()){if(source.url)date.append(link((source.note||text('info.supportingSource',{number:index+1}))+' ↗',source.url));}}
+ if(entry.dateNote){date.append(element('h4','',text('info.dateEvidence')),element('p','',entry.dateNote));for(const [index,source]of (entry.historySources||[]).entries()){if(source.url)date.append(link(text('info.externalLink',{label:source.note||text('info.supportingSource',{number:index+1})}),source.url));}}
  const issue=element('p','info-issue');issue.append(link(text('info.issue',{number:entry.issue.number}),entry.issue.url));
- body.append(kind,title,element('p','info-summary',entry.summary),date);if(entry.chipset)body.append(chipsetMembers(entry));body.append(issue,photoCredit(entry));
+ body.append(kind,title,element('p','info-summary',entry.summary),date);if(entry.chipset||entry.series)body.append(hardwareMembers(entry));body.append(issue,photoCredit(entry));
  $('info-dialog').showModal();
 }
 // Icons are shape lists in the JSON data; build them with DOM calls, never markup strings.
@@ -50,12 +57,19 @@ function iconNode(definition){
  return svg;
 }
 function badge(symbol,label,className=''){const b=element('span','badge '+className);b.append(typeof symbol==='string'?document.createTextNode(symbol):iconNode(symbol));b.tabIndex=0;b.setAttribute('role','img');b.setAttribute('aria-label',label);b.title=label;return b;}
-function card(entry){const status=snapshot.statuses[entry.id];const stage=vocabulary.stages.find(s=>s.id===status?.stage);const company=catalog.companies[entry.company];const article=element('article','hardware');article.id='hardware-'+entry.id;article.tabIndex=-1;article.dataset.id=entry.id;article.dataset.company=entry.company;article.dataset.kind=entry.kind;article.style.setProperty('--company',company.color);const photo=element('div','photo-wrap');const image=element('img');image.loading='lazy';image.decoding='async';image.width=640;image.height=440;image.src=entry.image?.src||'';image.alt=entry.image?.alt||entry.title;photo.append(image);const infoButton=element('button','info-button','i');infoButton.setAttribute('aria-label',text('info.button',{title:entry.title}));infoButton.addEventListener('click',()=>openInfo(entry));photo.append(infoButton);const badges=element('div','status-badges');const build=vocabulary.builds.find(b=>b.id===status?.build?.status)||vocabulary.builds[0];const buildBadge=badge(build.icon,build.label,'build-badge build-'+build.id);buildBadge.style.setProperty('--stage',build.color);badges.append(buildBadge);const stageBadge=badge(stage?.icon||ui.card.statusFallback.icon,stage?.label||text('card.statusFallback.label'));stageBadge.style.setProperty('--stage',stage?.color||ui.card.statusFallback.color);badges.append(stageBadge);photo.append(badges);const meta=element('div','entry-meta');meta.append(element('span','maker',company.name),element('span','',text('kinds.'+(entry.chipset?'chipset':entry.kind)+'.badge')));const title=element('h3');title.append(link(entry.title,entry.issue.url));const footer=element('div','entry-footer');footer.append(link('#'+entry.issue.number+' ↗',entry.issue.url));article.append(photo,meta,title,element('p','summary',entry.summary),footer);if(entry.kind==='system'){const count=relationships.links.filter(link=>link.target===entry.id).length;const tracing=$('computer').value===entry.id;const trace=element('button','trace-computer'+(tracing?' active':''),text('trace.button',{count}));trace.setAttribute('aria-pressed',String(tracing));trace.setAttribute('aria-label',text('trace.label',{title:entry.title}));trace.addEventListener('click',()=>focusComputer(tracing?'all':entry.id,entry.id));article.append(trace);}return article;}
+function appendPhoto(photo,entry){
+ if(entry.image.status==='needed'){
+  const placeholder=element('div','photo-placeholder');placeholder.setAttribute('role','img');placeholder.setAttribute('aria-label',text('photos.neededAlt',{title:entry.title}));
+  placeholder.append(element('strong','',entry.title),element('span','',text('photos.neededLabel')));photo.append(placeholder);return;
+ }
+ const image=element('img');image.loading='lazy';image.decoding='async';image.width=640;image.height=440;image.src=entry.image.src;image.alt=entry.image.alt;photo.append(image);
+}
+function card(entry){const status=snapshot.statuses[entry.id];const stage=vocabulary.stages.find(s=>s.id===status?.stage);const company=catalog.companies[entry.company];const article=element('article','hardware');article.id='hardware-'+entry.id;article.tabIndex=-1;article.dataset.id=entry.id;article.dataset.company=entry.company;article.dataset.kind=entry.kind;article.style.setProperty('--company',company.color);const photo=element('div','photo-wrap');appendPhoto(photo,entry);const infoButton=element('button','info-button',text('info.symbol'));infoButton.setAttribute('aria-label',text('info.button',{title:entry.title}));infoButton.addEventListener('click',()=>openInfo(entry));photo.append(infoButton);const badges=element('div','status-badges');const build=vocabulary.builds.find(b=>b.id===status?.build?.status)||vocabulary.builds[0];const buildBadge=badge(build.icon,build.label,'build-badge build-'+build.id);buildBadge.style.setProperty('--stage',build.color);badges.append(buildBadge);const stageBadge=badge(stage?.icon||ui.card.statusFallback.icon,stage?.label||text('card.statusFallback.label'));stageBadge.style.setProperty('--stage',stage?.color||ui.card.statusFallback.color);badges.append(stageBadge);photo.append(badges);const meta=element('div','entry-meta');meta.append(element('span','maker',company.name),element('span','',text('kinds.'+(entry.chipset?'chipset':entry.kind)+'.badge')));const title=element('h3');title.append(link(entry.title,entry.issue.url));const footer=element('div','entry-footer');footer.append(link(text('card.issueLink',{number:entry.issue.number}),entry.issue.url));article.append(photo,meta,title,element('p','summary',entry.summary),footer);if(entry.kind==='system'){const count=relationships.links.filter(link=>link.target===entry.id).length;const tracing=$('computer').value===entry.id;const trace=element('button','trace-computer'+(tracing?' active':''),text('trace.button',{count}));trace.setAttribute('aria-pressed',String(tracing));trace.setAttribute('aria-label',text('trace.label',{title:entry.title}));trace.addEventListener('click',()=>focusComputer(tracing?'all':entry.id,entry.id));article.append(trace);}return article;}
 function render(){
  const search=$('search').value.toLowerCase().trim(),company=$('company').value,stage=$('stage').value;
  const computer=$('computer').value;
  const connected=computer==='all'?null:new Set([computer,...relationships.links.filter(link=>link.target===computer).map(link=>link.source)]);
- visible=catalog.entries.filter(entry=>(!connected||connected.has(entry.id))&&(kind==='all'||kind===entry.kind)&&(company==='all'||company===entry.company)&&(stage==='all'||snapshot.statuses[entry.id]?.stage===stage)&&(!search||(entry.title+' '+entry.summary+' '+catalog.companies[entry.company].name+' '+entry.id+' '+(entry.chipset?.members||[]).map(member=>member.part+' '+member.role).join(' ')).toLowerCase().includes(search)));
+ visible=catalog.entries.filter(entry=>(!connected||connected.has(entry.id))&&(kind==='all'||kind===entry.kind)&&(company==='all'||company===entry.company)&&(stage==='all'||snapshot.statuses[entry.id]?.stage===stage)&&(!search||(entry.title+' '+entry.summary+' '+catalog.companies[entry.company].name+' '+entry.id+' '+(entry.chipset?.members||entry.series?.members||[]).map(member=>member.part+' '+member.role).join(' ')).toLowerCase().includes(search)));
  $('result-count').textContent=text('results.count',{shown:visible.length,total:catalog.entries.length});
  $('eras').replaceChildren();$('empty').hidden=visible.length>0;
  document.querySelectorAll('.maker-button').forEach(button=>button.classList.toggle('active',button.dataset.company===company));
@@ -174,7 +188,7 @@ function drawConnectionPass(layout,columns){
  const ranks=new Map([...nodes.keys()].map((id,index)=>[id,index]));
  const allComputers=$('computer').value==='all';
  $('system-links-label').textContent=text(allComputers?'wires.allLinks':'wires.links');
- const context=allComputers?($('show-systems').checked?text('wires.contextAll'):''):text('wires.contextFocused');
+ const context=allComputers?'':text('wires.contextFocused');
  $('wire-context').textContent=context;$('wire-context').hidden=!context;
  const edges=[];
  if($('show-makers').checked){
@@ -376,11 +390,11 @@ function drawConnectionPass(layout,columns){
  const cards=buses.reduce((n,bus)=>n+bus.links.length,0),parts=['maker','required','optionalChip','reconstruction','bus','compatible'].filter(layer=>counts[layer]).map(layer=>text('wires.count.'+layer,{count:counts[layer],cards}));
  $('trace-summary').textContent=parts.join(' · ')||text('wires.none');
  for(const item of document.querySelectorAll('[data-wire-layer]'))item.hidden=!counts[item.dataset.wireLayer];
- $('wire-help').textContent=[computerLinks.length?text('wires.helpComputers'):'',text('wires.helpCards')].filter(Boolean).join(' ');
+ $('wire-help-text').textContent=text('wires.help');
 
 }
 
-function updateYear(){let selected=null;for(const group of document.querySelectorAll('.year-block[data-year]')){if(group.getBoundingClientRect().top<220)selected=group.dataset.year;else if(selected===null)selected=group.dataset.year;else break;}if(selected&&selected!=='undated'){$('current-year').textContent=selected;$('year-scrubber').value=selected;}else if(selected==='undated')$('current-year').textContent='—';}
+function updateYear(){let selected=null;for(const group of document.querySelectorAll('.year-block[data-year]')){if(group.getBoundingClientRect().top<220)selected=group.dataset.year;else if(selected===null)selected=group.dataset.year;else break;}if(selected&&selected!=='undated'){$('current-year').textContent=selected;$('year-scrubber').value=selected;}else if(selected==='undated')$('current-year').textContent=text('card.unknownSymbol');}
 function goYear(year){const groups=[...document.querySelectorAll('.year-block')].filter(g=>g.dataset.year!=='undated');let group=groups.find(g=>Number(g.dataset.year)>=year)||groups.at(-1);group?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
 // The filter tabs, wire legend and legend footnote are data, so they are built from data/ui.json.
 function hydrate(){
@@ -389,4 +403,4 @@ function hydrate(){
  $('legend-fineprint').textContent=text('legend.fineprint');$('info-close').setAttribute('aria-label',text('info.close'));
 }
 function setup(){hydrate();for(const entry of catalog.entries.filter(e=>e.kind==='system')){const option=element('option','',entry.title);option.value=entry.id;$('computer').append(option);}$('computer').addEventListener('change',event=>focusComputer(event.target.value));for(const id of ['show-makers','show-systems'])$(id).addEventListener('change',scheduleDraw);for(const [id,company]of Object.entries(catalog.companies)){if(!catalog.entries.some(e=>e.company===id))continue;const option=element('option','',company.name);option.value=id;$('company').append(option);const button=element('button','maker-button');button.dataset.company=id;button.style.setProperty('--company',company.color);button.append(element('i'),document.createTextNode(company.name));button.addEventListener('click',()=>{$('company').value=$('company').value===id?'all':id;render();});$('maker-key').append(button);}const years=catalog.entries.map(e=>e.year).filter(Number.isFinite),min=Math.min(...years),max=Math.max(...years);$('year-scrubber').min=min;$('year-scrubber').max=max;for(let year=Math.ceil(min/5)*5;year<=max;year+=5){const button=element('button','year-marker',String(year));button.style.top=((year-min)/(max-min)*100)+'%';button.addEventListener('click',()=>goYear(year));$('year-markers').append(button);}$('year-scrubber').addEventListener('input',e=>goYear(Number(e.target.value)));for(const button of document.querySelectorAll('[data-kind]')){if(button.tagName!=='BUTTON')continue;button.addEventListener('click',()=>{kind=button.dataset.kind;document.querySelectorAll('.view-tabs button').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});render();});}for(const id of ['company','stage'])$(id).addEventListener('change',render);$('search').addEventListener('input',render);$('reset').addEventListener('click',()=>{$('company').value='all';$('stage').value='all';$('search').value='';$('computer').value='all';$('show-makers').checked=true;$('show-systems').checked=false;kind='all';document.querySelector('[data-kind="all"]').click();});$('entry-count').textContent=catalog.entries.length;$('company-count').textContent=new Set(catalog.entries.map(e=>e.company)).size;const stamp=new Date(snapshot.syncedAt);$('sync-label').textContent=text('load.snapshot',{when:Number.isNaN(stamp.valueOf())?text('load.notSynced'):stamp.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'})});const toggle=open=>{$('legend').hidden=!open;$('legend-toggle').setAttribute('aria-expanded',String(open));};$('legend-toggle').addEventListener('click',()=>toggle($('legend').hidden));$('legend-close').addEventListener('click',()=>{toggle(false);$('legend-toggle').focus();});$('bus-close').addEventListener('click',()=>$('bus-dialog').close());$('bus-dialog').addEventListener('click',event=>{if(event.target===$('bus-dialog'))$('bus-dialog').close();});$('info-close').addEventListener('click',()=>$('info-dialog').close());$('info-dialog').addEventListener('click',e=>{if(e.target===$('info-dialog'))$('info-dialog').close();});addEventListener('scroll',updateYear,{passive:true});addEventListener('resize',scheduleDraw);document.addEventListener('keydown',navigateCard);new ResizeObserver(scheduleDraw).observe($('eras'));}
-try{[catalog,snapshot,vocabulary,credits,relationships,compatible,ui]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('images/credits.json'),read('data/connections.json'),read('data/compatible-chips.json'),read('data/ui.json')]);legend();setup();render();}catch(error){$('error').hidden=false;$('error').textContent='The archive could not be loaded. Serve this folder over HTTP and check the JSON files. '+error.message;$('eras').replaceChildren();$('sync-label').textContent='Archive unavailable';console.error(error);}
+try{[catalog,snapshot,vocabulary,credits,relationships,compatible,ui]=await Promise.all([read('data/catalog.json'),read('data/status.json'),read('data/stages.json'),read('data/photo-credits.json'),read('data/connections.json'),read('data/compatible-chips.json'),read('data/ui.json')]);legend();setup();render();}catch(error){$('error').hidden=false;$('error').textContent=$('error').dataset.loadErrorPrefix+error.message;$('eras').replaceChildren();$('sync-label').textContent=$('sync-label').dataset.unavailable;console.error(error);}

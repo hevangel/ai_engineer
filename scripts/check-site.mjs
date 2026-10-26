@@ -1,24 +1,34 @@
+import {renderSite} from './render-site.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const json=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8'));
-const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','images/credits.json'].map(json));
+const [catalog,snapshot,vocabulary,credits]=await Promise.all(['data/catalog.json','data/status.json','data/stages.json','data/photo-credits.json'].map(json));
 const connections=await json('data/connections.json');
+const imageImports=await json('data/image-import.json');
 const ids=new Set(),stages=new Set(vocabulary.stages.map(s=>s.id)),eras=new Set(catalog.eras.map(e=>e.id));
-let representative=0;
+let representative=0,photosNeeded=0;
 for(const entry of catalog.entries){
  assert(!ids.has(entry.id),'Duplicate entry '+entry.id);ids.add(entry.id);
  assert(catalog.companies[entry.company],'Missing company '+entry.id);
  assert(eras.has(entry.era),'Missing era '+entry.id);
  assert(['chip','system','card'].includes(entry.kind),'Invalid type '+entry.id);
  if(entry.chipset){assert.equal(entry.kind,'chip','Chipset must use chip routing '+entry.id);assert(entry.chipset.members.length>1,'Chipset needs multiple members '+entry.id);const parts=new Set();for(const member of entry.chipset.members){assert(member.part?.trim()&&member.role?.trim(),'Incomplete chipset member '+entry.id);const part=member.part.trim().toLowerCase();assert(!parts.has(part),'Duplicate chipset member '+entry.id);parts.add(part);}assert.equal(new URL(entry.chipset.evidence).protocol,'https:');}
+ if(entry.series){assert(!entry.chipset,'A chip series is not a motherboard chipset '+entry.id);assert.equal(entry.kind,'chip','Series must be a chip family '+entry.id);assert(entry.series.members.length>1,'Series needs multiple members '+entry.id);const parts=new Set();for(const member of entry.series.members){assert(member.part&&member.role&&Number.isInteger(member.year),'Incomplete series member '+entry.id);assert(!parts.has(member.part),'Duplicate series member '+entry.id);parts.add(member.part);assert.equal(new URL(member.source).protocol,'https:');}}
  if(entry.kind==='card'){const bus=catalog.buses?.[entry.bus];assert(bus?.label&&/^#[0-9a-f]{6}$/i.test(bus.color),'Missing bus profile '+entry.id);}
  if(entry.year!==null){assert(Number.isInteger(entry.year)&&entry.year>1900,'Invalid year '+entry.id);assert(new URL(entry.dateSource).protocol==='https:','Missing historical source '+entry.id);}
  const status=snapshot.statuses[entry.id];assert(status&&stages.has(status.stage),'Missing stage '+entry.id);
  assert.equal(new URL(entry.issue.url).hostname,'github.com');
  assert(typeof entry.summary==='string'&&entry.summary.trim()&&entry.summary.length<=100&&!/[\r\n]/.test(entry.summary),'Missing one-line summary (100 characters or fewer) '+entry.id);
+ if(entry.image?.status==='needed'){
+  assert.equal(entry.image.representative,false,'Missing photo is not a representative photograph '+entry.id);
+  assert(!entry.image.src&&!credits[entry.id],'Missing photo must not retain a substituted image/credit '+entry.id);
+  assert(Array.isArray(entry.image.sourceLeads),'Missing photo research leads '+entry.id);
+  for(const lead of entry.image.sourceLeads){assert(lead.label&&lead.note,'Unqualified photo lead '+entry.id);assert.equal(new URL(lead.url).protocol,'https:');}
+  photosNeeded++;continue;
+ }
  assert(entry.image?.alt?.trim(),'Missing image alt '+entry.id);
  assert(/^images\/[a-z0-9_-]+\.(jpg|png)$/i.test(entry.image.src),'Invalid image path '+entry.id);
  const bytes=await fs.readFile(path.join(root,entry.image.src));
@@ -26,7 +36,11 @@ for(const entry of catalog.entries){
  assert(bytes[0]===0xff&&bytes[1]===0xd8||bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'Not JPEG/PNG '+entry.id);
  const credit=credits[entry.id];assert(credit?.creator&&credit.license&&credit.source&&credit.changes,'Missing attribution '+entry.id);
  assert.equal(credit.representative,entry.image.representative,'Representative label mismatch '+entry.id);
- assert.equal(new URL(credit.source).hostname,'commons.wikimedia.org');
+ if(credit.provenance==='user-supplied'){
+  const approved=imageImports.userSupplied?.[entry.id];assert(approved,'Unregistered user-supplied photo '+entry.id);
+  assert.equal(credit.source,approved.source);assert.equal(credit.downloadedFrom,approved.url);assert.equal(credit.rightsStatus,approved.rightsStatus);
+  assert.equal(new URL(credit.source).protocol,'https:');assert.equal(new URL(credit.downloadedFrom).protocol,'https:');
+ }else assert.equal(new URL(credit.source).hostname,'commons.wikimedia.org');
  if(entry.image.representative)representative++;
 }
 for(const entry of catalog.entries.filter(entry=>entry.kind==='card'&&entry.bus==='isa'))assert(connections.links.some(link=>link.source===entry.id&&catalog.entries.some(target=>target.id===link.target&&target.kind==='system')),'ISA card has no computer bus connection: '+entry.id);
@@ -46,4 +60,24 @@ for(const key of ['maker','required','optionalChip','reconstruction','bus','comp
 for(const key of ['maker','reconstruction','optional','required'])assert.equal(typeof lookup('wires.relation.'+key),'string','Missing relation text: '+key);
 for(const key of ['previous','next'])assert.equal(typeof lookup('wires.'+key),'string','Missing direction text: '+key);
 for(const layer of ui.wireLayers)assert(layer.id&&layer.label,'Incomplete wire layer');
-console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} explicitly labeled representative photos).`);
+console.log(`Checked ${ids.size} entries, local photos, credits and statuses (${representative} representative photos, ${photosNeeded} photos needed).`);
+
+const template=await fs.readFile(path.join(root,'templates/index.html'),'utf8');
+assert.equal((await fs.readFile(path.join(root,'index.html'),'utf8')).replaceAll('\r\n','\n'),renderSite(template,ui,catalog),'Stale index.html; run node scripts/render-site.mjs');
+console.log('Validated JSON-generated page shell');
+
+const imports=await json('data/image-import.json'),syncConfig=await json('data/sync.json');
+for(const [id,selection]of Object.entries(imports.selections)){assert(selection.query?.trim(),'Missing photo query '+id);new RegExp(selection.titlePattern.source,selection.titlePattern.flags);}
+for(const pattern of [...Object.values(imports.excludeTitles),imports.search.excludedTitlePattern])new RegExp(pattern.source,pattern.flags);
+assert(imports.defaults.creator&&imports.defaults.changes,'Missing photo import metadata');
+for(const stage of Object.values(syncConfig.projectStages))assert(stages.has(stage),'Unknown configured project stage '+stage);
+assert(syncConfig.nativeDependencyNote&&syncConfig.connectionsSource&&syncConfig.githubOwner,'Missing sync configuration');
+
+assert.equal(new URL(ui.links.source).protocol,'https:','Source link must use HTTPS');
+assert(/^#[0-9a-f]{6}$/i.test(ui.themeColor),'Invalid page theme color');
+
+assert.equal(new URL(imports.service.apiUrl).protocol,'https:','Photo service must use HTTPS');
+
+for(const [,resource]of source.matchAll(/\bread\('([^']+)'\)/g))assert(/^data\/[a-z0-9-]+\.json$/.test(resource),'Runtime data must live under data/: '+resource);
+
+for(const name of ['index.html','assets/timeline.css']){const body=await fs.readFile(path.join(root,name),'utf8');assert(!/url\(\s*[\"']?(?:https?:)?\/\//i.test(body),'Remote CSS asset in '+name);assert(!/<img\b[^>]*\bsrc\s*=\s*[\"'](?:https?:)?\/\//i.test(body),'Remote image in '+name);}

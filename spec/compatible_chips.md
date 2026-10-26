@@ -35,3 +35,7 @@ Architecture or software resemblance alone is insufficient. The existing AMD Am9
 Only one shared trunk and one top input pad enter each host CPU role. Each visible candidate exits its own bottom pad to a junction on that trunk. Shared trunks occupy separate left lanes outside the ordinary chip-prerequisite lanes; disjoint row intervals can reuse a lane. Source tracks use the bottom of the complete row, keeping their horizontal segments below neighboring cards. Manufacturer lineage and expansion buses remain separate. The wire toggle removes every shared CPU path, pad and navigation target.
 
 Card taps jump to the computer. The shared CPU trunk and host pad open the connected-member chooser, with original/alternative labels, qualification and manufacturer references. Selection focuses and reveals the chosen card without changing filters. A compatibility group never introduces a repeated subtitle on a hardware card.
+
+## Native qualification trackers
+
+Compatible CPU qualification is separately tracked in `data/option-issues.json`. Each profile's qualification issue is blocked by the canonical original CPU issue. This host-independent comparison task references the alternative's canonical implementation issue and preserves package/clock limits. It does not make every computer depend on both CPUs. Use `node scripts/sync-option-issues.mjs` to verify these native edges and project membership.

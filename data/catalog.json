@@ -172,17 +172,18 @@
       "dateLabel": "1966 · plastic SN7400",
       "dateSource": "https://www.computerhistory.org/siliconengine/standard-logic-ic-families-introduced/",
       "era": "4",
-      "query": "Texas Instruments SN74181",
+      "query": "Texas Instruments SN7400N",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 4,
         "url": "https://github.com/hevangel/ai_engineer/issues/4"
       },
       "image": {
-        "src": "images/ttl_74_series.jpg",
-        "alt": "Fairchild F74LS181PC bottom.jpg",
+        "src": "images/ti_sn7400n.jpg",
+        "alt": "Texas Instruments SN7400N quad NAND-gate chip in a 14-pin DIP, with the TI logo, SN 7400N marking and 7645 date code clearly visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Fairchild_F74LS181PC_bottom.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:TI_SN7400N.jpg",
+        "caption": "Texas Instruments SN7400N; the pictured device is date-coded 7645 (1976, week 45), later than the family introduction."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Standard 7400-series TTL logic gates, flip-flops and counters"
@@ -196,24 +197,25 @@
       "dateLabel": "Documented by 1970",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "4",
-      "query": "AMD Am9300",
+      "query": "File:AMD 930059X 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 11,
         "url": "https://github.com/hevangel/ai_engineer/issues/11"
       },
       "image": {
-        "src": "images/amd_am9300.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "src": "images/amd_am9300_verified.jpg",
+        "alt": "AMD 930059X (Am9300) four-bit shift register with the AMD logo and 930059X marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_930059X_1.jpg",
+        "caption": "AMD 930059X, a packaged Am9300 shift-register variant."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "4-bit universal shift register"
     },
     {
       "id": "amd_am2501",
-      "title": "AMD Am2501",
+      "title": "AMD Am25xx series",
       "kind": "chip",
       "company": "amd",
       "year": 1970,
@@ -227,37 +229,31 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/5"
       },
       "image": {
-        "src": "images/amd_am2501.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "src": "images/amd_am25xx_package.jpg",
+        "alt": "AMD Am2501DC counter chip in its closed ceramic package, with the AMD logo and Am2501DC marking visible.",
+        "representative": false,
+        "source": "https://x.com/kenshirriff/status/1218982024070955009",
+        "caption": "AMD Am2501DC, one member of the Am25xx series. This photographed device is dated 1985; the Am2505 multiplier is not pictured."
       },
       "description": "Chip family · specification, RTL & independent verification",
-      "summary": "Logic counter, AMD's first proprietary product (1970)"
-    },
-    {
-      "id": "amd_am2505",
-      "title": "AMD Am2505",
-      "kind": "chip",
-      "company": "amd",
-      "year": 1971,
-      "dateLabel": "Documented by 1971",
-      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
-      "era": "4",
-      "query": "AMD Am2505",
-      "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 6,
-        "url": "https://github.com/hevangel/ai_engineer/issues/6"
-      },
-      "image": {
-        "src": "images/amd_am2505.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
-      },
-      "description": "Chip family · specification, RTL & independent verification",
-      "summary": "Fast multiplier, AMD's best-selling product of 1971"
+      "summary": "Early AMD Am25xx logic: Am2501 binary counter and Am2505 multiplier",
+      "dateNote": "The series is anchored to the Am2501 documented-by-1970 profile. The Am2505 multiplier is documented by 1971 and is tracked as a separate member of this series. The photograph shows an Am2501DC device dated 1985, not the original 1970 package.",
+      "series": {
+        "members": [
+          {
+            "part": "Am2501",
+            "role": "4-bit binary counter",
+            "year": 1970,
+            "source": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md"
+          },
+          {
+            "part": "Am2505",
+            "role": "4 × 2-bit two’s-complement multiplier",
+            "year": 1971,
+            "source": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md"
+          }
+        ]
+      }
     },
     {
       "id": "amd_am3101",
@@ -268,17 +264,18 @@
       "dateLabel": "Documented by 1971",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "4",
-      "query": "AMD Am3101",
+      "query": "File:AMD AM3101E 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 8,
         "url": "https://github.com/hevangel/ai_engineer/issues/8"
       },
       "image": {
-        "src": "images/amd_am3101.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "src": "images/amd_am3101_verified.jpg",
+        "alt": "AMD AM3101E 64-bit bipolar RAM with the AMD logo and AM3101E marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM3101E_1.jpg",
+        "caption": "AMD AM3101E, a member of the Am3101 64-bit bipolar RAM family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "64-bit bipolar static RAM, AMD's version of the Intel 3101"
@@ -292,17 +289,18 @@
       "dateLabel": "1971",
       "dateSource": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-story-of-the-intel-4004.html",
       "era": "4",
-      "query": "Intel 4004",
+      "query": "File:Intel C4004.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 19,
         "url": "https://github.com/hevangel/ai_engineer/issues/19"
       },
       "image": {
-        "src": "images/intel_mcs4.jpg",
-        "alt": "Intel 4004 open.jpg",
+        "src": "images/intel_mcs4_package.jpg",
+        "alt": "Intel C4004 processor in its closed 16-pin ceramic package, with the C4004 marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_open.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_C4004.jpg",
+        "caption": "Intel C4004, the CPU member of the MCS-4 family, shown in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Intel's first microprocessor set: the 4004 CPU with its ROM, RAM and I/O chips"
@@ -393,10 +391,15 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/10"
       },
       "image": {
-        "src": "images/amd_am9102.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Am9102 collector photograph",
+            "url": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
+            "note": "A photographed Am9102 in a collector paperweight; reuse permission has not been verified."
+          }
+        ]
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "1024 x 1-bit static RAM"
@@ -458,17 +461,18 @@
       "dateLabel": "1975",
       "dateSource": "https://en.wikipedia.org/wiki/MOS_6502",
       "era": "8",
-      "query": "MOS 6502",
+      "query": "File:KL MOS 6502.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 33,
         "url": "https://github.com/hevangel/ai_engineer/issues/33"
       },
       "image": {
-        "src": "images/mos_6502_family.jpg",
-        "alt": "MOS 6502 die.jpg",
+        "src": "images/mos_6502_family_package.jpg",
+        "alt": "MOS MPS6502A processor in a 40-pin plastic dual-inline package, with MOS and MPS6502 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_MOS_6502.jpg",
+        "caption": "MOS MPS6502A, a packaged member of the 6502 CPU family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Low-cost 8-bit CPU family used in the Apple II, Atari 2600 and Commodore 64"
@@ -506,17 +510,18 @@
       "dateLabel": "Documented by 1975",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "8",
-      "query": "AMD Am9080",
+      "query": "File:AMD AM9080ADC 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 9,
         "url": "https://github.com/hevangel/ai_engineer/issues/9"
       },
       "image": {
-        "src": "images/amd_am9080.jpg",
-        "alt": "AMD C8080A.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AMD_C8080A.jpg"
+        "src": "images/amd_am9080_verified.jpg",
+        "alt": "AMD AM9080ADC processor in a white ceramic package, marked AM9080ADC and IC8080A.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM9080ADC_1.jpg",
+        "caption": "AMD AM9080ADC, an AMD 8080-compatible processor in the Am9080 family."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "AMD's version of the Intel 8080 8-bit microprocessor"
@@ -700,17 +705,18 @@
       "dateLabel": "1977",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "8",
-      "query": "AMD Am9511",
+      "query": "File:AMD AM9511A IDC 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 12,
         "url": "https://github.com/hevangel/ai_engineer/issues/12"
       },
       "image": {
-        "src": "images/amd_am9511.jpg",
-        "alt": "AM9511-1 Arithmetic Co-Processor side.jpg",
+        "src": "images/amd_am9511_verified.jpg",
+        "alt": "AMD AM9511A-1DC arithmetic processor with the AMD logo and AM9511A-1DC marking visible.",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AM9511-1_Arithmetic_Co-Processor_side.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM9511A_IDC_1.jpg",
+        "caption": "AMD AM9511A-1DC, a later A variant of the Am9511 arithmetic-processor family; not the original 1977 package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Arithmetic processor that adds floating-point maths to a CPU"
@@ -977,10 +983,15 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/13"
       },
       "image": {
-        "src": "images/amd_am9517.jpg",
-        "alt": "KL AMD 2901.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KL_AMD_2901.jpg"
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Am9517 and Am9517-5 collector photographs",
+            "url": "https://iccollection.try.mydns.jp/intel80peripheral/i8237A.html",
+            "note": "Candidate photographs; reuse permission has not been verified."
+          }
+        ]
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Multimode direct-memory-access (DMA) controller"
@@ -1044,17 +1055,18 @@
       "dateLabel": "1978",
       "dateSource": "https://en.wikipedia.org/wiki/Motorola_6809",
       "era": "16",
-      "query": "Motorola 6809",
+      "query": "File:KL Motorola MC6809.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 46,
         "url": "https://github.com/hevangel/ai_engineer/issues/46"
       },
       "image": {
-        "src": "images/motorola_6809.jpg",
-        "alt": "Motorola 6809 die.JPG",
+        "src": "images/motorola_6809_package.jpg",
+        "alt": "Motorola MC6809P processor in a 40-pin plastic dual-inline package, with the Motorola logo and MC6809P marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_6809_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Motorola_MC6809.jpg",
+        "caption": "Motorola MC6809P in its plastic dual-inline package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Motorola's advanced 8-bit CPU with hardware multiply and position-independent code"
@@ -1140,17 +1152,18 @@
       "dateLabel": "1979",
       "dateSource": "https://en.wikipedia.org/wiki/Motorola_68000",
       "era": "16",
-      "query": "Motorola 68000",
+      "query": "File:KL Motorola MC68000 CDIP.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 45,
         "url": "https://github.com/hevangel/ai_engineer/issues/45"
       },
       "image": {
-        "src": "images/motorola_68000.jpg",
-        "alt": "Motorola 68000 die.JPG",
+        "src": "images/motorola_68000_package.jpg",
+        "alt": "Motorola MC68000 processor in a closed 64-pin ceramic dual-inline package, with Motorola and MC68000 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_68000_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Motorola_MC68000_CDIP.jpg",
+        "caption": "Motorola MC68000 in its closed ceramic dual-inline package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Motorola's 16/32-bit CPU, used in the original Macintosh"
@@ -1190,17 +1203,18 @@
       "dateLabel": "1980",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "16",
-      "query": "Intel 8087",
+      "query": "File:Intel C8087 1.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 23,
         "url": "https://github.com/hevangel/ai_engineer/issues/23"
       },
       "image": {
-        "src": "images/intel_8087.jpg",
-        "alt": "Intel 8087 die.JPG",
+        "src": "images/intel_8087_package.jpg",
+        "alt": "Intel C8087 floating-point coprocessor in a closed ceramic dual-inline package, with C8087 marking visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_8087_die.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_C8087_1.jpg",
+        "caption": "Intel C8087 floating-point coprocessor in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Numeric coprocessor that adds floating-point maths to the 8086 and 8088"
@@ -1389,17 +1403,18 @@
       "dateLabel": "1982",
       "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/main/design/README.md",
       "era": "16",
-      "query": "Intel 80286",
+      "query": "File:KL Intel 80286 CLCC Top.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 20,
         "url": "https://github.com/hevangel/ai_engineer/issues/20"
       },
       "image": {
-        "src": "images/intel_80286.jpg",
-        "alt": "Intel 80286 die2.JPG",
+        "src": "images/intel_80286_package.jpg",
+        "alt": "Intel R80286-8 processor viewed from the marked top of its ceramic leadless package.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_80286_die2.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_80286_CLCC_Top.jpg",
+        "caption": "Intel R80286-8, shown from the marked top of its ceramic leadless package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Intel's 16-bit CPU with protected mode, used in the IBM PC AT"
@@ -1413,17 +1428,18 @@
       "dateLabel": "1982",
       "dateSource": "https://en.wikipedia.org/wiki/Intel_80287",
       "era": "16",
-      "query": "Intel 80287",
+      "query": "File:KL Intel C80287.jpg",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 113,
         "url": "https://github.com/hevangel/ai_engineer/issues/113"
       },
       "image": {
-        "src": "images/intel_80287.jpg",
-        "alt": "Intel 80287 die2.JPG",
+        "src": "images/intel_80287_package.jpg",
+        "alt": "Intel C80287-3 numeric coprocessor in a closed ceramic dual-inline package, with Intel and C80287-3 markings visible.",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Intel_80287_die2.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:KL_Intel_C80287.jpg",
+        "caption": "Intel C80287-3 numeric coprocessor in its closed ceramic package."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Floating-point coprocessor for the 80286"
@@ -1532,7 +1548,7 @@
       "dateLabel": "1983 · AMD catalog preview",
       "dateSource": "https://bitsavers.org/components/amd/_dataBooks/1983_AMD_MOS_Microprocessors_and_Peripherals.pdf",
       "era": "16",
-      "query": "AMD 80186 / 80188 family",
+      "query": "File:Ic-photo-AMD--R80186-6 B4-(186-CPU).png",
       "issue": {
         "repo": "hevangel/ai_engineer",
         "number": 190,
@@ -1540,13 +1556,13 @@
       },
       "description": "Integrated x86 · DMA, timers, interrupt control & chip selects",
       "dateBasis": "preview",
-      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative; the photo depicts an AMD 80C186 die.",
+      "dateNote": "AMD’s 1983 catalog includes 80186 advance information at printed page 2-1. This dates the earliest catalog profile, not every 80188, CMOS or later Am186 derivative. The photograph shows an R80186-6/B4 package marked ©1984 AMD.",
       "image": {
-        "src": "images/amd_80186.jpg",
-        "alt": "AMD 80C186 SoC die.JPG",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:AMD_80C186_SoC_die.JPG",
-        "caption": "Representative AMD 80C186 die; not the original 1983 advance-information device."
+        "src": "images/amd_80186_package.png",
+        "alt": "AMD R80186-6/B4 processor in its closed ceramic leadless package, with the AMD logo and R80186-6/B4 marking visible.",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Ic-photo-AMD--R80186-6_B4-(186-CPU).png",
+        "caption": "AMD R80186-6/B4, shown in its ceramic leadless package."
       },
       "summary": "AMD's 80186 and 80188 16-bit CPUs with built-in peripherals"
     },

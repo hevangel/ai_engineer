@@ -66,7 +66,7 @@ See the [initial project plan](spec/initial_project_plan.md), [386/68030 scope](
 
 ## Run the website locally
 
-You need Node.js 22 or newer. There is no package installation or build step:
+You need Node.js 22 or newer. No package installation or build is needed to serve the checked-in page:
 
 ```sh
 git clone https://github.com/hevangel/ai_engineer.git
@@ -80,10 +80,16 @@ To explore the hardware/software projects as well, run `git submodule update --i
 
 Maintainers can find status-refresh commands, checks and release instructions in [scripts/README.md](scripts/README.md) and the [website maintenance guide](spec/website.md). GitHub Pages serves a static snapshot from the generated `gh-pages` branch.
 
+## Website content
+
+Editable content lives under `data/`: hardware facts in `catalog.json`, shared wording and page copy in `ui.json`, badge definitions in `stages.json`, and attribution in `photo-credits.json`. Photo-import choices and synchronization metadata also have their own JSON files. JavaScript handles rendering and interaction. Every displayed photo is checked into `images/`; browsers load relative local files, while external links provide source and attribution only. When an exact, reuse-cleared photograph is still unsourced, the card says “Photo needed” and its info dialog records any qualified source leads instead of borrowing a different chip’s picture.
+
+After changing page copy in `data/ui.json` or the layout template, run `node scripts/render-site.mjs` to refresh the static `index.html`. The page keeps its introductory copy, metadata and fallback links even when JavaScript cannot load. `node scripts/check-site.mjs` checks that the generated page matches its JSON sources.
+
 ## Help improve the project
 
 Report a historical error, suggest a system or card profile, contribute source references, or review implementation and verification evidence through GitHub issues and pull requests.
 
 Changes in these repositories are authored by AI agents at human direction. Humans define requirements and review, approve or reject the resulting work. See [CONTRIBUTING.md](CONTRIBUTING.md) for the process; agents start with [AGENTS.md](AGENTS.md).
 
-Photographs retain their individual licenses and credits in [images/credits.json](images/credits.json). Each project also has its own licensing terms; check the relevant repository before reusing its content.
+Photographs retain their individual licenses and credits in [data/photo-credits.json](data/photo-credits.json). Each project also has its own licensing terms; check the relevant repository before reusing its content.

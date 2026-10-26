@@ -11,7 +11,7 @@ The root `index.html` is a buildless static site. It presents the canonical chip
 - `data/system-options.json`: curated optional chip/card-to-computer profiles, evidence and qualifications.
 - `data/component-profiles.json`: explicit CPU variants for shared canonical issues and qualified later reconstruction components; each must match a native completion dependency.
 - `data/stages.json`: public legend, labels, symbols and colors. Labels are rendered from this file.
-- `images/`: local photographs and per-image Commons attribution in `credits.json`.
+- `images/`: local photographs; per-image attribution is in `data/photo-credits.json`.
 - `scripts/`: status synchronization, photo import, preview server and verification.
 
 Run `node scripts/serve.mjs`, then open `http://127.0.0.1:4173`. A static HTTP server is required because browsers restrict JSON fetches from `file:` URLs. Deployment consists of `index.html`, `assets/`, `data/`, and `images/`; do not copy submodule checkouts, `.git`, scripts, scratch files or credentials into a public deployment directory.
@@ -74,7 +74,7 @@ Optional `dateBasis` values are `introduced`, `documented`, `preview`, `reported
 
 Company lines connect visible chip-family entries from the same maker. Route maker lineage through the right gutter and chip-to-computer dependencies through the left gutter (or directly through the gap when the computer occupies the immediately following rendered row) and shared expansion buses outside the maker lanes on the far right, using straight horizontal/vertical segments and 45-degree chamfered bends. Chip connections and maker links spanning rows exit a hollow bottom pad and enter through a hollow top pad; adjacent same-row maker links use facing side pads. Keep traces clear of photographs and text. Allocate distinct horizontal tracks per row and reuse a vertical lane only when its spans do not overlap. Give separate chip fan-out/fan-in wires separate pads; independent chip/maker paths never share a segment. Expansion cards share a family rail and row runs as specified below. Preserve gutters and pad alignment across responsive layouts. The archive uses the available window width. Card columns are chosen from space remaining after wire gutters, chapter padding and column gaps; reduce from three columns to two or one before requiring horizontal scrolling. Narrow circuits may scroll when one readable card plus its wire gutters cannot fit. Selecting one computer reduces the wiring. Intel is blue and AMD red; other colors are brand-inspired. A platform owner may represent a mixed-vendor support family; the catalog must not imply it manufactured every physical component pictured.
 
-Use `node scripts/fetch-images.mjs` to import licensed Commons photographs for catalog entries without one. The importer is a curation aid, not a visual identity oracle: inspect the actual photo and original source page, especially near-identical Mac models, card revisions and rare chips. Do not substitute an unrelated person, book, logo, controller or machine. Mark any representative family photo explicitly; its alt text names what is actually pictured. Keep the creator, source, individual license and modification information in `images/credits.json`. Images retain their original licenses.
+Use `node scripts/fetch-images.mjs` to import licensed Commons photographs for catalog entries without one. The importer is a curation aid, not a visual identity oracle: inspect the actual photo and original source page, especially near-identical Mac models, card revisions and rare chips. Do not substitute an unrelated person, book, logo, controller or machine. Mark any representative family photo explicitly; its alt text names what is actually pictured. Keep the creator, source, individual license and modification information in `data/photo-credits.json`. Images retain their original licenses.
 
 ## Verification
 
@@ -138,3 +138,13 @@ The page starts with maker lineage only. Selecting a computer enables its compon
 ## Direct maker links within a row
 
 Adjacent same-row chips from the same company connect horizontally across their gap using side pads. Other maker links keep right-gutter bottom/top routing. Recompute adjacency after filters and column changes; never cross another card. [Ordering, geometry and checks](maker_row_links.md).
+
+## Verified and unsourced photographs
+
+An entry may declare `image: {status: "needed", representative: false, sourceLeads: [...]}` when an exact, reuse-cleared photo has not been verified. Render a clearly labeled Photo needed panel with the actual entry title, preserving status badges and wire geometry. Do not render a broken image or borrow an unrelated chip photo. Its info dialog gives the shared JSON explanation and any qualified external leads; these are references, not licensed website assets. There is no credit record for a missing image. Normal sourced images retain `src`, descriptive `alt`, attribution and explicit representative qualifications.
+
+The early AMD audit and source decisions are in [amd_photos.md](amd_photos.md). Importer `requireExact` entries fail without an exact match; the generic AMD brand fallback is removed. `photo-regression.test.mjs` checks that distinct AMD chip cards do not reuse identical image bytes.
+
+The MCS-4 card uses a closed Intel C4004 package. The 6502, Motorola 6809/68000, Intel 8087/80286/80287 and AMD 80186-family cards also use visually inspected package photographs, with the photographed variants named in their JSON captions and individual credits. Exact-file importer selections and `requireExact` protect these choices from reverting to die photos. Package markings and photo dates do not replace the historical date sources.
+
+A coherent chip series may have `series.members`, each with `part`, `role`, a qualified `year` and HTTPS `source`. Keep one card and issue for that series; anchor its year to the earliest documented member, and expose later member dates in the info dialog. This is not a claim that independent series members form a motherboard chipset or are interchangeable. The Am25xx consolidation retains stable entry ID `amd_am2501` and removes the separate Am2505 card.
