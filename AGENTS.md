@@ -4,7 +4,7 @@
 
 You are the sole author of all code, documentation, data and configuration in this repository. Humans never edit files by hand; they direct the work and review, approve or reject pull requests. Follow [CONTRIBUTING.md](CONTRIBUTING.md) for branches, verification and pull requests.
 
-This repository is the public static website and integrated presentation for the `ai_*` projects and HDL Workbench. The three projects are independent Git repositories pinned as submodules; before editing one, read and follow its own `AGENTS.md`.
+This repository is the public static website and integrated presentation for the `ai_*` projects and HDL Workbench. The component projects are independent Git repositories pinned as submodules; before editing one, read and follow its own `AGENTS.md`.
 
 ## Required reading
 
