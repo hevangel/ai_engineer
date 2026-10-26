@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-24T22:49:12.704Z",
+  "syncedAt": "2026-10-26T07:35:33.842Z",
   "source": "Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives",
   "links": [
     {
@@ -968,6 +968,13 @@
       "target": "system_ps2_model56slc",
       "type": "required",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/199",
+      "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
+    },
+    {
+      "source": "intel_mcs8",
+      "target": "system_scelbi_8b",
+      "type": "required",
+      "evidence": "https://github.com/hevangel/ai_hw_engineer/issues/86",
       "note": "Recorded native completion dependency; exact board inventory remains subject to source qualification."
     },
     {

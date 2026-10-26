@@ -1,3 +1,4 @@
+import {issueKeyFromUrl} from './issue-refs.mjs';
 import {expandCompatibleConnections} from '../assets/compatible-layout.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -20,7 +21,7 @@ for(const target of catalog.entries.filter(e=>e.kind==='system')){
  const endpoint=`repos/${target.issue.repo}/issues/${target.issue.number}/dependencies/blocked_by?per_page=100`;
  const pages=JSON.parse(execFileSync('gh',['api',endpoint,'--paginate','--slurp'],{encoding:'utf8',maxBuffer:16*1024*1024}));
  for(const prerequisite of pages.flat()){
-  const candidates=(issueEntries.get(target.issue.repo+'#'+prerequisite.number)||[]).filter(entry=>['chip','card'].includes(entry.kind));
+  const candidates=(issueEntries.get(issueKeyFromUrl(prerequisite.html_url))||[]).filter(entry=>['chip','card'].includes(entry.kind));
   if(!candidates.length)continue;
   const choices=candidates.filter(entry=>selected.has(entry.id+'>'+target.id));
   if(choices.length>1||(!choices.length&&candidates.length>1))throw Error('Select one component variant for '+target.id+' prerequisite #'+prerequisite.number);
