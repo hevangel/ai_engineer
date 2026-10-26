@@ -1389,5 +1389,77 @@
     "changes": "Supplied JPEG downloaded unchanged; displayed with contain sizing.",
     "representative": false,
     "curated": true
+  },
+  "software_system_kim1": {
+    "title": "File:KIM-1 single board computer.jpg",
+    "creator": "Maksym Kozlenko",
+    "credit": "Photograph by Maksym Kozlenko.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:KIM-1_single_board_computer.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/KIM-1_single_board_computer.jpg/960px-KIM-1_single_board_computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "software_system_trs80_model1": {
+    "title": "File:Tandy TRS-80 Model I.jpg",
+    "creator": "Prolete",
+    "credit": "Photograph by Prolete.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Tandy_TRS-80_Model_I.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Tandy_TRS-80_Model_I.jpg/960px-Tandy_TRS-80_Model_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "software_system_atari_800": {
+    "title": "File:Atari-800-Computer-FL.jpg",
+    "creator": "Evan-Amos",
+    "credit": "Photograph by Evan-Amos.",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Atari-800-Computer-FL.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Atari-800-Computer-FL.jpg/960px-Atari-800-Computer-FL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "software_system_atari_5200": {
+    "title": "File:Atari-5200-4-Port-wController-L.jpg",
+    "creator": "Evan-Amos",
+    "credit": "Photograph by Evan-Amos.",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Atari-5200-4-Port-wController-L.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Atari-5200-4-Port-wController-L.jpg/960px-Atari-5200-4-Port-wController-L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "software_system_atari_7800": {
+    "title": "File:Atari-7800-wControl-Pad-L.jpg",
+    "creator": "Evan-Amos",
+    "credit": "Photograph by Evan-Amos.",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Atari-7800-wControl-Pad-L.jpg/960px-Atari-7800-wControl-Pad-L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
+  },
+  "software_system_atari_st": {
+    "title": "File:Atari 520ST Tietokonemuseo.JPG",
+    "creator": "MKFI",
+    "credit": "Photograph by MKFI.",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Atari_520ST_Tietokonemuseo.JPG",
+    "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Atari_520ST_Tietokonemuseo.JPG/960px-Atari_520ST_Tietokonemuseo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "changes": "Downscaled to 960 px wide by Wikimedia Commons; displayed with contain sizing.",
+    "representative": true,
+    "curated": true
   }
 }
