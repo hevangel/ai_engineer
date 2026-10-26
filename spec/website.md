@@ -13,7 +13,7 @@ Read [timeline.md](timeline.md) for the data contracts and [scripts/README.md](.
 
 ## Architecture and data flow
 
-The site is plain HTML, CSS and browser JavaScript, with no package installation or build step. `index.html` supplies the semantic page shell and controls; `assets/timeline.css` supplies the responsive layout; `assets/timeline.js` fetches the following tracked JSON files and renders the archive in the browser:
+The site is plain HTML, CSS and browser JavaScript, with no package installation. The checked-in `index.html` is generated from `templates/index.html` and `data/ui.json` by `node scripts/render-site.mjs`; serving the checkout needs no build. It supplies the semantic page shell and controls; `assets/timeline.css` supplies the responsive layout; `assets/timeline.js` fetches the following tracked JSON files and renders the archive in the browser:
 
 | File | Responsibility |
 | --- | --- |
@@ -22,8 +22,12 @@ The site is plain HTML, CSS and browser JavaScript, with no package installation
 | `data/connections.json` | Generated chip/card-to-computer links from native GitHub prerequisites and curated options |
 | `data/component-profiles.json` | Explicit device variants for shared canonical issues and later reconstruction components; consumed during connection sync |
 | `data/system-options.json` | Curated planned chip and expansion-card configurations, separate from required hardware |
-| `data/stages.json` | Stage/build labels, icons, colors and legend explanations |
-| `images/credits.json` | Attribution, source, license and representative-image information keyed by catalog entry ID |
+| `data/stages.json` | Stage/build labels, stage and build icons (SVG shape lists), colors and legend explanations |
+| `data/software.json` | Software view: computers, layers, categories and the 42 Rust rewrite titles with dependency/lineage links and `ai_sw_engineer` issue references ([software_view.md](software_view.md)) |
+| `data/ui.json` | Page-shell copy and metadata, public source links, loading/error/no-script wording, and interface wording: filter tab and wire-legend labels, card, dialog and tooltip text, count and help messages, the status-guide footnote and the fallback status badge. Values may use `{name}` placeholders. |
+| `data/image-import.json` | Photo search selections, exclusions, fallback queries and generated attribution defaults |
+| `data/sync.json` | GitHub owner/project-stage mapping and exported connection/status metadata |
+| `data/photo-credits.json` | Attribution, source, license and representative-image information keyed by catalog entry ID |
 
 The flow is: GitHub issues/project -> local synchronization script -> reviewed `data/status.json` -> browser-rendered badges. Visitors read static files; their browsers do not call GitHub or receive authentication credentials. The checked-in snapshot is intentionally tracked public website content. Synchronization and publication are separate operations. GitHub Pages deploys when the `gh-pages` publishing branch changes; source-branch pushes do not release the site or refresh GitHub snapshots automatically.
 
@@ -34,10 +38,12 @@ This page presents the roadmap and evidence snapshot. Actual SV simulation, HDL 
 - Group entries into the catalog's 18-bit historical prelude and 4-bit, 8-bit, 16-bit and 32-bit era chapters, then by year. Maintain chronological order in the catalog; within a year render separate chip, expansion-card and computer sections in that order, so chips are physically above computers. Eras overlap historically and do not assert the word width of every pictured component.
 - Keep uncertain dates qualified with their sources. Read [timeline_dates.md](timeline_dates.md) before changing historical placement. `dateBasis` identifies an introduction, documented bound, preview, reported introduction or original system profile; `dateNote` supplies the expandable public qualification. A later manual printing is not a chip introduction date. For mixed families, anchor the earliest supported profile and identify later members explicitly. Use `year: null` and the `undated` era only when a supported date or bound has not been established. Check required chip-to-computer chronology; chips must precede their original hosts, with chips rendered above computers when years match. Later optional cards may legitimately follow an older host.
 - The left year rail scrolls to visible year groups and follows the page position. Preserve keyboard operation and sufficient scroll clearance beneath sticky controls on narrow screens.
-- Search, category, company and stage filters operate on the loaded JSON. SVG lines connect visible chip-family entries from the same company and connect chips/cards to computers using `data/connections.json`; redraw after filters or layout changes. Route maker lineage through the right gutter and chip-to-computer dependencies through the left gutter and shared expansion buses outside the maker lanes on the far right, using straight horizontal/vertical segments and 45-degree chamfered bends. Each chip/maker connection exits a hollow bottom pad and enters the next card through a hollow top pad; keep traces clear of photographs and text. Allocate distinct horizontal tracks per row and reuse a vertical lane only when its spans do not overlap. Give separate chip fan-out/fan-in wires separate pads; independent chip/maker paths never share a segment. Expansion cards intentionally share a per-computer bus trunk as specified below. Preserve gutters and pad alignment across responsive layouts. Wide all-system circuits may scroll horizontally within the diagram; selecting one computer reduces the wiring.
-- The Show wires master toggle hides all traces and pads and collapses their routing space. The connection controls also independently toggle maker and computer links. Solid traces mean maker lineage, dashed traces mean recorded required components and dotted traces mean planned chip/card options. The computer selector and per-computer trace button isolate a machine and its linked hardware. Draw a link only when both endpoints are visible. Never treat a planned card option as a factory-installed part or a POST prerequisite.
-- Render the stage, source-coverage and build-health badges at the lower right of each photograph. Populate the status guide from `data/stages.json`; never hard-code per-device statuses or percentages into HTML or presentation code.
-- Preserve per-photo attribution dialogs, descriptive alt text, reduced-motion behavior, visible keyboard focus, empty results, loading/error messages and the no-JavaScript links to the JSON files. Use text DOM APIs for external content rather than inserting untrusted HTML.
+- Search, category, company and stage filters operate on the loaded JSON. SVG lines connect visible chip-family entries from the same company and connect chips/cards to computers using `data/connections.json`; redraw after filters or layout changes. Route maker lineage through the right gutter and chip-to-computer dependencies through the left gutter (or directly through the gap when the computer occupies the immediately following rendered row) and shared expansion buses outside the maker lanes on the far right, using straight horizontal/vertical segments and 45-degree chamfered bends. Chip connections and maker links spanning rows exit a hollow bottom pad and enter through a hollow top pad; adjacent same-row maker links use facing side pads. Keep traces clear of photographs and text. Allocate distinct horizontal tracks per row and reuse a vertical lane only when its spans do not overlap. Give separate chip fan-out/fan-in wires separate pads; independent chip/maker paths never share a segment. Expansion cards share a family rail and row runs as specified below. Preserve gutters and pad alignment across responsive layouts. The archive uses the available window width. Card columns are chosen from space remaining after wire gutters, chapter padding and column gaps; reduce from three columns to two or one before requiring horizontal scrolling. Narrow circuits may scroll when one readable card plus its wire gutters cannot fit. Selecting one computer reduces the wiring.
+- Wires are always drawn; there is no master switch. The connection controls independently toggle maker and computer links, and with both off all traces and pads disappear and their routing space collapses. Solid traces mean maker lineage, dashed traces mean recorded required components and dotted traces mean planned chip/card options. The computer selector and the per-computer trace toggle isolate a machine and its linked hardware. Draw a link only when both endpoints are visible. Never treat a planned card option as a factory-installed part or a POST prerequisite.
+- Cards stay compact: photo with status badges, maker and kind, title, the one-line `summary` from the catalog, the issue link and, for computers, the trace toggle. The **i** button opens an info dialog about the hardware itself: maker and kind, summary, Date (`dateLabel` linked to `dateSource`) with Date evidence (`dateNote`, `historySources`) when present, chipset members, the roadmap issue, and finally a collapsed Photo credit section (image, creator, license, caption and the representative-photo warning, which is also named in the collapsed heading). Do not put date links, date evidence or photo captions back on the cards. All dialog wording comes from `data/ui.json`.
+- Stage icons are monochrome 24px stroke icons (`currentColor`, 1.75 stroke, round caps and joins, in the geometry of the ISC-licensed Lucide set, with a check added to the AI-verified robot), stored as `{viewBox, shapes}` in `data/stages.json`; the fallback status icon lives in `data/ui.json`. `assets/timeline.js` builds them with SVG DOM calls from an allowlist of shapes (`path`, `rect`, `circle`, `line`, `polyline`) and `scripts/check-site.mjs` validates them. The icons are decorative (`aria-hidden`); the badge carries the accessible label. Build-health badges use the same icon format (dashed circle unreported, check passing, cross failing) with colors from `builds[].color`; shapes may add `stroke-dasharray`. The source-coverage badge stays text.
+- Render the stage and build-health badges (no source-coverage percentage on the card) at the lower right of each photograph. Populate the status guide from `data/stages.json`; never hard-code per-device statuses or percentages into HTML or presentation code.
+- Preserve per-photo attribution (collapsed by default at the bottom of the info dialog), descriptive alt text, reduced-motion behavior, visible keyboard focus, empty results, loading/error messages and the no-JavaScript links to the JSON files. Use text DOM APIs for external content rather than inserting untrusted HTML. Page wording that the script generates (labels, tooltips, messages, legend entries) lives in `data/ui.json` and is read through `text('<path>')` in `assets/timeline.js`; add new wording there, not inline. The page shell and load-failure wording are generated from the same JSON, so they remain available before JavaScript or when JSON loading fails. Do not hand-edit generated HTML; regenerate after changing `ui.json` or the template. `check-site.mjs` rejects a stale shell. See [the content-data audit](content_data.md) for ownership and the boundary between editable content and code constants.
 
 ## Company colors
 
@@ -71,8 +77,8 @@ Use authenticated `gh` with repository issue access and the `project` scope for 
 ## Adding or updating timeline content
 
 1. Follow the [project manager instructions](project_manager.md) to identify or create the canonical issue and its dependencies. Creating an issue does not automatically add a timeline entry.
-2. Curate its `data/catalog.json` entry with a unique, stable ID, correct kind/company, historical source, qualified year/era and canonical issue reference. Keep the ID aligned across catalog, status snapshot and photo credits.
-3. Put the licensed photograph in `images/` and record its individual attribution in `images/credits.json`. The photo importer is a curation aid: inspect the actual model/revision and source license. Explicitly flag representative photos and describe what is actually pictured; do not substitute unrelated hardware.
+2. Curate its `data/catalog.json` entry with a unique, stable ID, correct kind/company, historical source, qualified year/era, canonical issue reference and a one-line `summary` (plain statement of what the part is, 100 characters or fewer; `check-site.mjs` enforces this). Keep the ID aligned across catalog, status snapshot and photo credits.
+3. Put the licensed photograph in `images/` and record its individual attribution in `data/photo-credits.json`. The photo importer is a curation aid: inspect the actual model/revision and source license. Explicitly flag representative photos and describe what is actually pictured; do not substitute unrelated hardware.
 4. Refresh the status and connection snapshots so the new ID receives a status record and recorded relationships. Do not invent verification or source percentages to make badges look complete.
 5. Keep this guide, the timeline specification and script documentation aligned when file contracts or commands change. Changing the stage vocabulary also requires updating the synchronization rules and their verification fixtures.
 
@@ -115,20 +121,28 @@ Official references: [publishing sources](https://docs.github.com/en/pages/getti
 
 Paired maker, chip-prerequisite and reconstruction wires support navigation in both directions. Shared card-bus navigation is described below. Clicking the half nearest one card, or that card's hollow pad, follows the wire to the opposite card. The tooltip names the destination. Previous/next follows displayed card order, including same-year chips and the older PDP-1 reconstruction exception. Filters stay unchanged, so only visible connected entries are destinations.
 
-Wire links are real fragment anchors to stable `hardware-<catalog-id>` card IDs. Tab reaches each wire half, Enter follows its named destination, and Arrow Up / Arrow Down jumps to the earlier / later endpoint in displayed order. Jumps focus and outline the destination card, keep it clear of the sticky toolbar and reveal it horizontally when necessary. Reduced-motion preferences disable smooth scrolling. Decorative SVG paths do not receive pointer input; narrow transparent stroke hit areas and hollow pads do, leaving card links and controls usable. Hiding wires removes the wire links, pads and help text from interaction.
+Wire links are real fragment anchors to stable `hardware-<catalog-id>` card IDs. Tab reaches each wire half, Enter follows its named destination, and the arrow keys or vim keys jump to the earlier / later endpoint in displayed order: ←/`h` and →/`l` on a maker wire, ↑/`k` and ↓/`j` on any chip, card or bus wire. The wire tooltip lists Enter and the keys for its axis. Jumps focus and outline the destination card, keep it clear of the sticky toolbar and reveal it horizontally when necessary. Reduced-motion preferences disable smooth scrolling. Decorative SVG paths do not receive pointer input; narrow transparent stroke hit areas and hollow pads do, leaving card links and controls usable. Hiding every layer removes the wire links, pads and help text from interaction.
+
+### Selected-card keyboard navigation
+
+With a card selected (focused, including after a click or a jump), `assets/card-navigation.js` moves to a neighboring rendered card; filters therefore limit destinations, and keys do nothing when there is no destination (arrow keys then keep their normal scrolling). Modified keys and text fields are ignored.
+
+| Keys | Move |
+| --- | --- |
+| ←/`h`, →/`l` | Previous / next chip from the same maker in displayed order (the maker family line). Computers and cards have no family line. |
+| ↓/`j` | From a chip, the nearest later computer it connects to. From a computer reached that way, the next computer of the same chip. |
+| ↑/`k` | From a computer, back to the chip it was reached from, otherwise its first required chip. From a chip, the nearest earlier computer (reconstruction exceptions only). |
+
+Run `node --test scripts/card-navigation.test.mjs` with the existing suite.
+
+### Trace button
+
+The per-computer **Trace N components** button is a toggle (`aria-pressed`). Pressing it isolates that computer and its components; pressing it again returns to the All computers overview and keeps the card in view.
 
 
 ## Shared expansion-card buses
 
-`catalog.buses` supplies bus labels/colors, and every expansion-card entry has a `bus` family ID. The existing card-to-system links in `data/connections.json` remain the authoritative membership and retain their evidence and required/optional distinctions. Rendering groups visible card links by **computer plus bus family**; it never joins independent computers or adds a compatible-looking card without a recorded link.
-
-Card links no longer use individual left-side paths. One shared vertical bus trunk sits on the far right, beyond all company lines, with a single system tap and taps for its cards. A hollow dot on each card/computer's right edge leaves horizontally. A rightmost card joins directly. When another card occupies the same row to its right, the stub turns in the column gap and runs below the complete row before joining the bus. Reserve distinct under-row tracks, with rightmost inner-card stubs above leftmost ones and vertically ordered ports, so stubs do not overlap each other or pass through cards. Filled trunk junction dots identify actual joins; crossings with unrelated nets are not junctions. Disjoint row spans can reuse bus lanes; overlapping trunks cannot.
-
-Bus colors and short labels are separate from manufacturer lineage. Required card taps stay dashed, planned options dotted, and the shared trunk solid. Grouping is a diagram of recorded configurations, not proof of simultaneous card fit or verified compatibility. The computer-link toggle controls chip links and buses; Show wires removes all buses, stubs, dots and navigation targets.
-
-Click a card's bus tap to jump to its computer. Click the bus trunk or the system tap to open the accessible connected-member chooser; each entry names the computer, required card or planned option and jumps to that card. Existing chip/maker wire navigation remains bidirectional. The bus chooser supports keyboard activation, Escape/close and destination focus. Layout and membership are recomputed after filters and viewport changes.
-
-Pure grouping, row-interval lane allocation and under-row geometry live in `assets/bus-layout.js`; run `node --test scripts/bus-layout.test.mjs` alongside the existing checks when changing bus routing.
+Use **one far-right rail per bus family**, with unique endpoint taps and one horizontal run per family on a row. Expansion-card paths leave from the bottom and run below their complete row; computer paths arrive from above the row into top pads. Left-hand cards turn into the shared run without crossing a neighboring card. Family/endpoint choosers preserve the exact recorded card-to-computer relationships and qualifications. A shared family rail is a diagram summary, not an electrical connection between machines or universal compatibility. Read [expansion_buses.md](expansion_buses.md) for data grouping, geometry, navigation and checks.
 
 
 ## Compatible CPU alternatives
@@ -147,6 +161,32 @@ See [chipset cards](chipsets.md) for one-card member lists, canonical family iss
 
 ## Focused wire overview
 
-The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Show wires remains the master. See [focused wire behavior](focused_wires.md).
+The page starts with maker lineage only. Selecting a computer enables its component wires and hides maker lineage; returning to All computers restores the overview. **All computer links** explicitly restores the full diagram. Wires are always drawn; Maker lineage and All computer links choose the layers. See [focused wire behavior](focused_wires.md).
 
 The connection legend shows only layers currently drawn. Summary counts omit empty layers, and maker-only navigation help omits the bus chooser instructions.
+
+## Window-fit layout
+
+`assets/timeline-layout.js` computes minimum board widths including card minimums, actual gaps and chapter padding. Wire drawing starts with up to three columns, allocates lanes and reruns with fewer columns if the complete board would overflow; at most three passes, decreasing within a draw. The archive has no 1,440px cap. Keep `overflow-x: auto` for genuinely narrow diagrams; do not hide or clip off-screen wires. All paths, ports and under-row card stubs are recalculated after columns change. Empty results reserve no board width. Verify wide full-wire and focused views, threshold resizing, narrow screens and the layer toggles. Run `node --test scripts/timeline-layout.test.mjs` with the existing suite.
+
+## Direct maker links within a row
+
+Adjacent same-row chips from the same company connect horizontally across their gap using side pads. Other maker links keep right-gutter bottom/top routing. Recompute adjacency after filters and column changes; never cross another card. [Ordering, geometry and checks](maker_row_links.md).
+
+## Direct chip links between consecutive rows
+
+`assets/component-layout.js` identifies chip-to-computer required/planned links whose endpoints occupy consecutive rendered hardware rows. Connect the chip's bottom pad to the computer's top pad through the clear gap, using one horizontal run and 45-degree bends when the columns differ, or a vertical segment when aligned. This covers MCS-4 → Busicom 141-PF without a left-gutter detour. Place local arrival pads toward the right of the computer top edge, separate from expansion-bus taps, so their descending stubs clear the left-aligned row heading. Keep distinct endpoint pads and row-track spacing; these short links reserve no vertical gutter lane. Recompute after filters and column changes. Longer links, reconstruction exceptions, compatible CPU trunks and expansion buses retain their own routing. Preserve both navigation directions and use rectangular hit areas for axis-aligned segments. Run `node --test scripts/component-layout.test.mjs` with the existing suite; inspect full, focused and narrow layouts, the Am9300 → Am25xx same-row link, and wire visibility.
+
+## Toolbar totals and navigation help
+
+The second toolbar row groups Maker lineage, computer links and the computer selector on the left, with the live connection totals aligned to the right. Totals wrap within that row when space is limited. The displayed entry count is right-aligned on the archive caption row. After the company-color legend, show one navigation paragraph with a bold heading. Its consolidated wording comes from `wires.navigationHeading` and `wires.help` in `data/ui.json`; avoid repeating separate wire/card keyboard instructions. Keep `wire-help` as the SVG's accessible description, hide the guide when no links are drawn, and preserve its heading when updating the text.
+
+## Photos still needed
+
+Use the catalog's explicit `image.status: "needed"` state for unsourced photographs. `appendPhoto` renders a labeled panel and `photoCredit` renders the explanation and qualified research links, all with wording from `data/ui.json`. Keep the photo area's aspect ratio, info button, source/build/stage badges and connection pads. Do not mark this as a representative photo or attach another chip's attribution. See [the image contract](timeline.md#verified-and-unsourced-photographs) and [AMD photo audit](amd_photos.md).
+
+## Chip-series member cards
+
+A catalog `series.members` list groups independent chips under one canonical family issue/card. It is distinct from `chipset.members`, which records a board-level chipset. The info dialog shows each series member’s function and qualified date/source; search includes all member names. AMD Am25xx uses issue #5 and stable entry ID `amd_am2501`, with Am2501 and Am2505 as its initial members. Its single locally stored Am2501DC picture is explicitly identified; it does not depict the Am2505.
+
+Every displayed photo must use a tracked relative `images/` path. Source links remain attribution only. An explicitly user-supplied image outside Commons must have a matching `data/image-import.json` registration and honest rights metadata in its credit; an unspecified license is not a Creative Commons license. The supplied Am2501 image is stored locally as `images/amd_am25xx_package.jpg`.

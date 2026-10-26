@@ -6,9 +6,11 @@ export function groupExpansionBuses(links, entries, visible, definitions){
   if(card?.kind!=='card'||!visible.has(link.source)||!visible.has(link.target))continue;
   const definition=definitions[card.bus];
   if(!definition||entries.get(link.target)?.kind!=='system')throw Error('Missing expansion bus profile: '+card.id);
-  const id=link.target+'--'+card.bus;
-  if(!groups.has(id))groups.set(id,{id,system:link.target,family:card.bus,...definition,links:[]});
-  groups.get(id).links.push(link);
+  const id=card.bus;
+  if(!groups.has(id))groups.set(id,{id,kind:'expansion',family:card.bus,...definition,links:[],cards:[],systems:[]});
+  const bus=groups.get(id);bus.links.push(link);
+  if(!bus.cards.includes(link.source))bus.cards.push(link.source);
+  if(!bus.systems.includes(link.target))bus.systems.push(link.target);
  }
  return [...groups.values()];
 }
@@ -28,9 +30,22 @@ export function allocateBusLanes(buses, rowById){
  return occupied.length;
 }
 
-export function busBranchPoints(port,lane,underY=null,turnX=null,bend=3){
- if(underY===null)return [[port.x,port.y],[lane,port.y]];
- if(!(turnX>port.x&&lane>turnX&&underY>port.y))throw Error('Invalid under-row bus route');
- const chamfer=Math.min(bend,(turnX-port.x)/2,(underY-port.y)/2,(lane-turnX)/2);
- return [[port.x,port.y],[turnX-chamfer,port.y],[turnX,port.y+chamfer],[turnX,underY-chamfer],[turnX+chamfer,underY],[lane,underY]];
+// One horizontal run per family and direction on a row, rightmost family nearest cards.
+export function groupBusRowRuns(branches){
+ const groups=new Map();
+ for(const branch of branches){
+  const key=branch.bus.id+'--'+branch.role;
+  if(!groups.has(key))groups.set(key,{bus:branch.bus,role:branch.role,branches:[]});
+  groups.get(key).branches.push(branch);
+ }
+ const runs=[...groups.values()].sort((a,b)=>Math.max(...b.branches.map(x=>x.column))-Math.max(...a.branches.map(x=>x.column))||a.bus.id.localeCompare(b.bus.id));
+ for(const role of ['card','system'])runs.filter(run=>run.role===role).forEach((run,track)=>{run.track=track;});
+ return runs;
+}
+
+// Cards leave below the complete row; computer paths arrive from above it.
+export function busTapPoints(port,barY,role,bend=6){
+ if(!['card','system'].includes(role)||(role==='card'?barY<=port.y:barY>=port.y))throw Error('Invalid bus tap direction');
+ const chamfer=Math.min(bend,Math.abs(barY-port.y)/2);
+ return role==='card'?[[port.x,port.y],[port.x,barY-chamfer],[port.x+chamfer,barY]]:[[port.x+chamfer,barY],[port.x,barY+chamfer],[port.x,port.y]];
 }

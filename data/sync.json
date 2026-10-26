@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "githubOwner": "hevangel",
+  "projectStages": {
+    "In progress": "building"
+  },
+  "connectionsSource": "Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives",
+  "nativeDependencyNote": "Recorded native completion dependency; exact board inventory remains subject to source qualification.",
+  "statusSource": "GitHub public issues",
+  "projectSourceSuffix": " and selected project statuses"
+}

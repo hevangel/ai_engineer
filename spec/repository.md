@@ -4,7 +4,7 @@
 
 This repository is the public-facing static website and integrated presentation for the AI engineering projects. It is the superset of the `ai_*` projects and HDL Workbench: visitors should be able to understand the work as one connected effort across hardware, software, and HDL tooling.
 
-The website and its shared presentation belong at this repository root. The three projects remain independent Git repositories, pinned as submodules. Their code, detailed project documentation, engineering history, and reports remain owned by their respective repositories.
+The website and its shared presentation belong at this repository root. The component projects remain independent Git repositories, pinned as submodules. Their code, detailed project documentation, engineering history, and reports remain owned by their respective repositories.
 
 ## Authorship
 
@@ -25,6 +25,7 @@ All changes to this repository are made by AI coding agents. Humans do not edit 
 | `ai_hw_engineer/` | Hardware designs, RTL, verification, and virtual systems |
 | `ai_sw_engineer/` | Software reimplementations, Rust, LLVM backends, and target systems |
 | `hdl-workbench/` | Browser-based HDL workbench and its implementation |
+| `e1647-rs/` | Experimental IEEE 1647 e-language Rust tooling, tokenizer and future language/simulator integration |
 | `spec/` | Repository governance, website maintenance, cross-project roadmap, project manager instructions and dependency inventory |
 | `.gitmodules` | Canonical submodule URLs; the root Git tree pins each submodule commit |
 

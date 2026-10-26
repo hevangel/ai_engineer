@@ -19,8 +19,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | Key | Issue | Kind | Blocked by |
 | --- | --- | --- | --- |
 | ttl_74_series | [[Chip] 74-series logic](https://github.com/hevangel/ai_engineer/issues/4) | chip | — |
-| amd_am2501 | [[Chip] amd am2501](https://github.com/hevangel/ai_engineer/issues/5) | chip | — |
-| amd_am2505 | [[Chip] amd am2505](https://github.com/hevangel/ai_engineer/issues/6) | chip | — |
+| amd_am2501 (Am25xx series) | [[Chip] AMD Am25xx series](https://github.com/hevangel/ai_engineer/issues/5) | chip | — |
 | amd_am29xx | [[Chip] AMD Am29xx series](https://github.com/hevangel/ai_engineer/issues/7) | chip | — |
 | amd_am3101 | [[Chip] amd am3101](https://github.com/hevangel/ai_engineer/issues/8) | chip | — |
 | amd_am9080 | [[Chip] amd am9080](https://github.com/hevangel/ai_engineer/issues/9) | chip | — |
@@ -125,9 +124,9 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | software_snes | [[Software] Super Nintendo — Rust firmware, OS and application reconstruction](https://github.com/hevangel/ai_engineer/issues/102) | software | [#59](https://github.com/hevangel/ai_engineer/issues/59), [#101](https://github.com/hevangel/ai_engineer/issues/101) |
 | fpga_snes | [[FPGA System] Super Nintendo — board selection and physical reconstruction](https://github.com/hevangel/ai_engineer/issues/103) | fpga | [#53](https://github.com/hevangel/ai_engineer/issues/53), [#101](https://github.com/hevangel/ai_engineer/issues/101) |
 | publication | [[Site] Publish the integrated reconstruction catalog and evidence](https://github.com/hevangel/ai_engineer/issues/104) | site | [#55](https://github.com/hevangel/ai_engineer/issues/55) |
-| eda_xezim | [[EDA] Xezim — maintain working simulator integration and qualify upgrades](https://github.com/hevangel/ai_engineer/issues/110) | tooling | — |
-| eda_surfer | [[EDA] Surfer — maintain working waveform integration and qualify upgrades](https://github.com/hevangel/ai_engineer/issues/111) | tooling | — |
-| eda_workbench | [[EDA] HDL Workbench — sustain the working Xezim and Surfer integration](https://github.com/hevangel/ai_engineer/issues/112) | tooling | [#110](https://github.com/hevangel/ai_engineer/issues/110), [#111](https://github.com/hevangel/ai_engineer/issues/111) |
+| eda_xezim | [[EDA] Xezim — maintain working simulator integration and qualify upgrades](https://github.com/hevangel/ai_hw_engineer/issues/69) | tooling | — |
+| eda_surfer | [[EDA] Surfer — maintain working waveform integration and qualify upgrades](https://github.com/hevangel/ai_hw_engineer/issues/68) | tooling | — |
+| eda_workbench | [[EDA] HDL Workbench — sustain the working Xezim and Surfer integration](https://github.com/hevangel/ai_engineer/issues/112) | tooling | [ai_hw_engineer#69](https://github.com/hevangel/ai_hw_engineer/issues/69), [ai_hw_engineer#68](https://github.com/hevangel/ai_hw_engineer/issues/68) |
 | intel_80386 | [[Chip] Intel 80386 family — DX and SX](https://github.com/hevangel/ai_engineer/issues/116) | chip | — |
 | intel_80287 | [[Chip] Intel 80287 family — numeric coprocessors](https://github.com/hevangel/ai_engineer/issues/113) | chip | — |
 | intel_80387 | [[Chip] Intel 80387 family — DX and SX coprocessors](https://github.com/hevangel/ai_engineer/issues/115) | chip | — |
@@ -276,3 +275,11 @@ The IBM/AMD table includes the retained Model 25 SX issue identities and all new
 - [[Chipset] CHIPS NEAT CS8221 — 82C211 / 82C212 / 82C215 / 82C206](https://github.com/hevangel/ai_engineer/issues/204): 82C211, 82C212, 82C215, 82C206; Todo / Chips, one public card.
 
 See [chipsets.md](chipsets.md). No factory-board links are inferred from AT compatibility.
+
+## Am25xx series consolidation
+
+Issue #5 is the sole active Am25xx series tracker and maps to one timeline card with Am2501 and Am2505 member records. Former issue [#6](https://github.com/hevangel/ai_engineer/issues/6) is closed as superseded (not implemented) and its project item is archived. Neither issue had native blocked-by or blocking edges to transfer. The stable catalog ID `amd_am2501` is retained; its public title is AMD Am25xx series, and its earliest documented member anchors the card to 1970. Am2505 retains its documented-by-1971 qualification in the member ledger.
+
+## Compatible and optional configuration follow-up
+
+The complete qualification tracker inventory is maintained in [data/option-issues.json](../data/option-issues.json). There is one tracker for each curated compatible CPU profile and each optional card/coprocessor–host pair. Original CPU issues block CPU-alternative qualification; computer issues block optional configuration acceptance. Existing canonical chip/card issues remain the implementation inventory. Run the read-only `sync-option-issues.mjs` check to compare this inventory with native GitHub blockers and project membership.

@@ -6,6 +6,7 @@ import {execFileSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=async name=>JSON.parse(await fs.readFile(path.join(root,name),'utf8'));
 const catalog=await read('data/catalog.json');
+const syncConfig=await read('data/sync.json');
 const options=await read('data/system-options.json');
 const profiles=await read('data/component-profiles.json');
 const compatible=await read('data/compatible-chips.json');
@@ -25,7 +26,7 @@ for(const target of catalog.entries.filter(e=>e.kind==='system')){
   if(choices.length>1||(!choices.length&&candidates.length>1))throw Error('Select one component variant for '+target.id+' prerequisite #'+prerequisite.number);
   const source=choices[0]||candidates[0],key=source.id+'>'+target.id,profile=selected.get(key);
   if(profile)used.add(key);
-  links.push({source:source.id,target:target.id,type:'required',evidence:profile?.evidence||target.issue.url,note:profile?.note||'Recorded native completion dependency; exact board inventory remains subject to source qualification.',...(profile?{basis:profile.basis}:{})});
+  links.push({source:source.id,target:target.id,type:'required',evidence:profile?.evidence||target.issue.url,note:profile?.note||syncConfig.nativeDependencyNote,...(profile?{basis:profile.basis}:{})});
  }
 }
 for(const key of selected.keys())if(!used.has(key))throw Error('Component profile has no matching native dependency: '+key);
@@ -35,7 +36,7 @@ for(const option of options.links){
  if(!links.some(link=>link.source===option.source&&link.target===option.target))links.push({...option,type:'optional'});
 }
 const expanded=expandCompatibleConnections(links,compatible,entries);
-const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:'Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives',links:expanded};
+const result={schemaVersion:1,syncedAt:new Date().toISOString(),source:syncConfig.connectionsSource,links:expanded};
 const dest=path.join(root,'data/connections.json'),temp=dest+'.tmp';
 try{await fs.writeFile(temp,JSON.stringify(result,null,2)+'\n');await fs.rename(temp,dest);}catch(error){await fs.rm(temp,{force:true});throw error;}
 console.log(`Synced ${links.filter(l=>l.type==='required').length} recorded component dependencies and ${links.filter(l=>l.type==='optional').length} planned chip/card options.`);

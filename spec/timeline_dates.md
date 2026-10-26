@@ -85,3 +85,7 @@ The distinct Intel 8088 timeline profile is anchored to 1979 by [Intel's histori
 ## Support chipsets
 
 Intel 82230/82231: **Documented by 1988**, Intel 240017-002, August 1988, printed 4-667 / PDF 1185. CHIPS NEAT CS8221: **Documented by 1987**, data-book opening pages, 10/87 Rev 0. [Sources and scope](chipsets.md). Photos show representative members and do not establish first shipments or exact board fit.
+
+## Early AMD within-year order
+
+Am9300 precedes the combined Am25xx series card, anchored by its Am2501 member. Retain both existing 1970 documentation bounds and place Am9300 first in catalog order; no precise introduction month/day is inferred. See [direct maker links](maker_row_links.md).

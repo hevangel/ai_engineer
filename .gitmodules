@@ -10,3 +10,6 @@
 [submodule "ai_fpga_engineer"]
 	path = ai_fpga_engineer
 	url = https://github.com/hevangel/ai_fpga_engineer.git
+[submodule "e1647-rs"]
+	path = e1647-rs
+	url = https://github.com/hevangel/e1647-rs.git
