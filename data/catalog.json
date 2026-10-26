@@ -1405,9 +1405,9 @@
       "era": "16",
       "query": "File:KL Intel 80286 CLCC Top.jpg",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 20,
-        "url": "https://github.com/hevangel/ai_engineer/issues/20"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 80,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/80"
       },
       "image": {
         "src": "images/intel_80286_package.jpg",
@@ -3160,6 +3160,41 @@
         "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
       },
       "summary": "IBM PS/2 Model 56 with the IBM 386SLC CPU"
+    },
+    {
+      "id": "system_scelbi_8b",
+      "title": "SCELBI 8B",
+      "kind": "system",
+      "company": "other",
+      "year": 1975,
+      "era": "8",
+      "dateBasis": "reported",
+      "dateLabel": "Circa 1975 · SCELBI 8B profile",
+      "dateSource": "https://github.com/simh/simh/blob/master/Intel-Systems/scelbi/scelbi.txt",
+      "dateNote": "SIMH describes its 16 KiB SCELBI-8B profile as from about 1975. The 1974 SCELBI-8H announcement is a different model; no exact 8B launch month is asserted.",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 86,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/86"
+      },
+      "summary": "Intel 8008 computer with 16 KiB RAM, serial teletype and SCELBAL BASIC",
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "SCELBI 8B model and console reference",
+            "url": "https://github.com/simh/simh/blob/master/Intel-Systems/scelbi/scelbi.txt",
+            "note": "Model documentation and photo research lead only; no exact reuse-cleared 8B photograph has been selected."
+          }
+        ]
+      },
+      "historySources": [
+        {
+          "url": "https://github.com/hevangel/ai_hw_engineer/pull/65",
+          "note": "Existing unmerged SV implementation; does not establish Rust/WASM, waveform or FPGA completion."
+        }
+      ]
     }
   ],
   "buses": {

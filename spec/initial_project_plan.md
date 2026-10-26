@@ -283,3 +283,17 @@ Issue #5 is the sole active Am25xx series tracker and maps to one timeline card 
 ## Compatible and optional configuration follow-up
 
 The complete qualification tracker inventory is maintained in [data/option-issues.json](../data/option-issues.json). There is one tracker for each curated compatible CPU profile and each optional card/coprocessor–host pair. Original CPU issues block CPU-alternative qualification; computer issues block optional configuration acceptance. Existing canonical chip/card issues remain the implementation inventory. Run the read-only `sync-option-issues.mjs` check to compare this inventory with native GitHub blockers and project membership.
+
+
+## SCELBI 8B roadmap addition
+
+The approximately 1975 16 KiB 8008 SCELBI 8B is distinct from the 1974 8H. https://github.com/simh/simh/blob/master/Intel-Systems/scelbi/scelbi.txt describes the selected profile.
+
+- system: https://github.com/hevangel/ai_hw_engineer/issues/86
+- software: https://github.com/hevangel/ai_engineer/issues/343
+- emulator: https://github.com/hevangel/ai_sw_engineer/issues/118
+- compiler: https://github.com/hevangel/ai_sw_engineer/issues/119
+- frontend: https://github.com/hevangel/ai_sw_engineer/issues/120
+- fpga: https://github.com/hevangel/ai_engineer/issues/344
+
+Existing SV work is unmerged in hardware PR #65 at commit `49c1bf6e7e4f4b423b26bd14ec20b0147428e09e`, path `ai_hw_engineer/system/scelbi_8b`. System status Building reflects partial implementation, not complete verification. Historical reports were inspected, not rerun. LET hangs, missing waveform/screenshots, paper tape and supplements remain explicit. Other tracks are Planned. Software depends on the compiler profile; existing emulators may be used without waiting for the Rust emulator/frontend. The frontend defaults to Rust/WASM with optional Xezim SV signal inspection. No exact licensed photograph was selected; the timeline uses Photo needed.

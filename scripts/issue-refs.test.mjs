@@ -15,3 +15,11 @@ test('active ownership requires status, owner-relative path and a retained first
  assert.doesNotThrow(()=>validateActiveFields({status:'Planned'},'hevangel/ai_hw_engineer',agents,statuses));
  assert.doesNotThrow(()=>validateActiveFields({...item,agent:undefined,status:'AI verified'},'hevangel/ai_hw_engineer',agents,statuses));
 });
+
+import {issueKeyFromUrl} from './issue-refs.mjs';
+test('dependency keys retain the prerequisite repository across transfers',()=>{
+ assert.equal(issueKeyFromUrl('https://github.com/hevangel/ai_engineer/issues/18'),'hevangel/ai_engineer#18');
+ assert.equal(issueKeyFromUrl('https://github.com/hevangel/ai_hw_engineer/issues/80'),'hevangel/ai_hw_engineer#80');
+ assert.notEqual(issueKeyFromUrl('https://github.com/hevangel/ai_hw_engineer/issues/18'),issueKeyFromUrl('https://github.com/hevangel/ai_engineer/issues/18'));
+ assert.throws(()=>issueKeyFromUrl('https://example.com/hevangel/ai_engineer/issues/18'));
+});

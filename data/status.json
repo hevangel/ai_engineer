@@ -1072,7 +1072,7 @@
       "issueState": "open",
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T01:26:19Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/20"
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/80"
     },
     "intel_80287": {
       "stage": "planned",
@@ -2480,6 +2480,27 @@
       "projectStatus": "Todo",
       "updatedAt": "2026-10-24T13:26:59Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/199"
+    },
+    "system_scelbi_8b": {
+      "stage": "building",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": "Building",
+      "updatedAt": "2026-10-26T07:33:22Z",
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/86"
     }
   }
 }

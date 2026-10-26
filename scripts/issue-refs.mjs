@@ -21,3 +21,9 @@ export function validateActiveFields(item, repository, allowedAgents, allowedSta
   if(!/^\d{4}-\d{2}-\d{2}$/.test(item['start date']||''))throw Error('Missing first Start date');
  }
 }
+
+export function issueKeyFromUrl(value) {
+ const url=new URL(value),match=url.pathname.match(/^\/([-.\w]+\/[-.\w]+)\/issues\/(\d+)$/);
+ if(url.protocol!=='https:'||url.hostname!=='github.com'||!match)throw Error('Invalid GitHub issue URL');
+ return issueKey({repo:match[1],number:Number(match[2])});
+}
