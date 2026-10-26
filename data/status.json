@@ -3362,6 +3362,153 @@
       "projectStatus": null,
       "updatedAt": "2026-10-26T08:17:52Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/162"
+    },
+    "zilog_z80": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:03:33Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/347"
+    },
+    "system_kim1": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:03:37Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/349"
+    },
+    "system_trs80_model1": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:03:48Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/352"
+    },
+    "system_atari_800": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:04:00Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/355"
+    },
+    "system_atari_5200": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:04:11Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/358"
+    },
+    "system_atari_st": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:04:33Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/364"
+    },
+    "system_atari_7800": {
+      "stage": "planned",
+      "coverage": {
+        "collected": null,
+        "cleaned": null,
+        "total": null,
+        "percent": null
+      },
+      "build": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "verification": {
+        "ai": null,
+        "human": null
+      },
+      "issueState": "open",
+      "projectStatus": null,
+      "updatedAt": "2026-10-26T14:04:22Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/361"
     }
   }
 }
