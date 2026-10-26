@@ -31,3 +31,5 @@ See [shared bus-family rails](expansion_buses.md) for unique card/computer taps,
 ## Direct maker links within a row
 
 Adjacent same-row chips from the same company connect horizontally across their gap using side pads. Other maker links keep right-gutter bottom/top routing. Recompute adjacency after filters and column changes; never cross another card. [Ordering, geometry and checks](maker_row_links.md).
+
+- [Timeline issue coverage](timeline_coverage.md): read-only live issue discovery, grouped/configuration coverage, documented exclusions and drift reporting.

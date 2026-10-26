@@ -42,3 +42,8 @@ All editable website data and copy belong under `data/`. `ui.json` supplies runt
 
 
 The GitHub hierarchy checker uses repository-qualified issue keys after transfers and checks active Status, `<repo>/<path>` Path and the preserved first Start date. The live EDA baseline evidence and remaining review scope are in [the tooling plan](../spec/eda_tools.md). `node --test scripts/issue-refs.test.mjs` covers number collisions across repositories and active lifecycle fields.
+
+
+## Complete timeline issue coverage
+
+Run `node scripts/check-timeline-issues.mjs` to compare every typed hardware/software issue in the configured repositories with timeline cards, grouped chip members, optional/compatible configurations and exact documented coordination exclusions. `--json` emits a structured report; nonzero means drift or an incomplete/failed check. It is read-only and requires no Project GraphQL scope. See [coverage policy, limitations and offline replay](../spec/timeline_coverage.md). Run `node --test scripts/timeline-coverage.test.mjs` for regression coverage. Unlike a status refresh, this check discovers new typed issues absent from the catalogs.

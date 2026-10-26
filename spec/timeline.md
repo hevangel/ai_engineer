@@ -148,3 +148,8 @@ The early AMD audit and source decisions are in [amd_photos.md](amd_photos.md). 
 The MCS-4 card uses a closed Intel C4004 package. The 6502, Motorola 6809/68000, Intel 8087/80286/80287 and AMD 80186-family cards also use visually inspected package photographs, with the photographed variants named in their JSON captions and individual credits. Exact-file importer selections and `requireExact` protect these choices from reverting to die photos. Package markings and photo dates do not replace the historical date sources.
 
 A coherent chip series may have `series.members`, each with `part`, `role`, a qualified `year` and HTTPS `source`. Keep one card and issue for that series; anchor its year to the earliest documented member, and expose later member dates in the info dialog. This is not a claim that independent series members form a motherboard chipset or are interchangeable. The Am25xx consolidation retains stable entry ID `amd_am2501` and removes the separate Am2505 card.
+
+
+## Issue coverage audit
+
+Run `node scripts/check-timeline-issues.mjs` to discover typed GitHub issues missing from the hardware/software timeline or an explicit grouped/configuration/exclusion representation. It also reports stale issue/status references, open/closed state and type mismatches. It is read-only; do not create unsourced dates/photos or verification claims to satisfy it. See [coverage policy and limits](timeline_coverage.md).
