@@ -24,6 +24,10 @@ Motherboard chipsets appear as one card listing their cooperating member chips. 
 
 Click a hardware title to open its GitHub issue. The photo information button opens its source and license. Representative photos, later revisions and uncertain historical dates are labeled.
 
+## The software view
+
+The **Hardware / Software** switch in the top right opens the software view: each computer on the left, followed by its operating systems, drivers, firmware and software (grouped by category), joined by dependency and lineage arrows. Every title is a plan to download the original, reverse engineer it with [REA](https://github.com/morluto/rea), rewrite it in Rust and prove it identical on both an open-source emulator and our Rust emulator. Details are in [spec/software_view.md](spec/software_view.md).
+
 ## What we are rebuilding
 
 The current roadmap covers classic chip families and systems through **Intel 386DX/SX, IBM 386SLC, AMD Am386 and Motorola 68030 Macintosh** machines. It includes the earlier Intel and MOS generations, Apple II and Macintosh systems, IBM PCs and PS/2s, selected arcade and console hardware, and a planned **18-bit PDP-1 reconstruction using Am29xx**.

@@ -85,6 +85,10 @@
     "chips": {
       "name": "CHIPS & Technologies",
       "color": "#355DA4"
+    },
+    "tandy": {
+      "name": "Tandy / Radio Shack",
+      "color": "#9c4a1a"
     }
   },
   "eras": [
@@ -3160,6 +3164,181 @@
         "caption": "IBM PS/2E above a Model 56 and Model 30-286; the Model 56 SLC planar revision is unconfirmed."
       },
       "summary": "IBM PS/2 Model 56 with the IBM 386SLC CPU"
+    },
+    {
+      "id": "zilog_z80",
+      "title": "Zilog Z80",
+      "kind": "chip",
+      "company": "zilog",
+      "year": 1976,
+      "dateLabel": "1976",
+      "dateSource": "https://en.wikipedia.org/wiki/Zilog_Z80",
+      "era": "8",
+      "query": "Zilog Z80",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 347,
+        "url": "https://github.com/hevangel/ai_engineer/issues/347"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "Wikimedia Commons Zilog Z80 category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Zilog_Z80",
+            "note": "Candidate source only; file identity, license and attribution must be verified before use."
+          }
+        ]
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "8080-compatible 8-bit CPU with extra registers and block instructions"
+    },
+    {
+      "id": "system_kim1",
+      "title": "MOS KIM-1",
+      "kind": "system",
+      "company": "mos",
+      "year": 1976,
+      "dateLabel": "1976",
+      "dateSource": "https://en.wikipedia.org/wiki/KIM-1",
+      "era": "8",
+      "query": "MOS KIM-1",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 349,
+        "url": "https://github.com/hevangel/ai_engineer/issues/349"
+      },
+      "image": {
+        "src": "images/system_kim1.jpg",
+        "alt": "KIM-1 single board computer, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:KIM-1_single_board_computer.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "summary": "MOS Technology's 1976 single-board 6502 trainer with hex keypad and LED display"
+    },
+    {
+      "id": "system_trs80_model1",
+      "title": "TRS-80 Model I",
+      "kind": "system",
+      "company": "tandy",
+      "year": 1977,
+      "dateLabel": "1977",
+      "dateSource": "https://en.wikipedia.org/wiki/TRS-80",
+      "era": "8",
+      "query": "TRS-80 Model I",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 352,
+        "url": "https://github.com/hevangel/ai_engineer/issues/352"
+      },
+      "image": {
+        "src": "images/system_trs80_model1.jpg",
+        "alt": "Tandy TRS-80 Model I, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Tandy_TRS-80_Model_I.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "summary": "Tandy's 1977 Z80 home computer with built-in keyboard and cassette interface"
+    },
+    {
+      "id": "system_atari_800",
+      "title": "Atari 400/800",
+      "kind": "system",
+      "company": "atari",
+      "year": 1979,
+      "dateLabel": "1979",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_8-bit_computers",
+      "era": "16",
+      "query": "Atari 400/800",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 355,
+        "url": "https://github.com/hevangel/ai_engineer/issues/355"
+      },
+      "image": {
+        "src": "images/system_atari_800.jpg",
+        "alt": "Atari-800-Computer-FL, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-800-Computer-FL.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "summary": "Atari's 1979 home computers with custom ANTIC and GTIA graphics chips"
+    },
+    {
+      "id": "system_atari_5200",
+      "title": "Atari 5200",
+      "kind": "system",
+      "company": "atari",
+      "year": 1982,
+      "dateLabel": "1982",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_5200",
+      "era": "16",
+      "query": "Atari 5200",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 358,
+        "url": "https://github.com/hevangel/ai_engineer/issues/358"
+      },
+      "image": {
+        "src": "images/system_atari_5200.jpg",
+        "alt": "Atari-5200-4-Port-wController-L, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-5200-4-Port-wController-L.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "summary": "Atari's 1982 SuperSystem console, built from Atari 400/800 parts"
+    },
+    {
+      "id": "system_atari_st",
+      "title": "Atari ST",
+      "kind": "system",
+      "company": "atari",
+      "year": 1985,
+      "dateLabel": "1985",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_ST",
+      "era": "32",
+      "query": "Atari ST",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 364,
+        "url": "https://github.com/hevangel/ai_engineer/issues/364"
+      },
+      "image": {
+        "src": "images/system_atari_st.jpg",
+        "alt": "Atari 520ST Tietokonemuseo, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari_520ST_Tietokonemuseo.JPG",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "summary": "Atari's 1985 68000 home computer with the GEM desktop in ROM"
+    },
+    {
+      "id": "system_atari_7800",
+      "title": "Atari 7800",
+      "kind": "system",
+      "company": "atari",
+      "year": 1986,
+      "dateLabel": "1986 · U.S. nationwide release",
+      "dateSource": "https://en.wikipedia.org/wiki/Atari_7800",
+      "era": "32",
+      "query": "Atari 7800",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 361,
+        "url": "https://github.com/hevangel/ai_engineer/issues/361"
+      },
+      "image": {
+        "src": "images/system_atari_7800.jpg",
+        "alt": "Atari-7800-wControl-Pad-L, photographed for Wikimedia Commons",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-7800-wControl-Pad-L.jpg",
+        "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
+      },
+      "dateBasis": "introduced",
+      "dateNote": "Announced and test-marketed in 1984; the nationwide U.S. release followed in 1986.",
+      "summary": "Atari's 1986 ProSystem console with the MARIA graphics chip"
     },
     {
       "id": "system_scelbi_8b",
