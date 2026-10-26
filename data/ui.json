@@ -34,8 +34,6 @@
     "card"
   ],
   "card": {
-    "coverageUnreported": "Source coverage not reported",
-    "coverage": "{percent}% source coverage: {cleaned} cleaned of {total} defined items",
     "statusFallback": {
       "icon": {
         "viewBox": "0 0 24 24",
