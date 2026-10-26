@@ -114,3 +114,8 @@ Resolve IDs from live fields and item inventory; do not copy outdated values fro
 
 
 Run `node scripts/check-github-issues.mjs` to check the recorded family/member hierarchy, project fields/workstreams and Docker tool gates against live GitHub. It validates active Agent option names, but current ownership still requires task evidence and coordination. Read Path and Start date fields as part of every lifecycle transition.
+
+
+## Browser frontend stage issues
+
+Follow [the functional-first browser frontend workflow](project_manager.md#browser-frontend-delivery-functional-first-polish-second). Retain each computer's existing frontend as a parent and create native functional and UI/UX polish sub-issues. Polish is blocked by accepted functional work. Preserve parent fields and existing prerequisites; new children begin Planned with no fabricated path, agent, dates or Sprint. Register and clear current ownership independently on the stage being worked on. Do not treat usable functionality and visual polish as the same completion gate.

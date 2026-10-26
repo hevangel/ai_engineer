@@ -85,3 +85,17 @@ Each optional configuration issue is blocked by its computer system. Each CPU-al
 
 
 Follow the mandatory lifecycle in [github_issues.md](github_issues.md#mandatory-start-progress-and-finish-sequence): transfer to the owner, set `<repo>/<path>`, preserve the first Start date, update Status on actual start, register the working agent, and clear Agent whenever work stops. Audit completion evidence before resolving a blocker; a tool existing in an image is not proof of every acceptance gate.
+
+
+## Browser frontend delivery: functional first, polish second
+
+Every per-computer browser frontend parent has two native sub-issues:
+
+1. **Functional frontend**: implement and verify a usable machine first. Rust/WASM remains the default; retain the parent's optional Xezim/SystemVerilog execution and real waveform contract. Essential controls, real output, media/input, errors, readability and basic keyboard access belong here. Preserve exact machine scope and provenance. Inherit the parent's existing native completion prerequisites, while allowing staged WASM delivery before SV readiness as already specified.
+2. **UI/UX polish**: a separate iteration after the functional stage's scoped acceptance evidence has been reviewed and accepted. Add a native blocked-by dependency on the functional sibling. Refine visual hierarchy, typography, spacing, colors, responsive layouts, workflow clarity, feedback, help and accessibility. Record real before/after screenshots and usability findings; rerun affected functional/browser regressions.
+
+Deliver a functional implementation PR and evidence handoff before beginning discretionary visual redesign. A plain, working interface can satisfy the first stage; it does not satisfy polish. Do not postpone essential usability or correct behavior into the second stage. A screenshot or successful compilation is not functional acceptance, and functional completion does not confer Human verified status.
+
+Keep the existing frontend issue as the parent and preserve its acceptance history, status, dependencies and related system/compiler/software/emulator links. Parent completion requires both stages. Hierarchy records decomposition; do not add a reverse parent/child blocker or a dependency cycle. The polish child is blocked by the functional child, not by its parent. Neither stage becomes a new prerequisite for historical software/compiler development.
+
+New children are Planned in Toolchains with Agent, Path, dates and Sprint empty. When work begins, claim the actual child, record its real `<repo>/<path>` and first Start date, and move Status. Clear Agent on inactive review/handoff. Each iteration has separate evidence and ownership; do not automatically copy the parent's dates, agent or verification. Apply this split when creating future computer frontend tracks and reconcile existing children before adding duplicates.
