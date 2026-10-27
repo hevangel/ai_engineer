@@ -24,6 +24,7 @@ All changes to this repository are made by AI coding agents. Humans do not edit 
 | `scripts/` | Local preview, GitHub status synchronization, photo import and offline checks |
 | `ai_hw_engineer/` | Hardware designs, RTL, verification, and virtual systems |
 | `ai_sw_engineer/` | Software reimplementations, Rust, LLVM backends, and target systems |
+| `ai_fpga_engineer/` | FPGA designs, implementation, and verification |
 | `hdl-workbench/` | Browser-based HDL workbench and its implementation |
 | `e1647-rs/` | Experimental IEEE 1647 e-language Rust tooling, tokenizer and future language/simulator integration |
 | `spec/` | Repository governance, website maintenance, cross-project roadmap, project manager instructions and dependency inventory |

@@ -1,7 +1,7 @@
 // Pure ordering, linking and keyboard-navigation rules for the software view; data comes from data/software.json.
 const rank=(list,id)=>{const index=list.findIndex(item=>item.id===id);return index<0?list.length:index;};
 export function layoutRows({systems,entries,layers,categories}){
- return [...systems].sort((a,b)=>a.year-b.year||a.title.localeCompare(b.title)).map(system=>{
+ return [...systems].sort((a,b)=>a.year-b.year||(a.month||0)-(b.month||0)||a.title.localeCompare(b.title)).map(system=>{
   const owned=entries.filter(entry=>entry.system===system.id);
   const columns=layers.map(layer=>({layer:layer.id,items:owned.filter(entry=>entry.layer===layer.id).sort((a,b)=>layer.id==='software'?rank(categories,a.category)-rank(categories,b.category)||a.year-b.year||a.title.localeCompare(b.title):a.year-b.year||a.title.localeCompare(b.title)).map(entry=>entry.id)})).filter(column=>column.items.length);
   return {system:system.id,columns,order:columns.flatMap(column=>column.items)};

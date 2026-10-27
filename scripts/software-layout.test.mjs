@@ -34,3 +34,8 @@ test('keyboard moves stay inside rows and hop between rows',()=>{
  assert.equal(softwareDestination({rows,id:'x',move:'up'}),'os');
  assert.equal(softwareDestination({rows,id:'x',move:'down'}),null);
 });
+test('computers from the same year run by release month, then title',()=>{
+ const same=[{id:'late',year:1977,month:9,title:'A'},{id:'early',year:1977,month:6,title:'Z'},{id:'none',year:1977,title:'M'},{id:'next',year:1978,month:1,title:'B'}];
+ const owned=same.map(system=>({id:'e_'+system.id,system:system.id,layer:'software',category:'game',year:system.year,title:system.title}));
+ assert.deepEqual(layoutRows({systems:same,entries:owned,layers,categories}).map(row=>row.system),['none','early','late','next']);
+});
