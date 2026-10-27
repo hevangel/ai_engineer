@@ -47,3 +47,8 @@ The GitHub hierarchy checker uses repository-qualified issue keys after transfer
 ## Complete timeline issue coverage
 
 Run `node scripts/check-timeline-issues.mjs` to compare every typed hardware/software issue in the configured repositories with timeline cards, grouped chip members, optional/compatible configurations and exact documented coordination exclusions. `--json` emits a structured report; nonzero means drift or an incomplete/failed check. It is read-only and requires no Project GraphQL scope. See [coverage policy, limitations and offline replay](../spec/timeline_coverage.md). Run `node --test scripts/timeline-coverage.test.mjs` for regression coverage. Unlike a status refresh, this check discovers new typed issues absent from the catalogs.
+
+
+## Native dependency drift
+
+Run `node scripts/check-timeline-dependencies.mjs` to compare hardware wires, software `dependsOn`, profiles/compatible choices and qualification host/CPU gates with live native blocked-by relationships without rewriting JSON. Run `node scripts/check-timeline-issues.mjs --dependencies` for coverage plus dependencies. `--json` emits structured findings; drift and incomplete reads return nonzero. See [dependency scope and offline replay](../spec/timeline_dependencies.md). Run `node --test scripts/timeline-dependencies.test.mjs` for regressions. Workflow gates and historical software lineage do not become invented runtime wires.

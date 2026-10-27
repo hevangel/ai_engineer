@@ -24,3 +24,8 @@ This is a card/issue coverage and identity check. It does not compare curated hi
 `node scripts/check-timeline-issues.mjs --issues COMPLETE_SNAPSHOT.json [--json]` replays a complete saved issue inventory without network access. The envelope must contain `complete: true`, the exact configured `repositories` list, and a flat `issues` array of REST issue records. The caller is responsible for capturing all pages; the flag is an assertion, not independent proof of completeness. Store public/private issue snapshots outside tracked website data. A replay checks that snapshot, not current GitHub state.
 
 Run `node --test scripts/timeline-coverage.test.mjs`. Regressions cover new unrepresented issues, repository-local number collisions, transfers, missing family cards/configuration wires, software labels/types/states, explicit exclusions, duplicate IDs and multi-page/closed issue inventories.
+
+
+## Native blocked-by comparison
+
+Add `--dependencies` to this command to include [read-only dependency drift checks](timeline_dependencies.md), or run `node scripts/check-timeline-dependencies.mjs` separately. The combined result fails if either coverage or dependency comparison fails. This extends the default coverage check; stage/evidence refresh and full project lifecycle auditing remain separate.
