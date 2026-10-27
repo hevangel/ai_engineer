@@ -61,9 +61,9 @@ The website reads a checked-in snapshot of GitHub issue/project metadata. It doe
 | --- | --- |
 | [AI Hardware Engineer](https://github.com/hevangel/ai_hw_engineer) | Chip RTL, verification, complete machines and simulation backends |
 | [AI Software Engineer](https://github.com/hevangel/ai_sw_engineer) | Rust reconstructions, target software and compiler/toolchain work |
+| [AI FPGA Engineer](https://github.com/hevangel/ai_fpga_engineer) | FPGA designs, implementation and verification |
 | [HDL Workbench](https://github.com/hevangel/hdl-workbench) | The working HDL development environment, integrating Xezim simulation and Surfer waveforms |
 | [e1647-rs](https://github.com/hevangel/e1647-rs) | Experimental Rust tooling for the IEEE 1647 e verification language; tokenizer and CLI starter, with parsing and execution planned |
-| AI FPGA Engineer — planned | Future board selection, FPGA integration and physical verification; repository not yet created |
 
 AI Engineer is the umbrella website and shared roadmap. The existing projects keep their own repositories and histories and are included here as pinned Git submodules. The timeline presents the work; it does not run the chip simulators itself.
 

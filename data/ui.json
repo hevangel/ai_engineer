@@ -274,6 +274,10 @@
     "searchLabel": "Search the software view",
     "categoryLabel": "Software category",
     "allCategories": "All software",
+    "systemFilter": "Filter by computer",
+    "systemAll": "All computers",
+    "systemCount": "{count} computers",
+    "systemClear": "Clear selection",
     "stageFilter": "Filter by build stage",
     "stageAll": "All stages",
     "caption": "COMPUTERS FIRST · THEN OPERATING SYSTEMS, DRIVERS, FIRMWARE AND SOFTWARE.",
@@ -286,9 +290,9 @@
     "emptyHelp": "Try another category, stage, or search term.",
     "reset": "Reset filters",
     "wires": {
-      "dependency": "Needs · runtime prerequisite (arrow points to the dependent)",
+      "dependency": "Needs · runtime prerequisite of the title it connects to",
       "lineage": "Lineage · derived from or successor of",
-      "help": "Hover, focus or select a card to highlight everything it needs and everything built on it. Keyboard: Tab to a card; ←/h and →/l move along the row, ↑/k and ↓/j move between computers; Enter or the “i” button opens details.",
+      "help": "Click or focus a card to highlight everything it needs and everything built on it. Keyboard: Tab to a card; ←/h and →/l move along the row, ↑/k and ↓/j move between computers; Enter or the “i” button opens details.",
       "hint": "{title} · ←/h previous · →/l next · ↑/k row above · ↓/j row below"
     },
     "info": {

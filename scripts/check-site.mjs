@@ -92,7 +92,7 @@ for(const name of ['index.html','assets/timeline.css']){const body=await fs.read
  for(const layer of software.layers)assert(layer.id&&layer.label,'Incomplete software layer');
  for(const system of software.systems){
   assert(!systemIds.has(system.id),'Duplicate software system '+system.id);systemIds.add(system.id);
-  assert(system.title&&system.cpu&&Number.isInteger(system.year),'Incomplete software system '+system.id);
+  assert(system.title&&system.cpu&&Number.isInteger(system.year),'Incomplete software system '+system.id);assert(system.month===undefined||Number.isInteger(system.month)&&system.month>=1&&system.month<=12,'Invalid software system month '+system.id);
   if(system.catalog)assert(catalogSystems.has(system.catalog),'Unknown catalog system '+system.id);
   else{
    assert(/^#[0-9a-f]{6}$/i.test(system.color)&&system.summary?.trim()&&system.summary.length<=100,'Software-only system needs colour and one-line summary '+system.id);
@@ -113,6 +113,7 @@ for(const name of ['index.html','assets/timeline.css']){const body=await fs.read
   for(const other of entry.alsoOn||[])assert(systemIds.has(other),'Unknown alsoOn system '+entry.id);
   for(const source of entry.sources||[])assert(new URL(source.url).protocol==='https:'&&source.note,'Invalid software source '+entry.id);
   assert(snapshot.statuses[entry.id]&&stages.has(snapshot.statuses[entry.id].stage),'Missing software stage '+entry.id);
+  {const image=entry.image,credit=credits[entry.id];assert(image?.src&&image.alt&&image.source,'Missing software photo '+entry.id);await fs.access(path.join(root,image.src));assert(credit?.creator&&credit.license&&credit.source&&credit.changes,'Missing attribution for software photo '+entry.id);}
  }
  assert.equal(findCycle(software.entries),null,'Software dependency cycle');
  for(const system of systemIds)assert(software.entries.some(entry=>entry.system===system),'Software system without titles '+system);

@@ -4,16 +4,16 @@
   "repository": "hevangel/ai_sw_engineer",
   "layers": [
     {
+      "id": "firmware",
+      "label": "Firmware"
+    },
+    {
       "id": "os",
       "label": "Operating system"
     },
     {
       "id": "driver",
       "label": "Drivers"
-    },
-    {
-      "id": "firmware",
-      "label": "Firmware"
     },
     {
       "id": "software",
@@ -264,6 +264,7 @@
     {
       "id": "trs80_model1",
       "year": 1977,
+      "month": 8,
       "title": "TRS-80 Model I",
       "cpu": "Zilog Z80",
       "catalog": "system_trs80_model1"
@@ -271,6 +272,7 @@
     {
       "id": "apple_ii",
       "year": 1977,
+      "month": 6,
       "title": "Apple II",
       "cpu": "MOS 6502",
       "catalog": "system_apple_ii"
@@ -278,6 +280,7 @@
     {
       "id": "atari_2600",
       "year": 1977,
+      "month": 9,
       "title": "Atari 2600",
       "cpu": "MOS 6507",
       "catalog": "system_atari_2600"
@@ -306,6 +309,7 @@
     {
       "id": "c64",
       "year": 1982,
+      "month": 8,
       "title": "Commodore 64",
       "cpu": "MOS 6510",
       "catalog": "system_c64"
@@ -313,6 +317,7 @@
     {
       "id": "atari_5200",
       "year": 1982,
+      "month": 11,
       "title": "Atari 5200",
       "cpu": "MOS 6502",
       "catalog": "system_atari_5200"
@@ -353,6 +358,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 121,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/121"
+      },
+      "image": {
+        "src": "images/software_busicom_firmware.jpg",
+        "alt": "Intel 4004 on Busicom calculator circuit board (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Intel_4004_on_Busicom_calculator_circuit_board.jpg"
       }
     },
     {
@@ -369,6 +380,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 122,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/122"
+      },
+      "image": {
+        "src": "images/software_scelbal.jpg",
+        "alt": "SCELBAL - Jun 1976 Byte advert (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:SCELBAL_-_Jun_1976_Byte_advert.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -385,6 +403,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 123,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/123"
+      },
+      "image": {
+        "src": "images/software_shooting_stars.jpg",
+        "alt": "Micral N (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Micral_N.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -401,6 +426,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 124,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/124"
+      },
+      "image": {
+        "src": "images/software_altair_basic.jpg",
+        "alt": "Altair BASIC Paper Tape (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Altair_BASIC_Paper_Tape.jpg"
       }
     },
     {
@@ -417,6 +448,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 125,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/125"
+      },
+      "image": {
+        "src": "images/software_tiny_basic.png",
+        "alt": "TinyBASIC 1.0 COPYLEFT (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:TinyBASIC_1.0_COPYLEFT.png"
       }
     },
     {
@@ -442,6 +479,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 126,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/126"
+      },
+      "image": {
+        "src": "images/software_cpm22.jpg",
+        "alt": "CPM 2-2 (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:CPM_2-2.jpg"
       }
     },
     {
@@ -458,6 +501,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 127,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/127"
+      },
+      "image": {
+        "src": "images/software_space_invaders_sw.jpg",
+        "alt": "Space Invaders (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Space_Invaders.JPG",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -480,6 +530,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 128,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/128"
+      },
+      "image": {
+        "src": "images/software_sargon.jpg",
+        "alt": "HomeComputerMuseum, August 2023 43 (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:HomeComputerMuseum,_August_2023_43.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -502,6 +559,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 129,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/129"
+      },
+      "image": {
+        "src": "images/software_microchess.jpg",
+        "alt": "Monster 6502 Playing MicroChess (42038215420) (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Monster_6502_Playing_MicroChess_(42038215420).jpg"
       }
     },
     {
@@ -530,6 +593,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 130,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/130"
+      },
+      "image": {
+        "src": "images/software_ms_basic6502.png",
+        "alt": "Applesoft BASIC (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Applesoft_BASIC.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -553,6 +623,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 131,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/131"
+      },
+      "image": {
+        "src": "images/software_zork.jpg",
+        "alt": "Zork running on a Kaypro II, photographed by Marcin Wichary (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Zork_photo.jpg",
+        "caption": "Zork on a Kaypro II running CP/M; the original Infocom cover art is non-free and is not used."
       }
     },
     {
@@ -569,6 +646,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 132,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/132"
+      },
+      "image": {
+        "src": "images/software_apple_monitor.png",
+        "alt": "Apple II Monitor (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Apple_II_Monitor.png"
       }
     },
     {
@@ -594,6 +677,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 133,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/133"
+      },
+      "image": {
+        "src": "images/software_apple_dos33.jpg",
+        "alt": "Upgraded to DOS 3.3 (6518689667) (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Upgraded_to_DOS_3.3_(6518689667).jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -619,6 +709,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 134,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/134"
+      },
+      "image": {
+        "src": "images/software_visicalc.png",
+        "alt": "Visicalc (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Visicalc.png"
       }
     },
     {
@@ -644,6 +740,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 135,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/135"
+      },
+      "image": {
+        "src": "images/software_prince_of_persia.png",
+        "alt": "Prince of Persia 1 - Apple II (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Prince_of_Persia_1_-_Apple_II.png"
       }
     },
     {
@@ -660,6 +762,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 136,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/136"
+      },
+      "image": {
+        "src": "images/software_combat.jpg",
+        "alt": "Cartucho de Atari 2600 del juego Combat sin arte (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Cartucho_de_Atari_2600_del_juego_Combat_sin_arte.jpg"
       }
     },
     {
@@ -682,6 +790,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 137,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/137"
+      },
+      "image": {
+        "src": "images/software_adventure.jpg",
+        "alt": "Atari Adventure Easter Egg on Atari (Jakks Pacific) Port (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari_Adventure_Easter_Egg_on_Atari_(Jakks_Pacific)_Port.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -698,6 +813,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 138,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/138"
+      },
+      "image": {
+        "src": "images/software_pitfall.jpg",
+        "alt": "Cartucho de Atari 2600 del juego Pitfall (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Cartucho_de_Atari_2600_del_juego_Pitfall.jpg"
       }
     },
     {
@@ -714,6 +835,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 139,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/139"
+      },
+      "image": {
+        "src": "images/software_atari_os.jpg",
+        "alt": "Atari-800-Motherboard-Flat-Top (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-800-Motherboard-Flat-Top.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -739,6 +867,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 140,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/140"
+      },
+      "image": {
+        "src": "images/software_atari_basic.png",
+        "alt": "AtariBASIC (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:AtariBASIC.png"
       }
     },
     {
@@ -764,6 +898,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 141,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/141"
+      },
+      "image": {
+        "src": "images/software_atari_dos2.jpg",
+        "alt": "Atari Master Diskette 3 DOS 3 Floppy Disk (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari_Master_Diskette_3_DOS_3_Floppy_Disk.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -789,6 +930,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 142,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/142"
+      },
+      "image": {
+        "src": "images/software_star_raiders.jpg",
+        "alt": "Cartridge Star Raiders (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:Cartridge_Star_Raiders.jpg"
       }
     },
     {
@@ -811,6 +958,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 143,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/143"
+      },
+      "image": {
+        "src": "images/software_cbm_basic2.png",
+        "alt": "CommodoreBasic (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:CommodoreBasic.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -827,6 +981,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 144,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/144"
+      },
+      "image": {
+        "src": "images/software_c64_kernal.jpg",
+        "alt": "Commodore64 (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Commodore64.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -846,6 +1007,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 145,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/145"
+      },
+      "image": {
+        "src": "images/software_elite.jpg",
+        "alt": "Elite-logo (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Elite-logo.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -865,6 +1033,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 146,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/146"
+      },
+      "image": {
+        "src": "images/software_geos.jpg",
+        "alt": "GEOS floppy (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:GEOS_floppy.jpg"
       }
     },
     {
@@ -881,6 +1055,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 147,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/147"
+      },
+      "image": {
+        "src": "images/software_super_breakout.png",
+        "alt": "Super Breakout gameplay on the Atari 2600: bricks, paddle and ball",
+        "representative": true,
+        "source": "https://en.wikipedia.org/wiki/File:Super_Breakout_1978_Atari_2600.png",
+        "caption": "Gameplay of the Atari 2600 version; the Atari 5200 port plays the same way."
       }
     },
     {
@@ -900,6 +1081,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 148,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/148"
+      },
+      "image": {
+        "src": "images/software_star_raiders_5200.jpg",
+        "alt": "Atari-5200-4-Port-Console-wCartridge (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Atari-5200-4-Port-Console-wCartridge.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -916,6 +1104,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 149,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/149"
+      },
+      "image": {
+        "src": "images/software_food_fight.png",
+        "alt": "Food Fight arcade gameplay: Charley Chuck among chefs and food piles",
+        "representative": true,
+        "source": "https://en.wikipedia.org/wiki/File:FoodFightPlay.png",
+        "caption": "Arcade gameplay; the Atari 7800 port derives from it."
       }
     },
     {
@@ -932,6 +1127,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 150,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/150"
+      },
+      "image": {
+        "src": "images/software_asteroids_7800.jpg",
+        "alt": "Asteroids cabinet (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Asteroids_cabinet.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -954,6 +1156,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 151,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/151"
+      },
+      "image": {
+        "src": "images/software_pc_bios.jpg",
+        "alt": "IBM PC Motherboard (1981) (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_Motherboard_(1981).jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -982,6 +1191,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 152,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/152"
+      },
+      "image": {
+        "src": "images/software_msdos_1_25.png",
+        "alt": "IBM PC DOS 1.0 screenshot (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_PC_DOS_1.0_screenshot.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1010,6 +1226,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 153,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/153"
+      },
+      "image": {
+        "src": "images/software_msdos_2_0.png",
+        "alt": "Leading Edge Model D Boot Disk for MS-DOS 2.11 (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Leading_Edge_Model_D_Boot_Disk_for_MS-DOS_2.11.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1032,6 +1255,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 154,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/154"
+      },
+      "image": {
+        "src": "images/software_msdos_3_3.jpg",
+        "alt": "NEC MS-DOS 3.3C (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:NEC_MS-DOS_3.3C.jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1060,6 +1290,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 155,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/155"
+      },
+      "image": {
+        "src": "images/software_msdos_4_0.jpg",
+        "alt": "PowerPak 286 running AutoCAD on MS-DOS (1987) (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:PowerPak_286_running_AutoCAD_on_MS-DOS_(1987).jpg",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1082,6 +1319,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 156,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/156"
+      },
+      "image": {
+        "src": "images/software_msdos_5_0.png",
+        "alt": "MS-DOS-Editor 1.0 Deutsch zeigt Info-Dialog mit geöffneter AUTOEXEC.BAT von MS-DOS 5.0 im Hintergrund (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:MS-DOS-Editor_1.0_Deutsch_zeigt_Info-Dialog_mit_ge%C3%B6ffneter_AUTOEXEC.BAT_von_MS-DOS_5.0_im_Hintergrund.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1110,6 +1354,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 157,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/157"
+      },
+      "image": {
+        "src": "images/software_gw_basic.png",
+        "alt": "Sturz aus der Raumstation (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Sturz_aus_der_Raumstation.PNG",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1132,6 +1383,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 158,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/158"
+      },
+      "image": {
+        "src": "images/software_qbasic.png",
+        "alt": "QBASIC (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:QBASIC.png"
       }
     },
     {
@@ -1151,6 +1408,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 159,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/159"
+      },
+      "image": {
+        "src": "images/software_dos_shell.png",
+        "alt": "DOSSHELL (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:DOSSHELL.PNG"
       }
     },
     {
@@ -1170,6 +1433,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 160,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/160"
+      },
+      "image": {
+        "src": "images/software_dos_utilities.png",
+        "alt": "Ms-dosformat (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Ms-dosformat.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     },
     {
@@ -1186,6 +1456,12 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 161,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/161"
+      },
+      "image": {
+        "src": "images/software_gem_tos.png",
+        "alt": "GEM 1.x für Atari ST, TOS 1.04 (Wikimedia Commons)",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:GEM_1.x_f%C3%BCr_Atari_ST,_TOS_1.04.png"
       }
     },
     {
@@ -1205,6 +1481,13 @@
         "repo": "hevangel/ai_sw_engineer",
         "number": 162,
         "url": "https://github.com/hevangel/ai_sw_engineer/issues/162"
+      },
+      "image": {
+        "src": "images/software_st_games.png",
+        "alt": "Ballerburg (Wikimedia Commons)",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:Ballerburg.png",
+        "caption": "Representative image of the software, its medium or its machine; the credit names the file actually pictured."
       }
     }
   ]
