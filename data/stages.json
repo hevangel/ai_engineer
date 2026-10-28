@@ -233,7 +233,5 @@
       },
       "color": "#b32631"
     }
-  ],
-  "coverageLabel": "Source coverage",
-  "coverageDescription": "Cleaned source items / explicitly defined source items. Unknown is shown as —; issue checklist completion is not a source-data percentage."
+  ]
 }

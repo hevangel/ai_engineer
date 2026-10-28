@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "repositories": [
+    "hevangel/ai_engineer",
+    "hevangel/ai_hw_engineer",
+    "hevangel/ai_sw_engineer"
+  ],
+  "typeRules": [
+    {
+      "kind": "chip",
+      "titlePattern": "^\\[Chip\\]",
+      "labels": [
+        "chip"
+      ]
+    },
+    {
+      "kind": "system",
+      "titlePattern": "^\\[System\\]",
+      "labels": [
+        "system"
+      ]
+    },
+    {
+      "kind": "card",
+      "titlePattern": "^\\[(Card|Cards|Bus/Cards)\\]",
+      "labels": [
+        "card"
+      ]
+    },
+    {
+      "kind": "software",
+      "titlePattern": "^\\[Software\\]",
+      "labels": [
+        "software"
+      ]
+    },
+    {
+      "kind": "coordination",
+      "titlePattern": "^\\[Program\\]",
+      "labels": []
+    }
+  ],
+  "exclusions": [
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/365",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/362",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/359",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/356",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/353",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/350",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/343",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/200",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/197",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/194",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/186",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/181",
+      "reason": "Cross-system program coordination, not an individual computer."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/178",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/176",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/173",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/170",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/166",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/164",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/161",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/157",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/155",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/152",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/150",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/146",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/143",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/141",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/135",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/133",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/102",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/99",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/96",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/93",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/90",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/87",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/84",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/81",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/78",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/75",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/72",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/69",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/66",
+      "reason": "Per-system software catalog or shared audio coordination; individual software titles have their own cards."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/54",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/52",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/51",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/50",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    },
+    {
+      "issue": "https://github.com/hevangel/ai_engineer/issues/49",
+      "reason": "Bus infrastructure or reconstruction workflow, not a concrete historical expansion-card model."
+    }
+  ]
+}
