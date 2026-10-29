@@ -89,6 +89,10 @@
     "tandy": {
       "name": "Tandy / Radio Shack",
       "color": "#9c4a1a"
+    },
+    "wdc": {
+      "name": "Western Design Center",
+      "color": "#005a9c"
     }
   },
   "eras": [
@@ -2931,7 +2935,32 @@
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
       "dateNote": "Anchored to Nintendo’s 1990 Japanese Super Famicom launch. The US SNES followed in 1991; the representative 1CHIP board photograph depicts a later revision.",
-      "summary": "Super Nintendo's CPU, picture and audio processors and support chips"
+      "summary": "Super Nintendo's CPU, picture and audio processors and support chips",
+      "chipset": {
+        "evidence": "https://github.com/hevangel/ai_engineer/issues/47",
+        "members": [
+          {
+            "part": "Ricoh 5A22",
+            "role": "CPU and DMA controller"
+          },
+          {
+            "part": "Nintendo S-PPU1 (5C77)",
+            "role": "Picture processing"
+          },
+          {
+            "part": "Nintendo S-PPU2 (5C78)",
+            "role": "Picture processing and video output"
+          },
+          {
+            "part": "Sony SPC700",
+            "role": "Audio CPU"
+          },
+          {
+            "part": "Sony S-DSP",
+            "role": "Audio signal processor"
+          }
+        ]
+      }
     },
     {
       "id": "system_mac_iifx",
@@ -3372,6 +3401,84 @@
         {
           "url": "https://github.com/hevangel/ai_hw_engineer/pull/65",
           "note": "Existing unmerged SV implementation; does not establish Rust/WASM, waveform or FPGA completion."
+        }
+      ]
+    },
+    {
+      "id": "system_pdp8",
+      "title": "DEC PDP-8 · Am29xx reconstruction",
+      "kind": "system",
+      "company": "dec",
+      "year": 1965,
+      "era": "18",
+      "dateLabel": "1965 · original introduction",
+      "dateBasis": "introduced",
+      "dateSource": "https://archive.computerhistory.org/resources/text/DEC/dec.digital_%28DEC%29_timeline_1957-1997.102630354/12-bit.htm",
+      "dateNote": "The original Straight-8 dates to 1965 and used discrete transistor logic. Am29xx is the planned later reconstruction hardware, not original fitted silicon.",
+      "query": "DEC PDP-8 · Am29xx reconstruction",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 371,
+        "url": "https://github.com/hevangel/ai_engineer/issues/371"
+      },
+      "summary": "DEC's original 12-bit PDP-8, planned as a later Am29xx reconstruction",
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      }
+    },
+    {
+      "id": "mos_906114",
+      "title": "MOS 906114-01 PLA",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1982,
+      "era": "16",
+      "dateLabel": "1982 · host-system bound",
+      "dateBasis": "system",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/system/commodore-64/design/commodore_906114/README.md",
+      "dateNote": "Anchored to the selected 1982 Commodore 64 board profile; not a claim of the first standalone PLA shipment.",
+      "query": "MOS 906114-01 PLA",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 377,
+        "url": "https://github.com/hevangel/ai_engineer/issues/377"
+      },
+      "summary": "Commodore 64 memory and I/O address decoder",
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      }
+    },
+    {
+      "id": "wdc_65c816",
+      "title": "WDC 65C816",
+      "kind": "chip",
+      "company": "wdc",
+      "year": 1983,
+      "era": "16",
+      "dateLabel": "1983 · architecture reported",
+      "dateBasis": "reported",
+      "dateSource": "https://www.cecs.uci.edu/~papers/mpr/MPR/ARTICLES/080903.pdf",
+      "dateNote": "Microprocessor Report (July 11, 1994) dates the 16-bit architecture extension to 1983. This is an architecture milestone, not a claim about the shipping date of every W65C816S revision.",
+      "query": "WDC 65C816",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 378,
+        "url": "https://github.com/hevangel/ai_engineer/issues/378"
+      },
+      "summary": "16-bit 65xx CPU core underlying the Super Nintendo Ricoh 5A22",
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "historySources": [
+        {
+          "url": "https://www.westerndesigncenter.com/wdc/w65c816s-chip.php",
+          "note": "Manufacturer architecture and product documentation."
         }
       ]
     }
