@@ -29,3 +29,9 @@ Run `node --test scripts/timeline-coverage.test.mjs`. Regressions cover new unre
 ## Native blocked-by comparison
 
 Add `--dependencies` to this command to include [read-only dependency drift checks](timeline_dependencies.md), or run `node scripts/check-timeline-dependencies.mjs` separately. The combined result fails if either coverage or dependency comparison fails. This extends the default coverage check; stage/evidence refresh and full project lifecycle auditing remain separate.
+
+## October 2026 coverage additions
+
+The six missing issues found by the coverage audit are represented by three new cards (PDP-8 reconstruction #371, MOS 906114-01 PLA #377, WDC 65C816 #378) and three SNES family members (#374–#376 under #47). The SNES card lists the five registered CPU/video/audio members; it does not turn each sub-issue into another family card.
+
+PDP-8 retains its original 1965 placement and a separately qualified later Am29xx reconstruction dependency. The PLA uses the selected C64 board's 1982 bound. WDC uses the reported 1983 architecture milestone, qualified separately from later W65C816S revisions. New cards explicitly request verified photos instead of borrowing unrelated images. Connection refresh also brings existing computer gates up to current native GitHub relationships; it does not invent hardware blockers.
