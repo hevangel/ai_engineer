@@ -16,8 +16,8 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
  function machine(system){
   const entry=system.catalog?catalog.entries.find(item=>item.id===system.catalog):null;
   if(system.catalog&&!entry)throw Error('Unknown catalog system '+system.catalog);
-  return entry?{system,entry,title:entry.title,summary:entry.summary,year:entry.year,image:entry.image,creditId:entry.id,color:catalog.companies[entry.company].color,issue:entry.issue}
-   :{system,entry:null,title:system.title,summary:system.summary,year:system.year,image:system.image,creditId:'software_system_'+system.id,color:system.color,issue:null};
+  return entry?{system,entry,title:entry.title,summary:entry.summary,year:entry.year,image:entry.image,creditId:entry.id,color:catalog.companies[entry.company].color,maker:catalog.companies[entry.company].name,issue:entry.issue}
+   :{system,entry:null,title:system.title,summary:system.summary,year:system.year,image:system.image,creditId:'software_system_'+system.id,color:system.color,maker:'',issue:null};
  }
  function statusOf(id){
   const status=snapshot.statuses[id];
@@ -38,29 +38,35 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
   return [entry.title,entry.summary,system.title,category.label,layer.label,entry.sourceMaterial].join(' ').toLowerCase().includes(state.search);
  }
 
+ // Software and computer cards use the hardware card layout: photo with the "i" button at the
+ // lower left and the status badges at the lower right, then the coloured kind line, title,
+ // one-line summary and the issue link.
  function softwareCard(entry){
   const category=categories.get(entry.category),layer=layers.get(entry.layer);
   const article=element('article','software-card');article.id='software-'+entry.id;article.tabIndex=0;article.dataset.id=entry.id;article.dataset.category=entry.category;article.dataset.layer=entry.layer;
-  article.style.setProperty('--category',category.color);article.title=text('software.wires.hint',{title:entry.title});
+  article.style.setProperty('--category',category.color);article.style.setProperty('--company',category.color);article.title=text('software.wires.hint',{title:entry.title});
   const photo=element('div','photo-wrap');if(entry.image)appendPhoto(photo,{title:entry.title,image:entry.image});
-  const head=element('div','software-card-head'),icon=element('span','category-icon');icon.append(iconNode(category.icon));
-  head.append(icon,element('span','software-tag',(layer.label===category.label?category.label:text('software.layerBadge',{layer:layer.label,category:category.label}))));
-  const info=element('button','info-button',text('info.symbol'));info.setAttribute('aria-label',text('info.button',{title:entry.title}));info.addEventListener('click',()=>openInfo(entry));head.append(info);
+  const info=element('button','info-button',text('info.symbol'));info.setAttribute('aria-label',text('info.button',{title:entry.title}));info.addEventListener('click',()=>openInfo(entry));
+  photo.append(info,statusBadges(entry.id));
+  const meta=element('div','entry-meta');meta.append(element('span','maker',category.label),element('span','',layer.label));
   const title=element('h3');title.append(link(entry.title,entry.issue.url));
-  const meta=element('p','software-meta',text('software.yearDifficulty',{year:entry.year,difficulty:entry.difficulty}));
-  const footer=element('div','entry-footer');footer.append(statusBadges(entry.id),link(text('card.issueLink',{number:entry.issue.number}),entry.issue.url));
-  article.append(...(entry.image?[photo]:[]),head,title,element('p','summary',entry.summary),meta,footer);
+  const footer=element('div','entry-footer');
+  footer.append(element('span','software-meta',text('software.yearDifficulty',{year:entry.year,difficulty:entry.difficulty})),link(text('card.issueLink',{number:entry.issue.number}),entry.issue.url));
+  article.append(photo,meta,title,element('p','summary',entry.summary),footer);
   return article;
  }
  function systemCard(system,count){
-  const item=machine(system),article=element('article','software-card software-system');article.id='software-system-'+system.id;article.tabIndex=0;article.dataset.id='sys:'+system.id;article.style.setProperty('--category',item.color);
-  article.title=text('software.wires.hint',{title:item.title});
+  const item=machine(system),article=element('article','software-card software-system');article.id='software-system-'+system.id;article.tabIndex=0;article.dataset.id='sys:'+system.id;
+  article.style.setProperty('--category',item.color);article.style.setProperty('--company',item.color);article.title=text('software.wires.hint',{title:item.title});
   const photo=element('div','photo-wrap');
   if(item.image)appendPhoto(photo,{title:item.title,image:item.image});
   const info=element('button','info-button',text('info.symbol'));info.setAttribute('aria-label',text('info.button',{title:item.title}));info.addEventListener('click',()=>item.entry?openHardwareInfo(item.entry):openSystemInfo(item));photo.append(info);
-  const meta=element('div','entry-meta');meta.append(element('span','maker',text('software.machineBadge')),element('span','',String(item.year)));
+  if(item.entry)photo.append(statusBadges(item.entry.id));
+  const meta=element('div','entry-meta');meta.append(element('span','maker',item.maker||text('software.machineBadge')),element('span','',item.maker?text('software.machineBadge'):String(item.year)));
   const title=element('h3');title.append(item.issue?link(item.title,item.issue.url):document.createTextNode(item.title));
-  article.append(photo,meta,title,element('p','summary',item.summary),element('p','software-meta',system.cpu+' · '+text('software.machineTitles',{count})));
+  const footer=element('div','entry-footer');footer.append(element('span','software-meta',system.cpu+' · '+text('software.machineTitles',{count})));
+  if(item.issue)footer.append(link(text('card.issueLink',{number:item.issue.number}),item.issue.url));
+  article.append(photo,meta,title,element('p','summary',item.summary),footer);
   return article;
  }
 
