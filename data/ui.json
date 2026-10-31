@@ -284,7 +284,6 @@
     "count": "{shown} OF {total} TITLES",
     "machineTitles": "Titles · {count}",
     "machineBadge": "COMPUTER SYSTEM",
-    "layerBadge": "{layer} · {category}",
     "yearDifficulty": "{year} · {difficulty}",
     "emptyTitle": "No software matches.",
     "emptyHelp": "Try another category, stage, or search term.",
