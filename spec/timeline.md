@@ -29,8 +29,7 @@ An issue can contain one fenced JSON block with language `timeline-status`:
 ~~~timeline-status
 {
   "stage": "researching",
-  "sources": { "collected": 8, "cleaned": 3, "total": 10 },
-  "build": { "status": "unknown" }
+  "sources": { "collected": 8, "cleaned": 3, "total": 10 }
 }
 ~~~
 
@@ -62,7 +61,7 @@ For verified stages, add evidence:
 }
 ~~~
 
-These are schema examples, not evidence that any current device has passed. AI Verified requires an AI evidence URL and timestamp. Human Verified requires a reviewer, evidence URL and timestamp. Passing or failing build health requires its own evidence URL. The sync script validates presence and shape; the project manager remains responsible for checking that evidence is accurate, relevant, current, and actually supplied by the named reviewer. Never attach verification labels merely to change a website icon.
+These are schema examples, not evidence that any current device has passed. AI Verified requires an AI evidence URL and timestamp. Human Verified requires a reviewer, evidence URL and timestamp. The sync script validates presence and shape; the project manager remains responsible for checking that evidence is accurate, relevant, current, and actually supplied by the named reviewer. Never attach verification labels merely to change a website icon.
 
 The public snapshot exports only stage, source counts, build evidence, verification records, issue state/URL, selected project state, and update timestamps. Do not put private information into this public metadata block.
 
@@ -74,7 +73,7 @@ Optional `dateBasis` values are `introduced`, `documented`, `preview`, `reported
 
 Company lines connect visible chip-family entries from the same maker. Route maker lineage through the right gutter and chip-to-computer dependencies through the left gutter (or directly through the gap when the computer occupies the immediately following rendered row) and shared expansion buses outside the maker lanes on the far right, using straight horizontal/vertical segments and 45-degree chamfered bends. Chip connections and maker links spanning rows exit a hollow bottom pad and enter through a hollow top pad; adjacent same-row maker links use facing side pads. Keep traces clear of photographs and text. Allocate distinct horizontal tracks per row and reuse a vertical lane only when its spans do not overlap. Give separate chip fan-out/fan-in wires separate pads; independent chip/maker paths never share a segment. Expansion cards share a family rail and row runs as specified below. Preserve gutters and pad alignment across responsive layouts. The archive uses the available window width. Card columns are chosen from space remaining after wire gutters, chapter padding and column gaps; reduce from three columns to two or one before requiring horizontal scrolling. Narrow circuits may scroll when one readable card plus its wire gutters cannot fit. Selecting one computer reduces the wiring. Intel is blue and AMD red; other colors are brand-inspired. A platform owner may represent a mixed-vendor support family; the catalog must not imply it manufactured every physical component pictured.
 
-Use `node scripts/fetch-images.mjs` to import licensed Commons photographs for catalog entries without one. The importer is a curation aid, not a visual identity oracle: inspect the actual photo and original source page, especially near-identical Mac models, card revisions and rare chips. Do not substitute an unrelated person, book, logo, controller or machine. Mark any representative family photo explicitly; its alt text names what is actually pictured. Keep the creator, source, individual license and modification information in `data/photo-credits.json`. Images retain their original licenses.
+Use `node scripts/fetch-images.mjs` to import licensed Commons photographs for catalog entries without one. The importer is a curation aid, not a visual identity oracle: inspect the actual photo and original source page, especially near-identical Mac models, card revisions and rare chips. Do not substitute an unrelated person, book, logo, controller or machine. Mark any representative family photo explicitly; its alt text names what is actually pictured. Keep the creator, source and modification information in `data/photo-credits.json`.
 
 ## Verification
 
@@ -141,7 +140,7 @@ Adjacent same-row chips from the same company connect horizontally across their 
 
 ## Verified and unsourced photographs
 
-An entry may declare `image: {status: "needed", representative: false, sourceLeads: [...]}` when an exact, reuse-cleared photo has not been verified. Render a clearly labeled Photo needed panel with the actual entry title, preserving status badges and wire geometry. Do not render a broken image or borrow an unrelated chip photo. Its info dialog gives the shared JSON explanation and any qualified external leads; these are references, not licensed website assets. There is no credit record for a missing image. Normal sourced images retain `src`, descriptive `alt`, attribution and explicit representative qualifications.
+An entry may declare `image: {status: "needed", representative: false, sourceLeads: [...]}` when an exact photo has not been verified. Render a clearly labeled Photo needed panel with the actual entry title, preserving status badges and wire geometry. Do not render a broken image or borrow an unrelated chip photo. Its info dialog gives the shared JSON explanation and any qualified external leads; these are references, not licensed website assets. There is no credit record for a missing image. Normal sourced images retain `src`, descriptive `alt`, attribution and explicit representative qualifications.
 
 The early AMD audit and source decisions are in [amd_photos.md](amd_photos.md). Importer `requireExact` entries fail without an exact match; the generic AMD brand fallback is removed. `photo-regression.test.mjs` checks that distinct AMD chip cards do not reuse identical image bytes.
 

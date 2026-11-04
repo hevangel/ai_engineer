@@ -21,13 +21,12 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
  }
  function statusOf(id){
   const status=snapshot.statuses[id];
-  return {status,stage:vocabulary.stages.find(stage=>stage.id===status?.stage),build:vocabulary.builds.find(build=>build.id===status?.build?.status)||vocabulary.builds[0]};
+  return {status,stage:vocabulary.stages.find(stage=>stage.id===status?.stage)};
  }
  function statusBadges(id){
-  const {stage,build}=statusOf(id),badges=element('div','status-badges');
-  const buildBadge=badge(build.icon,build.label,'build-badge build-'+build.id);buildBadge.style.setProperty('--stage',build.color);
+  const {stage}=statusOf(id),badges=element('div','status-badges');
   const stageBadge=badge(stage?.icon||ui.card.statusFallback.icon,stage?.label||text('card.statusFallback.label'));stageBadge.style.setProperty('--stage',stage?.color||ui.card.statusFallback.color);
-  badges.append(buildBadge,stageBadge);return badges;
+  badges.append(stageBadge);return badges;
  }
  function visible(entry){
   const category=categories.get(entry.category),layer=layers.get(entry.layer),system=machine(systems.get(entry.system));

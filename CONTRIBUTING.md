@@ -84,7 +84,7 @@ Merging does not deploy the site; publication is a separate, explicitly authoriz
 - Human-authored file edits (enforced by review)
 - Changes without the relevant verification
 - Hard-coded statuses, percentages or verification claims that are not backed by linked evidence
-- Unsourced historical claims or unlicensed images
+- Unsourced historical claims
 - Analytics, tracking or server-side runtime requirements
 - Routine submodule pin bumps without review of the represented changes
 
@@ -94,4 +94,4 @@ File issues with a clear title, the expected and actual behavior, steps to repro
 
 ## License
 
-By contributing, you agree that your contributions are licensed under the same terms as the project (see [LICENSE](LICENSE)). Photographs keep their individual licenses as recorded in `images/credits.json`, and each submodule keeps its own license.
+By contributing, you agree that your contributions are licensed under the same terms as the project (see [LICENSE](LICENSE)). Each submodule keeps its own license.
