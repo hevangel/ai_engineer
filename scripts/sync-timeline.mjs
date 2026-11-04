@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const vocabulary=JSON.parse(await fs.readFile(path.join(root,'data/stages.json'),'utf8'));
 const syncConfig=JSON.parse(await fs.readFile(path.join(root,'data/sync.json'),'utf8'));
-const validStages=vocabulary.stages.map(stage=>stage.id),validBuilds=vocabulary.builds.map(build=>build.id);
+const validStages=vocabulary.stages.map(stage=>stage.id);
 const http=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
 function verifyRecord(record,human=false){return record&&http(record.evidence)&&Number.isFinite(Date.parse(record.at))&&(!human||typeof record.reviewer==='string'&&record.reviewer.trim().length>0);}
 export function normalizeIssue(issue,projectStatus=null){
@@ -23,9 +23,7 @@ export function normalizeIssue(issue,projectStatus=null){
  if(stage==='sources_ready'&&(coverage.total===null||coverage.cleaned!==coverage.total))throw Error('Sources ready requires explicit 100% cleaned source coverage');
  if(stage==='ai_verified'&&!verifyRecord(meta.verification?.ai))throw Error('AI verification needs evidence URL and timestamp');
  if(stage==='human_verified'&&!verifyRecord(meta.verification?.human,true))throw Error('Human verification needs reviewer, evidence URL and timestamp');
- const build=meta.build||{status:'unknown'};if(!validBuilds.includes(build.status))throw Error('Unknown build status');
- if(build.status!=='unknown'&&!http(build.evidence))throw Error('Reported build health needs an evidence URL');
- return {stage,coverage,build:{status:build.status,evidence:build.evidence||null},verification:{ai:verifyRecord(meta.verification?.ai)?{evidence:meta.verification.ai.evidence,at:meta.verification.ai.at}:null,human:verifyRecord(meta.verification?.human,true)?{evidence:meta.verification.human.evidence,at:meta.verification.human.at,reviewer:meta.verification.human.reviewer}:null},issueState:issue.state,projectStatus,updatedAt:issue.updated_at,issueUrl:issue.html_url};
+ return {stage,coverage,verification:{ai:verifyRecord(meta.verification?.ai)?{evidence:meta.verification.ai.evidence,at:meta.verification.ai.at}:null,human:verifyRecord(meta.verification?.human,true)?{evidence:meta.verification.human.evidence,at:meta.verification.human.at,reviewer:meta.verification.human.reviewer}:null},issueState:issue.state,projectStatus,updatedAt:issue.updated_at,issueUrl:issue.html_url};
 }
 function gh(args){return JSON.parse(execFileSync('gh',args,{encoding:'utf8',maxBuffer:32*1024*1024}));}
 export async function main(args=process.argv.slice(2)){

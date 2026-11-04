@@ -521,6 +521,56 @@
       "source": "https://x.com/kenshirriff/status/1218982024070955009",
       "url": "https://pbs.twimg.com/media/EOqxpz0U8AIOCds?format=jpg&name=small",
       "rightsStatus": "unspecified"
+    },
+    "amd_am9102": {
+      "source": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
+      "url": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
+      "rightsStatus": "permission-confirmed-by-owner"
+    },
+    "amd_am9517": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "intel_8272": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "intel_8273": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "intel_8275": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "motorola_6800": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "sb_dsp": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "amd_am386dx": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "mos_906114": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
+    },
+    "wdc_65c816": {
+      "source": "https://github.com/hevangel/ai_engineer",
+      "url": "https://github.com/hevangel/ai_engineer",
+      "rightsStatus": "supplied-by-owner-source-unrecorded"
     }
   }
 }

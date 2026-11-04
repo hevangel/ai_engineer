@@ -8,7 +8,7 @@ The masthead **Hardware / Software** switch (right of Timeline and Source, befor
 | --- | --- |
 | `data/software.json` | `layers`, `categories` (id, label, colour, SVG icon), `systems` and the 42 `entries` |
 | `data/ui.json` (`software.*`) | All wording: tabs, search, counts, wire legend, help, info-dialog headings and the eight rewrite steps |
-| `data/status.json` | Stage/build status for each `sw_*` id, synced from the `ai_sw_engineer` issues |
+| `data/status.json` | Stage status for each `sw_*` id, synced from the `ai_sw_engineer` issues |
 | `data/photo-credits.json` | Credits for software-only computer photos, keyed `software_system_<id>`, and for every title photo, keyed by the `sw_*` id |
 
 Every computer in the view is a hardware-timeline system card: a `systems` entry names it with `catalog` and reuses that card's title, summary, photo, maker colour and info dialog. A computer needed by a title must therefore exist in `catalog.json` first, with its own system issue in `ai_engineer`, native chip prerequisites, status and photo credit. (`check-site` still accepts a system without `catalog` if it carries its own `color`, `summary`, photo and `software_system_<id>` credit, but none is used today.) Each software entry has `system`, `layer` (`os`, `driver`, `firmware`, `software`), `category`, `year`, `difficulty`, `sourceMaterial`, a one-line `summary` (100 characters or fewer), optional `sources`, `alsoOn`, `dependsOn` and `derivedFrom`, and its `issue` in `hevangel/ai_sw_engineer`. The Z-machine and Microsoft 6502 BASIC list their other machines in `alsoOn`; each title has exactly one home computer.
@@ -24,7 +24,7 @@ Every computer in the view is a hardware-timeline system card: a `systems` entry
 
 ## Cards and dialog
 
-A software card shows its photo first (`image` on the entry: `src` under `images/software_*`, `alt`, `source` and an optional `caption`; `representative: true` marks a screenshot, box, medium or machine that stands in for the exact title), then the category icon and `layer · category` tag, title (linked to the issue), summary, year and difficulty, build and stage badges (same icons as hardware) and the issue number. The **i** button opens the shared dialog with facts, needs / required by / derived from / leads to (each a jump button), source links, the eight rewrite steps and the issue link. A catalog computer's **i** opens its hardware dialog; a software-only computer opens a dialog with its titles and photo credit.
+A software card shows its photo first (`image` on the entry: `src` under `images/software_*`, `alt`, `source` and an optional `caption`; `representative: true` marks a screenshot, box, medium or machine that stands in for the exact title), then the category icon and `layer · category` tag, title (linked to the issue), summary, year and difficulty, stage badge (same icons as hardware) and the issue number. The **i** button opens the shared dialog with facts, needs / required by / derived from / leads to (each a jump button), source links, the eight rewrite steps and the issue link. A catalog computer's **i** opens its hardware dialog; a software-only computer opens a dialog with its titles and photo credit.
 
 Keyboard: Tab reaches each card; ←/`h` and →/`l` move along the row (including to the computer card), ↑/`k` and ↓/`j` move to the neighbouring computer row (`softwareDestination`).
 

@@ -51,7 +51,7 @@ The status guide on the website explains every icon:
 | AI verified | Linked evidence records an AI verification result |
 | Human verified | A named human approval links supporting evidence |
 
-Source coverage measures cleaned items against an explicitly defined source inventory. An em dash means coverage has not been reported. Build health is shown separately. Closing an issue does not establish verification.
+Source coverage measures cleaned items against an explicitly defined source inventory. An em dash means coverage has not been reported. Closing an issue does not establish verification.
 
 The website reads a checked-in snapshot of GitHub issue/project metadata. It does not query GitHub from your browser, and a source refresh is separate from publishing the site. Follow an item's issue for its latest evidence and discussion.
 

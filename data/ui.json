@@ -254,7 +254,9 @@
     "noScriptAnd": "and",
     "viewSwitchLabel": "Choose hardware or software view",
     "viewHardware": "Hardware",
-    "viewSoftware": "Software"
+    "viewSoftware": "Software",
+    "viewHistory": "Discrete era",
+    "viewHistoryTitle": "Show the discrete-logic machines that came before 74-series logic"
   },
   "language": "en",
   "themeColor": "#f6f5f0",
@@ -325,6 +327,12 @@
       "Rewrite it in Rust.",
       "Run the Rust rewrite on both emulators: four combinations in all.",
       "Loop until all four are identical, proven by timed keyboard, mouse and other input test cases."
+    ]
+  },
+  "history": {
+    "description": "Eras hidden until the discrete-era toggle is on; the timeline starts at the first 74-series logic card.",
+    "eras": [
+      "18"
     ]
   }
 }

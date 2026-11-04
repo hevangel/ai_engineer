@@ -14,7 +14,7 @@ Read the specification that covers your task before changing anything:
 | --- | --- |
 | Any change: mission, repository map, submodule ownership and pins, public-content accuracy, branch workflow | [spec/repository.md](spec/repository.md) |
 | Website pages, rendering, styles, data flow, status refresh, timeline content, checks and GitHub Pages publication | [spec/website.md](spec/website.md) |
-| Page wording, labels, tooltips, help text, filter tabs, wire legend, stage/build badge icons and colors (all JSON-driven) | [spec/website.md](spec/website.md) (data table, rendering and navigation), `data/ui.json`, `data/stages.json` |
+| Page wording, labels, tooltips, help text, filter tabs, wire legend, stage badge icons and colors (all JSON-driven) | [spec/website.md](spec/website.md) (data table, rendering and navigation), `data/ui.json`, `data/stages.json` |
 | Keyboard navigation (wires and selected cards), trace toggle and wire visibility | [spec/website.md](spec/website.md#following-wires), [spec/focused_wires.md](spec/focused_wires.md) |
 | Read-only native blocked-by drift: hardware wires, software prerequisites, profiles and qualification gates | [spec/timeline_dependencies.md](spec/timeline_dependencies.md) |
 | Read-only GitHub-to-timeline card coverage, grouped members, configurations and explicit exclusions | [spec/timeline_coverage.md](spec/timeline_coverage.md) |
