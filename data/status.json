@@ -2381,9 +2381,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
-      "updatedAt": "2026-10-31T05:03:40Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/121"
+      "projectStatus": "Building",
+      "updatedAt": "2026-10-31T16:53:40Z",
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/121",
+      "implementationPath": "ai_sw_engineer/system/busicom_141pf/firmware",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/busicom_141pf/firmware"
     },
     "sw_scelbal": {
       "stage": "building",
@@ -2398,9 +2400,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:42Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/122"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/122",
+      "implementationPath": "ai_sw_engineer/system/micral_n/basic",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/micral_n/basic"
     },
     "sw_shooting_stars": {
       "stage": "building",
@@ -2415,9 +2419,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:44Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/123"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/123",
+      "implementationPath": "ai_sw_engineer/system/micral_n/shooting_stars",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/micral_n/shooting_stars"
     },
     "sw_altair_basic": {
       "stage": "planned",
@@ -2432,7 +2438,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:16:56Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/124"
     },
@@ -2449,7 +2455,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:16:57Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/125"
     },
@@ -2466,7 +2472,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:16:59Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/126"
     },
@@ -2483,7 +2489,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:00Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/127"
     },
@@ -2534,9 +2540,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:05Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/130"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/130",
+      "implementationPath": "ai_sw_engineer/system/apple_ii/apple_basic",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/apple_ii/apple_basic"
     },
     "sw_zork": {
       "stage": "planned",
@@ -2551,7 +2559,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:06Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/131"
     },
@@ -2568,7 +2576,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:07Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/132"
     },
@@ -2585,7 +2593,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:09Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/133"
     },
@@ -2602,7 +2610,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:10Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/134"
     },
@@ -2619,7 +2627,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:12Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/135"
     },
@@ -2636,7 +2644,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:13Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/136"
     },
@@ -2653,7 +2661,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:15Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/137"
     },
@@ -2670,7 +2678,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:16Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/138"
     },
@@ -2755,7 +2763,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:24Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/143"
     },
@@ -2772,7 +2780,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:25Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/144"
     },
@@ -2789,7 +2797,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:27Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/145"
     },
@@ -2806,7 +2814,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:28Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/146"
     },
@@ -2891,7 +2899,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:36Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/151"
     },
@@ -2908,7 +2916,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:38Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/152"
     },
@@ -2925,7 +2933,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:39Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/153"
     },
@@ -2942,7 +2950,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:41Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/154"
     },
@@ -2959,7 +2967,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:42Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/155"
     },
@@ -2976,7 +2984,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:44Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/156"
     },
@@ -2993,7 +3001,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:45Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/157"
     },
@@ -3010,7 +3018,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:47Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/158"
     },
@@ -3027,7 +3035,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:48Z",
       "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/159"
     },
@@ -3044,9 +3052,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": null,
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:45Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/160"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/160",
+      "implementationPath": "ai_sw_engineer/system/ibm_pc/chkdsk",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/ibm_pc/chkdsk"
     },
     "sw_gem_tos": {
       "stage": "planned",
