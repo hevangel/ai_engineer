@@ -20,7 +20,7 @@ Card descriptions may remain in the catalog as metadata, but the public cards do
 
 ## Status synchronization
 
-Run `node scripts/sync-timeline.mjs --project 1 --owner hevangel` with an authenticated GitHub CLI. The optional project flag maps `In progress` to Building only when no explicit stage is supplied. Omitting it uses public issue metadata alone and does not require private-project access. The repository issue list is paginated; pull requests are ignored. Errors leave the previous status snapshot intact. Commit and review the resulting JSON when publishing an updated snapshot.
+Run `node scripts/sync-timeline.mjs --project 1 --owner hevangel` with an authenticated GitHub CLI. The optional project flag maps `In progress` to Building only when no explicit stage is supplied. Omitting it uses public issue metadata alone and does not require private-project access. The repository issue list is paginated; pull requests are ignored. Errors leave the previous status snapshot intact. With the project flag each status also records the issue’s project **Path** field as `implementationPath` (`<repo>/<path>`) and `implementationUrl` (`https://github.com/<owner>/<repo>/tree/<branch>/<path>`). Short repository names and the branch come from `pathRepositories` and `pathBranch` in `data/sync.json`; a path that is empty, unmapped, unsafe or not present on that branch is omitted and the card keeps linking to the issue. `node scripts/sync-timeline.mjs --paths-only --project 1` refreshes only these two fields, leaving stages and timestamps unchanged. Commit and review the resulting JSON when publishing an updated snapshot.
 
 ### Issue metadata
 

@@ -8,7 +8,8 @@ All commands run from the repository root with Node.js 22 or newer. No packages 
 | `node scripts/publish-pages.mjs --ref HEAD` | Preview the committed static snapshot; add `--publish` only for an authorized release to `gh-pages`. |
 | `node scripts/serve.mjs` | Serve only the website files on `127.0.0.1:4173`; set `PORT` to choose another port. |
 | `node scripts/sync-timeline.mjs` | Refresh status JSON from public GitHub issues using authenticated `gh`. |
-| `node scripts/sync-timeline.mjs --project 1 --owner hevangel` | Also read the selected project's activity state; needs project access. |
+| `node scripts/sync-timeline.mjs --project 1 --owner hevangel` | Also read the selected project's activity state and Path field (card title links); needs project access. |
+| `node scripts/sync-timeline.mjs --paths-only --project 1` | Refresh only each entry's project Path (`implementationPath`/`implementationUrl`); stages and timestamps stay unchanged. |
 | `node scripts/sync-connections.mjs` | Refresh native component gates, select exact CPU variants, derive qualified compatible alternatives, and merge curated planned chip/card options. |
 | `node scripts/sync-timeline.mjs --software-only` | Refresh only the `sw_*` software statuses from `ai_sw_engineer` issues, keeping hardware statuses and the snapshot time. |
 | `node scripts/sync-timeline.mjs --check` | Validate the checked-in catalog/status snapshot without network access. |
