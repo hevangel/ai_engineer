@@ -1272,6 +1272,36 @@
             "nodeId": "I_kwDOVUYpy88AAAABZvFP0g"
           },
           "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVB3I"
+        },
+        {
+          "part": "Nintendo S-PPU1 (5C77)",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 374,
+            "url": "https://github.com/hevangel/ai_engineer/issues/374"
+          }
+        },
+        {
+          "part": "Nintendo S-PPU2 (5C78)",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 375,
+            "url": "https://github.com/hevangel/ai_engineer/issues/375"
+          }
+        },
+        {
+          "part": "Sony S-DSP",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_engineer",
+            "number": 376,
+            "url": "https://github.com/hevangel/ai_engineer/issues/376"
+          }
         }
       ]
     },

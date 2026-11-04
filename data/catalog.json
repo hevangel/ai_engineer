@@ -89,6 +89,10 @@
     "tandy": {
       "name": "Tandy / Radio Shack",
       "color": "#9c4a1a"
+    },
+    "wdc": {
+      "name": "Western Design Center",
+      "color": "#005a9c"
     }
   },
   "eras": [
@@ -395,15 +399,11 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/10"
       },
       "image": {
-        "status": "needed",
+        "src": "images/amd_am9102.png",
+        "alt": "AMD Am9102 1K static RAM in a ceramic package with a gold lid, the silicon die visible through the window.",
         "representative": false,
-        "sourceLeads": [
-          {
-            "label": "Am9102 collector photograph",
-            "url": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
-            "note": "A photographed Am9102 in a collector paperweight; reuse permission has not been verified."
-          }
-        ]
+        "source": "https://www.chipsetc.com/amd-advanced-micro-devices.html",
+        "caption": "Collector photograph of an AMD Am9102 from ChipsEtc.com."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "1024 x 1-bit static RAM"
@@ -448,10 +448,11 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/43"
       },
       "image": {
-        "src": "images/motorola_6800.jpg",
-        "alt": "Motorola 6800 proto board.jpg",
+        "src": "images/motorola_6800.png",
+        "alt": "Motorola MC6800 CPU in a purple ceramic 40-pin DIP with a gold lid",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:Motorola_6800_proto_board.jpg"
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of a Motorola MC6800, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Motorola's 8-bit microprocessor that runs from a single 5 V supply"
@@ -792,9 +793,10 @@
       },
       "image": {
         "src": "images/intel_8273.png",
-        "alt": "Radio86RK.png",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
+        "alt": "Intel D8273 HDLC/SDLC protocol controller in a 40-pin ceramic DIP, marked © Intel '77 '79",
+        "representative": false,
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of an Intel D8273, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Programmable HDLC/SDLC serial protocol controller"
@@ -816,9 +818,10 @@
       },
       "image": {
         "src": "images/intel_8275.png",
-        "alt": "Radio86RK.png",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Radio86RK.png"
+        "alt": "Intel P8275-2 CRT controller in a black 40-pin plastic DIP, marked © Intel '76",
+        "representative": false,
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of an Intel P8275-2, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Programmable CRT controller for raster-scan text displays"
@@ -987,15 +990,11 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/13"
       },
       "image": {
-        "status": "needed",
+        "src": "images/amd_am9517.png",
+        "alt": "AMD Am9517A-4PC direct-memory-access controller in a black 40-pin plastic DIP, date code 8609, marked © 1983 AMD",
         "representative": false,
-        "sourceLeads": [
-          {
-            "label": "Am9517 and Am9517-5 collector photographs",
-            "url": "https://iccollection.try.mydns.jp/intel80peripheral/i8237A.html",
-            "note": "Candidate photographs; reuse permission has not been verified."
-          }
-        ]
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of an AMD Am9517A-4PC, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Multimode direct-memory-access (DMA) controller"
@@ -1239,10 +1238,11 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/29"
       },
       "image": {
-        "src": "images/intel_8272.jpg",
-        "alt": "KA1845VZh1 Kvazar.jpg",
-        "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:KA1845VZh1_Kvazar.jpg"
+        "src": "images/Intel-D8272A.jpg",
+        "alt": "Intel D8272A floppy disk controller in a 40-pin ceramic DIP",
+        "representative": false,
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of an Intel D8272A, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "Floppy disk controller"
@@ -2790,10 +2790,11 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/125"
       },
       "image": {
-        "src": "images/sb_dsp.jpg",
-        "alt": "Soundblaster-1.0-ct1320.jpg",
+        "src": "images/sound_blaster_dsp.jpg",
+        "alt": "Two Creative Technology CT1741 Sound Blaster DSP chips in PLCC packages, one marked V412 and one marked V463, on a Sound Blaster card",
         "representative": true,
-        "source": "https://commons.wikimedia.org/wiki/File:Soundblaster-1.0-ct1320.jpg"
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Representative photograph of two CT1741 Sound Blaster DSP revisions, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
@@ -2931,7 +2932,32 @@
       "description": "Chip family · specification, RTL & independent verification",
       "dateBasis": "system",
       "dateNote": "Anchored to Nintendo’s 1990 Japanese Super Famicom launch. The US SNES followed in 1991; the representative 1CHIP board photograph depicts a later revision.",
-      "summary": "Super Nintendo's CPU, picture and audio processors and support chips"
+      "summary": "Super Nintendo's CPU, picture and audio processors and support chips",
+      "chipset": {
+        "evidence": "https://github.com/hevangel/ai_engineer/issues/47",
+        "members": [
+          {
+            "part": "Ricoh 5A22",
+            "role": "CPU and DMA controller"
+          },
+          {
+            "part": "Nintendo S-PPU1 (5C77)",
+            "role": "Picture processing"
+          },
+          {
+            "part": "Nintendo S-PPU2 (5C78)",
+            "role": "Picture processing and video output"
+          },
+          {
+            "part": "Sony SPC700",
+            "role": "Audio CPU"
+          },
+          {
+            "part": "Sony S-DSP",
+            "role": "Audio signal processor"
+          }
+        ]
+      }
     },
     {
       "id": "system_mac_iifx",
@@ -2998,11 +3024,11 @@
       "dateBasis": "introduced",
       "dateNote": "AMD’s annual report explicitly dates the Am386 family introduction to 1991. This is the 32-bit external-bus DX profile; the pictured 40 MHz grade is not claimed to date every package or revision.",
       "image": {
-        "src": "images/amd_am386dx.jpg",
-        "alt": "AMD AM386DX-40.jpg",
+        "src": "images/amd_386dx.jpg",
+        "alt": "AMD Am386DX/DXL-40 CPU in a ceramic pin-grid-array package, marked A80386DX-40",
         "representative": false,
-        "source": "https://commons.wikimedia.org/wiki/File:AMD_AM386DX-40.jpg",
-        "caption": "Motherboard with an AMD Am386DX-40; this later speed grade illustrates the 1991 family."
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "AMD Am386DX/DXL-40 package; this later speed grade illustrates the 1991 family, supplied by the project owner."
       },
       "summary": "AMD's 32-bit 386DX CPU"
     },
@@ -3181,15 +3207,10 @@
         "url": "https://github.com/hevangel/ai_engineer/issues/347"
       },
       "image": {
-        "status": "needed",
+        "src": "images/zilog_z80.jpg",
+        "alt": "Early white ceramic Zilog Z80 CPU, date code 7623, in a 40-pin DIP",
         "representative": false,
-        "sourceLeads": [
-          {
-            "label": "Wikimedia Commons Zilog Z80 category",
-            "url": "https://commons.wikimedia.org/wiki/Category:Zilog_Z80",
-            "note": "Candidate source only; file identity, license and attribution must be verified before use."
-          }
-        ]
+        "source": "https://commons.wikimedia.org/wiki/File:Zilog_Z80.jpg"
       },
       "description": "Chip family · specification, RTL & independent verification",
       "summary": "8080-compatible 8-bit CPU with extra registers and block instructions"
@@ -3358,20 +3379,136 @@
       },
       "summary": "Intel 8008 computer with 16 KiB RAM, serial teletype and SCELBAL BASIC",
       "image": {
-        "status": "needed",
+        "src": "images/system_scelbi_8b.jpg",
+        "alt": "SCELBI-8B front panel with address and memory display, bit switches and lamps, on display at the Computer History Museum",
         "representative": false,
-        "sourceLeads": [
-          {
-            "label": "SCELBI 8B model and console reference",
-            "url": "https://github.com/simh/simh/blob/master/Intel-Systems/scelbi/scelbi.txt",
-            "note": "Model documentation and photo research lead only; no exact reuse-cleared 8B photograph has been selected."
-          }
-        ]
+        "source": "https://commons.wikimedia.org/wiki/File:SCELBI-8B_(1974)_-_Computer_History_Museum_(2007-11-10_21.24.22_by_Carlo_Nardone)_clipped.jpg"
       },
       "historySources": [
         {
           "url": "https://github.com/hevangel/ai_hw_engineer/pull/65",
           "note": "Existing unmerged SV implementation; does not establish Rust/WASM, waveform or FPGA completion."
+        }
+      ]
+    },
+    {
+      "id": "system_ibm_360_model30",
+      "title": "IBM System/360 Model 30",
+      "kind": "system",
+      "company": "ibm",
+      "year": 1964,
+      "era": "18",
+      "dateLabel": "1964 · announced April 7 (first delivery June 1965)",
+      "dateBasis": "introduced",
+      "dateSource": "https://en.wikipedia.org/wiki/IBM_System/360_Model_30",
+      "dateNote": "IBM announced the System/360 family, including the Model 30, on April 7, 1964. The first Model 30 was delivered in June 1965 to McDonnell Aircraft; the 1964 announcement is used as the introduction year. This is the original SLT-era hardware; the planned SystemVerilog reconstruction uses modern parts.",
+      "query": "IBM System/360 Model 30",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 393,
+        "url": "https://github.com/hevangel/ai_engineer/issues/393"
+      },
+      "description": "8-bit datapath · original hardware reconstruction, SV web front panel & FPGA",
+      "historySources": [
+        {
+          "url": "https://www.ibm.com/history/system-360",
+          "note": "IBM Archives: System/360 announced April 7, 1964"
+        },
+        {
+          "url": "https://github.com/ibm2030/IBM2030",
+          "note": "IBM2030 Model 30 VHDL reference project"
+        }
+      ],
+      "summary": "IBM's low-end 1964 System/360 mainframe with an 8-bit datapath and microcoded control store",
+      "image": {
+        "src": "images/system_ibm_360_model30.jpg",
+        "alt": "IBM System/360 Model 30 operator panel with tape drives at the Computer History Museum",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:IBM_System_360_Model_30_(1964,_1965)_-_Computer_History_Museum_(2007-11-10_23.06.42_by_Carlo_Nardone).jpg",
+        "caption": "IBM System/360 Model 30 at the Computer History Museum, photographed by Carlo Nardone."
+      }
+    },
+    {
+      "id": "system_pdp8",
+      "title": "DEC PDP-8 · Am29xx reconstruction",
+      "kind": "system",
+      "company": "dec",
+      "year": 1965,
+      "era": "18",
+      "dateLabel": "1965 · original introduction",
+      "dateBasis": "introduced",
+      "dateSource": "https://archive.computerhistory.org/resources/text/DEC/dec.digital_%28DEC%29_timeline_1957-1997.102630354/12-bit.htm",
+      "dateNote": "The original Straight-8 dates to 1965 and used discrete transistor logic. Am29xx is the planned later reconstruction hardware, not original fitted silicon.",
+      "query": "DEC PDP-8 · Am29xx reconstruction",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 371,
+        "url": "https://github.com/hevangel/ai_engineer/issues/371"
+      },
+      "summary": "DEC's original 12-bit PDP-8, planned as a later Am29xx reconstruction",
+      "image": {
+        "src": "images/system_pdp8.jpg",
+        "alt": "Running DEC PDP-8 \"Straight-8\" front panel with lit indicator lamps and toggle switches, Stuttgart Computer Museum",
+        "representative": false,
+        "source": "https://commons.wikimedia.org/wiki/File:DEC_PDP-8,_Stuttgart,_cropped.jpg",
+        "caption": "Original DEC PDP-8 front panel; the Am29xx reconstruction is planned."
+      }
+    },
+    {
+      "id": "mos_906114",
+      "title": "MOS 906114-01 PLA",
+      "kind": "chip",
+      "company": "mos",
+      "year": 1982,
+      "era": "16",
+      "dateLabel": "1982 · host-system bound",
+      "dateBasis": "system",
+      "dateSource": "https://github.com/hevangel/ai_hw_engineer/blob/system/commodore-64/design/commodore_906114/README.md",
+      "dateNote": "Anchored to the selected 1982 Commodore 64 board profile; not a claim of the first standalone PLA shipment.",
+      "query": "MOS 906114-01 PLA",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 377,
+        "url": "https://github.com/hevangel/ai_engineer/issues/377"
+      },
+      "summary": "Commodore 64 memory and I/O address decoder",
+      "image": {
+        "src": "images/mos_906114.png",
+        "alt": "MOS 906114-01 PLA in a 28-pin plastic DIP, date code 4486",
+        "representative": false,
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of a MOS 906114-01, supplied by the project owner."
+      }
+    },
+    {
+      "id": "wdc_65c816",
+      "title": "WDC 65C816",
+      "kind": "chip",
+      "company": "wdc",
+      "year": 1983,
+      "era": "16",
+      "dateLabel": "1983 · architecture reported",
+      "dateBasis": "reported",
+      "dateSource": "https://www.cecs.uci.edu/~papers/mpr/MPR/ARTICLES/080903.pdf",
+      "dateNote": "Microprocessor Report (July 11, 1994) dates the 16-bit architecture extension to 1983. This is an architecture milestone, not a claim about the shipping date of every W65C816S revision.",
+      "query": "WDC 65C816",
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 378,
+        "url": "https://github.com/hevangel/ai_engineer/issues/378"
+      },
+      "summary": "16-bit 65xx CPU core underlying the Super Nintendo Ricoh 5A22",
+      "image": {
+        "src": "images/wdc_65c816.jpg",
+        "alt": "WDC W65C816S8PG-14 microprocessor in a 40-pin plastic DIP",
+        "representative": false,
+        "source": "https://github.com/hevangel/ai_engineer",
+        "caption": "Photograph of a WDC W65C816S8PG-14, supplied by the project owner."
+      },
+      "historySources": [
+        {
+          "url": "https://www.westerndesigncenter.com/wdc/w65c816s-chip.php",
+          "note": "Manufacturer architecture and product documentation."
         }
       ]
     }

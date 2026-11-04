@@ -64,6 +64,13 @@
       "basis": "original",
       "evidence": "https://github.com/hevangel/ai_engineer/issues/86",
       "note": "Exact 8086/8088 external-bus profile selected for this computer; shared execution-unit reuse does not make their physical pinouts interchangeable."
+    },
+    {
+      "source": "amd_am29xx",
+      "target": "system_pdp8",
+      "basis": "reconstruction",
+      "evidence": "https://github.com/hevangel/ai_engineer/issues/371",
+      "note": "Planned later Am29xx implementation of the 1965 PDP-8; not an original-machine component."
     }
   ]
 }
