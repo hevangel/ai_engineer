@@ -1,4 +1,4 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {normalizeIssue} from './sync-timeline.mjs';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {normalizeIssue,implementationLink} from './sync-timeline.mjs';
 const issue=(meta={},extra={})=>({body:'```timeline-status\n'+JSON.stringify(meta)+'\n```',state:'open',labels:[],...extra});
 test('closed or project Done never implies human verification',()=>{assert.equal(normalizeIssue(issue({}, {state:'closed'}),'Done').stage,'planned');});
 test('active project item maps to building',()=>assert.equal(normalizeIssue(issue({}),'In progress').stage,'building'));
@@ -11,3 +11,5 @@ test('ambiguous metadata and unknown stages fail',()=>{assert.throws(()=>normali
 
 test('rounded coverage cannot falsely complete source preparation',()=>assert.throws(()=>normalizeIssue(issue({stage:'sources_ready',sources:{collected:1000,cleaned:999,total:1000}}))));
 test('verification export excludes unrecognized metadata',()=>{const status=normalizeIssue(issue({stage:'ai_verified',verification:{ai:{evidence:'https://example.org/report',at:'2026-10-23',privateNotes:'not public'}}}));assert.deepEqual(Object.keys(status.verification.ai).sort(),['at','evidence']);});
+test("project Path maps a short repository name to a GitHub tree link",()=>{const config={pathBranch:"main",pathRepositories:{ai_hw_engineer:"hevangel/ai_hw_engineer"}};assert.deepEqual(implementationLink("ai_hw_engineer/design/amd_am9517",config),{path:"ai_hw_engineer/design/amd_am9517",repo:"hevangel/ai_hw_engineer",subpath:"design/amd_am9517",url:"https://github.com/hevangel/ai_hw_engineer/tree/main/design/amd_am9517"});});
+test("unknown repositories, traversal and empty paths yield no link",()=>{const config={pathBranch:"main",pathRepositories:{ai_hw_engineer:"hevangel/ai_hw_engineer"}};for(const value of [undefined,null,"","ai_hw_engineer","other/design/x","ai_hw_engineer/../secret","ai_hw_engineer/a b"])assert.equal(implementationLink(value,config),null);});

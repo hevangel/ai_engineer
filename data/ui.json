@@ -58,6 +58,7 @@
       "color": "#78828c"
     },
     "issueLink": "#{number} ↗",
+    "pathTitle": "Open the implementation at {path} on GitHub",
     "unknownSymbol": "—"
   },
   "info": {
