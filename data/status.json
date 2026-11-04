@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-11-04T06:51:51.672Z",
+  "syncedAt": "2026-11-04T14:49:31.631Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -825,7 +825,7 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Building",
+      "projectStatus": "Planned",
       "updatedAt": "2026-11-04T06:47:41Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/271"
     },
@@ -994,7 +994,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-11-04T02:57:30Z",
+      "updatedAt": "2026-11-04T12:37:59Z",
       "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/80",
       "implementationPath": "ai_hw_engineer/design/intel_80286",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/intel_80286"
@@ -2383,9 +2383,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T16:53:40Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/121"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/121",
+      "implementationPath": "ai_sw_engineer/system/busicom_141pf/firmware",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/busicom_141pf/firmware"
     },
     "sw_scelbal": {
       "stage": "building",
@@ -2400,9 +2402,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:42Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/122"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/122",
+      "implementationPath": "ai_sw_engineer/system/micral_n/basic",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/micral_n/basic"
     },
     "sw_shooting_stars": {
       "stage": "building",
@@ -2417,9 +2421,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:44Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/123"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/123",
+      "implementationPath": "ai_sw_engineer/system/micral_n/shooting_stars",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/micral_n/shooting_stars"
     },
     "sw_altair_basic": {
       "stage": "planned",
@@ -2538,7 +2544,9 @@
       "issueState": "open",
       "projectStatus": "Planned",
       "updatedAt": "2026-10-26T08:17:05Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/130"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/130",
+      "implementationPath": "ai_sw_engineer/system/apple_ii/apple_basic",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/apple_ii/apple_basic"
     },
     "sw_zork": {
       "stage": "planned",
@@ -3046,9 +3054,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
+      "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:03:45Z",
-      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/160"
+      "issueUrl": "https://github.com/hevangel/ai_sw_engineer/issues/160",
+      "implementationPath": "ai_sw_engineer/system/ibm_pc/chkdsk",
+      "implementationUrl": "https://github.com/hevangel/ai_sw_engineer/tree/main/system/ibm_pc/chkdsk"
     },
     "sw_gem_tos": {
       "stage": "planned",
