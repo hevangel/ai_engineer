@@ -58,6 +58,7 @@
       "color": "#78828c"
     },
     "issueLink": "#{number} ↗",
+    "pathTitle": "Open the implementation at {path} on GitHub",
     "unknownSymbol": "—"
   },
   "info": {
@@ -286,7 +287,7 @@
     "count": "{shown} OF {total} TITLES",
     "machineTitles": "Titles · {count}",
     "machineBadge": "COMPUTER SYSTEM",
-    "yearDifficulty": "{year} · {difficulty}",
+    "cardYear": "{year}",
     "emptyTitle": "No software matches.",
     "emptyHelp": "Try another category, stage, or search term.",
     "reset": "Reset filters",
@@ -303,7 +304,6 @@
       "year": "Year",
       "layer": "Layer",
       "category": "Category",
-      "difficulty": "Difficulty",
       "source": "Source material",
       "alsoOn": "Also runs on",
       "needs": "Needs",
