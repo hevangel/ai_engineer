@@ -40,6 +40,12 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
  // Software and computer cards use the hardware card layout: photo with the "i" button at the
  // lower left and the status badges at the lower right, then the coloured kind line, title,
  // one-line summary and the issue link.
+ // Like the hardware cards, a title links to the implementation path from the project's Path field when known.
+ function titleLink(label,issueUrl,id){
+  const status=id?snapshot.statuses[id]:null,anchor=link(label,status?.implementationUrl||issueUrl);
+  if(status?.implementationUrl)anchor.title=text('card.pathTitle',{path:status.implementationPath});
+  return anchor;
+ }
  function softwareCard(entry){
   const category=categories.get(entry.category),layer=layers.get(entry.layer);
   const article=element('article','software-card');article.id='software-'+entry.id;article.tabIndex=0;article.dataset.id=entry.id;article.dataset.category=entry.category;article.dataset.layer=entry.layer;
@@ -48,9 +54,9 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
   const info=element('button','info-button',text('info.symbol'));info.setAttribute('aria-label',text('info.button',{title:entry.title}));info.addEventListener('click',()=>openInfo(entry));
   photo.append(info,statusBadges(entry.id));
   const meta=element('div','entry-meta');meta.append(element('span','maker',category.label),element('span','',layer.label));
-  const title=element('h3');title.append(link(entry.title,entry.issue.url));
+  const title=element('h3');title.append(titleLink(entry.title,entry.issue.url,entry.id));
   const footer=element('div','entry-footer');
-  footer.append(element('span','software-meta',text('software.yearDifficulty',{year:entry.year,difficulty:entry.difficulty})),link(text('card.issueLink',{number:entry.issue.number}),entry.issue.url));
+  footer.append(element('span','software-meta',text('software.cardYear',{year:entry.year})),link(text('card.issueLink',{number:entry.issue.number}),entry.issue.url));
   article.append(photo,meta,title,element('p','summary',entry.summary),footer);
   return article;
  }
@@ -62,7 +68,7 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
   const info=element('button','info-button',text('info.symbol'));info.setAttribute('aria-label',text('info.button',{title:item.title}));info.addEventListener('click',()=>item.entry?openHardwareInfo(item.entry):openSystemInfo(item));photo.append(info);
   if(item.entry)photo.append(statusBadges(item.entry.id));
   const meta=element('div','entry-meta');meta.append(element('span','maker',item.maker||text('software.machineBadge')),element('span','',item.maker?text('software.machineBadge'):String(item.year)));
-  const title=element('h3');title.append(item.issue?link(item.title,item.issue.url):document.createTextNode(item.title));
+  const title=element('h3');title.append(item.issue?titleLink(item.title,item.issue.url,item.entry?.id):document.createTextNode(item.title));
   const footer=element('div','entry-footer');footer.append(element('span','software-meta',system.cpu+' · '+text('software.machineTitles',{count})));
   if(item.issue)footer.append(link(text('card.issueLink',{number:item.issue.number}),item.issue.url));
   article.append(photo,meta,title,element('p','summary',item.summary),footer);
@@ -82,7 +88,7 @@ export function createSoftwareView({data,catalog,snapshot,vocabulary,ui,text,ele
   const kind=element('p','info-kind');kind.append(element('span','maker',category.label));if(layer.label!==category.label)kind.append(element('span','',layer.label));
   const title=element('h2','',entry.title);title.id='info-title';
   const facts=element('dl','software-facts');
-  for(const [key,value] of [['system',system.title],['cpu',systems.get(entry.system).cpu],['year',String(entry.year)],['layer',layer.label],['category',category.label],['difficulty',entry.difficulty],['source',entry.sourceMaterial],...(entry.alsoOn?.length?[['alsoOn',entry.alsoOn.map(id=>machine(systems.get(id)).title).join(', ')]]:[])])facts.append(element('dt','',text('software.info.'+key)),element('dd','',value));
+  for(const [key,value] of [['system',system.title],['cpu',systems.get(entry.system).cpu],['year',String(entry.year)],['layer',layer.label],['category',category.label],['source',entry.sourceMaterial],...(entry.alsoOn?.length?[['alsoOn',entry.alsoOn.map(id=>machine(systems.get(id)).title).join(', ')]]:[])])facts.append(element('dt','',text('software.info.'+key)),element('dd','',value));
   const needs=entry.dependsOn||[],requiredBy=links.filter(item=>item.from===entry.id&&item.kind==='dependency').map(item=>item.to);
   const derived=entry.derivedFrom||[],ledTo=links.filter(item=>item.from===entry.id&&item.kind==='lineage').map(item=>item.to);
   const steps=element('ol','software-steps');for(const step of ui.software.steps)steps.append(element('li','',step));

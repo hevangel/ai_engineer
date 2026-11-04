@@ -105,7 +105,7 @@ for(const name of ['index.html','assets/timeline.css']){const body=await fs.read
  for(const entry of software.entries){
   assert(/^sw_[a-z0-9_]+$/.test(entry.id)&&!ids.has(entry.id),'Invalid software id '+entry.id);
   assert(systemIds.has(entry.system),'Unknown software system '+entry.id);assert(layerIds.has(entry.layer),'Unknown layer '+entry.id);assert(categoryIds.has(entry.category),'Unknown category '+entry.id);
-  assert(Number.isInteger(entry.year)&&entry.difficulty&&entry.sourceMaterial,'Incomplete software entry '+entry.id);
+  assert(Number.isInteger(entry.year)&&entry.sourceMaterial,'Incomplete software entry '+entry.id);
   assert(typeof entry.summary==='string'&&entry.summary.trim()&&entry.summary.length<=100&&!/[\r\n]/.test(entry.summary),'Missing one-line summary (100 characters or fewer) '+entry.id);
   assert.equal(entry.issue.repo,software.repository);assert.equal(entry.issue.url,`https://github.com/${entry.issue.repo}/issues/${entry.issue.number}`);
   for(const ref of [...(entry.dependsOn||[]),...(entry.derivedFrom||[])])assert(softwareIds.has(ref)&&ref!==entry.id,'Unknown software reference '+entry.id+' -> '+ref);
@@ -118,6 +118,6 @@ for(const name of ['index.html','assets/timeline.css']){const body=await fs.read
  for(const system of systemIds)assert(software.entries.some(entry=>entry.system===system),'Software system without titles '+system);
  assert.equal(ui.software.steps.length,8,'The rewrite lifecycle has eight steps');
  for(const key of ['dependency','lineage'])assert.equal(typeof lookup('software.wires.'+key),'string','Missing software wire text: '+key);
- for(const key of ['system','cpu','year','layer','category','difficulty','source','alsoOn'])assert.equal(typeof lookup('software.info.'+key),'string','Missing software info text: '+key);
+ for(const key of ['system','cpu','year','layer','category','source','alsoOn'])assert.equal(typeof lookup('software.info.'+key),'string','Missing software info text: '+key);
  console.log(`Checked ${software.entries.length} software titles on ${systemIds.size} computers.`);
 }

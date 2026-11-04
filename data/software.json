@@ -345,7 +345,6 @@
       "layer": "firmware",
       "category": "firmware",
       "year": 1971,
-      "difficulty": "Hard",
       "sourceMaterial": "Recovered assembly",
       "summary": "Calculator control program that ran on the Intel 4004 and its 4001/4002/4003 support chips",
       "sources": [
@@ -373,7 +372,6 @@
       "layer": "software",
       "category": "language",
       "year": 1976,
-      "difficulty": "Hard",
       "sourceMaterial": "Published source listings",
       "summary": "Early 8008 BASIC interpreter sold as a printed source listing",
       "issue": {
@@ -396,7 +394,6 @@
       "layer": "software",
       "category": "game",
       "year": 1976,
-      "difficulty": "Medium",
       "sourceMaterial": "Published listing",
       "summary": "Small 8008 game from a period hobbyist listing",
       "issue": {
@@ -419,7 +416,6 @@
       "layer": "software",
       "category": "language",
       "year": 1975,
-      "difficulty": "Hard",
       "sourceMaterial": "Historical listings and binaries",
       "summary": "Microsoft's first product: a BASIC interpreter for the Intel 8080 Altair",
       "issue": {
@@ -441,7 +437,6 @@
       "layer": "software",
       "category": "language",
       "year": 1976,
-      "difficulty": "Easy",
       "sourceMaterial": "Published assembly",
       "summary": "Minimal 8080 BASIC that fit in a few kilobytes",
       "issue": {
@@ -463,7 +458,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1979,
-      "difficulty": "Hard",
       "sourceMaterial": "Reconstructed assembly",
       "summary": "Digital Research disk operating system for 8080 and Z80 machines",
       "sources": [
@@ -494,7 +488,6 @@
       "layer": "software",
       "category": "game",
       "year": 1978,
-      "difficulty": "Medium",
       "sourceMaterial": "ROM and disassemblies",
       "summary": "Taito arcade game running on an Intel 8080 board with custom shift hardware",
       "issue": {
@@ -517,7 +510,6 @@
       "layer": "software",
       "category": "game",
       "year": 1978,
-      "difficulty": "Medium",
       "sourceMaterial": "Published assembly",
       "summary": "Z80 chess program published as a complete assembly listing",
       "sources": [
@@ -546,7 +538,6 @@
       "layer": "software",
       "category": "game",
       "year": 1976,
-      "difficulty": "Medium",
       "sourceMaterial": "Original source resources",
       "summary": "Peter Jennings chess program that fit in about 1 KB on the KIM-1",
       "sources": [
@@ -574,7 +565,6 @@
       "layer": "software",
       "category": "language",
       "year": 1977,
-      "difficulty": "Medium",
       "sourceMaterial": "Original source, MIT",
       "summary": "Microsoft BASIC for the 6502, the ancestor of Applesoft and Commodore BASIC",
       "derivedFrom": [
@@ -609,7 +599,6 @@
       "layer": "software",
       "category": "game",
       "year": 1980,
-      "difficulty": "Medium–Hard",
       "sourceMaterial": "Story source, interpreters, binaries",
       "summary": "Infocom text adventure and the portable virtual machine that ran it",
       "dependsOn": [
@@ -639,7 +628,6 @@
       "layer": "firmware",
       "category": "firmware",
       "year": 1977,
-      "difficulty": "Easy",
       "sourceMaterial": "ROM listings",
       "summary": "Built-in ROM monitor for examining memory and running programs",
       "issue": {
@@ -661,7 +649,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1983,
-      "difficulty": "Hard",
       "sourceMaterial": "Historical assembly listings",
       "summary": "Floppy-disk operating system for the Apple II",
       "dependsOn": [
@@ -693,7 +680,6 @@
       "layer": "software",
       "category": "application",
       "year": 1979,
-      "difficulty": "Hard",
       "sourceMaterial": "Reconstructed assembly",
       "summary": "First spreadsheet, squeezed into the memory of an Apple II",
       "dependsOn": [
@@ -724,7 +710,6 @@
       "layer": "software",
       "category": "game",
       "year": 1989,
-      "difficulty": "Very hard",
       "sourceMaterial": "Original assembly",
       "summary": "Rotoscoped platformer with sophisticated animation on a 1 MHz 6502",
       "dependsOn": [
@@ -755,7 +740,6 @@
       "layer": "software",
       "category": "game",
       "year": 1977,
-      "difficulty": "Hard",
       "sourceMaterial": "Annotated disassembly",
       "summary": "Launch cartridge: tank and plane duels with cycle-timed video",
       "issue": {
@@ -777,7 +761,6 @@
       "layer": "software",
       "category": "game",
       "year": 1980,
-      "difficulty": "Hard",
       "sourceMaterial": "Annotated disassembly",
       "summary": "First console adventure game, in 4 KB",
       "sources": [
@@ -806,7 +789,6 @@
       "layer": "software",
       "category": "game",
       "year": 1982,
-      "difficulty": "Very hard",
       "sourceMaterial": "ROM and disassembly resources",
       "summary": "Scrolling jungle platformer with cycle-exact kernels",
       "issue": {
@@ -828,7 +810,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1979,
-      "difficulty": "Very hard",
       "sourceMaterial": "OS assembly archives",
       "summary": "ROM operating system of the Atari 400/800/XL/XE family",
       "issue": {
@@ -851,7 +832,6 @@
       "layer": "software",
       "category": "language",
       "year": 1979,
-      "difficulty": "Medium",
       "sourceMaterial": "Buildable assembly",
       "summary": "Atari 8-bit BASIC cartridge, independent of Microsoft BASIC",
       "dependsOn": [
@@ -882,7 +862,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1980,
-      "difficulty": "Hard",
       "sourceMaterial": "Published assembly listings",
       "summary": "Disk operating system for the Atari 8-bit computers",
       "dependsOn": [
@@ -914,7 +893,6 @@
       "layer": "software",
       "category": "game",
       "year": 1979,
-      "difficulty": "Hard",
       "sourceMaterial": "Original and reconstructed assembly",
       "summary": "First-person space combat game using interrupts and custom graphics",
       "dependsOn": [
@@ -945,7 +923,6 @@
       "layer": "software",
       "category": "language",
       "year": 1982,
-      "difficulty": "Medium",
       "sourceMaterial": "ROM and assembly listings",
       "summary": "The C64 ROM BASIC, a descendant of Microsoft 6502 BASIC",
       "dependsOn": [
@@ -974,7 +951,6 @@
       "layer": "firmware",
       "category": "firmware",
       "year": 1982,
-      "difficulty": "Hard",
       "sourceMaterial": "ROM and assembly listings",
       "summary": "ROM operating-system core for I/O, screen editor and interrupts",
       "issue": {
@@ -997,7 +973,6 @@
       "layer": "software",
       "category": "game",
       "year": 1985,
-      "difficulty": "Very hard",
       "sourceMaterial": "Annotated source reconstruction",
       "summary": "Fixed-point 3D space trading game in under 64 KB",
       "dependsOn": [
@@ -1023,7 +998,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1986,
-      "difficulty": "Very hard",
       "sourceMaterial": "Reverse-engineered source",
       "summary": "Graphical desktop environment for the Commodore 64",
       "dependsOn": [
@@ -1048,7 +1022,6 @@
       "layer": "software",
       "category": "game",
       "year": 1982,
-      "difficulty": "Medium",
       "sourceMaterial": "ROM / reverse engineering",
       "summary": "Atari 5200 version of the paddle brick-breaking game",
       "issue": {
@@ -1071,7 +1044,6 @@
       "layer": "software",
       "category": "game",
       "year": 1982,
-      "difficulty": "Hard",
       "sourceMaterial": "ROM / reverse engineering",
       "summary": "Console port of the Atari 400/800 space combat game",
       "derivedFrom": [
@@ -1097,7 +1069,6 @@
       "layer": "software",
       "category": "game",
       "year": 1987,
-      "difficulty": "Hard",
       "sourceMaterial": "Published assembly",
       "summary": "Arcade chase game ported to the Atari 7800",
       "issue": {
@@ -1120,7 +1091,6 @@
       "layer": "software",
       "category": "game",
       "year": 1986,
-      "difficulty": "Medium",
       "sourceMaterial": "ROM / reverse engineering",
       "summary": "Atari 7800 conversion of the vector arcade classic",
       "issue": {
@@ -1143,7 +1113,6 @@
       "layer": "firmware",
       "category": "firmware",
       "year": 1981,
-      "difficulty": "Hard",
       "sourceMaterial": "Original assembly listings",
       "summary": "ROM firmware that boots the PC and provides the INT services",
       "sources": [
@@ -1172,7 +1141,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1982,
-      "difficulty": "Medium",
       "sourceMaterial": "Original source, MIT",
       "summary": "First MS-DOS release for 8086 hardware, with a CP/M-style API",
       "dependsOn": [
@@ -1207,7 +1175,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1983,
-      "difficulty": "Hard",
       "sourceMaterial": "Original source, MIT",
       "summary": "Adds directories, file handles and device drivers",
       "dependsOn": [
@@ -1242,7 +1209,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1987,
-      "difficulty": "Hard",
       "sourceMaterial": "Binaries, manuals, disassembly",
       "summary": "Mature DOS with hard-disk partitions and 1.44 MB floppies",
       "dependsOn": [
@@ -1271,7 +1237,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1988,
-      "difficulty": "Very hard",
       "sourceMaterial": "Original source, MIT",
       "summary": "DOS with the Shell and large-disk support",
       "dependsOn": [
@@ -1306,7 +1271,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1991,
-      "difficulty": "Very hard",
       "sourceMaterial": "Binaries, documentation",
       "summary": "DOS with high memory, QBasic and a full-screen editor",
       "dependsOn": [
@@ -1335,7 +1299,6 @@
       "layer": "software",
       "category": "language",
       "year": 1983,
-      "difficulty": "Medium–Hard",
       "sourceMaterial": "Original source, MIT",
       "summary": "Microsoft BASIC interpreter bundled with PC compatibles",
       "dependsOn": [
@@ -1370,7 +1333,6 @@
       "layer": "software",
       "category": "language",
       "year": 1991,
-      "difficulty": "Hard",
       "sourceMaterial": "Binaries and documentation",
       "summary": "Structured BASIC with an integrated editor, replacing GW-BASIC",
       "dependsOn": [
@@ -1398,7 +1360,6 @@
       "layer": "software",
       "category": "utility",
       "year": 1988,
-      "difficulty": "Hard",
       "sourceMaterial": "Binaries and documentation",
       "summary": "Text-mode graphical file and program launcher",
       "dependsOn": [
@@ -1423,7 +1384,6 @@
       "layer": "software",
       "category": "utility",
       "year": 1981,
-      "difficulty": "Easy–Medium",
       "sourceMaterial": "Mixed; some original source",
       "summary": "COMMAND.COM, EDIT, DOSKEY and the other small DOS tools",
       "dependsOn": [
@@ -1449,7 +1409,6 @@
       "layer": "os",
       "category": "operating-system",
       "year": 1985,
-      "difficulty": "Very hard",
       "sourceMaterial": "Historical source and binaries",
       "summary": "Graphical desktop and operating system of the Atari ST",
       "issue": {
@@ -1471,7 +1430,6 @@
       "layer": "software",
       "category": "game",
       "year": 1985,
-      "difficulty": "Hard–Very hard",
       "sourceMaterial": "Varies by game",
       "summary": "Representative 68000 games for GEM/TOS",
       "dependsOn": [
