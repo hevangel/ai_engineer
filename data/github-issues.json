@@ -905,39 +905,6 @@
       ]
     },
     {
-      "issue": 22,
-      "title": "[Chip] Intel 8086 / 8088 family — distinct external-bus profiles",
-      "path": "design/intel_8086_8088",
-      "members": [
-        {
-          "part": "Intel 8086",
-          "paths": [
-            "design/intel_8086_8088/intel_8086"
-          ],
-          "existingIssue": null,
-          "issue": {
-            "repo": "hevangel/ai_engineer",
-            "number": 270,
-            "url": "https://github.com/hevangel/ai_engineer/issues/270",
-            "nodeId": "I_kwDOVUYpy88AAAABZvFLng"
-          },
-          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBeM"
-        },
-        {
-          "part": "Intel 8088",
-          "paths": [],
-          "existingIssue": null,
-          "issue": {
-            "repo": "hevangel/ai_engineer",
-            "number": 271,
-            "url": "https://github.com/hevangel/ai_engineer/issues/271",
-            "nodeId": "I_kwDOVUYpy88AAAABZvFLsw"
-          },
-          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVBfc"
-        }
-      ]
-    },
-    {
       "issue": 26,
       "title": "[Chip] intel 8253 8254",
       "path": "design/intel_8253_8254",
@@ -1907,7 +1874,7 @@
     },
     {
       "issue": 22,
-      "title": "[Chip] Intel 8086 / 8088 family — distinct external-bus profiles",
+      "title": "[Chip] Intel 8086",
       "paths": [
         "design/intel_8086_8088/intel_8086"
       ],

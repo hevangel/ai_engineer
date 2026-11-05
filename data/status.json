@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-31T08:02:22.394Z",
+  "syncedAt": "2026-11-04T14:49:31.631Z",
   "source": "GitHub public issues and selected project statuses",
   "statuses": {
     "system_pdp1": {
@@ -135,7 +135,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:09Z",
+      "updatedAt": "2026-10-31T16:53:23Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/65",
       "implementationPath": "ai_hw_engineer/system/busicom_141pf",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/busicom_141pf"
@@ -176,7 +176,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:12Z",
+      "updatedAt": "2026-10-31T16:53:28Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/68",
       "implementationPath": "ai_hw_engineer/system/micral_n",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/micral_n"
@@ -255,7 +255,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:19Z",
+      "updatedAt": "2026-10-31T16:43:36Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/33",
       "implementationPath": "ai_hw_engineer/design",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design"
@@ -482,7 +482,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:39Z",
+      "updatedAt": "2026-10-31T16:53:34Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/17",
       "implementationPath": "ai_hw_engineer/design/apple_ii_chips",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/apple_ii_chips"
@@ -518,7 +518,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:40Z",
+      "updatedAt": "2026-10-31T16:57:23Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/30",
       "implementationPath": "ai_hw_engineer/design/intel_8273",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/intel_8273"
@@ -636,7 +636,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:50Z",
+      "updatedAt": "2026-10-31T16:43:34Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/74",
       "implementationPath": "ai_hw_engineer/system/apple_ii",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/apple_ii"
@@ -694,8 +694,10 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:53Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/22"
+      "updatedAt": "2026-11-04T06:47:43Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/22",
+      "implementationPath": "ai_hw_engineer/design/intel_8086_8088/intel_8086",
+      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/intel_8086_8088/intel_8086"
     },
     "rtc146818": {
       "stage": "planned",
@@ -805,13 +807,13 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:03:00Z",
+      "updatedAt": "2026-10-31T16:43:38Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/45",
       "implementationPath": "ai_hw_engineer/design/motorola_68000",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/motorola_68000"
     },
     "intel_8088": {
-      "stage": "building",
+      "stage": "planned",
       "coverage": {
         "collected": null,
         "cleaned": null,
@@ -823,9 +825,9 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:02:53Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/22"
+      "projectStatus": "Planned",
+      "updatedAt": "2026-11-04T06:47:41Z",
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/271"
     },
     "intel_8087": {
       "stage": "building",
@@ -882,7 +884,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:03:05Z",
+      "updatedAt": "2026-10-31T16:57:20Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/38",
       "implementationPath": "ai_hw_engineer/design/mos_6560",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/mos_6560"
@@ -992,7 +994,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T04:07:32Z",
+      "updatedAt": "2026-11-04T12:37:59Z",
       "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/80",
       "implementationPath": "ai_hw_engineer/design/intel_80286",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/intel_80286"
@@ -1373,7 +1375,7 @@
       },
       "issueState": "open",
       "projectStatus": "Planned",
-      "updatedAt": "2026-10-24T01:26:28Z",
+      "updatedAt": "2026-10-31T16:57:21Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/41"
     },
     "motorola_68020": {
@@ -1458,7 +1460,7 @@
       },
       "issueState": "open",
       "projectStatus": "Planned",
-      "updatedAt": "2026-10-25T21:27:16Z",
+      "updatedAt": "2026-10-31T16:19:39Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/142"
     },
     "system_mac_128k": {
@@ -1577,7 +1579,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-10-31T05:03:30Z",
+      "updatedAt": "2026-10-31T16:57:18Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/40",
       "implementationPath": "ai_hw_engineer/design/mos_8520",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/mos_8520"
@@ -2006,7 +2008,7 @@
       },
       "issueState": "open",
       "projectStatus": "Planned",
-      "updatedAt": "2026-10-31T05:03:34Z",
+      "updatedAt": "2026-10-31T16:43:31Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/47"
     },
     "system_mac_iifx": {
@@ -2040,7 +2042,7 @@
       },
       "issueState": "open",
       "projectStatus": "Planned",
-      "updatedAt": "2026-10-31T05:03:35Z",
+      "updatedAt": "2026-10-31T16:19:24Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/101"
     },
     "amd_am386dx": {
@@ -2331,7 +2333,7 @@
       },
       "issueState": "open",
       "projectStatus": null,
-      "updatedAt": "2026-10-29T06:28:48Z",
+      "updatedAt": "2026-10-31T19:41:35Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/371"
     },
     "mos_906114": {
