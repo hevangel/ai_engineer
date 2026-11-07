@@ -18,12 +18,15 @@ const seen=new Set();
 const checkItem=(value,workstream,expectedPath)=>{
  const ref=normalizeIssueRef(value,config.repository),item=items.get(issueKey(ref));
  if(!item||item.workstream!==workstream)throw Error('Missing or invalid project item '+issueKey(ref));
- validateActiveFields(item,ref.repo,agents,statuses);
  if(expectedPath&&item.path!==expectedPath)throw Error('Path disagrees with work location '+issueKey(ref));
+ // Historic coordination issues can point to a registered implementation path in another repository.
+ const pathOwner=expectedPath?ref.repo.split('/')[0]+'/'+expectedPath.split('/')[0]:ref.repo;
+ validateActiveFields(item,pathOwner,agents,statuses);
 };
 for(const family of config.series){
- checkItem(family.issue,'Chips');
- const children=api(`repos/${config.repository}/issues/${family.issue}/sub_issues?per_page=100`);
+ checkItem(family.issue,'Chips',family.projectPath);
+ const parent=normalizeIssueRef(family.issue,config.repository);
+ const children=api(`repos/${parent.repo}/issues/${parent.number}/sub_issues?per_page=100`);
  for(const member of family.members){
   if(seen.has(issueKey(member.issue))||issueKey(member.issue)===issueKey(family.issue,config.repository))throw Error('Duplicate/circular chip issue #'+member.issue.number);
   seen.add(issueKey(member.issue));

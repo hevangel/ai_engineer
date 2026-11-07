@@ -2081,5 +2081,41 @@
     "changes": "Thumbnail resized by Wikimedia; displayed with contain sizing, no recoloring.",
     "representative": true,
     "curated": true
+  },
+  "amd_amz8000": {
+    "title": "File:AMD AMZ8002DC 1.jpg",
+    "creator": "Christian Bassow",
+    "credit": "Original photograph by Christian Bassow.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AMD_AMZ8002DC_1.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/b/b2/AMD_AMZ8002DC_1.jpg",
+    "changes": "Original JPEG downloaded unchanged. The site displays the entire frame.",
+    "representative": true,
+    "curated": true
+  },
+  "amd_am29xxx": {
+    "title": "File:AMD Am29000-16GC.jpg",
+    "creator": "Dirk Oppelt",
+    "credit": "Original photograph by Dirk Oppelt.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AMD_Am29000-16GC.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/17/AMD_Am29000-16GC.jpg",
+    "changes": "Original JPEG downloaded unchanged. The site displays the entire frame.",
+    "representative": true,
+    "curated": true
+  },
+  "amd_am27xx": {
+    "title": "File:EPROM AMD AM2716.JPG",
+    "creator": "Mixabest",
+    "credit": "Original photograph by Mixabest.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:EPROM_AMD_AM2716.JPG#Licensing",
+    "source": "https://commons.wikimedia.org/wiki/File:EPROM_AMD_AM2716.JPG",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/6/6b/EPROM_AMD_AM2716.JPG",
+    "changes": "Original JPEG downloaded unchanged. The site displays the entire frame.",
+    "representative": true,
+    "curated": true
   }
 }
