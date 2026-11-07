@@ -16,6 +16,8 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 
 ## Canonical issues and completion dependencies
 
+[Am9517A](https://github.com/hevangel/ai_hw_engineer/issues/244) is a separate revision tracker under the original Am9517 issue. The [Am29027 integration test](https://github.com/hevangel/ai_hw_engineer/issues/159) requires the [Am29000 RTL](https://github.com/hevangel/ai_hw_engineer/issues/158). Both Am29xxx members share the family card.
+
 | Key | Issue | Kind | Blocked by |
 | --- | --- | --- | --- |
 | ttl_74_series | [[Chip] 74-series logic](https://github.com/hevangel/ai_engineer/issues/4) | chip | — |
@@ -27,6 +29,15 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | amd_am9300 | [[Chip] amd am9300](https://github.com/hevangel/ai_engineer/issues/11) | chip | — |
 | amd_am9511 | [[Chip] amd am9511](https://github.com/hevangel/ai_engineer/issues/12) | chip | — |
 | amd_am9517 | [[Chip] amd am9517](https://github.com/hevangel/ai_engineer/issues/13) | chip | — |
+| amd_am9512 | [[Chip] AMD Am9512](https://github.com/hevangel/ai_hw_engineer/issues/120) | chip | — |
+| amd_am9513 | [[Chip] AMD Am9513 / Am9513A](https://github.com/hevangel/ai_hw_engineer/issues/121) | chip | — |
+| amd_am9518 | [[Chip] AMD Am9518](https://github.com/hevangel/ai_hw_engineer/issues/122) | chip | — |
+| amd_am9519 | [[Chip] AMD Am9519 / Am9519A](https://github.com/hevangel/ai_hw_engineer/issues/123) | chip | — |
+| amd_amz8000 | [[Chip] AMD AmZ8000](https://github.com/hevangel/ai_hw_engineer/issues/124) | chip | — |
+| amd_am28xx | [[Chip] AMD Am28xx series](https://github.com/hevangel/ai_hw_engineer/issues/125) | chip | — |
+| amd_am29xxx | [[Chip] AMD Am29xxx series](https://github.com/hevangel/ai_hw_engineer/issues/126) | chip | — |
+| amd_am26xx | [[Chip] AMD Am26xx series](https://github.com/hevangel/ai_hw_engineer/issues/127) | chip | — |
+| amd_am27xx | [[Chip] AMD Am27xx series](https://github.com/hevangel/ai_hw_engineer/issues/128) | chip | — |
 | apple_iie_iou | [[Chip] apple iie iou](https://github.com/hevangel/ai_engineer/issues/14) | chip | — |
 | apple_iie_mmu | [[Chip] apple iie mmu](https://github.com/hevangel/ai_engineer/issues/15) | chip | — |
 | apple_iie_pal | [[Chip] apple iie pal](https://github.com/hevangel/ai_engineer/issues/16) | chip | — |
