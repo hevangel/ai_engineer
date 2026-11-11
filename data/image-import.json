@@ -428,6 +428,27 @@
         "source": "^File:Ic\\-photo\\-AMD\\-\\-R80186\\-6\\ B4\\-\\(186\\-CPU\\)\\.png$",
         "flags": "i"
       }
+    },
+    "amd_amz8000": {
+      "query": "File:AMD AMZ8002DC 1.jpg",
+      "titlePattern": {
+        "source": "^File:AMD AMZ8002DC 1\\.jpg$",
+        "flags": "i"
+      }
+    },
+    "amd_am27xx": {
+      "query": "File:EPROM AMD AM2716.JPG",
+      "titlePattern": {
+        "source": "^File:EPROM AMD AM2716\\.JPG$",
+        "flags": "i"
+      }
+    },
+    "amd_am29xxx": {
+      "query": "File:AMD Am29000-16GC.jpg",
+      "titlePattern": {
+        "source": "^File:AMD Am29000-16GC\\.jpg$",
+        "flags": "i"
+      }
     }
   },
   "brandFallbacks": {
@@ -470,7 +491,10 @@
     "apple_iie_pal",
     "sb_dsp",
     "system_pc_386sx",
-    "amd_am9511"
+    "amd_am9511",
+    "amd_amz8000",
+    "amd_am27xx",
+    "amd_am29xxx"
   ],
   "excludeTitles": {
     "card_adlib": {
@@ -514,7 +538,16 @@
     "intel_8087",
     "intel_80286",
     "intel_80287",
-    "amd_80186"
+    "amd_80186",
+    "amd_am9512",
+    "amd_am9513",
+    "amd_am9518",
+    "amd_am9519",
+    "amd_amz8000",
+    "amd_am26xx",
+    "amd_am27xx",
+    "amd_am28xx",
+    "amd_am29xxx"
   ],
   "userSupplied": {
     "amd_am2501": {

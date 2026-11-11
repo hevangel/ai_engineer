@@ -1483,6 +1483,1465 @@
           "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhDVDzY"
         }
       ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 124,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/124"
+      },
+      "title": "[Chip] AMD AmZ8000",
+      "path": "design/amd_amz8000",
+      "members": [
+        {
+          "part": "AmZ8001",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 129,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/129",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThh8g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OBM"
+        },
+        {
+          "part": "AmZ8002",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 130,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/130",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThiEg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OA8"
+        }
+      ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 125,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/125"
+      },
+      "title": "[Chip] AMD Am28xx series",
+      "path": "design/amd_am28xx",
+      "members": [
+        {
+          "part": "Am2802",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 131,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/131",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThiNA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OBs"
+        },
+        {
+          "part": "Am2803",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 132,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/132",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThiTA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OBg"
+        },
+        {
+          "part": "Am2804",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 133,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/133",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThiZw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OC4"
+        },
+        {
+          "part": "Am2805",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 134,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/134",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThiiw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OCA"
+        },
+        {
+          "part": "Am2806",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 135,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/135",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThitQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OCY"
+        },
+        {
+          "part": "Am2807",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 136,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/136",
+            "nodeId": "I_kwDOUDSvDc8AAAABdThi0Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OCk"
+        },
+        {
+          "part": "Am2808",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 137,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/137",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiImw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Opg"
+        },
+        {
+          "part": "Am2809",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 138,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/138",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiIvg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Oo0"
+        },
+        {
+          "part": "Am2810",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 139,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/139",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiI2Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Op8"
+        },
+        {
+          "part": "Am2812",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 140,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/140",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiI-w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OtA"
+        },
+        {
+          "part": "Am2813",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 141,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/141",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiJQA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OpA"
+        },
+        {
+          "part": "Am2814",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 142,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/142",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiJYA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Oqc"
+        },
+        {
+          "part": "Am2825",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 143,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/143",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiJgw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0OqM"
+        },
+        {
+          "part": "Am2826",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 144,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/144",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTiJnw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Oqs"
+        },
+        {
+          "part": "Am2827",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 145,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/145",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi88A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PSs"
+        },
+        {
+          "part": "Am2833",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 146,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/146",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi9Rw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PSU"
+        },
+        {
+          "part": "Am2841",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 147,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/147",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi9hw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PSg"
+        },
+        {
+          "part": "Am2847",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 148,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/148",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi9ug"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PTM"
+        },
+        {
+          "part": "Am2855",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 149,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/149",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi94A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PTY"
+        },
+        {
+          "part": "Am2856",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 150,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/150",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi-Bg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PTc"
+        },
+        {
+          "part": "Am2857",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 151,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/151",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi-JA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PTk"
+        },
+        {
+          "part": "Am2896",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 152,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/152",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTi-Rw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PTs"
+        },
+        {
+          "part": "Am2864A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 153,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/153",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjiLg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Prw"
+        },
+        {
+          "part": "Am2864B",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 154,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/154",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjiWg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PsY"
+        },
+        {
+          "part": "Am28C256",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 155,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/155",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjigQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Psg"
+        },
+        {
+          "part": "Am2816A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 156,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/156",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjing"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Ps4"
+        },
+        {
+          "part": "Am2817A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 157,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/157",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjiwQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Pss"
+        }
+      ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 126,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/126"
+      },
+      "title": "[Chip] AMD Am29xxx series",
+      "path": "design/amd_am29xxx",
+      "members": [
+        {
+          "part": "Am29000",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 158,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/158",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTji4A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PtQ"
+        },
+        {
+          "part": "Am29005",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 228,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/228",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpdzg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U9U"
+        },
+        {
+          "part": "Am29027",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 159,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/159",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjjCw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Pto"
+        },
+        {
+          "part": "Am29030",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 160,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/160",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTjjJA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0PtE"
+        },
+        {
+          "part": "Am29035",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 161,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/161",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkH9g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QTo"
+        },
+        {
+          "part": "Am29040",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 162,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/162",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkIIQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QSc"
+        },
+        {
+          "part": "Am29050",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 163,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/163",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkISw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QTI"
+        },
+        {
+          "part": "Am29200",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 164,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/164",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkIbg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QTY"
+        },
+        {
+          "part": "Am29202",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 229,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/229",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpd9g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U90"
+        },
+        {
+          "part": "Am29205",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 165,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/165",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkIjw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QUQ"
+        },
+        {
+          "part": "Am29240",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 166,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/166",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkIuw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QU0"
+        },
+        {
+          "part": "Am29243",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 167,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/167",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkI-Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QUA"
+        },
+        {
+          "part": "Am29245",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 168,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/168",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkJGw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0QVU"
+        },
+        {
+          "part": "Am29323",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 230,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/230",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpeDw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U-E"
+        },
+        {
+          "part": "Am29325",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 169,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/169",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkvMw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q8Y"
+        },
+        {
+          "part": "Am29331",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 170,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/170",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkvXg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q9M"
+        },
+        {
+          "part": "Am29332",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 171,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/171",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkvgg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q88"
+        },
+        {
+          "part": "Am29334",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 172,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/172",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkvow"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q8w"
+        },
+        {
+          "part": "Am29337",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 173,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/173",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkvxA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q9g"
+        },
+        {
+          "part": "Am29338",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 174,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/174",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkv4Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q-Q"
+        },
+        {
+          "part": "Am29434",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 175,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/175",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkv_w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q-A"
+        },
+        {
+          "part": "Am29501",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 182,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/182",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlYXg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0RhQ"
+        },
+        {
+          "part": "Am29501A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 231,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/231",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpeLA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U9o"
+        },
+        {
+          "part": "Am29509",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 232,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/232",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpeUw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U-s"
+        },
+        {
+          "part": "Am29510",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 183,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/183",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlYoQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Rh0"
+        },
+        {
+          "part": "Am29516",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 233,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/233",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpebQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U-A"
+        },
+        {
+          "part": "Am29517",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 234,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/234",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTpekw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U-Q"
+        },
+        {
+          "part": "Am29520",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 184,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/184",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlYxQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0RhA"
+        },
+        {
+          "part": "Am29521",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 185,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/185",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmCQw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R-M"
+        },
+        {
+          "part": "Am29524",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 235,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/235",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTperg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0U-U"
+        },
+        {
+          "part": "Am29525",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 236,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/236",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp93Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Vac"
+        },
+        {
+          "part": "Am29526",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 237,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/237",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp9_w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Vd8"
+        },
+        {
+          "part": "Am29527",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 238,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/238",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-Hg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Vaw"
+        },
+        {
+          "part": "Am29528",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 239,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/239",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-Pg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0VeY"
+        },
+        {
+          "part": "Am29529",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 240,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/240",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-WQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Vbk"
+        },
+        {
+          "part": "Am29540",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 241,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/241",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-dw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0VbA"
+        },
+        {
+          "part": "Am29C323",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 176,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/176",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTkwQw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Q9s"
+        },
+        {
+          "part": "Am29C325",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 177,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/177",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlXlw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Rgk"
+        },
+        {
+          "part": "Am29C327",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 178,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/178",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlXvQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Rjg"
+        },
+        {
+          "part": "Am29C331",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 179,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/179",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlX-A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0RgE"
+        },
+        {
+          "part": "Am29C332",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 180,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/180",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlYIw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Rgs"
+        },
+        {
+          "part": "Am29C334",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 181,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/181",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTlYPw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Rhg"
+        }
+      ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 127,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/127"
+      },
+      "title": "[Chip] AMD Am26xx series",
+      "path": "design/amd_am26xx",
+      "members": [
+        {
+          "part": "Am2600",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 186,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/186",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmCig"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R-0"
+        },
+        {
+          "part": "Am2602",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 187,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/187",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmCtA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R-c"
+        },
+        {
+          "part": "Am2614",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 188,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/188",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmC1w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0SBg"
+        },
+        {
+          "part": "Am2615",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 189,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/189",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmDAA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R-U"
+        },
+        {
+          "part": "Am2616",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 190,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/190",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmDGA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R_s"
+        },
+        {
+          "part": "Am2617",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 191,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/191",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmDNg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R_c"
+        },
+        {
+          "part": "Am26123",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 192,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/192",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmDUw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0R_I"
+        },
+        {
+          "part": "Am26L02",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 193,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/193",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmo3w"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Sc4"
+        },
+        {
+          "part": "Am26L123",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 194,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/194",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmpCQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Sco"
+        },
+        {
+          "part": "Am26LS29",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 195,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/195",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmpKQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Sdk"
+        },
+        {
+          "part": "Am26LS30",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 196,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/196",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmpbw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Sf4"
+        },
+        {
+          "part": "Am26LS31",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 197,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/197",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmpnw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0SdU"
+        },
+        {
+          "part": "Am26LS32",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 198,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/198",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmpyA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0SdE"
+        },
+        {
+          "part": "Am26LS33",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 199,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/199",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmqDQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0SdQ"
+        },
+        {
+          "part": "Am26S02",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 200,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/200",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTmqQg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Sds"
+        },
+        {
+          "part": "Am26S10",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 201,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/201",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnNnQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0TAg"
+        },
+        {
+          "part": "Am26S11",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 202,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/202",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnNzw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S-U"
+        },
+        {
+          "part": "Am26S12",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 203,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/203",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOCQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S_M"
+        },
+        {
+          "part": "Am26S12A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 204,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/204",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOLQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S_g"
+        }
+      ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 128,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/128"
+      },
+      "title": "[Chip] AMD Am27xx series",
+      "path": "design/amd_am27xx",
+      "members": [
+        {
+          "part": "Am2708",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 205,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/205",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOSw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S-w"
+        },
+        {
+          "part": "Am2716",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 206,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/206",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOZQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S_0"
+        },
+        {
+          "part": "Am2732",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 207,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/207",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOhA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0TAM"
+        },
+        {
+          "part": "Am27128",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 210,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/210",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1Wg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tfo"
+        },
+        {
+          "part": "Am27256",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 211,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/211",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1eQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tf4"
+        },
+        {
+          "part": "Am2732A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 208,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/208",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTnOnw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0S_8"
+        },
+        {
+          "part": "Am2764",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 209,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/209",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1PA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tfc"
+        },
+        {
+          "part": "Am27128A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 213,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/213",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1vw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0TgI"
+        },
+        {
+          "part": "Am2716B",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 242,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/242",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-kA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0VbM"
+        },
+        {
+          "part": "Am2732B",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 243,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/243",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTp-qQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Vbw"
+        },
+        {
+          "part": "Am27512",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 214,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/214",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn13g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tgc"
+        },
+        {
+          "part": "Am2764A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 212,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/212",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1mw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tgs"
+        },
+        {
+          "part": "Am27C256",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 215,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/215",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn1_Q"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0TgE"
+        },
+        {
+          "part": "Am27C512",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 216,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/216",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTn2FQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Tg4"
+        },
+        {
+          "part": "Am27C010",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 219,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/219",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToaSA"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T9c"
+        },
+        {
+          "part": "Am27C020",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 221,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/221",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToaig"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T-A"
+        },
+        {
+          "part": "Am27C040",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 223,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/223",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToayg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T90"
+        },
+        {
+          "part": "Am27C080",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 226,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/226",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTo-2g"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Uh0"
+        },
+        {
+          "part": "Am27C1024",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 220,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/220",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToaZQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0UAQ"
+        },
+        {
+          "part": "Am27C128",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 218,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/218",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToaJg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T9Q"
+        },
+        {
+          "part": "Am27C2048",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 222,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/222",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToarg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T-I"
+        },
+        {
+          "part": "Am27C400",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 224,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/224",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToa8A"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T-Q"
+        },
+        {
+          "part": "Am27C4096",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 225,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/225",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTo-tQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Uhs"
+        },
+        {
+          "part": "Am27C64",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 217,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/217",
+            "nodeId": "I_kwDOUDSvDc8AAAABdToaBQ"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0T9k"
+        },
+        {
+          "part": "Am27C800",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 227,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/227",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTo_Eg"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0Uh8"
+        }
+      ]
+    },
+    {
+      "issue": {
+        "repo": "hevangel/ai_engineer",
+        "number": 13,
+        "url": "https://github.com/hevangel/ai_engineer/issues/13"
+      },
+      "title": "[Chip] AMD Am9517",
+      "path": "design/amd_am9517",
+      "projectPath": "ai_hw_engineer/design/amd_am9517",
+      "members": [
+        {
+          "part": "Am9517A",
+          "paths": [],
+          "existingIssue": null,
+          "issue": {
+            "repo": "hevangel/ai_hw_engineer",
+            "number": 244,
+            "url": "https://github.com/hevangel/ai_hw_engineer/issues/244",
+            "nodeId": "I_kwDOUDSvDc8AAAABdTqfbw"
+          },
+          "projectItemId": "PVTI_lAHOALQ9dM4BoWAFzhG0V5I"
+        }
+      ]
     }
   ],
   "implementationInventory": [

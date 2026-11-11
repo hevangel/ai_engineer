@@ -458,6 +458,154 @@
       "summary": "Motorola's 8-bit microprocessor that runs from a single 5 V supply"
     },
     {
+      "id": "amd_am26xx",
+      "title": "AMD Am26xx series",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1974,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1974",
+      "dateSource": "https://ftpmirror.your.org/pub/misc/bitsavers/components/amd/_dataBooks/1974_AMD_Data_Book.pdf",
+      "era": "8",
+      "query": "AMD Am26xx series",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 127,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/127"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Line drivers, receivers and interface circuits",
+      "dateNote": "AMD’s 1974 data book documents early Am26 monostables. Its 1979 interface data book documents the broader Am26 series.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+        }
+      ],
+      "series": {
+        "members": [
+          {
+            "part": "Am2600",
+            "role": "Dual retriggerable monostable multivibrator",
+            "year": 1974,
+            "source": "https://ftpmirror.your.org/pub/misc/bitsavers/components/amd/_dataBooks/1974_AMD_Data_Book.pdf"
+          },
+          {
+            "part": "Am2602",
+            "role": "Dual retriggerable monostable multivibrator",
+            "year": 1974,
+            "source": "https://ftpmirror.your.org/pub/misc/bitsavers/components/amd/_dataBooks/1974_AMD_Data_Book.pdf"
+          },
+          {
+            "part": "Am2614",
+            "role": "Quad single-ended line driver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am2615",
+            "role": "Dual differential line receiver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am2616",
+            "role": "Quad MIL-188C and RS-232C line driver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am2617",
+            "role": "Quad RS-232C line receiver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26123",
+            "role": "Dual retriggerable monostable multivibrator",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26L02",
+            "role": "Low-power monostable multivibrator",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26L123",
+            "role": "Low-power dual monostable multivibrator",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26LS29",
+            "role": "Quad three-state RS-423 line driver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26LS30",
+            "role": "Dual differential RS-422 or quad RS-423 line driver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26LS31",
+            "role": "Quad differential RS-422 line driver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26LS32",
+            "role": "Quad differential RS-422 and RS-423 line receiver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26LS33",
+            "role": "Quad differential line receiver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26S02",
+            "role": "High-speed Schottky monostable multivibrator",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26S10",
+            "role": "Quad open-collector bus transceiver with three-state receiver",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26S11",
+            "role": "Quad open-collector bus transceiver with parity",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26S12",
+            "role": "Quad open-collector bus transceiver",
+            "year": 1977,
+            "source": "https://bitsavers.computerhistory.org/components/amd/_dataBooks/1977_AMD_Linear_and_Interface_Data_Book.pdf"
+          },
+          {
+            "part": "Am26S12A",
+            "role": "Quad open-collector bus transceiver with revised receiver hysteresis",
+            "year": 1977,
+            "source": "https://bitsavers.computerhistory.org/components/amd/_dataBooks/1977_AMD_Linear_and_Interface_Data_Book.pdf"
+          }
+        ]
+      }
+    },
+    {
       "id": "mos_6502_family",
       "title": "6502 CPU family",
       "kind": "chip",
@@ -997,7 +1145,14 @@
         "caption": "Photograph of an AMD Am9517A-4PC, supplied by the project owner."
       },
       "description": "Chip family · specification, RTL & independent verification",
-      "summary": "Multimode direct-memory-access (DMA) controller"
+      "summary": "Multimode direct-memory-access (DMA) controller",
+      "dateNote": "The issue’s verification covers the original Am9517. The pictured Am9517A revision has separate implementation and verification tracking under that issue.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1980_AMD_MOS_LSI_Data_Book.pdf",
+          "note": "AMD Am9517A datasheet"
+        }
+      ]
     },
     {
       "id": "intel_8086",
@@ -1272,6 +1427,31 @@
       "dateBasis": "documented",
       "dateNote": "The original MOS 6560/6561 datasheet is dated February 1980. This replaces a later 1983 manual-printing bound; it does not assert the first design or shipment date.",
       "summary": "VIC video and sound chip of the Commodore VIC-20"
+    },
+    {
+      "id": "amd_am9518",
+      "title": "AMD Am9518",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1980,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1980",
+      "dateSource": "https://www.bitsavers.org/components/amd/_dataBooks/1980_AMD_Am9500_Peripheral_Products_Interface_Guide.pdf",
+      "era": "16",
+      "query": "AMD Am9518",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 122,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/122"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "DES data ciphering processor",
+      "dateNote": "AMD's 1980 interface guide describes the Am9518 data ciphering processor and its interfaces."
     },
     {
       "id": "mos_6526",
@@ -3240,6 +3420,197 @@
       "summary": "MOS Technology's 1976 single-board 6502 trainer with hex keypad and LED display"
     },
     {
+      "id": "amd_am28xx",
+      "title": "AMD Am28xx series",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1976,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1976",
+      "dateSource": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf",
+      "era": "8",
+      "query": "AMD Am28xx series",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 125,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/125"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Shift registers, FIFO memories and EEPROMs",
+      "dateNote": "The 1976 data book anchors the shift-register and FIFO members. EEPROMs are separately documented later members.",
+      "series": {
+        "members": [
+          {
+            "part": "Am2802",
+            "role": "Quad 256-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2803",
+            "role": "Dual 512-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2804",
+            "role": "1024-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2805",
+            "role": "512-bit recirculating shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2806",
+            "role": "1024-bit recirculating shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2807",
+            "role": "512-bit recirculating shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2808",
+            "role": "1024-bit recirculating shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2809",
+            "role": "Dual 128-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2810",
+            "role": "Dual 128-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2812",
+            "role": "32 × 8 FIFO memory",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2813",
+            "role": "32 × 9 FIFO memory",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2814",
+            "role": "Dual 128-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2825",
+            "role": "Dual 1024-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2826",
+            "role": "Dual 1024-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2827",
+            "role": "2048-bit dynamic shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2833",
+            "role": "1024-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2841",
+            "role": "64 × 4 FIFO memory",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2847",
+            "role": "Quad 80-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2855",
+            "role": "Quad 128-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2856",
+            "role": "Dual 256-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2857",
+            "role": "512-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2896",
+            "role": "Quad 96-bit static shift register",
+            "year": 1976,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1976_AMD_MOS_LSI_Data_Book.pdf"
+          },
+          {
+            "part": "Am2864A",
+            "role": "8K × 8 EEPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2864B",
+            "role": "8K × 8 EEPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am28C256",
+            "role": "32K × 8 CMOS EEPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2816A",
+            "role": "Parallel EEPROM listed by Xeltek",
+            "year": 2011,
+            "source": "https://www.xeltek.com/software/sp3000u/sp3000uDevice.pdf"
+          },
+          {
+            "part": "Am2817A",
+            "role": "2K × 8 parallel EEPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          }
+        ]
+      }
+    },
+    {
       "id": "system_trs80_model1",
       "title": "TRS-80 Model I",
       "kind": "system",
@@ -3264,6 +3635,222 @@
       "summary": "Tandy's 1977 Z80 home computer with built-in keyboard and cassette interface"
     },
     {
+      "id": "amd_am9519",
+      "title": "AMD Am9519 / Am9519A",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1977,
+      "dateBasis": "preview",
+      "dateLabel": "Previewed in 1977",
+      "dateSource": "https://www.bitsavers.org/components/amd/_dataBooks/1977_AMD_8080A_9080A_MOS_Microprocessor_Handbook.pdf",
+      "era": "8",
+      "query": "AMD Am9519 / Am9519A",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 123,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/123"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Universal programmable interrupt controller",
+      "dateNote": "AMD's 1977 buyer's guide lists the original Am9519 with projected availability. The 1980 interface guide documents Am9519A.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1980_AMD_Am9500_Peripheral_Products_Interface_Guide.pdf"
+        }
+      ]
+    },
+    {
+      "id": "amd_am27xx",
+      "title": "AMD Am27xx series",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1977,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1977",
+      "dateSource": "https://www.bitsavers.org/components/amd/_dataBooks/1977_AMD_8080A_9080A_MOS_Microprocessor_Handbook.pdf",
+      "era": "8",
+      "query": "File:EPROM AMD AM2716.JPG",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 128,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/128"
+      },
+      "image": {
+        "src": "images/amd_am27xx.jpg",
+        "alt": "AMD Am2716-1DC ceramic EPROM with an ultraviolet erase window.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:EPROM_AMD_AM2716.JPG",
+        "caption": "AMD Am2716-1DC, a 2K × 8 UV EPROM and one of the Am27xx members."
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Parallel EPROMs",
+      "dateNote": "AMD's 1977 microprocessor handbook documents the Am2708. Later NMOS and CMOS EPROMs have their own documentation bounds.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+        }
+      ],
+      "series": {
+        "members": [
+          {
+            "part": "Am2708",
+            "role": "1K × 8 UV EPROM",
+            "year": 1977,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1977_AMD_8080A_9080A_MOS_Microprocessor_Handbook.pdf"
+          },
+          {
+            "part": "Am2716",
+            "role": "2K × 8 UV EPROM",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_The_Designers_Guide.pdf"
+          },
+          {
+            "part": "Am2732",
+            "role": "4K × 8 UV EPROM",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_The_Designers_Guide.pdf"
+          },
+          {
+            "part": "Am27128",
+            "role": "16K × 8 UV EPROM",
+            "year": 1984,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1984_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27256",
+            "role": "32K × 8 UV EPROM",
+            "year": 1984,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1984_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2732A",
+            "role": "4K × 8 UV EPROM",
+            "year": 1984,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1984_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2764",
+            "role": "8K × 8 UV EPROM",
+            "year": 1984,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1984_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27128A",
+            "role": "16K × 8 UV EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2716B",
+            "role": "2K × 8 UV EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2732B",
+            "role": "4K × 8 UV EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27512",
+            "role": "64K × 8 UV EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am2764A",
+            "role": "8K × 8 UV EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C256",
+            "role": "32K × 8 CMOS EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C512",
+            "role": "64K × 8 CMOS EPROM",
+            "year": 1986,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1986_AMD_Bipolar_MOS_Memories_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C010",
+            "role": "128K × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C020",
+            "role": "256K × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C040",
+            "role": "512K × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C080",
+            "role": "1M × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C1024",
+            "role": "64K × 16 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C128",
+            "role": "16K × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C2048",
+            "role": "128K × 16 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C400",
+            "role": "512K × 8 or 256K × 16 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C4096",
+            "role": "256K × 16 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C64",
+            "role": "8K × 8 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          },
+          {
+            "part": "Am27C800",
+            "role": "1M × 8 or 512K × 16 CMOS EPROM",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/_dataBooks/1993_AMD_EPROM_Products_Data_Book.pdf"
+          }
+        ]
+      }
+    },
+    {
       "id": "system_atari_800",
       "title": "Atari 400/800",
       "kind": "system",
@@ -3286,6 +3873,123 @@
         "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
       },
       "summary": "Atari's 1979 home computers with custom ANTIC and GTIA graphics chips"
+    },
+    {
+      "id": "amd_am9512",
+      "title": "AMD Am9512",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1979,
+      "dateBasis": "reported",
+      "dateLabel": "Reported by 1979",
+      "dateSource": "https://www.worldradiohistory.com/Archive-Electronics/70s/79/Electronics-1979-07-05.pdf",
+      "era": "16",
+      "query": "AMD Am9512",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 120,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/120"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": [
+          {
+            "label": "CPU Shack Am9512-1DC",
+            "url": "https://cpushack.com/chippics/AMD/951x/AMDAM9512-IDC.html",
+            "note": "The collection identifies an Am9512-1DC package. Photo reuse rights have not been established."
+          }
+        ]
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Stack-based floating-point processor",
+      "dateNote": "Electronics described the device in July 1979. AMD's 1980 guide documents the hardware and its floating-point format.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1980_AMD_Am9500_Peripheral_Products_Interface_Guide.pdf"
+        }
+      ]
+    },
+    {
+      "id": "amd_am9513",
+      "title": "AMD Am9513 / Am9513A",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1979,
+      "dateBasis": "preview",
+      "dateLabel": "Previewed in 1979",
+      "dateSource": "https://www.bitsavers.org/components/amd/_dataBooks/1979_AMD_The_Designers_Guide.pdf",
+      "era": "16",
+      "query": "AMD Am9513 / Am9513A",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 121,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/121"
+      },
+      "image": {
+        "status": "needed",
+        "representative": false,
+        "sourceLeads": []
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Programmable system timing controller",
+      "dateNote": "AMD's 1979 selection guide lists planned availability for the original Am9513. Later AMD documentation covers Am9513A separately.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1980_AMD_Am9500_Peripheral_Products_Interface_Guide.pdf"
+        },
+        {
+          "url": "https://www.bitsavers.org/components/amd/_dataBooks/1987_AMD_MOS_Microprocessors_and_Peripherals_Data_Book.pdf"
+        }
+      ]
+    },
+    {
+      "id": "amd_amz8000",
+      "title": "AMD AmZ8000",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1979,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1979",
+      "dateSource": "https://www.bitsavers.org/components/amd/z8000/1979_AM-PUB089_AmZ8001_AmZ8002_Processor_Interface.pdf",
+      "era": "16",
+      "query": "File:AMD AMZ8002DC 1.jpg",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 124,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/124"
+      },
+      "image": {
+        "src": "images/amd_amz8000.jpg",
+        "alt": "AMD AmZ8002DC ceramic DIP on an orange background, with its part marking visible.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_AMZ8002DC_1.jpg",
+        "caption": "AMD AmZ8002DC, the non-segmented processor in the AmZ8000 family."
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "Segmented and non-segmented 16-bit microprocessors",
+      "dateNote": "AMD's 1979 interface manual documents the segmented AmZ8001 and non-segmented AmZ8002 processor variants.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/z8000/1980_AM-PUB098_AmZ8000_Family_Data_Book.pdf"
+        }
+      ],
+      "series": {
+        "members": [
+          {
+            "part": "AmZ8001",
+            "role": "Segmented 16-bit CPU",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/z8000/1979_AM-PUB089_AmZ8001_AmZ8002_Processor_Interface.pdf"
+          },
+          {
+            "part": "AmZ8002",
+            "role": "Non-segmented 16-bit CPU",
+            "year": 1979,
+            "source": "https://www.bitsavers.org/components/amd/z8000/1979_AM-PUB089_AmZ8001_AmZ8002_Processor_Interface.pdf"
+          }
+        ]
+      }
     },
     {
       "id": "system_atari_5200",
@@ -3334,6 +4038,299 @@
         "caption": "Representative photograph of the machine; the software shown is not tied to this exact unit."
       },
       "summary": "Atari's 1985 68000 home computer with the GEM desktop in ROM"
+    },
+    {
+      "id": "amd_am29xxx",
+      "title": "AMD Am29xxx series",
+      "kind": "chip",
+      "company": "amd",
+      "year": 1985,
+      "dateBasis": "documented",
+      "dateLabel": "Documented by 1985",
+      "dateSource": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf",
+      "era": "32",
+      "query": "File:AMD Am29000-16GC.jpg",
+      "issue": {
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 126,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/126"
+      },
+      "image": {
+        "src": "images/amd_am29xxx.jpg",
+        "alt": "Purple AMD Am29000-16GC processor package with white AMD logo and part marking.",
+        "representative": true,
+        "source": "https://commons.wikimedia.org/wiki/File:AMD_Am29000-16GC.jpg",
+        "caption": "AMD Am29000-16GC, a 29K RISC processor and one of the devices represented by this card."
+      },
+      "description": "Chip family · specification, RTL & independent verification",
+      "summary": "29K RISC processors, Am29300 bit-slice and Am295xx support chips",
+      "dateNote": "The 1985 Am29300 handbook anchors the earliest documented subgroup. The card also lists later 29K RISC and Am295xx signal-processing devices by their own source dates.",
+      "historySources": [
+        {
+          "url": "https://www.bitsavers.org/components/amd/Am29000/1990_AMD_29K_Family_Data_Book.pdf",
+          "note": "AMD 29K family data book"
+        },
+        {
+          "url": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf",
+          "note": "AMD Am29500 family handbook"
+        }
+      ],
+      "series": {
+        "members": [
+          {
+            "part": "Am29000",
+            "role": "Three-bus 32-bit 29K RISC processor",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1988_AMD_Am29000_Memory_Design_Handbook.pdf"
+          },
+          {
+            "part": "Am29005",
+            "role": "Three-bus 29K RISC processor without on-chip memory management",
+            "year": 1995,
+            "source": "https://datasheets.chipdb.org/AMD/29K/29kprog.pdf"
+          },
+          {
+            "part": "Am29027",
+            "role": "Arithmetic accelerator for the Am29000 bus",
+            "year": 1990,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1990_AMD_29K_Family_Data_Book.pdf"
+          },
+          {
+            "part": "Am29030",
+            "role": "Two-bus 29K RISC processor",
+            "year": 1991,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1991_AMD_Am29030_and_Am29035_Microprocessor_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29035",
+            "role": "Two-bus 29K RISC processor with a smaller instruction cache",
+            "year": 1991,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1991_AMD_Am29030_and_Am29035_Microprocessor_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29040",
+            "role": "Two-bus 29K RISC processor with instruction and data caches",
+            "year": 1995,
+            "source": "https://datasheets.chipdb.org/AMD/29K/040_ds.pdf"
+          },
+          {
+            "part": "Am29050",
+            "role": "Three-bus 29K RISC processor with integrated floating point",
+            "year": 1991,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1991_AMD_29050_Users_Manual.pdf"
+          },
+          {
+            "part": "Am29200",
+            "role": "32-bit embedded RISC microcontroller",
+            "year": 1991,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1991_AMD_Am29200_RISC_Microprocessor_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29202",
+            "role": "Embedded RISC microcontroller with IEEE 1284 parallel interface",
+            "year": 1995,
+            "source": "https://datasheets.chipdb.org/AMD/29K/202_ds.pdf"
+          },
+          {
+            "part": "Am29205",
+            "role": "32-bit embedded RISC microcontroller",
+            "year": 1994,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1994_AMD_Am29200_and_Am29205_RISC_Microcontrollers_Users_Manual.pdf"
+          },
+          {
+            "part": "Am29240",
+            "role": "32-bit embedded RISC microcontroller",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1993_AMD_Am29240_29245_29243_RISC_Microcontrollers_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29243",
+            "role": "32-bit embedded RISC microcontroller",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1993_AMD_Am29240_29245_29243_RISC_Microcontrollers_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29245",
+            "role": "32-bit embedded RISC microcontroller",
+            "year": 1993,
+            "source": "https://www.bitsavers.org/components/amd/Am29000/1993_AMD_Am29240_29245_29243_RISC_Microcontrollers_Users_Manual_and_Data_Sheet.pdf"
+          },
+          {
+            "part": "Am29323",
+            "role": "32 × 32 parallel multiplier",
+            "year": 1985,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf"
+          },
+          {
+            "part": "Am29325",
+            "role": "32-bit floating-point processor",
+            "year": 1985,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf"
+          },
+          {
+            "part": "Am29331",
+            "role": "16-bit microprogram sequencer",
+            "year": 1985,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf"
+          },
+          {
+            "part": "Am29332",
+            "role": "32-bit arithmetic logic unit",
+            "year": 1985,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf"
+          },
+          {
+            "part": "Am29334",
+            "role": "Four-port dual-access register file",
+            "year": 1985,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1985_AM29300_Family_Handbook.pdf"
+          },
+          {
+            "part": "Am29337",
+            "role": "16-bit bounds checker",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29338",
+            "role": "32-bit byte queue",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29434",
+            "role": "ECL four-port dual-access register file",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29501",
+            "role": "Microprogrammable signal processor",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29501A",
+            "role": "Faster multiport pipelined processor",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29509",
+            "role": "12 × 12 multiplier-accumulator",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29510",
+            "role": "16 × 16 parallel multiplier with accumulator",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29516",
+            "role": "16 × 16 parallel multiplier with independently clocked registers",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29517",
+            "role": "16 × 16 parallel multiplier with a shared clock",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29520",
+            "role": "Multilevel pipeline register",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29521",
+            "role": "Multilevel pipeline register",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29524",
+            "role": "Dual 7-stage or single 14-stage pipeline register",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Array_Processing_and_Digital_Signal_Processing_Handbook.pdf"
+          },
+          {
+            "part": "Am29525",
+            "role": "Dual 8-stage or single 16-stage pipeline register",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Array_Processing_and_Digital_Signal_Processing_Handbook.pdf"
+          },
+          {
+            "part": "Am29526",
+            "role": "Sine function generator, high byte",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29527",
+            "role": "Sine function generator, low byte",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29528",
+            "role": "Cosine function generator, high byte",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29529",
+            "role": "Cosine function generator, low byte",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29540",
+            "role": "Programmable FFT address sequencer",
+            "year": 1986,
+            "source": "https://bitsavers.trailing-edge.com/components/amd/bitslice/1986_Am29500_Family_Handbook_Array_Processing_and_Digital_Signal_Processing.pdf"
+          },
+          {
+            "part": "Am29C323",
+            "role": "CMOS 32-bit parallel multiplier",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29C325",
+            "role": "CMOS 32-bit floating-point processor",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29C327",
+            "role": "CMOS double-precision floating-point processor",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29C331",
+            "role": "CMOS 16-bit microprogram sequencer",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29C332",
+            "role": "CMOS 32-bit arithmetic logic unit",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          },
+          {
+            "part": "Am29C334",
+            "role": "CMOS four-port dual-access register file",
+            "year": 1988,
+            "source": "https://www.bitsavers.org/components/amd/bitslice/1988_AMD_32-Bit_Microprogrammable_Products_Am29C300_29300_Data_Book.pdf"
+          }
+        ]
+      }
     },
     {
       "id": "system_atari_7800",
