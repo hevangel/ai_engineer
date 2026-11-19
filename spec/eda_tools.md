@@ -45,6 +45,8 @@ The current hardware environment's owning issues have been transferred to `ai_hw
 
 [Docker environment ai_hw_engineer#77](https://github.com/hevangel/ai_hw_engineer/issues/77) retains native blockers for all nine tool issues. Its Path is `ai_hw_engineer/Dockerfile`; the Icarus implementation fix is in the documented Apple II overlay. The base and overlay remain separate image profiles.
 
+[Extended EDA Docker image ai_hw_engineer#84](https://github.com/hevangel/ai_hw_engineer/issues/84) is a separate image profile. Umbrella coordination issues [#467](https://github.com/hevangel/ai_engineer/issues/467) track Icarus Verilog support in that profile, and [#466](https://github.com/hevangel/ai_engineer/issues/466) track GHDL VHDL support alongside NVC. These cross-repository links do not create native blocked-by edges; the extended-image acceptance and each tool's scoped criteria remain separately recorded.
+
 [Qualification report](https://github.com/hevangel/ai_hw_engineer/blob/codex/eda-tool-fix-main/docs/eda-tool-qualification.md) · [Icarus fix and built-in-browser evidence PR](https://github.com/hevangel/ai_hw_engineer/pull/79)
 
 The fixed overlay removes only the pinned package helper's malformed standalone `0-3` C/C++ flag token and requires actual C/C++ VPI build/load checks at image build time. Surfer was verified by loading a generated VCD in the built-in browser, selecting signals, inspecting two cursor samples and zooming. Other tool probes cover simulation, UVM report handling, synthesis, equivalence, formal proof/cover and deliberate failure paths. All 29 CLI probes pass.

@@ -2,6 +2,12 @@
   "version": 1,
   "githubOwner": "hevangel",
   "projectStages": {
+    "Planned": "planned",
+    "Researching": "researching",
+    "Sources Ready": "sources_ready",
+    "Building": "building",
+    "AI verified": "ai_verified",
+    "Human verified": "human_verified",
     "In progress": "building"
   },
   "connectionsSource": "Native GitHub system completion dependencies, planned chip/card options and source-qualified compatible CPU alternatives",

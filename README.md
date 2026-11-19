@@ -67,6 +67,19 @@ The website reads a checked-in snapshot of GitHub issue/project metadata. It doe
 
 AI Engineer is the umbrella website and shared roadmap. The existing projects keep their own repositories and histories and are included here as pinned Git submodules. The timeline presents the work; it does not run the chip simulators itself.
 
+## Learning references
+
+The [`learning/`](learning/) folder pins four independent study repositories for foundational references in computer architecture, algorithms, programming languages and compilers. Their READMEs describe the editions and coverage represented by each companion:
+
+| Textbook | Reference repository |
+| --- | --- |
+| *Computer Architecture: A Quantitative Approach* | [Computer architecture](learning/computer_architecture_a_quantitative_approach) |
+| *Introduction to Algorithms* | [Algorithms](learning/introduction_to_algorithms) |
+| *Structure and Interpretation of Computer Programs* | [Programming languages](learning/structure_and_interpretation_of_computer_programs) |
+| *Compilers: Principles, Techniques, and Tools* | [Compiler design](learning/compilers_principles_techniques_and_tools) |
+
+These are pinned reference repositories, not content owned by the umbrella project. See [learning/README.md](learning/README.md) for checkout instructions and reference-use guidance.
+
 See the [initial project plan](spec/initial_project_plan.md), [386/68030 scope](spec/era_386_scope.md), [IBM/AMD profiles](spec/ibm_386_amd_scope.md) and [PDP-1 plan](spec/pdp1_am29xx.md) for the detailed inventory. The [GitHub Project](https://github.com/users/hevangel/projects/1) coordinates dependencies across the projects; board access follows its existing visibility settings.
 
 ## Run the website locally
@@ -81,7 +94,7 @@ node scripts/serve.mjs
 
 Open **http://127.0.0.1:4173/**. Serve the page over HTTP so its JSON files load correctly.
 
-To explore the hardware/software projects as well, run `git submodule update --init`. Initialize nested dependencies only when you need them; some are large.
+To explore the hardware/software projects and learning references as well, run `git submodule update --init`. Initialize nested dependencies only when you need them; some are large.
 
 Maintainers can find status-refresh commands, checks and release instructions in [scripts/README.md](scripts/README.md) and the [website maintenance guide](spec/website.md). GitHub Pages serves a static snapshot from the generated `gh-pages` branch.
 

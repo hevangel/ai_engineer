@@ -27,6 +27,7 @@ All changes to this repository are made by AI coding agents. Humans do not edit 
 | `ai_fpga_engineer/` | FPGA designs, implementation, and verification |
 | `hdl-workbench/` | Browser-based HDL workbench and its implementation |
 | `e1647-rs/` | Experimental IEEE 1647 e-language Rust tooling, tokenizer and future language/simulator integration |
+| `learning/` | Pinned textbook study/reference repositories and their local index |
 | `spec/` | Repository governance, website maintenance, cross-project roadmap, project manager instructions and dependency inventory |
 | `.gitmodules` | Canonical submodule URLs; the root Git tree pins each submodule commit |
 
@@ -34,6 +35,7 @@ All changes to this repository are made by AI coding agents. Humans do not edit 
 
 - Use the root repository for the public site's shared pages, navigation, visual identity, cross-project explanations, and static-site build or deployment configuration.
 - Keep project-specific implementation and documentation in the owning submodule. Before editing a submodule, read and follow its `AGENTS.md` and other local instructions.
+- Treat the repositories under `learning/` as independently maintained reference projects. Cite the exact textbook edition and location for technical claims; do not assume their licenses authorize copying the published books' text, figures or exercises.
 - Do not flatten, replace, or copy an entire submodule into the root. Link to project sources or incorporate specific material only when its license permits.
 - Treat submodule commit pointers as the versions represented by the site. Do not update them to remote heads as routine cleanup; update them intentionally and review the source changes represented by the new pins.
 - A project-specific change and a root site change may need separate Git commits because each submodule has its own history. Keep the root's pin aligned with the reviewed project revision.
