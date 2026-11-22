@@ -78,9 +78,7 @@
       "issueState": "open",
       "projectStatus": "Building",
       "updatedAt": "2026-10-31T05:02:04Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/5",
-      "implementationPath": "ai_hw_engineer/design",
-      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design"
+      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/5"
     },
     "amd_am3101": {
       "stage": "ai_verified",
@@ -135,9 +133,9 @@
         "ai": null,
         "human": null
       },
-      "issueState": "open",
-      "projectStatus": "Building",
-      "updatedAt": "2026-10-31T16:53:23Z",
+      "issueState": "closed",
+      "projectStatus": "Human verified",
+      "updatedAt": "2026-11-20T07:00:15Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/65",
       "implementationPath": "ai_hw_engineer/system/busicom_141pf",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/busicom_141pf"
@@ -1333,7 +1331,9 @@
       "issueState": "open",
       "projectStatus": "Building",
       "updatedAt": "2026-11-16T03:27:52Z",
-      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/270"
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/270",
+      "implementationPath": "ai_hw_engineer/design/ibm_ega",
+      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/ibm_ega"
     },
     "mac_floppy": {
       "stage": "planned",
@@ -1452,7 +1452,9 @@
       "issueState": "open",
       "projectStatus": "Building",
       "updatedAt": "2026-11-16T03:27:55Z",
-      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/271"
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/271",
+      "implementationPath": "ai_hw_engineer/design/ibm_ega",
+      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/ibm_ega"
     },
     "system_ibm_at_5170": {
       "stage": "building",
@@ -1468,7 +1470,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-11-15T20:10:04Z",
+      "updatedAt": "2026-11-17T23:37:32Z",
       "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/254",
       "implementationPath": "ai_hw_engineer/system/ibm_pc_at_5170",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/ibm_pc_at_5170"
@@ -1680,7 +1682,7 @@
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/118"
     },
     "vga_chip": {
-      "stage": "planned",
+      "stage": "building",
       "coverage": {
         "collected": null,
         "cleaned": null,
@@ -1692,9 +1694,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
-      "updatedAt": "2026-10-24T01:38:50Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/127"
+      "projectStatus": "Building",
+      "updatedAt": "2026-11-16T13:52:23Z",
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/274",
+      "implementationPath": "ai_hw_engineer/design/ibm_vga",
+      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/ibm_vga"
     },
     "card_adlib": {
       "stage": "planned",
@@ -1714,7 +1718,7 @@
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/137"
     },
     "card_vga": {
-      "stage": "planned",
+      "stage": "building",
       "coverage": {
         "collected": null,
         "cleaned": null,
@@ -1726,9 +1730,11 @@
         "human": null
       },
       "issueState": "open",
-      "projectStatus": "Planned",
-      "updatedAt": "2026-10-24T01:39:04Z",
-      "issueUrl": "https://github.com/hevangel/ai_engineer/issues/136"
+      "projectStatus": "Building",
+      "updatedAt": "2026-11-16T13:52:24Z",
+      "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/275",
+      "implementationPath": "ai_hw_engineer/design/ibm_vga",
+      "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/ibm_vga"
     },
     "card_nubus_video": {
       "stage": "planned",
@@ -2188,7 +2194,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-11-09T16:45:38Z",
+      "updatedAt": "2026-11-17T15:55:18Z",
       "issueUrl": "https://github.com/hevangel/ai_engineer/issues/347",
       "implementationPath": "ai_hw_engineer/design/zilog_z80",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/design/zilog_z80"
@@ -2309,7 +2315,7 @@
       },
       "issueState": "open",
       "projectStatus": "Building",
-      "updatedAt": "2026-11-15T09:34:42Z",
+      "updatedAt": "2026-11-17T16:42:13Z",
       "issueUrl": "https://github.com/hevangel/ai_hw_engineer/issues/86",
       "implementationPath": "ai_hw_engineer/system/scelbi_8b",
       "implementationUrl": "https://github.com/hevangel/ai_hw_engineer/tree/main/system/scelbi_8b"

@@ -2405,9 +2405,9 @@
       "era": "32",
       "query": "VGA controller",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 127,
-        "url": "https://github.com/hevangel/ai_engineer/issues/127"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 274,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/274"
       },
       "image": {
         "src": "images/vga_chip.jpg",
@@ -2456,9 +2456,9 @@
       "era": "32",
       "query": "IBM Video Graphics Array",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 136,
-        "url": "https://github.com/hevangel/ai_engineer/issues/136"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 275,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/275"
       },
       "image": {
         "src": "images/card_vga.jpg",
