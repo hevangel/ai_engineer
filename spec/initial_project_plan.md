@@ -81,8 +81,8 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | apple_slots | [[Bus/Cards] Apple II slot bus](https://github.com/hevangel/ai_engineer/issues/54) | cards | [#49](https://github.com/hevangel/ai_engineer/issues/49) |
 | fpga | [[FPGA] Establish ai_fpga_engineer and reconstruction handoff](https://github.com/hevangel/ai_engineer/issues/53) | fpga | — |
 | card_sio | [[Card] Altair 88-SIO serial interface](https://github.com/hevangel/ai_engineer/issues/105) | cards | [#50](https://github.com/hevangel/ai_engineer/issues/50) |
-| crtc6845 | [[Chip] MC6845-compatible CRTC for historical display cards](https://github.com/hevangel/ai_engineer/issues/108) | chip | — |
-| card_cga | [[Card] IBM CGA ISA display adapter](https://github.com/hevangel/ai_engineer/issues/107) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#108](https://github.com/hevangel/ai_engineer/issues/108) |
+| crtc6845 | [[Chip] MC6845-compatible CRTC for historical display cards](https://github.com/hevangel/ai_hw_engineer/issues/269) | chip | — |
+| card_cga | [[Card] IBM CGA ISA display adapter](https://github.com/hevangel/ai_engineer/issues/107) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [hevangel/ai_hw_engineer#269](https://github.com/hevangel/ai_hw_engineer/issues/269) |
 | card_xtdisk | [[Card] IBM/Xebec XT fixed-disk controller](https://github.com/hevangel/ai_engineer/issues/106) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51) |
 | card_diskii | [[Card] Apple Disk II controller](https://github.com/hevangel/ai_engineer/issues/109) | cards | [#54](https://github.com/hevangel/ai_engineer/issues/54) |
 | workbench | [[Tooling] Integrate HDL Workbench with public system demonstrations](https://github.com/hevangel/ai_engineer/issues/55) | tooling | [#112](https://github.com/hevangel/ai_engineer/issues/112) |
@@ -139,6 +139,8 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | eda_xezim | [[EDA] Xezim — maintain working simulator integration and qualify upgrades](https://github.com/hevangel/ai_hw_engineer/issues/69) | tooling | — |
 | eda_surfer | [[EDA] Surfer — maintain working waveform integration and qualify upgrades](https://github.com/hevangel/ai_hw_engineer/issues/68) | tooling | — |
 | eda_workbench | [[EDA] HDL Workbench — sustain the working Xezim and Surfer integration](https://github.com/hevangel/ai_engineer/issues/112) | tooling | [ai_hw_engineer#69](https://github.com/hevangel/ai_hw_engineer/issues/69), [ai_hw_engineer#68](https://github.com/hevangel/ai_hw_engineer/issues/68) |
+| eda_icarus_extended | [[Tooling] Icarus Verilog — support in extended EDA Docker image](https://github.com/hevangel/ai_engineer/issues/467) | tooling | — (integration target: [ai_hw_engineer#84](https://github.com/hevangel/ai_hw_engineer/issues/84)) |
+| eda_ghdl | [[Tooling] GHDL — VHDL support in extended EDA Docker image](https://github.com/hevangel/ai_engineer/issues/466) | tooling | — (integration target: [ai_hw_engineer#84](https://github.com/hevangel/ai_hw_engineer/issues/84)) |
 | intel_80386 | [[Chip] Intel 80386 family — DX and SX](https://github.com/hevangel/ai_engineer/issues/116) | chip | — |
 | intel_80287 | [[Chip] Intel 80287 family — numeric coprocessors](https://github.com/hevangel/ai_engineer/issues/113) | chip | — |
 | intel_80387 | [[Chip] Intel 80387 family — DX and SX coprocessors](https://github.com/hevangel/ai_engineer/issues/115) | chip | — |
@@ -146,13 +148,13 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | motorola_68030 | [[Chip] Motorola MC68030](https://github.com/hevangel/ai_engineer/issues/118) | chip | — |
 | motorola_68851 | [[Chip] Motorola MC68851 external PMMU](https://github.com/hevangel/ai_engineer/issues/117) | chip | — |
 | motorola_6888x | [[Chip] Motorola MC68881 and MC68882 FPU family](https://github.com/hevangel/ai_engineer/issues/119) | chip | — |
-| intel_8042 | [[Chip] Intel MCS-48 keyboard/controller devices — 8042 and variants](https://github.com/hevangel/ai_engineer/issues/120) | chip | — |
-| rtc146818 | [[Chip] MC146818-compatible RTC and CMOS](https://github.com/hevangel/ai_engineer/issues/121) | chip | — |
+| intel_8042 | [[Chip] Intel MCS-48 keyboard/controller devices — 8042 and variants](https://github.com/hevangel/ai_hw_engineer/issues/256) | chip | — |
+| rtc146818 | [[Chip] MC146818-compatible RTC and CMOS](https://github.com/hevangel/ai_hw_engineer/issues/262) | chip | — |
 | pc_at_glue | [[Platform devices] AT and 386 motherboard chipset inventory](https://github.com/hevangel/ai_engineer/issues/122) | chip | — |
 | ym3812 | [[Chip] Yamaha YM3812 OPL2 and associated DAC profile](https://github.com/hevangel/ai_engineer/issues/124) | chip | — |
 | ymf262 | [[Chip] Yamaha YMF262 OPL3 and associated DAC profile](https://github.com/hevangel/ai_engineer/issues/123) | chip | — |
 | sb_dsp | [[Chip/Controller] Creative Sound Blaster DSP and mixer family](https://github.com/hevangel/ai_engineer/issues/125) | chip | — |
-| ega_chip | [[Chipset] IBM EGA display controller and support devices](https://github.com/hevangel/ai_engineer/issues/126) | chip | — |
+| ega_chip | [[Chipset] IBM EGA display controller and support devices](https://github.com/hevangel/ai_hw_engineer/issues/270) | chip | — |
 | vga_chip | [[Chipset] IBM VGA display controller and support devices](https://github.com/hevangel/ai_engineer/issues/127) | chip | — |
 | mac_scc | [[Chip] Zilog Z8530 SCC family](https://github.com/hevangel/ai_engineer/issues/128) | chip | — |
 | mac_scsi | [[Chip] NCR 5380-compatible SCSI controller](https://github.com/hevangel/ai_engineer/issues/129) | chip | — |
@@ -161,7 +163,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | mac_glue | [[Platform devices] Classic Macintosh custom logic, audio and IOP inventory](https://github.com/hevangel/ai_engineer/issues/132) | chip | [#34](https://github.com/hevangel/ai_engineer/issues/34) |
 | nubus | [[Bus/Cards] Macintosh NuBus expansion](https://github.com/hevangel/ai_engineer/issues/133) | cards | [#49](https://github.com/hevangel/ai_engineer/issues/49) |
 | pds | [[Bus/Cards] Macintosh processor-direct expansion slots](https://github.com/hevangel/ai_engineer/issues/135) | cards | [#49](https://github.com/hevangel/ai_engineer/issues/49) |
-| card_ega | [[Card] IBM EGA ISA display adapter](https://github.com/hevangel/ai_engineer/issues/134) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#126](https://github.com/hevangel/ai_engineer/issues/126) |
+| card_ega | [[Card] IBM EGA ISA display adapter](https://github.com/hevangel/ai_hw_engineer/issues/271) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [hevangel/ai_hw_engineer#270](https://github.com/hevangel/ai_hw_engineer/issues/270) |
 | card_vga | [[Card] IBM VGA ISA display adapter](https://github.com/hevangel/ai_engineer/issues/136) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#127](https://github.com/hevangel/ai_engineer/issues/127) |
 | card_adlib | [[Card] AdLib Music Synthesizer — original OPL2 ISA card](https://github.com/hevangel/ai_engineer/issues/137) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#124](https://github.com/hevangel/ai_engineer/issues/124) |
 | card_sb | [[Card] Creative Sound Blaster family — 1.x, 2.0, Pro and 16](https://github.com/hevangel/ai_engineer/issues/138) | cards | [#51](https://github.com/hevangel/ai_engineer/issues/51), [#124](https://github.com/hevangel/ai_engineer/issues/124), [#123](https://github.com/hevangel/ai_engineer/issues/123), [#125](https://github.com/hevangel/ai_engineer/issues/125), [#24](https://github.com/hevangel/ai_engineer/issues/24), [#28](https://github.com/hevangel/ai_engineer/issues/28), [#182](https://github.com/hevangel/ai_engineer/issues/182) |
@@ -169,7 +171,7 @@ No delivery dates are assigned. Existing implementation is not a reason to skip 
 | card_nubus_video | [[Card] Macintosh II-family NuBus video adapter](https://github.com/hevangel/ai_engineer/issues/139) | cards | [#133](https://github.com/hevangel/ai_engineer/issues/133), [#132](https://github.com/hevangel/ai_engineer/issues/132) |
 | backend_i386 | [[Toolchain] Rust/LLVM target original i386](https://github.com/hevangel/ai_engineer/issues/140) | toolchain | [#116](https://github.com/hevangel/ai_engineer/issues/116) |
 | audio_rust | [[Software] Rust AdLib, Sound Blaster and Roland drivers and audio regression corpus](https://github.com/hevangel/ai_engineer/issues/141) | software | [#137](https://github.com/hevangel/ai_engineer/issues/137), [#138](https://github.com/hevangel/ai_engineer/issues/138), [#140](https://github.com/hevangel/ai_engineer/issues/140), [#183](https://github.com/hevangel/ai_engineer/issues/183) |
-| system_ibm_at_5170 | [[System] IBM PC AT 5170 — SV simulation, web frontend and FPGA handoff](https://github.com/hevangel/ai_engineer/issues/142) | system | [#20](https://github.com/hevangel/ai_engineer/issues/20), [#120](https://github.com/hevangel/ai_engineer/issues/120), [#121](https://github.com/hevangel/ai_engineer/issues/121), [#122](https://github.com/hevangel/ai_engineer/issues/122), [#51](https://github.com/hevangel/ai_engineer/issues/51), [#24](https://github.com/hevangel/ai_engineer/issues/24), [#28](https://github.com/hevangel/ai_engineer/issues/28), [#26](https://github.com/hevangel/ai_engineer/issues/26) |
+| system_ibm_at_5170 | [[System] IBM PC AT 5170 — SV simulation, web frontend and FPGA handoff](https://github.com/hevangel/ai_hw_engineer/issues/254) | system | [#20](https://github.com/hevangel/ai_engineer/issues/20), [#120](https://github.com/hevangel/ai_engineer/issues/120), [#121](https://github.com/hevangel/ai_engineer/issues/121), [#122](https://github.com/hevangel/ai_engineer/issues/122), [#51](https://github.com/hevangel/ai_engineer/issues/51), [#24](https://github.com/hevangel/ai_engineer/issues/24), [#28](https://github.com/hevangel/ai_engineer/issues/28), [#26](https://github.com/hevangel/ai_engineer/issues/26) |
 | software_ibm_at_5170 | [[Software] IBM PC AT 5170 — Rust firmware, OS and applications](https://github.com/hevangel/ai_engineer/issues/143) | software | [#142](https://github.com/hevangel/ai_engineer/issues/142), [#63](https://github.com/hevangel/ai_engineer/issues/63) |
 | fpga_ibm_at_5170 | [[FPGA System] IBM PC AT 5170 — board selection and physical reconstruction](https://github.com/hevangel/ai_engineer/issues/144) | fpga | [#53](https://github.com/hevangel/ai_engineer/issues/53), [#142](https://github.com/hevangel/ai_engineer/issues/142) |
 | system_deskpro_386 | [[System] Compaq Deskpro 386 — SV simulation, web frontend and FPGA handoff](https://github.com/hevangel/ai_engineer/issues/145) | system | [#116](https://github.com/hevangel/ai_engineer/issues/116), [#122](https://github.com/hevangel/ai_engineer/issues/122), [#51](https://github.com/hevangel/ai_engineer/issues/51), [#120](https://github.com/hevangel/ai_engineer/issues/120), [#121](https://github.com/hevangel/ai_engineer/issues/121) |
@@ -238,7 +240,7 @@ The table and native GitHub blocked-by links are the detailed graph. This diagra
 
 ## EDA tools track
 
-[EDA tool specifications](eda_tools.md) record the working HDL Workbench baseline, Xezim and Surfer source pins, qualification scope, and native dependencies into public-system integration.
+[EDA tool specifications](eda_tools.md) record the working HDL Workbench baseline, Xezim and Surfer source pins, qualification scope, and native dependencies into public-system integration. The separate extended EDA image is tracked in [ai_hw_engineer#84](https://github.com/hevangel/ai_hw_engineer/issues/84), with Icarus and GHDL coordination in [#467](https://github.com/hevangel/ai_engineer/issues/467) and [#466](https://github.com/hevangel/ai_engineer/issues/466).
 
 ## 386 and Macintosh expansion
 

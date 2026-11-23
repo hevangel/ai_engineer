@@ -13,3 +13,24 @@
 [submodule "e1647-rs"]
 	path = e1647-rs
 	url = https://github.com/hevangel/e1647-rs.git
+[submodule "learning/computer_architecture_a_quantitative_approach"]
+	path = learning/computer_architecture_a_quantitative_approach
+	url = https://github.com/hevangel/computer_architecture_a_quantitative_approach.git
+[submodule "learning/introduction_to_algorithms"]
+	path = learning/introduction_to_algorithms
+	url = https://github.com/hevangel/introduction_to_algorithms.git
+[submodule "learning/structure_and_interpretation_of_computer_programs"]
+	path = learning/structure_and_interpretation_of_computer_programs
+	url = https://github.com/hevangel/structure_and_interpretation_of_computer_programs.git
+[submodule "learning/compilers_principles_techniques_and_tools"]
+	path = learning/compilers_principles_techniques_and_tools
+	url = https://github.com/hevangel/compilers_principles_techniques_and_tools.git
+[submodule "learning/textbooks"]
+	path = learning/textbooks
+	url = http://localhost/gogs/data/ai_engineer_textbooks
+[submodule "learning/introduction_to_the_theory_of_computation"]
+	path = learning/introduction_to_the_theory_of_computation
+	url = https://github.com/hevangel/introduction_to_the_theory_of_computation
+[submodule "learning/digital_design"]
+	path = learning/digital_design
+	url = https://github.com/hevangel/digital_design.git

@@ -1009,9 +1009,9 @@
       "era": "8",
       "query": "MC6845-compatible CRTC for historical display cards",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 108,
-        "url": "https://github.com/hevangel/ai_engineer/issues/108"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 269,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/269"
       },
       "image": {
         "src": "images/crtc6845.jpg",
@@ -1189,9 +1189,9 @@
       "era": "16",
       "query": "MC146818 RTC",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 121,
-        "url": "https://github.com/hevangel/ai_engineer/issues/121"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 262,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/262"
       },
       "image": {
         "src": "images/rtc146818.jpg",
@@ -1563,9 +1563,9 @@
       "era": "16",
       "query": "8042 controller",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 120,
-        "url": "https://github.com/hevangel/ai_engineer/issues/120"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 256,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/256"
       },
       "image": {
         "src": "images/intel_8042.jpg",
@@ -2057,9 +2057,9 @@
       "era": "16",
       "query": "EGA controller",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 126,
-        "url": "https://github.com/hevangel/ai_engineer/issues/126"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 270,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/270"
       },
       "image": {
         "src": "images/ega_chip.jpg",
@@ -2247,9 +2247,9 @@
       "era": "16",
       "query": "IBM Enhanced Graphics Adapter",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 134,
-        "url": "https://github.com/hevangel/ai_engineer/issues/134"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 271,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/271"
       },
       "image": {
         "src": "images/card_ega.jpg",
@@ -2272,9 +2272,9 @@
       "era": "16",
       "query": "IBM Personal Computer AT",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 142,
-        "url": "https://github.com/hevangel/ai_engineer/issues/142"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 254,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/254"
       },
       "image": {
         "src": "images/system_ibm_at_5170.jpg",
@@ -2585,9 +2585,9 @@
       "era": "32",
       "query": "VGA controller",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 127,
-        "url": "https://github.com/hevangel/ai_engineer/issues/127"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 274,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/274"
       },
       "image": {
         "src": "images/vga_chip.jpg",
@@ -2636,9 +2636,9 @@
       "era": "32",
       "query": "IBM Video Graphics Array",
       "issue": {
-        "repo": "hevangel/ai_engineer",
-        "number": 136,
-        "url": "https://github.com/hevangel/ai_engineer/issues/136"
+        "repo": "hevangel/ai_hw_engineer",
+        "number": 275,
+        "url": "https://github.com/hevangel/ai_hw_engineer/issues/275"
       },
       "image": {
         "src": "images/card_vga.jpg",
