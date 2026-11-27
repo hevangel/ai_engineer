@@ -1,0 +1,3 @@
+{
+  "install": "node -e \"if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)\" && node scripts/render-site.mjs --check && node scripts/check-site.mjs && node scripts/sync-timeline.mjs --check && node --test scripts/*.test.mjs"
+}
